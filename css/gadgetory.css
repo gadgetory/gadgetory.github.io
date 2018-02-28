@@ -3,7 +3,7 @@
 }
 
 .index__channel-title {
-  font-size: 100px;
+  font-size: 50px;
   position: absolute;
   text-align: center;
   left: 0;
@@ -15,4 +15,59 @@
 
 .index__channel-title:hover {
   background-color: #000b;
+}
+.index__channel-thumbnail {
+  position: relative;
+  left: 50px;
+}
+
+.channel-index__post-container {
+  margin: 0 50px;
+  display: grid;
+  grid-row-gap: 20px;
+}
+.channel-index__post {
+  text-align: center;
+}
+.channel-index__post-thumbnail {
+}
+.channel-index__post-title {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 700px) {
+  .channel-index__post-container {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .channel-index__post-container {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .channel-index__post-container {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+
+.post__title {
+  text-align: center;
+}
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
