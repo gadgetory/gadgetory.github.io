@@ -2,6 +2,12 @@
   margin: 0 auto;
 }
 
+.index__channel {
+  background-repeat-x: no-repeat;
+  background-repeat-y: repeat;
+  background-size: contain;
+}
+
 .index__channel-title {
   font-size: 50px;
   position: absolute;
