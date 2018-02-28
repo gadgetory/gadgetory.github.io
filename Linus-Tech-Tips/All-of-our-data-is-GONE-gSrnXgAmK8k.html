@@ -1,0 +1,475 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>All of our data is GONE! | Gadgetory - Your Gadget Factory</title><meta content="All of our data is GONE! - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1>Gadgetory</h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><h2 class="post__title"><b>All of our data is GONE!</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/gSrnXgAmK8k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">well hello YouTube we have a bit of a
+problem today on this section of the
+moving but we've been moved in four
+months moving vlog um something is going
+on with the server and we haven't been
+able to work on a project for more than
+like 30 minutes at a time before the
+server crashes and our computers all
+freeze and then we're all sad because we
+can't work on them most we do is on the
+server well I do it I'm actually doing
+some writing right now because I can't
+you'd see I'd love to be working -
+anything that doesn't see the server we
+can do now well that's not much but it
+always seems to go down yeah
+but the worst when there's nothing else
+to do you're kidding but you know Yolo
+you only live once let's see let's see
+the stress that Linus is going through
+it's probably gonna crash like while
+you're doing good how do you fix servers
+how do you fix it
+don't tell Linus you okay sick
+that's your go-to yeah
+whether you're running a small business
+or a 1 billion dollar even multi-billion
+dollar enterprise Rackspace has your
+dedicated storage environment covered
+check out the link in the video
+description to learn more alright so
+here's the situation
+Wanek server over the course of the last
+couple of days has been spontaneously
+going offline and turning off in spite
+of my best efforts to turn it back on
+and complete the backup that i'm in the
+middle of trying to do to our new unread
+volt while I was standing in front of it
+I observed one of my raid controllers
+giving up the ghost
+so as a reminder this server is running
+3 raid 5s striped together in Windows of
+a total of 24 SSDs so if one of the raid
+fives drops out entirely all the data is
+gone only about 10% of the backup that I
+was just in the middle of remaking is
+saved so it's time to investigate
+all right so here's one Xserve er so far
+troubleshooting steps that I've tried
+you never want to you never want to
+rebuild something like this if there's a
+possibility you're going to have to go
+to a data recovery service because that
+can make it much much worse so in terms
+of troubleshooting steps
+I tried transplanting it into another
+case so that I could use a different
+SATA backplane that didn't work I tried
+a different power supply a better power
+supply that didn't work none of that
+fixed it and I even went as far as to
+put in another LSI raid card that I had
+and try to import the array but while it
+did detect my drives all of them as
+unconfigured good and a for an array it
+was not able to import it so there is
+some good news there though while I'm
+getting firmware errors kicked out by
+this card right here when I try to boot
+all the drives are detected by another
+card so hopefully it didn't write too
+much garbled data to the array okay so
+this is basically what I've been doing
+for the last 14 hours is sending emails
+contacting different data recovery
+services there's some that are local
+there's some that are not local but I'm
+not ruling those ones out in fact right
+now the most likely solution looks like
+we recover data comm they've got some
+some custom tools that they've created
+that will allow them to SSH into the
+system and actually potentially recover
+the rate the missing raid 5 and then the
+other two raid fives and assemble them
+all together and export them as one
+gigantic pile of data two to one of our
+servers all without me actually having
+to send the drives away which would be
+pretty ideal now obviously an approach
+like that would not work in the case of
+physical damage to the drives but
+because it is only a RAID controller
+issue they're saying hey there's a shot
+at this so let's
+so I downloaded their remote recovery
+client thing here so right now I'm
+waiting for their custom Linux based
+tool to load on a bootable external SSD
+so that they can SSH into the server I'm
+not having a good couple days right now
+I can't get the utility to detect my my
+USB Drive called tech support them oh
+bloody hell
+uh I just figured it out this is Linus
+calling by the way I just realized I
+have to run the wrd disk image as
+administrator you think I should put
+that in the documentation never fails
+this is why it's a good idea to call
+tech support because the second you call
+them you'll solve the problem on your
+own
+alright so in theory we now have a
+bootable right
+okay so step one is getting this
+unnecessary extraneous server out of the
+way I'm grabbing a UPS to use now in a
+perfect world I would have a motherboard
+or an HP a card a host bus adapter card
+that could allow me to plug in all 24 of
+the drives for them to do their data
+recovery magic on but what we're going
+to have to settle for is having eight of
+them plugged into the motherboard at a
+time as each raid five is rebuilt raid
+cards do all kinds of funny funny
+nonsense and they don't give other
+software direct access to the drives at
+a bit level in some cases so we need to
+remove all these drives and plug them in
+directly to the motherboard okay now it
+should boot to that in theory let's just
+make sure all the drives are detected in
+the BIOS and everything oh that's a
+problem I need to pull up the other raid
+controllers as well otherwise they're
+going to be looking for their drives and
+I don't have them powered up right now
+okay
+oh actually that doesn't look very good
+PCIe for errors what
+so let's make sure all of our drives are
+even showing up Oh
+that is extremely worrying oh that is
+extremely worrying oh that's not good
+that means potentially three of the
+drives in a raid five are dead which
+means this data is not coming back none
+of it is particularly
+no none of it none of those but I
+thought we have none of it will be
+coming back if we lost three drives from
+one of the raid fives so let's try
+moving things around I've never tested
+the SATA ports on this board it's
+possible three of them are dead
+however extraordinarily unlikely that
+would be five six okay we've got six now
+okay that gives some hope
+I'm just moving SATA ports around I was
+just gonna say right now I'm even having
+difficulty getting this system to post
+so I'm I'm at a whole new level of
+concern yeah I'll let you know I'll send
+an email okay so I'm at the point now
+where I don't want to put the drives on
+this system let's go with this one I
+didn't like all those PCI Express errors
+that the bootable USB was kicking out I
+don't like that some of these drives
+aren't showing up I'm starting to wonder
+if that's what corrupted the LSI card
+will pain in the ass so thousand things
+I can think of that I would rather be
+doing right now okay I got seven right
+now really yeah
+Wow maybe it was bad PCI you line is
+speaking well I can tell you what's
+happening so far is I put it on the
+system that I was running the raid card
+and the drives in and that baby started
+spitting out PCIe errors all over the
+place so I got everything pulled out of
+that system and I have plugged all the
+drives now into a different test bench
+and I'm trying to see cuz I wasn't even
+getting all the drive showing up two
+three four five six seven eight okay hey
+you guys are on the phone for the magic
+moment where all eight drives are
+detected by a new motherboard so I'm
+beginning to think there may be a
+motherboard issue that caused the
+firmware on that LSI controller to
+corrupt in the first place so I'm
+actually pressing enter and I am booting
+up to your USB and it is loading
+correctly on this I think that board is
+dead
+um okay well that's I don't know if that
+makes it worse probably does doesn't it
+you can tell me I can take it that says
+waiting up to 60 more seconds for
+network configuration good timing with
+the follow up call if you'd called one
+minute earlier I've been cursing you for
+dialing my number so I have to answer my
+phone because I was in the middle of
+thinking only five of my drives were
+being detected you guys know what you're
+doing right I had a local shop that I
+was going to physically physically take
+it to and they basically they were like
+they kind of freaked out when I said I
+was having someone use their remote tool
+they were like well unless these guys
+really know what they're doing that's
+pretty dangerous and I was like okay
+well I'll check with them I'll make sure
+they know what they're doing so so you
+guys know what you're doing so basically
+they're explaining that they're going to
+virtually mount the volumes so we're not
+doing any writing to my disks so even in
+the event that we cannot recover it by
+this means that still leaves other
+options open to us okay there is okay
+well that's that's very wonderful to
+hear but I'm trying not to get too
+excited right now
+they sound pretty confident this is like
+the ultimate roller coaster right now
+so to put this in the appropriate
+context for the viewers right now Wanek
+server has several in progress projects
+stored on it that do not have a backup
+anywhere else including a fully shot
+channel superfund that involved a
+thousand dollars in equipment rental
+including lots of footage from Linus
+tech tips videos like it is going to be
+a huge huge devastating loss for us to
+lose this I mean it's got a lot of art
+our templates for editing editing videos
+for for scripting templates for employee
+reviews like all kinds of stuff like
+this is our main working server know the
+off-site backup server has not ever been
+built yet the vault was the backup
+server if I ever have to like act in a
+in a video where I have to look for
+Lauren I'm going to think back to this
+moment okay so I do need to reboot it
+once in order to add that 8 terabyte
+drive so anyway
+right okay thank you very much gentlemen
+I hope to speak too with good news race
+soon uh twelve SATA connectors ah ah
+okay so let's make sure everything is
+showing up one two three four five six
+seven eight of those our boot device and
+our eight terabyte recovery media we are
+ready to rock okay so within about ten
+minutes they contact me back they said
+okay yeah we're ready to have all the
+drives in there so that means we are
+gonna have to do some janky-ass right
+now so basically what you're looking at
+here is these drives are going to be
+powered off this power supply with a
+jumper these cards and all these drives
+are going to be powered off of this rig
+so now we can power all those drives
+without powering up this motherboard or
+any of that nonsense okay so we have a
+grand total of twenty five drives
+connected to this test bench sixteen of
+which are running in Bay's of this
+enclosure and eight of which are spread
+out here so there we go there's one of
+my LSI controllers there's it's eight
+drives there's my other one whoa where
+are your virtual drives
+I think I remember a troubleshooting
+step where I tried swapping all the
+drives to different bays where I was
+trying to see if it was the back plane
+or the cables Wow panic moment there but
+it's okay so now we should see two
+virtual drives here on the screen that's
+one set show me the second set Oh
+thought we lost another raid5 there mmm
+okay it's good feeling good
+reality TV ain't got nothing on IT work
+show me all the devices to rate adapters
+one eight terabyte drive one two three
+four five six seven eight kingston
+drives
+boom okay I will let the data recovery
+specialists know all right so all that's
+left now then I think I got in touch
+with them and I asked if we can put a 10
+gigabit network card in so we can
+accelerate the offloading of all of our
+files so while we're waiting for now is
+for them to reboot the machine and set
+me up with a network share that I can
+access and fingers crossed just start
+pulling off all the footage and while
+everything else alright so check this
+out here around here so I've got the
+instructions for how to access our data
+so I go into the tritium share and there
+it is bunch of EULA's a bunch of stuff
+we've got what looks like the file
+structure let's test it how about one
+that I that we haven't finished
+releasing yet like something from the
+the mail a battle over here let's just
+let's watch it hmm okay exhale it is for
+sure
+Oh
+okay here we can copy one of these let's
+copy one of these clips to my local
+machine and see if that helps nope oh
+boy let's have a look I wonder if
+everything's even here like I don't even
+see the Linus tech tips folder 1 &amp;amp; 2 are
+missing
+these full applications is empty that
+should be full of things okay well I
+guess we'd better get in touch with them
+so thanks for watching god subscribe
+follow all that good stuff and see you
+next time I just got an email back from
+them
+please stand by addressing your emails
+with the engineer it's possible the raid
+definitions were changed from one reboot
+to the next because of drive letter
+assignments and the Linux 26 was 2065
+limit we have I think we have more than
+26 devices in there I got another email
+back - we recreated the block devices
+please go ahead and check the videos and
+content that you are looking at again no
+way oh this is fence I'm not enjoying
+this nothing there I'll let him know the
+shares empty
+this is just like the wildest roller
+coaster ever
+I don't even yeah I don't even have
+anything else to say actually it's
+almost funny I hope to some of you it's
+funny here's the email I got 17 minutes
+ago I was stuck on a call we got
+everything remounted so you can now go
+ahead and do the data once more this is
+the moment do we not have a - I don't
+think we ever had a - oh okay um okay so
+let's go to that channel super fun video
+that we were looking at yes yes way way
+justing okay and it was the delivery
+I'm getting like tingling okay okay you
+got to check the source file Oh cuz that
+was what we know was corrupted okay okay
+okay okay so I'm transcoded footage
+x-ray they did it
+it's back oh my god it's back here's
+another file its back do we have
+everything in theory yes
+really holy Sh
+oh I think it's finally over that is
+fantastic
+hey guys guess what happened with the
+recovery we got everything back goodness
+like it's just been such a stressful few
+weeks and that was just such a huge huge
+thing all of our pitches and proposals
+and stuff are on that server okay
+Blahniks back bully really everything is
+back as far as I can tell I have played
+back video files they are not corrupted
+Blahnik is officially back yeah swegway
+jousting footage for the melee battle
+should be fine
+and we'll have a better backup scheme in
+the future I promise that is all
+yeah shot
+we should physically print all of our
+videos every frame I don't think so on
+my paper you're the good news that want
+ice pack Monica's back gay for hiring
+other people to do our job I know I
+don't think it's Beck but it is it's
+back what are you doing I'm just letting
+everyone know that Taryn it's back the
+server's back okay so it's not always
+that our sponsors tie so perfectly into
+our content but today it happened
+today's sponsor is Rackspace the top
+tier manage cloud computing company they
+pride themselves on best-in-class
+service across all platforms they've got
+over 300,000 customers in 120 countries
+with 10 worldwide data centers they've
+got Red Hat Cisco Microsoft VMware
+certifications and all of that amounts
+to whether you're running a small
+business or a billion dollar enterprise
+whatever your needs are in terms of
+capacity storage or flash-based high
+performance storage they can take care
+of it without you going grey or bald
+because you did something wrong and
+screwed up a backup and went and lost a
+raid array or whatever else they've got
+dedicated storage to meet your
+performance security network capacity
+and compliance needs everything from
+direct-attached storage so that gives
+you the flexibility and scalability of
+just a simple ok let's attach some
+drives to this thing it's redundant cool
+off you go to the races to fan so that's
+high availability and reliability fully
+redundant for business to even mass with
+support for demanding workloads like
+virtualization file sharing and rich
+media in fact their nassif can scale up
+to 20 petabytes of capacity they've got
+private public cloud and private cloud
+options as well and you can get your own
+server a scaleable private cloud in the
+data center in your data center in their
+data center and it's all supported by
+Rackspace and VMware they call their
+support
+fanatical because these people
+are available 24 hours a day seven days
+a week 365 days a year and they've got
+industry-leading service level
+agreements both managed and intensive so
+if you need dedicated storage they got
+you covered go to Rackspace comm /l tt
+to learn more and not go through what I
+did I just yeah I don't really have
+anything to say so thanks for watching
+guys if you just like this video then
+hit the dislike button I guess but come
+on this is about as real as it gets
+around here if you liked the video hit
+that like button get subscribed maybe
+even consider checking out our Amazon
+affiliate instructions for how to use it
+whenever you buy stuff their
+instructions are up there
+buying a cool shirt like this one or
+even giving us some up the contribution
+through our forum which gives you a
+little contributor badge now that you're
+done doing all that stuff hey maybe you
+want to check out that channel super fun
+video that we just discovered is back
+and it'll definitely be worth your while
+we just with each other on sweg ways
+it's pretty awesome so see you next time
+you</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

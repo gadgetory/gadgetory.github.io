@@ -1,0 +1,384 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Colorful GTX 1070 Ti Vulcan PCB, VRM, &amp; Shunt Shorting | Gadgetory - Your Gadget Factory</title><meta content="Colorful GTX 1070 Ti Vulcan PCB, VRM, &amp; Shunt Shorting - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Colorful GTX 1070 Ti Vulcan PCB, VRM, &amp; Shunt Shorting</li></ol></div><h2 class="post__title"><b>Colorful GTX 1070 Ti Vulcan PCB, VRM, &amp; Shunt Shorting</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/3eDRJg6Zirk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey guys build Zoid here from actually
+hardcore overclocking and today we're
+gonna be taking a look at a gtx 1070 TI
+PCV this is colorful volcán x edition
+and well has quite the PCB and you know
+it is also a lot taller than normal
+before that this video is brought to you
+by thermal grizzly makers of the
+conductor not liquid metal that we
+recently used to drop 20 degrees off of
+our coffee leak temperatures thermal
+grizzly also makes traditional thermal
+compounds we use on top of the IHS like
+cryo not and hydro not pastes learn more
+at the link below so let's get right
+into it as there's no really much else
+to say about the card you have a minor
+supporting voltage well you have the
+pecks of erm down here which is normal
+for basically all Nvidia cards this vrm
+exists and this runs on one this outputs
+one volt and it powers the PCIe
+interface as well as some internal PLL's
+of the GPU core very important to keep
+the card working completely useless for
+overclocking until you're well below
+zero so only really worth worrying about
+if you're on a liquid nitrogen and even
+then it's really not a high power output
+vrm so it's you know you're never gonna
+see anybody do bother with doing a
+two-phase design of that it's always
+just a fully integrated buck converter
+like we have here up here we have what I
+suspect is the 1.8 volts rail which and
+video cards require for some internal
+PLL's on the GPU core as well as their
+bio system on cards with gddr5 X this
+would also be used for power for the VPP
+line of the gddr5 X chips but on a GT
+the gtx 1070 TI uses gddr5 so basically
+this is here just for the bio system and
+the GPU core now then we're gonna move
+into the actually interesting VRMs even
+if they do just as much as the other two
+in terms of what we're clocking on air
+cooling and water cooling this right
+here is the V curve erm so that provides
+the bulk of the power that your GPU uses
+and behind that we find the memory v RM
+right here so that power is the gddr5
+memory chips located around the GPU core
+so the V curve erm is a one two three
+four five six seven eight nine ten
+eleven twelve phase the RM design and so
+naturally it is using a doubling scheme
+the doublers are located on the back of
+the card and they are not just doublers
+it's actually dual drivers with the
+phase extension functionality so
+basically you have one chip controlling
+uh basically turning the MOSFETs in this
+VR I'm on and off well you have four
+MOSFETs hook it up to one drug driver IC
+which drives the four MOSFETs well
+drives two MOSFETs at a time so if
+fective lee it looks like a twelve phase
+this is the only real way to do a four
+twelve phase vrm design I'm not gonna go
+into the details of how exactly it works
+but yes this this is the right way to do
+a twelve phase there's a way to make
+something that looks like this and isn't
+actually running out of like isn't
+running in twelve phase mode but this is
+the proper way to do it the chips for
+that are located on the back those are
+fed the PWM signal from this chip which
+that is the completely typical for
+NVIDIA cards you p95 eleven voltage
+controller this is an eight phase-- chip
+so here it's being only used in six
+phase mode so they're not using two of
+the phases available on the U P 95 11
+and that's because you can't like if
+you're using a doubling scheme you have
+to double all of your phases you can't
+double like four and then use for more
+natively from the chip that doesn't work
+so that's why you know this is being and
+in six phase mode here and the u p95 of
+eleven supports switching frequencies up
+to 600 kilohertz which considering that
+and I ran out of space there up to 600
+kilohertz and basically that's how
+quickly it turns the MOSFETs
+on and off in the vrm now since this is
+using a doubling scheme this 600
+kilohertz would actually go to the
+driver chips on the back of the card
+600 kilohertz and once it comes out of
+the driver chip to the phase like the
+these MOSFETs up here would be switching
+at 300 kilohertz and the MOSFETs down
+here would be switching also at 300
+kilohertz because basically the way the
+doubling schemes all work is that they
+take the 600 kid they take the input pwm
+signal and just split it in half so
+every other pulse goes every other pulse
+goes to the other V our other phase so
+that's basically how this works now then
+let's talk about the actual MOSFETs use
+these are dual N fats from Alpha and
+Omega semiconductor these are AoE 69 30s
+these would have you would have colorful
+really likes using them I've seen these
+on a gtx 980ti from colorful but the
+first time you would have probably seen
+these is all in the GTX Titan XP as
+Nvidia uses it that these for their
+reference card these are actually really
+nice MOSFETs very low RDS on on the low
+side fat at zero point
+Wow no weight 1.05 milliohms RDS on for
+the low side fat at 5 volt
+gate-to-source and i'm using 5 volt
+gate-to-source because i have no idea
+what drive voltage colorful is actually
+using on this card I assume it's 5 volts
+because they do have this V arm here
+which the u p95 11 and a bunch of logic
+on this card actually requires a 5 volt
+rail so it just makes sense to reuse it
+for driving as well and then the high
+side MOSFET built into the a OE 69 30 is
+7 million RDS on at that same 5 volt
+gate to source voltage luckily we're
+like this is pretty high but the high
+side MOSFET is all about being able to
+turn on and off quickly and not all
+about its RDS on and in that department
+this thing can turn on at speeds of as
+high as 4 nanoseconds turn on in 3
+nanoseconds turn off so this is like
+this is really fast you find a lot of
+high-end MOSFETs out there that are sort
+of in the 10 nanosecond range for both
+of these
+and then when you start looking at the
+really cheap MOSFETs that are also
+available you start looking at 20 to 30
+nanoseconds switching speeds so well
+turn falling times and rising times and
+well those are basically atrocious but
+these are really really fast definitely
+in line with some of the top MOSFETs
+that you can find out there so the end
+result is that with this you know with
+this high-end mosfet and the ridiculous
+phase account this vrm is absolutely
+insane overkill for a gtx 1070 TI so
+under normal operating conditions you'd
+be looking at this vr i'm pushing to the
+core about zero 1.09 volts which that's
+the maximum voltage you can set through
+something like afterburner
+and you're gonna be looking at currents
+between 150 and 200 amps for these kinds
+of current levels at 300 kilohertz
+switching for frequency because you know
+I'm doubling scheme and 5 volt gate to
+source voltage for 158 you're looking at
+about 8 watts of heat output for 200
+amps and it's looking at around 13 watts
+of heat output so this is really really
+an efficient massive overkill on power
+colors I mean colourful messing up the
+name is Hieu sorry about that it's
+colorful not power color less colorful
+names would be good but uh yeah very
+very efficient we are I'm a ridiculous
+power capability very overkill I really
+think you know some people would
+probably prefer it if this wasn't as
+tall and the vrm was a few faces less
+but as far as the arm designs ago
+there's nothing to complain about here
+if for some reason you decided that you
+really want to run this gtx 1070 TI on
+liquid nitrogen which to be completely
+fair since no gtx 1070 TI is actually
+specifically designed for liquid
+nitrogen you might as well run across a
+run whatever you come across so if you
+decided to run this one you'd be pushing
+probably voltages around 1.3 5 volts
+some cars will be slightly lower some
+currents will be slightly higher and
+about 250 amps
+and also basically the reason why you
+don't go higher on the core voltage for
+liquid nitrogen is because jp104 really
+doesn't work well at high voltage it
+basically doesn't scale and I've seen
+like I've already overclocked at 1017
+liquid nitrogen and everybody who's
+worked with 10 80s and 10 70s before can
+confirm this
+basically the jp104 chip really doesn't
+like high voltages even at very low
+negative temperatures so you end up
+getting stuck around that sort of
+voltage range and current draw which
+means that the VR I'm even under liquid
+nitrogen which would be a kind of
+extreme usage scenario ends up only
+producing about 19 watts of heat so
+again you know the it's ridiculous
+overkill like this vrm wouldn't look out
+of place on a gtx 980ti but here it is
+on a 1070 TI so props too colorful for
+splurging on components here now then
+the memory of erm is a two-phase design
+this is better than what you would find
+on most cards in sort of well just in
+general a lot of cards come with
+single-phase memory power and two phases
+can help with memory overclocking a tiny
+amount not anything huge but it can help
+so that's nice to see and the MOSFETs
+used are again the same Alpha and Omega
+69 30s for gddr5 you're gonna be looking
+at an output voltage of around 1.5 volts
+maybe 1.5 5 volts on some cards so it
+depends but I'm doing the rating at 1.5
+volts
+the controller is au p90 now not 90 1658
+it integrates both while the driver
+circuits for both phases so there's no
+actual like basically there's no other
+driver chips anywhere around this VRM
+and this chip supports two phases up to
+300 kilohertz switching frequency and I
+ran out of space again I you you'd think
+I'd learn after the first time wouldn't
+you evidently naw so 300 kilohertz 1.5
+volts again using that 5 volt gate to
+source voltage because they're going to
+use the same drive voltage everywhere
+you'd be looking at maybe 25 amps of
+current output on two-phase memory on
+the gddr5 because we do only have eight
+memory chips here and at that current
+output level you're only looking at
+about 1.5 watts of heat output so again
+great job colorful with the vrm here and
+you know it's a good thing that these
+VRMs are both so ridiculously efficient
+because well the heatsink is kind of
+just a bit like the vrm eat sink where
+this card is just basically a sheet of
+aluminum and that like I mean I guess it
+has more surface area than the MOSFETs
+but that's not really you know that
+doesn't that's not exactly
+confidence-inspiring in the vrm cooling
+department but with the heat output
+levels that these the arms are putting
+out like the heat output on these VRMs
+is so low that I think colorful can get
+away with the anemic looking base plate
+the rme cooler so that covers the vrm
+portion of the card one cool feature
+that colorful decided to add on to the
+card is you actually get voltage read
+points off here so you can check your n
+VDD so that's your core voltage FB VDD
+which I am not sure what that that's
+gonna be the memory so that's gonna be
+the memory one there I'm not used to you
+know and I don't want overclock and
+video cards that much so I'm not used to
+the terminology used here so that's
+gonna be V core pecks VDD that's the v
+RM I pointed out down here 1.8 volts is
+the one I pointed out over here and you
+also get a ground tab so that's really
+nice they don't have a measurement point
+for the this VR I'm down here which I
+assume is 5 volts which is kind of
+interesting but this is not the first
+card to like include all the other
+voltages and not bother with the drive
+voltage and this can be handy if you
+know your Experian you aren't able to
+RMA the card and are having issues with
+it running these voltage read points are
+really convenient because you basically
+don't have to like figure out how to
+stab the right capacitor for this one if
+you if you think that there's an issue
+with this rail or that
+or any other rail on the card so you
+know it's a nice feature to have for
+overclockers though I think for most
+daily users this is completely pointless
+still a nice addition and it doesn't
+really cost anything to do as it is just
+a PCB you know small PCB design tweak
+now then if you want to really let the
+card fly basically take and videos power
+limitations off of it the shunt
+resistors for doing that are located
+down here and I wrote over one of them
+so you have three shunt resistors
+because you have three power inputs you
+have two eight pins and you have the
+PCIe as well and so each of these shunt
+resistors monitors the current going
+from one of those sources I am not sure
+which one is for which source if you're
+planning to short these out the best way
+to do that is generally to apply a thin
+layer of liquid metal across them
+because if you try to short them out by
+like soldiering over them or something
+you run the risk of shorting them out
+too much and if the GPU detects that the
+power the power reading provided by the
+shunt resistors is too low it will put
+the card in safety mode and basically
+the card is a safety mode on a gtx gtx
+10 series card is basically the card is
+stuck at 139 139 megahertz core clock
+which is you know which basically makes
+the card completely useless
+so you know thin layer of liquid metal
+is your best bet for getting a ez power
+mod if you want to do something more
+advanced the ia32 to wanna is up here
+I've done a advanced power mod guide for
+like completely remove all power
+limitations on these cards guide on my
+own channel so actually our core
+overclocking but for most users it you
+know if your although if you're at the
+point that you're modifying but you
+don't have a soul during iron really
+just thin layer of liquid metal and you
+don't want to go heavy on the liquid
+metal because liquid metal does eat
+solder so if you apply too much of it
+you're you are running the risk of the
+shunts basically that well the solder
+dissolving and the shunts falling off so
+you know be careful when modifying the
+cards because you you can basically end
+up killing the card
+and well RMA is not gonna be okay with
+it when you send them a card missing
+components so that's it for this video
+thank you for watching like share
+subscribe leave a comment down below or
+any questions you have if you would like
+to support what we do here with gamers
+Nexus there's a patreon link down in the
+description below and if you would like
+to watch you know see more extreme
+overclocking kind of content like the
+well more of erm stuff and other
+overclocking ridiculousness I have my
+own channel called actually hardcore
+overclocking you can go check that out I
+imagine there will be a link down in the
+comments below for that so once again
+thank you for watching and see you next
+time
+you</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

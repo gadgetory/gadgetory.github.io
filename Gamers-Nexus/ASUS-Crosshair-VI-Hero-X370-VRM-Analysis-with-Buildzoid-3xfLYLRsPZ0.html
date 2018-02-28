@@ -1,0 +1,263 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>ASUS Crosshair VI Hero X370 VRM Analysis with Buildzoid | Gadgetory - Your Gadget Factory</title><meta content="ASUS Crosshair VI Hero X370 VRM Analysis with Buildzoid - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">ASUS Crosshair VI Hero X370 VRM Analysis with Buildzoid</li></ol></div><h2 class="post__title"><b>ASUS Crosshair VI Hero X370 VRM Analysis with Buildzoid</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/3xfLYLRsPZ0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey guys build load here and today we'll
+be taking a look at the V RMS on the
+crosshair six hero which is the top of
+the line board for a m4 from Asus it
+costs around one hundred two hundred and
+fifty dollars which for a m4 is actually
+a really high price point but if you
+compare it to like Intel motherboards
+it's sort of upper mid-range
+in terms of price point whereas the
+feature set is off it offers is actually
+really really good so we will only be
+going in detail over the VR ends as well
+of pointing out some interesting little
+extras for overclocking that this
+motherboard includes as it is an rog
+board which is sort of the overclocking
+centric division of Asus so with that
+out of the way let's get straight to the
+vrm the vcore vr v core vr m is this
+part of the cpu v RM right here so you
+have one two three four five six seven
+eight phases for your V core and the
+other four phases right next to that are
+the SOC voltage so that's the horizon
+system-on-a-chip part of the CPU and
+that is basically Rison integrates a lot
+more of the sort of motherboard
+functionalities into the CPU so you have
+the usual the integrated memory
+controller as well as a PCIe as well as
+some PCIe connectivity but it also
+integrates m dot 2 u dot 2 USB 3.1 audio
+and super i/o so you have a lot of
+things built right into the chip that
+would usually have been supplied by the
+motherboard so that's why this is no
+longer which is why you have recore and
+the SOC voltage instead of say system
+agent like you have on Intel boards
+where that's literally just or a GPU
+voltage is the equivalent for Z 270 so
+yeah that's the SOC voltage and that's
+made up of four phases as you can
+clearly see up there the controller for
+the entire vrm is this chip right here
+and that is a asp
+one 4:05 it belongs into the digi+ line
+of Asus parts and it is a custom part
+made for Asus by international rectifier
+there is no public datasheet available
+for it however I can tell you that it is
+a four plus two phase voltage controller
+and we've seen it on some previous ROG
+boards on the EZ 270 side as well as
+possibly even before that so I wouldn't
+like I haven't seen the older ROG board
+so I can't really tell you about those
+now then this is a 4 + 2 phase voltage
+controller and as I've already said the
+vcore is 8 and the SOC is 4 phases so
+Asus does have to use a doubling scheme
+for to achieve the phase count that the
+motherboard actually comes with this is
+done using international rectifier ir35
+99 ICS which you can find on the back of
+the board unfortunately I won't be
+showing those to you and those basically
+take one PWM signal in and they cut the
+frequency in half and split it between
+two phases
+so essentially you you get like a proper
+doubling scheme it's not something like
+where you hook up one driver Mothe one
+driver chip to two MOSFETs or while two
+phases which doesn't really achieve the
+the same effect as multiple phases so
+this vrm is comparable to a true eight
+phase of the rme until you really really
+start cranking up the frequency because
+the International rectifier 3599 doubler
+is top out at 800 kilohertz switching
+frequency output so you can't actually
+go above 800 kilohertz switching
+frequency not that that should really
+matter as most motherboard ship at 200
+to 300 kilohertz and really really
+cranking up the switching frequency
+doesn't really net you any gains even in
+extreme overclocking scenarios as vrm
+like high-end of erm these days with you
+know high phase counts like eight phase
+is doing 800 kilohertz can handle
+transient loads very very well as is so
+there really shouldn't be a reason to
+worry about the fact that this erm tops
+out at 800 kilohertz compared to some
+other designs which might top out higher
+for the same given phase count
+now then if we take a look at the actual
+MOSFETs that Isis is using which are
+these chips right here these are Texas
+Instruments the next fad so these
+integrates to both the high side and the
+low side MOSFET and the part number for
+these is CSD 8:7 350 these are rated to
+do 40 amps at 125 degrees centigrade and
+go up to 1.5 mega Hertz switching
+frequency so they are very like very
+very nice parts they are extremely
+efficient achieving 90% efficiency at
+around 25 amps they do of course drop in
+efficiency as you approach 40 amps they
+do not improve their current throughput
+as you lower the operating temperature
+as they are packaged limited not silicon
+limited so basically you can run them at
+125 degrees just the same as you can run
+them at like 20 degrees not that they
+should run at 125 degrees as the DRM is
+a you know with the phase count that
+Asus has gone for this vrm is capable of
+supplying 320 amps on the vcore voltage
+so you should never actually be reaching
+that 40 amps per phase limitation that
+this vrm design has here and as such you
+should never really get that hot so you
+know very nice job from Asus on the vrm
+this is perfectly capable of handling
+any air-cooled overclocking water-cooled
+overclocking even ln2 cold overclocking
+this really shouldn't have any issues
+interestingly enough this is also the
+same exact erm design that you would see
+on a loss of z2 70 rog board where it is
+unsurprisingly a lot more overkill than
+it is here because then is an 8 core and
+therefore tends to be more power hungry
+as you really crank up the crank up the
+overclocks
+the SOC uses the exact same offset and
+so ends up with a 160 amp power
+capability also at 125 degrees so really
+this vrm right here is really really
+overkill and especially the SOC par at
+160 M is kind of ridiculous and I am
+kind of suspecting that the reason why
+the
+system-on-a-chip section of the VRM is
+so like capable of delivering such high
+current is that in the future when we
+start seeing rising based AP use the GPU
+portion of those will run off of the SOC
+voltage not the V Corps and there's a
+good chance that some of the integrated
+GPS we will be seeing later down the
+line might actually be very very
+powerful both in terms of power draw as
+well as performance so the high phase
+counts that you see on Zen motherboards
+compared to say like V 270 which usually
+only uses two phases for the eye GPU it
+can be you know can probably be
+explained by the difference in the GPU
+cores that will be coming on the AP use
+so that covers what powers the CPU so
+let's move on to what power is your RAM
+ddr4 vrm is located right over here
+unfortunately I have no idea what it's
+controlled by not that it matters too
+much since Ram is very very low power it
+is a two phase erm which is actually a
+higher phase count than which you will
+find on most other m4 board's most other
+m4 boards opt for a single phase design
+well Asus has opted for a two phase the
+MOSFET right here our Nyko semiconductor
+which is a budget mosfet maker is one
+way to put it
+so Nyko semiconductor pa1 6ba
+you can't find a datasheet for this
+small set but you can find a datasheet
+for its predecessor which isn't a whole
+lot worse in terms of specifications so
+for my calculations I use the datasheet
+for the previous version of this MOSFET
+not the PE a 16 I use the PE 6 1 6 VA so
+yeah which was recommended to me by a
+you know by an Asus engineer when I
+asked about what the what the part
+numbers are here
+so this vrm setup using as you can
+clearly see 1 2 3 4 MOSFETs is good for
+30
+four amps thirty four amps at 125
+degrees centigrade and you know is
+ridiculous overkill for ddr4 as ddr4
+pulls very very little power with most
+explain 2 to 4 watts for each stick so
+even if you have four sticks in there
+you're only going to be pulling around
+16 watts at one point - - like 1.3 5
+volts so very very low current demand
+for the vrm that isis has opted for it's
+you know there's no heat sync on this
+vrm for a reason it's because it really
+doesn't need to do that much work so
+nice job from Asus there as well and the
+fact that it is a two-phase could leads
+to this board having some memory
+overclocking advanced some advantage in
+memory overclocking compared to other
+boards which don't necessarily use a
+two-phase design which would then suffer
+from slightly worse voltage regulation
+so that covers all the V RMS that you
+really really need to worry about on
+this board interesting little
+overclocking feature that asus puts on
+their rog series motherboards is this
+this little hole inside the CPU socket
+so that exists to give you to allow
+extreme ln2 overclockers to basically
+put a thermocouple in right behind the
+CPU to measure if there is - basically
+check the condition of the thermal paste
+between the ln2 pot and the CPU itself
+because sometimes the thermal paste
+fails when overclocking and this is a
+really good way to detect any major
+temperature difference between the CPU
+and the ln2 pot which has a thermocouple
+which most of those have thermocouples
+built in as is already so this allows
+you to check the sort of thermal paste
+condition because the CPUs own internal
+thermal sensors do not work under ln2
+as ln2 they're not calibrated to work at
+those temperatures so they read all
+kinds of random garbage
+so yeah you also do get a postcode on
+this board there are
+power on recess and other you know
+useful overclocking overclocker friendly
+buttons located lower down on the board
+which I can't show you because this is
+where the photo ends and that pretty
+much covers it for everything you need
+to know thank you for watching like
+share subscribe leave a comment down
+below if you have any questions you can
+go check out the full rise and review up
+on the gamers Nexus website and please
+do consider donating to the gamers Nexus
+patreon to of course support what we do
+here thank you very much for watching
+and see you next time
+you</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

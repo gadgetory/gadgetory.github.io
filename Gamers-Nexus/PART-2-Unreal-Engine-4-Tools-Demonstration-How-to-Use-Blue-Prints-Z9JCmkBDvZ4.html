@@ -1,0 +1,341 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>PART 2: Unreal Engine 4 Tools Demonstration - How to Use Blue Prints | Gadgetory - Your Gadget Factory</title><meta content="PART 2: Unreal Engine 4 Tools Demonstration - How to Use Blue Prints - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">PART 2: Unreal Engine 4 Tools Demonstration - How to Use Blue Prints</li></ol></div><h2 class="post__title"><b>PART 2: Unreal Engine 4 Tools Demonstration - How to Use Blue Prints</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/Z9JCmkBDvZ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">I'm going to rotate a little bit and you
+can see it's shining a little bit of
+light on well we could take the whole
+thing and scale it a little bit and that
+might kind of help make it a little more
+visible oh also when I hit play then
+make sure that playing to the location
+of the camera not from the players start
+that way we don't accidentally jump
+around a location they don't really want
+again so what I'd like to have happen
+here to be able to walk up to this light
+and just turn it on and off using the e
+key right now when i hit a all the cow
+blow up to let's fix that first i'm
+going over to my project settings once
+again you remember on my inputs we took
+those action let's change that over to
+our push that one key over and then
+we're going to add a new action mapping
+which i will call use
+expand that what's actually set this one
+to the e key so a little more
+conventional so when you might have
+actually seen in one two or five
+thousand different names you might have
+played now here's the deal our cows
+Boughner we set up earlier week she did
+we told that it should always be
+listening out from inputs from the
+player but general that's not how I
+handle things it wouldn't be a lot more
+I guess elegant with how you handled
+inputs and how you pass them off between
+different players so let's start there
+let's set up our little waltz cons here
+so that it can dynamically handoff
+control to the player and take it away
+and a common way to handle that is by
+approximate only when the player is
+close to something should they be able
+to actually use it when they step away
+from it they shouldn't be able to use it
+anymore now it's pretty easy to set up
+in blueprint it's affecting a lot of
+ways it's very similar to how used to do
+things in kismet if and you've ever
+played with that that things like
+trigger volumes and whatnot we're going
+to do something really similar let's go
+over to our components list and here we
+could see the wall sconce leads to the
+light component that makes it up chooses
+list of components we're going to add a
+box component now we're going to resize
+this a little bit so we can move it
+around freely we can scale it we have
+all the same types of controls that we
+have in viewport it'll make us a little
+bit wider or something to be super wide
+and pull that in just a little and will
+kick up its thickness and then I'm going
+to try to make it kind of flush with the
+back of the light fixture it does not
+have to be perfect this is necessarily
+need to be an exact science but if you
+get a lot of these overlapping you could
+run into problems you want to keep this
+clearly trimmed down to just the object
+you want to interact with let's call
+this essentially give us a
+amzil rename it trigger perfect now back
+over here in our crap we're not going to
+worry about the construction script in
+this case just to show off what the
+construction script is doing is allowing
+us to set some public variables for our
+lights you see over here i have the
+brightness that i can adjust and get
+real time feedback you take the light
+color and make that really anything we
+want and that's because each time I make
+a property change the construction
+script is fire now in terms of gameplay
+the construction script will only fire
+the moment this is spawned when you play
+and then it will never fire again so
+it's a way for you to have some in
+editor behavior as well as using the
+event graph or your in-game name so in
+terms of that let's take our trigger
+which i just added a moment ago I'll
+drag that in except let's not drag it on
+I'm sorry we're just going to select it
+over here the mindprint list right click
+it at the very top you see we can add
+events for it and one of these events is
+called on the component begin overlap
+which is a little bit of a mouthful but
+what that means is when we have entered
+the space of this volume when it is
+overlapping with us we want to do
+something on that note that reminds me
+over in our components we want to make
+sure that that trigger has some specific
+collision properties an easy way to do
+that is just change its preset will tell
+it to behave like a trigger so it's just
+that happens to be one of the names of
+presets if you want to know what that
+does if you're the kind of person says I
+hate presets because I never know what's
+going on in the hood all it's doing is
+changing a series of checkboxes about
+how you're going to collide with objects
+already got a walk stuff are you going
+to register overlaps and stuff what
+types of objects do you want to collide
+with a non collided and so on we're
+going to use the trigger preset to save
+a speed and then on our component begin
+overlap we want something to happen what
+we're going to do is we're going to
+enable input we are going to tell this
+light a when something steps into your
+volume we want you to start listening
+out for inputs and that's fine the note
+said that's cool but where we're
+listening to it was from it's going to
+ask you to provide a player controller
+now in my case I'm going to again cheat
+for the sake of speed and we are going
+to say get player controller and it will
+feed us one by default this is hard code
+into player index zero right now we're
+we have a single player game so player
+and x0 is perfect if you started having
+multiple players there are some note
+that you have access to that would allow
+you to dynamically check which player
+just entered into the volume and then
+set your player controller accordingly
+we're not going to worry about that in
+this case so we have enabled input and
+we can already kind of test this out we
+just need to set up the rest of our
+actual toggling behavior so remember
+earlier we made that action input for
+the use event so we slay that to the
+inky so here I can right click and let's
+type use and I get an event for that
+just like we did earlier with the cow
+self-destruct system so what we'll do is
+just say when we hit this button we are
+going to take our light component which
+is point like to in this case and we are
+going to toggle it
+we'll plug that in like step and toggle
+is going to go either way so that's fine
+don't worry among other than that there
+is one problem still remaining but I'd
+rather show it to you to tell you what
+it is so let's go ahead and hit play and
+now I can walk up to the light actually
+let's get way back here for starters so
+I'm hitting the key key and nothing's
+happening let's walk up to the light and
+now when I hit the e key we can turn it
+on and on but there's a problem now if I
+get away from the light really far away
+from light and still turn it on and off
+that's because we enabled that in we
+never disabled it we never told the
+light to stop listening to the player so
+let's do that really quick it's pretty
+easy to do we need to select our trigger
+right click one more time and this time
+add an event this one will be called on
+component and overlap so now we're
+stepping out of the volume and what are
+we going to do we are going to disable
+input and just as before it's going to
+say so who should we stop listening to
+well I'll stop listening to that player
+controller we set up a moment ago
+compile play
+and I hit from back here head
+everything's just lock
+any question on excuse me any questions
+about this so far yes sir
+so at it at this time there's not that
+is something that we have been
+discussing but I mean until we have like
+actual plans on the table I can't really
+talk further about it but it does get to
+be compiled code so I mean it exists
+somewhere we just haven't really gone to
+that other step however the good news is
+you have access to the source code so if
+you want to go ahead and write that for
+us then you totally do that we probably
+really appreciate it though I'm so sorry
+I'm supposed to repeat the questions
+back and I get carried away the question
+was do you have access to the whatever
+the blueprint is doing in code meaning
+like if I create a really cool blueprint
+network can I see the code that gets
+created under the hood and then make
+changes to that the answer is at this
+time no but it is something we have
+discussed a little bit here and there I
+just I can't really promise anything
+until we have a plan right were there
+any other questions and I will try to
+repeat things yes sir not the other way
+around if you start a sequence of
+project you get any other visual aspects
+so if you didn't hear that the question
+was it can you work the other way you go
+from code to blueprint and the answer is
+yes that's actually what we do a lot of
+the studio so programmer can go in and
+create a class that can be fairly
+generic and then start exposing elements
+of that class by a blueprint and then
+you can use those bug those hooks if you
+will and change them around so one of
+the things we do for instance is a you
+know the designer will go to a
+programmer say I need a generator that
+allows me to create power to power these
+things but I'm not quite I don't care
+about what model is going to be attached
+and so on so the program will create the
+very basic behavior in a generic class
+expose the hooks that need to be changed
+by an artist to blueprint so the artist
+who knows nothing about program you can
+go in and make their records and changes
+and turn it
+and they want any other questions yes
+sir so when should a gameplay element B
+and blueprints what should it be in C++
+that's always going to be like a
+question right so the good news about
+blueprint is it becomes compiled code
+you're looking at speeds they're very
+similar to what you saw with unreal
+script so just like with any scripting
+language on well script included once
+you start having to get really low under
+the hood like individual physics
+calculations like let's say you're doing
+a vehicle I wouldn't necessarily do a
+vehicle in blueprint because you need a
+lot of dynamic access to stuff going on
+in physics so at that point I would be
+reaching for C++ code for most other
+things things that tend to run more
+asynchronously use blueprint whenever
+you can I mean it's going to remain
+super fast super performant you can make
+entire games in it again because it is
+in effect a compiled scripting language
+sir
+can't blueprint reach out and touch a
+mysql database where you have basically
+handles i was trying to dig through all
+of the nodes that i know from blueprint
+and there's like thousands and thousands
+there's not a native one bit would be
+really easy to create you would just
+create your class that handled your your
+sequel database and then you just expose
+the hooks that are artists needed say
+for instance they need to populate that
+with an array you would make that array
+public and accessible to blueprint they
+can now bring in that know they can
+execute what it fires and they can now
+feed an array into it and start setting
+stuff out the database that make sense
+cool any other questions yes sir
+so unreal engine 4 can run on pc and mac
+we're not calling a unique add any more
+just and I'm only saying that because I
+want to make sure I understand what
+you're saying so unique a is still a pc
+product on religion for is pc and mac
+any other questions yes sir
+oh so what do you do about the c++ code
+on Matthews Xcode yes I'm noticed a lot
+of people Mac does have an IDE okay
+sorry i'll try not to troll the back
+users any more than that attitude today
+I need anything else all right yes sir
+but multiple people so we can do that in
+a village before the same way we could
+it on religion 3 you would use something
+like level streaming and make each
+artist responsible for a specific
+section of a level that gets streamed in
+individually and when you're done if you
+need to reevaluate how things are
+strained in of course you can say take
+this part that the artist was building
+that was stream and now let's make it a
+permanent part of this level and maybe
+reevaluate how everything else get
+stringed in but that's generally how we
+do it right you'll take a level bust it
+up into certain sections or in some
+cases certain tasks like your you know
+your high-end final look artists who may
+just be going in and adding bits of
+foliage or decals here and there and
+they're all going to have their own
+stream levels that represent what
+they're working on and they can work on
+all those at the same time at any point
+you can just reload the map and ever all
+changes this have been saved out come
+right in anything else all right well
+that hits us pretty much right to the
+mark I want to thank all of you guys for
+attending please be sure to get your
+hands on a religion for if you haven't
+yet remember that once you subscribe
+even just one time what you get is yours
+to keep and will not magically stop
+working so you have really very little
+excuse to not get your hands on these
+tool to start making Navy with them
+thank you all very much enjoy
+these easy</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

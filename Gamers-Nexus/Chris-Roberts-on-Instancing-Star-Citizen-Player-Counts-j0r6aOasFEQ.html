@@ -1,0 +1,585 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Chris Roberts on Instancing &amp; Star Citizen Player Counts | Gadgetory - Your Gadget Factory</title><meta content="Chris Roberts on Instancing &amp; Star Citizen Player Counts - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Chris Roberts on Instancing &amp; Star Citizen Player Counts</li></ol></div><h2 class="post__title"><b>Chris Roberts on Instancing &amp; Star Citizen Player Counts</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/j0r6aOasFEQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey everyone this is steve from gamers
+nexus tonight I'm joined by chris
+Roberts hey about and working on star
+citizen of course and we're here at PAX
+East this content will be focusing on
+instancing and handling multi cruise
+ships and players and all these sorts of
+things I've lost the technical talk for
+the people who are into that be
+obviously want to try and get as many
+players into one server instance as
+possible and sort of limitations are
+mostly to do some of its network traffic
+bound and some of it is just sort of
+rendering bound because we have a much
+higher fidelity you know in terms of
+both graphical and the simulation so
+even on the network traffic you tend to
+have to communicate more information
+about the various components and the
+ship that you have that like in a sort
+of more traditional MMO you don't really
+have to do much 10 my character is now
+walking over to this point because
+that's what you clicked on whereas in
+with us we have a whole bunch of the
+simulation criteria but would we know
+we're actively working on things to try
+and you know increase the the count
+which partly is optimizing our own code
+of testing our server code and then
+partly being smart about how we manage
+the rendering and the update of things
+so you know where the yeah the former
+cry engines default multiplayer setup
+and actually most of the FPS multiplayer
+setups isn't very useful for the way
+stars's and works because you know most
+of the stuffs in space and you tend to
+have you know areas of huge emptiness
+and then you have areas of a lot of
+density right so like if you think of a
+capital ship and inside that capital
+ship is like an FPS level and they could
+be lots of NPCs or players aboard and a
+lot of geometry detail then that capital
+ship will be flying in a big empty space
+and so traditionally most engines sort
+of have like spatial partitioning
+systems and sort of kind of assume a
+fairly constant density of data so
+most FPS is use things like cock trees
+and stuff which are quite good for now
+you know okay I've got to build out like
+my FPS level and it's got you know every
+5 meters it's got a new piece of
+geometry but that doesn't work so well
+for us because we can have that but then
+we can have huge areas that have nothing
+and so it's not particularly efficient
+to sort of Traverse or deal with that
+data recluse and inside that so we're
+you know we're working on this thing
+which I've talked about a temp of the
+Chairman and I think there was a
+question about zone so it's now was to
+watch that and ask the question so we
+have this new thing that's that's sort
+of called the zone system and it's sort
+of the best way that we've come up with
+to do sort of good spatially putt
+partitioning of our sort of data and
+updates and you know we're trying to
+unify into one system because a lot of
+things in like most engines there's like
+a separate partitioning system for the
+rendering and there's a different one
+for the entity updates and then there's
+a different one for the network traffic
+well the idea what this is to put all in
+one zone system that can be used by
+rendering it can be used for visibility
+occlusion that can be used for updating
+can be useful for intelligent network
+updates and stuff like that and so the
+concept of the zones is really just sort
+of breaking things into containers that
+are sort of logical so you know say
+though could be orbit around terror and
+that could be the zone that contains you
+know taro the planet and the ships or
+the space stations in direct orbit
+around it now there also could be a zone
+in one of the ships that says okay
+here's a spaceship is on its own and
+then inside the spaceship it has
+multiple zones where each we could think
+of each room being his own so really
+it's sort of like a a way to sort of
+create hierarchical data structures that
+are not necessarily limited to specific
+dimensions of sizes it's sort of
+flexible and fluid and you know so if I
+move a spaceship a big spaceship that
+has you know all these different rooms
+and characters inside well it's actually
+at one's own that contains a bunch of
+other different selves now using this if
+we just update the position of the
+spaceship zone so it's updating inside
+this big point of interest own which is
+the Terra one well you know I just
+thinking of the structure in the code
+this way you just have to change the
+position of the master the spaceships
+are and everything inside it is all
+relative to it so you don't have to
+update any of it you don't have to
+update any of the children you just do
+the master and then all the update and
+rendering code is fine for so it's just
+much more efficient like the way say
+CryEngine works and a lot of other
+entrance work is that you tend to have
+this trickle-down so in the old way and
+be like I have children of a parents
+here spaceship and inside the children
+would be like other players or rooms
+typically what happens as i move the
+spaceship and then it cycles through all
+the children and updates their positions
+too so it's sort of changing the kind of
+paradigm around so you're always sort of
+updating sort of so it's I guess the
+easiest way to think of it is a lot of
+local space coordinates right so you
+know most engines have this concept of
+like world space and then local space
+and then local space would be relative
+to your parent but with its own system
+that's sort of like doesn't stop right
+there is any new challenges using that
+system instead well I mean it's a big
+challenge in that it's a it's a it's
+something that isn't in CryEngine so
+we're basically putting that in and you
+know replacing the octree and the the
+physical grid the you know cause like
+the physics system because another one
+uses the physics system in pray engine
+has its own sort of like aunt
+grid for the physical entities and then
+there's another grid for the entity
+system because the answer these systems
+different than the physical entity
+system and you know so you have all
+these different systems and the AI has
+its own has its own AI objects that move
+around with entities and they have their
+own grid that they get worked around so
+and you know network has its own sort of
+the networking has its own sort of
+distance colleague so these they have
+all these different systems that
+essentially kind of do the same thing
+which is sort of to intelligently clout
+things that you don't need to render you
+don't need to update and so we're trying
+to unify it so you know we could be more
+efficient and they could all sort of be
+speaking the same language and so that's
+a big challenge because you know this is
+going in the high level we're lucky
+enough that we've we've hired you know
+we have 20 odd people at frankfurt now
+we're going to grow it to at40 and you
+know the core of our frankfurt team the
+core of the CryEngine like guys that you
+know work built far-right alumni and
+crisis and yeah so we've been lucky
+enough to hire some of the some of the
+original architects of CryEngine and so
+they're the ones that know yeah I just
+low level stuff that we're doing and
+they're actually leading the charge on
+this stone system that you know I'm
+pretty confident that we'll get it to it
+it'll be implanted well but it's it
+that's it that's the you know that's a
+fairly large we're just on the tail end
+of the large world implementation which
+is moving the engine the 64-bit so
+that's pretty much done and then the
+next stage is its own system and those
+things together is sort of a going to
+allow us to have these really large
+spatial areas the because you literally
+will be able to fly from one side of the
+system apps the other side of system map
+all the way it will all be sort of in
+the same space and but you'll be flying
+in and out of these zones so for
+instance you know where I think I've
+talked about like quantum jump when you
+sort of like it's like you're fast
+travel yeah well that drops you out and
+it drops you out to like the zone it
+would drop you on the zone and as you
+get close to the zone it would go okay
+in this sound I have an asteroid field
+so let's start streaming in the data you
+know
+the geometry we need for the asteroid
+fields and I'll create the asteroid
+entities in the background of there's a
+you know for pirate ships on a stream
+stream in the geometry on e for them and
+create them in the background and so
+that's all known because as we move
+around based on why we have the zones
+the zones sort of contain what's inside
+of them and then we can use the zone
+system to sort of tell the streaming
+engine what things it needs to stream in
+and it also could be used to you know
+for the network communication so because
+if I've got some players here over here
+in his own over here and I got some
+players over here in his own over here
+all on my server well the clients the
+clients here don't need to know anything
+about these clients right so what the
+server would do would be like it would
+be telling all the clients in this zone
+what they were doing and the clients
+over here and these what these guys are
+doing but it wouldn't be sending
+messages to these guys about what these
+guys doing because they're not going to
+be closed today so that's all kind of
+the sort of things that the zone system
+buys us by having it sort of unified
+because you know previously the
+networking system sort of it was more
+about well if he's so far away maybe I
+don't give you so much data but it was
+on a very sort of you know view around
+the camera basis so it didn't have this
+concept of like potentially because what
+we want to do is we want to have the
+server to be able to be loaded up with
+it many players as possible so
+essentially the server should be able to
+save our player counts 50 or 100 people
+they should be all simulating even if
+they're not all close to each other they
+could be all spread around the system
+and then as more and more people get
+join in the system we would probably
+spin up another server and if there was
+like 50 people here on 50 people here
+well then these 50 people would go on
+stay on the server these 50 people be
+moved on to a new server it all be
+seamless in the background you would you
+realize that you just got handed off to
+another server because from your point
+of view as a client you only see the the
+world around you so and that's kind of
+how the game works the game works it on
+the client side it's all the your view
+is around you and what the service
+telling you is you know who you're going
+to see like basically the server because
+the service sort of sees the big picture
+sure and it's using the zone stuff so
+it's okay you're going to be getting
+close okay Steve's coming up in a ship
+over here so clients start streaming in
+Steve ship and set up as density because
+you he's you know 20 klicks out of 30
+klicks out so really the set all the
+server's doing is telling the various
+clients kind of what they can see in the
+radius around their worldview and partly
+that's determined by the zone system on
+the server side and then also done on
+the client side this seems seems like it
+would assist in larger scale battles
+larger in terms of actual space concerns
+not necessarily player counts yeah well
+and also also potentially can help and
+play account so this like so one example
+is you know like so we have
+single-seater ships but we also have
+multi cruise ships right right so now if
+you think about it if I'm in a big space
+battle and now there's a address or a
+bengal carry or whatever from my point
+of view when i'm in space unless i'm
+like right up next to that carrier i
+don't know what the people are doing on
+side the carrot carrier now so like
+maybe if i'm by the bridge like a look
+in the windows the bridge i should be
+able to see people but if I'm you know
+100 meters away I just know there's a
+carry there so I care what position the
+carriers in what where-where's guns are
+pointing but I don't care like what the
+50 people aboard the carrier is doing so
+you know with what we do with the zone
+system you know one of the potentials is
+we potentially could have sort of the
+simulation I mean certainly on just a
+client side you get the efficiency very
+rendering and all the rest of stuff but
+even our network side you potentially
+could have
+you know multiple game servers all you
+know basically working on the same
+battle and some of the game servers are
+taking care of the people that are
+aboard the ships during some of the game
+and one of the game services taking care
+of where all the ships are so that's one
+way that you potentially could increase
+your play account because you know you
+could maybe if your limit is oh i can
+have 50 ships or 50 players then you
+know you could potentially have 50 ships
+and then you know 100 players or 200
+players if they were aboard these other
+ships as long as they're not like in the
+same space together because if you think
+about it like inside a carrier or an
+address of something that's it sound
+like contained llevaron so you could
+have a different server worrying about
+what all the people are doing on board
+the ship and then that ship communicates
+back up to the server that's dealing
+with a space level saying well this is
+the way the guns pointing and the good
+may be pointing because you were in the
+turret moving it that way but on the on
+the other sort of space battle side the
+that server doesn't really need
+something doesn't care what you know
+like if you got yeah you know someone's
+wandering down a corridor well it
+doesn't care because you know it you
+know you're not that you don't see that
+right so so that's that's one of the
+ways that where the zone system could
+definitely help out in terms of
+potentially getting more players in is
+that you know you could say well inside
+this zone you're talking to this server
+when you're when you leave this so now
+you talk to this server out here that
+answer some of the questions we received
+about larger ships with multi cruisers
+that have excessively large cruise well
+yeah we do and actually also some of our
+ships even even if we manage to get a
+lot of players running around it still
+probably won't be enough on the bigger
+ship so it's probably always going to be
+some level of MPC contention
+for the bigger ships and so that again
+his own systems can be useful because
+that's useful for AI updating and
+rendering updating because if you think
+about walking around a big spaceship or
+like you know we're here this convention
+center well you know we're in this room
+right I mean I don't have a people where
+the convention center today 30,000
+whatever it is but you know there's 13
+of us in this room like so you know in a
+game you know game and game sort of
+updates like we don't we don't care what
+i was doing outside this room you know
+with you know the cameras just looking
+at us so we really just need to render
+us and so that's kind of like the idea
+of zones is that you sort of can you
+know we're in this room we're in now is
+his own right and you could even think
+that this small like you know the the
+sub sub group thing with the curtains we
+have here is as small as own inside a
+bigger zone and that's kind of what
+that's the advantage of the zones is
+that you can sort of partition ate it
+partition it logically based on sort of
+these areas and containers and it works
+very well for space for what we do
+because we in status and maybe not so
+much it wouldn't like an open level like
+I'm going a far cry and it's all open
+that's harder to container and he's
+right because you're just an open area
+but their spaceships you know space and
+spaceships tends to even when you have
+the FPS stuff know you've got space and
+then you're inside a ship and then even
+inside a ship is different rooms and so
+you don't really need to be rendering
+all the other rooms when you're inside
+one of the rooms so it's actually you
+know sort of sci fi space stuff is quite
+apt for like compartmentalizing the
+various information or data that you
+need to update and so it's good longer
+term we're planning to have something
+like land on an empty planet in a jungle
+and go out to do some exploring but like
+a lot of our use cases everything that
+works very well with the zone system and
+in such a way that the rendering
+occlusion works well be so that's really
+a lot of the work that we're doing and
+that brings you brought up exploration
+on planetside exploration versus beyond
+stations I suppose we're being in space
+is there actually a different
+render target for the maximum amount of
+players in that area or I imagine it's
+not all uniform yes yeah it's hard to
+say right now because we're now yeah
+we're still in the we're still in the
+stage of there's a lot of optimization
+that has to happen on the show to get
+our player council because the problem
+what happens is even when people play
+some arena commander now and they may
+sort of experience some rubber banding
+what happens is when the server itself
+drops its frame rate like it's not
+stimulating at least 30 frames a second
+as a sort of what we call the game
+server so we have we actually have
+multiple servers you know in the big
+starters and set up the game server is
+what your client connects to and that's
+the one that sort of is sort of the
+CryEngine server so to speak right now
+there's another set of servers that go
+above that that because the game server
+is never designed to be persistent it's
+basically designed to sort of operate on
+a situation just like say I'm play
+battlefield that I get together with a
+bunch of the people and I start scenario
+filing that's that's a lot quiver to the
+game server but our game servers are
+always getting span up and span down all
+the time they're not so much persistent
+why is persistent is the universe and
+what you own and then there's then there
+then for each system there's the system
+server and the system server keeps track
+of all the players inside the system and
+also the AI and it's the one that's
+almost doing sort of this contextual
+matchmaking so it goes oh you're flying
+from planet to planet p and i'm flying
+over here and you know we're going to
+cross paths at that point goes okay
+crossing paths and then it just run
+through sort of a contextual matchmaking
+which would be some things like you know
+are we enemies do we both won a PvP are
+we equal skill or something like that
+are our pings small enough and then you
+know it basically makes the decisions
+and if it says yes we will see each
+other it essentially gets a game server
+spins it up if there isn't one already
+existing and and and tells our clients
+hey you're now talking to this game
+server
+and you know and then you know tells
+your client that you'll be seeing me and
+tells my friend I'll be seeing you and
+then let's that get simulated until it's
+resolved and then we go back into sort
+of quantum drive or whatever and we're
+handed back up to the system server
+that's now deciding who will see or
+what's instance we get put into and then
+there's another level above that which
+is the universe server / simulation and
+that's the one that's sort of running
+the economy and simulating 20 million AI
+agents running around you know bag
+things selling things fighting each
+other doing all the rest of the stuff
+and so that on the universe side you
+know that data trickles down to the
+system servers and the system servers
+sort of take that data and then use that
+to you know have various encounters that
+you potentially and those encounters are
+always sort of basically these templates
+of encounters that you'd have that are
+dynamically or procedurally created
+based on what's happening on the
+universe server and then so that
+encounter template and where we all are
+gets fed down gets all crunched together
+it decides whether we're going to fight
+in a I see another player depending on
+our positions of any what we're doing
+and then once it's made a decision of an
+encounter that's going to happen it
+tells you client okay here you are his
+game so were you talking to here's the
+scenario this happen right sure and so
+I've Canada that's the setup so the area
+that we need to get the performance for
+to get most number of players is not the
+higher level stuff because that's not
+something that's sort of real-time it's
+the game server level and that's the
+challenge because whenever that sort of
+drops below 30 frames a second in
+simulation on the server side that's
+when you start to see things I grew up
+banding and stuff I'm sure glad to sync
+and so part of the problem that we have
+is that our spaceships for instance the
+far more complicated objects or entities
+then say something like in crisis where
+it's just a character running around
+and so you know right now there's a fair
+amount of network bandwidth has taken up
+by shunting around the extra data and
+also just because they're much more
+complicated entities is a lot more CPU
+time that's taken up by updating these
+entities so while we're looking at is
+more efficient ways to update it where
+we can optimize how it could be smart
+about and that's also part of where the
+zone system comes in where you know just
+sort of brute force updating it you've
+got sort of intelligent updates based on
+where you are what your distance is all
+that kind of stuff so that covers all of
+the instancing information a lot of you
+posted questions hopefully this answers
+some of them if it did not please leave
+a comment below we'll see what we can do
+about that and of course as always
+thanks for your time Chris are you
+welcome thanks for the listing rambling
+on about his own sister absolutely
+occlusion it all that kind of stuff
+better and I hope you guys are
+interested in that I liked it it's a
+kind of a fun sort of engineering
+challenge and I'm pretty excited about
+getting it all work which is the sort of
+stuff that's towards the end of the year
+you're going to see the fruits of it
+it's squadron 42 and the you know the
+very first sort of baby steps the
+positioning universe which will go
+through the end of the year so a lot of
+work but I mean it is pretty fun because
+I can see this just of this if it all
+works it's going to be awesome so thanks
+for listening yeah links would be Robert
+space industries com and of course
+gamers Nexus not now for our own
+coverage and we will see you all next
+time alright see you next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>PCB Analysis of Gigabyte 1080 Xtreme WaterForce (w\/ Buildzoid) | Gadgetory - Your Gadget Factory</title><meta content="PCB Analysis of Gigabyte 1080 Xtreme WaterForce (w\/ Buildzoid) - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">PCB Analysis of Gigabyte 1080 Xtreme WaterForce (w\/ Buildzoid)</li></ol></div><h2 class="post__title"><b>PCB Analysis of Gigabyte 1080 Xtreme WaterForce (w\/ Buildzoid)</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/39xL4oi_-XA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">guys bullseye here and today we're gonna
+be taking a look at another GT x 1080
+PCB this time the gigabyte extreme water
+force card
+this also shares its PCB with the
+extreme gaming which is the air-cooled
+version of this same card if you would
+like to see the rueful review over the
+card you can find a link to that in the
+description down below and with that out
+of the way let's get to actually taking
+a look at this PCB first things first we
+have the core voltage vrm right here and
+that provides power to the GPU core down
+here we have the 1 volt PLL voltage this
+is a extra voltage that is required to
+make the GPU core work but it's not
+really an important vrm it's very
+low-power it doesn't have any impact on
+overclocking and it you know isn't
+impacted you know by overclocking in any
+in any way either and so it doesn't
+really matter and you know we're not
+gonna actually cover that one in detail
+over here we have the memory vrm that
+provides power to the gddr5 X chips
+surrounding the GPU core and in this
+area somewhere there is the 1.8 volt
+rail which also goes to the gddr5 X
+chips and basically it's again a
+low-power vrm and it's basically just
+necessary for the gddr5 X chips to work
+they take the bulk of their power from
+this VR I'm over there so with all of
+the v arms identified let's actually
+take a closer look at what they're made
+up of first of all the core voltage is a
+12 phase VRM we have 1 2 3 4 5 6 7 8 9
+10 11 12 inductors or chokes whichever
+you prefer to call them and each of
+these has its own
+dr. Moss power module so each of these
+has you know a power module
+unfortunately the thermal pads cover
+some of them but you know if those
+weren't there you could see that there's
+actually 12 of these so this is a real
+real 12 phase design
+these dr. Moss power modules these are
+FDM f68 23 seized from Fairchild
+Semiconductor these are rated to do 50
+amps at 300 kilohertz or 45 amps at 1
+megahertz so you know they're plenty
+powerful and with you know this 12 phase
+vrm and one of these per phase you get
+around 540 to 600 amps of current
+capability through this vrm here
+obviously if you've watched my previous
+a previous PCB breakdowns you would know
+that the that getting a face count above
+eight phases requires some extra extra
+circuitry and this being a 12 phase it
+needs to use doublers or at least
+doublers or quadruple errs to actually
+achieve the 12 phase twelve phases so
+this is done by these three ICS on the
+PCB these are u P 1911 ours each of them
+takes in a pwm signal from the u p9 v 11
+located over here so this is the V RM
+control chip so that monitors the vrm
+output voltage power draw and everything
+for this here v RM and it feeds each of
+these 1911 or piet 1911 our chips a PWM
+signal and also monitors the current
+readings that are coming out of those
+and those then take that PWM signal and
+feed it into four four of the four of
+the dr. most modules located in the the
+RM itself now these chips do have a
+downside they cut your switching
+frequency to 1/4 of what you're feeding
+them so essentially it means that you
+have less accurate control over each of
+the phases
+however gigabyte can actually get around
+this you know downside of using these
+chips by using a really high switching
+frequency from the 9
+95 11 and the 95 11 can provide up to 2
+megahertz switching frequency so you
+know that's basically 2 million
+updates for you know you know most fad
+like phase updates per second and
+basically when though that goes to the
+or drew blur that means each phase can
+be updated as many as five hundred
+thousand times a second so it can adjust
+the current through that phase that many
+times each second that means that as
+long as gigabyte uses a reasonable
+switching frequency on the you know the
+you p95 11 the erm actually runs you
+know actually relatively clean power on
+par with basically any other GT X 1080
+because 200 to 500 kilohertz switching
+frequency is the usual vrm switching
+frequency that you'll see on most
+graphics cards and really going above
+that is generally completely unnecessary
+unless you're doing extreme overclocking
+or something like that and even in those
+cases it often doesn't really help
+anything because most V RMS can get away
+with can actually do very very clean
+power at you know 200 or 500 kilohertz
+already so really running super high
+frequencies isn't a requirement so the
+fact that gigabytes using these
+quadruple errs isn't isn't a major
+downside however it is still interesting
+that they use quadruple errs and I'm
+pretty sure that you know and this the
+reason for that is that quadruple errs
+are relatively expensive and they don't
+like it doesn't really make sense to use
+them in many situations like this where
+you could have just used six PWM signals
+from the from the control chip and then
+use doublers to actually get your twelve
+phases however I do believe gigabyte
+opposite for the quadruple errs because
+this card has display outputs all the
+way over here
+as well as over here and the way these
+guys work is that there's the
+these switches over here so you have
+display so normally your display signal
+goes to the back of the card but if you
+would like to the card will put the
+signal to the towards the back and then
+this switch will actually send it around
+to the other end of the card and this is
+for VR so that you can hook up a VR
+output to the front panel of your you
+know of your tower and basically by
+doing this there's a lot of extra traces
+that have to go through the PCB and that
+means there's a lot less available space
+to route traces for the 12 phase vrm
+which would normally require a pretty
+significant amount of phases traces
+coming off of the control chip located
+right there
+so gigabyte obviously seems to have
+opposite for the quadruple errs to
+minimize the amount of traces coming
+directly off of the off of the up9 95 11
+and tried to spread them out between the
+quadrupolar chips around the card
+so overall the core voltage vrm is
+perfectly fine ridiculously overkill for
+a GTX 1080 as I said before something
+around you know between 540 and 600 amps
+depending on how switching frequency you
+go by opted to feed into the quadruple
+errs and the reason for this partially
+is because this vrm in this in the water
+force card there is no air flow in this
+area because there's no fan and there's
+actually no airflow anywhere on the PCB
+of the card so all of the cooling of the
+card is has to be taken care of by just
+you know a passive airflow from your
+case fans or from the fact that hot air
+rises and everything and then the the
+bulk of the heat of the card is then
+taken care of by an a i/o cooler sitting
+over the GPU core right here and that a
+i/o cooler has a copper plate that
+covers all the gddr5 X chips so those
+are well cooled and then there's a heat
+pipe coming off of an aluminum block
+that you know is in contact with the
+core voltage v RM right
+and that then pipes heat into the copper
+copper plate that the AIO cooler uses to
+actually also cool the gddr5 X chips so
+that's how gigabyte basically cools the
+vrm but because this isn't a
+particularly efficient way to cool of
+erm it does mean that they've probably
+you know did this ridiculous amount of
+over spec on the v RM partially to
+compensate for the fact that the vrm
+temperatures are going to be less than
+you know less than optimal they're
+really gonna be quite up there because
+that one heat pipe having to take all of
+this heat is through an aluminum block
+and through several like the thing is
+like when you're bonding heat sinks
+together you know you have aluminum
+block solder copper heat pipe solder
+copper copper cold plate for the water
+block and that's just a lot of different
+materials for the heat to transition
+through and that really impedes heat
+transfer performance and that means this
+vrm even with the heat pipe will be
+running pretty pretty toasty so the
+ridiculous overkill rating here that's
+at 25 degrees ambient which is basically
+assuming that the MOSFETs are you know
+capable of being cooled by the hot air
+rises air flow whereas here in a case
+the card will most likely be upside down
+so that's really not going to work that
+great so the aluminum block is there to
+you know make sure that the ERM get gets
+at least some active cooling but even
+then it's it's less than optimal so I
+think this ridiculous car like current
+capability is just basically
+compensating for the fact that the vrm
+is gonna run really really halt because
+there's really no reason why you would
+need this on a GTX 1080 it won't really
+help overclocking performance because
+the card will never ever need this much
+current but it is you know nice that
+this vrm is so ridiculously over built
+because you basically have peace of mind
+that there is no way you're ever going
+to have this fail on you
+assuming that there isn't some
+manufacturing defect in it so props to
+gigabyte on the core voltage vrm so
+let's move over to the other major vrm
+on this card and that's the memory
+voltage VR M right here so that feeds
+the gddr5 X chips this is a two-phase
+vrm we have - chokes here it's
+controlled by the U P 1665 this is a two
+phase voltage controller with integrated
+drivers so basically there's no driver
+ICS anywhere you know around this area
+because this can actually drive the
+MOSFETs directly and speaking of the
+MOSFETs
+these are fairchild power trench power
+stages so these are not regular MOSFETs
+these are a high side fat and a low side
+FET integrated into one IC so each of
+these is actually enough to make up and
+so you know a single phase and there's
+two of them in each phase because
+gigabyte wanted even more current
+capability so they put two of them in
+parallel to get more current throughput
+the end result of this is that each of
+these has a 13 amp high side and that's
+a continuous rating so obviously in AVR
+and you can expect it to do quite a bit
+more than that and that's a 25 degree
+ambient rating so you know the passively
+cooled no heatsink no air and no proper
+airflow other than other than just
+convection so that you know that rating
+is most relevant here because there is
+no active airflow over this this part of
+the vrm and it's gonna be running pretty
+halt just because of that so I'm gonna
+go with that rating but still the
+continuous rating is still very very
+conservative because the high side
+MOSFET is basically we can turn on and
+off hundreds of thousands of times a
+second it doesn't stay on continuously
+so you can actually expect it to do
+quite a bit more than the 13 amps
+continuous rating even in this terribly
+cold scenario that it's in the high the
+low side FET is 23 amps continuous and
+that rating is actually realistically
+what it will actually
+be able to handle in this application
+because the low-side fat is turned on
+for most most of the time when in a drm
+so that one test spends a lot of its
+time turned on so you know we have 13
+amps well not even 13 so let's say you
+know 15 or 16 amps / / I see in each
+phase so that gives us about 30 amps /
+for each given phase two phases total
+you have 60 amps you know if you don't
+go by the absolute worst-case scenario
+and if you go by worst case possible
+scenario then it's 52 amps because
+that's the high side MOSFETs continuous
+rating for no proper cooling scenarios
+and this is again ridiculously overkill
+the gddr5 X on a 1080 poles around 30
+watts which with the voltage it runs
+that works out to around 22 amps so you
+know we have a we have a 52 M a memory
+vrm here so gigabyte went ridiculously
+overkill and i suspect it's again
+because there's no proper air flow in
+this area due to the lack of the fan so
+yeah does mean that if you actually
+tried to get some airflow into the
+shroud of the card this the RM is just
+going to be amazing like it perform
+amazingly and in its stock configuration
+it's also perfectly good because
+gigabyte really did go insanely overkill
+on everything just to make sure that it
+can function in the less than optimal
+cooling environment that they've decided
+to go with on the water force whereas
+the gaming extreme the all know the
+extreme gaming so that's the air-cooled
+version of this card that one would
+actually have a heatsink here with
+proper airflow over the entire of erm
+section so that one would actually
+arguably probably be a you know I have
+better erm capabilities not that it
+really matters because this isn't gtx
+1080 and even in these less than sub you
+know in these completely sub optimal
+cooling scenarios the VR i'm set up that
+gigabyte has opted for
+he's so ridiculously overkill that it
+really doesn't matter they're like
+you're not gonna see a GTX 1080 use
+anywhere near the whole capacity of this
+vrm I'll be surprised like not even 50%
+of the capacity of this vrm will ever
+really be used so yeah they're very nice
+very nice PCB from gigabyte here and
+props to them for designing such a
+ridiculous monstrosity if you think
+about it so that's that for the PCB
+breakdown like the video if you liked it
+subscribe to the channel if you haven't
+subscribed yet and do consider you know
+donating to gamers Texas on patreon so
+we can keep bringing you more content in
+the future thank you for watching and
+see you next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

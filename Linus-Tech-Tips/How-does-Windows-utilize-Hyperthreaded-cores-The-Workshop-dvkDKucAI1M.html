@@ -1,0 +1,205 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>How does Windows utilize Hyperthreaded cores? - The Workshop | Gadgetory - Your Gadget Factory</title><meta content="How does Windows utilize Hyperthreaded cores? - The Workshop - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1>Gadgetory</h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><h2 class="post__title"><b>How does Windows utilize Hyperthreaded cores? - The Workshop</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/dvkDKucAI1M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hyper-threading is a feature that's been
+on high-end Intel CPUs for a long time
+but has often been misunderstood by the
+community almost as a whole today we're
+going to check out how actually it works
+on a Windows level how applications are
+interacting with it and what happens
+when you put load on actual threads
+the mastercase 5 by Coolermaster gives
+you the freedom to truly make your
+mid-tower pc case your own with a
+variety of modular parts and accessories
+check out the link in the video
+description to learn more
+many people are vaguely aware that hyper
+threading improves performance of
+certain applications by making one CPU
+core behave as - so it can split the
+workload up more effectively but how
+does it work exactly many people seem to
+assume that there's a difference between
+real cores and hyper threaded cores I
+mean it makes sense right once you get
+into your system Windows is going to c8
+if you have eight hyper threaded cores
+and then some of them will probably be
+weaker than others is that really how it
+works
+I mean Intel's own specs could be a bit
+confusing core i7s usually have four and
+then in brackets eight listed is their
+number of cores does that mean that
+there are four subordinate cores or
+something are the four extra cores
+weaker to start answering things instead
+of just repeatedly asking questions for
+the entire video open up device manager
+on any system that has an i7 in it or a
+hyper threaded CPU you'll see that all
+of the cores in the current case of this
+system the 4790k it displays eight CPUs
+all of which show is the same thing
+that's because there is eight logical
+cores in the system when you read Intel
+spec sheet before is for physical cores
+the eight is for what those physical
+cores result in which is eight logical
+course that doesn't mean you have 12
+cores that doesn't mean you have eight
+cores physically that means you have
+four cores physically and eight cores
+logically different things they don't
+add together very different things
+so how do these cores actually behave to
+find out we use unread to set up to
+Windows virtual machines we assigned
+each VM four logical cores out of eight
+total then we ran some benchmarks to see
+if Windows actually cares well which
+logical core it's using and to see if
+there's any preference between them if
+one of them is actually better than the
+other one some people on forums seem to
+be under the impression that half of
+them like zero one two and three in
+terms of cores are real cores on half of
+them four five six and seven are just
+the extra hyper threads so we're going
+to see how that works
+results showed virtually no difference
+Senate bench got between 620 and 625 per
+VM when we ran them separately when we
+ran them both at the same time they both
+got exactly 383 so it looks like there
+is a bit of a performance hit even
+though the VM completely separates its
+logical cores but at the end of the day
+the performance was the same similar
+story on city skylines which is a fairly
+CPU bound game both got 48 fps when
+running separately with the performance
+dropping to 35 and 31 we ran them at the
+same time so there was the difference
+but not a huge one and due to city
+skylines not being our most consistent
+benchmark it might come down to just
+slightly differences within the game we
+looked at it much more deeply with 7-zip
+running it simultaneously on both VMs
+gave nearly identical results between 11
+K and 12 K MIPS but when we ran it on
+just one it jumped to 17 k2 or 18 K mips
+starting one first and then starting the
+other one a while later while it was
+running
+allowed us to see this balancing in
+real-time it was interesting to watch as
+the processes were running the one you
+started first would be running faster at
+the beginning but over time they would
+start to equal out and it didn't
+actually take that long these results
+seemed to make sense as hyper-threading
+works by sending threads to whatever the
+physical core actually has free to
+process instructions it doesn't split
+the physical cores into two things and
+leave the other half unutilized so if
+you have just one thing running it will
+perform better than if you have two
+running what's actually happening is
+that Windows can schedule two different
+threads on one physical core at the same
+time if the physical core is working on
+the first task but still has some
+resources free it can go ahead and use
+its remaining resources to process the
+second task so you won't always have a
+clean doubling or halving of performance
+if you're running one thing versus two
+but you will see substantial performance
+differences if you're leveraging the
+hyper threading feature on a physical
+core but there is no real distinction to
+draw between the logs
+cores on a hyper-threading cpu they're
+all the same thing both physically and
+how a hyper-threading aware OS like
+Windows 10 sees them so no it's not the
+same thing as having eight physical
+cores like at all but it can be a good
+way to make sure your CPU cycles don't
+go to waste
+hopefully that was interesting I'm sure
+there will be more questions basically
+the gist of it is you don't have eight
+cores but you have a much more effective
+way to utilize the four that you do have
+today we're highlighting the k7 xx
+limited edition ruby-red headphones from
+Mass drop of course mass drop still has
+a bunch of other cool products which you
+can check out in the link in the video
+description also and hopefully you guys
+know about mass drop by now but if not
+the concept is absolutely pretty simple
+the more people commit to purchase a
+certain product the lower the price of
+that product actually goes the product
+we're showcasing today is the same spec
+wise is the k7 xx headphones that Linus
+reviewed last year you can check that
+video out up here the only real
+difference is that this run uses red
+accents on the ear cups and headband
+remember that this is a limited drop so
+if you want a pair you're gonna have to
+act pretty fast these headphones were
+configured by mass drop and manufactured
+by AKG they're open-back headphones with
+large cushiony ear cups they feature a
+flat wire voice coil their motion to
+layer diaphragm genuine leather headband
+memory foam ear pads with velu
+recovering a two-year warranty covered
+by mass drop and you can order outside
+the US but a $25 fee will be assessed to
+all international orders so if you want
+to check them out and grab a pair of
+ruby red k7 xx headphones head over to
+the link in the video description today
+anyways let me know what you guys
+thought about it comments down below
+don't forget to like it if you thought I
+did a good job dislike it if you thought
+I did do a bad job but don't forget to
+leave the constructive criticism down
+below I would like to know what I can do
+to be better also feature to subscribe
+do you want to see more of our videos
+these are Amazon affiliate code to buy
+stuff cuz like that's cool I don't know
+that's pretty awesome
+also we have shirts not this one but
+they're in the link in the description
+down below you can check out some shirts
+that we have those are also pretty cool
+and we have a forum that's like awesome
+and has new software on it and looks
+super cool and like works better and
+stuff and we're still making tweaks to
+there's definitely some things that can
+still be improved the store is a little
+a little broken it's my bad anyways
+check out this video there's more
+information up there about like cool
+computer stuff I haven't picked one yet
+uh but then it'll be cool Darren but
+something go up there feel free to put
+your own video ok bye</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

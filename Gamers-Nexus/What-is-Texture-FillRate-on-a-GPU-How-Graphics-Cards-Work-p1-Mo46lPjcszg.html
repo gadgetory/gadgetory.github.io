@@ -1,0 +1,232 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>What is Texture Fill-Rate on a GPU? - How Graphics Cards Work p1 | Gadgetory - Your Gadget Factory</title><meta content="What is Texture Fill-Rate on a GPU? - How Graphics Cards Work p1 - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">What is Texture Fill-Rate on a GPU? - How Graphics Cards Work p1</li></ol></div><h2 class="post__title"><b>What is Texture Fill-Rate on a GPU? - How Graphics Cards Work p1</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/Mo46lPjcszg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey everyone this is Steve from gamers
+next astana and today we're talking
+about texture fill rates or texture
+filtering this is part of my efforts to
+define all of the GPU terminology that
+you run into when looking at new video
+cards and this is something I already
+wrote about you can hit the link in the
+annotations or description below if
+you're interested in learning more about
+texture fill rate for video purposes
+we're gonna look at the TM use very
+briefly the texture filtrate and more
+depth and then the core clock and how
+all three of these elements relate so
+when you're looking at say a gtx 980 and
+i'm using this only because i know the
+specs off the top of my head at gtx 980
+has a TMU count of 128 a core clock of
+11 26 megahertz and a texture filter
+array or fill rate of 144 point 1 Giga
+cycles per second so these are the
+numbers were interested in so the filter
+rate represents how many texels per
+second the GPU is capable of applying
+colors to of applying maps to of
+applying filtration processes to like
+bilinear trilinear at anisotropic
+filtering and its measured in Gigot
+axles per second so you've seen these
+settings in games before whether or not
+you understand them there's bilinear
+filtering try linear and nice and
+anisotropic and those filtering
+technologies effectively look at how an
+object is being drawn on your screen
+relative to the camera so you might not
+have an oblique view of an object an
+object might be like the floor in front
+of me or imagine a road in a racing game
+it's not an oblique angle to the camera
+it's an odd angle and it scales off into
+the distance like a vanishing point
+so what anisotropic filtering will do is
+help take something like the dots on the
+road that the lines the dotted lines and
+it will make sure that they they vanish
+into the distance in a smoother and more
+realistic sense without any filtering
+process at all in the old days what
+would happen is the texture would
+stretch because it's being applied to a
+square space rather than something like
+a trapezoidal space which makes more
+sense when you've got a road going like
+like that into the distance so the
+texture fill rate is what is being
+saturated when you're applying these
+technologies
+like anisotropic filtering it's also
+being saturated just when you're
+coloring a Texel because on the screen
+you've got several different objects
+you've got tons of different textures
+being drawn to each object and the video
+card needs to determine what color each
+individual dot on the screen should be
+at any given time based on your
+movements based on the camera angle
+based on lighting and shadows and all of
+this stuff and that's where we need a
+big pipe so at one forty four point one
+gig at Axel's per second that's one
+hundred and forty four billion texels
+per second that the GPU can process this
+sounds like a huge number and it is but
+it's maybe not quite so huge as you
+would think because you need to take
+into account that we're processing
+texels every second 60 times per second
+for an average of 60 fps which is sort
+of what we need as a playable framerate
+so if you've got a 4k screen just
+pretend for a second you've got a 4k
+screen that means you have 8.3 million
+pixels on your screen and that's a lot
+of pixels so the GPU it needs to draw
+these 60 times per second if you want a
+60fps and it needs to apply filters to
+them and it's drawing off-screen pixels
+for other technologies so suddenly
+you're at 8.3 million times 60 which is
+approaching 500 billion texels or so per
+second that's a lot it's not 144 billion
+which is what our number is but it's
+still a lot and then you've got to apply
+a technology like anisotropic filtering
+for X for example so now you're
+filtering it four times and you're up to
+2 billion texels per second and then we
+can draw off-screen objects this is new
+ish and gaming and that lets say off
+pretend off my camera there's a tower
+and it and below me there's a pool the
+pool is reflecting that tower and I can
+see the pool on my screen and I can see
+the reflection of the tower on the
+screen the GPU is taking these texels
+it's taking these textures it's taking
+all this data of the tower and it's
+applying it to the pool in front of me
+so it's drawing an off-screen object on
+screen and a reflection that consumed
+yet more of our pipe and that's why we
+need such a large pipe still you're
+basically never gonna approach anywhere
+close to 140 four billion texels per
+second even with the highest on games
+because you're gonna hit other
+bottlenecks before you get there and
+games just don't push that kind of
+throughput not yet anyway and these are
+things we said ten years ago when one
+Giga taxol seemed impossibly high but we
+surpassed that still though even in the
+worst case load scenario you're pushing
+one to four billion texels it's not even
+you know not even close to 144 but that
+is what texture fill rate is and it is
+calculated by taking the count of
+texture mapping units multiplied by the
+core clock of the GPU and then that
+gives you texture fill rate so in the
+case of a GTX 980 you've got 128 units
+times eleven twenty six megahertz
+megahertz and that is a measurement over
+time and then that gives you 144 Gigot
+axles per second because you can see the
+math on the screen that's how it does it
+so that's where TM use are relevant and
+each texture mapping unit is capable of
+processing one texel per purge cycle
+basically so you've got eleven twenty
+six megahertz those are cycles of the
+GPU and each TM you can process one
+texel so that's why it's 128 times the
+clock the core clock in the old days
+this wasn't always true in the view due
+to technology there were two texture
+mapping units which was a big deal and
+they weren't always as good as just
+strictly to texture my opinions because
+they had a rule each unit had to work on
+the same Texel or pixel at any given
+time so even though you've got two units
+they need to work on the same Texel and
+if the Texel only has one texture
+applied to it that means only one unit
+has a job to do the other one it's like
+hiring too many people to do the same
+job now in these days dual texturing was
+becoming a thing so there were often
+multiple textures applied to a single
+point in space where things are
+overlapping so then each unit could
+function on the same taxol because each
+unit is processing a different texture
+but it just goes to
+that the marketed rate or one 44.1 Gigot
+axles in this modern instance is not
+always representative of a real-world
+use case and this is also true with AMD
+where you've got a different amount of
+floating-point TM use from integer TM
+use so in a game that uses
+floating-point you've actually got fewer
+TM usable to you than in something some
+encoding the rendering task that uses
+integer units which will way outperform
+the FP unit so as far as texture fill
+rate and whether it's relevant the
+answer is yes with hesitation because
+all the texels on your screen which is
+every single 3d dot in space that has a
+texture applied to it needs to be
+filtered because the GPU needs to
+determine what color it should be needs
+to determine what sort of filtering is
+being applied in terms of bilinear and
+isotropic whatever how many times that
+taxol is being sampled that's what the
+four hex means it means each Texel is
+being sampled four times if you have 4x
+that's a lot that's producing a lot of
+load on the GPU suddenly and it samples
+it four times because it's trying to be
+more accurate and smoothing and
+determining colors and things like that
+and all these other factors so it's
+important but you're never gonna
+approach the numbers before you start
+hitting other bottlenecks like memory
+available or CPU bottlenecks or whatever
+really all kinds of other bada life's
+first that doesn't mean it's unimportant
+it just means that as gamers we don't
+utilize that pipes so heavily so that is
+texture fill rate and how TM use and
+core clock and everything to relate
+again link in the description below for
+the full article it might be a bit
+easier to follow with on this video
+because there are a lot of numbers and
+sometimes it's hard to follow on a video
+please like this video and subscribe to
+the page it helps a lot
+check out our new patreon page it's
+linked in the description below if you
+want to support these videos and upgrade
+the lighting or help get us to
+conventions or improve camera equipment
+check the patreon page it will help a
+lot even for a small support amount so
+that's that's this content I will be in
+CES next week see you all next time
+peace
+you</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

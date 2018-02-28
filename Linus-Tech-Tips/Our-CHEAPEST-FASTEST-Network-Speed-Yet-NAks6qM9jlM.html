@@ -1,0 +1,182 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Our CHEAPEST &amp; FASTEST Network Speed Yet! | Gadgetory - Your Gadget Factory</title><meta content="Our CHEAPEST &amp; FASTEST Network Speed Yet! - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1>Gadgetory</h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><h2 class="post__title"><b>Our CHEAPEST &amp; FASTEST Network Speed Yet!</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/NAks6qM9jlM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">Wow was that a 10 gigabyte file
+transferring in just a few seconds what
+if I told you it was between two
+separate machines and then what if I
+told you we did it for less than $100
+worth of news parts off eBay and less
+than an hour of tweaking within Windows
+well it's true and you could do it too
+I buy power and MSI's new lineup of
+gaming laptops feature Intel 7th
+generation Core i7 processors check them
+out at the link below our jerk excuse me
+our journey began when I spotted a post
+on the line of tech tips forum where a
+user was showing off a local networking
+setup that boasted speeds three to four
+times higher than the one that we used
+in our guide to 10x in your network
+speed on a budget and at a lower price
+using second hand enterprise networking
+gear called InfiniBand so I sprung into
+action drafting an email to Jake that
+went something like hey this looks
+really cool
+but I'm super busy can you figure out
+what the junk is going on with this and
+he was like okay this looks pretty
+simple I order the cards in the post and
+a queue SFP copper direct-attached cable
+plug them in it's off to the races right
+wrong the quad data rate or QD are 40
+gigabit InfiniBand cards we got off eBay
+were made by two logic a company that
+was acquired by Intel who doesn't
+provide windows drivers and while
+showing these speeds on Linux would have
+been really cool the majority of our
+audience runs Windows so round two point
+we began with high hopes for the MHRA H
+- a - XS are even though we couldn't
+find it on melon oxes website only to
+have them jab by an inaccurate product
+listing the second one we bought is a
+double data rate card and I've been
+informed that 20 gigabit transfer speeds
+are so last week Lewis I not to be
+dissuaded from spending my money by the
+first two unsuccessful attempts Jake
+ordered a third pair of InfiniBand
+adapters Mellanox MH q h1 9b - XT rs4
+25 bucks each and a 5 meter or 15 foot
+cue SFP copper direct-attached cable for
+30 bucks
+putting our total cost at $80 and deal
+under 150 for a much longer link with a
+45 foot cable running you about 90 US
+dollars the cards are PCI Express Gen 2
+and should fit in any reasonably modern
+computer so install then in Windows
+Device Manager you should see Mellanox
+connect x2 IPO IB adapter if they don't
+show up then install the window F
+archived version 4.95 then update it to
+5.10 for the most stable results
+theoretically this will update your
+cards to the latest firmware but if it
+didn't we will have a blog post on the
+ltte forum that outlines the detailed
+steps for forcing this manually as well
+as some other details about the process
+check it out below with the cards
+recognized
+we have functioning InfiniBand Nix but
+no subnet manager which assigns an ID to
+the next and creates a routing table
+based off of that so effectively then
+there's no way for them to receive or
+send anything since one of the most
+likely use cases for something like this
+would be a high-speed FMB or I scuzzy
+server and a preferred client somewhere
+else on the network we opted to install
+open SM on the test bench representing
+our file server again you can find the
+full details in the blog post we're
+getting close to the end now we need to
+assign IP addresses to our InfiniBand
+adapters but since they can't be used to
+communicate with the other Ethernet and
+Wi-Fi devices on our network we want to
+put them on a separate subnet and keep
+our normal Ethernet plugs plugged into
+the motherboard so if your home network
+is 192.168.0.1 thing then you could go
+with 192.168.1 got something let
+say 24-hour server and 21 for our game
+machine almost there except the new
+network popup on both machines run a
+quick ping test to make sure they can
+see each other then to ensure that the
+higher speed link is used when
+transferring data between the two
+machines adjust their priority by
+changing automatic metric to some number
+we chose 24-hour onboard Ethernet and 10
+for our InfiniBand and bam you should
+have a 40 gigabit link so please note it
+will show up as 32 gig event due to 810
+encoding and all that's missing now is
+some kind of drive that can actually
+saturate that kind of a connection
+fortunately we still have those 16 gigs
+fix of Dominator Platinum that we were
+supposed to send back to coarser but
+then our PRF left and didn't tell
+anybody and our buds over at sauce
+perfect hooked us up with their RAM disk
+software seven gigabytes per second
+anybody unfortunately on consumer
+versions of Windows we didn't see quite
+the results we were hoping for Layton
+sees were still super low which makes
+sense since InfiniBand is an enterprise
+technology intended for storage area
+networks but we capped out at about one
+gigabyte per second for our maximum
+bandwidth file transfer tests similar to
+10 Gigabit Ethernet so what gives well
+the answer is our DMA on Windows Server
+or Linux we could expect much better
+perhaps a follow up later let us know in
+the comments if you'd like to see that
+either way we're polices punch with the
+results because compared to 10 Gigabit
+Ethernet we do lose the interoperability
+with other ethernet gear but we gain the
+same transfer speeds as long as all
+we're looking for is point-to-point and
+a whole lot of money to put back into
+our wallet so this is an interesting one
+we've got today this is the tma-2
+modular headphone
+system from I I I it lets you create
+your own headphones providing a vast
+range of interchangeable options through
+their configurator you can change the
+headband you can change the speaker
+units you can change the ear pads and
+even the cables although that last one
+is sort of more normal everything else
+though is like freaking crazy there's
+over a thousand different total
+combinations that you can build
+depending on whether they're for
+everyday youth DJing studio recording or
+you want something that's really light
+and portable and not just that they can
+be taken back apart and recombined with
+add-on parts that you can get down the
+road if for whatever reason you want to
+change up the experience so check out
+their configurator at the link in the
+video description and build your own
+today so thanks for watching guys this
+like or a like get subscribed maybe
+check out the link to where to buy the
+stuff we featured in the video
+description also down there is our merch
+store way to buy cool shirts and posters
+and all that kind of stuff as well as
+our community forum which you should
+totally join now that you're done doing
+all that stuff check out this latest
+video over on Oh actually I don't know
+what videos we're featuring now so check
+out a video it'll it'll show up or
+something</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

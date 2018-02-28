@@ -1,0 +1,244 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Explanation of AMD OCAT Overlay for PresentMon Benchmarking | Gadgetory - Your Gadget Factory</title><meta content="Explanation of AMD OCAT Overlay for PresentMon Benchmarking - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Explanation of AMD OCAT Overlay for PresentMon Benchmarking</li></ol></div><h2 class="post__title"><b>Explanation of AMD OCAT Overlay for PresentMon Benchmarking</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/YOPnRqL0YU0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">so yesterday in a video about Andy
+relive and Nvidia shadowplay I said that
+we would send today have an update on Oh
+cat which is Andy's overlay on top of
+present Mon that they have developed to
+make it easier to benchmark dx12 and
+low-level API applications like Vulcan
+so that's what we're talking about today
+now unfortunately because of bugs that I
+ran into with Oh cat we don't have the
+full analysis but I still wanted to
+explain how it works and what and these
+goals are and how it hooks into present
+amount of what presentment is I'm joined
+by our senior ok analyst here obviously
+but that's the idea for the content so
+hopefully this at least gives a
+preliminary look at the software what it
+does how you can use it but for the
+benchmarking that's gonna have to wait
+until after it's not buggy anymore
+before we get into that this content is
+brought to you by our patreon backers
+thanks to those of you who are
+supporting us on patreon you can check
+the link patreon.com slash gamers and
+axis if you like our content and want to
+help directly so very quickly what is Oh
+cat Oh cat is Andy's approach to
+basically present mon-sol if you don't
+know what presentment is let's go over
+the tools first for benchmarking tools
+right now your options are basically
+things like fraps which despite being
+aged and a bit decrepit actually works
+really well for benchmarking anyway so
+captures frame times it's important and
+it captures frame rate and then you can
+pretty easily validate that data against
+other tools now fraps uses the variable
+called
+on present as opposed to the on display
+variable that's closer to the engine so
+on present is more representative of the
+framerate as it gets spit out of the
+engine and then on display is the option
+we don't use but it's fine as long as
+you're consistent in the use of
+whichever variable you may be measuring
+with fraps doesn't do on display to my
+knowledge so that's kind of traditional
+what people use but on display we don't
+use we use only on present for
+everything present maaan uses both of
+those variables that's good that means
+that you've got both possible
+methodologies and the side note when
+you're comparing benchmarks between
+different websites this could be part of
+why the numbers are different sometimes
+they shouldn't be kind of within a scale
+but like total side note so present Mont
+why is that not more globally used well
+it's really
+cool because it's open source and it's
+by Intel and Microsoft and also because
+open source and it's by Intel Microsoft
+and it's not a sold product they have no
+reason to develop something like an
+interface this was this plugs into
+things like etw
+and you can really easily hook into the
+OS or hook into whatever API may be
+being tracked dx12 works with Foulke and
+it works with the x11 OpenGL it works
+with everything so it's really cool but
+it's not super widespread and that's
+because present Mon out of the box or
+out of github as it were you've got to
+download the visual studio which isn't
+difficult it's super trivial to do and
+actually compile everything very easy to
+do but that's a step that is
+intimidating to some folks certainly
+those who might not be doing
+benchmarking for a job but just for a
+hobby or a passion or something like
+that so that's one step that's kind of
+in the direction of obfuscating how to
+actually use the tool another step in
+that same direction is with present Mon
+you do it all through command line it's
+really not that hard but again it's an
+extra step and it's easy to screw up if
+you don't really pay attention to the
+commands that you're writing we've been
+doing this for months now since dx12 and
+volcán kind of came about because you
+can't use fraps the benchmark those
+games and you can't use traditional
+tools at least not well afterburner I
+don't always trust doesn't always hook
+into the game lots of problems so we've
+been using present' mod I trusted a lot
+more it hooks into you you WP pretty
+reliably hooks into all the other api's
+but it's difficult to use for most end
+users I think and probably some media
+depending on the level of technical
+knowledge and time they can put into it
+so that's present Mon it also creates
+really detailed CSVs and you can do a
+lot with these CSVs but again same thing
+if you don't know what you're looking at
+it's really intimidating and you're
+probably gonna be like ok so what's my
+fps I don't get what are all these frame
+times I don't what do these mean so we
+have our own Python scripts that analyze
+these CSVs you don't need python scripts
+to do it but it makes it easier you can
+use an excel template I made one of
+those previously that runs the
+calculations but our Python script is
+way more if
+so that's present Mon now Oh cat is
+AMD's attempt at building an interface
+for it as I said present Mon is
+open-source and these Oh cat is built on
+top of the very generous present Mon
+license the license that they use anyway
+and that means I can use the source code
+means they can distribute Oh cat as a
+completely contained tool so you don't
+even have to get present Mon separately
+it's all contained in this okat exe and
+it's an installer which is also really
+nice makes it easier you don't have to
+compile anything or install Visual
+Studio or anything like that it also
+adds an interface through an overlay so
+to get overlays working in games you
+basically you have to create what's
+called a shim it shims in normally
+traditionally somewhere between the API
+and the game and that's not necessarily
+quite as easy with the new API s hence
+these new tools coming about so present
+mana is the heart of oak at this means
+that in theory the results should be
+effectively identical and should be fair
+so you really shouldn't have to worry
+about vendor favoring with for example
+and the building a tool that would make
+them look better that's not what's
+happening here in theory and they are
+going to open their source code later so
+we can actually inspect it but that's
+neither here nor there so the idea is
+that they're building on present Mon
+which is already trusted and known good
+and they're offering an interface and
+there's some slight overhead but it's
+not bad it's maybe fractions of a
+millisecond in the frame times and I
+think they've pretty much resolved all
+those issues by the time they push this
+0.9 whatever beta version of the
+software they have now so ok in terms of
+the overlay options it puts up in the
+top right corner you've got your FPS and
+your frame times for the current
+milliseconds whatever you're looking at
+actively and push a hotkey to record and
+stop you can set a delay timer not a
+delay timer I wanted the late timer I've
+asked them for one you can set a time
+expiry which is how long will benchmark
+before it expires and stops the
+benchmark and then once it creates the
+files you've got CSVs that are the same
+format as present model which is really
+important
+because again it's presentment so of
+course gonna be the same format but they
+don't screw around with it they don't
+move any any data or any columns or
+anything like that so the same CSV that
+means our same tools can comprehend it
+and now put our own average 1% 0.1%
+little values and anyone spreadsheets
+can comprehend it without updates so
+there's all good news
+basically it makes it easier to use
+makes it easier to benchmark it hooks
+into dx12 it hooks into volcán having a
+lot of bugs within the house like I said
+so today I can't been to work
+battlefield 1 with it it's just not
+working present Mon seems to be working
+fine so some issue in there with Oh cat
+and that's what kind of put a blocking
+issue in front of our video and article
+for today was that issue so doesn't work
+quite well in battlefield one right now
+as following the latest bf one patch and
+by quite well I mean at all at all so I
+was having issues with it in GTA 5 it
+was just not hooking into the into the
+game at all and then we've had some
+issues elsewhere as well there's it'll
+work eventually I guess well
+unfortunately these problems came up
+after the actual announcement was made
+for Reliv so it's not working right now
+he can't benchmark it but that's the
+idea and it does also work with on
+presenting on display same stuff and if
+you really don't want to look at the
+huge CSV then I suppose you get a slight
+benefit with okay and that it produces
+kind of a collected summary file so
+that's how it works so that is all for
+now check back soon I don't know when
+yet we're waiting on Andy to update the
+software so hopefully it'll work with
+battlefield one okay that's the big one
+I want a benchmark here because it's
+pretty recent and GTA 5 just to have a
+DX 11 okay then pop you'll hear
+benchmark that we can throw in there
+check back soon I guess otherwise we'll
+have normal ass yen and all that content
+coming up shortly patreon link of the
+post trail video to help set directly it
+links in the description below for more
+information subscribe for more I'll see
+you all next time
+we should well demonism well looking</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

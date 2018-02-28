@@ -1,0 +1,149 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Personal Project - Trying to Set Up PFSense Part 1 Linus Tech Tips | Gadgetory - Your Gadget Factory</title><meta content="Personal Project - Trying to Set Up PFSense Part 1 Linus Tech Tips - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1>Gadgetory</h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><h2 class="post__title"><b>Personal Project - Trying to Set Up PFSense Part 1 Linus Tech Tips</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/QlR8DxgiEVE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">this is potentially my new router I've
+been meaning to try out pfSense
+and there's actually a couple other DIY
+make an old computer your router OS is
+but I'll be I'll be trying pfSense first
+because it seems to be the most common
+one and so I'm using an old computer
+this is an Intel 965 board I've got a
+pentium for 6:30 in there something like
+that four gigs of old ocz check this out
+this the part number is Vista upgrade
+Ram nice 80 plus bronze power supply for
+efficiency a little SSD for silence and
+efficiency I mean the Pentium 4 will
+have to be replaced if this works in all
+likelihood but I just wanted to whip
+something together so I could try it out
+I'm going to be using this optical drive
+right here for the OS install here's the
+pfSense OS disk I've got a couple of
+I've got one Intel Nick and I think I
+had another one somewhere and then I
+have also because it's an Intel board it
+does use Intel networking for its
+onboard so I have the one gigabit port
+there as well and then I'll be using
+just a Netgear switch to do all my
+gigabit switching and then I found out
+of my three Wireless cards this one is
+the one that has a compatible chipset
+where there are drivers for the pfsense
+OS so I'm trying the release candidate
+one for the new version 2.0 of the
+software and let's see how this goes I'm
+going to get this started
+my Razer Naga Mouse had to unplug it
+it's causing some kind of error to do
+with the LEDs lighting up or something
+along those lines so I'm now in the
+Installer mode I had to connect an IDE
+optical drive in order to install it
+this little motherboard won't boot from
+USB optical very elegantly so uh mmm
+here we go never done this before okay I
+won't just accept these settings let's
+do it quick easy install ah yeah we can
+erase all the contents of this disk here
+goes guys okay so I had some
+instructions before it rebooted to put
+in 192.168.1.1
+one username admin password pfsense so I
+got to do that it's asking me now this
+is on first boot shows me my network
+interfaces it doesn't seem VP picking up
+the blend built into the motherboard so
+it's possible that that's not going to
+work for me I do not want to set up
+VLANs hmm you can't have at least one
+interface you cannot continue you should
+not have at least one real network
+interface card or one interface with
+multiple VLANs then pfSense will not
+function correctly if you do not know
+the names of your information we choose
+to use auto detection in that case
+disconnect all interfaces now before
+hitting a to initiate auto detection I
+should okay Auto detection time all
+right I guess I better go plug in my
+guess I better plug in my modem so a few
+changes have been made I'm going to
+actually move over to the other room so
+that I can plug the LAN interface into
+my network switch and the one interface
+into my router the router one seems to
+be working so far but I haven't had a
+chance to here are my 2 Intel Pro 100s
+desktop adapters so I haven't had a
+chance to to plug the LAN one in because
+I don't have two cables running into
+this room
+I've also removed one of the wireless
+cards because since the onboard
+networking did not work with PF sense I
+had to put in the additional wired
+network port card so let's see how this
+goes ok so I think I figured out the
+configuration stage of things here
+basically I assigned interfaces so I
+sign my interfaces to the wide area
+network and local area network I set the
+interface IP addresses so I set my LAN
+one to kind of a standard router IP
+address and then I also had to set
+starting and ending ranges for the DHCP
+server which will assign IP addresses to
+all of the computers on my network
+so right now I still have my PC the Home
+Server a couple other one other PC and
+the house connected to my router here
+but I'm actually I've got my pfSense
+router connected to my network switch
+there so I'm going to be using that to
+test a couple other computers including
+this notebook that I've hooked up to
+find out if this works so actually yes
+you guys can find out real time what's
+going on here whether it works or
+whether it does not okay actually I
+might need a minute okay so it works it
+looks like I have logged in from user
+admin from 192 168 1 point 1 1 which is
+the notebook that I've connected to my
+network switch right here so I have
+internet access and I have logged into
+the pfSense web interface so I'm pretty
+much done on this side as far as I can
+tell and I have never used this before
+so I'm not even going to begin to try
+and talk about how to use it but yeah I
+mean why don't we do a little exploring
+just right off the bat here to have a
+look at what we got here so we got CPU
+usage memory usage which I would have
+expected to be quite low we've got a
+platform running here's version 2.0 rc1
+which is what I am using okay here's my
+interfaces which I set up already in the
+command line interface system it has
+certain manager firmware general setup
+logo now my understanding is it's a
+little on the complicated side for
+networking noobs which I am one of so
+yeah we're not even going to try and
+begin to explore this right now but I'm
+hoping to be able to figure out how to
+use it
+and then maybe I'll be able to provide
+an update for you guys thank you for
+checking out this little high
+exploration episode event - tech tips
+don't forget to subscribe from on
+boxing's reviews and other computer
+videos</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

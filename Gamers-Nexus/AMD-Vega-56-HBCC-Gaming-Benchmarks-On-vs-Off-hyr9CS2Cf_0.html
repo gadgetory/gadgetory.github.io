@@ -1,0 +1,450 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>AMD Vega 56 HBCC Gaming Benchmarks: On vs. Off | Gadgetory - Your Gadget Factory</title><meta content="AMD Vega 56 HBCC Gaming Benchmarks: On vs. Off - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">AMD Vega 56 HBCC Gaming Benchmarks: On vs. Off</li></ol></div><h2 class="post__title"><b>AMD Vega 56 HBCC Gaming Benchmarks: On vs. Off</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/hyr9CS2Cf_0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">and these high bandwidth cache
+controller protocol is one of the
+Keystone's to the Vega architecture
+marked by RTG lead Raja Kaduri as a
+personal favorite feature of Vega and
+highlighted in previous marketing
+materials as offering a potential 50%
+performance uplift in average FPS when
+in vram constrained scenarios and you
+can see up to 50 ports on average FPS
+improvement and actually more
+importantly almost 2 X min FPS with a
+few driver revisions now behind us we're
+revisiting our Vega 56 hybrid card to
+benchmark HPCC in a B fashion testing
+and memory constraint scenarios to
+determine advocacy and real gaming
+workloads before we get into that this
+content is brought to you by the
+Thermaltake flow RGB closed-loop liquid
+cooler which is a 360 millimetre
+radiator plus 3 120 fans that are RGB
+illuminated the if-then we'll take it
+rain fans at that this is a 4.5 gen edge
+detect pump which is one of the faster
+pumps you can learn more at the link in
+the description below HPCC is the
+controller for Andy's high bandwidth
+cache what the company has functionally
+renamed its vram 2 so there's no hard
+threshold as to what governs the high
+bandwidth cache naming you could have
+for example a Vega GPU with gddr5 memory
+and if that hypothetical card existed it
+would still be considered high bandwidth
+cache it doesn't need to be HP m in
+order to be HPC under Andy's new naming
+scheme and the HPCC protocol so this is
+a look at the HPCC controller which is
+toggleable through the AMD drivers that
+is disabled by default and we're using
+17 10.1 but there is a new 17.10.2011 so
+the results are based on that as for the
+cache controller when enabled the
+controller effectively converts vram
+into a last level cache and will tap
+into system memory as a sort of expanded
+video memory in this scenario if the
+applications page out of the on card 8
+gigabytes of HP on to a trade-off
+between latency and capacity occurs
+and the GPU taps into system memory to
+grab its needed pages if you're storing
+4k textures in HP m2 and exceed that 8
+gigabyte capacity for example and then
+maybe need another one gigabyte for
+other assets those items can be pushed
+onto system memory and then pulled via
+the PCIe bus this is less effective than
+increasing on card memory but it's
+significantly cheaper than doing so and
+it's not always possible to increase the
+on card memory due to either physical
+space limitations or memory controller
+limitations things like that this is
+even in spite of DDR pricing right now
+and expanding its a system memory isn't
+a new thing for really any type of
+technology when looking at a GPS and ap
+use but it does enable Vega to
+potentially expand the working area for
+data when it's dealing with larger data
+sets something that Vega has really
+targeted since the beginning latency is
+introduced to by means of traveling
+across the PCIe interface through the
+CPU and down the memory bus and then
+back again but it's still faster than
+having to dump memory and swap data
+locally hypothetically this technology
+would permit large working data sets to
+exist on system memory and give the GPUs
+memory controllers somewhat direct
+access to that data set although it's
+worse for latency technically speaking
+the additional capacity should outweigh
+that latency deficit in the right
+scenarios so it's going to take proper
+implementations to ever realize the
+gains and that implementation must
+happen at both the software developer
+and AMD levels of deployment and the
+first showcase this technology in a tech
+demo in March around when Rison was
+launching and they showed HPCC on vs.
+off with a hypothetical vega card that
+didn't come to exist and probably won't
+or at least if not anytime soon that
+card was a 4 gigabyte vega GPU with an
+unspecified shader count so it is a 4
+gigabyte card as opposed to the modern 8
+on both 64 and 56 and because it was 4
+gigabytes it was far more likely to
+become memory constrained than something
+with 8 it's pretty hard to fill an 8
+gigabyte frame buffer with video games
+or even synthetic benchmarks so it makes
+sense that in order to showcase the
+difference you would do something like
+use a 4 gigabyte card unfortunately we
+don't presently have a good
+way of constraining our cards to four
+gigabytes like an attack demo but we
+have some ideas potentially for the
+future we'll see if they work or not
+though
+but either way when they showcase this
+Deus Ex mankind divided showed the
+differences of about 50% in average FPS
+according to Andy and they 100%
+improvement in minimums so and these
+showing averages got a 50% increase in
+performance by enabling HB CC which
+expanded the effective vram we'll call
+it that Vega could tap into when working
+with the games data set that would
+include things like textures for example
+now this is disabled by default
+it's been tested in the past around
+launch we figured we'd revisit it with
+some newer drivers and see if anything's
+changed we are using all the components
+to find in the article below and the
+testing methods are there as well along
+with all the components used but for the
+most important components 3200 megahertz
+of CL 16 memory is being used we have 32
+gigabytes of it available to the system
+and of that depending on the scenario
+we're expanding and the Vega 56v Ram
+allocation to an effective 18 Giga bytes
+with HPCC on except in shadow of war
+where we only expand it to 12 gigabytes
+because we wanted to make sure there was
+enough memory there to work with the 4k
+special texture pack because there can
+be issues if if not it just won't load
+them and you may not even notice it so
+let's get started we're looking at not
+just the theoretical but the practical
+performance from HB CC and that means
+we're looking primarily at gaming and at
+synthetic workloads to really drill down
+into differences and build our accuracy
+and confidence we first started with
+fire striking scripted execution of 20
+test passes with HB CC on and HPCC off
+using another in-house script to export
+and analyze all that data there's some
+variants but this many test passes will
+average it out we plotted a standard
+deviation of 20 7.48 points with HB CC
+off and 35.8 points with HB c is he on
+as for the scoring the HPCC off tests
+were 19400 18 point 1 3 points
+where
+HPCC on with 18 gigabytes allocation
+scored 19,000 683 this marks HPCC
+enablement as providing a 1.37
+performance improvement over HPCC off
+which manifests itself as a boost in FPS
+which we've charted of 93.8 FBS average
+versus 95 point 2 FPS average for GT 1
+and seventy six point eight versus
+seventy-seven point eight for GT two
+again this is over 20 test passes for
+each benchmark so we can be pretty
+certain that within the parameters of
+our test system and Windows this is a
+repeatable difference and is outside of
+variance of just the firestrike
+application times pi underwent the same
+treatment using the same script for its
+repeated execution we found much closer
+scores for this one with the average
+graphics score at sixty sixty-two point
+three for HPCC disabled or sixty ninety
+four point three seven for HBC C enabled
+that grants HPCC an advantage of 0.53%
+repeatably and translates into a scoring
+of 41 0.7 FPS average versus forty one
+point nine for gt1 and favoring HPCC
+enabled it's also thirty three point two
+FPS versus thirty three point three nine
+for GT two again favoring enabled
+superposition is our next synthetic test
+offering a look at performance scaling
+from the eyes of Unigine rather than
+future mark superposition wasn't
+repeated as many times but we do have
+five test passes for each configuration
+with minor standard deviations of two
+point nine points for HPCC on and one
+point four points for HPCC off and this
+is on a scale of many thousands of
+points so a deviation of one is really
+pretty good this application is
+impressively consistent in scoring HPCC
+off results in a score of 30 for 84
+points in superposition as opposed to
+3624 with HPCC enabled and that's a
+1080p extreme the performance difference
+amounts to a four percent improvement
+which is the biggest we've measured thus
+far of course we're so bound by other
+elements of the card like the core
+frequency streaming processors Rob's so
+forth that a four percent improvement is
+only represented by a one FPS increase
+because we're just choking everywhere
+else and can't really realize that gain
+in a meaningful way as for frequency
+using stock settings
+enabling HPCC plotted a stable frequency
+of about 13 10 to 13 25 megahertz for
+the first half of the test while
+disabling HPCC plotted a more variable
+but higher frequency of 1315 to 1352
+megahertz this is repeatable and
+happened effectively every time and we
+weren't really trying to control for
+that frequency change because we were
+interested in how the card behaved when
+HPCC was on versus off and this was part
+of that behavior and observation of that
+behavior despite the slight frequency
+deficit on the HPCC enabled test it was
+a bit more consistent and a card
+ultimately managed to improve
+performance by a few percentage points
+overall looking like about 4 in this
+case Sniper Elite 4 is our first game
+benchmark at 4k with high settings
+DirectX 12 and async compute we found
+performance to be functionally equal
+between the HPCC a/b tests with HPCC on
+blotting 52.7 FPS averaged 46 points to
+under sound lows and 45 is 0.7 lows
+disabling HPCC landed us at 52 point 2
+FPS average of 0.5 FPS difference forty
+five point nine one percent lows and
+forty four point eight FPS 0.1% lows not
+only is there no discernible difference
+there's no difference outside of usual
+deviation and error margins so we can't
+actually say whether there's an
+improvement here it just kind of looks
+all the same moving into ashes of the
+singularity with DirectX 12 4k
+resolution and high settings we mostly
+saw the same these results had us at
+sixty six point six FPS average to sixty
+six point nine FPS average with forty
+four point three to forty three point
+five one percent lows and 41 verses
+forty 0.1% lows for the FPS once again
+these are within test a test deviation
+Ghost Recon wildlands at 4k plots the
+HPCC tests at 36 FPS average with HPCC
+on and off with lows largely tied at 33
+and thirty two point five were 32 and 31
+point eight F yes so all pretty much the
+same numbers there's no appreciable
+difference here and we are once again
+within variance we also saw no
+difference at 1080p that that's less
+significant given the diminished focus
+on memory at this
+but pretty much the same results if you
+were curious about 1080p for honor at 4k
+and using extreme settings makes for one
+of the more memory intensive real-world
+to games that we work with they go with
+HB CC enabled bought at a 43 FPS average
+versus 42.7 when disabled marking these
+scores functionally equivalent and with
+invariance the lows are forty point
+seven FPS versus forty point three and
+thirty nine point three zero point one
+percent lows versus 38 once again all
+this is within test deviation and
+variance for this particular title at
+1080p for honor has us at 125 FPS
+average for both HPCC enabled and
+disabled we would expect less likelihood
+for differences to emerge have these
+lower resolutions given the vram users
+reduction we configure to help lead to
+4k with very high settings providing one
+of the more taxing games for testing a
+vago 56 card under both HPCC conditions
+performance was exceptionally consistent
+and plotted about the same numbers
+between HPCC on and off once again for
+held late at 4k testing shadow of war
+with the normal texture pack 4k
+resolution and high settings we were at
+42 to 43 FPS average on both iterations
+of the HPCC testing marking equal
+performance once again we later enabled
+the 4k texture pack and ran ultra
+settings with HPCC reconfigured to a 12
+gigabyte frame buffer to preserve ram
+for the pack just in case though
+settings gave us once again about the
+same performance between our HPCC on and
+off tests consulting the work of friend
+of the site rob williams over at tech
+age it looks like they found pretty much
+the same results when the card first
+shipped or close to it anyway their
+results for the most part featured
+basically the same plus or minus 1 FPS
+within error types of differences and
+they did also test mankind divided which
+we didn't do for this one and tech gauge
+didn't measure any meaningful change
+with the 8 gigabyte Vega cards but like
+we were saying at the beginning of this
+content the article and the video it
+looks like perhaps there would be a
+bigger difference if you could restrict
+Vega to 4 gigabytes so this HPCC
+control the toggle for the controller
+may come into play more if either a 4
+gigabyte
+vega cart comes into existence which
+would be an awfully interesting
+combination the price of HBM at four
+gigabytes i don't know we'll see if it
+works out if it ever actually exists but
+that would be a scenario where you would
+potentially see a difference and you
+certainly showed that in their tech demo
+we can't recreate it because we only
+have the cards that exist on the market
+which are 8 gigabytes and the other
+option would be potentially if somehow
+games just started storing tons and tons
+of data into vram in the immediate
+future or maybe if you resurrect these
+cards and several years when probably
+they are end-of-life for various other
+reasons maybe at that point because of
+technology changes and shifts in game
+development you might see implementation
+of or actually utilization rather of
+that expanded memory or effective memory
+on the video card what we haven't tested
+is production level applications I'm not
+sure if tech gauge has tested that yet
+or if they plan to but production
+applications are a potential area where
+there might also be gains Andy has its
+own SSG solution for that space
+particularly with things like live 8k
+scrubbing and premiere with the SSG
+Radeon cards so there may be some kind
+of impacts in production level workloads
+but for gaming we're not really seeing
+anything right now in the games we've
+tested it does look like superposition
+plots a somewhat statistically
+significant change in that we're seeing
+a four percent uplift with HPCC the only
+problem there is that by the time we're
+tapping into that advantage the extra
+four percent advantage we're so limited
+elsewhere in the pipeline that it's just
+as a player if you could play the game
+superposition if it were a game at the
+point that the advantage is coming into
+play you're already at such a low FPS
+that it's unplayable anyway so you'd
+actually be better off just lowering
+your settings sacrificing the advantage
+and running with something that's a bit
+easier for the card to work with the
+exception would be if you had a workload
+that had a very memory intensive set of
+assets like maybe 8k text
+or something we haven't tried for
+example modding fallout or Skyrim if any
+of you have let us know what your
+results were but those would be
+scenarios where you could definitely
+pump the memory usage on the video card
+with user created assets that are one
+less optimized and two don't have the
+same considerations that game developers
+have in terms of capacity console
+compatibility things like that so they
+can go heavier on the memory consumption
+on the video card so those would be all
+the scenarios where you might see an
+uplift for the stuff we've tested thus
+far we're not seeing one so don't worry
+about that toggle right now it's not
+really worth turning it off you don't
+really get a performance hit unless you
+run into issues with system memory
+limitations so from what we've seen that
+you could probably turn it on and maybe
+every now and then you'll get a 0.5 to 4
+percent performance uplift it's not
+really a bad thing but if you do
+encounter stability issues obviously
+it's also not a bad thing to just turn
+it off and live without it so one of
+those things where the technology is
+there and it's kind of questionable when
+it works but it seems to work in some
+instances particularly synthetics so
+those might be enough to encourage
+turning it on but it's certainly not a
+silver bullet for anything so that's all
+for this one we'll revisit this as more
+driver updates and games and
+applications seem like they're using it
+Wolfenstein 2 will be a potential option
+for looking into this because Bethesda
+has sort of cryptically stated that they
+will be leveraging Vega to greater
+levels than other games do currently
+probably just because of olkin but we'll
+see as always you can go to
+patreon.com/scishow and actions to helps
+that directly or stored our gamers nexus
+dotnet to pick my shirt like this one
+thank you for watching and subscribe for
+more
+we'll see you all next time
+but for the most important components
+3200 megahertz of a it's very loud
+thunder</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

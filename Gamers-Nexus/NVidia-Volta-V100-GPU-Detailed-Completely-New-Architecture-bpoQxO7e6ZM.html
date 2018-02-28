@@ -1,0 +1,272 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>NVidia Volta V100 GPU Detailed: Completely New Architecture | Gadgetory - Your Gadget Factory</title><meta content="NVidia Volta V100 GPU Detailed: Completely New Architecture - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">NVidia Volta V100 GPU Detailed: Completely New Architecture</li></ol></div><h2 class="post__title"><b>NVidia Volta V100 GPU Detailed: Completely New Architecture</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/bpoQxO7e6ZM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">and video detailed more of its Volta
+architecture yesterday a name that we
+first covered in 2015 where Volta was
+shown as targeted for 2018 delivery
+Nvidia seems to be on target for 2018
+with its initial server grade Tesla V
+100 accelerators shipping and dgx
+servers by quarter three of this year V
+100 is a major architecture milestone
+for Nvidia and marks a divergence from
+architectures that more closely resemble
+the likes of Kepler Maxwell and Pascal
+today we're detailing the initial V 100
+layout before that this video is brought
+to you by courses at new Vengeance RGB
+LED Ram which ships with custom screens
+ICS for better overclocking performance
+and stability given that memory is
+highly relevant for performance with new
+rise in CPUs now is a good time to do
+research on high performance kits start
+with the Vengeance RGB LED kit at the
+link in the description below the 100 is
+not a consumer products just like P 100
+was not but eventually we'll probably
+have something like V 102 which will be
+consumer targeted and would effectively
+be an 1180 TI if we were to take today's
+now in clay Chur and it looks like
+nvidia is on target for 2018 delivery of
+potential consumer grade Volta
+architecture implementation on video
+cards that would be in the gaming market
+for today we're looking at the initial
+Volta architecture that includes things
+like the new tensor cores which are not
+really something that gamers will be
+able to make use of but are critical to
+business operations deep learning HPC
+all kinds of things that involve data
+heavy crunching and compute whereas
+later graphics versions of Volta will
+change in their organization somewhat
+just like with Pascal P 100 was 64 cores
+for SM whereas the one of the two chips
+and all the other consumer chips were at
+128 cores per SM so there's a bit of
+difference between compute and graphics
+products but the base architecture is
+the same so we can start with V 100 and
+see what it looks like today starting
+with the block diagram this is the
+full-size V 100 block diagram as both
+the top one of the largest pieces of
+silicon we've seen on a GPU the eye size
+at 4 V 100 is 815 millimeters squared
+around 30% larger than P 1 hundreds
+already large 610 millimeters squared
+for comparison consumer grade at 1080
+tig through one of two chips are 471 a
+millimeters
+just give some perspective fold v100
+hosts 53 76 FP 32 CUDA cores across 84
+SM is using similar organizational
+hierarchy to the GP 100 at 64 cores per
+SM with a 1 to 2 FP 64 ratio and 2 to 1
+FP 16 ratio the result is 15 Dara flops
+of single-precision compute about 8
+teraflops of double-precision and about
+30 teraflops of FP 16 or half precision
+compute for deep learning FP 16 is
+useful as the precision is not needed
+when working with such large data
+matrices despite similar organizational
+layout the P 100 the actual architecture
+is vastly different scheduling and
+thread execution rings may have been
+reinvented with V 100 but we don't
+really know how just yet and the
+introduction of tensor cores complicates
+things
+so alongside the 53 76 CUDA cores which
+were fairly familiar with at this point
+there are also 672 tensor chords these
+are the new ones each SM holds 8 tensor
+cores just like each SM holds 64 CUDA
+cores and a tensor core is targeted at
+HPC deep learning machine typed neural
+net applications whereas CUDA cores are
+more known they can work and apply to
+all these things especially with FP 16
+towards deep learning but tensor cores
+are special that's because they are a
+cluster of al use in a single cores with
+a single unit that specializes in FMA
+operations refused multiply add and it
+can execute those operations across 2 4
+by 4 matrices what does that mean well
+it means that each tensor core can
+execute 64 FMA s per clock so 64 fuse
+multiply add operations per clock of a
+single tensor core which means that
+you're roughly quadrupling what a
+previous coup de coeur could do in the
+same amount of time one clock cycle in
+terms of FMA operations so that is
+helpful for compute work it's helpful
+again for deep learning it's a huge deal
+in that regard for us gaming not really
+something we care about right now anyway
+nothing that we can see an immediate use
+for but that means that doesn't mean
+it's it's irrelevant it's obviously a
+huge deal for
+the Volta architecture tensor
+quadrupling coup de coeur execution
+throughput in terms of flops per clock
+for those server-side very expensive
+money driving businesses that's a big
+deal so that's the main thing with v100
+that end video was talking about at
+their event tensor cores are something
+to pay attention to but not something
+that you need to worry about as a
+consumer anytime soon here's a shot of
+the SM layout HSM it contains the two
+tee pcs that contain blocks of FP 64 FP
+32 int and tensor core units just like
+always except for the additional tensor
+course this is just a block diagram and
+not necessarily representative of actual
+diet space allocation to the tensor
+cores but it's looking like a large part
+of the die space of the 100 is allocated
+to this new type of core the usual 40
+mus are present on each SM totaling 336
+TM use across 84 screen multi processors
+to P 100 to 240 TM use across 60 SMS
+these are indicated by the text marks on
+the bottom of the diagram and that's
+again an SM layout diagram whereas the
+block diagram shows them all working
+together the architecture will be built
+on a new 12 a nanometer FinFET process
+which Nvidia and tsmc they stick the
+name and video on it so it's thin set
+Nvidia which is just special
+optimizations that we don't know about
+made to the process by the SMC
+so 12 nanometers it's a completely new
+architecture this isn't Pascal base it's
+not Maxwell or Kepler base or anything
+like that and the die size again 815
+millimeters squared totally in 20 1.1
+billion transistors that is at the
+reticle limit for what TSMC can
+manufacture that is the absolute hard
+limit of their manufacturing tools the
+physical tools in the factory the fab I
+should say you can't really get bigger
+than that right now and when the eye
+size increases on GPUs if you're not
+aware it generally means that yield goes
+down this is just part of why the bigger
+GPUs like something you'd find on a
+1080p eye are more expensive than the
+smaller ones which are physically
+smaller yield goes down to Costco
+up because there's greater risk involved
+you lose more of your silicon each run
+you're doing of the wafers so that
+drives up cost but for consumers it
+eventually comes down our way because as
+these large enterprise b2b type
+operations pay for the new technology
+because they can really benefit from it
+the cost goes down the yields go up the
+die sighs eventually shrinks a bit for
+something like an eleven atti or
+whatever it may be in the future that's
+why you normally see these GPUs on
+gaming grade cards smaller than the
+accelerated cards the GB 100 accelerator
+is the first product shipping with Volta
+architecture it is a cut-down version of
+the v1 100 block diagram that we just
+went through not back cut down it's 50
+120 CUDA cores rather than the 53 76
+that the full of uLTA block is capable
+of from what we've seen so far so it's a
+little cut down and not much and then it
+is HP m2 supported just like the GP 100
+accelerator was that would be the
+previous tesla card high in tesla card
+and HBM 2 here is limited to 16
+gigabytes they can't go higher until
+someone can manufacture HP m with a
+greater count of dies per stack and
+because nvidia is sticking to four
+stacks for this new GPU just like for GP
+100 accelerators that means they're
+limited to 16 gigabytes of HP m - it's
+still a 4096 bit bus just like GP 100
+was but the efficiency has gone up from
+what they've said and we don't really
+have a whole lot of information on volt
+at a low level just yet we've got a
+decent out of starter information but
+efficiency should have gone up that also
+means that there could be a change in
+perk or efficiency which is something
+we've seen the past architectures for
+example Kepler - Maxwell there's
+something like a 30% increase in
+performance per watt out of the cores or
+just efficiency overall which means that
+you can't always compare just raw core
+count across architecture even from the
+same manufacturer because those cores
+might be physically capable of a
+different amount of throughput or
+different operations or whatever
+depending on which art you're looking at
+how old it is things like that so
+our optimizations of course we don't
+know the details just yet other than top
+level things like threat execution and
+organization have changed but no no real
+details to speak of right now that said
+they should be coming out pretty soon
+because white papers for these new
+architectures normally get pushed pretty
+shortly after the GTC event which is
+where this was announced and is in the
+process of concluding this weekend so a
+consumer target looks like next year is
+pretty likely 2018
+that's what NVIDIA has said all along
+for the most part so that's not changed
+if you're in the server business and for
+some reason watching us and I guess the
+thing for you to know would be that this
+GV 100 accelerator cost $18,000
+standalone or you can buy a server a dgx
+server which has it's got the full specs
+online on their site that's $150,000 and
+means you get them earlier quarter three
+but if you're in the business of making
+money off these things I guess getting
+it earlier is probably something that
+would make you money but that's not
+really Howard Territory so we'll wait
+for Volta on consumer products but as
+more information on GV 100 comes out
+we'll deep dive it just like we did with
+GPU 100 and of course Vega is
+theoretically happening at some point so
+we'll stay tuned for that as well thank
+you for watching as always you can go to
+patreon.com/scishow and ice themselves
+out with this type of reporting or you
+can go to store that gamers nexus dotnet
+where we've got shirts like this one or
+the graphed logo shirt now restock Singh
+cotton subscribe for more I'll see you
+all next time
+you</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

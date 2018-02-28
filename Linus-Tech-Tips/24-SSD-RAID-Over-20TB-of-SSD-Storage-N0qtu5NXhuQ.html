@@ -1,0 +1,253 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>24 SSD RAID - Over 20TB of SSD Storage! | Gadgetory - Your Gadget Factory</title><meta content="24 SSD RAID - Over 20TB of SSD Storage! - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1>Gadgetory</h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><h2 class="post__title"><b>24 SSD RAID - Over 20TB of SSD Storage!</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/N0qtu5NXhuQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">if you've been following me on social
+media you've probably spent a fair bit
+of your time lately feeling bad for me
+about all of the SSDs that I had to
+mount in our new 24 drive solid-state
+storage server no all right well then
+you've probably at least been hoping
+that I'll make a video about it at some
+point and talk about the performance and
+that time is now this is the all-new
+Wanek the fastest beast machine in our
+office
+of course rhx 1,200 eye power supply
+delivers 80 plus platinum efficiency for
+quiet performance and corsair link
+digital advanced monitoring and control
+click now to learn more so our current
+storage server ruskin uses Seagate 3
+terabyte consumer drives in a raid 6
+array to achieve respectable read and
+write performance and some fault
+tolerance the array can actually lose up
+to two drives before suffering
+catastrophic data loss assuming it's
+able to rebuild before more drives fail
+or an unrecoverable error occurs this is
+all fine and good but the main problem
+with it is that Ruskin was built for one
+editor to work on 4k video files at max
+speed and we now have a whole room full
+of editors so while the Ruskin 10
+gigabit network interface and sequential
+data speeds aren't really bottlenecks
+its mechanical drives are much more
+suitable for a single person workflow so
+I reached out to our good buddies at
+Kingston with a crazy idea what if we
+slipped free of the surly bonds of
+mechanical storage and danced the skies
+on SSD silvered wings to which they kind
+of went how much silver Linus I told
+them I wanted 20 for one terabyte class
+drives and doggone it for some reason
+they said yes I think the most
+incredible thing about that story is how
+much the landscape has changed in such a
+short amount of time two years ago I
+could have been the Pope in Rome and any
+SSD maker would have laughed at me for
+wanting 20 terabytes of redundant SSD
+storage in a single server but in 2015
+Kingston's just like yeah we've got the
+enterprise-grade KC 310 it's got an 8
+channel thighs and s10 controller 960
+gigabytes of capacity ECC flash
+protection for data integrity power loss
+protection trim support although we'll
+be relying on idle garbage collection
+and raid anyway and it's under 60 cents
+per gig I mean holy balls I'm actually
+wearing the right shirt for that so
+let's talk upgrade process then the
+first thing I need
+was way better raid cards yes cards ooh
+not a single card
+there are 24 port controllers in fact
+the old server has one but since each
+individual SSD is capable of 500 plus
+megabytes per second read and write
+speeds if you hook 24 of them up to a
+single card with a theoretical total
+speed in the neighborhood of 12 Giga
+bytes per second you're going to run
+into some pretty serious bottlenecks all
+over the place so after removing the
+placeholder mechanical drives from the
+system laborious Lee mounting 24 SSDs on
+sleds and connecting the SFF 8087
+connectors each of which handles four
+drives to their backplane in my Norco
+RPC 4224 chassis and I love these things
+on Kingston's recommendation I picked up
+three LSI 92 7180 I eight portrayed
+cards each in a PCI Express 3.0 X slot
+this is where the x99 platform really
+shows its value because you're going to
+need enough PCI Express Lanes to handle
+all that storage bandwidth something
+that consumer-grade platforms simply
+cannot provide now something a lot of
+people commented on when I posted a
+picture of these cards on Instagram was
+that these cards run really hot and I
+had them installed right next to each
+other don't worry I'm using a 90
+millimeter fan mounted directly on top
+of them for auxiliary cooling and I'll
+be bolting that in before I install this
+server in our fancy rack cabinet at the
+new office so with all the drives
+installed the next step was getting
+firmware updates and drivers taking care
+for my controllers and configuring
+arrays naturally the first thing I did
+was throw the whole thing in raid 0 for
+lols to see how fast it would go there's
+a bit of a special process for this in
+this case though you need to create a
+raid 0 array of 8 drives on each of the
+controller cards then use software raid
+to put them all together so in my case
+that required the use of disk management
+in Windows to set each raid 0 as a
+dynamic drive then stripe the whole
+thing together so it's kind of like raid
+0 0 0 something like
+that the results were well if Shania
+were here I guess she'd say that don't
+impress me much read speeds were great
+even for 512 K transactions I'm looking
+at over five and a half gigabytes per
+second I mean remember this is for video
+editing so very little of what we deal
+with is going to be smaller than half a
+Meg with 4k transfers that's more than
+two full orders of magnitude faster than
+my old ten hard drive solution but those
+right speeds aren't enough to saturate
+the planned two by ten gigabit teemed
+network connection the server is packing
+if multiple users are writing large
+files to the array either way
+raid zero wasn't my final configuration
+since I wanted some fault tolerance so I
+figured if I'm going to troubleshoot
+this thing I might as well do it when
+it's set up properly so I through my
+eight driver raise in raid 5 that allows
+me to lose up to one drive per array and
+then I also have a spare drive on hand
+in the unlikely event of a failure which
+is lots for a server that'll be backed
+up nightly on the network then I striped
+those raid fives together in software
+for what is effectively raid 50 a quick
+benchmark before the arrays were
+finished initializing revealed worse
+numbers than raid zero although that's
+pretty much a given since any parity
+raid puts much more load on the
+controller card especially for writes
+than a striping raid but I really hadn't
+expected them to be this bad so I waited
+for the arrays to finish initializing
+and they got worse so it was about that
+time that I realized maybe the right
+cache setting on solid state makes a
+bigger difference than on mechanical so
+even though I don't have battery backups
+for my cards or a UPS for my server yet
+I enabled write back cache and there we
+go there is the drawback of an
+unexpected power loss causing potential
+data loss with right back caching
+enabled but we're just going to have to
+get those batteries and UPS is going
+because with that setting on we are able
+to saturate the bananas out of any
+connection we can make on the network to
+this
+when she's handling large streaming
+reads and writes this array can do in
+excess of 5 gigabytes per second when
+she's handling extremely small
+transaction she can still do just under
+a hundred times the performance of
+Ruskin and when she's able to queue up
+those small transactions from many
+clients hitting her at the same time she
+can do well over 500 megabytes per
+second I just need to drop another $600
+on battery units for the raid cards and
+wait for the network cards for my
+clients to show up so that I can show
+you guys how the network is going to
+handle all of this then the server grade
+stuff is expensive and very
+time-consuming but it floats my geeky
+boat to see numbers like this where a
+PCI Express based Predator SSD is the
+bottleneck in a local file transfer
+speaking of stuff that floats my geeky
+boat I fix it you probably know I fix it
+from there tear downs of electronic
+devices and they're fantastic repair
+guides on their site that can save you
+tens 50s even hundreds of dollars on
+repair costs I've used them a number of
+times on an iMac on a phone and I'm sure
+there's something else but I'm not
+thinking that at the moment what you
+probably aren't aware of is that I fix
+it sells professional grade tools as
+well so they've got their there I fix it
+54 bit driver kit they've got all these
+little prying tools they've got
+anti-static straps they've got their
+magnetic organizer that I actually might
+have any yeah I was using this the other
+day that lets you write little labels
+draw little diagrams and keep all your
+screws somewhere safe when you're
+working on a project they've got all
+kinds of fantastic stuff whether you're
+trying to take a part in intend ODS with
+a tri wing bit whether you're trying to
+take apart McDonald's toys with a
+triangle bit or you need to take apart
+something that uses security torques is
+all that stuff they've got it and what's
+cool is when you go on their guides they
+actually list all of the tools that you
+need for a particular guide the one to
+probably start with though is the kind
+of all-in-one Pro Tech tool kit pack I
+use mine all the time it's 65 bucks and
+if you use ifixit.com slash Linus and
+then code Linus zere
+row five at the checkout you save $10
+off.that or any purchase of $50 or more
+so it's ifixit.com slash Linus check it
+out great tools great guides great stuff
+so that's pretty much it guys thanks for
+watching like the video if you liked it
+dislike it if you thought it sucked
+leave a comment preferably at the link
+below to our forum if you want to
+discuss it also linked below you can buy
+a cool t-shirt like this one you can
+give us a monthly contribution if you
+think what we're doing is important you
+can change your Amazon bookmarks one
+with our affiliate codes so next time
+you buy 24 SSDs we'll get a kickback
+from that and that's pretty much it
+don't forget to subscribe and follow and
+all that good stuff thanks again for
+watching</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

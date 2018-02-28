@@ -1,0 +1,541 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>GTX 1080 Ti Founders Edition PCB Analysis &amp; Shunt Mods | Gadgetory - Your Gadget Factory</title><meta content="GTX 1080 Ti Founders Edition PCB Analysis &amp; Shunt Mods - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">GTX 1080 Ti Founders Edition PCB Analysis &amp; Shunt Mods</li></ol></div><h2 class="post__title"><b>GTX 1080 Ti Founders Edition PCB Analysis &amp; Shunt Mods</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/dSCNf9DIBGE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey guys build loaded here and today
+were going to be taking a look at the
+1080 TI founders Edition PTV now
+interestingly enough the PCB here is
+exactly the same as what you would see
+on a Titan X Pascal so that means the
+actual copper fiberglass sandwich that
+you know pushes all these that all the
+electrons move through that's exactly
+the same however Nvidia has changed the
+components that are used on the that are
+actually attached to it and they have
+added more components but before getting
+to build Zoids analysis this coverage is
+brought to you by EVGA and their
+upcoming 1080 TI FTW 3 icx card key
+learn more in the link in the
+description below or watch our previous
+icx review there's a lot less stuff
+missing from this PCB than compared to
+the Titan axes as and by missing I mean
+unpopulated MOSFET mounts and that
+really the only thing that's the big
+loss compared to the Titan XP TV is this
+memory chip right here which
+incidentally you even if you had a BGA
+rework machine if you have VGA soul
+during equipment you can't add that
+gddr5 X chip back as Nvidia disables the
+32-bit memory interface for that memory
+chip in the GPU core itself so you're
+not getting that back that is disabled
+completely no chance of getting that
+working now then with that out of the
+way let's take a look at the actual vrm
+on the card and talk a little bit about
+how about what they're made up of so
+first things first up here in the top
+left we find one point a 1.8 volt we are
+M this powers Nvidia some of the PLL's
+of the GPU it also powers the BIOS so
+the EEP ROM of the Nvidia cards actually
+runs on 1.8 volts so it takes care of
+that and it's voltage does absolutely
+nothing for overclocking it's just
+necessary for the card to function so
+not really that important now then down
+here we find another one of these not
+really that important
+this is the PE X or also also slash PLL
+voltage it does take care of some
+internal circuitry for the GPU as well
+as some internal PLL's
+again it's a case of if this voltage is
+not present on the card the book card
+will not function this one sits at one
+point zero two volts at stock and it can
+help with overclocking to tweak it up or
+to tweak it up or down under ln2 but on
+air cooling and water cooling it does
+absolutely nothing for overclocking
+capabilities now then moving on we
+finally get to a vrm that actually does
+something for overclocking this is the V
+Corps v RM and unfortunately because
+this is Pascal it doesn't do much so
+this applies the bulk of the GPUs power
+to the GPU core runs most of the compute
+logic in the core sits at around one
+point zero eight volts by stock maximum
+voltage limited by nvidia is one point
+zero nine three volts it's questionable
+if it actually can hold that voltage
+steady but that is the maximum voltage
+you can set in software now
+unfortunately so you know you can't
+really push this voltage that far
+however this vrm is the one that you'll
+see most custom cards significantly
+changing and it does it is rather
+important for ln2 overclocking but for
+air cold and water-cooled overclocking
+it really doesn't matter as long as
+there's enough power available for 2.1
+gigahertz overclocks which is generally
+what pretty much every Pascal card can
+hit if you get lucky
+some of generally the clocks end up
+between 2 to 2.1 gigahertz from what
+I've been told if you increase the core
+voltage of yeeah through physical mods
+or a certain modded bios which exists
+for only one card currently if you
+significantly increase the voltage you
+do not gain that much core clock that it
+makes it worth it and the power of power
+draw increase is quite significant
+so while this vrm has been very
+important on other architectures on
+Pascal it doesn't really do much until
+you pull the you know out of the cards
+below zero again
+unfortunately so that's your V core v RM
+and above it we find the memory v RM
+which is another case of doesn't really
+do much for air cooled or water-cooled
+overclocking this powers the gddr5 X
+memory chips they run on 1.3 5 volts and
+they don't really need a whole lot of
+power and tweaking this voltage can get
+you a little bit more frequency out of
+the gddr5 X memory chips it's mostly
+useful again on lnto where every couple
+megahertz helps on air or water cooling
+you'll just massively increase the power
+draw for very little actual performance
+increase so also you can't actually
+access the crm through software
+whatsoever so then finally moving on we
+have another 1.8 volt vrm which I'm not
+entirely sure where it's located I think
+it's somewhere in this area of the PCB
+again I'm working off of photos not the
+actual cart
+like I don't have a card in hand so it's
+rather hard for me to be accurate with a
+lot of these things and it should be
+somewhere in this area and that's a 1.8
+volts voltage and that's called that's
+known as the VPP and that's able to do
+necessary for the gddr5 X chips to run
+it does absolutely nothing for
+overclocking so not worth worrying about
+whatsoever so I this this voltage might
+be tied to this vrm I'm not entirely
+sure I started noticing that some and
+like 10 80s GTX 10 80s had a dedicated
+one for this just 1.8 volts and it was
+in this area
+Theisen X Peas I'm not sure so I might
+be wrong about that one either way it
+doesn't really matter that much unless
+you're trying to revive a dead card in
+which case I really hope you have a
+working one because that's the best way
+to reference what could be wrong
+now then with that out of the way let's
+take a look at the V Corps and the
+memory v RM in more detail even though
+they don't really do much for
+overclocking you probably want to know
+what they are and aren't capable of so
+the V Corps v RM is a bit of an odd
+thing as we do have one two three four
+five six seven inductors and one two
+three four five six seven eight drivers
+so this is perfectly fine the driver
+counts at least eight drivers is
+perfectly fine as this V RM is run by
+the U P nine ninety five eleven voltage
+controller from UPI semiconductor and
+this is an eight phase voltage
+controller with up to six hundred
+kilohertz switching frequency how which
+is actually on the low side for v RM
+controllers a lot of other voltage
+controllers will go up to one megahertz
+or even two megahertz however that is
+not that important because really high
+switching frequency in your V R M means
+high low power efficient basically ruins
+your power power efficiency as the V R M
+will be basically burning heat to turn
+the MOSFETs on and off more more more
+times than is necessary it can help with
+the V RMS ability to regulate voltage
+under very under transient loads of the
+vrm up basically the voltage controller
+has more chances per second to tweak the
+current going through each phase however
+it again like we've seen that custom
+cards on the 10 custom ten series cards
+do not clock any better than the
+reference cards so far so again this
+doesn't really matter unless you're
+doing ln2 overclocking where the power
+draw is significantly higher and the v
+RM actually has to deal with
+significantly bigger load swings so the
+600 kilohertz limit here really isn't an
+issue what is an issue is that we have
+eight drivers and seven inductors how
+does that work also we have one two
+three four five six seven eight nine 10
+11 12 13 14 15
+Dean mosfets so we have enough MOSFETs
+and drivers to build an eight phase--
+vrm but we only have seven inductors so
+what on earth is going on here well
+NVIDIA has decided that they're going to
+share this inductor between these two
+MOSFETs and the you two MOSFETs and this
+is done so that they can balance the
+12-volt power supplies the present in
+the GPU so your six pin and your eight
+pin are not actually sharing their 12
+volt layer of copper each of those goes
+into a different light a copper power
+plane so one part of this vrm will be
+wired to the eight pin and the other
+part of this vrm will be wired to the
+six pin and some of the VRMs on this
+card will be running off of your PCIe
+fault connector and possibly this phase
+might be to I'm not entirely sure
+because from the photo I can't tell you
+what these MOSFETs are actually wired to
+however this is entirely done by Nvidia
+to basically let them balance where the
+card pulls its power from I'm not even
+sure that that you actively use it well
+actually no they would be using it since
+they did put components on the PCB there
+so otherwise that would be a horrific
+waste they could just leave them out so
+yeah so this is basically done by Nvidia
+to balance the power draw between the
+different 12-volt sources it doesn't
+really do much for the vrm current
+capability because all the other phases
+are still limited to only two moths
+that's where as this phase alternatingly
+uses for so this phase is the least
+likely to fail in case you push are
+really if you you know have cooling
+issues on the VR MN Porsche very the
+high amount of current through it now
+then let's talk about current
+capabilities Nvidia has opted for SD PC
+eight zero one 6s MOSFETs from Fairchild
+dual dual MOSFETs from Fairchild
+Semiconductor and so dual MOSFETs means
+that this chip right here has two
+MOSFETs in it there's a high side fat
+and a low side fat so
+the basically the end result is that we
+now have two dual sets per phase so you
+actually have four MOSFETs in each phase
+the reason for this is that the two ICS
+share the current load which leads to
+them sharing the thermal load which
+means lower vrm operating temperatures
+as well as higher efficiency because a
+big part of vrm efficiency is the heat
+lost on the moss on the resistance of
+the MOSFET so if you double up the
+number of MOSFETs you basically get half
+the electrical resistance through the
+MOSFET so it gives you a nice efficiency
+boost as well as a improvement in
+thermals now the Fairchild Semiconductor
+fdpc eight zero one six or a small sets
+are pretty high-end well are actually
+really like they're not but Fairchild
+does make better MOSFETs than this but
+among all the MOSFETs available these
+are really really nice they offer
+extremely low switch switch on and off
+timings and they also have very low RDS
+on which means that within videos claim
+of this vrm being capable to do so in
+video says that this erm is capable of
+delivering about 250 amps if you
+actually push that much current through
+this vrm you're only going to be dumping
+16 watts of heat which is really not
+that much so if you actually upgrade the
+vrm cooling to handle a lot more you can
+push as much as even 400 amps at which
+point you'll be hitting about 40 watts
+heat output on the vrm assuming 600
+kilohertz switching frequency which is
+the limit of the voltage controller and
+not sure that in video would actually
+run the vrm at 600 kilohertz I can't
+tell you what they run the vrm app from
+a photo
+unfortunately so 400 amps 40 watts of
+heat output but where is the absolute
+hard limit assuming that the arm is at
+125 degrees and you have infinitely
+capable cooling as long as that cooling
+keeps it within 125 degrees well
+theoretically this erm could go up to 8
+great amps we do have a lot of MOSFETs
+here do keep that in mind that that
+number does work out these MOSFETs are
+very very capable assuming you could
+actually cool 800 amps of going through
+this going through the CRM because that
+would generate 156 watts of heat which
+to give you an idea of what you need to
+cool that with that's like a hyper 212
+Evo literally just sitting on top of the
+vrm not really practical not really
+doable your vrm is going to fail if you
+try to push 800 amps because it's going
+to overheat and basically destroy itself
+now that moving on to the memory vrm
+which again not that important but
+important enough that I'm going to talk
+about it uses different MOSFETs from a
+different company these are Alpha and
+Omega semiconductor EC 930 s
+these are worse than the fairchild
+semiconductor MOSFETs
+however they are ridiculous overkill as
+this memory the RM is two phases we have
+two inductors that you can't see because
+they're under thermal pads and we do
+have four of these MOSFETs and these are
+again
+dual sets so there are actually two
+MOSFETs in each of those I sees these
+are the exact same offsets and video
+used on the Titan X Pascal except they
+only use one of them in each phase and
+they also use them for the V Corps and
+they didn't do two of them per phase so
+like this card got a significant upgrade
+the V Corps vrm has new like better
+MOSFETs and more of them and the memory
+vrm has the same MOSFETs and more of
+them so this card is really really nice
+compared to like the Titan X Pascal's
+PCD now one thing to keep in mind is
+that the memory vrm will never really
+exceed 20 will be between 20 and 30 amps
+of power draw depending on how much load
+is on the gddr5 X memory chips and the
+memory system and that's really not that
+much and this set of MOSFETs if you
+actually assume that kind of current
+going through them would have very low
+switching and conduction losses and I'm
+sort of suspecting that my calculation
+doesn't work when you put too little
+current through them like when you run
+the calculation with too little current
+through it because it will spits out
+about one wall now if you actually try
+to max out this VR I'm at 240 amps 44
+amps it should put out 50 watts of heat
+which is again completely uncool about
+now at a half that it would be actually
+reasonable now you know gddr5 x doesn't
+mean that much power
+so this memory vrm is ridiculous
+overkill and it is too true phases as it
+is controlled by an UPI while you pee
+this thing right here is a u p1 6 v 8
+which is a 2 phase voltage controller
+with integrated gate drive however I'm
+pretty sure this is a dedicated MOSFET
+driver right there I'm not entirely sure
+as you can clearly see that part of the
+photo is very blurry and I do have other
+photos but without like a mem without
+the card in hand it's really hard to say
+for sure
+so actually covers the build quality
+part of this video and to be completely
+honest with you I'm impressed I'm really
+impressed with on what NVIDIA has done
+with this PCB compared to the Titan ax
+Pascal it is a significant upgrade I as
+I said before
+better MOSFETs in the vcore vrm more
+MOSFETs in the vcore vrm the memory of
+the RM is the same MOSFETs but there's
+more of them so that's also a nice
+upgrade and like really there's nothing
+to complain about for air cooling or
+water cooling like I don't see a great
+reason to go and buy a more expensive
+car just for the PCB because as I said
+well at least from what I've heard on
+ambient cooling you're really not going
+to be able to benefit from a
+significantly more powerful vrm or a
+significantly higher phase count v RM or
+a just of erm that has a better voltage
+regulation won't really get you anything
+as we've seen on past 10 series cards
+like 10 80s all pretty much hate to -
+2.1 gigahertz regardless of who makes
+them so assuming that you have enough
+cooling of course which is not part of
+what I'm covering here so I'm actually
+impressed because this PCB is
+significantly over built like nvidia
+could have gone with less MOSFETs
+cheaper MOSFETs and and they didn't so
+I'm impressed here and you know really
+don't see like a reason why you would if
+something that you're going to be water
+cooling I really don't see a reason why
+you would go and wait for a different
+PCB - kind of like for for custom cards
+to come out because getting water blocks
+for those is going to be harder and
+everything so if you're just water
+cooling this PCB is great if your air
+cooling then you have to put up with the
+founders edition cooler which is always
+going to be worse than the custom
+coolers that are available and the other
+cards which is really what you want to
+go after with 1080s
+so then that covers the build quality
+let's do some modding on this card
+because evidently it's strong enough
+let's try blow it up if you want to mod
+the power limit of n video cards beyond
+what the software allows there's a very
+simple solution for you
+the Nvidia cards monitor their current
+draw with shunt resistors located here
+here and here
+now there's one issue with actually
+modding these shunt resistors measure
+khara power draw by basically measuring
+the voltage drop across them and the
+problem here is that if well the mod
+works by shorting the current resistors
+which lowers their electrical resistance
+which lowers the voltage drop across
+them when you push current through them
+the problem with that is is if you short
+them out too well so like let's say you
+take solder and just solder right across
+one of those you're going to end up in a
+situation where the Nvidia driver will
+notice that the GPUs reported power draw
+is way too low for any kind of realistic
+scenario and it'll put the car
+in safety mode and safety mode foreign
+video card means that the GPU core is
+stuck at 139 megahertz pretty much
+making the card completely useless so
+what you end up having to do if you want
+to actually mod the power limit on in
+video cards is you either have to buy
+other shunt resistors and put them in
+parallel with the ones already present
+on the card if you're going to be doing
+that you don't really want to drop the
+resistance below one-third of what it
+currently is so this right here is a
+five milli ohm so you would want to drop
+it to say you wouldn't want to drop
+below two milli ohms resistance and you
+can do a calculation for parallel
+resistors now the simpler less
+mathematical option is to just say take
+some liquid metal thermal paste so say
+thermal Grizzly conduction or
+collaboratory liquid ultra and just
+apply that to the shunt of course that
+does leave exposed liquid metal sitting
+on a shunt inside your system so you
+know some people aren't comfortable with
+that solution but don't apply too much
+apply a you know just enough to actually
+short the shunts but not so much that
+you have a great big blob of it on there
+otherwise that will drip off and cause
+all kinds of issues so you can actually
+do it with the liquid metal and the
+benefit to doing it with the liquid
+metals instead of soldiering is that you
+can actually remove the rip liquid
+metals with with ethanol
+acetone or isopropanol you can remove it
+and it looks like you've never actually
+modified the card whatsoever which is
+really useful if you want to send the
+card back in for our ma after it died
+and that's really up to you to make this
+side if that's morally wrong or not I'm
+just saying that's an option the other
+thing is if you overdo the mod it's
+really easy to clean it up so that's the
+other thing now one word of warning
+about the KU Laboratory liquid ultra
+I've had one person tell me that they
+use KU laboratory liquid ultra and it
+ate the solder so if you're going to be
+doing
+I recommend using I recommend using
+thermal grizzly conductin aw as that one
+I know for sure does not eat solder cool
+laboratory liquid ultra for most people
+it's worked fine from what I've heard
+except this one exception which I which
+I got a message about where it actually
+straight-up ate the solder so and the
+shunt fell off and that breaks the card
+because the shunts literally connect to
+the six pin to the vrm this is like that
+shunt is the only connection between the
+610 and the vrm so if that falls off the
+card is not going to work you're going
+to have to resold er that back on there
+and then your warranty is toast so
+that's less than ideal so that's really
+all there is to say about video cards
+any more advanced models would are in my
+opinions like I'm not going to cover any
+more advanced modes here thank you for
+watching like share subscribe if you
+haven't already and if you have
+subscribed there's the notifications
+button in case you want to be notified
+immediately about every video put out by
+the people here at gamers Nexus if you
+would like to support us we do have a
+patreon you could go and donate to that
+if you would like to see more content
+like this you can head over to my
+channel which is called actually
+hardcore overclocking where I do PCB
+breakdowns and a lot of overclocking
+thank you for watching and see you next
+time
+you</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

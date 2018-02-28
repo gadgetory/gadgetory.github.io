@@ -1,0 +1,381 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Fixing Our Storage Problems with Automated Compression | Gadgetory - Your Gadget Factory</title><meta content="Fixing Our Storage Problems with Automated Compression - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Fixing Our Storage Problems with Automated Compression</li></ol></div><h2 class="post__title"><b>Fixing Our Storage Problems with Automated Compression</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/FFVwteuGC8I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">I almost feel like we should be starting
+this video with me and a smoking jacket
+holding a cigar we don't normally
+two-seated videos but here we are this
+is a quick behind-the-scenes look I am
+pretty excited to show off some in-house
+stuff we're doing for handling video
+compression because it's a major problem
+going through hundreds of gigabytes per
+month and terabytes per year and also
+handling backups and automated backups
+going to our 20 terabytes I knowledge
+enas that I've shown previously so
+pretty cool stuff behind the scenes
+before getting to that this coverage is
+brought to you by catalyst energy Mint's
+catalyst says that a three pack of their
+mints contain the equivalent energy of
+over 21 energy drinks for $20 use code
+gamers nexus at the link in the
+description below for 5% off so let's
+start with the compression stuff first
+of all on this machine this is Andrews
+rendering station and we've got a couple
+of different storage solutions one
+there's a local to disk SSD raid I think
+they are HyperX savage SSDs so those are
+in raid and they are striped we don't
+mirror them because it really doesn't
+matter the data is not important the
+idea is that the entirety of the OS and
+the host environment lives on that as
+these and all the data is on a separate
+raid array or say raid since it's
+redundant and that is a three disc WD
+red and maybe four terabyte or something
+yes four terabytes total accessible in
+the raid and that's a raid 5 setup so
+that's what we're working with for the
+main render machine and this has been
+shown in the past but what we have
+that's new is the 20 terabyte nass which
+I also very briefly showed but that is
+being currently used as a sort of it's
+hosting all the tests and methodology
+all the test results and then for media
+it's not hosting hosting any of our
+b-roll or a role it's strictly
+responsible for backing up the finished
+product so the problems we face
+basically with the Z Drive which is our
+main local to this system storage drive
+for b-roll a roll all the photography at
+the fer the website that's 4 terabytes
+just days ago we were at something like
+I don't know 20 50 gigabytes somewhere
+there
+basically nothing left we had space for
+one video basically so that was a big
+problem and the issue we faced as any
+other media production channel would
+tell you was that you don't want to get
+rid of that footage because it costs
+money and a lot of time to produce it or
+to shoot it and it sucks to kind of just
+rely on your finished product to go dig
+out old shots because maybe you don't
+use the one what you want or you don't
+remember where it is or something goes
+wrong but also keeping around in some
+cases I don't know maybe 40 to 60
+gigabytes for something like a teardown
+plus beer all kind of it's also not
+ideal so what do we do
+well compression seems like the best
+answer and I was able to use the
+handbrake CLI engine to build a
+compression routine that basically it
+can prep it runs through the normal
+handbrake CLI exe anyone can do that and
+we've got some custom tuning in their
+hand tuning through the script that
+compresses some files about 90 percent
+and there's really no visual degradation
+and quality and maybe if you're shooting
+4k but we're shooting 1080 60 and we're
+not really seeing any real loss in
+quality some of the clips have even been
+used in recent videos and no one's
+complained I don't think I could notice
+if you blind tested me so that was
+pretty carefully tested out for
+basically bitrate placebo quality versus
+actual quality I tested a few different
+settings and we decided what worked so
+the cool thing that script I decided I
+wanted it to execute recursively on our
+entire b-roll in a row we're all
+basically active 2016 folder for videos
+and so there's no real good way to do
+that in handbrake you could but there's
+issues like not being able to set
+parameters for what how old the files
+can be and so I went through a process
+of building a PowerShell script which is
+a windows-based Windows utility and in
+PowerShell we can execute this script
+and what it does is it targets the
+folder which is 2016 in this case and it
+runs recursively and that
+that it goes through every single folder
+in 2016 and it goes through every folder
+under it and so on ad infinitum
+so we can just sort of CD over to the Z
+drive z 2016 and once we're there you do
+the PowerShell command to run a script
+which is and space quotations and then Z
+colon slash 2016 slash Steve compress
+edit ps1 I hit enter and that'll start
+executing and we've already compressed
+about 3,000 files this way I think maybe
+a little less 2,000 to 3,000 right now
+it says there's it's on file 1 out of 11
+41 and it's pretty cool I've got it set
+up so that it spits out a percentage of
+the total files so that's something you
+can create in the script you can go in
+and tell it hey produce a percentage of
+how far you are through all of the files
+recursively that you're processing so
+it's telling us it's less than 1 percent
+done and then it's executing the
+handbreak functions it's detecting how
+many CPU cores we have or threads in
+this case and going through different
+libraries determining which video files
+it can and can't compress and the
+parameters for that are basically it has
+to be an mts file which is what our
+camera produces it will not compress
+mp4s that's important because we don't
+want to compress our final product we
+want to leave those fully uncompressed
+up their original output so it's only
+compressing an mts files out of the
+camera and then after that it is only
+compressing those if they are 90 days
+old or older
+so anything shot in the last 3 months
+does not get compressed just in case
+we're not done with the video or we need
+regular access to those files for for
+example if we're talking about GPUs the
+RX 480 and gtx 960 both of those were
+done I think three months or more ago at
+this point but if we are producing the
+video still with them it's good to kind
+of hang on to some stuff that was shot
+more recently for either b-roll or
+advertisements or whatever we're doing
+so that's all being compressed through
+the script and it goes through and it's
+it's found one to work on it tells us
+what percent through that encoding
+ask it is which is 70% right now Saudi
+for 27 and told us the frame rate at
+which it is compressing the estimated
+time of completion and then it it saves
+to a log file and says if it succeeded
+or not and if the compression did not
+succeed there's another check in there
+that I had the support from Jim Vincent
+who helps us somewhat regularly in
+Patrick Nathan who helps us somewhat
+regularly both in programming functions
+there's a check I had them help me with
+where the powershell script basically
+looks at the output from the last task
+that was completed because handbrake can
+speak to basic Windows functions it
+outputs a 0 or a 1 based on if the
+compression succeeded or failed and so
+if it puts out a failure than the oh I
+didn't even explain this part yet if it
+puts out a failure the old file is not
+deleted and that's the part I didn't
+explain so for compression obviously
+does us no good if all we're doing is
+compressing the video and creating a
+second file all that does is add to your
+storage usage so what what our script
+does is it compresses these sometimes
+for gigabyte files down to a couple
+hundred megabytes massive difference and
+then if the check says this succeeded
+this task succeeded in its function it
+will delete the old file and if it
+doesn't succeed it leaves it there and I
+go check it manually later to see what
+happened which that hasn't happened yet
+but if it does we've got a safety check
+in there so that's executing right now
+that uses as you will see full 100% CPU
+load it does not care about the GPU at
+all it's a bit of RAM but most of that
+was premiere open in the background I
+think and then the Z Drive gets hammered
+because it's it's executing non-stop
+either writing or reading files so
+that's what the script does that's one
+thing we're gonna go ahead and cancel
+out with some control sees and this will
+run I need to still catch up through the
+11-hundred files we have but once it's
+done compressing all of those I'm going
+to set it up to execute on a task
+scheduler probably once a month
+overnight or something like that and
+that'll be a
+completely hands-free maintenance for
+the system for the business the z drive
+we look at it now we're up to about six
+hundred gigabytes free and originally
+when the started like I said we were
+less than fifty gigabytes so this has
+clawed back for us about 500 gigabytes
+of space and it's basically free other
+than the power bill for running the CPU
+at honor presented 24/7 for a few days
+but basically free I didn't have to
+drive buy more drives and then we want
+to utilize the Nass of course - so what
+do we do with that well that's the sign
+ology Nass the DES whatever it is 1515
+plus or something like that it's it's a
+it's four terabyte disks by five so it's
+a five disk array all four terabytes and
+it's in a hybrid raid setup that's built
+by sign ology but it's not really being
+utilized so I wanted to fix that and the
+way to do that first was to go into task
+scheduler which I just said we're going
+to use for PowerShell shortly for the
+handbrake script and task scheduler we
+have this task right now that's running
+every Sunday every two weeks so it runs
+twice a month on Sundays at 5:45 a.m.
+when probably no one's working and
+there's probably not an embargo lifts
+the next day there's normally on
+Tuesdays so that wasn't a concern so we
+go into task scheduler
+this is a basic Windows utility just
+like PowerShell is and I would wager
+that probably most people don't even
+know that at least one of those two
+exists on their computer and they are
+crazy powerful so tasks that earlier we
+can right-click the one I created go to
+properties and the general is it backs
+up finished files from our finished
+directory in this on this local machine
+and it sends them over the local network
+at a gigabit per second it's about 111
+megabytes per second to the NASS and we
+keep we retain both copies one here one
+there and then the really cool thing is
+the NASS then takes that content I think
+it does this I think it does it at 5:45
+a.m. every night it takes that content
+and it uploads it straight to a backup
+online Drive that we have
+your run-of-the-mill backup company so
+they're they're completely safe in we
+have them in three locations two local
+and then one remote because it's not a
+backup if both copies are local that's
+not it's not good so that's how that
+works and the the script is very simple
+for doing this copy so what we want to
+do sign ology does not have a good
+solution to do this built into their
+Nass they have several solutions that
+are kind of partway there but I didn't
+like any of them I felt like a really
+basic batch file would work better so we
+go to triggers and you right-click it
+and you can see the trigger is weekly so
+it fires weekly every two weeks on
+Sundays and then the action is to start
+a file or a program this is a script I
+made it's very basic pretty much anyone
+can make it you go to we're gonna open
+that script it's in the C Drive and then
+scripts and then robocopy
+finished 2016 dot bat as a batch file
+this executes basically in command and
+we can open that notepad plus plus and
+this really isn't a trade secret or
+anything this is really basic Windows
+functions so robocopy
+is a command line function in Windows it
+executes it automatically copies from
+location a to location B with a set of
+parameters and several of the parameters
+we want are already enabled by default
+so it's a really simple line it's like
+sixty eight characters long or something
+or sixty eight columns on yeah sixty
+eight columns on and so robocopy from Z
+2016 finished to Y finished 2016 I know
+backwards formatting whatever but that's
+the Nast and then we are excluding a few
+things and we're copying the files and
+we're not mirroring so that means that
+if a file is deleted on the NASS it
+won't be deleted here and vice versa and
+in some ways mirroring is good but I
+just didn't want it because sometimes we
+change stuff last minute and I didn't
+want to have issues so that's the
+robocopy that does all that stuff for us
+and then the last part is the
+cytology set up where it auto uploads
+everything using the sine ology drive
+whatever it is cloud proxy drive or
+something like that and you select your
+drive service whether that's Dropbox or
+Amazon or Rackspace Backblaze all those
+people you select one of those but in
+your credentials we encrypt the uploads
+both directions and I limit them to a
+certain data rate so that it does not
+eat into our data right here if we
+wanted to upload an actual video to
+YouTube so I think I limit it to
+something like really slow like two
+megabytes per second and it just sort of
+spins overnight and then the rest of the
+data is left for our normal uploads for
+YouTube because we don't want to slow
+those down so that's the
+behind-the-scenes not quite so quick but
+I think that gives a pretty cool look at
+what we've been working on lately to
+deal with these challenges that you
+probably don't think about on a
+day-to-day basis I mean storage is a
+massive issue and I don't want to keep
+everything on the nast I kind of like
+having stuff local to work on we'll
+probably move that direction in the
+future but I would rather build a server
+than an ass and then we use the Nats
+more for backups for testing data from
+all the seven or eight different test
+machines and test methodology which is
+really important to have access to
+everywhere which also automatically
+uploads encrypted to our online backup
+solution so I think that about covers it
+as always the links in the description
+below patreon like the postal video
+helps out directly thank you to our
+patreon backers for enabling this type
+of stuff because this is it's not that
+time-consuming to do some of it but the
+testing for the handbrake script was
+reasonably time consuming and obviously
+it does it does suck to kind of burn
+time on stuff that feels like it's not
+producing content even though it's
+really really important from a business
+standpoint to do but thank you to this
+for the support subscribe for more I'll
+see you all next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

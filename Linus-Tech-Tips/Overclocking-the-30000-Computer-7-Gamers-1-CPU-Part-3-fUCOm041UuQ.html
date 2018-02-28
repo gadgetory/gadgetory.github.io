@@ -1,0 +1,392 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Overclocking the $30,000 Computer! - 7 Gamers 1 CPU Part 3 | Gadgetory - Your Gadget Factory</title><meta content="Overclocking the $30,000 Computer! - 7 Gamers 1 CPU Part 3 - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1>Gadgetory</h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><h2 class="post__title"><b>Overclocking the $30,000 Computer! - 7 Gamers 1 CPU Part 3</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/fUCOm041UuQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">okay so we built seven gamers one CPU a
+$30,000 computer running on raid as an
+operating system and using it and some
+really cool open-source virtualization
+technology to run seven discrete gaming
+virtual machines at once all fully
+capable of like high performance gaming
+so I was cool thirty thousand dollar
+computer
+two thumbs up very awesome ten @ @ n IG
+and etc then what we did was we showed
+it off at CES okay so we got that out of
+the way the world was able to see it in
+person then after that we brought it
+back to the office converted our entire
+conference room here into a LAN Center
+and had an interoffice gaming
+competition complete with taran being
+terrible at video games yes the very
+worst one here except he did kill me
+once and you can check that video out
+here so you might be asking yourself why
+is line is still milking this damn thing
+what could possibly be left to do and
+the answer is of course we're going to
+overclock it
+intel brings ddr4 to the mainstream with
+their core i7 6700 K and Core i5 6600 K
+processors check out the link in the
+video description to learn more
+so the first step anytime you do any
+performance tuning is to get a baseline
+measurement because if you don't then
+you have no idea if the dials you're
+turning are doing anything at all so I'm
+going to introduce you guys to the
+benchmarks that we're going to be
+running Cinebench r15 is going to tell
+us what we need to know about cpu
+performance we are going to be using
+crystal disk mark to tell us what we
+need to do about our SSD array
+performance I 264 cache and memory
+benchmark is going to be interesting
+especially once we run it on all
+machines at once more on that later and
+we're going to be using fire strike
+extreme to see how our GPUs are doing
+some of the stuff that's open is just
+temperature monitoring and stuff like
+that and finally we're going to be
+having a look using our handy dandy wall
+power meter doodad here at what kind of
+power consumption we see when we're
+hitting the whole system at once but
+let's start with a single VM baseline
+with all the other ones sitting idle and
+I'll show you guys on screen hopefully
+right now how I plan to go through this
+entire test suite and show you guys the
+scores so here we go we're getting a
+Cinebench score of around 600 we're
+getting crystal disk mark scores in the
+area of sort of you know two gigabytes
+per second reads and around 400
+megabytes per second writes to our array
+our memory scores we're seeing about 5
+gigabytes per second so on average reads
+and writes to our quad-channel ddr4
+memory and our 3d mark firestrike
+extreme score is 61 48 so the next test
+and this one I will need some helping
+hands for is going to be to hit all
+seven VMs at once for our baseline score
+to see what happens when they have to
+actually share resources which
+especially for things like memory it's
+not very pleasant sometimes
+okay so I've assembled a crack squad of
+helpers whose intelligence and physical
+coordination I'll lead me to believe
+that it is probable
+nay likely to both kind of the same
+thing that they will be able to perform
+the skills that I set out for them today
+tasks actually not skills don't worry
+too much about that basically what you
+guys have to do is all press a button at
+the same time not gonna work
+okay Colton you're fired again thank you
+okay
+so two of you will have to press two
+buttons at once at the same time Johnny
+you got this okay
+Johnny you're on machines one and two
+you've on you're on machine 3 Colton
+you're here Nick you're here and I'll go
+over there and I will tell you which
+button to press and you will all press
+it at the same time you're going to
+click the button that says run next to
+CPU in the Cinebench r15 programs
+everyone got your cursor position ok so
+I'm gonna say that don't do it yet I
+guessed Aaron's not here I don't have to
+give instructions like that ok 3 2 1 go
+ok so you can see here with our seven
+instances of Cinebench running we are
+actually pinning the entire CPU here at
+100% usage that was exactly our intent
+and will tell us without any extra turbo
+boost for only activating a couple of
+cores at a time how all of our VMs can
+run in a worst-case scenario where they
+are sharing as much resources as
+possible okay so we're scoring around
+500 points which is about a hundred
+lower than we did when we were just
+running it on a single VM fascinating ok
+everyone ready 3 2 1 go ok so this is
+interesting on the read side of things
+really there wasn't much of an effect
+from the numbers I've looked at so far
+but on the right side of things some of
+our VMs were so starved for disk time
+that they actually timed out on their
+sequential write benchmark very very
+interesting this isn't something we're
+gonna retest after we overclocked
+because we can't overclock storage but I
+just wanted to have this as just a for
+my information sort of number I 264
+cache and memory benchmark it's a gray
+window this one I'm really interested in
+because desktops really don't care much
+about their memory bandwidth the
+today's I mean dual-channel quad channel
+ddr3 ddr4 it's all fast enough but if
+you're trying to hit something with
+seven VMs at once I'm expecting the
+performance to be affected somewhat it's
+this is really interesting so you can
+actually see the systems are running the
+benchmarks at different speeds mix VM
+over here so this is player number five
+is actually still running the memory
+benchmarks or at least it was before I
+and mine is almost done running all of
+the level 1 and level 2 cache benchmarks
+so it does seem like their ability to
+even run these tests is affected by the
+fact that we're hitting them all at once
+here we go last one position your cursor
+over run three two one fire strike
+extreme thank you clickable random times
+like okay I guess that's it three to
+load final exam okay you guys are
+dismissed for now thank you I'll call
+you back once I overclocked the system
+so check this out this is what our
+memory and cache benchmarking looked
+like this is what our benchmarking looks
+like in firestrike extreme so with seven
+instances of it running you're actually
+getting up near 100% utilization closer
+to like 90 here
+okay very interesting so 3dmark scores
+not affected much by our cpu and ram
+sharing because 3d bark is mostly
+dependent on the graphics card in each
+VM has its own r9 nano so all this left
+now to do is to record our scores so we
+can create some average score graphs for
+you guys and establish our baseline so
+that we can find out if our overclocking
+helps
+now most server motherboard makers do
+not have any overclocking features but
+this is a soos and this is technically
+AWS or workstation board so in the AI
+Tweaker menu we've got there AI
+overclocked tuner which has two settings
+neither of which I have played with at
+all manual and OC tune so I'm just going
+to go let's OC tune it level three and
+find out if the system works there's a
+very good chance it's not going to work
+I have not tested this at all
+so this is actually a really bizarre
+quirk of this system it starts up here
+oh if it turns on at all it starts up
+here oh wow yep that's not posting let's
+clear seamless and then we will go from
+there
+let's see if that does anything oh that
+was it I need this bar to get past like
+me here
+well that wasn't it
+like I
+I know what it is because we did ASIMO's
+clear that bio setting that I need the
+4G decoding setting is not enabled so we
+are not able to boot with all of these
+PCI devices so maybe by unplugging all
+the video cards I will be able to have
+them not get picked up and I will be
+able to get into the bios this is how
+you remove the graphics cards from seven
+gamers one CPU there we go okay they're
+out so now can try again
+okay so that was it a problem with
+having a system that doesn't post in its
+default configuration okay so let's try
+manual this time um my understanding is
+that on these types of boards you can
+expect somewhere in the neighborhood of
+like a hundred and five megahertz so
+just for lulz let's try 105 and see what
+happens I'm guessing not a whole lot and
+that's what I got okay then okay so
+after four attempts we're back in the
+BIOS are setting did stick but obviously
+didn't work so let's try a more
+conservative 103 which would be a three
+percent overclock okay so because we
+have no video card we have to use VNC to
+get into our VM and find out if
+everything is working as intended well
+that is not reporting correctly at all
+so that's a pain so we're gonna have to
+run a benchmark and find out okay I tell
+you
+vm's really screw up hardware reporting
+both cpu-z
+and i 264 are reporting numbers that
+would indicate that our CPU is not
+overclocked but Cinebench is reporting
+that it is overclocked and even though
+these scores are not directly comparable
+because we don't even have any of the
+other VM booted we're getting 900 in
+Cinebench
+which would indicate that everything's
+working properly at the very least so
+now we can proceed to the next step and
+put our graphics cards back in okay all
+our video cards are showing up which
+basically means we can start the array
+and fire up our VMs did it just do that
+or did you do that Hey all right so now
+it is time to overclock our video cards
+now the r9 nano isn't really known to be
+much of an overclocker oh but we're
+gonna go ahead and increase the power
+limit as high as it goes and we're gonna
+increase our clock tonight I don't know
+1050 and see what happens
+hey graphics 1050 megahertz
+just like that I guess water cooling
+helps a little bit with the whole
+overclocking Murai nano situation very
+nice
+he'll afterburner is detecting all seven
+GPUs that shouldn't be possible because
+we've passed them through two separate
+PM's it's also detecting Wow afterburner
+doesn't know what's going on so it's got
+them all being used while we're running
+the benchmark so it knows they're seven
+but it doesn't know that it's only using
+one of them and it's just cloning this
+core clock graph which actually has the
+card not reaching uh not reaching a
+thousand megahertz anyway so I guess all
+that's left now then is to run some
+benchmarks and find out if we got any
+benefit for our trouble everyone ready
+overclock Cinebench benchmark what damn
+it Nick I've wanted someone to just
+start the benchmark early out of that
+stared out please work
+no no what that's good huh player
+whatever it is so it's one two three
+four five six seven and then you put OC
+scores Cinebench what my keyword says
+don't worry about that okay actually
+that does seem to be faster yeah forty
+points better on my everyone ready three
+two one run it
+please don't crash why it's okay give it
+time
+power draw 1600 watts so did everything
+but next lunch okay so after much
+struggling we managed to achieve
+whopping over clocks of anywhere from 0
+to 70 megahertz on our graphics cards
+yielding fire strike extreme scores in
+the very very close to what we were
+already getting range leading us to
+believe that this whole thing was a
+terrible idea but I'm really glad that
+you guys got to come along for the
+adventure with us because that is what
+we do on this channel that is what we do
+this is a sponsor spot I have been
+looking forward to for quite some time
+we recovered a take on what they do is
+pretty obvious they recover data and why
+we're affiliated with them will be
+pretty obvious if you checked out the
+data recovery vlog which if you haven't
+already is a pretty a pretty exciting
+piece of content as far as they go on
+this channel anyway they gave me some
+bullet points to talk about and I will
+do that but then I'll get into why
+they're so special to me so first of all
+they're one of the only data recovery
+companies to invest in R&amp;amp;D so if the
+technology to recover your data doesn't
+exist they create it they're fast
+they're tech savvy they have friendly
+customer service available 24/7 and that
+was indeed my experience their data
+recovery guarantee policy means that if
+they don't recover any data there is no
+recovery fee they have worldwide
+emergency data response options
+including on-site remote and in lab
+that's 24/7 365
+they've got state-of-the-art equipment
+utilizing today's most advanced
+technology with proprietary in-house
+developed tools they've got ISO for
+class 10 and ISO 5 class 100 clean rooms
+to enable them to provide a optimum
+solution for a recovery environment and
+basically what it boils down to for me
+is they got my data back it was an
+extremely complicated raid array not
+recommended rate array so I had three
+raid fives that were hardware raid fives
+on separate LSI controllers and then I
+had those striped together and raid zero
+for an effective raid 50 so three raid
+five stripes in Windows I thought it
+should be pretty safe because I can lose
+up to one SSD per controller before I
+should run into any issues but what I
+didn't account for is losing a
+controller outright so one of the
+controllers failed causing the array to
+go into an unrecoverable state and we
+recover datacom had me plug in all those
+24 drives to a host bus adapter and they
+were able to remotely using their own
+Linux tool reconstruct the whole thing
+allow me to copy it off and basically
+save my turkey which thanks to those
+guys and if you guys have a data
+recovery emergency then check them out
+the link is at the video description I
+heartily endorse we recover data comm so
+thanks for watching guys if you just
+liked this video hit the dislike button
+but if you liked it and you thought it
+was crazy and awesome and extreme hit
+the like button get subscribed and maybe
+even consider supporting us by buying a
+cool shirt like this one changing your
+Amazon bookmarks one of our affiliate
+code instructions for our up there or
+just contributing directly through our
+all new Linus tech tips forum freshly
+updated for 2016 which you can check out
+at the link in the video description and
+now that you're done watching this and
+you're wondering hey what should i watch
+next maybe check out the video where I
+show you how to code rupal your network
+speed for a hundred bucks that is
+assuming that you have a couple of
+really good computers already and you
+have like networking from
+eating etcetera etcetera cetera terms
+and conditions may apply
+Thanks up</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>How SSDs Work - SSD Architecture, MLC vs. TLC | Gadgetory - Your Gadget Factory</title><meta content="How SSDs Work - SSD Architecture, MLC vs. TLC - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">How SSDs Work - SSD Architecture, MLC vs. TLC</li></ol></div><h2 class="post__title"><b>How SSDs Work - SSD Architecture, MLC vs. TLC</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/T0XR4HIgBq0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey everyone this is Steve from gamers
+Nexus Donna and I am joined once again
+by Kent Smith from LSI and today we're
+talking some more about the about
+evolving flash types and a couple of
+other topics so you know you've all seen
+mlc and TLC and and things of that
+nature
+when selecting a solid state driver when
+reading reviews and it's beyond the spec
+sheet on Newegg or wherever you look at
+your looking there's not a whole lot of
+technical depth so that's where we're
+going today and starting with the flash
+types the NAND types mlc as an acronym
+means multi-level multi-level cell TLC
+is triple level cell and that's sort of
+where a lot of it stops so can I get you
+to tell us some more about how how that
+actually works what it actually means
+sure and just to clear everybody we
+skipped over SLC of course range today
+you really only see in the high end
+Enterprise SLC meaning single-level cell
+but what that's talking about is the
+actual voltage levels that are kept
+within a cell so single-level cell
+meaning there's really two voltage
+levels effectively on-and-off it's
+storing for one bit when you go to mlc
+or two levels you actually store four
+bits or four levels so that means
+there's there's four voltage levels that
+are being stored in an individual cell
+and versus just two levels so it's a lot
+harder to differentiate so if this
+particular level here suddenly has a
+reduced voltage if something drops it
+now looks like the second of those four
+levels and so that's a bit error and
+it's only because of the ECC that you'll
+be able to correct that the problem is
+ECC has to cover a number of bits a
+number of cells all at once and if too
+many of them are wrong you've got an
+error so TLC then is 2 to the power of 3
+or 8 I won't bother putting 8 fingers up
+here but it just gets that much harder
+in that same cell in that same range
+you're trying to put 8 different voltage
+levels so it's really tough and Adam and
+performance pretty heavily so is there
+anything we can do on the controller
+level to mitigate the impact yeah in
+fact one of the biggest drawbacks of
+that of course we were kind of talking
+about that error rate because those will
+those bits will shift over time so your
+controller is going to try to take care
+of that with higher powered error
+correction schemes like we we announced
+the shield technology on the latest
+generation the SandForce controllers and
+so that'll be able to do a lot more air
+correction for future NAND flash as as
+it continues to evolve the the speed is
+also an issue as you mentioned TLC is
+going to be a bit slower than MLC and so
+you know the the pro of TLC is it's it's
+cheaper to make because you get more
+bits in the same silicon but the
+drawback is it gets a little sore so the
+controller has to do other things to
+mitigate that you look at potentially
+having more die so then you want a
+bigger drive you know and today you know
+the 240 gig capacity is pretty difficult
+256 you know that's a pretty common
+sweet spot and that for the most part is
+is accessing as many die as you can to
+keep it going as quickly as possible now
+what do we have TLC just sort of got
+introduced to the consumer market not
+long ago by what happens next is their
+next step after TLC the announcements
+that have gone on from the flash
+manufacturers are talking about 3d NAND
+and bean and this is a category of a
+flash memory if you think about SLC and
+mlc and TLC as single-family homes you
+know in a city and then in order to take
+advantage of that same real estate we
+want to build vertically right and so
+there's a couple of different processes
+that have been announced that
+essentially make it sort of like
+high-rise apartments so you can get you
+know 10 or 20 additional levels for that
+same footprint of silica and so it has
+the advantage of you can now increase
+that
+I'm a tree you can go to a higher
+process node so that lowers your error
+rate it has the disadvantage of a little
+bit higher cost but you then divide that
+by having you know ten or twenty or
+thirty different levels in the same
+footprint and you get to go past that
+cost curve today you know it's really
+not cost-effective a lot of
+manufacturing steps have to be worked
+through but you know MLC was not
+possible you know five ten years right
+now so it'll happen it'll go for
+programming race cycles can you give us
+an overview of what it actually means
+you know the basics are it's how many
+times you can write to the flash and
+erase it before it starts decaying
+heavily and eventually dies right right
+so how does that all work okay so with
+in flash memory you can write to
+individual pages at a time but you have
+to erase whole blocks at a time each
+time you do that erase process you
+effectively decay the the cells now you
+you could also argue it's the program
+step that does the DK now that's
+probably more appropriate but either way
+you can't do a new program until you do
+in a race so it doesn't matter which
+side you're counting the count will
+incurring increment and you will have a
+decay in the cell so what happens is as
+a decays the cells have less ability to
+hold a charge so at the beginning of
+life you know remember we were talking
+about on mlc you have those four levels
+it's really easy to keep those charges
+as you cycle it more and more those
+charges tend to start you know migrating
+and pretty soon charge three and four
+look like chart four and maybe charge
+one and to look like charge one and so
+then it's harder and harder to
+differentiate so again the ECC does the
+job of correcting that but if there's
+too many errors in a in a single area
+the ECC can't can't recover from it so
+that's where the the cycle count comes
+in if I say if I have a flash that has
+3000 cycles that essentially means the
+flash is able to go through 3,000
+different
+in that cell doing a program and a race
+cycle and after you do the 3000 the cell
+according to the factory says it can
+still hold those charges for whatever
+the spec is if it's consumer class it's
+typically about a year so so we actually
+have a cell decay exactly yeah so you
+could potentially set your laptop
+computer on a shelf and you know just
+forget about it you're using your
+desktop all year long you finally go out
+for the next show and suddenly your
+laptops empty because it's been a year
+since you've turned it on so zap sort of
+like your car battery if you leave your
+car long enough the battery will drain
+it's that same idea
+okay and another topic is
+preconditioning so I've mentioned this
+when talking about our test methodology
+on the website we do precondition the
+drive before each type of test and you
+guys kind of have the basics of it but
+can you give us a top level look at
+preconditioning why it's important and
+then and then maybe explore why our
+readers would see lower performance or
+higher performance given different
+intervals of use sure oftentimes when
+you see a review or discussion around an
+SSD you'll see that it has a certain
+spec you know I can write so many
+megabytes per second a lot of times
+you'll see it's an up to number and in
+many cases that'll be a fresh out of box
+number and the problem with that is the
+drive will only live in that lifespan
+within its lifespan it'll only live in
+that time period for less than one
+percent of its life you know maybe even
+point O one percent of its life so it's
+not really helpful because as soon as
+you start writing data to it it has to
+garbage collect all SSDs have to garbage
+collect now some will be faster than
+others add garbage collecting but they
+all have to garbage collect it's during
+that process that the performance will
+drop down because during garbage
+collection if you're processing moving
+data you can't take any new data in and
+so it's that that that fight that
+internal fight if you will over the
+bandwidth to the flash
+the host and the controller trying to
+move data around that will actually slow
+the drive down so when when you look at
+benchmarks you want to make sure you
+understand whoever did that analysis you
+know did they do the proper
+preconditioning and there's various ways
+of doing it
+there's many theories on it but at a
+minimum you have to do some kind of pre
+conditioning now we generally recommend
+if you really want to look at real world
+you want to sequentially precondition
+before you do a sequential test and you
+want to randomly precondition before you
+do a random test now if you believe your
+environment is a mix that's fine if your
+test can have a mix of sequential and
+random then essentially you just need to
+run that test long enough to ensure
+garbage collection is operating with
+that particular configuration and you
+will see the performance of what the
+real world would look like with that
+same condition right and so for any of
+you who want to do testing on your own
+drive at home to make sure you're
+getting the specs that you've seen
+online
+generally what we do with when testing
+SSDs is musuem etre and I can put all
+the links in the description below and
+as gamers you'll want to do 4 K random
+preconditioning and testing because
+you're gonna be using mostly very small
+files where as sequential is more for
+the heavy users who are writing very
+large files frequently so I'll put some
+basic instructions on how to
+precondition your drive and do a real
+actual test that way you get a actually
+but the best thing to do would be tested
+straight out of the box or secure erase
+it and then do your your precondition
+test so you can see the real difference
+be the difference I really understand
+yes you have hit that garbage collection
+period because you will see a drop
+especially on random writing right so
+all that again in the link in the
+description below and thanks again Kent
+and we will see you all next time thank
+you</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

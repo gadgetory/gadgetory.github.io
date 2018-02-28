@@ -1,0 +1,243 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Control Your PC From a Distance - IPMI &amp;  Remote Management! | Gadgetory - Your Gadget Factory</title><meta content="Control Your PC From a Distance - IPMI &amp;  Remote Management! - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1>Gadgetory</h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><h2 class="post__title"><b>Control Your PC From a Distance - IPMI &amp;  Remote Management!</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/2LXijv0d3Ac" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">we all know the computer basics you want
+to turn your computer on you press this
+button on the front you want to see what
+the computer is doing you look at the
+monitor you want to reset the computer
+if it crashes you press this other
+button on the front but do you know how
+to do all of those things if you're a
+thousand miles away oh I know I know
+okay well good for you smartypants
+here's a gold star for everyone
+else stay tuned
+donal bear is the easy-to-use VPN
+service that lets you use the web as
+though you're in one of twenty different
+countries learn more and try total bear
+for free at the link in the video
+description so there are a huge number
+of reasons that you might want to be
+able to access or control your computer
+from far away it ranges from totally
+mainstream stuff like needing to grab a
+file off your desktop for the homework
+assignment you were planning to print at
+school before handing it in which yeah
+whatever I think you still understood my
+point to enthusiasts stuff like
+realizing you want to share all those
+birthday pictures you took of little
+Joseph while you're visiting it
+Josephine and your FTP is down to IT
+administrator stuff like realizing that
+someone put windows on one of your
+servers and you need to throttle
+everyone else in the building's internet
+connection so not a moment is wasted
+while you download your favorite Linux
+distro now to this virtual media install
+it and restore order to the universe so
+let's start with more basic solutions
+and work our way up to the cooler but
+regrettably more expensive ones the
+first one shouldn't cost a dime because
+if you already bought a decent PC in the
+last 10 years there's a very good chance
+that it has a feature called wake-on-lan
+so the way wake-on-lan works is as long
+as the computer is plugged into wall
+power even if it's in a shutdown state
+it actually consumes a little bit of
+electricity illuminating power indicator
+LEDs on your motherboard or power
+supplied even enabling functionality
+like charging plugged in phones or
+tablets over special USB ports and you
+guessed it keeping your network card
+juiced up enough that it can wait for
+what's called a magic packet and bring
+the whole computer to life wake on land
+can be configured a handful of ways you
+can set it up in the UEFI or the bios of
+your motherboard or you can actually do
+it from within the network card
+configuration panel in most modern
+operating systems you can even specify
+if you want a magic packet to only work
+in sleep versus when the machine is
+fully powered down wake-on-lan has
+though it requires either a separate
+machine that you can remote into using
+something like TeamViewer to use a
+utility to send a magic packet or a VPN
+or some firewall and routing rules to be
+configured for it to work from outside
+of the local network on top of that
+wake-on-lan is not capable of shutting
+down the computer that needs to be done
+through your operating system so
+wake-on-lan does nothing to help you if
+the system hangs and is stuck in an
+unresponsive state or fails to boot for
+one reason or another which leads us
+then into some jenkki solutions to this
+problem covering a bit of a range in
+terms of difficulty and expense first up
+is a solution I actually really like
+this is a Belkin Wemo you may remember
+it from the channel super fun prank
+where berkland I made the LMG staff
+believe they had triggered the building
+alarm you want to check that out here
+this one is relatively cheap and I
+already had it lying around but any
+smart home power socket that can be
+remotely switched on and off with an app
+will work for this so these things are
+intended for something like a bedside
+lamp but by configuring the computer to
+turn the machine on
+after AC power loss and every non laptop
+that I've encountered has this option
+buried somewhere within the BIOS you can
+do a hard shut down using the Wemo by
+just cutting power to it and then turn
+it back on if for whatever reason it
+fails to boot and the machine should try
+to boot again well what if I don't want
+to spend $50 on a clever wall socket
+good question the way a PC powers on and
+off is simply by bridging two contacts
+on the motherboard power switch allowing
+electricity to flow so it's a short
+press to power on and to safe power off
+and a long press for about five seconds
+for a hard forced shutdown so get
+creative here's a great thread on the
+Raspberry Pi forums that covers some of
+the ways folks have used Arduino
+and raspberry PI's to wire up the power
+on and off switches for their remote pcs
+and actually Luke even told me once
+about a solution that he created for
+someone who didn't want to spend a dime
+or any time but who happened to have a
+spare a laptop with an external five and
+a quarter inch optical drive where he
+put the optical drive next to the
+server's power switch so he could remote
+into the laptop and eject the disk tray
+causing it to bump the power switch not
+an ideal solution but definitely
+creative and the sky is pretty much the
+limit here but none of that stuff allows
+for the computer to be fully managed in
+the same way that you could if you were
+sitting in front of it and that is where
+ipmi comes in this Super Micro
+motherboard actually a super sexy
+soon-to-be-released micro ATX model the
+support for up to 22 core processors
+four sticks of quad channel memory and
+dual onboard 10 gigabit network cards
+the x10 SRM TF
+comes with a dedicated additional
+network port that is just for ipmi or
+intelligent platform management
+interface you assign it a static IP
+within the BIOS then you can use any
+computer on the same network to navigate
+to that IP login and assuming you've got
+your job up to date and your security
+settings all configured you'll be
+looking at a whole wealth of freaking
+cool tools and functionalities you can
+see the system hardware you can monitor
+server health to see if your CPU is
+running cool enough and if it's not you
+can check if your fans are still
+spinning or you can set up a different
+fan curve you can do event logs you can
+mount virtual disks and drives you can
+of course power on or off the computer
+in any way you please and you can even
+do advanced things like updating the
+BIOS or the IPMI firmware and adjusting
+BIOS settings using the real-time view
+of the VGA output that's on the back of
+the board the problem is that SiC
+features like a real-time view of
+exactly what the machine is outputting
+often require special Hardware aside
+from just that network port to be built
+into the motherboard and while
+motherboards with add-on ipmi modules a
+soos has a number of them available do
+exist they mostly come with IP mi or
+without it there are K VMs that are
+remotely knowledgeable but they are much
+more expensive than investing in IPMI
+capable Hardware in the first
+place and they won't support everything
+that an IP my board can do now to be
+clear IPM is not perfect and poses some
+serious security risks I mean remember
+when someone has physical access to your
+machine it's not your machine anymore
+but it's the king when it comes to
+remote management and it saved me quite
+a few late-night trips to the office
+crunchyroll as the site created by anime
+fans for anime fans they offer the most
+current episodes of new shows straight
+from Japan and they have a huge
+collection of the most popular anime
+series the featured content for spring
+of this year is twin star exorcists Ace
+Attorney read 0 and kid neighbor of
+course they've got like way more than
+that and all the content on their site
+is professionally subtitled so all
+you've got to do is head over to
+crunchyroll.com slash Linus which is
+linked in the video description to sign
+up for a free 30-day trial of
+crunchyroll premium 30 days our link
+gives you a whole month a free anime
+completely ad free and if you enjoy the
+many benefits of premium like 1080p
+streaming getting new episodes of shows
+straight from Japan within an hour of
+their premiere with subtitles and being
+able to stream anywhere anytime to a
+variety of devices like your phone
+tablet or game console you can continue
+your premium membership to crunchyroll
+for only 7 bucks a month so head over to
+crunchyroll.com slash Linus and check
+them out so thanks for watching guys if
+this video sucked you know what to do
+but if it was awesome get subscribed hit
+the like button or even consider
+supporting us directly by using our
+affiliate code to shop at Amazon
+instructions up there buying a cool
+shirt like this one or with a direct
+monthly contribution through our
+community forum which by the way you can
+go to its linked in the video
+description asked your questions and all
+that kind of stuff now that you're done
+doing all that stuff you're probably
+wondering what should I watch next maybe
+check out this video over on channel
+super fun our tertiary Channel
+click the little eye up there and go
+check it out it at guarantee it'll be
+fun maybe even super fun
+you</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

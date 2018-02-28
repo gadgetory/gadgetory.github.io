@@ -1,0 +1,321 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>FFXV GameWorks Issue Revisit: Benchmarking the Demo | Gadgetory - Your Gadget Factory</title><meta content="FFXV GameWorks Issue Revisit: Benchmarking the Demo - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">FFXV GameWorks Issue Revisit: Benchmarking the Demo</li></ol></div><h2 class="post__title"><b>FFXV GameWorks Issue Revisit: Benchmarking the Demo</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/Y07wE3WDW_M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">remember this this is the Buffalo so how
+do you remember the Buffalo so required
+viewing for this video is our final
+fantasy deep dive where we looked at
+game works implementation and just
+objects in general where the game was
+drawing objects that were not anywhere
+near the player this is something that
+we were not only able to validate with
+other software outside of ansel but also
+Square Enix posted a series of tweets
+that more or less acknowledged the issue
+and said that they were working towards
+a solution so what was the issue then
+the quick recap is that there was severe
+performance loss in most of the
+benchmark utility because aspects of the
+game that the player was nowhere near
+were being rendered anyway thus causing
+lower performance than would seem
+appropriate for what was being shown on
+screen today we're revisiting it with
+the playable demo of Final Fantasy 15 to
+see if that's been improved before that
+this video is brought to you by the new
+cable mod pro series cable mods new pro
+cables come with pre-installed closed
+combs for clean builds accompanied by a
+revamped color style and vibrance the
+cables are now using thicker wires and
+they've also added right-angled internal
+USB 3 extension and right-angled SATA
+data cables by the pro series cable kits
+at the link below or customized at your
+cable set with the configurator also
+linked below so first up the settings
+have changed significantly from
+previously previously the settings
+options were light standard and high and
+the difference there were differences
+within them that you had the hunt and
+find because these settings specifics
+were not exposed to the user in fact in
+order to change the settings at all
+beyond those three presets you had to
+use external software to expose the ini
+files and this is obviously not an
+expected use case by square-enix so we
+were able to use some of that software
+and change the settings files which
+allowed us to do independent game works
+on off a be testing and one of the
+things that troubled us was that the
+game work settings were only on with the
+high option and we're off with the
+standard option however there are other
+things changed as well like view
+distance and other
+quality detail settings that were not
+related to game work so it made it
+difficult to individually check what was
+causing what performance hit and so we
+were able to isolate those variables and
+test them one of the numbers off top my
+head was hair works on versus off could
+cause a 17% performance hit on Nvidia
+and something like a 37% performance hit
+on AMD the result of which was visible
+in gameplay most the time and that most
+problematic was that this performance
+hit existed even when you were miles
+away from any objects with hair works
+because the main characters in the game
+do not use hair works in fact we have
+screenshots of their hair meshes from an
+application a debugging application
+where you can see that they're just
+meshes it's not hair work so we know
+that the characters aren't using hair
+works however there were Buffalo in the
+game that use hair works and in the play
+will demo there are a couple of
+characters as well and monsters that use
+the hair works so we're gonna do a
+really quick test just to see if
+anything's improved this is not a super
+in-depth GPU benchmark because the game
+is still going change from today to the
+final launch so we might as well just
+wait till then at this point our first
+objective was to determine whether the
+unnecessary hair works issue had been
+resolved as that was causing the biggest
+performance concern overall previously
+we were seeing again somewhere between
+17 and 40 percent performance deficit
+depending on which card and which
+setting and this was a result of the
+Buffalo that were rendering 100% of the
+time
+something that square-enix indirectly
+confirmed later and through other
+sources we've confirmed as well so our
+initial findings were absolutely correct
+and hopefully those problems will be
+resolved today and as we get into this
+chart I think you'll see that they
+mostly are because now as we look at the
+first test site the service station we
+noticed that the toggling of hair works
+on and off did not change performance
+this is what you would expect there are
+no hair works objects in this scene or
+nearby any performance difference was a
+result of normal variance and error and
+is not measurable within our test
+resolution these results suggest that
+hair works is not being rendered when no
+hair works objects are present which is
+correct that
+should be and is significantly improved
+over the initial benchmark we observed
+the same correct performance behavior
+out in the middle of the desert where no
+hair works objects were around and
+testing and combat versus the first boss
+mob a user of hair works by the way we
+logged an on versus off performance
+disparity of approximately 7% on Vega at
+56 with a similar disparity on the gtx
+1070 note that these results are not
+comparable to our initial benchmark
+where we discovered the issues as this
+is a single mob entity with hair works
+versus a large group of buffalo that
+means the boss alone is costing you 7 to
+8 percent of your performance and in the
+initial benchmark we had numerous
+buffalo objects that were again costing
+a lot more than that so we can say for
+sure that there is a performance hit
+with hair works and tightly knit on
+versus off does show a difference so we
+know that hair works is functional on at
+least certain enemies or mobs that have
+it we also know in at least the two test
+sites that we just sort of spot checked
+that hair works on versus off shows no
+difference when there are no hair works
+objects present this is expected and
+good behavior we have not tested the
+entire benchmark it's fully possible
+that there are still instances where a
+performance deficit exists with hair
+works on when no hair works objects are
+apparent to the player so it's possible
+that still exists this was a much
+shorter test than our initial one where
+we basically spent an entire day
+researching it for this one we're just
+doing a spot check to build some more
+data on what Square Enix has been
+working on and once the game ships will
+do another deep dive and see how it
+looks then because at this point we're
+so limited with what we can do in the
+demo and we don't know what's going to
+change so you could understand why
+there's not a big desire to build a
+gigantic data set and then have it all
+wiped out when the actual game ships
+however for now what we're seeing is
+that hair works out OD scallion appears
+to be working at least mostly properly
+in the two very quick spot checks
+possible that it's broken elsewhere but
+we haven't seen evidence of that yet
+and another item of note that's
+important is that optimization overall
+is significantly improved this is
+something we can say for absolute
+certain because if you look around the
+game doesn't matter if you use ansel or
+not you can use other debugging tools
+because I think some people got hung up
+on the fact that we were creating video
+with ansel previously but you can use
+other tools like render dock to
+basically fetch items out of memory like
+meshes textures every single pass to
+draw the frame all the way up till the
+frames completion and render dock is is
+still showing objects that we can't see
+near the player however they are
+significantly lower level of detail to
+the point where it's probably irrelevant
+that they're being drawn at all and most
+of these objects are at least somewhat
+nearby so although a lot of overdraw is
+still happening the game is still
+drawing a lot of objects that you can't
+see on the screen actively they are
+lower level of detail which was true to
+some extent with the initial benchmark
+so it's not like that's completely new
+but it does look like either more care
+was taken since the benchmark or while
+they were building this one in parallel
+with the benchmark they did a better job
+with LED either way optimizations
+clearly better this time than last the
+big question of course is how will it
+carry over to the game will we see
+performance uplift overall and this is
+where the next big point comes in which
+is that graphic settings are seriously
+changed from the benchmark which had
+three presets now there are four presets
+low average high and highest and of
+those only highest has any game works
+options enabled at all and interestingly
+it is lacking I think pretty much all
+game works options except hair works so
+turf was disabled by default from when
+we looked at the playable demo and vxa o
+is still off and also something you
+can't change so it's not in yet these
+shadow libraries are defaulted to off
+with highest settings so this is a
+pretty serious change before more
+I think there were three from the top of
+a top my head I think there were three
+GameWorks options that were enabled
+previously out of five and now not sure
+about flow but we know that only hair
+works is on and turf is off that's a big
+difference alone because those two are
+the biggest contributors to frame rate
+differences so in the very least if you
+want to get those other options now you
+can but you have to go through custom
+options so you can actually set a custom
+graphics configuration I know it's
+amazing mind-blowing technology and the
+fact that it's changed like this means
+that when benchmarking or when users are
+discussing the game they talk about
+highest settings the only really major
+influence outside of the normal graphics
+options would be hair works and compared
+to previously that's pretty big
+improvement because it's it will look
+more fair to all vendors in this
+configuration and if you still want the
+Nvidia game works options which you
+might you can enable them separately
+three custom graphics configuration so
+that's a big change and we thank Square
+Enix for it's not just a game we're
+saying it's just it's the fact that you
+can customize graphics now that was a
+big concern so we're glad to see that
+and the extra care taken with game works
+options is also appreciated because
+there I mean we had 1080 T eyes that
+were struggling to play the game
+previously so that's not okay you could
+of course tuned down but you have to you
+have to build the game for the lowest
+common denominator which is probably
+someone who doesn't really get what's
+causing that performance loss they're
+just not sure why it's not running well
+so so it's tuned better now for people
+who might not be as tech savvy as all of
+you are but to recap better job overall
+with LOD scaling there's a better job
+with object render distance there is a
+better job with hair works
+implementation and when it is being
+called and rendered and we still
+observed that many objects in the far
+distance we're coming down the directx
+pipe down draw calls but many of them
+were lower detail so that eliminates a
+lot of performance concerns that's not
+to say that Final Fantasy 15 is well
+optimized now it's not
+say that it's clear and free of any
+issues with or without game works that
+really wasn't the only culprit
+it was everything was being drawn so
+there could still be problems we'll look
+into it though in the game launches for
+now just wanted to give you an update
+kind of close the story on the beta and
+pre-launch stuff and say that yes it
+looks at least a little bit better so
+good news there but stay tuned make sure
+you subscribe to catch the final launch
+deep dive that we'll be doing when we're
+gonna double back and really dig into it
+make sure that screen ecstatic good job
+with optimization and as always
+subscribe for more go to
+patreon.com/scishow cameras and access
+to helps that directly we would strongly
+recommend you watch the first video in
+the series because it will explain a lot
+more we'll put that in a one of the
+cards or something like that thank you
+for watching you get a store at
+Cameron's Nexus net if you want to pick
+up one of the Graf logo shirts that I
+was wearing for this video I'll see you
+all next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

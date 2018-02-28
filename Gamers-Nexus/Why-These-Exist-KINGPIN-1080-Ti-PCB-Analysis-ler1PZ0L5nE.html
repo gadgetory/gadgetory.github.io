@@ -1,0 +1,680 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Why These Exist: KINGPIN 1080 Ti PCB Analysis | Gadgetory - Your Gadget Factory</title><meta content="Why These Exist: KINGPIN 1080 Ti PCB Analysis - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Why These Exist: KINGPIN 1080 Ti PCB Analysis</li></ol></div><h2 class="post__title"><b>Why These Exist: KINGPIN 1080 Ti PCB Analysis</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/ler1PZ0L5nE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey guys build lloyd here and today
+we're going to be taking a look at a
+very special GTX ten atti PCB this is
+EVGA Kingston edition named after the
+extreme overclockers kingpin who works
+at EVGA and whoa does it show that this
+card was designed with full intentions
+of running on liquid nitrogen and
+smashing world records especially 3d
+mark well we'll go into why you know
+this card is so very ELINT like extreme
+overclocking centric we'll start with
+the usual the VR ends before getting to
+that this video is brought to you by
+ifixit.com and the pc essentials toolkit
+which can be had for $20 making it one
+of their cheapest yet most complete
+toolkits use code gamers nexus for five
+dollars off to bring that to 15 you can
+go to ifixit.com slash gamers Nexus or
+click the link below for more
+information starting with the largest
+the vcore vrm located right over here so
+that's V core that supplies the power
+used by the GPU core and it is the most
+important we are em when overclocking on
+liquid nitrogen and while other sub
+ambient cooling methods so that's one
+behind that we find the memory of erm
+and the memory of erm powers all of the
+gddr5 X chips around the GPU core and
+those are basically the two largest VRMs
+on the card all the other ones from here
+on our minor ones that you don't really
+have to care about that much starting
+off with this one down here this is one
+way to describe this is the vrm that
+powers the V RMS so this is known as the
+variable gate Drive basically its job is
+to convert 12 volts into a voltage
+between five and ten volts though it
+theoretically could go lower but you
+wouldn't do that because this VRM
+produces basically produces the voltage
+that the vcore vrm and the memory vrm
+used to switch their MOSFETs on and off
+then this over here is the other another
+one of the minor of erm this is the one
+volt PLL
+/alright /px voltage this voltage is
+like you don't actually need to run this
+one on liquid nitrogen it is however
+very very helpful but you can get away
+without it
+of course this card right here has
+voltage control available for that we'll
+go into more detail later in the video
+about that and then up here we finally
+find the 1.8 volts VPP for the gddr5 X
+so this is a supporting voltage for the
+gddr5 X memory basically this voltage
+used to be in internal to previous
+memory systems except it became external
+on gddr5 X as having it external
+improves efficiency so yeah and this
+voltage doesn't actually do anything for
+overclocking so you don't have to worry
+about it
+so one thing before we get into the
+details of the PCB here this is a
+engineering sample PCB first of all you
+can tell because it's a revision zero
+point zero the other thing is there's
+lovely things like this hand soul during
+right here and the this right here as
+well as all of the debug headers right
+over here so basically there might be
+some very minor changes from this PC via
+from this PCB to what you end up seeing
+retail but the V RMS in the feature set
+will not be changing so let's start off
+with the largest one the V Corps v RM it
+is a one two three four five six seven
+eight nine ten phase based on the
+inductor count which if you've watched
+past videos of mine on you know looking
+at PCBs you would know that you can't
+actually buy a 10 phase voltage
+controller so this card is running a
+doubling scheme and it's doubling up
+five phases from the voltage controller
+right here and those are doubled up
+through international rectifier ir35 99s
+which you have one here one here one
+here another one there and another one
+there so that's five of them in total
+and ir $35.99
+our our doublers and or quadruple errs
+they can do either of those two
+functions as a trade-off these are one
+of the more basic doubler types they're
+not they don't have some of the advanced
+features you can get on some other
+doublers out there which do actual like
+current balancing between the two phases
+that they're hooked up to so as far as
+the actual voltage controller right over
+here is concerned which that is a IR
+3595 as far as that is concerned this
+vrm is a five phase it cannot
+individually there's no individual
+regulation for the actual separate you
+know ten phases that the vrm ends up
+with however these phases are
+interleaved so you do get some of the
+benefits of a ten phase just not all of
+them that's that's sort of the thing for
+example you do get the increased power
+throughput the better thermals you get
+slightly better voltage regulation
+because there's less current going
+through each phase and since it's
+interleaved even even if it's badly you
+know not super accurately interleaved
+you still get interleaved inter leaving
+over the phases and that leads to
+basically the VR I'm putting less strain
+on the power supply as well as as a side
+effect you get better voltage regulation
+so you know it's better than any any
+five phase it should be better than a
+six and then if it's better than a seven
+phase or an eight say that really
+depends on the details of the
+implementation so the our error 3595 is
+a six plus two phase voltage controller
+EVGA is not using the part plus two part
+at all and the six is downgraded to the
+five which then gets multiplied by two
+by the ir 3599 and then that you know
+gets you your ten phases so that's how
+the vrm is controlled i've already said
+you know what the doubling scheme that
+EVGA is running here
+does the 3595 has a switching frequency
+range of 200 kilohertz all the way to
+to megahertz however the $35.99 over
+here only goes up to 800 kilohertz
+output and the stock switching frequency
+on this vrm is 400 kilohertz so alright
+a bit is a higher switching frequencies
+and some uh
+than many of the other cards as
+typically you'll see cards shipping with
+sort of 300 colored switching frequency
+however to be absolutely certain I would
+have to have to have cards in hand to
+check what their actual switching
+frequency is with like a Scylla scope or
+because most of the existing ten ADT
+eyes use analog voltage controllers
+based on how those are wired because the
+frequency is set by a circuit so you can
+basically check that circuit to figure
+out the switching frequency oh yeah
+that's the control scheme I in terms of
+power quality especially considering
+that you know the capacitor selection
+and capacitor positioning and that kind
+of thing also plays a very large role in
+getting a good stable voltage level is
+really hard to say how this vrm would
+compare to other V RMS also with the
+1080 Ti not being exactly a huge
+power-hungry monstrosity like say the
+980ti and other previous architectures
+where own liquid nitrogen you could
+easily see a single GPU pulling as much
+as a thousand watts under load so I
+don't see a problem with running a ten
+phase yes did a higher phase counts
+could possibly deliver a better voltage
+stability however on a 1080 Ti I don't
+really think it would actually have any
+meaningful impact on overclocking even
+on liquid nitrogen so yeah that's sort
+of so I don't really have a problem with
+the control scheme that EVGA has going
+for here obviously it could have more
+phases that could also be a waste of PC
+board space at this point now for the
+actual power throughput we're looking at
+international excess power of fire power
+stages and these are IR 3575 these
+things
+are pretty much the best power stage
+International rectifier makes these are
+60 amps rated 11 lots of heat output at
+that current level and a operating
+temperature of 125 degrees to achieve
+this rating so this V R M right here has
+a theoretical maximum current throughput
+of 600 amps with a heat output of 110
+watts and that would be like an overload
+scenario so this would blow up the vrm
+pretty much instantly but you're not
+going to hit that
+so the V R M is plenty powerful for
+feeding a 1080 Ti and under normal
+operating conditions this v RM will
+actually be in it's sort of P in well
+just past the peak of its efficiency
+curve as at 220 amps power draw this erm
+will be just about just around 21 watts
+of heat dissipation and that includes
+driver IC losses because these are power
+stages so all losses are calculated like
+in that power power loss value is
+complete whereas for other V RMS I
+usually just look at how much power is
+lost on the MOSFETs themselves not on
+the actual driving circuitry of the V R
+M as well which won't be a huge amount
+but you know it also pulls power and you
+can't really ignore it especially
+considering how most 1080 T eyes have
+pretty good V RMS to start with so the
+differences aren't you know tens of
+watts it's a couple was here a couple
+watts there but this is by far one of
+the most efficient 1080 TI V RMS I
+remember looking at anyway so yeah the
+other cool feature of the 35 75 ignoring
+it's ridiculous power draw and it's a
+power capability and efficiency is the
+fact that it has this metal heatsink
+piece on the outer casing so basically
+this is a metal bit of metal that goes
+straight to the actual silicon inside
+the MOSFET and this really improves with
+keeping internal temperatures on these
+down which improves lifespan and
+reliability so yeah there is a reason
+why these are
+International rectifier is best and
+since these are power you know power I
+our power stages from international
+rectifier these also feature body
+braking mode as well as a diode
+emulation mode which are both well body
+braking mode is a really cool feature
+for load release voltage stability so
+basically when the card goes from very
+high load to very low load body braking
+mode can be used to really mitigate any
+kind of big spikes in voltage very very
+well and the 3595 here supports that the
+3575 support that the 3599 also supports
+the body braking mode as well so
+basically the vrm can use it and the
+other thing is diode emulation mode is
+basically just a super high power like
+it's for super low power usage the vrm
+will basically stop charges stop using
+power to turn on the low side mosa if
+you ever pull that little current to it
+which won't actually happen because the
+vrm here instead of having multiple
+phases turned on at the same time the
+3595 can switch phases off on and off
+dynamically so if you're at idle it
+won't actually need to run the entire
+vrm so it probably won't ever enter body
+braking mode because as long as it like
+the voltage controller can pretty much
+keep the vrm at peak efficiency under
+any kind of load conditions so that's
+you know yeah it's a very nicely curved
+erm as you would expect of a card with
+the king pin name on it
+so yeah moving on to the memory vrm this
+thing is ridiculous overkill for memory
+but it is nice to see so and it also has
+some weird things so the memory of erm
+right here is a 1 2 3 phase design it is
+controlled by this voltage controller
+because if you remember this was a plus
+2 and we're not even using that and this
+voltage controller right here is an ir35
+7d and this goes again 200 kilohertz to
+1 a 2 mega
+but this is a three plus two phase
+voltage controller and EVGA is not using
+the plus two part they're using the plus
+the three part because they want three
+phase memory power this can actually
+like three phase memory power is really
+overkill but it can actually help with
+overclocking range on memory so I don't
+think it's needless what is kind of
+needless is that EVGA has opted to yet
+again use ir35 75s end result is this
+memory vrm has a theoretical maximum
+current throughput of a hundred and
+eighty amps assuming you have you know
+ridiculous cooling capabilities the
+side-effect of that however is that the
+memory vrm under normal load conditions
+and even overclock you won't really see
+the memory of erm really ever exceed 30
+amps of current throughput this thing
+will only ever put out about two to
+three watts of heat so this thing will
+run ice-cold the memory of erm on this
+card will run absolutely ice-cold
+even without the heatsink and you know
+EVGA with their new IC x coolers are
+just going absolutely insane with heat
+sinks so the view memory of erm has a
+you know it is heat sinks anyway even
+though I honestly wouldn't bother
+because these are overkill really really
+overkill for the application you see
+here there's you know there's 1080p is
+out there with single-phase memory VR
+ends with no active cooling on the
+memory of erm at all so yeah really
+really overkill the three phases improve
+you know voltage regulation on the
+memory as well so yeah it's a really
+nice memory VR I'm interesting little
+thing to note is that the memory of erm
+is main capacitor bank is actually
+located all the way over here which is
+just kind of cool and worth pointing out
+because it is kind of interesting
+because this right here is the ground
+plane and then you can see that you have
+the memory power plane sort of going
+around all the memory chips like that so
+yeah these capacitors right here are for
+the memory of erm and it makes sense
+that they're located over here because
+generally with decoupling capacitors and
+filtering capacitors you want to put
+them as close to your load as
+possible and the load for the memory of
+erm is of course the memory chips
+themselves so putting them right here
+makes sense a lot of other manufacturers
+to basically get the capacitors close
+enough to the memory chips what they'll
+do is they'll like crams of memory VR em
+up here or in this area or they'll mess
+up like they'll split some of the phases
+off of the vcore vrm shifted down into
+this area so that the vcore vrm is sort
+of longer in its layout but EVGA opted
+for a kind of interesting layout with
+having the capacitors really far away
+from the actual chokes of the core of
+memory vrm right here so yeah now let's
+move on to the minor of erm the cool
+thing about all of the minor of erm the
+VPP the PLL and the Varg variable gate
+drive erm all three of these are using a
+fully integrated buck converter which is
+an IR 38 99 this thing has a maximum
+current throughput of 9 amps and 9 amps
+10 volts yeah 9 amps 10 volts output
+it's going to produce about 2.4 watts to
+3 watts of heat so basically this thing
+is plenty powerful not nothing to worry
+about in terms of you know powering the
+PLL or the VPP or or the you know actual
+vrm itself so the vrm selection that
+EVGA has gone for here is excellent
+which you know you wouldn't expect
+anything less of a Kingston branded card
+so now let's get on to the actual sort
+of cool lnto overclocking features
+because it's one thing to make a GPU
+that doesn't blow up like well one thing
+to make a card a PCV that doesn't catch
+on fire when you put it under liquid
+nitrogen as in you make the VR I'm
+strong enough to not get destroyed when
+you really really push the card the
+thing about that is is that's relatively
+easy basically anyone can make a really
+large massive erm strap
+big eats ink on it and get a good
+current rating now admittedly the better
+manufacturers will actually do that
+while maintaining good efficiency levels
+and that kind of thing but generally
+anybody can achieve that the harder part
+is making a card that isn't a massive
+pain to work with and that's a lot of
+what EVGA sort of like that's what makes
+the kingston cards really special for
+extreme overclockers because the kingpin
+cards are one of the few lines of cards
+if not the only line of cards where you
+can buy one of these and assuming you
+have faith that the card didn't arrived
+it wasn't dead on arrival you can buy
+insulate and run on ln2 without doing
+anything else to the card because you
+have software and hardware support for
+everything you could need and that is
+achieved by the basically voltage
+controller selection as well as all of
+the extra headers you have around this
+area of the card so the 3595 3570 these
+are both fully digital international
+rectifier voltage controllers so they
+can be controlled through software and
+both of them are controllable through
+this USB header that USB header gives
+you voltage control LLC settings
+yeah I can't write that fast fault also
+you get temperature monitoring for the
+many sensors scattered around the card
+and you also get well for the voltage
+controls you actually get you get
+obviously both of ecore in memory you
+also get the 1 volt PLL which I did say
+earlier is kind of optional for ln2 like
+you can totally get away with running a
+card with just v core control I've done
+that I have a 1070 that I ran on ln2
+that you know I only had a voltage
+control for recore because I could not
+be bothered doing all the other mods
+around the cards so like I would need to
+physically modify and basically if you
+buy most other cards you end up having
+to modify a ton of things and that just
+takes forever it's risky it's a pain
+sometimes you can't find data sheets you
+know it really
+makes everything a lot harder for for
+extreme overclocking like you have even
+very basic things like for example
+clearance component clearance for
+example this card right here there's
+note all components anywhere in this
+area which you know you might think oh
+not really that special where well it
+actually is because if I try to mount a
+most ln2 pots have only a few
+millimeters of clearance in this entire
+area right here so you basically have a
+rectangle where nothing taller than a
+couple millimeters can be or the ln2 pot
+won't fit on the card well it just so
+happens that a lot of manufacturers like
+to put memory VRMs right over here and
+those memory VRMs end up with capacitors
+sorta in this area so if you're an
+extreme overclockers you basically end
+up in a situation where you either have
+to move components already on the card
+around remove them and figure out
+someplace else to mount them because you
+need to have them you know usually it's
+capacitors and like chokes so you'll
+have to like be sold or joke and resold
+or hit on the back of the card and you
+better pray that your card is a
+through-hole at that point because some
+you know these are surface mount chokes
+you can't actually move them they have
+to be on the side of the card where they
+were intended to be mounted so in
+situations where you can't move the
+components elsewhere onto the card
+you're stuck running something known as
+a base extension for an ln2 part which
+is essentially just a chunk of copper
+that sits between the ln2 pot and the
+GPU core to give you extra height extra
+clearance from the PCB for the lm-2 pot
+and those ruin your thermal performance
+like absolutely ruin it because that
+extra block of copper includes an extra
+layer of thermal paste to connect it to
+the base of the pot and there's a
+thermal place connecting the extension
+to the GPU core so two extra layers of
+thermal paste thermal paste at very low
+negative temperatures doesn't really
+like the less of you you the less of it
+there is the better the less layers of
+thermal paste the better like it's a
+massive thermal insulator at very low
+temperatures even the high-end thermal
+pastes are the centimeter or so of
+copper is a massive
+thermal barrier it is so bad in fact
+that if you go from like say for example
+my GTX 970 idol I can have the card as
+cold as minus 170 degrees centigrade
+once the card goes under load it very
+quickly climbs back up to minus 120
+degrees and that's entirely because of
+that block of copper just sitting in
+there acting like a thermal insulator
+between the GPU core and the ln2 Paul so
+you know that's like a really basic
+design thing for a manufacturer to take
+care of you just don't put components
+that are that tall in this area of the
+car but a lot of cards don't actually do
+that and then if you're an extreme
+overclocker they're just not an option
+for you this being a kingpin card
+designed to run on ln2 only has this and
+this which are like the only potential
+clearance concerns and those are both
+very low profile chokes so pretty much
+any ln2 pot is going to fit on this card
+which is really really nice if you're an
+extreme overclocker so yeah so you get
+the voltage controls the LLC the
+temperature monitoring and then up here
+you get more voltage control this time
+through the evbot header this is a USB
+as a USB header down there this is the
+evbot header and the thing about the ez
+ball is it's basically a dongle that
+EVGA used to make for their cards which
+you can plug in and get voltage control
+and LLC settings and that kind of things
+so basically it does everything the USB
+port does except the evie ball is
+unavailable you can't buy it it hasn't
+been available for several years now so
+that's kind of unfortunate but I don't
+really see that as a problem since the
+USB header kind of does everything that
+you v-ball header does but for guys who
+like using the EZ bought you know yeah
+they can next to that we find these
+three to channel dip switches which are
+actually a permanent feature of the card
+these disable various protections like
+over temperature over current any kind
+of limitations you can switch them off
+with physical switches on the card so no
+more limits next to that you find some
+very basic troubleshooting LEDs so you
+have a le
+indicating 12 volts 3.3 volts PLL memory
+GPU 12 volts 3.3 volts is basically
+check your PCIe slot check your power
+cables PLL memory and GPU if one of
+those is not lighting up you have a very
+very serious problem because it
+basically means you're not getting
+décor or PLL or GPU power I mean core
+power memory power or PLL power and if
+one of those is missing if your own ln2
+there's a good chance some part of the
+card is really really wet and something
+it's not working because of that if
+you're not on lnto the card is probably
+dead so yeah but it does save some time
+with troubleshooting because if you're
+trying to post and you're not getting
+any display output for no apparent
+reason you know you can just quickly
+check if the card is even getting power
+properly so these are kind of useful for
+troubleshooting that then up here we
+find the probit belt basically this is a
+there's a little header that goes into
+that with a bunch of wires coming out of
+it those are terminated in a it's not an
+alligator clip but it's basically a
+terminal that you can plug digital
+multimeter probes into really really
+snug I have a few motherboards that come
+with something very very similar
+these are awesome I love these and these
+are extremely useful because when you're
+running cards on eloquent nitrogen you
+can't really afford title you can't
+really run monitoring software on the
+system you're doing your extreme
+overclocking on so you can't monitor
+voltages in with software so you have to
+rely on digital multimeters and for most
+cards that means you're going to be
+soldiering on your own probe points
+because after you've insulated a car you
+can't exactly go and stab the legs of a
+capacitor while the card is running 3d
+mark with a hunt with ln2 needing to be
+poured so this is very very handy and
+again it just saves time from the usual
+ritual by the card test the card mod
+everything on the card and then finally
+run it so yeah this is a very nice
+feature then we have what looks to be a
+third SLI connector it's not a third SLI
+connector it's some super-secret feature
+that EVGA won't currently won't reveal
+what it actually does and next of that
+we find a three channel
+switch there's a regular bowels a backup
+of the regular bowels and an Ln two
+bottles I'm not entirely sure what the
+Ln two bottles does but I imagine it
+disables any limitations that you would
+normally run into like like the actual G
+Nvidia power limit would be listed and
+that kind of thing so yeah the card is
+fully you know it is very much one of
+those cards where you can just buy it
+test that it works insulate it and run
+it on ln2 that's is really what makes
+one of these cards so very very special
+for for extreme overclockers because
+most of the time you need to do a ton of
+modding and you know sometimes you just
+can't even do the mods because oh look
+this component doesn't actually have a
+datasheet that I can look up on the
+Internet
+so for extreme overclockers this card is
+an absolute tree for for gamers and you
+know normal people I feel like the the
+ridiculous
+just design and are like design and
+engineering that went into this card is
+is really really wasted but uh yeah you
+know if you if you want like a formula
+one that you're gonna drive daily this
+is the card for you this is pretty much
+a formula one because this thing it was
+built to break you know but overclocking
+records first and then everything else
+was like well it can technically play
+games so yeah I I don't really have any
+complaints except maybe I smarter
+doublers or more phases maybe like it's
+not you know if they don't want to do a
+twelve or fourteen or sixteen phase why
+not just do an eight phase-- that could
+have been another option but I totally
+understand why putting a fourteen phase
+or a sixteen phase on a ten a DTI is
+just a complete waste of space because a
+1080 TI will never pull that much power
+even on liquid nitrogen
+so yeah this is a very very impressive
+card and it's a Kingston addition it
+completely lives up to the name that the
+you know the to the legacy that the
+previous kingpin Edition cards have
+established so that's it for this video
+thank you for watching
+like share subscribe leave a comment
+down below and if you would like to
+support what we do here at gamers Nexus
+then you can donate to our patreon down
+in the description below and if you
+would like to see more videos like this
+as well as other extreme overclocking
+stuff then you could head over to my
+channel called actually hardcore
+overclocking thank you and goodbye
+you</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

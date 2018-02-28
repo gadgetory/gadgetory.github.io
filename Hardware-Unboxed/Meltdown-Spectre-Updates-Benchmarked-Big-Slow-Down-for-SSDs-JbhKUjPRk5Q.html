@@ -1,0 +1,481 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Meltdown &amp; Spectre Updates Benchmarked, Big Slow Down for SSDs! | Gadgetory - Your Gadget Factory</title><meta content="Meltdown &amp; Spectre Updates Benchmarked, Big Slow Down for SSDs! - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Hardware-Unboxed">Hardware Unboxed</a></li><li class="active">Meltdown &amp; Spectre Updates Benchmarked, Big Slow Down for SSDs!</li></ol></div><h2 class="post__title"><b>Meltdown &amp; Spectre Updates Benchmarked, Big Slow Down for SSDs!</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/JbhKUjPRk5Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">welcome back to harbor unbox for another
+benchmark video this time we're looking
+into the possible performance impacts
+caused when addressing the two
+now-famous security floors
+mount down and Spector in my last video
+I benchmark the windows update intended
+to address the amount down of under
+ability and I did this from a desktop
+users perspective or more precisely a
+content creator slash damer what I found
+was virtually no impact on gaming
+performance so good news for gamers and
+there was also no impact for content
+creators either what I did find though
+were a few troubling results for nvme
+storage devices and this mostly impacted
+4k read performance since then a few
+major tech outlets have also published
+similar findings so those issues weren't
+just limited to my own testing overall
+though for a typical PC user or perhaps
+more importantly at least on this
+channel a gamer addressing the map down
+vulnerability wasn't a big deal there
+was however a second vulnerability that
+needed to be addressed but that one
+would require a firmware update or more
+precisely a motherboard BIOS update
+you've known that heard of Spectre by
+now and this one is a result of a
+fundamental flaw in the CPUs design as I
+understand it and keep in mind I'm far
+from a security expert we mostly test PC
+games and relating hardware at harbor
+and box but we're doing our best to
+cover this topic because it could affect
+our audience and benchmarking can help
+us understand what the performance
+impacts might be so as I understand it
+because Spectre is the result of a
+fundamental cpu design flaw it can't be
+fixed at least not entirely and not
+without replacing the CPU the firmware
+update or the BIOS update mitigates the
+problem but doesn't completely address
+the vulnerability this is also still
+primarily an Intel CPU floor it is
+reported by AMD that one of the two
+respective variants doesn't impact them
+at all
+while the other one does but is easily
+resolved by a software update that
+shouldn't impact performance in any
+meaningful way variant 3 which is now
+well known as meltdown doesn't impact
+AMD at all and this was covered in my
+previous video I'm yet to properly test
+any a
+DCP you so you'll have to sit tight for
+a moment while we focus on a few Intel
+CPUs since posting the meltdown
+benchmark video we now have access to
+BIOS updates and they do deliver the
+microcode updates necessary to mitigate
+the spectra of under ability and so far
+this has happened on Intel's latest said
+370 platform this update changes the
+behavior of Intel's branch prediction to
+be less aggressive this will likely mean
+less effective branch prediction and
+that means reduced IPC as the execution
+pipelines wait for memory access more
+often of course we will get to the
+benchmarks in a moment but before we do
+I just have a few more notes I would
+like to cover right now at the time of
+shooting this video the only motherboard
+manufacturer to release an update is a
+soos and so far they've only addressed
+their Zed 370 series of motherboards
+unfortunately I don't actually own an a
+su said 370 motherboard believe it or
+not I have models from every other brand
+but a soos so that meant 48 hours ago I
+raced down to my local PC store and
+purchase the asou stuff Zen 370 plus
+gaming for this test I then went back
+and benchmarked the core i3 8100 without
+the windows update and then again with
+the windows update and then a third time
+with the windows update plus the latest
+BIOS update which included the micro
+code update I've included some of the
+updated core i7 87 arcade benchmarks as
+well once you've installed the windows
+update you can install a PowerShell
+module called speculation control and
+this will allow you to check if the
+update has worked by typing get
+speculation control settings with just
+the windows update and still which only
+addresses the meltdown vulnerability
+this is what you'll see all three
+requirements for meltdown
+aka rogue data cache load are greenlit
+and set to true for the branch target
+injection aka spectra vulnerability only
+OS support is present but not yet
+enabled as we still require a micro code
+update once the boss has been updated
+with the required version this is what
+you'll see ok so that's all the updates
+we have so far it's time to run some
+tests and see if there's any performance
+penalties let's start with the core i3
+8100 results oh and please note all
+results are based on an average of it
+these three runs first up we have the
+core i3 Cinebench r15 results and very
+little has changed here from the pre
+update configuration we see less than a
+two percent reduction in the multi
+thread score and 1% for the single
+thread score so that's pretty well
+within the margin of error now this is a
+little more interesting the windows
+patch plus the BIOS update was
+consistently three percent slower than
+the previous test configurations please
+note that lower is better for this test
+as we're measuring the time it takes to
+complete a render so the BIOS update
+cost us nine seconds but as I said
+overall a very minor reduction in
+performance moving on we have Excel and
+once again the Excel work load goes
+unchanged we see the same six second
+completion time so really nothing to
+report here moving on we find the same
+with the blender render test all
+configurations took 58 seconds to
+complete the test we also find no real
+performance differences when testing
+with veracrypt the aes encryption and
+decryption results are all much the same
+then we have some 7-zip results and here
+we see no noticeable decline in
+performance with the windows and bars
+update applied the Geekbench for compute
+test also shows similar performance with
+the updates installed Geekbench also has
+a slew of CPU benchmarks and each
+category gets its own score as you can
+see the crypto and memory scores are all
+much the same we see a 3% reduction for
+the integer and floating-point scores
+with just a 2% reduction for the
+multi-core score okay well it looks like
+the applications and synthetic tests
+didn't really give us much let's move on
+to the games to see if they have any
+scary numbers so here we are our first
+game benchmark result and while things
+don't look that dramatic we do see about
+a 4% reduction in performance in the
+core i3 8100 was consistently slower in
+this test by a three to four percent
+margin also for those wondering the
+geforce gtx 1080i an insanely
+overpowered GPU for the core i3 cpu is
+used to try and remove the GPU as a
+potential bottleneck and this gives us a
+better idea of the impact the cpu has on
+gaming performance for a slightly more
+realistic test though we have boosted
+the quality preset from medium teletraan
+and again we see the same 4% reduction
+in performance with the windows and bass
+updates install
+moving on we have ashes of the
+singularity escalation and again we see
+a three to four percent reduction in
+performance with these updates installed
+not a massive decline but a reduction in
+frame rate all the same and again the
+update configuration did consistently
+come in lower even with the crazy preset
+enabled we still see the same three to
+four percent drop in frame rate
+assassin's creed origins isn't GPU bound
+heavy 1% low results with the 87 okay
+for example reach around 90 FPS so all
+these results certainly look GPU limited
+I can assure you they aren't so that
+being the case the BIOS update does
+deliver similar performance to that of
+the pre updated configuration certainly
+within the margin of error even with the
+ultra high quality settings enable was
+still at GPU bound despite all three
+configurations delivering the exact same
+results I had honestly thought we might
+see some larger margins in Rainbow six
+siege but that wasn't the case in fact
+here we see almost no difference at all
+with the medium quality preset shifting
+to the ultra quality settings doesn't
+really change anything and again we see
+that the BIOS update has no negative
+impact on performance for this title the
+results in f1 2017 also go largely
+unchanged though this time we do see a
+dip in the 1% lower results that said
+it's nothing more than a 3% reduction
+the same 3% drop for the 1% minimum can
+be seen with the ultra high quality
+settings
+though again the average frame rates are
+all much the same the last game that
+I've tested with the core i3 8100 is
+total Warhammer 2 and here we see a 4%
+drop in frame rate for the 1% lower
+result while the average remains much
+the same than with the ultra quality
+settings we see almost no change in
+performance as all three configurations
+provide similar results but what about
+the core i7 87 ok how does it get on
+with the BIOS update well all the
+application and productivity tests were
+all much the same so I'm not going to
+throw a heap o graphs at you showing
+absolutely nothing all over again so
+we'll just move on and have a look at a
+couple of games here we see that the
+battle for one performance using the
+medium quality preset allows for similar
+1% low results while the average dips by
+a 3% margin with the ultra quality
+preset we see virtually the same results
+the Windows Update actually boosted the
+average frame rate by 2% which is of
+course still within the margin of error
+so
+I wouldn't read too much into that
+result using the higher quality preset
+we see virtually no change with ashes of
+the singularity this is also true with
+the crazy quality preset enabled then
+finally we have assassin's creed origins
+and again the margins are very slim here
+with the bios update enabled we saw the
+1% low figure reduced by 2% well the
+average frame rate remained much the
+same then with the ultra high quality
+preset name we'll be saying no
+difference in performance at all ok
+moving on what about storage performance
+this was the only area where we saw any
+real impact last time let's start with
+the Samsung SSD 950 pro nvme drive on
+the core i7 87 ok system here we see a 5
+percent reduction in throughput for the
+sequential write test an 8 percent
+reduction for the 4k 64 thread write
+test and a 20 percent reduction for the
+4k write test this is also seen when
+comparing the pre update configuration
+to the Windows Update with BIOS
+configuration read performance though
+that's all pretty much similar across
+the board it's just the writes that look
+to have taken a hit moving on we find
+some even more extreme results when
+testing with crystal disk mark the
+sequential read and write performance
+all looks ok then we get to the 512 K
+write test and well what's gone wrong
+here a 41 percent reduction in
+performance can be seen and this wasn't
+a once-off deal I ran this test a dozen
+or so times after multiple resets to try
+and work out if it was just some kind of
+glitch but every time this is the result
+I got interestingly though the 512 K
+read performance isn't nearly as heavily
+impacted just 8% reduction here though
+that's still certainly very noteworthy
+then when we move to the 4k queue depth
+of 32 we did find a 10% drop for both
+the read and write results the single 4k
+wrap performance is also reduced by 19%
+with the BIOS update while the read
+throughput goes unchanged I then decided
+to do some testing with a toe disk
+benchmark and hautboy what has gone
+wrong here both the sequential read and
+write tests took a massive hit and again
+throughput was reduced by as much as 40%
+with the BIOS update enabled so if this
+has happened to nvme SSDs what does this
+mean for your more run-of-the-mill SATA
+SSDs then
+well here's the Samsung SSD 850 Evo 2
+terabyte with the core i3 8100 and here
+we do see some declines again the
+sequential read and writes for the
+crystal mark test they do look ok in
+fact they look quite good the 512
+kilobytes read and write performance is
+also very good this time the 4k queued
+at 432 results though they do see a
+small decline of around 3% so nothing
+too alarming that said though we do
+still see some big hits for the 4k
+transfers which is interesting writes
+dropped by 27% and reads by 19% then
+again we have some auto gist benchmark
+results and again we do see some
+performance drop-offs here oddly though
+this time the read results don't
+actually seem to suffer but the write
+throughput certainly does here we see up
+to a 17% reduction in write performance
+with the BIOS update applied and that's
+certainly a note where they drop off for
+a SATA device ok so we've got a bit to
+talk about here I want to start by
+saying please take those storage results
+with a grain of salt at least for now
+until they can be confirmed as at least
+one other reliable source I wouldn't go
+too crazy over the potential performance
+impact here I'm not sure if this is
+something we're gonna see others
+reporting or if this is just an issue I
+ran into with my particular hardware
+configuration I have though come across
+a test done by guru 3d which does show
+up to a 33% reduction in performance
+with the Samsung SSD 960 pro 2 terabyte
+nvme drive and this was for the 4
+kilobyte Q depth of 32 test so that's
+somewhat in line with what I saw they
+didn't test with outer unfortunately
+though they did also test with a sous
+motherboard so perhaps it's an issue
+with your sous bias update and they'll
+battle address that or possibly this is
+just what the band-aid looks like as
+always though time will tell I should
+also note that I was able to revert the
+bass back to the previous version and
+doing so did restore the original SSD
+performance horrible storage performance
+aside we constantly saw less than a 5%
+reduction in gaming performance you're
+probably looking at more around a 3 to 4
+percent drop and that's when you are CPU
+limited less of course when you are GPU
+limited SSD performance that doesn't
+really impact framerate so we've seen
+this in the past when comparing slow
+hard drives to Oh
+snappy SSDs is really nothing again
+there we're a drop in storage
+performance can hurt is with the game
+load times and this is something we'll
+dive into in the future should our
+storage figures prove accurate of course
+then we have the more commonly used
+applications like Excel and 7-zip for
+example which seem unaffected using
+either the core i3 8100 or Core i7 8700
+K processors and we found a little too
+note impact for those doing content
+creation type work as well but what
+about older CPUs you know your wells and
+bridges and older 45 nanometer
+processors well as it stands right now
+we can't actually test those it's
+possible to test the impact of the
+Windows 10 meltdown patch but it's not
+yet possible to test the impact of the
+big one Spectre
+for this we need BIOS updates for older
+motherboards supporting those CPUs when
+or if we get them at all is a bit of an
+unknown at this stage we haven't found a
+motherboard maker that really wants to
+give us the inside scoop one thing is
+for sure though this is a mess of epic
+proportions and it will still require
+further OS and past updates this is
+really just the start to close these
+security flaws it's also just the start
+of Intel Spain already there are three
+class action complaints that have been
+filed against Intel over these CPUs
+security flaws their potential impact
+and also Intel's response time to
+address them Intel can no doubt expect
+to face further lawsuits as well and not
+only are these security risks a serious
+issue but the impact addressing them has
+on businesses it's also very serious as
+another example before I switched my
+attention to focusing on this BIOS
+update I was waist-deep in benchmarking
+fortnight I've got another one of those
+40-plus GPUs showdowns in the works
+anyway I bring this up because on the
+last day of testing I was running into a
+few login problems which was quite
+unusual for fortnight the issue was I
+often had to wait 15 or even 20 minutes
+before I could get into a game and that
+is just a load the game which point I
+would run my tests shut it down install
+a new GPU fire it up and Sharaf had to
+wait another 15 or 20 minutes to get
+back into the game so I quickly gave up
+on that and thought I'd give it a shot
+later when they addressed whatever the
+problem was and I'm here
+under testing something else at the time
+though I do remember thinking to myself
+this is just a day or so after the
+meltdown exploit started to get
+addressed wouldn't it be funny if that
+was the reason for the busy servers well
+turns out not that funny because that
+was the exact reason or at least this is
+what epic games are saying for the login
+issues
+soon after the login problems began that
+the fortnight team made a post on the
+epic games forums as they wanted to
+bring the issue to the community's
+attention explain what was going on
+turns out the updates required to
+mitigate the meltdown vulnerability
+we're slowing the server's down by
+causing massive spikes in CPU
+utilization and at that point they had
+just patched a single service and that
+one cost CP utilization to triple they
+also know that there's more painting to
+come but they'll do their best to manage
+the situation no doubt we're gonna keep
+hearing stories like this as more
+companies update their servers over the
+coming days and weeks anyway I'm gonna
+wrap this up as it has no doubt been a
+very long video so thank you for
+watching the whole way through if you
+did there's certainly more testing that
+still needs to be done and are you gonna
+see what others find when it comes to
+the storage performance that's obviously
+an area to focus on for now though your
+frame rates look pretty safe and
+applications that aren't storage
+sensitive will also perform much the
+same as I've said much more testing
+needs to be done but I've been chipping
+away at this for two days straight now
+with almost no rest so yeah it's time to
+get some rest and see what others dig up
+if you liked the video please leave a
+like and if you'd like to support our
+work directly then please check out our
+patreon account the link is in the video
+description I'm your host Steve see you
+next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Undervolting Vega FE: Fixing Performance &amp; Power | Gadgetory - Your Gadget Factory</title><meta content="Undervolting Vega FE: Fixing Performance &amp; Power - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Undervolting Vega FE: Fixing Performance &amp; Power</li></ol></div><h2 class="post__title"><b>Undervolting Vega FE: Fixing Performance &amp; Power</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/OZkfYDWwo7s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">under volton vega was one of the top
+requests on our user-submitted to-do
+list for this card and it yielded some
+of the most interesting results and data
+set this feature benchmark shows how we
+can significantly reduce power
+consumption on Vega while yielding
+better performance from the FE card not
+even the same just straight better
+performance better power consumption and
+better thermals before getting to that
+this is brought to you by our patreon
+backers at patreon.com slash gamers
+Nexus who helped us in funding these at
+user requested benchmarks you can go to
+patreon.com/scishow and access tell us
+that directly or if you prefer you can
+grab our brand new shirt design which
+has a link in the description below so
+this benchmark was requested a lot for
+Vega because in past and the card
+generations like even the rx 500 Polaris
+refresh it's been possible to undervolt
+the cards or reduce the voltage going to
+the core and achieve either the same or
+slightly better performance in terms of
+clock stability while also potentially
+reducing power consumption as opposed to
+for example a straight plus 50% off set
+without under voltage in which scenario
+end up destroying a lot more power
+stabilizing the frequency but it's at
+the expense of extra power and extra
+heat because extra power so that's why
+this was interesting to people and it
+was interesting to us as well hence
+running the test but a few things here
+just to get everyone on the same playing
+field power target and voltage are sort
+of tied at the hip but they're really
+not the same thing so you can increase
+power target and decrease voltage and
+they're not really going to conflict
+with each other what's happening is
+these two different items power target
+limits how much power is permitted to go
+to the GPU so that might be something
+like 20 to 21 amps and the stock state
+for example and then of course you have
+thermal targets as well like 80 or 85 C
+which will limit you thermally so you
+have two different variables there where
+you can be constrained thermally or
+constrained and power consumption or
+power availability to the card so if you
+increase the fan rpm on this to
+something crazy like 100% you eliminate
+that thermal restraint but you now are
+facing a power constraint so that's
+that's part one part two
+voltage is what's applied to the core in
+this case technically you can change the
+memory voltage as well we're just
+looking at core voltage today more
+voltage means more power consumption so
+that is problematic potentially if one
+you just don't want to draw as much
+power with really no need and two it
+means more heat so in the stock state
+we're actually allowing less power to go
+to the core because you're at a zero
+offset so you're 100% power target or
+hundred percent power consumption as
+opposed to 150 for example so you're
+allowing less power to go to the core
+and you're running in this instance a
+higher voltage than is necessary and the
+cards have DPM States so they go I think
+it starts at zero but they go up through
+seven and the seventh state is basically
+the highest boost possible so out of box
+for this that's 1600 megahertz and out
+of box the voltage is 1200 millivolts so
+1.2 volts the next state down is 1528
+megahertz and the voltage is a bit
+changed as well and then below that you
+start getting into the territory of 1440
+megahertz so in the initial reviews when
+you saw people saying that the card
+wasn't sustaining 1600 megahertz it was
+probably 1440 to 1528 because those are
+the two options in the pre-configured
+DPM States in a.m. these drivers and
+BIOS for the vega card and the result is
+that you end up with lower performance
+because the clock is throttling down to
+those two states and again it's only one
+or two reasons for this it's either the
+power or the thermals so under volting
+is a way to solve some of that and
+that's what we're getting into today so
+targeting methods and problems first in
+case you want to do this you should be
+aware of these things
+first of all problems what man is not
+perfect it has a lot of bugs
+some people have not run into the same
+ones that we are but that's because
+they're doing things differently if for
+example you go in for the overclocking
+and voltage tools and you set them all
+to the same number so sixteen hundred
+one through seven and twelve hundred one
+through seven then we have seen
+especially with other changes in there
+like fan speeds issues where HBM drops
+to 500 mega
+and that will really hurt your
+performance so be aware of that
+basically I don't know the exact answer
+as to when HBM 2 drops to 500 megahertz
+it just seems to kind of happen as
+you're tweaking stuff in there and I'm
+not sure which change causes it but just
+be aware that it can happen so if you go
+in with a plan to undervolt like this
+just keep an eye on HBM speeds
+after you're done to make sure you
+haven't actually worsened performance
+though your power consumption would
+probably get better so that's one thing
+to be aware of what tool recommended to
+me by build Zoid is pretty good but has
+a lot of problems as well it has the
+same 500 megahertz memory bug and it
+seems to be caused by the same things
+but what tool is pretty easy to work
+with if you prefer that and then finally
+the fan targets are wrong so you can go
+in and set a fan target in watt man or
+watt tool of say 3400 rpm and it'll add
+a couple hundred rpm on top of that so
+it'll go up to like 3700 for example
+close enough though close enough to use
+but just something to be aware of and
+then finally for our testing we have
+three configurations to look at
+primarily one is stock Vega so 0 changes
+at all after a driver install the second
+one is stock Vega with a plus 50% power
+target and a fixed fan speed 3400 rpm in
+Hua Man which is like 3700 in reality so
+the important part plus 50% on the power
+and then the last one is stock Vega in
+this configuration plus 50% power under
+vaulted to whatever was the most stable
+and with the fan speed also at 3400 so
+stock with plus 50% and stock with plus
+50 percent under volted are going to be
+directly comparable thermally whereas
+the stock one will not be because it
+regulates its own RPM and so will be
+different so that's the setting we're
+using this will allow us to ensure that
+we're not hitting the power lot wall
+ensure we're not hitting a thermal wall
+and leave us with an understanding of
+how much voltage is required to remain
+stable for our voltages we tried a lot
+of them 1080 just wasn't going to
+cut it 10 80 millivolts not good enough
+we then tried 1090 millivolts down from
+1200 mind you and 1090 was stable in a
+lot of the titles it was stable and
+firestrike basically ad infinitum it was
+not stable in for honor
+so for honor we had to actually go up to
+as high as 11 20 millivolts and then
+some other games required 1100 or 1090
+so it's not perfect basically again if
+you're planning to do this be aware of
+that you will either have to take the
+highest stable voltage like 1120 for
+example in our case for all titles or
+you'll have to get used to the idea of
+changing voltage for each application or
+setting profiles I suppose you can do as
+well so be aware of all that but we can
+get into the charts now start with
+current draw at the PCIe cables only not
+counting the PCIe slots the completely
+stock card starts off drawing about 268
+watts but as we approach the 400 second
+mark the card starts spiking hard
+between 17.7 amps and twenty three amps
+this behavior correlates with clock
+throttling which we'll show in a moment
+and is precisely why we've been saying
+that Vega Fe air can't hold its
+advertised 1600 megahertz boost clock
+out of the box its power limit and
+cooler are simply insufficient the
+cooler can do it if exiting the fan
+profile and going to high DPS with your
+own fan profile but this is where it
+sits out of box that gives us our
+baseline the next move is to get the
+frequency to hit 1600 megahertz
+constantly so we increase the power
+target by 50% and set a fixed fan speed
+and solve for the thermal limit
+absolving Vega of both of its main
+limitations anyway at once the red line
+is the result a new problem emerges the
+normals in frequency are now under
+control but the PCIe cable from the
+power supply is putting out 30 amps at
+the time averaging about 28 to 29 amps
+overall that's about 344 to 370 Watts
+down the PCIe cables and it's going to
+start generating more heat in the card
+as a result but it's also just kind of
+wasteful power consumption finally our
+under voltage line emerges the blue line
+represents an under volt of negative 110
+millivolts so we've dropped from 1200 to
+1090 millivolts current is now 23 amps
+for power consumption
+283 watch at the PCIe tables that's
+about 15 watts more than the stock set
+up that struggled to maintain 1600
+megahertz about 87 watts lower than the
+power offset setup that sustained 1600 I
+guards successfully and should lower
+thermals as well let's go to that chart
+our orange line again represents the
+stock auto configuration which runs a
+fan curve that isn't aggressive enough a
+voltage that's too high and a power
+budget that's too low the worst of
+everything the result is constantly
+hitting the thermal limit and
+potentially throught well definitely
+throttling observed at the 85 C mark
+though there are a few spikes to 90 C it
+tends to stick at 85 applying a 50%
+power offset and fixing the frequency to
+1600 megahertz properly temperatures are
+about 73 Celsius now but the fan is 70%
+to control for the thermal variable for
+under bolting so noise levels are
+somewhat unbearable at 60 DB a versus
+the auto noise level of roughly 50 DBA
+but there's room to drop the fan speed
+with a lower voltage because less heat
+is generated as less power is consumed
+we just stuck with these numbers because
+we really wanted to make sure there was
+no thermal limitations that would mess
+up our undervolt in tests the more
+appropriate comparison would be our blue
+line versus our red line has these two
+are tested with the same settings aside
+from just one variable voltage to the
+core the fan speeds the same the 50%
+power offset is the same and the voltage
+is the only difference at a 110
+millivolt reduction on the under voltage
+card where we perform at 53 to 66
+Celsius for about a 7 to 10 Celsius
+reduction from the card operating at
+1200 millivolts that's pretty good so
+far the last question is a frequency
+plot in frequency the orange line that
+shows the stock out of box configuration
+for the Vega frontier - an air-cooled
+card
+we're throttling hard and only rarely
+achieving 1600 megahertz the regularity
+of which 1600 megahertz is achieved
+diminishes significantly as time goes on
+largely due to thermal constraints in a
+default fan curve we tend to be
+operating at DPM power state 5 to 6
+rather than state 7 which would give us
+full performance the red and blue lines
+converge on this chart as increasing the
+power target and removing the thermal
+limit gives us a perfectly flat 1600
+megahertz curve closer to what
+advertised on the box that said the red
+line is polling
+344 to 370 watts to the PCIe cable so
+it's a little aggressive and may not be
+worth the power and thermal load
+overstock under volting however permits
+1600 megahertz to remain possible 50
+percent power offset possible and thus
+permitting 1600 megahertz and still
+draws 87 watts less powers on the
+redline with only 15 watts more than the
+orange line that's pretty good trade so
+that proves the theory and shows that
+under bolting is working at least once
+you learn how to deal with the
+applications and their bugs and it looks
+good so far now obviously a maintain
+1600 megahertz or sustained versus 1442
+1528 fluctuating is going to perform
+better but just to really drive at home
+we're going to perform a few benchmarks
+on 3dmark
+ghost recon and doom and a couple extras
+will be in the article linked below but
+the point isn't to re benchmark the
+entire test suite we're just going to
+give you a worst-case a best-case and
+then a synthetic test so that there's a
+pretty wide spread of what under Bolton
+does in the real world now additionally
+we are leaving out spec view perf again
+not fluidly the point of this if you
+want spec you perf performance numbers
+check our hybrid Vega card video with
+the results as that has the very top end
+of spec you perf performance once this
+thing is overclocked as far as we could
+get this particular card fire strike
+ultra starts us out the Vega Fe err card
+when completely stock ran a graphics
+core of 4906 with our 50% power offset
+cards both operating at around 50 to 70
+graphics core this includes the
+under-voltage card which manages about a
+nine to ten percent performance uplift
+over the stock card here's the crazy
+thing
+again we're not overclocking to achieve
+this all we're doing is making more
+power available while reducing the
+voltage which Nets a marginal power
+consumption spike at the trade of more
+consistent and faster frame time that's
+a pretty good trade for 15 watts and as
+far better than the 87 watts of the
+power offset without under bolting card
+that we did for point of reference our
+hybrid EFI overclocked performed at 57
+74 which is 7% faster than the under
+voltage card kind of puts into
+perspective just how far are under
+bolting and over
+and we'll get you to begin with fine spy
+gives us a gain of about seven point six
+percent from the under-voltage card over
+the stock card with our hybrid OC
+gaining another nine point six percent
+on top of that
+additionally the drawing significantly
+more power at around thirty three apps
+we have a few more fire strike charts in
+the article link in the description
+below those interest you has four games
+some experienced instability at 1090
+millivolts and had to be moved up to
+1104 honor was particularly unstable and
+required a core voltage of about 11 20
+millivolts so these aren't perfect and
+can't all sustained at 1090 but we've
+got to spread and overall you're looking
+at better performance versus stock
+anyway let's look at Ghost Recon first
+at 4k and with very high settings the
+under-voltage AMD Vega
+err card performed at 41 FPS average
+with lows close by at 37 and 36 the
+stock card with no modifications
+whatsoever operated at 37.7 FPS average
+resulting in a performance uplift of
+8.8% from the stock card this uplift is
+because the stock card cannot maintain
+1600 megahertz without power offset but
+again a power offset without
+over-voltage increases your power
+consumption by 80 to 90 watts thereby
+increasing the thermals that the card
+deals with this under Bolton and
+overpowering appears to be the best
+approach to extracting more performance
+as we've done here with doom using
+Vulcan async compute which is enabled
+without anti-aliasing these days and
+rendered at 4k the Vega under volted
+card operates at 70 1.6 FPS average with
+low-end frame times also improved over
+the stock card our average FPS
+improvement is about 11.5% in Doom
+following the trend of Doom being a
+somewhat best-case scenario for AMD on a
+routine basis the performance table is
+tremendous here when considering our
+minimal power consumption increase and
+better overall control of the card so
+that should hopefully answer at least
+most of the question of under-voltage on
+Vega Fe thank you for the suggestion for
+that one a few notes here for the end of
+this first of all obviously this isn't a
+perfect solution no matter what 10 90
+millivolts is great but it doesn't work
+everywhere so you've got to add
+according to whatever the software
+demands you have to add the power
+consumption to account for that
+difference separately at this point it's
+really
+kind of like buying a project car if
+you're doing these kinds of
+modifications hopefully it's because you
+enjoy them because otherwise you're
+dealing with buggy software that'll set
+you back until you figure out it's weird
+kinks and anomalies and most of those
+just save you time seem to be if you set
+D p.m. states 1 through 7 all to be the
+same frequency and voltage which is not
+an issue on the other cards but is on
+this one because of some weird fury left
+over code but once you pass that you
+still have an issue of tweaking the
+voltage to be a minimum voltage required
+for stability for each application if
+that's not appealing then you you're
+either left with run at stock or run it
+with the the highest lowest voltage
+possible to sustain everything so below
+stock but maybe something like 11 22 11
+40 millivolts rather than 1200 that
+point you're not really saving a whole
+lot it's certainly better than 1200 when
+it's not needed but it would it would
+make sure that pretty much every
+application works within another note
+not all GPS are the same ours may
+undervolt better or worse than others
+including the ones that you buy so keep
+that in mind too you probably don't just
+copy the the numbers we got because it
+might not work on yours now as for why
+this is the case it's kind of it's weird
+this is something that is somewhat
+consistent with AMD GPUs lately where
+you can undervolt them and improve
+performance and at least one aspect and
+as for why that would be the case my
+assumption would be that this is
+something where Andy is picking a
+voltage that they know will work and
+keep the card from crashing because
+that's what happens if your voltage goes
+too low on all of their silicon so it
+might just be some kind of safe net of
+we know 1200 will keep all these things
+afloat in all applications so we're just
+going to set it here whereas if you're
+fine tuning the thing you have a lot
+more room to play but no company is
+going to do that so the other option is
+they didn't have enough time to test it
+and they pick the highest voltage that
+they could set without being ridiculous
+and knew that it would work and keep
+things stable at which point it
+more time and testing but not really
+sure which is the the reason for the
+higher voltage than necessary but either
+way you have room if you buy either this
+which probably no one in our audience
+should buy or rx Vega which is more
+likely to be a viable candidate for you
+it's going to apply there too so you
+have room with the Vega architecture and
+cards to potentially undervolt
+and improve performance now rx Vega is
+not out yet well test it we'll see if we
+can under bolt that one as well
+and if they've set the same
+conservatively high voltage curve volt
+frequency curve on that card as this one
+then there might be room for power
+consumption reduction on rx maker but
+all that is out in the future so stay
+tuned for that subscribe for more as
+always you can go to patreon.com/scishow
+exit helps out directly and then we also
+have our new shirt design which is the
+GN anniversary edition shirt all the
+direct link to that in the description
+below or you can go to gamers next with
+Squarespace com
+thank you for watching I'll see you all
+next time
+you</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

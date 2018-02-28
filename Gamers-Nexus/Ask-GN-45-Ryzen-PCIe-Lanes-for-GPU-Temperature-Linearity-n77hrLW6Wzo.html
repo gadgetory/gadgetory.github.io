@@ -1,0 +1,507 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Ask GN 45: Ryzen PCIe Lanes for GPU, Temperature Linearity | Gadgetory - Your Gadget Factory</title><meta content="Ask GN 45: Ryzen PCIe Lanes for GPU, Temperature Linearity - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Ask GN 45: Ryzen PCIe Lanes for GPU, Temperature Linearity</li></ol></div><h2 class="post__title"><b>Ask GN 45: Ryzen PCIe Lanes for GPU, Temperature Linearity</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/n77hrLW6Wzo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">everyone we're back another episode of
+ask GN coming out of the AMD risin event
+from earlier this week and we've got
+another one coming up so a lot of travel
+in about a six day period and we've got
+benchmarking of course for rising going
+on in between check back for the review
+once that's live don't jump up there so
+the risin question that I've seen a few
+places is about PCIe lanes people keep
+asking how many PCIe gen3 does lanes
+does I have for the GPU we've answered
+this several times now but I guess just
+to do it one more time and maybe we'll
+put this in the title this time so it's
+more it's easier for people to find
+we've got a block diagram that we made
+earlier this month or actually last one
+that just after CES that diagram shows
+everything put that on the screen I
+suppose so you can see in the diagram
+again that we made its sixteen a PCIe at
+3.0 lanes off of the CPU going to the D
+GPU and then those can be MUX t' which
+is not special there's just some boards
+have markers on them or pax chips
+through px and we've seen that with
+amasai boards at CES and a couple of the
+other am4 motherboards but it's 16 lanes
+out of the CPU for the GPU then there
+are another 4 PCIe lanes going to the
+chipset that's X 370 P 350 etc and then
+that splits into your PCIe gen 2
+general-purpose or a USB 3 lanes and
+there are also PCIe gen3 lanes that act
+as i/o and those go into other devices
+which again we've got in this block
+diagram you can see the three choices
+it's a pic 1 scenario so a B or C in pic
+those that is the PCIe lanes set up on
+Rison it's nothing crazy
+as far as strictly GPU again 16 lanes
+out of the CPU itself which is sort of
+an SOC at this point and then the rest
+is just the usual IO Lane assignments if
+you want to run em about 2 devices via
+PCIe rather than SATA so that hopefully
+answers the question it's very simple if
+you wanted to run one x16 card you could
+if you wanted to run 2 by 8 you could or
+you could start muxing and go down as as
+desired depending on the
+motherboard and the support for the
+board next question is from Sir Papa who
+says question for next Sen our delta
+temperature is affected by room
+temperature more than just subtraction
+for example the air is 20 degrees on the
+cpu's at 50 the deltas at 30 as usual
+but if the air is 30 with the CPU then
+run at 60 or would it be hotter this is
+a really good question this is basically
+asking is temperature when you're using
+delta T going to be a linear scale and
+the answer is it depends now we use
+delta T for a few reasons one of them is
+because the fluctuation is normally so
+small that a nonlinear scaling is kind
+of irrelevant it tends to be within a
+degree or so with a lot of our tests if
+that depending on kind of which room
+they were running and what coolers were
+used in things like that but as for the
+answering the question I actually I
+ended up reaching out to VSG from
+thermal bench and VSG I've worked with
+for a while now on kind of validating
+externally some of our thoughts and our
+test methods
+he runs thermal bench he as I understand
+it is some form of post doctorate
+researcher does a ton of work with
+thermal equipment that plenty of folks
+don't have access to so the guy is
+definitely credentialed to answer so I
+asked and the answer was more about
+read-through here if the thermal
+resistivity of the die or package is a
+linear function also then sure it would
+be linear with older CPUs and he says
+the even up to 22 nanometers it was
+mostly fine meaning mostly a linear
+scaling between ambient and the IHS or
+whatever might be measured VSG then said
+I did a test of my 4770k with no heat
+load in my hot box and just buried the
+hot box ambient temperature from 25 to
+80 Celsius in increments of 2 Celsius at
+a time he then it mapped the average CPU
+core temperature and the increase in the
+average core temperature was nearly the
+same as the increase in the ambient
+temperature after steady-state was
+reached which admittedly took a few
+hours at times and then VSG also says I
+had a thermistor in contact with the IHS
+and the increase in IHS
+was not the same even with study state
+accounted for the slope of increase was
+higher for the IHS than the CPU cores
+but the IHS slope of increase was but
+the IHS varied between 1.4 Celsius
+increase to 2.2 or 2.4 Celsius increase
+due to the lower temperature increase of
+previous cycles so he's saying that the
+results was slightly off one point four
+to two point something Celsius between
+ambient which was controlled in a hot
+box and the IHS and says that was a
+result of the thermal resistivity of the
+IHS alloy having a quote hyperbolic
+function with temperature so it started
+off slow and then picked up as such once
+it picked up with heat transfer to the
+CPU cores also changed so it's basically
+for the particular chip you test in the
+4770k and potentially onward it was a
+nonlinear function increase from the
+ambient temperature of the hot box and
+the IHS temperature or the core
+temperature as it may be
+so they forty on one did not equal 40 on
+the other they were offset by one point
+four to two point four cell Z's in this
+particular example he later told me that
+with the more densely packed 40
+nanometer chips this might be
+exacerbated so that's something to
+certainly keep in keep in mind and we
+have a lot of challenges to look into
+with rise and thermal benchmarking and
+previously FX had some similar
+challenges so this is something we're
+researching for Rison most of the
+benchmarks I've done with CPU
+temperature thus far meaning non cooler
+temperature but the CPU reviews those
+thermal benchmarks I tend to do within
+generation or within chip so just 7700 K
+benchmarked at different voltages things
+like that so then you're looking at just
+a delta one bench to the next rather
+than looking across architecture because
+for a lot of reasons that's not always
+easy especially if you're relying on
+software measurements for the
+temperatures because again as previously
+Andy at least with FX and we'll talk
+about rise and shortly
+does not use the same temperature scale
+as Intel so they're not linearly
+comparable but back to the ambient stuff
+VSU kind of concluded by saying what
+started off as a nice trend of CPU core
+temps increasing linearly with ambient
+temps suddenly went all over the place I
+imagined tighter packed eyes and with
+end 14 editor process on Andy and Intel
+will be worse in this regard so
+basically he was seeing something like a
+40 Celsius for ambient and an IHS
+temperature of maybe thirty five point
+four or forty two thousand ambient and
+37.7 IHS something like that so no it's
+not perfectly linear we had a pretty
+long conversation about it but there's
+plenty more but that's the basics check
+out thermal bench for more of that type
+of stuff next question is from ramos
+studios who says hey Steve I was
+wondering if I were to remove the fan
+from an air cooler such as the 212 Evo
+or dark rock pro 3 could the cooler
+still provides a sufficient cooling to
+the chip relying just on the airflow
+generated by the case fans ask because
+some of the newer air coolers are big
+and chunky and look like they can
+dissipate a lot of heat but the fans are
+loud or ruin the aesthetic of the cooler
+the 212 Evo I absolutely would not
+remove the fan from that is not an
+impressive cooler by any stretch it's
+okay and there's a reason it's like 30
+bucks or less so now I would not remove
+the fan from the 212 Evo depending on
+your CPU of course that is worse or
+better because of the lower TDP chips
+it's not going to be such a problem when
+you're running something like maybe 40
+watt chip under the the cooler but I
+still wouldn't take the fan off because
+you could always just run it out of
+lower rpm
+it doesn't have to be allowed that
+doesn't fix your aesthetics problem but
+you could run a lower rpm and at least
+just get some airflow through there
+because the the fins will sink the heat
+and they'll sit there waiting to be
+dissipated so if it's not dissipating
+the heat you kind of run out of room to
+to soak the heat from the CPU there are
+passive coolers though and they are
+massive Zalman made one years ago is it
+some Zalman cube cooler it looked like a
+Borg cube
+and that I believe had no fan it was a
+passive cooler and I don't know if it
+was even anywhere remotely within spec
+for the socket because it was a heavy
+thing so possible yes but you generally
+don't use them with overclocking ksq
+type CPUs don't use them with higher TDP
+CPUs and they need to be huge if they're
+gonna be passive so I would not
+recommend taking the fan off and just
+rely on the case airflow because it's
+not gonna be as directed and the air
+pressure by the time that air gets to
+the CPU cooler the air pressure is not
+gonna be that high so you it's off it
+might as well be passive really next
+question Laura's passage says hey Steve
+got a question while we all eagerly
+await the launch of bikers Nexus I've
+heard a surprising number of people say
+that there are inherent compatibility
+issues when mixing and matching AMD
+Intel and NVIDIA components when
+building a PC for example some say that
+you should only go with an AMD GPU if
+you're going with an AMD CPU as well are
+there compatibility problems between and
+the GPUs and Intel CPUs do NVIDIA GPUs
+have compatibility issues with Andy CPUs
+it goes on to ask more about that is it
+safe to mix and match components I know
+everyone pretty much knows the answer to
+this I think on our channel but I wanted
+to point out just as a more basic
+question no it doesn't really matter
+there's not gonna be performance
+compatible there should be compatibility
+issues between those platforms listed
+what would matter is if you are trying
+to go with something like the dual GPU
+setup that AMD can do between some of
+their ap use and some of their lower end
+graphics cards that would require of
+course and I am the APU and an AMD GPU
+to work you can't use that otherwise and
+that's because there's some memory
+unification there and whenever you do
+any kind of unifying of memory you want
+direct access to the memory controller
+on whatever CPU or APU it is and if
+you're going across architecture it's
+not it's there's normally some latency
+because you can't get direct access
+among other things but that would be the
+only instance where it really matters
+there are other things in sort of
+enterprise environments where and videos
+got there special interface for their
+high end tesla class accelerators
+but that's not something will ever
+encounter when we're using PCIe so now
+does not really there's no no inherent
+compatibility Intel and AMD can't work
+together if you wanted to name the GPU
+on an Intel motherboard or something
+next question Justin vishton says any
+chance you guys will test the heat pipes
+on motherboard v arms actually how cool
+anything or are they just there for show
+yeah I'm interested in it so to sort of
+reiterate what I've said in the past a
+lot of these better VRMs that have
+enough surface area I mean enough phases
+are just good enough components in the
+vrm don't necessarily need that heatsink
+to begin with because VRMs again can
+sustain 125 150 Celsius something like
+that so a lot of the time the heatsink
+is for show it's hopefully still helped
+sink the heat if it's got fins and
+contact and it's aluminum or copper or
+something you're still soaking heat and
+hopefully still spreading it
+anticipating it and heat spread is
+always a good thing well for the most
+part but that doesn't mean that they
+need to be cooled by passive heat sinks
+it just means that it's not a bad idea
+now you could take them off in a lot of
+instances if you wanted to again so
+these overclockers like I was talking
+about with build Zoids comment
+previously some of these overclockers
+just ripped the heat sinks off anyway
+and they don't need them on there but as
+for the heat pipes and things like that
+you'd assume for the most part that they
+work unless it's there are a couple
+examples where on motherboards I've seen
+bad heat sink designs like the MSI gain
+Pro carbon which big surprise
+the vrm heatsink there is just a giant
+block of aluminum and solid all the way
+through and there's no fins so it just
+like if you put a a 2 inch cubed block
+of copper or aluminum on a CPU it would
+be a lot worse in that state cooling or
+a sinking heat then if you finned it so
+if you dice it into fins and you remove
+some of the mass so it's it's actually
+less copper or aluminum ash but it has
+more surface area because you've diced
+it and there
+that will cool a whole lot better than
+just a solid block of aluminum on top of
+VRM a bunch of MOSFETs so there are
+definitely bad designs but it should
+still sync keep better than nothing and
+you still probably don't need it overall
+but no I haven't tested any specifically
+it is something we have the capability
+and the tools to do and I'm interested
+in it but we've got plenty to deal with
+them to shield and all the other thermal
+stuff with Rison and everything else
+right now
+next question Josh Orenburg has been a
+supporter for a long time asks question
+for the next stn what's the difference
+between the advertised endurance as in
+the warranty and raw NAND endurance for
+an SSD should the SSD last significantly
+longer as indicated by Ron and endurance
+or should it only last as much as
+indicated in the warranty my samsung eep
+850 Evo is seventy five terabytes on the
+warranty where it's 500 Ron and
+endurance for this one this is one I'm
+only bringing up not because I know the
+best answer off the top of my head but
+because I know the best place to get the
+answer and it's it's I would prefer to
+point use a it's a tech report for this
+one so tech report back when Scott was
+still there running the show and when
+his I forget the guys name one of his
+staffers at the time I think the guy has
+since left was doing a bunch of SSD nan
+tests and so they set up test benches
+with SSDs running non-stop for a really
+long time I think it was at least a year
+or at least approaching a year so they
+had several disks on there I think they
+had Intel they had Samsung absolutely
+this one may have been included and they
+just burned them tons of reads and
+writes so they're going through the p/e
+cycles non-stop for this whole period to
+see which SSDs died when do they die and
+who hangs on the longest almost like a
+survivor reality show of SSDs as that
+was actually a really cool feature to
+follow they did several updates on it
+throughout the test period and
+eventually wrote the conclusion of
+course which you could check out but I
+would recommend going through the whole
+series because I actually kind of fun to
+read and see which of these SSDs dies
+off and how to say
+degrade and performance how do they
+start showing flaws and faults when do
+the testers think that it's kind of
+nearing an end of life for a particular
+SSD I think they did a couple petabytes
+of write and read read and write cycles
+on one of them but I should say write
+any race cycles programming race so that
+would be where I'd go for that question
+I I don't have the best answer but they
+have a really cool content piece that I
+wanted to highlight because there's
+there's no point trying to compete with
+that it's probably the best one out
+there for endurance testing that was
+done by a third-party media outlet next
+question
+bad dragon 5 says hey Steve I've always
+wondered how a rain is rendered in
+modern games like GTA 5 or battlefield 1
+is it just green space like outside of
+the players viewpoint it's only raining
+in your guy's face or is it world space
+like it's raining in the world if the
+former has any game ever tried the
+latter and what kind of impact on the
+game might we see between the two if you
+do something like world space it would
+be a bigger impact this is something
+that we want to look into for a separate
+series actually so thank you for the
+idea we'll be working on rain and
+weather effects and games coming up but
+the short of it is that no it's not
+gonna be world space it's probably
+rendered kind of in the frustum that
+your your whatever your viewpoint is but
+I don't have off top my head examples of
+games where they've tried to do world
+space specifically but we will look
+around for the upcoming series so
+subscribe for that as always or the last
+two questions here ml North says you're
+passing comment about radiators being
+mounted with tubes at the bottom made my
+one week old H 100 IV to pump absolutely
+silent
+whereas before on performance setting I
+could hear noise why is this information
+not more widely known or accepted I
+don't know if you look around at a lot
+of YouTube videos you'll see that very
+frequently the youtubers mount with the
+tubes at the top maybe doing a short
+build whatever I guess doesn't matter a
+whole lot but for best silence and
+performance and endurance mostly silence
+though yeah mount mount tubes at the
+bottom I'm glad it helped you hopefully
+some other folks will pick that up as
+well does matter a little bit based on
+manufacturer but in general that's kind
+of the rule
+tubes on the bottom because you want the
+pressure to be forcing the water down
+not with a big air gap above the tank
+last question
+greasy pommel says steve is the wooden
+wall behind you real or is it a green
+screen it is real we built that wall
+maybe over a year ago now maybe two
+years ago might be two years old at this
+point
+built it out of adhesive aged wood so
+this is wood is real and very expensive
+unfortunately it's like sticker wood so
+we stuck it on and built a folding
+wooden panel box so this is actually two
+halves I think the split the splits may
+be right here or it's right here
+actually so if we were to pull this off
+it just mounts onto the wall there's an
+angled piece of wood at the top that
+this sockets into so the wall itself is
+not screwed into the wall its screwed
+into sort of a mounting mechanism and
+then that's got an angle in it so if a
+cat claws on the thing that's not gonna
+fall down and then the cool thing is we
+can pull it off the wall and fold it so
+it can fit through the door frames and
+be moved if we move studios or something
+so now it's actually real we have a
+video on making it you can search the
+channel I think for video set or GN set
+another two videos on it and it's
+progressed a lot since then so thanks
+for all the questions as always if you
+have more for next week post them in the
+comments below and as kind of an aside a
+side note I was on the awesome hardware
+show with Paul and tile a couple days
+ago they had some audio issues at the
+beginning let's get the first three
+minutes but after that it was pretty
+good we had a good time that was at the
+am the event which I can say now because
+obviously we were all there for the
+Rison thing and we'll have more news on
+rising shortly so subscribe as always
+comments below for the questions for
+next week patreon.com slash gamers nexus
+if you'd like to help us out directly
+thanks for watching I'll see you all
+next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

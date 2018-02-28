@@ -1,0 +1,533 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>FFXV Bench: CPU numThread, SMT, NV\/AMD GameWorks Scaling [Update] | Gadgetory - Your Gadget Factory</title><meta content="FFXV Bench: CPU numThread, SMT, NV\/AMD GameWorks Scaling [Update] - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">FFXV Bench: CPU numThread, SMT, NV\/AMD GameWorks Scaling [Update]</li></ol></div><h2 class="post__title"><b>FFXV Bench: CPU numThread, SMT, NV\/AMD GameWorks Scaling [Update]</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/i5ge6xLJpNY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">this content piece will explore the
+performance anomalies and command-line
+options for Final Fantasy 15 s benchmark
+with later pieces going into detail on
+CPU and GPU benchmarks completely prior
+to committing to massive GP and CV
+benchmarks though we always pretest the
+game to understand his performance
+behaviors and scaling across competing
+devices for final fantasy 15
+we've already detailed the FPS impact of
+benchmark duration impacts of graphics
+settings and resolution scaling and
+we've used command line to automate and
+custom configure the benchmarks we've
+also discovered poor frame time
+performance under certain benchmarking
+conditions and we'll explore all of that
+in today's video before that this video
+is brought to you by Thermaltake and the
+view 71 enclosure the view 71 is a full
+tower case that's capable of fitting
+three video cards and most
+configurations it's also one of the
+better cooling cases in our recent case
+testing bench lineup the view 71 has
+hinged a tempered glass doors on either
+side that make it easy to open and show
+off and it comes with at least one rain
+fan though you can get the RGB version
+if you prefer learn more at the link in
+the description below so we've done a
+lot of research on Final Fantasy 15 s
+benchmark already a few notes here
+before getting started this is not
+technically a beta but it is a
+pre-launch benchmark utility and there's
+no final game present so all of this
+stuff will probably at least somewhat
+change by the time the game rolls out in
+about a month keep that in mind that
+said it still serves as a good
+benchmarking tool and we're excited to
+add it to the fall suite once the game
+is launched completely because it's
+actually very easy to work with for what
+we need
+so not a complete game things will
+change we are however using the latest
+drivers from Nvidia which are supposed
+to be tuned for this AMD we contacted
+they did release a new driver set today
+the day that the game came out but it
+doesn't include any optimizations for
+the Final Fantasy 15 benchmark any of
+you noted to us that they plan on
+including those closer to the game's
+launch rather than the benchmark so
+you'll have to keep an eye out for that
+as well they're probably optimizing as
+we speak using the benchmark to do so
+this game also has a lot of graphics
+settings that we
+can see they've been exposed but we
+can't really change them easily right
+now and we'll have more info on that as
+we go through this for the original
+articles and everything that fed this
+video you can go to gamers Nexus dotnet
+we will be posting follow ups as well
+any time there's a live benchmarking
+activity going on like this we're
+pushing stuff as soon as we can it hits
+the website first so let's get started
+with the benchmarks for this one and as
+always you can check additional details
+in the article link to the description
+below if you need test methodology
+information this video will basically
+set the stage for the next two which
+will be the GPU and the CPU benchmarks
+we started out by testing for run to run
+variants which would be used to help
+locate outliers and determine how many
+test passes we need to conduct per
+device in this frame time plot you can
+see that the first test pass Illustrated
+on a gtx 1070 with the settings noted in
+the charge exhibits significantly more
+volatile frame times than what you'll
+see for the second pass the frame to
+frame interval occasionally slams into a
+wall during the first six minute test
+pass causing noticeable visible stutters
+in gameplay the second pass was
+noticeably more consistent in frame time
+interval though it did still encounter
+one spiked frame time in excess of 250
+milliseconds bad enough to notice a
+stutter this was over a six minute
+period and that said there's one spike
+over 250 milliseconds as opposed to
+spikes over a full second for the first
+run indicated it in blue and a 1200
+millisecond frame time in the first run
+means that you're left staring at the
+same frame for a full 1.2 seconds in
+other words you're getting less than 1
+FPS for that 1.2 seconds
+technically speaking in that interval
+the average still hits sixty-five FPS
+for both of these passes actually all
+three of them even in spite of the 1200
+millisecond frame time and that's
+because we're averaging nearly 30,000
+frames of data as a reminder you'd need
+about a sixteen point six six seven
+millisecond frame time interval to
+achieve an effective 60 FPS run three
+exhibited similarly smooth behavior to
+run too and we have now observed across
+six GPUs that the first run
+particularly with the 1080p high
+settings appears to have worse 1% in
+point 1% lows than the subsequent
+next we're moving on to graphic settings
+discussion
+reddit user random stranger four or five
+for detailed all the lower level
+settings options for the three presets
+in the game the benchmark launcher only
+gives the ability to switch between
+presets of low medium and high along
+with just a couple of resolutions
+knowing the lower level details tells us
+what we're game works and other graphics
+options are enabled and disabled
+theoretically giving us a look at two
+things one a potentially closing
+relative performance gap between AMD and
+NVIDIA as lower graphics options are
+configured as these disabled game works
+technology and two a look at future
+options for the full game let's start
+with the game works options the high
+preset is presently the only one that
+the game works graphics options as far
+as we know are enabled in and two of
+those options
+supposedly remain disabled for the
+benchmark utility at least sometimes the
+shadow works library is probably
+disabled at present as is the voxel
+accelerated ambient occlusion that said
+I'm using the words probably and likely
+and maybe here because the user who
+found those settings and stripped them
+out of the games files did end up
+posting a screenshot later after the
+user had managed to enable the on-screen
+display for the benchmark and noticed
+that the on-screen display which is not
+technically officially supported did say
+that the apparently disabled vxa o
+options were enabled in that test so
+we're not fully clear on whether we
+believe the file they came from or
+whether we believe the on-screen display
+if we believe the file then they might
+be disabled but if we believe the
+display then it looks like they're
+enabled at least for 1080p high either
+way we previously detailed most of these
+graphics settings when they were
+unveiled back at GDC 2016 VX AO converts
+the screen space into voxels based upon
+geometric data which reduces the
+complexity present from raw triangles
+and primitives the x AO then runs a cone
+tracing pass for the shadowing
+computation and the result is that
+ambient occlusion can theoretically be
+calculated more accurately demonstrated
+with Nvidia's tank asset in this example
+so in the example on the screen the blue
+voxels are partially occluded and the
+red voxels are completely covered by the
+volume of jeon
+count Racine draws the lines from each
+point to calculate how much occlusion
+exists from the respective points traced
+into the hemisphere around that point to
+learn more about this click our old
+article linked below the XA o does
+require Maxwell architecture and up
+including Pascal and I guess the Titan V
+if you wanted to count that what we're
+not sure about is how well the exit AO
+will work on AMD if it works at all and
+as for the rest of the game works
+options those are from what we
+understand all enabled just with VX AO
+and the shadow libraries being a big
+question mark right now let's pull some
+quick data out of our upcoming GPU
+benchmark this will look at relative
+performance scaling between the RX 588
+gigabytes and gtx 1066 gigabyte cards
+while switching between medium and high
+settings the idea is to see if relative
+scaling it worsens with higher settings
+and that's where nvidia will
+theoretically have more optimization
+keep in mind that more than just game
+work settings change between medium and
+high here so it's not perfectly isolated
+as a test but the game work settings are
+most likely to be drivers in performance
+deltas particularly for AMD and it's for
+obvious reason and the probably hasn't
+had as much access to the game and they
+certainly haven't had as much time
+optimizing for their competitors in game
+work solutions so makes sense in the
+chart the gtx 1066 gigabyte card is
+baseline marked at 100% performance the
+gtx 1070 under both medium and high
+settings maintains 137 percent of the
+gtx 1060 s performance it is almost
+equal for both presets at 137 for both
+medium and high the RX 580 maintains 60%
+of the gtx 1060 s performance when using
+high settings or 66% of the gtx 1060
+performance when using medium settings
+andy is regaining ground at medium
+settings which means that at least one
+of the settings enabled under high is
+more taxing for the AMD card that it is
+for the competing and vidya card this
+comes down to shader level optimization
+and or architectural level differences
+where shader level optimization would
+also account for driver and library
+differences involving game works we
+don't have enough information yet to
+firmly
+whether game works is the driving reason
+for that six percentage point Delta and
+performance increase as we moved to
+medium settings with the RX 580 card but
+it's a likely contributor as it has been
+in the past and a history dictates here
+that and videos game works packages
+libraries often use things like
+tessellation which and videos cards
+happen to be pretty good at and AMD does
+struggle a bit with the heavier
+tessellation without some optimization
+on andis side or on the user side there
+are settings and Andes drivers that you
+can go through to help with this factor
+by lowering the amount of tessellation
+one thing that we've noticed that we
+haven't yet published is that the
+tessellation setting for terrain has a
+particularly heavy impact on some of the
+AMD cards that tend to struggle more
+with geometric complexity drawing a lot
+of triangles at once and the amount of
+tessellation for the Train in this game
+is enough to bring those cards down a
+couple of ranks you can account for this
+somewhat by going through your am the
+driver settings but this isn't something
+that we've tested for this piece because
+it's not really the point of this piece
+moving on to CPU testing now we ran
+command-line benchmarks using the num
+threads and num a sync threads commands
+checking for performance disparities on
+our stock r7 1700 platform and our stock
+i7 8700 K platform
+our thanks to peer this girl of the G on
+patreon backer discord for helping
+troubleshoot these commands if you want
+to join us next time we talk about a new
+game coming out and benchmarking it you
+can go to the link below patreon.com
+slash gamers Nexus so the goal here was
+to determine if either command impacts
+Intel or AMD differently not to match
+the CPUs head-to-head that'll come later
+and to get you up to speed if you
+haven't been following this game
+basically you're able to run
+command-line options for the game so you
+can set flags for the exe when you
+launch it and this has been particularly
+helpful in building the tests that we've
+been building some of those flags
+include a number threads and an async
+threads setting so you can set number
+three Deak hwal to say eight maybe half
+of your threads on an r7 1700 the theory
+here and there's not really any
+documentation on how these work
+officially is
+setting it to Nam threads eight would
+reduce the number of threads that the
+game is going to load when it's handling
+all the game data so this is something
+we tested here async threads were not
+really positive if it's even implemented
+yet or if it works at all we tried it
+we'll talk about that in a bit though
+first of all here's the utilization
+difference on the r7 1,700
+this chart shows all of those tests at
+once we're seeing the highest
+utilization when set to 16 threads with
+baseline meaning no flag at all in
+command line also roughly equating num
+threads equals 16 it is a 16 thread CPU
+having it to eight threads noticeably
+reduces CPU utilization so the function
+appears to be working at least somewhat
+going to four threads that further
+reduces utilization aside from one spike
+toward the end of the test ultimately
+though it comes down to fps although an
+ad hoc test we did collect data that
+seemed to indicate a baseline fps using
+a ten atti of about 131 FPS average
+using num threads equals four or eight
+gave us 135 FPS average which is just
+outside of acceptable margins of test
+variants num threads equals 16 didn't
+seem to show uplift outside of error and
+that's probably because it's the same
+thing as baseline this appears to be a
+GPU limitation and so we get into a
+problem where to really show a
+difference with these settings if they
+do indeed work and it seems like they
+might we start entering realm of
+academic study it's not really something
+you necessarily do because what we have
+here is a gtx 1080i at 1080p with medium
+settings not even high and we're still
+plotting about 94 percent utilization
+apparently on the GPU with occasional
+spikes to 97
+so we're basically at full load on the
+GPU the CPU is not really there yet and
+it's hard to say how much of that that
+limited performance disparity between
+the different number threads flags comes
+from GPU limitations but it's reasonable
+to assume at least some of it does this
+is something we'll be able to explore in
+greater depth with our CPU benchmark and
+our GPU benchmark which are coming up
+separately for now however we can assume
+that some of the limited difference here
+that comes from GPU limit
+and to that extent to really show
+differences you enter territory where
+you've got two options
+you drop the resolution to something no
+one will ever play with like 480p and
+low settings and eliminate the GP
+bottleneck that would certainly show
+difference but it's entirely academic at
+that point so it's not at all realistic
+still interesting though the other
+option is to use a low end really low on
+CPU like G 45 60 or maybe an r3 or an
+old FX fork or something like that maybe
+you'll start seeing differences there
+but that's not something we're doing for
+today with this test as for num async
+threads
+we're not really sure of that feature is
+working right now so we tried it and
+we're also not sure how it's supposed to
+work there's no official documentation
+on it and we tried num a sync threads
+equals 16 equals 8 and equals 4 and saw
+about the same performance across all of
+them it's not any worth generated a
+chart for it's possible that it's not
+enabled right now it doesn't like the
+CPU maybe or that we just don't know how
+to use it properly what number to type
+or the order of where to type it things
+like that so if you have an idea on
+using this command you've actually seen
+the difference from using it please let
+us know below and give us some more
+information so that we can look into it
+for you but for now not really clear on
+if it does anything or works at least on
+the 1700 we also ran all this testing on
+the 8700 K same problem there except to
+a bigger degree all the numbers were the
+same because the 1080i is bottlenecking
+and yes we can eliminate that bottleneck
+no it is not realistic so it exits
+really user scenarios it's all academic
+we're gonna skip it for now the next
+part is standard deviation and test time
+standard deviation is another aspect of
+our data analysis for benchmarks and we
+just posted a video about test duration
+and the minimum requirements are how
+long a test should be so check that out
+if you haven't already at time of
+filming this we've only completed half
+of our Nvidia and a couple of our AMD
+cards because we were waiting for AMD to
+push today's drive a revision prior to
+testing which they just did and using
+our still limited data set starting with
+10 DB high we can see that standard
+deviation was relatively consistent
+across four runs though exhibited
+greater variance in our GT X 1080 tests
+than the others we may rerun the GTX
+1080 as a result of its wider deviation
+from the norm
+our X 580 has the least deviation but
+this is also because it has the lowest
+frame rate with these settings it's
+struggling at 1080p high something we'll
+talk about in our GPU benchmark much of
+this has to do with tessellation at
+1080p medium with the game work settings
+mostly disabled or entirely disabled and
+tessellation presumably turned down to
+the settings we're observing tighter
+results overall with standard deviation
+on average FPS below 1.4 the three
+presently tested devices or below 1.5
+fps for the one percent and point one
+percent low values the RX 580 was also
+consistent in this testing and this
+gives us a reasonable margin for error
+of plus or minus 1 to 3 FPS depend which
+card we're talking about will further
+refine this data prior to our GP
+benchmark publication and talk about it
+more there for test durations we found
+that the full six minute benchmark
+produces roughly equivalent results to a
+60 second pass or even a thirty second
+pass with GPU testing with relative
+scalability cross vendor also scaling
+equivalently between 6 minutes and 30 or
+60 seconds this feeds back into our
+video published just a couple days ago
+at this point where we talked about the
+benchmark duration requirements and how
+what you're really looking for generally
+is relative performance versus vendor a
+and B as long as that scaling is the
+same you're good to go for something
+like this though this is a specific game
+benchmark so we care more about absolute
+performance because people watching our
+upcoming benchmarks want to know if
+their card can play or what card they
+should buy to play the game at specific
+settings so we'll be looking at it more
+from an absolute FPS standpoint however
+the absolute FPS and the relative FPS
+six minutes versus thirty seconds even
+60 seconds 90 seconds all the way down
+the line for the most part it's about
+the same with GPU down testing CPU bound
+testing is a different story we're still
+studying that and it looks like we're
+going to be doing a longer duration test
+with a different amount of passes for
+our CPU benchmarks because when testing
+CPUs in this game they're really only a
+couple spots in the game where the CPS
+loaded heavily the rest of it's a very
+GPU intensive so you have to pinpoint
+those spots and run the benchmark for
+that specific location to really bind
+the CPU and one final thing here as we
+finished this
+video we went back to add in this audio
+clip because we discovered that with CPU
+testing on the AMD r7 1700 CPU under
+both stock and overclocked settings we
+were observing a performance uplift once
+again by disabling SMT so this kind of
+feeds back into the number of threads
+thing being eight giving you better
+performance we'll talk about this more
+on the CPU benchmark Fowley it's not a
+huge uplift it's not like it's a 2x gain
+but we're gaining eight-- FPS on top of
+150 and one of the benchmarks to give
+you an idea is a couple percent and
+that's something we'll talk about more
+soon we also made some very interesting
+discoveries between AMD and NVIDIA
+graphics card scaling performance under
+very specific benchmark conditions that
+we will also reveal in our upcoming GPU
+benchmarks so make sure you subscribe
+for that
+and speaking of all that CPU benchmarks
+of course are upcoming as our GPU
+benchmarks subscribe for those if you
+haven't already so you can catch them as
+they go live should be relatively soon
+maybe even today or within the next 12
+or so hours anyway we'll see but I
+subscribe from that you're gonna
+patreon.com slash gamers Nexus to helps
+out directly or join the patreon discord
+where we were talking with everyone
+about the benchmarking process as it was
+going on behind the scenes and thanks
+for watching I'll see you all next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

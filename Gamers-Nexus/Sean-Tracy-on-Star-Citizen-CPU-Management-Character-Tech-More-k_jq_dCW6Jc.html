@@ -1,0 +1,597 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Sean Tracy on Star Citizen CPU Management, Character Tech, More | Gadgetory - Your Gadget Factory</title><meta content="Sean Tracy on Star Citizen CPU Management, Character Tech, More - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Sean Tracy on Star Citizen CPU Management, Character Tech, More</li></ol></div><h2 class="post__title"><b>Sean Tracy on Star Citizen CPU Management, Character Tech, More</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/k_jq_dCW6Jc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">this is part two of our interview with
+Shawn Tracy the technical director at
+cloud Imperium games working on a star
+citizen in this part of the interview we
+talked about CPU thread management the
+jobs system game logic physics things
+like that and we also go into a lot of
+detail on the new character developments
+that will be shown at least in part at
+citizencon on October 9th
+before getting to this content it is
+brought to you by an tech and their new
+at cube mini ITX enclosure which
+supports open-loop liquid coolant if you
+wanted it and you can learn more about
+that in the link below let's get into
+the content so one of the other things
+that I was talking with Chris VAD for I
+think it sounded like 100 percent clear
+on this it sounded like we would see
+some new character tech and yeah all
+things are about that so it's not really
+it's not a new character - well it is a
+little bit new butter - involved mostly
+this is the stuff that we've been
+working on for years so last year at
+citizencon we showed something we called
+the Moro tour we had only just started
+to receive the head rigs head assets
+from three latterly baby but a month and
+then we went ahead and just put 50
+characters in so I mean they look two
+very degrees of art polish right I mean
+a lot of game you were pretty happy to
+show work-in-progress stuff but the
+public can react pretty negatively to it
+like I mean they're like whoa what is
+this case that one character is gonna
+look like you know I don't get it so
+well what we really want to show is is
+the progress of that over the years so
+all of the tech that we had expected is
+is now online polished working you know
+we have the entire year to get about 120
+scan heads in and we have I mean even
+just in the demo that we're gonna show
+we have 53 unique characters so it's
+unique face unique facial rig right all
+this so which is a lot of work it's a
+ton of work if you just do just a
+contrast it again like Crysis we're
+talking I mean less than 20 characters
+the whole game of rise we're talking
+maybe 30 and
+like you know probably 15 of those are
+like barbarian variants and stuff like
+this where for this because we've got
+all these actors you know you we've paid
+for the actor so we're gonna have a
+really nice scan of their head and then
+we want them we want them to look
+awesome within it so and and they do
+know so all the tech is actually finally
+online for the face it's animate
+correctly for it to get triggered with
+the dialogue and finally there was one
+really big piece of tech that we're
+bringing online now and we call it run
+time rigged logic for the faces what it
+means is we have varying facial skeleton
+so everybody's got a bit of a different
+face now a lot of games what they end up
+doing is okay we're just gonna unify the
+skull shape but you're gonna unify the
+next shape and everybody's the same that
+doesn't work for actors especially not
+for really recognizable ones like Gary
+Oldman or Dre Anderson or Mark Hamill
+like I mean you're gonna know that that
+doesn't really look like him right so
+what we do is we do still have all these
+unique rigs but what we have is a system
+within the engine that is actually
+consuming unified animation data and it
+applies all the offsets to that
+animation data so we can drive that rig
+so what it means is that we can share
+animation across anybody which is super
+cool so a smile on Gillian Anderson is
+actually the same data for a smile on
+Mark Hamill for a smile on Gary Oldman
+for a spot so we can share all this all
+this data across so this is pretty big
+deal the other thing with it is that we
+can procedurally drive things on the
+character and have the rig react as if
+we were just exporting animation a big
+example of this is I so what we have is
+this look I K that we can do it sorry
+not look like it's more above like a
+look posing system okay but it's a I'll
+get into that maybe a little bit this
+will we'll drive actually where the eyes
+are looking problem with this is that
+the eyes are all connected to blend
+shapes and we call the fleshy blend
+shapes all around the eyes right so
+usually if any other game would do this
+right you'd see the eyes moving around
+but no
+bunch shapes that do anything because it
+just doesn't know that you're moving
+those eyes around unless it was playing
+an animation which would then know okay
+well I'm gonna move those bunch shapes
+around
+so with rig logic online we can say move
+those eyes and actually rig logic knows
+oh okay I've got to blend this blend
+shape here I gotta blend just but in
+shape here I've got to do this wrinkle
+here I've got a great wrinkle here so
+what we end up getting is a really
+awesome performance even from
+procedurally generated data right this
+is this stuff that would be reserved for
+more cinematic sequences or it's every
+everybody so this is so cool that that
+so we apply this to every single head
+and there's kind of there's a there's a
+workflow reason for that and it is that
+I kind of don't want to deal with two
+different pipelines I don't want to do
+oh well this guy's rig logic and then oh
+well this guy has a unique skeleton so
+I'd rather just okay everybody's rig
+logic perfect yeah right so that means
+and there's kind of an implementation
+reason too because what I can do now is
+say in star marine I want a guide to
+when he fires he goes like he looks
+angry right I would if everybody has
+unique faces I'd have to have okay this
+guy is in his stance he's got his weapon
+and he's firing here's here's you know
+angry face mail a one angry face mail Oh
+- they would all be different animations
+for the exact same thing now what I do
+is I just say one angry face and then
+that will figure out what face fighting
+on and it will do it so it's a lot
+easier so this is kind of our whole
+mentality on content creation it's it's
+let's do it intelligently so that we're
+not stuck here making thousands of
+things so that it's gonna take us 10
+years to make this game there's a hey
+his neighborhood so how do you deal with
+system resource consumption things like
+that like just we were talking about the
+what you call for the eye is the eye
+posing good procedure yet poses yet yeah
+so just that alone if you're
+communicating eye movement to other
+meshes and things
+face is that taxing on resources no
+because what we do and and it's a very
+good question because usually if you
+were to move around verts and mesh and
+speck that that would be a problem so
+what we have is the rigged logic
+skeleton is actually only a hundred and
+eighty-three
+inputs so based on those hundred and
+eighty-three inputs we can drive
+everything on the face and they give you
+an idea of the complexity of the face
+it's not 183 joints it's more like 500
+so we're taught welded in something like
+220 skin joints and then a bunch of the
+blend shape of controls so we use 183
+joints driving way more complicated rig
+but that Lodge exists in the engine so
+we save all that performance is kind of
+the idea okay yeah so the character
+tacks a big thin and had Bob yeah right
+and it's actually the same guy is sort
+of working on the one on the two systems
+here he's our animation Rd engineering
+he's also come over from contact with a
+bunch of us evil hurts sake so he's
+worked a lot about he's worked a lot on
+the vision stabilization now Chris loves
+to talk about it in terms of the unified
+stuff and there's good reasons for it
+and again I'd like to say this has way
+more to do with workflow than it does
+anything else again if you don't have
+two different systems to do with your
+you're kind of in a better spot so a
+fire animation and third is the same as
+first and and it's a there's a system
+dealing with it rather than me having to
+go grab the arms asset and then do the
+same thing on the body and be super
+confusing to have to go back and forth
+between the two so there's there's
+reasons for it the the biological term
+anyways for the for the eye
+stabilization is the vestibular ocular
+reflex we've talked about this so much
+that we've you know gone through medical
+papers on it we've read it medical
+contractor exactly and really the
+easiest way to ever explain and I think
+there's going to be there's going to be
+a special video that Evo does just to
+where he explains the sort of system
+where it's maybe you've seen this
+commercial of a
+getting being held seeing that his head
+stable right right as the thing moves
+around so that's hot that's like the
+easiest analogy I have for the system
+but Evo definitely explains a lot more
+but for me it's more of a workflow thing
+it just makes it makes it easier I'll
+share it to you with but there is
+run-ons there is absolutely about to run
+ons and especially having come from
+crisis games where we we did have some
+sort of separation
+you've got to wrap your head around that
+workflow and be ok with it right because
+you can feel like you're chasing your
+tail a lot of the time so oh yeah it
+looks great in the third-person then you
+get back to first it's like oh no that
+shit let's go back in so you've just got
+to get into a spot where you're not
+chasing your tail and it's usually
+perfect so we've got a procedural
+generation stuff is kind of covered some
+instant character technology yeah
+what's another good point for the
+citizencon stuff coming out I think yeah
+the procedural generation it's character
+tech is super interesting what about
+these one point what about from an
+authoring standpoint working on missions
+and things like that sort of time Chris
+about squadron 42 missions so what's the
+authoring tool set or pipeline like
+right and no it's a good question it's
+actually not even embedded within
+sandbox which honestly in my opinion is
+bad idea I hate I hate not putting stuff
+in sandbox because it's just immediately
+available to user but it is a hell of a
+lot easier right because one thing in
+kit you know just for people's reference
+and if they're pretty technical sandbox
+is written in old old MFC it's an old
+system from Microsoft there's some
+plugins in it too right tool sets in QT
+which is a lot easier to write for and
+it's a little more visually pleasing
+then MFC is you just got no real control
+right so a lot of times what happens
+when somebody comes along to write a
+tool for the edge and they're fighting
+more with sandbox and they are with
+their actual tools so they'll tend to
+write the tool outside of it and then
+eventually we'll integrate it in so what
+we have is a system that we call
+subsumption it's for AI and it'll be
+used for missions as well as even I
+think some economy stuff it's a lot to
+explain it it's kind of a
+scripting system okay so you've got
+nodes within it a eyes have certain
+activities or behaviors that they
+perform they can be interrupted out of
+them they can go into different
+behaviors we can load them we can cancel
+them we can trigger off cinematic stuff
+we can pretty much do everything that
+the that the flow graph would have done
+but within a little more systemic of a
+system rather than a bespoke this entity
+does this function does this function
+more of a behavior to the AI so this
+same idea is going to be applied to the
+mission system where it's a systemic
+system where you're setting up a mean if
+you think about him and again I'm not a
+designer so I hope I don't know
+misrepresent their rather their
+particular system but when they're
+setting up missions it's more of small
+portions of it that are that are kind of
+like little activities within and
+that'll create the bigger mission it's
+the same idea to the AI so it's actually
+all done in the same tool set but yeah
+it's all it's external to the to the
+sandbox right now we're right again I
+hate but it's easier for us to write it
+right yeah absolutely I'm a production
+standpoint yeah I totally understand it
+so interesting so with mission placement
+how much of the D know off the top of
+your head how much of this is sort of
+taking the same semi-automated approach
+versus all manual placement is there
+everything is doing it so this is this
+is a you know a direction from from the
+pretty much all the tech directors and
+incoming most of us in a director ship
+role is that that is that is that that
+is a rule of thumb for everything we
+create which is you know can get in 90%
+of the way there right with systems
+mm-hmm and then let the artists and
+everybody polish that that's right I'm
+Sam right so yes it's exactly the same
+thing you want to be able to bring as
+much content online as less a fair as
+possible and then let designers go in
+and make it a little more fun do you
+know right yeah but I think that it was
+the same again
+the same mentality at Crytek so I really
+hope that it lends itself to not only
+tons of content but but content that
+doesn't feel generic it doesn't feel
+copy pasted it feels very living and
+then and and humor so I guess if you had
+to pick sort of one aspect of what we're
+going to see in the citizencon demo from
+a technical standpoint what do you think
+is the most important for onlookers to
+really understand as a big challenge to
+overcome um I think the implication of
+v2 planets and what this brings I mean
+it's such a we've we as gamers and even
+like I came from the modding side so I'm
+never I didn't just jump into this as a
+program or anything I've always been a
+gamer first so I think we've just gotten
+used to the fact that we know we're
+being lied to
+we know we're in a skybox right you know
+we know that Sun is just a little sprite
+up there yeah you know like we know
+we're being lied to and we're okay with
+it because it's fun and it looks good or
+whatever but it's it really to wrap your
+mind around the sheer volume and scale
+that that is there in star citizen
+around you is something different it's
+in and it feels different when you're in
+it and experiencing it you know if you
+could go into you know Witcher and just
+run forward for more you know it would I
+don't even know how long it would take
+you to get around the planet but
+environment for 24 hours and it actually
+be different and then eventually come
+right back and wrap yourself around
+right it's a different mentality so I
+think if there's anything to to
+understand it's the implication of the
+scale meaning there's so much that you
+can explore and do alright and and we
+being empty is kind of a kind of a
+really I think important thing lastly I
+would say really important to understand
+as well it would be the AI implications
+of what we're going to show for the for
+the squadron 42 preview I guess well I'm
+not sure what was called it necessarily
+but the AI that's going on within there
+is fairly complex because it's it's
+similar to you know an Elder Scrolls or
+something like that where they live
+their lives they they have their their
+lives these are crewmates and they're at
+this desk from nine to six and then they
+go to the cafeteria right and go this so
+what people I don't think we'll see
+immediately and again the demo can only
+be so long I don't think people will
+necessarily grasp but that's happening
+for those characters I'd you know it
+will feel like it's just the what he
+walks by you great that's right I walked
+by you but what you don't know is he's
+going down to his cruise got an
+objective exactly he's got stuff to do
+so so yeah I think those days a good
+question but it was definitely those two
+I think would be important to understand
+what's right it's all of that a more
+Hardware that was all the AI sort of on
+one thread of the CPU is that like yeah
+it's it's it's part of the job system so
+we've got a really nice multi turning
+job system we can dedicate CPUs per per
+module we tend not to we let the job
+system handle where it to go because
+what can happen with job systems is that
+especially if you dedicate cpus to it
+they can sit there idle at a lot of time
+so they'll be sitting there waiting for
+work to do and then they'll loan you get
+sort of given very small portions of
+that frames work and and the rest stays
+on main or whatnot so we try to move
+that stuff around with the job system
+itself but yeah it's all threaded I mean
+we definitely operate better on more
+CPUs there's no write about that and
+especially in terms of physics as well
+but yeah the entire engine has been
+threaded from I mean since I think I
+think CryEngine 3 was actually when the
+job system went in as soon as we had to
+do console
+for the grinder we had to thread this
+things right right yeah I remember
+speaking with krytac about that a date
+so they several years ago at the sort of
+beginning of this project added in
+support for eight threads which was like
+that's right yeah it was a big deal yeah
+yeah yeah I know I I absolutely recall
+that because we had we had hard-coded
+basically you know and I can't remember
+exactly what it was but made time to do
+one thing render was on the main thread
+right then we had I think we had a
+separate sound Fred physics thread and
+then I don't even know physics like game
+logic yeah its own game logic was I was
+right that was it
+but yeah it's a big deal so now now we
+scale dynamically to as many courses
+you've got so the more boards you got
+the better alright I mean if you get 32
+cores I don't think we even have so many
+dead right would dispatch it scales to a
+point as always
+yeah I guess core one probably still
+hauls a lot of the work cuz yeah
+absolutely and it's it's even like it'd
+be super simple if every single function
+in the in the engine was was jump system
+friendlier right in front and it's just
+not the case right I mean there are
+functions and systems and we still find
+them every day that that locked the main
+thread before whatever reason right it
+might be locking the main thread because
+it's waiting for another thread to
+finish for you know whatever data it's
+got right because these are that that is
+ultimately problem with multi-threaded
+program but we again we've got one of
+the best guys over from Crytek for that
+whose name is Cristobal Bolton and he
+did a his I think it was his master
+thesis was on Iran was on
+multi-threading right well I think he
+broke the job system and everything for
+CryEngine and now he's on with CID so
+it's perfect right so so I've got I've
+got one last kind of technical question
+for you and we'll wrap up but the last
+thing we're talking with Chris about was
+the the Sun the idea that oh yeah that
+is really cool so yeah so from from just
+like a gaming standpoint it's not
+something you really think of where yeah
+when the Sun moves when you have a
+day/night cycle and Skyrim or something
+yeah most like just in a it's just in a
+skybox like it's just a position of a
+light right
+and really all this Sun is is a light
+that doesn't have a convergence point
+right where there's it's a it's a
+parallel thing so it just keeps going on
+forever
+the tricky part about decoupling that is
+less about producing light from some
+point but more about how the shadows
+react because in crimes and this is why
+it was kind of complicated for us to
+pull the Sun out of the sky so to speak
+right it was that we have the assistant
+called cascaded shadow maps and I'm not
+it's it's it's been around for a while
+and a lot of people do use the same sort
+of system where you have kind of a
+really high res one then it gets a
+little lower res around it and you can
+see it is a bunch of concentric squares
+um that would just be here's your first
+cascade second cascade third cascade and
+each one gets a little less granular is
+the idea and the biases change in these
+sort of things so we had to implement
+basically cascaded shadow Maps on point
+lights and then we could pull them out
+what is kind of cool is that we actually
+have support for both systems right now
+so as soon as I drag this it we call it
+I think it's literally called Sun light
+and then I drag the sunlight out it
+actually turns off the one in the sky
+okay so I can just delete that and it
+turns on back on so we still have all
+that CryEngine time of day stuff but we
+have also got the ability to still put
+our put our lights in so it's kind of
+gold we've got both support the other
+big bonus out of decoupling it is that
+we can have multiple zones right yeah
+you had either the binary system or
+something exactly binary systems or even
+large events within there that you might
+want to produce light like an explosion
+or something
+well something gigantic right but big
+enough that you might see light from it
+but I can think binary stars is kind of
+more obvious usage of it sure so that's
+an interesting thing from being able to
+decouple it but it was a big deal
+because again you just gotta get out of
+the mindset that you've got a skybox
+around you you've got to expand economic
+you know you get sucked down the road -
+because it's like any other rabbit hole
+yes like if you have some massive scale
+ship exploding or whatever that
+like that would be how far do you see it
+right yeah exactly and what kind of
+scales are we talking about what lod is
+that thing at do you produce light from
+it does it cash instead you know there's
+a lot of question marks that you just
+got it and honestly a lot of the times
+is the you know there's no one person to
+go ask has very few things on this game
+have people done before all right and I
+think that's why a lot of people really
+like working here though and it's
+challenging but it's also why a lot of
+times we did delays because it just
+hasn't been done like this before and I
+kind of explain my day to people as I
+screw up all day in Toledo yeah do you
+know what I mean like it might break no
+broken broken broken broke
+Oh works done you know what I mean so
+that's it's an iterative process so I
+think that that's what comes of it but
+yeah in the end decoupling the Sun was a
+real big one I like that but it's super
+weird though because you can just drop
+one and put it like right next to a
+person right like the way the shadows
+react and stuff like that is like
+daughter all what you would deserve so
+it's like it's it's very strange at
+first but but ya know it's an
+interesting thing and the graphics
+programmers are amazing over and over
+and the uk-based we're yeah yeah cool so
+as always more information we'll have an
+article below with kind of key talking
+points things like that and I guess we
+might be seeing you guys at citizencon
+otherwise we'll have coverage of it
+online separately so awesome tune in for
+that thank you for joining me Sean
+you're very welcome
+yeah we'll see you all next time
+you</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Personal Project RAID 6 Setup &amp; Troubleshooting Windows Home Server Upgrade Linus Tech Tips | Gadgetory - Your Gadget Factory</title><meta content="Personal Project RAID 6 Setup &amp; Troubleshooting Windows Home Server Upgrade Linus Tech Tips - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1>Gadgetory</h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><h2 class="post__title"><b>Personal Project RAID 6 Setup &amp; Troubleshooting Windows Home Server Upgrade Linus Tech Tips</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/sA_KUnaFtKY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">so I just had a bit of a scare guys I
+thought Murphy's Law really had it in
+for me today
+this is the stack of 8 3 terabyte hard
+drives that I'm using to upgrade my
+storage server that I archived all my
+footage on and all of that and it
+appeared to me not that long ago you can
+see the network is critical which is bad
+it appeared to me that I had lost two
+hard drives at the same time meaning
+that the redundancy that Windows Home
+Server v1 provides was not applicable to
+any data that was on both of the failed
+hard drives however it looks like upon
+further inspection the Western Digital
+one terabyte black that's in there is
+back up and running and only the Hitachi
+right here is actually dead so that was
+a real relief because it means that I do
+have to repair the network they are the
+the backup database in all likelihood oh
+no it looks like the backup database is
+ok awesome those were on the WD but I do
+have two I do have to remove the Hitachi
+drive at some point so yeah that's very
+disappointing and very frustrating
+because it takes a few hours to get that
+done and I was really hoping to get
+these new drugs in there and get them
+get them read it up and get Windows Home
+Server v2 on here I had to packaging so
+many drives had to pull out some
+existing drives this one failed a little
+while ago the Wildfire was just in there
+for testing purposes there's a few C
+gates these are old C gates 7200 point
+10 all of them survived which is a
+testament to these particular drives I
+guess to 320 s and and 250 so those are
+kicking it well kicking back not working
+anymore
+will they work but they're not gonna
+continue to work for me whatever you
+guys get the point
+so this attach is gonna come out that WD
+is gonna move slots and I'm going to be
+putting oops sorry I'm going to be
+putting the eight new drives in the
+eight days at the bottom and then I'm
+gonna be going with you know
+but maybe I'll throw the Wildfire in
+it's got toggle man so it should be
+pretty reliable for the boot drive of
+Windows Home Server v2 or 2011 whatever
+you guys want to call it Vail it's been
+brought to my attention that you don't
+have to use a 240 gig drive you can get
+away with a 120 with a little edit
+during the installation process so
+that's a really good thing and oh yeah
+right the kicker for all of this was
+that when the two drives were out it
+told me the backup database was failed
+and I actually just bricked the OS of my
+wife's computer and was about to use the
+home server backup restore utility to
+get her computer back up and running so
+I thought I had lost pretty much
+everything but now that that one drive
+is working I'm in pretty good shape so
+thanks for coming along for the ride
+guys and I'll keep you posted on my
+Windows Home Server upgrade don't forget
+to subscribe to Linus tech tips from
+unboxings reviews another excuse me
+other computer videos so none of the new
+drives got detected at all they're all
+detecting a 0 gigabytes which stands to
+reason since the firmware I'm running on
+my controller is older than my cats so
+I'm updating the firmware all I got to
+do parently is this
+apparently that didn't work so I'll give
+it another crack I'll get it I'll get it
+updated and then we'll see how things go
+once we get rooted into back into
+Windows and create the array I think I'm
+gonna go with a raid 6 that work the
+file name just got truncated so this is
+my first food after updating the
+firmware this is new I hope that's a
+good sign
+alright so I'm into my raid
+configuration physical drives let's see
+if they oh they are detected now alright
+so I guess we might as well do a quick
+tutorial on how to create a raid volume
+on an arica raid card so we're gonna
+call this raid 6 I don't have another
+raid 6 all my other drives are just
+passed through drives which just means
+they're standalone drives raid set was
+created successfully cool so let me see
+ok so I could expand it I could activate
+incomplete raid set I guess that's
+pretty much it I could create hot spares
+I can rescue raid sets to leave hot
+spares no need that's actually not a bad
+idea I should probably use one as a hot
+spare since I don't really need all the
+capacity to go to go with it right now
+so little hot spare will do is if a
+drive fails it'll automatically go right
+in and rebuild the rebuild the array so
+let's have a look at the actually oh no
+not this one
+sorry let's have a look at the volume
+that has just been created mismanagement
+here we go
+refresh
+three scan discs maybe there it is no
+wait that's not it 20 gigs Wow
+let's see if we can find it I wonder if
+the OS is even compatible I haven't done
+this in a while so for one thing I
+screwed up when I created it and I
+accidentally created it with only seven
+drives so okay there we go now it has
+member disks eight out of eight
+now we have to create a volume set so we
+creat select the raid set to create a
+volume set then we make a volume name
+and we're gonna call it raid 6 again
+ok volume raid level this is where we
+can actually edit the change the raid
+level volume capacity maximum 18
+terabytes excellent yeah
+these are 4k foreground initialization
+should be fine let's go with default for
+all this fat stuff okay
+things to be created one here we go
+volume set has been created now we
+should be able to see it in Disk
+Management in theory
+theories don't always work out that way
+give me a bit yes it's initializing I'll
+be back once it's done that takes a
+while all right there we go it is in a
+raid state normal now which means that I
+can go ahead and this management aha
+welcome to the initializing convert disk
+wizard next disk 16 initializing finish
+so there is my 16 terabyte volume which
+has been split up and I forget how this
+works yeah we need to convert to a GPT
+disk so that we can make it the full
+size instead of being limited so
+dududududududu can be only be accessed
+from windows server to the mullah okay
+we've got it primary partition assign X
+for extreme next
+the whoops family I have caps lock on
+already six perform a quick format
+finish
+because the cluster count is higher than
+expected
+that's interesting
+yeah I'd only try not a quick follow
+that's gonna take forever let's try one
+more time
+oh okay well let's see if I can figure
+this out now gotta love extreme hardware
+always just works found a great article
+on the support spy site for Microsoft
+for the default cluster sizes for NTFS
+and it looks like even though my volume
+is greater than 16 terabytes
+it is not defaulting to 8 kilobyte so as
+soon as I recreated using an 8 kilobyte
+setting we should be able to get access
+to the drive formatting and healthy
+local disk X there we go so now let's
+run a quick benchmark and find out how
+fast this raid 6 is now we've all been
+spoiled by SSDs when it comes to huge a
+DOS scores but I'm still pretty
+optimistic so far looking at this guy
+right here holy cow we've already
+reached one gigabyte per second and
+sustained reads at 16 K at 30 K we're up
+to over 1.2 gigabytes per second reads
+the writes are slower because we're
+gonna be controller limited on those so
+as fast as your RAID controller is is as
+fast as you can write to a raid 6 a raid
+5 would be faster on the writes
+holy smokes we're up over 1.6 gigs per
+second and it looks like that's probably
+where we're gonna peak so Wow and point
+five on that one say so yeah we peak at
+around 700 Meg's per second right and
+around 1.5 or one pix 0.6 gigs per
+second read just ridiculous okay I'll be
+back once the benchmarks so there you go
+guys that's what we ended up with now
+let's do another run at a deeper Q depth
+so that should give us some interesting
+results these are just staggering
+staggering numbers for mechanical
+well not much of an impact on scores I
+am curious though to see how this array
+performs in raid5 as opposed to raid six
+so I'll try raid five with a hot spare
+which basically gives similar data
+protection to raid six because you could
+have two drives fail as long as they
+don't fail at exactly the same time and
+the hot spare would swoop right in and
+take over for the one that failed
+whereas raid six can take two failures
+at the same time I just want to see how
+much of a performance difference we see
+in these right performance and these
+right performance numbers with raid 5 so
+thank you for checking out this little
+raid 6 experiment and stay tuned for
+more on my Windows Home Server upgrade
+don't forget to subscribe to Linus tech
+tips</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

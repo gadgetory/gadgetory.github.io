@@ -1,0 +1,248 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>AMD Vega Architecture: HB Cache &amp; the NCU | CES 2017 | Gadgetory - Your Gadget Factory</title><meta content="AMD Vega Architecture: HB Cache &amp; the NCU | CES 2017 - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">AMD Vega Architecture: HB Cache &amp; the NCU | CES 2017</li></ol></div><h2 class="post__title"><b>AMD Vega Architecture: HB Cache &amp; the NCU | CES 2017</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/yjhmbnCf81k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">today at CES 2017 we are talking about
+Andy's Vega architecture I have some
+information for you it's not as much as
+I want we'll get there eventually but
+they've given us some cursory stuff this
+is going to be a more casual format
+because it's an architecture discussion
+shot at a trade show is so it's we don't
+have the time to look into the real
+depth and fortunately and he has not
+provided much more depth than what we
+have here anyway so before we get into
+that this coverage is brought to you by
+cyber power and their cyber x el gaming
+system which has support for inverted
+motherboard tray layout and has an
+acrylic window on one side which you can
+choose which side I guess if you want
+link in the description below for more
+information on that so and these Vega
+speaking of links in the description
+below will have an article links below
+if you want to recap of all this stuff
+in a more concrete form the basics the
+Vega architecture their cursory overview
+we have it's not guaranteed to be hbm
+for every Vega enabled video card abut
+hbm two is on Vega of course as we've
+known for quite some time HP cash is
+something we'll be talking about here as
+is what Andy's client rapid packed math
+basically precision switching based on
+contacts between FP 16 FP 32 it has FP
+64 capabilities integers in there as
+well I can switch 16 and 32 and that's
+the most of it I don't have product
+details at this time so AMD has not made
+available to the press or anyone else
+the shader counts the memory capacity
+the price the specific skews anything
+like that we just have top-level
+architecture for the time being so
+starting off one key thing to note right
+out the gate is that the traditional see
+use more or less still exists to the
+compute unit if you look at a block
+diagram for a compute unit it from what
+I've been told looks pretty much the
+same with today's NC use so that's what
+vega uses it runs on NC use i think from
+what it sounds like that's not a fully
+defined publicly anyway acronym yet but
+it's something like new compute unit or
+next-gen compute unit so NC use or what
+we'll be talking about when referencing
+the traditional see use and then the
+rest of it we go into things kind
+of speaking about high bandwidth cash as
+the immediate lobbyist topic since
+that's what Andy is going to be talking
+about in all of their slideshows and
+presentations high bandwidth cash is a
+new phrase that is more or less
+replacing the phrase vram as it pertains
+to vega architecture and this doesn't
+necessitate that the GPU or the video
+card run hbm in order to be to fall
+under the high bandwidth cash phrasing
+it could run gddr5 or 5x or whatever
+some other memory as long as it is quote
+sufficiently fast then it will be
+considered high bandwidth cash just
+based on the rest of the architecture
+now what sufficiently fast is I don't
+know I don't know what the cutoff is
+there to be considered high bandwidth
+cash but what is it well we have one
+slide that's sort of useful for this
+explanation you can see it's basically
+just a block diagram layout of the
+traditional caches your l1 or l2 and
+then hbm which is acting as somewhat of
+a cache it's a bit of a tertiary cash
+and that's because hbm as with fiji and
+the fury x is located on the substrate
+it's adjacent to the GPU dime or less I
+don't know if they have the same
+interposer architecture as previously
+but previously it was sort of substrate
+GPU and an interpose or all that stuff
+and then the memory can be stacked and
+that's continuing with vega you can
+stack the memory so that reduces the
+physical space requirement and reduces a
+few other things like power consumption
+this is not news with vega it's just
+kind of how hbm works in any of its
+implementations that we've seen so far
+using and these words here to describe
+things a bit more other than breaking
+the things into smaller data into
+smaller pages with the HP cache
+controller it's also more intelligence
+which but you know who knows what that
+really means exactly but the prefetching
+routines supposed to be a bit more
+advanced I don't have details on that
+but it should be better at prefetching
+it should be better at man
+the incoming and outgoing memory of the
+data streams so if you're streaming a
+large texture and theory HP cash will
+know better how it should break up that
+texture memory bandwidth SAR upwards of
+a terabyte per second this has been
+known for a little while now Vega in
+theory this this part is kind of
+interesting in theory vega from what
+we're told can support up to about a 512
+terabyte virtual address space that
+doesn't mean of course that you'll get
+that but if you have the rest of the
+system configured 512 terabyte virtual
+address space is going to be your
+combination of things like system memory
+and HBC on Vega and that would it's sort
+of a unified memory and he wants to
+avoid the phrase unified memory because
+they've used it in the past for their AP
+use and that could cause some confusion
+but it can be thought of in some ways as
+a unified memory I'll have more
+information on that eventually again
+that's what a lot of this is going to be
+the will have more information later
+unfortunately as for other things I'm
+curious to see how that integrates if at
+all with Intel CPUs I don't know if they
+will have access to the Intel memory bus
+in a way that would enable it fully
+there might be an abstraction layer in
+there the AMD CPUs or apos might perform
+a bit differently in that regard but
+we'll have to talk to AMD about that
+maybe get an engineer who can explain it
+a bit better than the press deck and the
+the slideshow applications so here's the
+the main part that they'll be talking
+about this idea of rapid packed math
+with Vega Vega is taking the fact that
+for every single application or every
+data set and computing you don't need
+just single precision some of them of
+course might want double precision if
+you're if you need more accuracy or if
+you're working with something like deep
+learning where there is just a huge
+amount of data and missing on one or two
+pieces of information is largely
+irrelevant than half Precision's just
+fine and it speeds up the operations and
+is generally going to be more favorable
+than crunching on on numbers with two
+times the amount of precision that you
+need so rapid packed math allows
+switching between FP 16 and 32 and I
+believe integer as well and that means
+that if there
+a specific piece of data or a task that
+you're completing that doesn't need the
+precision it's faster for gaming this
+doesn't really have a whole lot of
+immediate implications it might not have
+any implications for any amount of time
+that's relevant to Vegas existence as a
+product but basically I suppose AMD was
+tied us that there's some evidence of a
+development house working on the ps4 pro
+looking into the idea of precision
+switching that's all I have right now
+for gain so this is more of an
+application for deep learning
+environments Vega strikes somewhat of a
+a it lands right in between trying to be
+a gaming targeted architecture and
+trying to fill a space and deep learning
+where AM d is definitely behind right
+now they have made any major plays there
+so this will be part of an attempt to
+gain some ground and deep learning deep
+neural Nets things like that so that is
+not a gaming application necessarily I
+would not get too sucked into the rapid
+packed math notes slides that are going
+around it's it just week there's no
+development support for right now for
+gaming and that would probably have to
+be explicitly supported by the
+application at least at some level and
+game developers traditionally are not
+very good about doing that sort of thing
+look at Direct X 12 and Vulcan where
+either there's very little support or
+the support that exists is not fully
+executed in a way that is what you would
+expect based on the marketing materials
+with maybe one exception being dim with
+Vulcan that one was done pretty well
+same idea there though wouldn't get too
+sucked into that marketing hype the rest
+of it that's that's really most of it i
+suppose reading off the notes here from
+our conversation with AMD some other key
+key items they sped out where more than
+doubled the geometry engine peak
+throughput per clock that cert the
+important effectively higher IPC higher
+instructions per clock with the vega ncu
+also important higher frequencies are
+capable with vega and see you I don't
+know what that's compared against i
+would i would assume Polaris as the
+previous architecture but higher
+frequencies on the clock
+traditional NT use built around 32-bit
+operations and this can handle more
+diverse work loads and the AL use can
+process to 16-bit operations in parallel
+which is also relevant to what we were
+talking about there's a next-generation
+pixel engine handles rasterization which
+is if you don't know polygon to pixel
+conversion and handles post-processing
+of pixels decides what's visible like
+anti-aliasing theoretically does better
+calling of things that would produce
+overdraw so that's all the the
+highlights hopefully have more
+information at some point in the near
+future otherwise link the description
+below for more information thank you for
+watching I'll see you all next time
+you</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

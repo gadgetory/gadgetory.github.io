@@ -1,0 +1,255 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Game Graphics vs. GPU Limitation Scaling | GDC | Gadgetory - Your Gadget Factory</title><meta content="Game Graphics vs. GPU Limitation Scaling | GDC - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Game Graphics vs. GPU Limitation Scaling | GDC</li></ol></div><h2 class="post__title"><b>Game Graphics vs. GPU Limitation Scaling | GDC</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/L6zk7AC8azY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey everyone i'm steve from gamers nexus
+dotnet and we're here at GDC 2016 i'm
+joined by Wes McDermott and he is
+working at algorithmic who makes
+substance which is an asset authoring
+tool basically for game companies before
+getting to this discussion all this
+content is brought to you by raw Furies
+goner platformer game which you can see
+on the screen now so Wes with the
+audience we have it's all gamers but
+they're interested in how this stuff is
+made behind the scenes what sort of
+tools obviously you may can work with
+substance what sort of tools do
+developers have to use on the art side
+to create the assets for their games
+well it could be a wide range of tools
+as an artist myself I use pretty much
+everything I can think of used Maya for
+probably model creation also use the
+foundries moto software a great deal
+also you're going to use like maybe a
+sculpting app so some of our customers
+will use ZBrush mainly or you might see
+some use 3d coat but basically it's kind
+of hard to find like a one-stop shop for
+you know all the asset creation like not
+one program is going to do everything
+perfectly so it's kind of as an artist
+you got to have like a tool bag or a
+toolbox full of stuff so for me it's you
+know I got Maya ZBrush moto and then of
+course substance for texturing right so
+with tax trained specifically this is
+one everyone talks about even on the
+consumer side obviously you can see
+textures and everything that's modeled
+so in games you know you look at a
+character like these guys behind us
+they're all textured what goes into
+making a good texture and how do you
+balance that versus the load leveling on
+system resources well yeah it's kind of
+it's tough to really get in you know a
+high level of that but I think that
+we're really seeing kind of you know a
+change in the way textures are authored
+especially with the you know with gr you
+know physically based materials and
+that's what at algorithmic that's what
+we really specialize in and so you know
+the question of what goes into it I
+would say you know understanding you
+know the physical material that you're
+trying to simulate you know all the
+surface attributes and typically how I
+say that like would all the one of the
+service attributes that make up wood and
+when you think about that in terms of
+physically based rendering you're
+thinking well
+what's base color roughness normal ayo
+those kind of things and so when you
+look at it from that standpoint you are
+going through the process of you know
+having to know a bit about the material
+but you're also having to know how that
+material needs to be authored in a
+physically based environment so yeah a
+lot goes into it I think you also asked
+about the low time and things like that
+with a lot of the games that you see
+that are starting to come out that are
+going to be physically based that that
+has attacks on the GPU much greater than
+what we've seen before but you know as
+GPUs are increasing physically based
+games are going to be more you know the
+norm of what we see so yeah there is
+that that trade-off of that you know you
+do have to have you know more shader
+compute things like that but at the same
+time you know you can get a much
+physically accurate looking texture with
+with very little effort and one thing we
+were talking about the other day with
+one of your other team members here was
+just all the maps so we hear the words
+normal map specular map diffuse all
+these relief what are these words mean
+at a top level what you know what goes
+into the creation of assets yeah on a
+top-level the way I like to refer to
+that is I usually say when you have all
+these map types they're basically going
+to be inputs into the you know channel
+inputs into the shader so I say
+basically when you look at these maps
+think of the they're just describing the
+surface attributes of a material so if
+you look at say like again an example of
+wood again there's going to be a base
+color which is like representing diffuse
+reflected color then you're going to
+have normal map which is going to be
+kind of like the rough surface you know
+it's going to describe surface detail
+you're going to have like a roughness
+map which is going to describe the micro
+surface of how you know light is going
+to get scattered and things like that
+and you know things like that like the
+roughness map those are utilized by
+shader to simulate what we see in the
+real world because obviously we can't
+you know simulate something like that in
+real time the technology we have now but
+yeah in the process of what goes into
+that it really depends on the tool set
+and I and I i think you know not only as
+a an employee of algorithmic but as an
+artist myself that's where the substance
+toolset really excels because you know
+we think in terms of creating
+extras as a full material so in
+traditional workflows you would think
+like you mentioned okay i'm working on
+diffuse i'm working on specular i'm
+worried and you would think of these as
+separate entities and you would try to
+pull them in and render and just guess
+it looks right i'm kind of guessing
+these values and so on but with PBR and
+with our substance toolset you're not
+only thinking about these separate
+textures anymore you're thinking about i
+want a material like wood or metal or
+something and so you're viewing this in
+real time as you work and you and the
+guess work has been removed because with
+physically based rendering you know the
+the concepts of what the material is is
+based on scientific measure data it's
+not something that you know as an artist
+I don't have to go look up these guy I
+don't have to know like well this is you
+know I just know that these values are
+going to be what I need them to be
+because you know they're they're
+calibrated values and I can use those
+and metals going to look like metal and
+woods going to look like metal in all
+lighting conditions so is there we were
+looking at some new nvidia technology
+coming out soon and we were talking with
+them specifically about shadow maps
+versus doing something else like maybe
+put using voxels to generate some kind
+of shaders or something in the game
+shadows in the game are there instances
+where technology from plugins or other
+sources can be used rather than doing
+sort of the mapping manually or are you
+able to automate any process of the art
+creation oh yeah you're definitely able
+to automate processes of the art
+creation a lot of a lot of that can be
+done through you know substance as well
+where you know some of the items that
+you're going to have like you have a
+mesh you're going to bake some
+information about it like you might make
+normal curvature a mean occlusion all
+these things and you can feed those into
+a material and for instance you can say
+well in the occluded areas you know I
+don't want dirt to fall and things like
+that so when you're thinking of it in
+terms of a procedural texture you can
+have maps that were baked using GPU
+Baker's that are going to feed that into
+control how the procedural effects are
+going to work so those type of processes
+can be fully automated and one of our
+tool sets is that we allow command line
+batch processing of all these matt
+baking's so we've had several studios
+that use our tools in really awesome
+ways where
+they've had tech guards with setup a
+material they would basically run it
+through it just a system in-house
+program they made that's gonna you know
+they feed in the mesh bakes all of the
+maps takes the substance material it
+feeds in the maps the sets of material
+regenerates the textures based on the
+mesh data which is the baked maps and
+then outputs texture straight to the
+engine so the artist would sit down he
+hits a button it generates everything he
+switches his chair over to his other
+monitor he's inside his engine and
+testing the material so is a similar
+process used for LOD scallion where if
+we if we change mesh quality or
+something in a game in the game settings
+obviously you see a pretty real
+difference in some games is that
+manually created these different
+qualities or is that part of the
+automation process they can be part of
+the automation process and with that to
+you there's there's instances where you
+kind of have to rebate certain things
+depending on how much that changes but
+in that case you know you're going to be
+looking at it in terms of overall like
+silhouette of the object you know so
+like the normal map you know it's still
+going to be able to be utilized from the
+high res Bay and the curvature so you're
+not going to have to like rebate those
+things very cool and we'll close out
+here but why don't you provide everyone
+and understanding what substance does
+for for the developers and maybe some
+examples of developers who use it okay
+yes well here at GDC we've got a lot of
+presentations that are that are going on
+right now and so the presentations
+getting ready to start here in a few
+minutes we've got the team from Rainbow
+six who utilized that on siege we've got
+several amazing artists from Naughty Dog
+who are presenting you know how
+substance was used on uncharted 4 so a
+lot of Triple A studios black ops 3 was
+recently used with substance painter so
+we have a lot of these triple-a studios
+that are you know really embracing our
+tool set because it has it has the
+ability to be automated and be able to
+generate these textures in a very quick
+way well thank you for joining me west
+of course check out links in the
+description below for full content and
+thank you for watching it will see you
+all next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

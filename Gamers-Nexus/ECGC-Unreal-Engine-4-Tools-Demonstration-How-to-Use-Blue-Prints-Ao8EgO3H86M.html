@@ -1,0 +1,1069 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>ECGC: Unreal Engine 4 Tools Demonstration - How to Use Blue Prints | Gadgetory - Your Gadget Factory</title><meta content="ECGC: Unreal Engine 4 Tools Demonstration - How to Use Blue Prints - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">ECGC: Unreal Engine 4 Tools Demonstration - How to Use Blue Prints</li></ol></div><h2 class="post__title"><b>ECGC: Unreal Engine 4 Tools Demonstration - How to Use Blue Prints</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/Ao8EgO3H86M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">we're going to do just a quick intro for
+the new folks and then probably take a
+deeper dive on the topic of blueprints
+famous writer in seven so here goes act
+hey folks so uh yeah the sack parish i
+work for epic games i'm a tech artist
+basically to play with the tools all the
+time so here's the deal right we got 40
+maybe 45 minutes before i'm proud that
+boy give it a hook out at that point so
+what I'm thinking is that there's
+actually since you got probably know
+what using this there are some YouTube
+videos out there they give kind of a
+base level intro the same thing under to
+GDC in the matter of fact syndicate in
+about an hour ago so I'd like to just
+jump in and do some cool things in
+blueprint which is a village enforce
+visual scripting system how many
+programmers do i have in the room right
+now i'm not sure if you guys are going
+to tell you what's about to happen
+really so blueprint is visual scripting
+how many of you as programmers audibly
+grown whenever you hear visual scripting
+it's okay a lot of media exactly there's
+a really i could have done that in line
+of code right i always get that like
+i'll make accomplished thing every blue
+printer for kismet i'm using Yui 3 and
+like that a program always come by and
+have the same thing they're living I
+could have done that in two months ago
+and that's okay we embrace that the
+point of the fact of the matter is it an
+unreal engine 4 we realized that there
+are a lot of people out there who want
+to make games and not all of them have
+CS degrees and not all of them know how
+c++ work so you might be like me in the
+idea
+oh it scares the living hell out of you
+and you have nightmares about it so
+that's why we have blueprint what I'd
+like to do is do some cruel things in
+blue crit but I have an option for you
+guys you guys may feel a little bit
+interactive I have something that is
+fairly useful and involves interactivity
+on characters and have something that is
+kind of bizarre and fun so who wants
+somewhat useful who wants bizarre and
+fun okay we'll go with his arm fun and
+if we have time we'll come back and read
+movie so let's see here let's start off
+we're going to make our own game project
+currently I'm in a project that already
+exists if you mean for let's just do our
+own thing I'm going to readjust my very
+crazy workspace is that going to work I
+look that extra cabling is possible so
+500 let's do a whole new project of our
+very own and if you haven't yet how many
+people have played with you before a
+little bit so far oh my god that's huge
+i love that how many people are going to
+i want everyone else's hand i right okay
+screw in the project when you create a
+new project you get the project browser
+and you're going to see a variety of
+different templates that you can choose
+from if you want kind of a head start in
+a certain genre me so you can see things
+like first person you'll see side
+scrollers their personal they've got
+more of these on the way we're back slip
+ups release it at least one more and
+more that we're planning so eat with
+each one of these genres that you'll
+notice there are two versions like if
+you take a look at first person here we
+have a blueprint first person and we
+have a code first person so if you're a
+C++ programmer and have visual studio
+installed it can be the freak spreads
+addition if you don't have Pro you can
+use the code version and everything that
+you do all the things that
+access to our right there in c++ code
+for you make it adds to them if you're
+not coder me and you can make the
+blueprint version where the exact same
+thing has been done with the exact same
+functionality operate the same way but
+it's been done visually employed which
+is what we're going to look at so let's
+call this my awesome projects because
+I'm super clever with my names on it
+create now there's a little check box
+there that says include starter content
+that's just going to give me some basic
+materials and some meshes to play around
+with if I want to do that a little bit
+later so here we are in my first person
+template game I could reach up i can hit
+play and who i turn the sound off
+earlier let me let me fix it we also try
+not to death in people because I might
+well that's a little bit
+so first person template ready
+straightforward you get a character of
+course you get a little gun here you get
+some project idols and even that is
+strangely satisfying somehow so what I
+want to do is I want to create kind of a
+random bizarre effect we're going to
+rain in physics objects down from the
+sky so it's actually gets to cover some
+random spawning stuff we're going to do
+some stuff with variable materials that
+you need a randomization effect and I
+thought a lot about what we should
+actually use to rain out the sky and in
+one of the other projects that I have
+access to welcome you maybe I should
+just show let's do it that way first off
+make sure I know exactly where we're
+going to be here in our chain or the
+documents project I'm totally cool with
+that so I'm going to jump back a project
+in fact what we're looking at just a
+second ago and bury in here is a very
+special assets you actually see how to
+migrate assets for one project to the
+next let's take the content browser and
+I'll to bring it front and center for
+just a moment and let's see let's do a
+kind of a telling search term here let's
+search for cows
+there he is I've got this little static
+match cap isn't he awesome foaming let's
+rain these down from the sky that'll
+make me really happy I need that kind of
+satisfaction so what I'm going to do is
+I hear the content browser just go right
+click on that and choose my grade and
+it's going to say here's all the things
+that that cow depends on here's all its
+textures all those materials all the
+things that make it up are going to have
+to migrate along with it that's good ok
+now it's gonna say where do you want to
+send that to so let's find documents
+with my on real projects there is my
+awesome project and there is this
+content folder so we'll select that
+click OK and we get a little message
+content migration was successful awesome
+so go back to our recent projects and
+jump back to our project it's fine by
+the way for all my unique a user's gone
+are the days where you have to do
+multiple installs of unique a right so
+you just have one install you have
+multiple projects that alone made me so
+happy so now back here in our context we
+can go jump into the content browser and
+now let's search for cow and our cow is
+here now let's do a couple of things
+with this cat first off I want to take a
+look at it to material so currently
+here's its material network it's really
+not super complicated we have three
+colors we have the base color which is
+kind of if this cow is white if you
+actually want to see this on the mesh by
+the way all what you can do is select
+the static mesh and click the set match
+button here in preview and now we can
+see our little cattle right here in the
+material editor so we have three colors
+we have white pink and grey you can kind
+of see how those replaced let's mess
+with that just a little bit so I'm going
+to take a spot color and I'm gonna make
+a slight change oh now by the way you'll
+notice each one of these notes has a
+green bar at the top I think these are
+parameters that means I can talk to them
+later using blueprint or code it's
+basically an aspect of material that is
+ready to edit we're going to take the
+base color and you're going to multiply
+it by the spot color
+and then we're going to make that result
+feed in this popular it's not going to
+be a really significant change in terms
+of our cal but what it means is if we
+take the base color and change it like
+let's say for some random example we
+want a stylish pink cow those spots are
+going to pick up just a little bit of
+that color so I like that idea I also
+like the idea of our cow going back to
+white at least for a little while longer
+okay so we're done here let's go ahead
+and save our changes and try i'm going
+to try to remember that the parameters
+based space color because knowing that
+name will be super helpful so now we
+have a couple of different effects
+there's a lot of different ways you can
+handle any any particular problem in
+code and blue cranking life whatever so
+i'm going to create a blueprint object
+that we can just write down from the sky
+and will populate that with a cow so
+let's go into my blueprints folder and
+I'm going to just pick an empty space
+will right click and create a new clip
+right this is going to bring up the
+parent class window every blueprint
+asset you create needs to have a parent
+class what is this going to instantiate
+from in this case we're going to choose
+actor actor is pretty high level it just
+means anything that could exist in some
+way in our game we have options though
+we could make a character blueprint or a
+player controller or game mode we don't
+need any of those two moment just choose
+actor we need to give this a name so
+we'll call this dynamic cow because he's
+going to be a physics object by the time
+we're done we'll open this up and now we
+need to start assembling our blueprint
+object now blueprint can be it's
+comprised of several different things or
+it can be as components that will make
+it up in this case it'll be like a
+static match but it could have other
+things to look at things like a light
+component to it or a sound component if
+we wanted
+to move every so often so he has some
+default settings he has the components
+that will make him up and then we have
+the graph which will define his behavior
+let's start with components obviously we
+need our mesh in here so I'll just make
+the most of my user interface let's
+bring up our cow over here here's the
+static mesh I'm just going to drag and
+drop that right into my components list
+so suddenly my blueprint has a static
+mesh cow perfect already changed some of
+the settings of that static mesh cow
+we're going to scroll down and one of
+the properties available in here is
+simulate physics we'll just check that
+make sure that's on there really i think
+that's about as far as we need to go
+right off the bat if there's if there's
+more than I need to do I can always jump
+in and do that a little bit later so now
+next thing we need to set up some
+behavior so that when this guy is born
+he gets a random color but here we are
+in the graph for this blueprint object
+we're going to right click and create a
+new event very much the way kismet was a
+ton religion three you can create events
+and actions the only catch is you have
+to think linearly which I'll explain
+here in just a moment so let's see here
+let's do events for begin play which is
+literally the moment this actor comes
+into being in our game then we want
+something to happen well we want to talk
+to its material we don't even know what
+that material is going to be
+and we have no direct or an easy way to
+access it so what we're going to do is
+jump over to our others are other graph
+X have two graphs for this object we
+have the construction script and we have
+the event breath now the construction
+script actually fires in the editor it's
+kind of like before this they never
+comes to intervene so let's see here
+we're going to take our cow so currently
+we have the static meshes check it out
+over here in components you can see
+here's a list of all our components and
+we have our one static match let me
+rename this just for clarity we will
+call this our cow mash now back here in
+the graph I can take that cowl mesh drag
+it right into the graph like so and now
+we can start doing things to it so let's
+get its material
+so now we have direct access to the
+material that was applied to the next
+thing I'm going to do is create a
+dynamic version of that material that
+material that we created is going to be
+compiled and it's going to remain static
+drought gameplay I want to dynamic when
+they can actually change during gameplay
+I need to make a dynamic instance that
+exists within this object that's what
+we're doing now now I hate to tell my
+construction script to make that happen
+so I'll connect my execution wire now
+earlier I grabbed my cow flesh we got
+its material and we're going to take
+that material and make it dynamic so
+really just plugging some things
+together some very hard and visual
+scripting now that we have a dynamic
+version there's two things I want to do
+I want to store it in a variable so we
+can talk to it again later on and I want
+to apply it back to our mesh so let's
+start with the story min here we have
+the note that create that dynamic
+version i'm just going to right-click on
+its return value and promote that to
+variable will call that dynamic material
+done comes easy now we just need to
+apply this back to the mesh itself so
+let's take a wire remember a little cow
+flesh over here we can drag a blank wire
+out here and say set material
+it's going to ask for a few things it
+will say what material element zero is
+fine is something only has one material
+what do we want to actually apply this
+dynamic version that we created a moment
+ago done everybody kind of see how that
+worked not you look still awake that
+makes me happy who isn't awake right now
+gotcha totally hear you got to put up in
+every you look comfy all right so we've
+got our events begin place and now we've
+got a dynamic version of this material
+we can grab this now we can use this to
+start talking to the parameters in that
+material so let's say we set vector
+parameter because that color is just a
+vector
+we need to know the name of that
+parameter it was base color
+now what value we want to give we can
+set this anything you want but we like
+something's a little bit random and to
+make that happen we have to know a
+couple of things first off you have to
+know that a linear color value is just a
+vector but it's affected with four
+elements we have red green blue and
+alpha oh my god I have audience
+participation this is awesome as long as
+you guys aren't throwing rice I'm okay
+front rise to your toaster a newspaper
+if you're getting these references thank
+you so much all right so what I'm going
+to do is I'm going to work backwards in
+would print the sexual in my favorite
+ways to work I know that I need
+something that will end up being a
+linear color so let's make one oh there
+we go where the note that's going to
+make a linear color out of four float
+values how are we going to handle that
+well let's take our first float value
+again we'll work backwards and let's
+just type the word random and we get
+some options so we're gonna do a random
+float within a range and the way our
+color is working on meal for rent green
+and blue Scalia value between 0 and 1 so
+we'll set in 20 max to one will take
+this note will duplicate it will plug
+each one of these into RGB and by the
+way of any of the programmers in the
+room we're kind of like well why didn't
+you just get a random unit vector or
+something like that you totally do that
+it just gives more vibrant colors we go
+this way all right so I think I think
+that's going to work but there's a catch
+right now we don't have anything
+actually spawning this guy just yet so
+let's put this guy away we're done with
+a dynamic how for a moment and let's
+build our spawning system so I'm gonna
+make an entirely new blueprint now let's
+just right-click and we'll make a new
+blueprint again from the
+class factor and we're going to call
+this cow spawner because that's a that's
+like a useful name will open this up and
+again we just get sort of a blank slate
+where we can start adding components and
+adding behavior and so on and so forth
+so the way I want to set this up is I
+would like there to be a three
+dimensional volume like a box and we
+will spawn our towels from random points
+within that box right so they can't like
+a volume emitter so let's start with a
+box probably easiest way to do this so
+there we go a box done now I in the
+editor it's going to be a little tricky
+because this is just a wireframe box
+right clicking on selecting anything
+that is just a wireframe can be a little
+bit of a pain so let's add a billboard
+which by the way still is the old school
+dragon icon from years and years ago in
+unreal it's one of those little things
+that makes me kind of heavy so let's
+compile that right now it doesn't do
+anything and let's just add it into our
+level I can move it up here into the air
+we can scale it change its size it's
+pretty much set to go now we just need
+to set up on it some behavior for it
+let's go into its graph and we want
+whatever this is going to do we want it
+to do this as soon as we begin playing
+so we will right click and again we'll
+say begin play so I'm going in-play we
+want to do something in this case we
+want to spawn that's blueprint that we
+just made for the dynamic cow so just
+drag a wire off of this node and let's
+just let that spawn
+and we get spawn after from class
+perfect we need to choose that actor so
+we're going to click on the little drop
+down here and use our search bar let's
+type out dynamic cow there it is cool so
+we're going to be spawning these and
+that's good now there's a few catches
+here we need to know where we're going
+to spawn it from so we need to make a
+random selection point within the volume
+of our box so what I'm going to do for
+starters just grab that box component
+which is currently in my my blueprint
+list there we're going to get that and
+let's say I don't really know what I
+want so let's just drag a wire off that
+and start trying to make things up so
+here I can get the expense of the box so
+I see if i type extent or if i could
+spell extent that would probably help so
+we have a choice we can get the scale
+extent of the box or the unscaled extent
+i know this would be really accessible
+to a user I want them to just be able to
+grab this volume dropped into a level
+scale it up to whatever they want and it
+just works so we'll grab the scale it
+extends to the box like so and that just
+gives us a vector for the X dimension
+the y dimension and the Z dimension so
+we can use that kind of as a base but we
+need to break it up so let's break that
+vector into its x y&amp;amp;z now we need a
+random range within each one of those
+axes so let's start there next we'll
+just right click
+and say random floats within a range and
+of course once again that gives us a min
+and a max now our extensive the boxes
+are just going to run positively that's
+just how it works so what we're going to
+do to make this work is we will take
+safety x axis will take X and make that
+max for the min will take x we will hit
+the multiply sign so we'll multiply a
+float by a float it'll say negative 1 so
+we just made a negative version of that
+x axis value and we'll plug that into
+minimum so we're going between the
+negative extent of the positive extent
+we just need to do this three more times
+so we can grab these two nodes ctrl-c
+ctrl-v control V after plugging some
+stuff in take Y plug it into max take Y
+plug it into our partner same thing
+crazy
+so I now have three random values that
+represents random locations along each
+one of these axes now I just need to
+make them back into a vector now there's
+still three disparate numbers at the
+moment so we can take any one of them
+drag a wire out and say make a vector
+and then just plug each number in now
+that gives us most of the way there
+there's a catch all we're getting right
+now is the extents of this box but we
+don't have an origin point we don't yet
+know where to start the calculation from
+that's pretty easy to get so we're just
+going to take into right click here in
+space actually and say get location and
+there's one of the things that pops up
+is get at your location that is where
+this guy's place that's where we can
+begin all of our our location
+calculations now let's just add the two
+together so why isn't this math stuff
+excited by the way who's bored yet I
+want to love math and I want to be good
+at it I can't do it either those things
+but I can watch my way through for this
+kind of stuff so there we go we're not
+adding these together we have a random
+location we have only one last thing to
+keep in mind that this is sort of an
+unreal ism or you might be familiar with
+the spinner how much game work you've
+actually done what we need is a
+transformed transforms not just location
+that location rotation and scale all
+together so we can take our new location
+have been created and let's say make
+transform
+and that's also asking for some inputs
+for rotation and scale we can leave
+those just as they are and everything
+would work but let's have a little bit
+of fun with this so for rotation we can
+work backwards and we can say random
+rotator so now each one of our cows will
+have a random rotation pull that I'm
+gold them as well and so just check that
+on and after scale let's work backwards
+again so we'll say make a vector and
+just like we did earlier let's do a
+random within range so when you decide
+what the largest and smallest start out
+and possibly be moving let's just guess
+we'll say small will be about from 5
+largely about 1.8 we can always adjust
+it later and then we're going to take
+that same value and plug it into x y&amp;amp;z
+that will make this scale uniform I
+think we're pretty much done the only
+catch is and I realized this a little
+bit too late we're doing this spawn only
+when we begin play I think what that's
+going to mean is we're only going to get
+one cow but that's exactly what i mean
+so let's give it a try any minutes just
+play and we get our one cow but he does
+have a random color because it wasn't
+yellow before shooting
+which is strangely satisfying but let's
+change that up modify the behavior
+slightly so let's get rid of begin play
+and I wish to live right here on time
+lets this to on tick which means every
+single time the game cycles is going to
+spawn another count that's a bit extreme
+right that things we're going to get a
+whole lot workhouse we probably need so
+as a safety factor let's put with delay
+in here and went to is fine for starters
+but let's say maybe the point 05 so it's
+not going to be quite on every tick but
+will be a hell of a lot of tips let's
+jump in here and I can play or I can
+simulate let's just simulate to again oh
+that makes me so happy I'm sorry I'm
+supposed to give you a demo but I really
+I
+you guys can do that anyway moving on
+okay too much coffee that's what that
+was all right so I guess the next
+problem that we have is that these cows
+live forever which while that is kind of
+joyful it makes me pretty happy the
+catch to that is that of course over
+time you're going to have so many cows
+that your computer is going to start to
+slug a little bit so let's make a self
+destruct system you have a flow up some
+cows okay so here's how we're going to
+do this for yourself we're gonna make a
+new blueprint and if you are taking
+notes the only thing I'd like you to
+take this is kind of the mentality i'm
+using i'm gonna make a new blueprint
+then I'm going to call explosion Michael
+wondering why I outro to do that why
+would you make an explosion blueprint
+less because of explosion when you think
+about it several different things it's
+never just it's never just the visual
+effect an explosion is going to have
+sound an explosion we can it can have
+force we can make it have forces these
+are all physics objects and they have a
+particle effects as well anytime you
+need one thing to be made up of multiple
+bits and pieces multiple components you
+should be thinking in your head could
+this be a blueprint so let's give it
+that one so let's start off with the
+particle system we know we're going to
+need one now actually I got to change my
+mind let's start off with our sports
+let's do a radial force out of this so
+here my add components list there's
+stuff that I can advent at fault take a
+look there's a radial force now let's
+open this up I know you guys can't
+really see the screen very welcome here
+so to take my word that everything you
+see here is awesome the radius of this
+force let's kick that up to about 500
+we can always adjust that later if you
+need to make it bigger or smaller
+impulse and for strength or would really
+give us our outward push right so let's
+see here let's say that is something
+really low and sensible like a million
+will set that for both of them you know
+just try to keep things nice and subdued
+and sensible at all times then let's see
+here what are we going at our our
+particle effect I'll be fine so let's go
+over the content browser and here in the
+game's folder so if I just search for
+explosion we get our little there zappy
+explosion here or I could just you know
+what I'm going to do this a different
+way just kind of her academic partners
+will spawn that actually is part of the
+behavior so we have our force we have we
+could add an audio component that'd be
+great so let's do audio and we need to
+just tell this what sound there actually
+is an explosion Q so that comes in with
+that starter content if you guys
+remember when i created my project will
+check box for starter content the
+explosion stuff is already in there for
+you play with we won't worry about
+multiplying the volume though I've gotta
+admit that is pretty tempting so let's
+say I now come over to our graph and we
+will say on the in play the moment this
+explosion is born what do we want to do
+first off we want to spawn and emitter
+application what location we want to
+give well let's say the location of this
+actor so we'll say get after location so
+wherever this explosion is we're going
+to spawn a particle effects what
+particle effects will we had you asked
+well the explosion effect
+they're also to go that was super easy
+well this also allows us to be
+automatically destroyed as soon as it's
+done see the auto destroyed checkbox if
+you can bring that from here the next
+thing I'm going to do is right after
+we're born we want to delay very briefly
+and then let's turn off that gigantic
+force that we have because if not just
+going to keep pushing things out and
+exploding just like one quick and then
+it's done right so we'll do a very brief
+delay let's say something like point 1
+seconds and then we will destroy a
+component and since it's good it's going
+to ask us what do you want to destroy it
+we just take our radial force component
+that we've had it get a reference to it
+drag a wire off and then just type
+destroyed boom that's gone awesome now
+let's see our sound effect and I'm
+cheating for time right so I know my
+sound effect is about four seconds long
+so we will delay further by about four
+seconds will say like 3.9 because I've
+already delayed by like 11 and as soon
+as that's done we are going to destroy
+this actor meaning the explosion
+blueprint is going to kill itself and
+beyond so it's pretty easy network to
+grasp when were born we spawn a particle
+system we wait a second we turn off our
+force we waited for a couple more
+seconds and then we kill ourselves
+perfect level
+I just go ahead and save this compile
+now meanwhile back over here in our cab
+we're going to create a new custom event
+which we will call kill this cow when
+kill this cat was called all we really
+wanted to do is to spawn an actor from
+class now commit something what we're
+going to spawn exploded exactly perfect
+it's all in the explosion and then we
+will simply destroy this actor so we'll
+kill the cows on the explosion we have
+to do it another order by the way
+because if we kill the actor first we
+never get an opportunity to spawn your
+foot and we do need to fly a transform
+here so I'm just going to work backwards
+we're going to cheat this time going to
+say get after transform so wherever this
+cow happy to be that's where we're going
+to spoil the explosion and everything
+should be good to go now we have just a
+little bit of work left and plenty of
+time in which to do I want this to be
+wrong I guess there's a couple of ways
+we give you a list of the simple way
+first just for sake of ease notice here
+on the event begin play we choose our
+random color and everything let's give
+it delay let's say after how long before
+we start blowing these up two seconds
+three seconds with little pile up for
+this let's say five seconds
+say after a five second delay who
+actually kind of what was too close to a
+random delight Holly had letter random
+is a lot more fun you can take that a
+lot away so stake out the duration and
+we're actually going to feed that a
+random value between 0 I don't know say
+three seconds and five seconds that'll
+work and as soon as that's done we will
+simply call kill this guy that should be
+hit hopefully this works unless I've
+done something horrible make sure I
+saved everything just in case i actually
+do blow something out it's happened and
+let's see let's just simulate so they're
+blowing up but it might be a little
+forceful it's possible that that's a
+little extreme yeah maybe we back on the
+force just a little bit but hey
+everything's working right we got our
+force we got a particle effect we got
+our sound the particle effects actually
+admits it's own light so we don't under
+worry about that at all that makes me
+really happy let's take that ain't no
+horse component and maybe pull that down
+slightly to a lot of I would say happy
+that's right work
+then
+I believe the answer is it's amount of
+force applied to the actual mass of the
+object because we define all our sizes
+and centimeters matts it becomes out of
+grams and kilograms so it gets
+difference but I was never very good at
+actual physics you spikes punching
+numbers until I get the kind of
+explosion that I want that's the artist
+approach right and that's where it all
+looked like the the cs degrees are kind
+of like don't worry they'll come behind
+me and clean everything up right that's
+a big room ok so let's see let's just
+test this end I want a slightly saw your
+explosion oh god
+okay so it's still got what I'm down to
+the wire in terms of time but I want to
+do something a little bit fancy so what
+we're going to do is I'm going to build
+a self-destruct button so we love the
+cows up when we feel like here's the way
+we're going to do this as each cows is
+created notice we have a return value we
+see that cow right so let's take that
+and let's promote it to a variable which
+we will call cows will keep this super
+simple I'm going to disconnect and I'm
+just going to remove it from the graph
+real quick I just want to exist so i can
+turn that into an array go ahead and
+compile make sure there's no errors so I
+now have an array of all of the cows so
+let's get that or each cattle that is
+built I want to add an element to this
+array so there's a note for that now
+we're doing some program except for
+working for the Rays what are we going
+to add whatever came out of the actual
+spawn each time we build something we're
+storing it into this around very
+straightforward okay now what are we
+going to do well let's say that's quite
+an input and there's a few different
+ways to do this i'm going to show you
+the right way though this is going to be
+so fast that you're taking notes you'll
+get it i'm going to go to my project
+settings and under inputs i have some
+action mappings let's go ahead and add
+one we will call this action mapping cow
+self-destruct
+and we will expand it and we will slay
+this to let's say to eat but easy done
+will say that as a default great close
+this out okay now here inside of our cow
+slaughter we're going to do something a
+little bit not something I would
+recommend usually I have a lot more
+elegant with how I handle inputs would
+forsake of speed we have Auto receive
+input we're gonna set that's a player
+zero that mean this guy's always
+listening out for inputs from players
+rhythm now that we have that in place we
+can just right-click you're in the graph
+and let's see we have Selva Cal
+self-destructs I have an event for it
+now so whatever I hit me this event is
+going to fighter and what we want to do
+well we have actually I'm sorry I'm
+putting this in the explosion with
+something doesn't explode in this you
+know that we don't need that anymore
+let's go over to cow slaughter thank you
+you know what I did to tonight but we
+don't want him to listen to it but
+that's good cows boner we do awesome
+just make sure I'm in the right object
+right time so self-destruct for the cows
+boom what are we going to do we're going
+to run a loop for each loop using this
+array
+alright
+or each Oh fantastic so soon as we press
+this we're going to fire out the for
+each loop using our array of house and
+what do we want to actually have happen
+well for each one of those for each
+element that comes out which essentially
+is each cow we want to call the kill
+discal function and notice the system is
+aware of that since this is actually
+using the cow class as a data type it
+knows the killed miss kau function
+exists there so we can call that and
+unless I'm terribly mistaken this should
+already work we just need to make sure
+we take our house and kill that part of
+it that makes them blow up on their own
+so I'm just going to disconnect that by
+all clicking on the wire and they can't
+go away so it is all worked and I can do
+anything too horrible we should be able
+to play game but the cow is build up for
+a while shoot about one week of reward
+and then it and they'll blow now last
+thing because we're literally are down
+to the wire but it's going to make this
+so much more satisfying let's take out
+the dynamic cow and when we kill that
+let's do this let's do a delay soon as
+we kill it you got any more do it really
+i thought had to be done it 1215
+okay you we'll make it work so go
+delay and then let's do a random range
+ratan um you know I can't spell and
+let's say as soon as we kill this you're
+going to our soon as we fire this event
+you're going to wait for anywhere from
+point two seconds to about 1.5 seconds
+and then you're actually going to blow
+up cap so let's close all of this out
+actually I'm going to do a file save
+also don't lose anything that's happened
+for two and it's always depressing let's
+take our volume will make it a little
+bigger let's hit play oh my god get out
+of the way all right okay sorry all
+right let's hit e so it's only blowing
+up the ones that existed at the time
+there we go if you see how that delay
+changes things so you guys got what you
+asked for we went a week we had between
+useful and fun of bizarre I hope this
+was fun &amp;amp; bizarre enough for you do you
+guys want QA or do you want me to try to
+thanks or do you want me to try to show
+you some useful stuff to use your useful
+stuff okay we can do useful stuff so
+what I want to talk about I guess for a
+useful segment which I've all kind of
+sort of done through fairly quickly is
+making things interactable in your name
+which can mean a lot of different things
+right when you're playing a game you
+want to be able to walk up to a lot
+we're using the you kids are the EQ boil
+up calots i'll probably change that in a
+minute because usually when he hit the e
+key to game let's gonna do a variety of
+things right in some cases it might pick
+up an object in other case is going to
+open a door and some cases going to turn
+off the light I want to show how to set
+up that type of relationship quickly and
+simply using this first-person template
+but first we need some things that we
+can actually work with some things we
+can turn on and off so let's see we've
+got this ceiling light that already
+exists here we've also got this little
+wall sconce let's grab the balls
+bouncing this might be a kind of an
+easier way to work with this this is a
+blueprint that already exists as a part
+of the starter content so I'm going to
+grab it drag it on the wall will frame
+up on it and let's hit geez that we kind
+of see it a little better it needs to be
+aligned to the wall surface I'm going to
+rotate it a little bit go and you can
+see it's shining a little bit of light
+on well we could take the whole thing
+and scale it a little bit that might
+kind of help make it a little more
+visible
+oh also when I hit play let make sure
+that playing to the location of the
+camera not from the players start that
+way we don't accidentally jump around
+our location they don't really want
+again so what I'd like to have happen
+here is to be able to walk up to this
+light and just turn it on and off using
+the e key right now when i hit a all the
+cowboy up so let's fix that first i'm
+going over to my project settings once
+again you remember on my inputs we took
+those action mappings and we had a cow
+self-destruct currently slated to eat
+let's change that over to our push that
+one key over and then we're going to add
+a new action mapping which i will call
+use what's been that let's actually set
+this one to the e key and so a little
+more conventional something you might
+have actually seen in one two or five
+thousand different names you might have
+played now here's the deal of our cows
+bonner we set up earlier we did we told
+it it should always be listening out
+from inputs from the player but general
+that's not how you want to handle things
+you want to be a lot more i guess
+elegant when how you handle inputs of
+how you pass them off between different
+players so let's start there let's set
+up our little wall sconce here so that
+it can dynamically handoff control to
+the player and take it away and a common
+way to handle that is by of proximity
+only when the player is close to
+something should they be able to
+actually use it when they step away from
+it they should be able to use it anymore
+that's pretty easy to set up in
+blueprint it's affecting a lot of ways
+it's very similar to how you used to do
+things in kismet and you've ever played
+with that you had things like trigger
+volumes of what now we're going to do
+something really similar let's go over
+to our components list and here we can
+see the wall sconce we use of a light
+component that makes it up to this list
+of components we're going to add a box
+component now we're going to resize this
+a little bit
+we can move it around freely we can
+scale it we have all the same types of
+controls that we have in the viewport
+I'll make us a little bit wider it's
+going to be super wide and pull that in
+just a little and will kick up its
+thickness and then I'm going to try to
+make it kind of flush with the back of
+the light fixture it does not have to be
+perfect this is necessarily need to be
+an exact science but if you get a lot of
+these overlapping you could run into
+problems you want to keep this fairly
+trim down to just the object you want to
+interact with let's call this
+essentially give us a name so we'll
+rename it trigger perfect now back over
+here in our crap we're not going to
+worry about the construction script in
+this case just to show off what the
+construction script is doing is allowing
+us to send some public variables for our
+lights you see over here i have the
+brightness that i can adjust and get
+real time feedback and take the light
+color and make that really anything we
+want and that's because each time I make
+a property change the construction
+script is firing now in terms of
+gameplay the construction script will
+only fire the moment this is spawned
+when you play and it will never fire
+again so it's a way for you to have some
+in editor behavior as well as using the
+event graph or your in-game name so in
+terms of that let's take our trigger
+which i just added a moment ago I'll
+drag that in excess it's not dragon I'm
+sorry we're just going to select it over
+here in the mind blueprint list right
+click it at the very top you see we can
+add events for it and one of these
+events is called on component begin
+overlap which is a little bit of a
+mouthful but what that means is when we
+have entered the space of this volume
+when it is overlapping with us we want
+to do something on that note that
+reminds me over an hour components what
+make sure that trigger has some specific
+collision properties an easy way to do
+that is just change its preset will tell
+it to behave like a trigger let's just
+that happens to be one of the names of
+presets if you want to know what that
+does if you're the kind of person says I
+hate presets because I never know what's
+going on in the hood all it's doing is
+changing a series of checkboxes about
+how you're going to collide with objects
+are you going to block stuff are you
+going to register overlaps with stuff
+what types of objects do you want to
+collide with an optical eyelid and so on
+we're going to use the trigger preset
+for the sake of speed and then on our
+component begin overlap we want
+something that happen what we're going
+to do is we're going to enable input
+you</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

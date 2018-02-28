@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>What the Heck Are MSAA, FXAA, SMAA, and TXAA?! | Gadgetory - Your Gadget Factory</title><meta content="What the Heck Are MSAA, FXAA, SMAA, and TXAA?! - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Science-Studio">Science Studio</a></li><li class="active">What the Heck Are MSAA, FXAA, SMAA, and TXAA?!</li></ol></div><h2 class="post__title"><b>What the Heck Are MSAA, FXAA, SMAA, and TXAA?!</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/T9OBDscbHwY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">Czy podczas przewijania opcji graficznych gry i zaczeliście się zastanawiać &amp;quot;co TO robi&amp;quot;?
+Albo to?
+Kolejne?
+to wszystko formy Antyaliasingu
+Dla tych którzy nie wiedzą antyaliasing w kartach  graficznych to zespół metod dzięki którym zakrzywione krawędzie są wygładzane
+przez proces wtapiania pikseli
+na przykład, ponieważ piksele są prostokątami. Pamiętaj że kwadrat to typ prostokątu
+zakrzywione powierzchnie na ekranie nie mogą być  dokładnie wyrenderowanie
+to wyjaśnia postrzępione krawędzie na kołach, roślinach. Rozumiecie o co chodzi
+Więc antyaliasing próbuje wygładzić te postrzępione krawędzie przez zmniejszenie ostrości i wtapianie pikseli przejściowych między dwoma powierzchniami które nie są wertykalne lub horyzontalne
+ 
+Jednak jest wiele rodzajów antyaliasingu
+Są to cztery które opiszę w tym filmie
+MSAA albo Multi Sampling Anti Aliasing (Wygładzanie krawędzi przy pomocy wielu próbek)
+Identyfikuje wiele lokacji w każdym pikselu niewidzialnych dla ludzkiego oka
+(ponieważ jesteśmy ograniczani rozdzielczością  naszego monitora.)
+I łączy je kalkulując odcień finalnego piksela.
+Proces ten jest bardziej zauważalny na mniejszych rodzielczościach
+Jak 1080p i 720p
+ponieważ mniej pikseli powoduje ostrzejsze prostokątne krawędzie.
+Jednak MSAA jest ekstremalnie zasobożerny
+Ponieważ wymaga wielu próbek każdego piksela na  monitorze.
+I to dla każdej wyrenderowanej klatki
+Ma również jedną wadę a mianowicie tekstura jest jedynie kalkulowana raz na piksel, co oznacza że obszary w poligonach gdzie działają shadery nie będą wygładzone.
+W prostych słowach ta technika działa tylko na krawędzie i obszary przejściowe.
+FXAA albo Fast Approximate anti-aliasing (Szybkie przybliżone wygładzanie krawędzi)
+to algorytm stworzony przez partnerów NVIDIA, aby rozwiązać problemy MSAA
+W tym przypadku wymaga znacząco mniej zasobów obliczeniowych
+tutaj widać różnice w klatkach na sekundę (Więcej = Lepiej)
+I mniej dokładnie analizuje poligony
+oznacza to że FXAA znajduje i wygładza tylko krawędzie
+zamiast całej klatki
+również bierze pod uwagę wygładzanie tekstury  dookoła poligonów
+podczas gdy MSAA całkowicie je ignoruje.
+Wadą tego podejścia jest spadek ostrości wizualnej. Najbardziej gdy obiekty są w ruchu
+często zajmuje rolę rozmycia ruchu
+nie będzie to tak wyglądało w każdej scenie jednak gdy poruszacie się bardzo szybko FXAA będzie rozmywało krawędzie bardziej niż możecie tego chcieć .
+Kolejną formą wygładzania krawędzi jest SMAA albo Sub-pixel morphological anti-aliasing (Subpikselowy morfologiczny anty-aliasing)
+jest to technika post-produkcji podobna do FXAA ale bazująca na rozpoznawaniu wzorców która staje się coraz bardziej popularna w dzisiejszych grach
+po analizowaniu zakończeń ukośnych linii. Metoda ta porównuje styki z poprzednimi aby zminimalizować rozmycie
+I wyeliminować schodkowanie.
+Termin Sub-piksel sugeruje dokładne odwzorowanie ponieważ wiele punktów w obszarze jednego piksela (pamiętajcie że są one niewidzialne dla ludzkiego oka)
+ponieważ ta rozdzielczość nie może być wyświetlona na ekranie
+są próbkowane i wtopione
+w pewnym sensie SMAA to lekkie ulepszenie FXAA kosztem zasobów i również nie bierze pod uwagę obiektów które poruszają się bardzo szybko na ekranie
+Ostatnią metodą na naszej liście jest TXAA albo czasowy anty-aliasing
+Jak nazwa wyjaśnia metoda ta próbuje usunąć efekt schodkowania które pojawia się podczas gdy poligon przemiesza się szybciej na ekranie niż prędkość próbkowania
+inaczej mówiąc twoja częstotliwość wyświetlania klatek
+ten niedobór powoduje opuszczanie klatek co powoduje że gra działa mniej płynnie i realistycznie
+Optymalne warunki zakładają częstotliwość wyświetlania klatek (FPS) dwukrotnie większą od szybkości ruchu obiektu
+Jednak limitacje sprzętu komputerowego często utrudniają uzyskanie takiego wyniku
+tutaj wchodzi TXAA
+Jeśli kula przemieszcza się na ekranie i tylko pojawia się przez 5 klatek
+TXAA interpeluje ruch i rozmywa drogę pomiędzy każdą wyrenderowaną lokacją
+ale tu nie koniec
+metoda zazwyczaj będzie połączona z silnym MSAA oraz różnymi filtrami filmowymi
+aby wygenerować bardzo żywe sceny niezależnie od tego jak są dynamiczne
+metoda ta została idealnie wykorzystana przez nvidie oraz przez tytuły jak Watch_dogs
+Zauważ jak flora w tle wygląda bardziej wtopiona z TXAA x4 kontra MSAA x8
+jest to definitywnie subtelne, większość obiektów pierwszoplanowych nie będzie wyglądało inaczej
+Jednak cokolwiek co się okazjonalnie porusza powinno wyglądać bardziej realistycznie
+wadą tutaj oczywiście jest fakt że rozmycie może być czasami nie do zniesienia
+Niektórzy preferują ostrość i nie lubią rozmycia ruchu
+I nie mogę ich za to winić.
+Każda z tych metod ma swoje wady
+czy to zjadanie zasobów komputera lub brak odpowiedzialności
+w teori połączenie kilku z tych metod było by 
+ idealne
+jednak nie każdy posiada kilka tytanów na SLI
+według mnie najlepszym wyborem jest SMAA jeśli dostępne
+FXAA jest dobrym zamiennikiem, i może nawet lekkie MSAA coś w niskim ustawieniu jak x2 jeśli jest to możliwe.
+Nie dotykałbym TXAA chyba że byłbym do tego zmuszony
+zaczyna mnie męczyć ciągłe powtarzanie AA.
+Jeśli podobał ci się ten film upewnij się że zostawiasz łapkę w górę.
+Subskrybuj ten kanał jeśli jeszcze tego nie zrobiłeś
+Do zobaczenia w następnym filmie.
+Z tej strony Salazar Studio, dzięki za wspólną naukę.</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

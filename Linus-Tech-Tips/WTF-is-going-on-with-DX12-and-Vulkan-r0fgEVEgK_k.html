@@ -1,0 +1,412 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>WTF is going on with DX12 and Vulkan? | Gadgetory - Your Gadget Factory</title><meta content="WTF is going on with DX12 and Vulkan? - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1>Gadgetory</h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><h2 class="post__title"><b>WTF is going on with DX12 and Vulkan?</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/r0fgEVEgK_k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">no do Vulcan benchmarks say no dx12 or
+volcano I see you guys followed in
+videos review guide to a team sad to see
+- tech tips benchmarking api's which is
+close to its end of life what about our
+X 480 Vulcan performance fine let's talk
+about the new API is DirectX 12 and
+Vulcan how they work how they perform
+what they mean for the future everything
+freshbooks is the super simple invoicing
+solution that lets you get organized
+save time and get paid faster click now
+to try for free now what is an API or
+application programming interface in
+layman's terms it's a facilitator it
+handles requests similarly to a waiter
+at a restaurant taking orders you can
+think of the customer as system a system
+a wants to access some functionality or
+information that system B which we'll
+call the kitchen controls now system B
+doesn't want to just let system a
+directly access all of its information
+there are security and liability issues
+here but not only that having all these
+different customers trying to talk to
+the cook directly unless timed near
+perfectly has the potential to be more
+confusing than helpful enter the waiter
+or in this analogy the API the waiter
+can serve the customer with a menu of
+subroutine definitions protocols and
+tools that the customer can use to
+achieve his task the customer then sends
+that request through the waiter to the
+kitchen where system B will act out
+those instructions and then send a
+response back to system a through the
+API clean simple and delicious
+theoretically this is how it works but
+they can be more bloated and therefore
+slow have you ever been to a restaurant
+that has like four different menus one
+for just all the different kinds of
+freaking water with many pages
+containing a multitude of items which
+are essentially the same damn thing then
+you can relate to the frustration of not
+being able to find what you're looking
+for at all do you ever just want to
+throw the damn menus all in the air
+stomp over the kitchen and scream can
+you just render me a chicken burger and
+some yam fries is that too much to ask
+ok let's come back to that later first
+what are they used for lots of things
+api's can be used for web based systems
+operating systems databases software
+libraries or in this case computer
+hardware but as important and ubiquitous
+as they are they're not something the
+average user will ever interface with so
+why do we suddenly care so much about
+DirectX 12 and
+Elkin as selling points for games and
+video cards well hype machine aside
+DirectX 11 and OpenGL the predecessors
+to the shiny new graphics api's are
+rather bureaucratic like the complicated
+menu analogy but worse because there are
+even more degrees of abstraction there
+are many systems and devices talking to
+each other at a time passing
+instructions around with many of them
+being redundant or outdated it's just
+not as efficient and there are other
+problems for instance one of your
+processor cores carries the burden of
+managing the vast majority of all of the
+critical time sensitive tasks one of the
+main ways that the new graphics api's
+are more efficient is that they can use
+previously untapped hardware resources
+multi-core CPUs are a great example here
+look at this relatively realistic
+hypothetical scenario given to us by AMD
+thanks guys they show that OpenGL
+stacked all of the work of presenting to
+the user and processing the OpenGL
+driver on to core 1 along with a large
+portion of processing the OpenGL runtime
+and the largest portion of game code
+processing this leaves little for course
+2 to 4 to work on almost nothing 4 5 &amp;amp; 6
+to work on and literally nothing for 7 &amp;amp;
+8 and for your reference DirectX 11
+works in a very similar manner now let's
+look at Vulcan though this is generally
+applicable to both of the new generation
+api's one of your processing cores is
+still responsible for a bigger part of
+the work than any of the others but
+overall utilization is noticeably higher
+even all the way down to core 8 now this
+is a hypothetical example so I'm not
+going to spend time analyzing the exact
+improvements to the millisecond but in a
+nutshell Vulcan the DirectX 12 do a much
+better job overall of sharing the load
+across all cores another key objective
+is to shed old layers of unneeded
+abstraction they've done this by
+simplifying protocol routes minimizing
+graphical driver overhead focusing
+heavily on preventing time heavy draw
+calls sent linearly to a single core of
+the CPU instead of parallelizing draw
+call packages in order to ease up on CPU
+and let the GPU function as it should
+kind of like multiple waiters attending
+to the needs of each diner at a table
+instead of having one waiter
+with many plates on his arm dropping
+them off one at a time another key is
+that game developers can talk more
+directly to the GPU Hardware this is
+what is meant by the term lower-level
+api think of it like having a manual
+transmission in a car instead of an
+automatic but to all the gear heads out
+there watching this don't just assume
+that all your DirectX 11 OpenGL games
+are outdated junk at this point bear in
+mind that poor operation of a manual
+transmission can be worse than an
+automatic or simply not better just
+because a game has Vulcan or DirectX 12
+support doesn't mean that efficiency and
+performance automatically improve and
+this is true especially for games that
+were released with it early on though of
+course there are a few exceptions for
+the best results the new AP is need to
+be part of the core design of not only
+the game itself but the underlying
+engine as well and you do the math it
+can take easily two three or even more
+years to make a good triple a title and
+these api's haven't even been available
+for that long
+meaning the implementation of these
+api's was likely added to tick a
+marketing check box appease a longtime
+partner or hopefully and very likely
+just to gain the valuable experience
+that you can only get by working
+directly on them but when more true
+DirectX 12 and Vulcan titles drop this
+level of control for developers has the
+potential to be awesome but a little
+scary too because we're putting a lot of
+responsibility on the game and more
+specifically the game engine developers
+and this is a major shift so I just
+spent like four minutes telling you how
+interesting and important the new AP
+eyes are in reality the truly
+interesting component of the equation is
+going to be the new game engines that
+arise because of the freedoms afforded
+to them by the AP is not necessarily the
+api's themselves and from game engine
+creators who care the
+John Carmack's and Tim Sweeney's of the
+world you'll get amazing new features
+unlocked by this additional performance
+and flexibility but back to the scary
+bit from before we're also putting this
+greater degree of control and the
+responsibility that comes with it in the
+hands of gaming companies who tell us
+things like 30 FPS is a good thing or
+that implement game physics effects that
+are reliant on the framerate that hasn't
+been a thing since like Intel 46 and I
+was arguable back then that's
+inexcusable trash back to the API is
+though since that's what we're really
+here for so far we focus on similarities
+but how do dx12 and Vulcan differ from
+each other let's start with DirectX 12 a
+big focus for Microsoft this time around
+has been the introduction of their new
+Lda and MDA modes for multiple graphics
+cards for a rundown on how those work
+check out this video on WTF is going on
+with SLI along with this Microsoft's
+vision to allow developers to support a
+mixture of graphics card models and even
+brands so the user can get as much power
+as possible out of their available
+hardware think of this more in terms of
+using your onboard graphics to get a
+little bit more oomph than a compelling
+reason to build this monstrosity one of
+the ways this could work is split frame
+rendering or SFR this is when a portion
+of the screen is rendered by one GPU and
+the rest is rendered by a second but
+we'll have to wait and see how well this
+performs in the real world so that's
+cool but being a Microsoft product
+DirectX 12 will only function on Windows
+10 and Xbox so Linux OSX Android
+enthusiasts and actually even people who
+are still in Windows 7 and Windows 8 are
+left out in the cold which brings us to
+Vulcan Vulcan brought to us by the
+Khronos group is the primary successor
+to OpenGL and is proudly cross-platform
+working on everything we just mentioned
+and more this is a huge deal for steam
+OS in particular and Linux in general
+because it should bring with it a
+stronger support for a wider range of
+titles something Linux has struggled
+with ever since well ever so Vulcan is a
+big deal
+has been using it as an droids low-level
+API since 2015 and Dan Ginsburg from
+valve has talked about it on stage and
+said that Vulcan is the future although
+that's not surprising considering
+directx12 doesn't work on steamos and
+valve Microsoft relationship this has
+been getting a little tense lately
+moving on there was one last thing that
+they had in common
+asynchronous compute now this has been a
+highly controversial subject making it
+unfortunately
+outside the scope of this video but if
+you guys want to see a similar video
+dedicated to it let me know in the
+comments down below
+in a nutshell though it allows
+additional lightweight work to run in
+parallel alongside the main graphics
+thread so specific lighting technique or
+post process anti-aliasing method like
+TSS AAA
+now this dynamic scheduling introduces
+some challenges for Nvidia and AMD that
+did not exist in a more static ecosystem
+but that's for them to worry about and
+for me to maybe cover in another video
+that being said it does seem that AMD
+has been pushing harder than Nvidia and
+it shows performance wise as AMD is
+currently seeing more of a benefit than
+Nvidia in the 3d mark time spy benchmark
+which allows you to switch asynchronous
+on or off when reviewing the numbers for
+these api's you'll notice that they're
+kind of all over the place looking at
+rise of the Tomb Raider a Direct X game
+we can see that while it does make a
+significant improvement at 1080p
+once you step up a bit to 1440p or even
+4k things seem to fall apart a little
+bit and DirectX 11 actually pull the
+head hit men on the other hand did not
+share this funky scaling pattern and
+seemed to improve when using DirectX 12
+or at the very least stay the same
+across all the graphics cards I tested
+it with which should represent GP 104
+with the GTX 1080 GP 106 with the gtx
+1066 gigabyte edition for the nvidia
+side and the power of AMD's new polaris
+architecture with the RX 480
+moving on to ashes of the singularity
+this game is like half benchmark half
+game so it shows the biggest improvement
+by far
+when using DirectX 12
+instead of directing and for the Vulcan
+fans out there I've heard there will be
+a patch coming for you as well
+one great additional piece of insight
+that ashes displays at the end of their
+benchmark is CPU frames versus GPU
+frames what this essentially means is
+how many frames your CPU could
+potentially push compared to what your
+GPU actually pushed so if the CPU number
+is higher you could get more overall FPS
+with a graphics card upgrade notice that
+when we run the more CPU focused version
+of the benchmark the numbers are at par
+because now you're intentionally CPU
+bottlenecked moving on to Vulcan Doom
+numbers for the Nvidia side are just a
+mess for the GTX ten eighty Vulcan was
+similar to Tomb Raider worse at 4k than
+opengl 4.5 dropping down to 1080p
+however and it's a whole different story
+with massive improvements shown the arcs
+variety does show the performance trend
+that we would expect improving
+considerably when running the Vulcan API
+and utilizing asynchronous compute
+shaders good so the features sound
+pretty great the performance depending
+on your configuration is probably good
+but it might not be great what about
+supported games on the DirectX 12 side
+of things the list seems rather
+populated and there is a fair number of
+titles on the way that are claiming they
+will support it but this doesn't mean
+that DirectX 12 integration hasn't been
+riddled with issues quantum break was a
+mess tomb Raider's back-end barely even
+functioned for a while to the point
+where they added a warning if you enable
+it and the upcoming Deus Ex mankind
+divided which I think is out now it was
+supposed to launch with support for it
+and that's been pulled for a while so
+they can fix it up and Vulcan side of
+things is rough too their support list
+has four items on it one of which is
+upcoming one of which is dota freaking 2
+not sure about you but I sure needed
+more FPS in dota on my DirectX 12
+capable hardware another is the rather
+wonderful single-player game from 2014
+possibly not that many current players
+unfortunately and then lastly we have
+doom
+a beautiful-looking game with proper
+built-in support and asynchronous
+compute capabilities cool but that's
+singular so there you go
+in conclusion the future is bright with
+physics and AI heavy games being among
+the most exciting things we have to look
+forward to which is awesome but the
+present is more a light at the end of
+the tunnel situation get excited for new
+game engines that support these api's
+and be on the lookout for awesome new
+game engine technology that will likely
+arise from the improvements made here
+this may finally signal the return of
+our old cores for gaming episodes maybe
+we'll finally have an episode that
+doesn't end in four cores is the best
+because by that time you're $1700 ten
+core Extreme Edition will finally matter
+maybe today we're highlighting the k7 xx
+limited edition ruby-red headphones
+of course from Mass drop they also have
+a bunch of other cool things that you
+can buy like with other people so that
+the price goes down and if more people
+buy it the price goes down further to a
+logical minimum and it's it's really
+cool we should check out mass drop
+regardless the products were showcasing
+today is the same spec wise as the k7 xx
+headphones the lines reviewed and you
+guys all liked some time last year you
+can check that video out here or all
+over my it's going to be the real
+difference however is that this run uses
+red accents on the ear cups and headband
+remember that this is a limited drop so
+if you want a pair you're going to have
+to act relatively fast these headphones
+were configured by mass drop and
+manufactured by AKG just to note for
+international orders if you're outside
+of the US there's a $25 shipping and
+handling fee put on top and that's it
+check out mass drop thanks for watching
+guys if this video sucked oh but if you
+liked it you know what to do hit the
+like button get subscribed do all that
+kind of stuff check the link of video
+description down below where you can buy
+like GPUs or something I guess we talked
+about those in this video also check out
+the length of video description down
+below to buy a shirt and go to the forum
+to talk about everything I said in this
+video there's might be something wrong
+full
+lay the crap out of me for that and then
+I'll learn and that'll be good but oh
+man
+anyways watch this video which is about
+wTF is going with us alive because we're
+making a series of these now although
+continuing to do these might kill me so
+I don't know</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

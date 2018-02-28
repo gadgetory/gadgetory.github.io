@@ -1,0 +1,330 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>The Trouble with RGB LEDs | Gadgetory - Your Gadget Factory</title><meta content="The Trouble with RGB LEDs - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Pauls-Hardware">Paul's Hardware</a></li><li class="active">The Trouble with RGB LEDs</li></ol></div><h2 class="post__title"><b>The Trouble with RGB LEDs</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/SyPO2MIKURE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">what's up fans welcome back to Pauls
+hardware today's video is called as a
+trouble with RGB LEDs and if you think
+the trouble with RGB LEDs is that they
+exist at all then this video is probably
+not for you because I'm not going to be
+saying no one should have our GB LEDs in
+fact I'm going to be advocating for them
+to some degree but also advocating
+having the right and proper amount of
+control over them so for that purpose I
+have some brief demos here to show you
+I'm going to explain a little bit more
+fundamentally how RGB LEDs actually work
+how you can get the best a variety of
+different colors out of them by using
+motherboard software control or an
+actual controller that might be included
+within RGB LED kits and then finally a
+feature that I believe to my knowledge
+so far is exclusive to gigabyte boards
+with this current round of G 270 stuff
+that's come out which is the addition of
+a fifth pin connection for the RGB LED
+strips themselves which gives you the
+ability to do not just RGB but RGB W
+including a specific channel just for
+white or RGB UV using that other
+specific channel for UV light I'm not a
+big fan of UV lighting but some people
+are what I do like is being able to get
+the actual pure white out of the RGB
+LEDs because often when you try to take
+motherboard or an RGB LED and set it to
+White's you get more of a bluish tone
+because what it's actually doing is
+using the three diodes that's what LED
+stands for is light emitting diode and
+every RGB LED has three of them at least
+if it's RGB one is red one is green one
+is blue so for a more precise
+explanation of how these RGB LEDs work
+why don't I just plug this one in right
+here basically you have a 12 volt
+connection and LEDs can operate on
+either 12 volts or 5 volts so double
+check a lot of most of the motherboards
+that have headers on them like this
+gigabyte z170 X gaming 7 or or z170 X
+gaming 7 actually has the pin outs on
+the motherboard and 12 volt connection
+some of the kits that you might buy off
+of eBay or something like that might be
+5 volts so do double check that
+now each actual light that's on the
+strip and they're spaced out fairly
+evenly that's referred to as a 50/50 LED
+specifically referring to the size which
+is five millimeters by five millimeters
+and then each light here actually has
+three diodes within it each of those
+diodes receives a signal coming down the
+cable and that's why there's three other
+plugs besides the actual 12-volt signal
+coming through and then the three
+connections provide data that tells each
+little diode how bright to be so you
+have actually 256 levels of brightness
+from 0 to 255 and that is because the
+way computers primarily works is
+communicating via bytes a byte is eight
+bits so if you've ever adjusted color
+using a computer then you might have
+been presented with something like the
+color wheel the gigabyte has provided
+here in the RGB fusion software now the
+color wheel allows you to visually just
+choose which color you want anything to
+be but if you look at the RGB numbers
+there you'll notice that there is a
+number from 0 to 1 0 to 255 on each one
+so again 256 different values that that
+can be and by providing a different
+level of brightness to the red the green
+and the blue outputs those actual diodes
+on the LED strip will be brighter or
+darker combine those all together and
+you will end up with the color so for
+instance if we want it all blue we can
+have something like that which is 0 0
+255 if we want it all red kind of the
+same thing as 255 0 0 all green 0 255 0
+now you can actually do a little bit of
+math here and figure out why these all
+are as they should be because because
+computers typically communicate in bytes
+a byte is 8 bits and each bit can have
+two states that it can be at a 0 or 1 so
+if you take 2 to the 8th power
+indicating each of those separate states
+that each bit in a byte can be you end
+up with 256 and if you've ever used
+computers before you probably do this
+number all the time because it is free
+complete frequently used as a power of 2
+so going back over to our RGB software
+here each of those a single byte of data
+can be can be transmitted to tell each
+diode what color it should be and what
+brightness I'm sorry not what color it
+should be but what bright message should
+be right now what you might be seeing if
+you're at least looking at me and what
+I'm holding up here is the LED strip
+which is blue
+and then the motherboard over here which
+is actually green so here's just an
+example of a little bit of a snafu that
+you can get into when you're connecting
+RGB LED strips which is it's not
+standardized you have again our G and B
+but those are sometimes switched
+flip-flopped around it's not necessarily
+going to cause a huge problem or fire
+anything if they get switched
+although the 12 volts is of course very
+important make sure the 12 volt always
+goes into the 12 volt plug but it just
+means that the motherboard is trying to
+say hey make it green but it's got green
+and blue switched around so it ends up
+being blue the way you can combat this
+is actually via adapters such as this
+one that ships with cable mod LEDs that
+are made to work with ASUS motherboards
+and this actually flips a couple of the
+wire leads in there so that the
+motherboards output corresponds with the
+input that's being expected by the LED
+strip now these new LED strips from
+cable mod actually has five connection
+points again one for the 12 volt that's
+just providing power and an RGB and W
+and that simply coming out there
+controls the other LED and you actually
+might notice here these are completely
+different LEDs there's actually two 5050
+LEDs on the strips that are side-by-side
+one is our G B with three diodes in it
+and one is just a single strong white
+LED which only does white because you
+may have noticed if you've ever done
+anything with the RGB LED boards in the
+past that when you try to represent all
+whites which I will attempt to do here
+very briefly like so you notice it's not
+the same color in fact this has
+potentially a little bit of a blue tint
+or maybe even a little bit of a green
+tint depending on how colorblind you may
+or may not be and it just doesn't look
+as clean or as bright as it should so
+for that reason you can get these strips
+which are RGB W and then the software
+actually at least in the Advanced
+section four gigabytes RGB fusion
+software here allows you to go down here
+and individually control just the header
+that's coming out so one thing you can
+do here is actually calibrated which is
+pretty useful if you don't have that
+little adapter you can tell it that no
+the center one should be blue and this
+one should be green so flip flop those
+around if you're not getting the right
+color out of your connected RGB strip
+that the motherboard is trying to say
+but then here you can also tell it to
+enable the white LED as well
+which I have turned on you can disable
+the white LED so it's just only going to
+use the RGB ones if you want more
+consistent with consistency like for
+example with our motherboard here also
+has RGB LEDs on it but no white one so
+if we wanted everything to match up
+there a little bit more clearly we could
+or you can so I'll just do the white or
+UV only which is nice if you want have
+the versatility is it turn off all the
+RGB ones but keep the white ones on just
+to have you know if you want a Christmas
+time you know white Christmas theme or
+something like that you have that
+flexibility to be able to do that and
+one other thing I noticed as I was
+setting up for this is that you can
+actually take an RGB LED strip here and
+you can connect it up to just the four
+pins on the end of this five pin RGB + W
+strip and as long as I get that correct
+you can actually extend that a little
+bit now most RGB strips are going to
+have a limitation on how many of these
+you can actually baby chain activities I
+believe the cable mod strips here are
+limited to 3 meters in total so bear
+that in mind you can't infinitely
+connect these up but it does give you
+that option however one caveat here that
+I should point out is that again if you
+have flipped values like right now it's
+trying to be green but this one has the
+green and the blue flip-flop so it's
+blue instead so it's not always going to
+work 100% but I did think that was kind
+of fun that you can connect up vocally
+stuff they're getting back to the main
+point of this video what is the actual
+trouble with LEDs that I'm talking about
+well the main trouble with RGB LEDs in
+my opinion is the fact that although you
+can have a wide range of colors up to 16
+million if you believe the marketing
+hype and yet you can send a signal to
+all the RGB LEDs to potentially
+represent 16 million different colors or
+sixteen point seven million but really
+these subtle changes as you adjust face
+one level level of brightness on one of
+those diodes isn't really that
+significant the main issue that I have
+though is something that you might have
+spotted in the system that I have set up
+behind me which is also RGB but is set
+to white is that white is never really
+white as it should be there's always
+sort of some other color bleeding into
+it because these LEDs can't display just
+like it's
+a combination of red green and blue so
+it always has kind of a bluish tinge of
+potentially a greenish tint now I also
+wanted to point out as I am giving some
+phrase to gigabyte for including this
+capability on their recent most recent
+series of z2 70 motherboards I'm also
+going to offer some heat because
+consistency amongst your lighting in
+your case it's probably going to be
+important to you if you've at least
+taken enough consideration to think I
+want make a stability let's peel it up
+so consistency with lighting is
+important having this connection I think
+it's useful in that particular respect
+but also a critique where pieces do even
+the LEDs on this motherboard itself
+aren't necessarily all in uniform with
+each other so there's a high light
+appear across Oris logo for example
+there's one down here by the sign for 3d
+there's other LEDs that are scattered
+throughout the board now the software if
+you go over here to the Advanced section
+you can go to the peripheral devices so
+not just the main board and controlling
+all the individual parts there as well
+as the RGB header but also the
+peripheral devices that can be connected
+up and all synchronized and controlled
+with this software so you might notice I
+have a gigabytes extreme gaming graphics
+card on here
+VGA controls also available these are
+grayed out because nothing's connected
+but you can also have to control for DDR
+memory there's RGB DDR memory coming out
+CPU fan case keyboard mouse and headset
+so you can really synchronize everything
+up together the other thing that I
+wanted to give them huge props for and
+this is a shout out to those of you guys
+who are like RGB LEDs suck look at that
+single button turns everything off and
+that's what I like about the new class
+of RGB products that come out at least
+in the PC market is you have the ability
+to like on a day when you're feeling
+happy and and joyful and and you want a
+RGB rainbow going throughout your entire
+computer you can do that or another days
+when you're like you know and I just
+need to get some shit done turn them all
+off and you can give yourself a much
+more subdued look or maybe just like
+when you go to bed at night and every
+computer in your room and you want
+things to be a little bit darker and not
+have a light show going on while you're
+trying to sleep but anyway guys that is
+going to wrap it up for this video it's
+been a learning experience for me as
+I've been testing out different
+varieties of RGB LEDs my final goal a
+little bit further down the line is to
+get system setup with the Giga Byte
+software the msi software
+well as the asus software and get a
+little bit more of a comparison but all
+of them are being developed sort of on
+the fly there's updates to lots of them
+but it's nice to see it being a little
+bit more featured full-featured a little
+bit more fleshed out and yes but anyway
+thanks again for watching this video
+thumbs up button if you enjoyed it I got
+more videos coming up too I'll put some
+links to this Hardware I've been showing
+off here down in the description and
+there's links to my store down there too
+if you want to check out shirts mugs
+pint glasses and help support my channel
+thanks again for watching and we'll see
+you next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Ask GN 13: Star Citizen Threading, Dx12 Poor Performance | Gadgetory - Your Gadget Factory</title><meta content="Ask GN 13: Star Citizen Threading, Dx12 Poor Performance - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Ask GN 13: Star Citizen Threading, Dx12 Poor Performance</li></ol></div><h2 class="post__title"><b>Ask GN 13: Star Citizen Threading, Dx12 Poor Performance</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/8TjryYrcQZo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey everyone i'm steve from gamers nexus
+dotnet we're doing another episode of
+ask GN where you submit the questions on
+the tech side of the industry or gaming
+and we'll try and answer them so if you
+have questions for next week post them
+below in the comments and I will address
+those in the next episode if we can get
+to them first off today we're starting
+with a DX 12 question which is kind of
+interesting and it comes from Charlie
+Brown's 112 who says shouldn't we be
+expecting higher performance gains from
+xbox one ports given that they are also
+built on a low-level API very similar to
+dx12 it was mind-boggling that rise of
+the Tomb Raider was released without the
+x12 support at launch and with minimal
+performance gains if any at all so the
+main thing here is that the xbox one API
+is not the same as DX 12 they're both
+low-level they both go to the metal so
+to speak but they're not the same and
+that means that it's not as simple as
+just sort of porting the entire language
+set that communicates with the API from
+one platform to the other so they do
+actually have to build these games
+developers from the ground up for dx12
+support to work properly and you can
+find that in our interview with chris
+Roberts where we talk about Vulcan and
+DX 12 and how to get it all working with
+the best level off of optimization the
+developers have to sort of start from
+zero and work upward and that's because
+if you just do a wrapper which is
+basically sort of changing API calls
+doing a rapper will introduce overhead
+so dx12 wrapped suddenly becomes worse
+than the x11 just because it wasn't
+built from the ground up for it so
+that's really kind of the top level of
+why these things happen the way they do
+and dan was like total war war hammer
+will be pretty interesting to look at
+because that's another dx12 supported
+game but I know that they're still
+working on the support and is still
+being built in right now so it's kind of
+a we'll see how well it really works out
+at the end because we don't know if it
+was built ground up with it or sort of
+added later with some encouragement from
+GPU manufacturers things like that so
+that hopefully answer some of that
+question speaking specifically to rise
+of the Tomb Raider if you look at other
+benchmarks like ashes of singularity
+you'll see the same sort of thing where
+initial benchmarks show dx11 actually
+performed better or pretty similar to DX
+12 and those benchmarks have improved
+steadily as the game has updated to
+improve its dx12 integration and that's
+what you'll see with rise of the Tomb
+Raider and other games as well until we
+get to a point where dx12 is the only
+API being used or Vulcan and not the x11
+I think that's pretty much going to be
+the case for everything but the next
+question does tie into this a bit it's
+from Drake Owen who says or Drake Owens
+he says hi Steve I have two sgn
+questions one when will we see
+benchmarks of dx12 using one graphics
+card and the igp and two what are your
+thoughts on the Windows Store dx12
+attempt to restrict third-party ad on
+such as fraps so a few things here we'll
+start with the second question first the
+restriction of these third-party tools
+it's not all just Microsoft trying to
+restrict things there is actually at an
+overlay level dx12 doesn't work the same
+with dx11 so perhaps isn't necessarily
+restricted as much as it is just not
+supported and I don't know if wraps is
+being actively developed anymore other
+overlays have the same issue cam for
+example and the Exies cam is being
+updated so that it will work with dx12
+and Vulcan so it's not really
+restriction it's just that they have to
+be updated to work now there are
+restrictions specifically with the
+Windows Store titles and gears of war is
+one of those titles there are a couple
+others quantum break we've talked about
+previously so my thoughts are pretty
+clear on those if you check out that
+video we definitely railed against
+Microsoft a bit but the Windows Store
+I'm not a fan of right now reminds me a
+bit too much of games for windows live
+Microsoft's trying to do a bit too much
+of their control just using the cwp and
+different file extensions breaks pretty
+much everything including control panels
+from GPU manufacturers so that's a big
+problem what they want to do and what
+they're actually doing I think are two
+different things it sounds like they
+want to sort of unify the system between
+consoles and PC who knows what that
+really means but what's happening is
+it's creating this sort of games windows
+live ecosystem where stuff breaks on the
+Windows Store platform but works fine on
+steam so it just makes more sense to buy
+it somewhere else but the idea i guess
+is potentially noble if they do it right
+so speaking to the dx12 benchmarks using
+one GPU nigp that's something i want to
+test about it wasn't supported out the
+gate with those initial explicit DG
+you dx12 functions that were built into
+some of the games that we've tested
+previously and ashes of singularity and
+the the puzzle game from crow team Talos
+the Talos principle both of those are
+games that can be used DX call in Vulcan
+for doing explicit multi-gpu testing in
+the future but as far as I'm aware they
+don't presently fully support IGP
+integration so we can't really test that
+right now but it would be interesting to
+see definitely kind of like a dual
+graphics set up with the AMD cpu and GPU
+next question is from cows tube 3 who
+says which is the weirdest issue you've
+had with your PC so far weirdest issue
+probably was a demon monitor that
+happened after a lightning strike
+there's a lightning strike power surges
+always do lots of damage to equipment i
+would not recommend them and one of
+these CRT monitors i had back in the day
+actually became so possessed and demonic
+that it would kill systems so i don't
+know how it happened this is kind of
+before i was more on the technical side
+but somehow just connecting the display
+to the pc would actually destroy the
+video card and that was results of the
+lightning strike so that was very hard
+to troubleshoot and figure out because
+why would you suspect a CRT monitor to
+be frying your GPUs that's probably the
+weirdest one I've had next question here
+this is kind of a pretty real question
+it looks like perfect circle 10,000 to
+asks I have a question for the next
+episode is star citizen going to benefit
+from more than four cores and also asks
+is the sweet spot for gaming going to be
+six to eight cores it does
+hyper-threading matter basically asking
+all about star citizen and threading
+star citizens on crayons and that means
+it's threading is basically spa it
+spawns one thread for each aspect of the
+game so if you play star citizen now
+you'll see that thread three is very
+heavily saturated I'm not sure what's on
+thread three but it's definitely being
+abused and they're probably gonna
+optimize that going forward but
+generally you see things like game logic
+being on one thread AI on one thread
+game rendering on one thread maybe audio
+if it's complex enough is on one thread
+so that's how CryEngine spawns these
+threads and CryEngine was one of the
+first engines to really properly support
+eight total threads so hyper threading
+is actually in fact something that can
+be utilized by CryEngine and star
+citizen as an extension right now
+there's it's not really good time to
+test because the game is not fully built
+and optimized core 3 is being abused but
+in our previous discussions with chris
+Roberts it was made very clear by him
+and his team that star citizen wants to
+utilize as many threads as it's given so
+8 threads is probably where I would be
+looking just based on those discussions
+but I don't have a lot of test data
+right now that would suggest really
+where star citizen lies in the future so
+we'll still have to wait for squadron 42
+to ship and see what that looks like as
+the first final product of the game
+before really knowing how the threading
+works but that's the top level I know
+that Chris does want to actually use as
+many threads as present he wants to use
+eight and use hyper threading and all
+that stuff so it's a good sort of bet to
+look into that direction with CPUs last
+question from almond Roseman 3 who says
+are you ever going to change your attire
+black shirt and blue jeans no so thanks
+for watching ask GN I will see you all
+next week be sure to post questions in
+the comments below if you have any
+questions about tech or games that we
+can address and of course hit the
+patreon link the post roll video if you
+wanna help us out directly I'll see you
+all next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

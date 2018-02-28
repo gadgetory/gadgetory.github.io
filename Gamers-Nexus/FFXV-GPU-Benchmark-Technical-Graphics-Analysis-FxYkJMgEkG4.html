@@ -1,0 +1,491 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>FFXV GPU Benchmark &amp; Technical Graphics Analysis | Gadgetory - Your Gadget Factory</title><meta content="FFXV GPU Benchmark &amp; Technical Graphics Analysis - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">FFXV GPU Benchmark &amp; Technical Graphics Analysis</li></ol></div><h2 class="post__title"><b>FFXV GPU Benchmark &amp; Technical Graphics Analysis</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/FxYkJMgEkG4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">our first Final Fantasy GPU benchmark is
+pretty unique for a few reasons one of
+them is that it has 1440p benchmarks the
+utility does not officially include the
+1440p resolution but you can make it
+work through command-line we use
+scripted automation for all this testing
+so it should be pretty damn consistent
+and accurate run to run it's all done by
+automation so no real room for error
+there we studied the game completely for
+the benchmark portion to understand what
+we were testing I have a separate video
+on that we have a graphics analysis in
+this video that talks about specific
+graphics techniques that the technical
+artists used to help all of us
+understand why this game is as taxing of
+GPU hardware as it is and then final two
+unique points we have a Titan V in here
+just because why not it's been a month
+since we saw it and also I'm gonna
+occasionally refer to it as Final
+Fantasy XV just to annoy you all before
+that this video is brought to you by
+thermal Grizzly makers of the conductor
+not liquid metal that we recently used
+to drop 20 degrees off of our
+temperatures thermal grizzly also makes
+traditional thermal compounds we use on
+top of the IHS like cryo not and hydro
+not pastes learn more at the link below
+so let's start this out by talking about
+what they're doing with the benchmark
+benchmark is only three point seven
+gigabytes it doesn't contain the whole
+game it's not fully representative of
+the entire game however it's six minutes
+long and it takes huge portions of the
+game in the open world environment so we
+actually get a really good look
+condensed at the entire game as a whole
+despite it not being necessarily fully
+representative everything in the game
+this means we can analyze the graphics
+quality because it's actually really
+damn demanding and the visuals of the
+game are pretty impressive so you look
+at things like the metallic paint where
+you can see paint specs and one of the
+car paint jobs it's actually pretty cool
+stuff and we'll talk about more of that
+in a minute before getting to that
+there's some information as well on the
+benchmark specifically how Square Square
+Enix is uploading the data from I don't
+know if it's aggregate data from users
+or how they're collecting it but
+basically there is some form of
+aggregate pooled data on their website
+and depending on how you test your
+device there could potentially be some
+poisoning of data there because it's not
+necessarily fully controlled those tests
+could be run on various configurations
+with various CPUs for example which
+would skew the results so we are running
+the test in a controlled fashion and we
+also have 1440p benchmarks in here just
+to give a bit of an extra but let's move
+into some of the first major items that
+we notice with performs a quick note
+confirmation was received from Square
+Enix on the settings we talked about
+this in a previous content beast where
+we were uncertain if the graphics
+settings were the same between high
+medium and low across all resolutions
+Square Enix did confirm for us that the
+graphics quality settings remain the
+same across all resolutions so the very
+first thing to point out is that you're
+gonna see interesting significant
+differences between AMD and NVIDIA and
+the GPU charts and this is particularly
+at high and medium settings you'll also
+see differences between same brand
+devices across these two settings so
+this is partly because of the frame time
+variance that we can pull up a chart now
+that shows the frame times of an Nvidia
+card at high and medium using the
+settings shown in the chart we're using
+an Nvidia card here because this is a
+game works game and Nvidia's had the
+most access to it presumably so to show
+that they have frame time variants
+reveals that the game doesn't run
+perfectly even on nvidia hardware who
+have optimized for it the most because
+it is using game works options so frame
+time variants here is far greater with
+high settings and frame to frame
+intervals become looser and more
+stuttered this causes visible hitching
+so to speak during gameplay and exists
+even on 1080 T eyes it's particularly
+bad during the first run of a benchmark
+but is ever-present with high settings
+moving to medium largely removes the
+issue as shown in the frame time plot
+despite being an Nvidia supported title
+both Nvidia and AMD suffer in the frame
+time Department specifically with high
+settings so as we go through the
+benchmark charts keep a close eye on
+Vega 56 and Vega 64 positioning relative
+to each other at high and medium let's
+get into some of the graphics analysis
+of
+the six minutes of the benchmark shows
+us and why those six minutes are so
+taxing one of the most immediate and
+important items to point out is the
+tessellation in the game so between Andy
+and Nvidia they both handle geometry
+differently Andy has expanded its
+geometry pipe in recent years but NVIDIA
+maintains an advantage in dealing with
+heavy tessellation something that's been
+true since the crisis days at fifteen
+seconds into the benchmark we noticed
+that Square Enix used a heavy amount of
+tessellation in the ground and terrain
+rather than using a traditional normal
+map for the ground
+this adds perceived depth to the surface
+by allowing displacement to increase
+apparent detail via tessellation and
+tessellation is basically a doubling of
+the triangles on the graphics hardware
+so four becomes eight and so on
+this makes the service seem higher
+resolution and it's also why we get the
+added bumps a few of which we can
+highlight in the video production the
+card doesn't conform to the surface from
+what we can tell but it's more
+geometrically complex of a surface and
+it makes it more interesting to look at
+the actual value however is debatable
+geometric complexity like this cost a
+lot and if your device and the or Nvidia
+is struggling with heavy tessellation
+we'd assume you'd be able to separately
+disable this in the final game there are
+also options in the driver settings that
+where you can tune this down
+interestingly at three minutes 58 in the
+video it appears that the ground is no
+longer tessellated we think that Square
+Enix has switched to a traditional
+normal map here we're not sure if this
+is because it's a known combat scene
+with a lot of other complex elements to
+render or if it's for some other reason
+let's rewind to some other impactful
+settings at 27 seconds into the
+benchmark we noticed some high quality
+reflection techniques being used by
+Square Enix on the car the door and the
+mirrors of the truck are dynamically
+reflecting the environment we don't
+think these are using screen space
+reflections because you can see clouds
+and other background elements
+dynamically reflected in those services
+at 50 seconds we notice that the trees
+are using flat alpha textures instead of
+particles or some sort of game works
+plugin this is a bit of a primitive way
+to do things but as cheap in terms of
+resource cost five seconds later we pass
+a truck with extremely detailed textures
+as seen on the front of the vehicle
+and this is a major contributor to vram
+consumption that penalize is for
+gigabyte GPUs as you'll see in the
+charts and a bit there are high quality
+textures in this game there's also some
+motion blur going on and we further
+noticed that the truck leaves behind
+some ghosted lines that slowly fade
+something we saw again at three minutes
+four seconds where the fishing pole
+leaves similar ghosted lines at 56
+seconds just after the truck you can see
+some highly noticeable limited shadow
+draw distance poppin in the background
+where the environment elements and the
+shadows are getting drawn as we approach
+them at 1 minute 54 the chocobos are
+using traditional alpha textures for fur
+as opposed to hair works or other game
+works effects which we know are bundled
+in because they used on character model
+hair for the main characters the tail
+feathers do use some sort of advanced
+physics calculations when the chocobo
+runs or moves but nothing special for
+the fur as far as we can see at 2
+minutes you can see soft shadows cast by
+trees and it's noticeable by the way the
+shadows soften as the leaves get further
+from the ground as opposed to the base
+of the tree that's closer to the ground
+and uses a harder shadow this might be
+part of Nvidia's frustum traced shadows
+but it could also just be an older soft
+shadow technique at 2 minutes 33 seconds
+there's a great example of screen space
+reflections if you don't know what that
+is you will now we can demonstrate this
+by looking at the tree leaf that
+includes the background mountains the
+game is using that screen space to
+calculate reflections of the mountains
+onto the lake but the occlusion results
+in missing information in screen space
+so the reflection is inaccurate and
+incomplete and you get that weird
+reflection effect on the lake the
+alternative to this would be planar
+reflections but the hardware cost is too
+great to use in most real-time scenarios
+3 minutes 53 seconds is also an
+interesting scene as Noctis warps across
+the screen we can see the background
+bridge refracting and noctis's mesh
+similar to what you'd see with a straw
+in a glass of water for instance this is
+another advanced rendering technique
+that has some physical hardware cost to
+it will cut that there but keep an eye
+out for our full graphics analysis
+coming soon
+subscribe for that we're trying to do
+more of them for now though we've
+established
+why the game is as graphically intensive
+as it is and why it's so taxing on the
+hardware let's get into the charts as
+always you can check the article link in
+the description below for more
+information on this and for the bench
+platform our 1080p high chart will start
+us off as that's likely what most of you
+are interested in the Titan V has some
+immediate difficulty with the lows here
+more than the other devices but it's
+also not really something we're
+expecting anyone else to use to play
+games we just threw it in because we had
+it moving on to actual gaming cards
+everything up from the Vega cards and up
+do reasonably well and averages but the
+frame time hit at high settings
+introduces occasional stutters or lawn
+intervals between frames we showed those
+frame time plots earlier this is the
+real impact of that this impacts AMD and
+NVIDIA alike
+though AMD does take a bigger hit as
+illustrated on Vega versus these 0.1%
+lows of the neighboring 1070 and 1062
+we're talking 9 FPS versus 15 FPS 4.1
+percent lows so it's not really a major
+victory for NVIDIA nothing to brag about
+at this point what we really need is the
+ability to custom tune settings so that
+we can find out which one is tanking the
+frame time performance and causing those
+long frame to frame intervals until the
+game launches though we won't have that
+so we want to 1080p medium next this
+settings configuration would be ideal
+for something like a gtx 1066 gigabyte
+card with the RX 500 series high-end not
+doing too poorly here either you can use
+either and probably be happy with it
+especially once you can actually tune
+the settings manually vegam 56 does
+reasonably well despite its frame time
+consistency and manages a 77 FPS average
+the card is still outperformed by the 10
+70 by about nine point seven percent but
+we'll see if a.m. these future updates
+do anything to help with this before
+getting into 1440p we also ran a few
+low-end devices at 1080p low settings
+results are on the screen now the 1060
+predictably leads managing 80 FPS at low
+and this device can handle medium
+settings fine so no surprise here the RX
+574 gigabyte card is struggling in the
+frame time Department once again but
+manages a FPS average respectively the
+1050 Ti places similarly to the AR
+five seventy both at about forty nine
+FPS average the RX at five sixty 16 a Cu
+card the original one that was shipped
+not the later ones with 14c use is about
+10 FPS behind the 1050 TI OC it's not
+actually overclocked MSI just calls it
+that it's one of the cheapest 1050 T is
+1440p benchmarks are something we're
+proud to someone uniquely offer because
+we scripted our tests and automated them
+so we're able to force the games we run
+at resolutions not included in the built
+in benchmark that includes 1440p at
+1440p high settings obviously without
+the ability to customize the options the
+gtx 1080i exceeds 60 FPS average and
+manages to hit 72 FPS throughout the
+lows at about 49 and 22 fps looked
+better than previously but 22 is still
+dismal when compared to 72 as your
+average this is a problem with the high
+settings primarily the 0.1% low values
+here are still suffering this is
+repeatable on all devices when tested
+with high settings for the graphics
+although the average framerate may still
+be 72 FPS you'll see visible stutters
+and hitches on occasion particularly
+when loading a new area for the first
+time at that boot or in the first time
+in a while we'll need to wait for the
+final game to see if this gets ironed
+out the 1080i leads the 1080 by 28% with
+a gtx 1080i operating at 56 FPS average
+with similarly painful frame times the
+GTX 1080 leads the next card
+the 1070 TI by 11.8% and there's enough
+of a gap here that overclocking could
+more or less close it even when I also
+overclocking the 1080 the GTX 1070
+manages a 46 FPS average with the Vega
+64 Strix card operating a 39 FPS average
+pay close attention here to Vega 56 64
+and the gtx 1070 right now the 1070 is
+leading even vega 64 which probably
+shouldn't be the case but as we move on
+to 1440p medium you'll see what's going
+on so here's where it gets interesting
+then at 1440p high to recap the 10 does
+have any leads at vega 64 by a sizable
+16.5% and it leads its direct Vega 56
+competitor by 30%
+that's absolutely massive considering
+the
+are much closer together in other
+benchmark titles and at Vega 56 often
+even outpaces the 1070 in like-for-like
+testing at 1440p medium things change
+the gtx 1070 now runs at 60fps average
+with the vega 64 cards surpassing it at
+63 FPS average they give 56 still trails
+at 55 but previously we were about 30%
+ahead with the 1070 over vagin 56 and
+with medium settings from high the 1070
+is now just 7.3 percent ahead of Vega 56
+that's a big reduction as predicted in
+our pretest video the gap was closed
+almost entirely by dropping a couple of
+settings potentially gameworks options
+for which a and he hasn't yet optimized
+because medium disables all game works
+options that would explain a lot here it
+could also just be general tessellation
+and LOD or view distance settings which
+would feed a lot of geometry and
+primitives to a card that has
+historically compared to its competition
+struggled a little bit more with both
+still the 1070 TI leads both of Vega
+devices and both Vega devices still
+struggle on the frame time front here's
+a plot of the 1070 T is at frame x for
+the medium runs mapped up against Vega
+64 s frame x additional spike eNOS and
+the AMD card presents itself in this
+testing we'll have to wait and see if
+Andy's Final Fantasy XV driver is
+released later closer to the game's
+launch will fix any of this and he has
+told us they're not planning to release
+drivers for this benchmark today but
+they'll address it once there's a real
+game to address at 4k high settings the
+gtx 1080i operates an average FPS of 46
+with lows at 27 and 1212 pretty pretty
+bad
+again this frame time deviation is
+derived specifically from the high
+settings until a point at which we can
+manually toggle those settings we can't
+say for sure what specific options are
+causing that behavior
+none of these devices are particularly
+well equipped for Final Fantasy 15 at 4k
+high in its present state but full
+graphics customization options should
+help the Titan VIII for what it's worth
+operates the highest average by about
+21% but it also has worse frame time
+consistency a lot worse and it's to a
+point of being actually noticeable in
+gameplay I'd rather have one of the
+lower end devices with higher 0.1% lows
+to play this game than the Titan v4 4k
+medium settings the GT X 1080 Ti
+struggled to maintain its 52 FPS average
+with 1% lows dipping down to 41 FPS
+frame times aren't as much of a concern
+here as they are with high settings as
+illustrated by the close proximity
+between the 1% and point 1% lows and all
+tested devices except for the r9 fury X
+which has two times worse 99.9% I'll
+frame time values the GT x 1080
+predictably lands second but it's a
+shallow victory 40 FPS average
+marking the 1080i about 34% ahead of the
+1080
+the RX Vegas 64 Strix card puts in a
+good run with its 36 FPS average
+comparatively led by the 1080 by about
+8% dollar-for-dollar assuming GPU prices
+were a thin anyone abided by that would
+be a direct comparison low-end frame
+time performance is a bit worse on the
+Vegas 64 card but this game isn't
+particularly 4k friendly anyway the fury
+X isn't too far back from Vegas 64 and
+average FPS but drops the ball with 0.1%
+little values this is probably at least
+in part due to the frame buffer size
+because you can look at the game see the
+texture sizes and generally assume that
+it's using a lot of memory so over the
+conclusion there's a lot more that could
+be said here we'll try and outline some
+of it in the article below that said
+those testings been going on for 13
+hours at this point I think so actually
+more than that so it's been a long day
+of testing we have lots of content on
+the website and on the channel already
+if I've left something out sorry
+we'll get to it eventually but it's I
+mean it's it's 4:30 a.m. cut me cut me
+some slack so we've been testing since
+the benchmark came out we have several
+articles on the site we also have CPUs
+to go still and we started that testing
+just need to finalize it if you feel
+like there's something really specific
+that you'd like us to look at for CPUs
+you still have some time to get that
+request in because we are still working
+on getting the benchmarks going got the
+methodology figured out
+need to get the tests running so that's
+it for now subscribe for more make sure
+you catch our graphics analysis and CPU
+coverage and as always good at
+patreon.com slash gamers Nexus tells out
+directly where I've been hanging out in
+the discord talking with everyone as we
+are running these benchmarks live and
+finally go to store that gamers access
+net to pick up a shirt like this one or
+one of our other products thank you for
+watching I'll see you all next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

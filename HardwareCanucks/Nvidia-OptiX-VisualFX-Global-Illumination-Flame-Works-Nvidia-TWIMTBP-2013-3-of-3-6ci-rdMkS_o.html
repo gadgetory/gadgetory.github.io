@@ -1,0 +1,478 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Nvidia OptiX, VisualFX, Global Illumination &amp; Flame Works (Nvidia #TWIMTBP 2013) 3 of 3 | Gadgetory - Your Gadget Factory</title><meta content="Nvidia OptiX, VisualFX, Global Illumination &amp; Flame Works (Nvidia #TWIMTBP 2013) 3 of 3 - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/HardwareCanucks">HardwareCanucks</a></li><li class="active">Nvidia OptiX, VisualFX, Global Illumination &amp; Flame Works (Nvidia #TWIMTBP 2013) 3 of 3</li></ol></div><h2 class="post__title"><b>Nvidia OptiX, VisualFX, Global Illumination &amp; Flame Works (Nvidia #TWIMTBP 2013) 3 of 3</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/6ci-rdMkS_o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">all right so um objects some of you may
+have heard of optics before it's an SDK
+for building primarily rendering engines
+that do ray tracing it can be used for a
+wide variety of things it can be used
+for building ray tracers to do any
+inclusion to bake in the light Maps for
+games it can be used for real time ray
+tracing you might have seen our design
+garage down low and there's a bunch of
+folks that are building real time great
+tracers out of optics the highest
+performance rate racers on the planet in
+fact are built on optics on NVIDIA GPUs
+it can be used to do high quality
+rendering of procedural services the
+folks at CCP in fact for Yvonne I use
+optics to do character portraits for the
+game all using optics and something you
+might not have known is that optics is
+used actually as part of a lot of game
+developers core pipeline it can it's it
+can interact with and play with and it
+can be built used to be a building block
+to help produce great games so the folks
+at Bungie that you might have heard of
+these guys they're working on a little
+game called destiny which you might have
+heard of they're in fact using objects
+to author content for destiny they're
+building ambience curious that's kind of
+a form of ampule occlusion basically
+doing global illumination pre
+calculation for destiny using optics on
+NVIDIA GPU farms you know you've
+probably heard Nvidia say that you know
+lots of game developers use NVIDIA GPUs
+but you might not know that they use
+NVIDIA GPUs in ways you might not have
+thought about they don't just use them
+to as a game engine development they use
+them as actually cool or authoring for
+their game itself so there's a GPU farm
+at Bungie it's cranking away calculating
+a mean experience you can compute a o on
+a really complex team in a little bit
+over a minute on this GPU farm orders of
+magnitude faster than the alternatives
+they bake it up for you to run time so
+you can have a simulator île time
+global illumination in destiny and the
+the fact that they can do this on NVIDIA
+kind of just as a testament affect the
+strength of that core technology that
+value that that we're bringing to the
+game developer industry they're taking
+some more technology they're building
+tools themselves Bill Turner technology
+could solve really important problems
+it's pretty cool stuff so we're really
+excited to be working with
+the buncha guys my destiny and they by
+the way this if you're curious about
+this for tips no technique this was
+presented at SIGGRAPH Asia by Peter Pike
+Sloane and a crew from Bungie it's a
+pretty interesting technique on top of
+objects pretty cool stuff so one other
+pennant technique that we use is a frame
+for a min clusion is called Verizon
+based I am a loser H Bao
+what this is is a technique for doing a
+real-time detailed shadows as a form of
+ambient occlusion it's been ingrid in a
+huge number of games
+it's a highly optimized library for
+doing a o it scales across a wide range
+of GPUs it runs on a PDA around an AMD
+and it's kind of a fundamental building
+block for doing lighting in games it's
+been intimate integrated into a bunch of
+games that you can kind of see up here
+so let's go ahead and see kind of kind
+of a before-and-after here so this is a
+traditional kind of scene that you might
+see this is kind of a called old school
+immune occlusion the challenge here of
+course is that particularly in the car
+you're not getting a lot of the soft
+edges that you might get and real life
+with it with a higher quality Hale
+solution so with Verizon base and
+inclusion you get much more of that soft
+effect so if in particular if you look
+underneath the car kind of the
+old-school effect tends to produce these
+hard edges and in fact an occlusion in
+real time is a call it an approximation
+of of a true kind of full-on path trade
+solution and so it's not it's not going
+to be as accurate as a fully baked
+solution but it's because it's done in
+real time it can interact and characters
+can have it and that nothing so in this
+case it's a car so if you look at the
+wheels you get it you get a little
+shadow bleeding onto the tire and with
+the immune occlusion you get kind of
+that soft that soft feel around it which
+is you know typically what a diffuse
+shadow would have so that's one of our
+kind of cool technology so let's take a
+look at what this can do in real time
+oh you've got no party so Jim if you
+want to talk to me here but what we have
+here is is a tool we have that basically
+allows you to visualize the effects of
+the HBO library on a variety of game
+scenes from a gift oh this is a scene
+actually from Splinter Cell blacklist
+and and the mode we've just started this
+often is kind of the traditional SSAO
+mode which which and basically what
+happens when they go is that you you do
+a search around the pixel that you're
+currently looking at and try to look for
+the include errs that are nearby and in
+the larger the search area the more
+complex the algorithm is and the more
+difficult it is to compute real time and
+so what you end up getting is Tony
+showed in the previous slides you don't
+get a lot of the you know the things
+that are further away or larger
+excluders like the bottom of this car
+don't actually produce shadows right so
+what we can do and with each video is
+you can actually increase what Scovel
+were calling the radius multiplier here
+or the radius of the search space
+patients basically and get a lot of
+interesting ayo effects to capture these
+larger further away occluders and we
+also have a number of tweaks that
+artists and designers can play with in
+designing the parameters for our AO
+library for example the detail AO level
+where you can achieve see jacked this up
+you get a lot of fine details like the
+door handles and things like that
+or feeling for a more coarse solution
+because say some other shadow technology
+inside your game handles the details you
+can even dial this down and have it
+would just handle the course the course
+areas so it's very flexible it's very
+fast it's fast on on all GPUs and it
+allows you to have really high quality
+results as we see here so one of the
+other really cool things about not just
+the technology but kind of the way we
+work with developers we build tools that
+let developers play so this particular
+tool we can just grab a trace from their
+game they don't have to go and integrate
+a bunch of one other kind of technique
+that we've been working on of course is
+contact hardening shadows if you're not
+familiar with what this means in the
+real world when you have an occluder and
+a light source the shadow that gets cast
+typically is hard-edged
+near the base of the object and as the
+shadow gets away from the object it gets
+to be more diffused or soft edged that's
+typically called
+hardik shadow so we have a PCS s
+illumination that we've been working
+with on a variety of games this is it
+provides a lot of that kind a next level
+of shadow detail particularly for direct
+light sources on you know things like
+trees or chairs and so you can kind of
+see it here as it's close the edge is
+hard as it gets off to kind of push this
+out blur is out same thing with the the
+chair there you get the the pole and I
+don't have a laser pointer but I like
+right here it's soft and right there it
+gets hard these are these are techniques
+that we've developed they're delivered
+in a form to a developer that they could
+just easily integrate them they can try
+them out if it's going to work for their
+game and they have the extra benefit as
+as Jim mentioned as they are the highest
+performance implementation so just a
+little example of that if you take P CSS
+or HBO not only are they the highest
+quality implementations but there are
+the fastest implementation so that are
+the fastest not only on Nvidia but we
+actually improve the performance of the
+alternative implementations even on AMD
+this is the kind of thing that game
+developers love because in the end they
+just want their game to be great right
+and if you give them a highest quality
+solution that improves their frame rate
+it means the game can run on a wider
+range of hardware which is just good or
+they have more time or more CPU or GPU
+cycles to put more effects in the game
+to make the game look great so these are
+just nothing but win-win for everybody
+great visuals great performance on
+everyone any questions on that ok ok so
+the visual effects SDK so I kind of
+alluded to this a little bit before this
+is our library that kind of embodies a
+really complex visit visual effects
+these tend to combine simulations and
+rendering animation and simulation and
+rendering oftentimes they involve
+non-traditional rendering techniques
+things like voxels or Ray marching or
+ray tracing much more complicated
+implementations we build these as kind
+of turnkey solutions to solve those
+problems for developers so they don't
+have to do all that research and because
+we have the guys who are really the
+experts on how to do super fast cheap
+you implementations we're able to kind
+of extract the absolute best
+formitz out of some of these
+cutting-edge techniques that really
+other people can't afford to invest that
+time in I think most game developers
+would rather spend their time making a
+great looking game and making a great
+game they're trying to solve
+you know parallelism and register
+pressure and capsizes and all the super
+low-level needy gritty some dude but I
+think most just prefer the the kind of
+convenience of taking a great effect and
+integrating it right in during these
+rural games is directly meeting a light
+source that's light on the object and a
+lumen that illuminates that object but
+the light classically doesn't bounce
+the way that developer typically solves
+for that is they bake they pre calculate
+cool of illumination either using optics
+or other techniques and they make it
+into the textures or the shaders the
+environment so that you have a an
+effective global illumination that
+disadvantage to a technique like that is
+that it isn't dynamic so when the world
+changes or when you destroy something or
+your nano light source it's often
+difficult or impossible to have the
+updates to that indirect lighting happen
+so we've been working really hard on
+developing our super high performance
+library that allows real-time global
+illumination the other benefit of
+real-time GI is that if you build your
+game around real time global
+illumination your artists don't have to
+spend so much time cheating one of the
+big panes of game development is
+lighting and you have to you know be
+quite a sophisticated artist to get
+really good looking GI global
+illumination effects without actually
+really having global illumination so
+that plays hundreds or thousands of
+Lights in their scene because the lights
+don't bounce and so you have to do stuff
+like that whereas if you could implement
+GI in real time it would just do the
+right thing like with balance you get
+the indirect light you get the color
+bleeding so what we built is a scalable
+architecture that enables that and it's
+super high performance so let's take a
+look at what GI works to do okay so this
+what we're starting with here is direct
+lighting in this scene only so direct
+lighting we have two lights in the scene
+there's one up here and one down here
+this blue one and and basically every
+all the lighting that happens outside of
+these two cones is just a flat ambient
+right so you can see it's very flat over
+here you don't see any detail these
+artisans and in these hallways so let's
+go into the the direct lighting plus
+indirect lighting now which is these
+lights were already there in the scene
+but you didn't see them because there
+was no balance is happening it's coming
+explained so now what you have is
+there's the let's flip back and forth to
+give you a good idea here these arches
+are a great example right there's no
+light falling on these arches directly
+from the light sources so what you need
+is indirect lighting which is light that
+bounces off of a surface and then lights
+another surface to get light to go into
+these areas and there's a number of
+really interesting effects that are that
+are enabled by this one is this is a
+completely real-time effect you actually
+get real-time specular or glossy
+reflections which are entirely
+indirectly lit right this is just light
+that's falling on this surface from this
+emitter that's on these emitters that
+are on these little TVs in the hallway
+and and as the in specular is
+notoriously hard because it's inherently
+dynamic right because is dependent on
+the viewer it changes based on where how
+your viewing angle changed so you see
+that the specular is done entirely
+correctly other things we can do here is
+that we can add area light sources so
+these little these boxes that these Dino
+these Dino bones are in are actually
+area light sources and so looking at
+this Triceratops here you can see that
+there's a really really high-quality
+ambient occlusion type of fact and this
+is a notoriously difficult sort of shape
+to get real ambient occlusion on using
+screen space techniques you can see here
+that you have a really great ambient
+occlusion all source in real time from
+this area light source another thing you
+can do we can actually move these lights
+around so this is an lower-left what
+you're gonna see is basically the view
+from the lights perspective you can move
+move this light or you can move this
+other light as well which is the blue
+light here and one thing you'll get as
+you as you move around this light you
+see the cone of influence basically the
+white ass but even things outside of
+this cone of influence like look at this
+archway back here
+get closer so you guys get a good look
+here if you look at this archway there's
+actually the big sense of light ends
+right right at this boundary of the
+spotlight right so if I move this light
+you can see that the lighting is
+changing inside of that arch even though
+no direct light is falling on top on
+that surface so it's entirely because of
+the balance that happens off of the
+floor the light bounces off the floor
+and hits the arch and and adds light
+there so yeah that's that's illumination
+even up there first I can kill mine so
+GI works is is it is a GI library that
+we're working on you'll start to see
+this integrated begins I think probably
+next year the advantage of this is its
+implanting a bunch of incredibly complex
+volume based lighting techniques to
+simulate all of this bouncing of light
+that is necessary for the indirect
+lighting effect and it's fast you can be
+possible to implement this and on a GPU
+it runs cross-platform
+the nice thing about is that it's even
+possible to author your game entirely
+with an indirect lighting approach which
+could which could be quite a
+breakthrough for the game development
+community so they wouldn't necessarily
+have to be placing hundreds or thousands
+of lights to fake all these indirect
+lights he gets really nice effects on it
+as Jim mentioned you get the bounces you
+get the specularity to get really
+accurate reflections you get kind of a
+built-in ambient occlusion kind of all
+just kind of falls out it's one of the
+beautiful things and I think it's not I
+don't know if it's a theme but you know
+we talked about a unified physics
+simulation where the the simulations can
+play with each other nicely one of the
+nice things about global illumination is
+it's it's a more elegant solution and
+then it solves a bunch of the
+fundamental problems of lighting and
+shadow they all just kind of fall out of
+it it's computationally really complex
+the algorithms are really complex but
+the results are visually great and it
+solves a bunch of those fundamental
+problems and that's what we're really
+about you know kind of pushing in the
+state of the art visually and if we can
+not only make the result more beautiful
+make the game developers lives easier
+and better that's some so that's GI
+works that's one of the other
+technologies that we're announcing so
+one of the other classically really
+difficult problems in gaming has been
+really it has been nice fire and smoke
+classically this is done usually with
+alcohol at texture tricks it can be done
+with sprites and billboards it can be
+done with a bunch of alpha blended quads
+there's lots of ways to do this kinds of
+thing but the challenge with pretty much
+all of the existing approaches is that
+they tend to not really be correct from
+a volume perspective and again it's one
+of those things they don't really
+there's always a side effect those
+things either there's you know a lot of
+overdraw which is really performance
+expensive or there's you got blending
+and sorting introduced or things like
+that so we've worked on a solution we
+call flame works what this is is a
+volumetric effect engine that allows for
+things like smoke and fire to bits some
+say the same way they do it in film
+except it's ultra high performance it
+can be done in real time
+it supports shadowing you can emit light
+and it uses a multi grid volume based
+solver to read some really stunning
+effects so flame works is kind of one of
+that third I say I alluded to three
+technologies there's flex there's GI
+works and there's flame works so let's
+go ahead and kind of take a look at what
+flame works can do and yet remember this
+is all kind of running in real time and
+it's kind of one of those volume based
+effects that solve some really complex
+problems
+so what Jeb's showing here is it is
+actually a true volume there's no
+sprites there's no layered quads there's
+no sneaky particle it's a it's a true
+volume based solution it's emitting
+light as you can see it's human love it
+interacts with geometry with imaginative
+simulation so the fire we're gonna flows
+around the sphere it kind of behaves the
+way you think of behaves in the same
+technique that they use in the film in
+shape we're doing things like smoke and
+fire I can't wait
+I think you'll see flame works
+integrated innoGames starting next year
+as well in fact we've already started
+integrating this into core engines
+that's just I don't know that's cool</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

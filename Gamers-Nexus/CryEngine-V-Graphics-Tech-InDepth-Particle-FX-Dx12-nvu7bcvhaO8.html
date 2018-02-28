@@ -1,0 +1,224 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>CryEngine V - Graphics Tech In-Depth (Particle FX, Dx12) | Gadgetory - Your Gadget Factory</title><meta content="CryEngine V - Graphics Tech In-Depth (Particle FX, Dx12) - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">CryEngine V - Graphics Tech In-Depth (Particle FX, Dx12)</li></ol></div><h2 class="post__title"><b>CryEngine V - Graphics Tech In-Depth (Particle FX, Dx12)</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/nvu7bcvhaO8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey everyone i'm steve from gamers nexus
+dotnet we're here at GDC 2016 and I'm
+joined by Crytek Frank Fitts who is a
+creative director working on CryEngine
+which is what we're talking about today
+right
+Brian gen5 yeah yeah and before we get
+to that all this GDC 2016 coverage is
+brought to you by raw Fury's a goner
+platformer game you can check that out
+links the description below so CryEngine
+5 we saw this at a press conference
+yesterday that's right can you give a
+brief overview of technologically what's
+sort of the interesting thing that
+people can look forward to oh yeah we
+CryEngine 5 was a new release for us in
+many ways reset on a lot of technical
+features there's a long list of
+improvements we've done including
+support for DX 12 that's probably the
+highest on the list and we also have
+completely rewritten the renderer
+actually to do the proper job with DX 12
+we refactored the whole front end and
+the core renderer to support the X 12
+properly and we're seeing some amazing
+speed and performance improvements as a
+result so that's pretty cool right so
+this isn't just a wrapper then it's no
+it's not it's a direct implementation
+you know the the renderer is set up to
+take advantage of DX well we're actually
+going through it now step-by-step and
+realizing where that power can pay off
+but for the kind of games that CryEngine
+is traditionally known for our large
+open worlds with lots of foliage and you
+know thousands of draw calls as they say
+it we're seeing a substantial speed-up
+and of course it's a really good for VR
+as well because you have to sustain high
+frame rates and in stereoscopic 3d yeah
+the I guess the target minimum is what
+90 FPS exactly and it's it's 90 FPS left
+and right eye so it's effectively 180
+frames per second so with DirectX 12
+we're talking about sort of refactoring
+an entire engine
+why is why is that important why can't
+you just do rappers well because the
+rapper introduces overhead and there's a
+cost they're just making a translation
+through pointers and also what directx12
+does is give you direct access and
+literally to the GPU Hardware you know
+direct x11 did a lot of lining up and
+sequencing and scheduling of tasks
+automatically and in you know for games
+that are not bound by GPU requirements
+it's okay but if you're trying to use
+all the horsepower that's there in the
+GPU having direct access and control to
+those things yourself because you know
+how your game works as a game developer
+you can customize it much more easily
+right so we were also talking about
+particle effects oh yeah that's
+obviously a big thing with CryEngine
+what's new on particle effect with the
+CryEngine 5 well we have something
+called particle effects that's just our
+internal name for the new particle
+system which is actually includes a new
+editor that allows you to create the
+effects and author the shaders for them
+but the shaders and the particle effects
+and their dynamics are all now executing
+on the GPU so that again gives you a a
+massive speed-up we can do particles
+that look more like fluid simulations
+and we can do screen space collisions so
+particles can look like they're not just
+passing through the world they're
+interacting with things so fluid
+simulation is an interesting one yes
+it's traditionally at least in our
+experience sort of looking at games a
+lot of it in the past has been done with
+sprites or sort of 2d images that yeah
+cheated so how is how is the interaction
+in terms of particles with other
+particles or well no you can't do too
+much particle to particle interaction
+because the truth that fluid simulation
+would simulate it like a finite element
+model or a mesh or there would actually
+be each particle would be aware of all
+the particles around it and that's too
+expensive to do in real time we actually
+can do that and then cache the results
+and play them back but in
+in most cases the it's not really a
+fluid simulation but it looks like it
+because we can have complicated
+turbulence that allows them to flow like
+they're like a liquid would right what
+about things aside from particles so
+obviously there's dx12 optimization
+that's big anything else that people
+should be aware of for new effects yeah
+there's lots of other things we have we
+have extended our audio translation
+layer which is very cool the ATL as we
+call it allows you to pick different
+audio middleware we have STL mixer which
+is our own internal mixing solution but
+we also now support W wise and ethmoid
+so people are creating games can pick
+whichever toolset they're familiar with
+and audio has always been a big
+component of the power of Christ because
+you can make the sounds follow the
+objects and they fade off with distance
+and Doppler effects things like that and
+in VR it's really even more important
+because you have this sense that the
+world is all around you and have it
+really feel like it's passing behind
+your head it's not only hard to do but
+it's really important if you don't do it
+it doesn't feel like you're really there
+gamers certainly experienced the
+surround us or the spatial awareness yes
+given by audio
+why do developers have to do for us to
+be able to appreciate that what's how
+how manual is it how automated is it
+yeah it's a it's an art form I probably
+you know you have a limited number of
+objects that you can do what we call
+spatialization on which means it it
+tracks where they are and how fast
+they're moving toward you and whether
+they're behind your head and we do all
+kinds of fancy attenuation things with
+them there's a limited number of objects
+that's of like 32 maybe before it
+becomes too extensive so you might think
+of that you've got like the background
+noise this the musical score and the
+dialogue that's always in front of you
+and then up to 32 different things like
+ships going by or explosions that can be
+placed in 3d space so it's a balancing
+act you know
+that's more of an art than a technology
+so this did remind me though CPU
+threading has always been big for
+CryEngine in terms of actually being
+able to use a lot of threads
+what's the load like on CPUs these days
+how does it spawn I previously spoke to
+chris Roberts from Imperium games and he
+was talking about how with the version
+they were using it sort of spawns thread
+for game logic for AI yeah how do things
+work now
+it's more or less the same we have some
+ideas for advanced threading but
+basically the classic way to do is to
+sign one thread to the audio one to
+physics one to the all the different
+operations and then that's maybe not
+ideal if one of them is underutilized
+versus the others but I'm not really an
+expert on threading so so CryEngine the
+big news that we didn't talk about it to
+pay what you want model now and that's I
+believe the minimum is zero zero
+we don't actually pay you to use it
+there's no negative value so if you are
+interested in playing around with it
+just for fun or as a developer there's
+it's it's linked in the article that is
+in the description below so you can find
+all of that yeah and then dx12 stuff
+we've got a big news announcement coming
+up from Nvidia today that we're posting
+on the site and some of that is pretty
+interesting as well that relates to a
+lot of this stuff here oh yeah and also
+it sounds like we're started wrapping up
+here I don't want to let you get away
+without mentioning that all of these new
+features most of them are have a big
+impact on VR of course and now we have
+we have oculus rift support and
+PlayStation VR HTC vive and OSD are all
+all in there and we didn't even get into
+the new user interface and how much easy
+we completely rewrote the user interface
+as well it's now QT base for people who
+are interested and that's more modular
+rearranged where the icons are to make
+them the workflows more intuitive and
+it's also user extensible you can
+configure the interface the way you want
+people find the
+the vast array of things you can do with
+CryEngine somewhat intimidating so being
+able to organize it into a way that
+makes it make more sense
+we hope it's going to help everyone very
+cool so big advancements for CryEngine
+links in the description below yeah and
+thank you again for joining me my
+pleasure
+we'll see you all next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

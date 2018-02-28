@@ -1,0 +1,275 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>SLIFIRE: 390X + GTX 970 in DirectX 12 Benchmark | Gadgetory - Your Gadget Factory</title><meta content="SLIFIRE: 390X + GTX 970 in DirectX 12 Benchmark - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">SLIFIRE: 390X + GTX 970 in DirectX 12 Benchmark</li></ol></div><h2 class="post__title"><b>SLIFIRE: 390X + GTX 970 in DirectX 12 Benchmark</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/1Rl-nZ9tolA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">a new direct x12 benchmark allows
+explicit multi-gpu meaning that we can
+finally pair AMD and NVIDIA GPUs in the
+same system together or you can even
+pair non same cards from the same
+manufacturer so if you want to do a 970
+to 960 for some reason you could
+theoretically do that with DirectX 12 in
+games which support explicit multi-gpu
+functionality and the new ashes of
+singularity benchmark is as far as we're
+aware the first game to support
+officially explicit multi-gpu and that's
+what we're benchmarking here today we're
+looking exclusively at the feature of
+multi-gpu for things like a 390 x with a
+970 a bit odd but should be interesting
+970 s paired with one another in normal
+SLI versus that set up and then a couple
+of other things thrown in there as well
+as you'll see throughout the video now
+we're also doing a DirectX 11 vs.
+DirectX 12 benchmark which will look
+only at the DX 11 verse TX 12
+performance so we can see where do AMD
+and NVIDIA have their strengths and
+weaknesses and that will be in a
+separate video coming pretty much
+immediately after this one but for today
+we're looking at explicit multi-gpu when
+we say the word explicit for multi-gpu
+we mean that the developers have
+low-level access to the hardware and are
+able to better sort tasks so that vram
+and other resources never go unused
+this is contrary to DirectX 11 where the
+API overhead obfuscates low-level access
+and restricts developers in ways which
+have limited game graphics especially on
+multi-gpu platforms including the
+standard SLI and crossfire setups with
+explicit multi-gpu support the
+developers are able to use all the vram
+available from multiple devices
+something that historically has not been
+possible and they're even able to allow
+mixed card or mixed a brand
+configurations before diving deeper
+though it's worth pointing out a few key
+items here one mixed brand
+configurations for GPUs should likely be
+exceedingly rare so it's not necessarily
+a real-world use case or benchmark in
+that regard you wouldn't intentionally
+build a new PC and just decide to buy a
+fury ax and a 980 eye to use together
+it's kind of a weird thing to do so it'd
+be the type of thing that happens if you
+somehow ended up with a spare GPU from
+another vendor as
+great or something like that number two
+for this to build a PC intentionally in
+this way would actually be risky as the
+games would explicitly you have to
+support this kind of combination and
+they need to be dx12 enabled of course
+which is not that prevalent right now
+and it's unlikely that mixed brand
+configurations would often be tested so
+bugs and poor performance are probable
+in the future for dx12 games as for same
+brand configurations similar challenges
+apply but the use case is more likely
+and that a user may end up with for
+instance a gtx 960 and want to move to a
+970 or 970 you wanna move to a 980 TI
+and with dx12 you could actually keep
+the older card the lower end one and run
+them both at the same time just put the
+more powerful one in the top slot in the
+event you have to disable the second one
+for dx11 games or whatever and this
+works for AMD as well if you want to do
+a 390 X to a fury or something like that
+the same development support flaw exists
+but the use case is exceedingly more
+likely oxide games built ashes of
+singularity on their nitrous engine
+which they call a fourth generation
+engine and this takes a job based
+approach to task management within games
+so instead of doing something like cry
+engine does currently anyway which is
+basically spawn a thread for each
+different task one thread for rendering
+one for physics one for game logic one
+for AI or sound or whatever instead of
+taking that approach the job based
+approach instead just assigns tasks as
+they come in to all the threads as would
+make sense for whatever type of CPU
+you're using or API or whatever so in
+the case of nitrous and the new engine
+from oxide the DirectX 12 support
+basically uses this job based approach
+to send out all the jobs asynchronously
+to whatever device should be processing
+that particular job and by
+asynchronously I mean that basically
+it's sort of parallel processing within
+parallel processing so on a GPU you're
+already a parallel processing unit
+that's what a GPU does it can process
+multiple things simultaneously and
+that's why they're so powerful for
+things like graphics now with
+asynchronous processing the bottleneck
+the traditional bottleneck of sort of
+queue blocking within the GPU is
+eliminated and that's because even
+though a GPU might be a parallel
+processor it still builds up this queue
+things that indirect x11 anyway needs to
+execute in a certain order in order to
+get to the next task and that is removed
+with asynchronous processing and AMD
+uses their ACPs for this and that's been
+a particular talking point for Andy over
+the past few months as you've seen in
+some of our videos let's look at some of
+our initial limited benchmarks so we've
+run a few dozen tests over the past two
+days on ashes of singularity and many of
+these will be published in a separate
+dx11 versity x12 article and video and
+for now we're just looking at the one
+question which is what happens when you
+combine video cards of different make or
+model and different brands so what
+happens when we do these cross Brand
+configurations for example one of our
+tests was a 390 X with a 970 and we're
+here to look at that performance because
+the first time we've been able to
+actually do that in a game in a real
+world scenario because ashes of
+singularity supports MDA and Lda
+approaches to multi graphics we thought
+it'd be fun to test what happens when we
+use this MDA approach which is multi
+display adapter that means you eliminate
+the bridge and you in this case mix an D
+with Nvidia we used an SLI bridge for a
+normal GTX 970 s an SLI without going
+cross ground across model or anything
+like that and you can see all of those
+initial results here and video devices
+currently show almost no difference
+between DX 11 and DX 12 within ashes of
+singularity and that's something we
+currently suspect is attributable to a
+lack of driver support looking strictly
+at dx12 explicit multi-gpu functionality
+running a gtx 970 and an r9 390x in
+conjunction yields a pretty significant
+gain over just a standalone 390 X or
+even a standalone GTX 970 this is
+because the game is able to access
+features on both cards and utilize them
+more fully creating a sort of
+Frankenstein's monster version of the
+more familiar SLI and crossfire setups
+the average FPS for our 390 X plus 970
+config at 1080p and high settings with
+two tab MSAA you may know as 2x MSAA ran
+96.5 FPS on an impressive average frame
+time of just 10 point 3 6 milliseconds
+very consistent throughout the test and
+consistent enough that there's little
+visible tearing for the most part now
+with a single 970 or even SLI 1970s we
+did see pretty substantial tearing at
+times and that ties back into the driver
+issues when you're running an Nvidia
+device as a primary or SLI setup for the
+GPU the 390x stand-alone pushed sixty
+five point seven MPs average which is a
+thirty seven percent difference against
+the weird combo configuration we ran and
+a single GTX 970 runs at fifty point six
+five FPS presently about twenty six
+percent slower than the 390x and 62
+percent slower than the combo config SLI
+GTX 970 s were unimpressive at this time
+running only forty one point five
+percent faster than a single GTX 970
+and markedly slower than our unlikely
+and the Nvidia combo what you're looking
+at now aren't our charts but they're
+actually charts generated by ashes of
+singularity now these are specifically
+for the DX 11 bench that we ran the DX
+12 bench contains even more metrics and
+charts and the purpose of showing these
+on the screen is really just to
+demonstrate to you how truly
+overwhelming the data provided by ashes
+of singularity is it's a massive amount
+of data at times it felt more like data
+dredging rather than data analysis and
+there's a lot of crunching we still have
+to do for additional content for ashes
+over the next few days and for DX 12 and
+11 and all that so do stay tuned for
+that as for now looking at our own
+charts and data for explicit multi-gpu
+functionality we can definitively state
+that cross manufacturer GPU support is
+functional seems reasonably well
+supported by the nitrous game engine and
+is definitely an interesting item to
+look at for performance in the future
+now is it something you'll use as an end
+user is it an actual use case in the
+real world I don't really think so but
+it's certainly cool it's interesting and
+for those off cases where it is a use
+case where it will happen in real
+computers then well it looks like it's
+supported this is all very interesting
+though AMD presently holds a very clear
+advantage with DX 12 in this specific
+game I have not published any other game
+tests just yet but do stay tuned for
+those because that could be where it
+gets a bit more interesting between two
+manufacturers for now though for ashes
+of singularity specifically and these
+definitely got a lead in terms of
+the dx12 performance gains over dx11
+they've really shown their AC e ability
+here they're asynchronous compute engine
+is getting to stretch its legs of it
+finally with this better API and that
+means they're taking pretty big strides
+forward from their dx11 performance
+which is actually pretty pretty darn bad
+so the dx12 gap versus dx11 that delta
+for AMD is quite large
+whereas nvidia we're seen for the most
+part identical performance between 11
+and 12 and that's really just a lack of
+probably driver support right now we'd
+think for this particular game and we'll
+try and stay on top of that as things
+change but for the immediate future we
+are looking at a DX 12 with DX load and
+benchmark check back for that and as far
+as the asynchronous processing on multi
+GPUs that are not the same brand
+manufacturer it works it's kind of cool
+but what do you do with that information
+really other than its neat so that's all
+for this time if you like this type of
+coverage as always hit the patreon link
+official video hit that article in the
+description below if you want to read
+more about this benchmark to see more
+charts thank you for watching
+I'll see you all next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

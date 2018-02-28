@@ -1,0 +1,509 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Thermal Testing Challenges (Inspired by Bitwit) | Gadgetory - Your Gadget Factory</title><meta content="Thermal Testing Challenges (Inspired by Bitwit) - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Thermal Testing Challenges (Inspired by Bitwit)</li></ol></div><h2 class="post__title"><b>Thermal Testing Challenges (Inspired by Bitwit)</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/5zQwqAZ24bc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">everyone this video is meant to help out
+other content creators with their
+thermal testing and also explain to
+viewers why temperature testing with
+cases coolers GPUs is a lot more
+difficult than it seems on paper this
+idea came about when I was watching one
+of fit wits videos Kyle about CPU cooler
+orientation and it was a great idea
+we've tested in the past quite a long
+time ago at this point and Kyle had some
+interesting findings where he basically
+said that look here's the data I found
+but I don't necessarily understand why
+the numbers are the way they are because
+I didn't expect it to be that way and
+that approach just a briefly state here
+is perfect you can't get a better
+approach than that to science when
+you're saying look I've done the testing
+I've done due diligence to make sure it
+wasn't something weird as far as I know
+but I don't fully understand the results
+here's the data what do you think that's
+a great way to approach it because the
+other options are throughout the data
+what you don't want to do because there
+might be some really valid thing there
+that he's discovered that's not being
+discussed or of course presents it as
+hard fact which also you don't want to
+do is you don't naturally understand the
+data so the reason I bring this up is
+because I have gone through that so many
+times the last few years thermal testing
+up until maybe the last year and a half
+for us has been a major headache
+there was a full year where we stopped
+doing case reviews at all with thermals
+in them because we were having issues
+and then brought it all back after I was
+able to validate our new testing
+methodology in thermal chambers and
+really create some numbers that I
+finally trusted and that was a hard
+process to go through we've got videos
+detailing with thermal chambers we've
+got videos detailing our temperature
+measurements all that stuff but I want
+to go through some of the more gritty
+details today just as briefly as I can
+because this is a Sunday video for us
+which means I'm producing it myself the
+other two guys are off today before
+getting to that this is brought to you
+by our patreon backers thank you so
+those of you who support us you can go
+to patreon.com/crashcourse maxis to help
+out we've got a couple goals there we've
+reached one of the most immediate ones
+but we're pretty close to the next one
+so do check out the site if you want to
+help out Karen's Nexus net or
+patreon.com slash gamers Nexus and you
+can support us directly so before
+getting into the details here any
+content creators or anyone up-and-coming
+or established or whatever if you're
+using any of them at
+is that we talk about in this video you
+know give me a shout because this stop
+has been a long time in the making years
+and years of work to kind of slowly
+figure it out and it's expensive to do
+and sharing with competition obviously
+we keep some sub secret but I'll put a
+lot of it out there in this content just
+you know point folks are ways I would
+greatly appreciate that let's go over
+some of the stuff on a table we've got
+coolers that I've tested we have tools
+we have thermal paste and we have notes
+of huge issues I've run into the in the
+past that have invalidated data or
+caused major headaches that put us back
+weeks in production and it's all mostly
+figured out I won't put everything we do
+in this video because one obviously
+competitive reasons but two there's a
+lot to do so our tests are fully
+automated which helps the script is
+internal only but you could write your
+own script if you wanted to the test
+environment there's a few things that
+really matter here one is ambient
+temperature and we've talked about that
+in the past another one is the bios
+settings those are really critical
+probably more than any other single
+aspect of thermal testing so let's let's
+go with ambient temperature first room
+ambient you want to control the
+temperature in the room as much as
+possible if the thermal chamber is not
+available we don't have some a thermal
+chamber but we've validated in one so
+the methodology is known good and that's
+really all we needed for for this type
+of testing for room ambient just setting
+the thermostat is not good enough so if
+you set your thermostat to say 20
+Celsius which is about what ours is
+they're still going to be fluctuations
+and some of it could be from vents in
+the ceiling if a vent is directly over a
+test bench one day and you move it and
+it's not the next day that actually does
+have a big impact and too is ambient
+fluctuates of course because the things
+going to toggle on and off throughout
+the day whether it's heat or forced air
+or AC or whatever that impact seen and
+there's really only one good way to
+control for that which is going to be
+active logging of the ambient
+temperature so as we discussed before we
+use thermocouple readers there's a whole
+list of caveats with these as well I'm
+not going to go into these details from
+training but you use a thermocouple
+reader you log the ambient temperature
+ideally you also if do an internal
+testing like Kyle did with
+the internal case temperature as well
+and you do that on a second a second
+basis so the idea is to create a giant
+excel file and it's work but it's really
+accurate you create a big excel file one
+column is the ambient temperature you've
+logged other ambient temperatures or
+probes you blog go somewhere else and
+then you have your CPU column for either
+package Recor whatever metric that you
+trust from the software that's a whole
+different n2 so once you've created that
+you can create a delta value and this
+helps control for the fluctuation and
+ambience whatever is happening up there
+from the ceiling vents or floor vents or
+whatever you can control for that that
+helps but it doesn't fix all problems
+and there are plenty of things there
+that are not quite so straight board
+either but we did discuss that in one of
+our previous videos I'll put it in the
+description or something so a
+thermocouple readers help we use K types
+they have about a two point two degrees
+Celsius range if you're using multiples
+you will want to calibrate them put a
+nice water put it in boiling water see
+what the temperature difference is and
+then you create an offset in the
+spreadsheet and just make it build a
+template around that the next thing is
+really just bio so CPU the things that
+matter here when using an Intel CPU
+especially it's important to disable
+basically everything you disable see
+state store power saving states to see
+table a is T speed step speed shift
+anything like that disable turbo boost
+then lock the frequency to a fixed
+frequency for all cores and then lock
+the vcore as much as you can and
+motherboards do have variants here so
+the motherboard really matters a lot and
+we showed in our 7700 K review you can
+have a perks of 20 to 30 degrees Celsius
+swings
+if using Auto V core with different
+motherboards and even fixed v cores that
+you've configured so fix all the voltage
+settings you can for the CPU we do one
+point two eights or one point two seven
+five depending on what particular cooler
+and CPU and bench we're working with and
+that will fix almost all the problems
+immediately so the reason that is is
+because when you have a CPU an Intel CPU
+says I am going to boost as much as
+possible when the thermals allow and
+when voltage and power supplies allow so
+let's say the CP is boosting
+occasionally it will either have you
+might have the droop whether that's from
+your voltage and power supply chain or
+you could have just a frequency drop and
+voltage change up or down based on
+whatever's going on with the test
+process and of course AVX instructions
+also can really change things so make
+sure you understand what those are -
+that's using prime95 or something like
+that but with the voltage supply
+basically with the like with a gigabyte
+board we tested you can see the voltage
+go up to 1.4 and then fall to 1.28 and
+if it's doing that throughout a test
+process the temperature's going to be
+all over the place and if you're
+averaging over say a thousands of cells
+of data it's not it's just not going to
+be reliable and I can say that
+confidently because I've gone through
+that I know how difficult it is you're
+sitting there pulling you're in my case
+many hairs have wondering what the hell
+is going on why is this configuration
+that's clearly superior by all measures
+doing worse than this other one so like
+an example would be if you tested two
+same company products maybe a two eighty
+versus a you know 120 even or something
+like that if you see temperatures that
+are really closed or unreliable it's
+probably because of the accordant cpu
+setting so all that needs to be fixed or
+turned off and for anyone who says well
+as endless cpu is not a real-world
+scenario anywhere because now it's not
+out of box why would you test that way
+well the reason is with thermal testing
+we're not doing a CPU review so you
+don't care about how does the CPU do
+these functions all you care about is
+how do I make the CPU a steady-state how
+does it do one thing generate heat and
+do that one thing with exceptional
+accuracy and make it reproducible every
+single test the answer is turn all of
+that power saving off of the turbo
+boost and all that stuff off and fix
+vcore that fixes most problems next
+thing then so the fans of the bench
+whether it's open air or in a system
+they should be connected to power supply
+and it should be power sight with a
+voltage that you really trust because if
+there's fluctuations again if it's a
+cheapo power supply it might swing from
+something like 11 to 12 volts and that
+does
+the fan speed so that's important to
+know I don't trust the motherboards
+generally to control my fans for me some
+of them do it just fine but we've had
+too many issues in the past so I go
+straight to the power supply and what
+else can we do here
+software I buy I both note on the sheet
+software can't be trusted and it's true
+for a lot of things Andy for example if
+you're running AMD CPUs for your thermal
+benchmarks good luck because they use a
+different temperature scale t TTL and
+your temperature is with AMD for FX and
+FM CPUs it will look like it can idle
+below ambient that is impossible it is
+not physically possible to have a lower
+temperature than ambient with any of
+these coolers on the table weather well
+yeah any of these click on a table
+whether it's air or liquid and that's
+because the the temperature that is
+ultimately being pulled through the
+radiator is going to be the ambient
+temperature so it's impossible so if you
+see temperatures that when you produce a
+delta value are negative that means
+something went horribly wrong it could
+be a negative 0.5 and that might be a
+calibration thing with one of these or
+it could be negative 5 or negative 10
+and that's wrong it's not possible so
+that's that's an AMD thing and that's
+not just an abuse of software was then
+this might change but softer pulls data
+from sensors in the chip and you need to
+understand what values can you trust for
+example if kb lake it was it was kind of
+difficult with all the core temperatures
+and things the software didn't work
+quite the way it has in the past for the
+immediate versions anyway as they
+updated my change but for kb lake you
+want to use cpu package through hardware
+monitor because that's the same as x to
+you which is obviously trustworthy
+because in the intel utility so that
+matters make sure you understand which
+metric you're using and stick with it
+whether you're taking all four cores or
+whatever and averaging them or whether
+you're taking cpu package I don't use
+cores with KB Lake I you CP package from
+hardware monitor or from Ada and then
+just check it with XT you and make sure
+your state
+so that mostly covers software can't be
+trusted as my bullet points software is
+also really important though once you've
+got a base understanding of
+turn on logging run it for the entire
+task and generate logs for everything
+because it doesn't hurt to have more
+data so we generate logs for CPU
+frequency at CPU utilization I'm talking
+about this cooling testing obviously the
+core all the voltages all the power draw
+measurements sometimes it's accurate
+sometimes not depending on the software
+and the CPU and temperatures and then
+dump everything into a spreadsheet and
+the idea is when you do have one of
+those scenarios really like what the
+hell is going on here I don't get it you
+look through the vlogs and you can say
+oh what's why does the frequency just
+drop from 4.4 to 4.3 up cause so log
+files are critically important for that
+and there's a lot of other stuff I to
+kind of quickly go through the rest
+multiple tests in the same location with
+the same configuration are important so
+before embarking on any kind of cooler
+or thermal passing build the test
+platform change nothing after obviously
+finally setting changes nothing and run
+the same thermal benchmark whether using
+prime95 or whatever else you want to use
+ADA or any of those tools make sure the
+test runs are sufficient length to warm
+up and saturate the cooler and figure
+out where you're going to start
+averaging for the load and the idle
+temperatures and things like that and
+once you've run that test enough times
+look at the data and try and understand
+is it the same what is my variance and
+if you've got a variance of about a
+degree and you can't get any more
+accurate than that which is possible
+then it's time to add a little note to
+the charts and say my temperatures I
+have a variance of plus or minus 1
+degrees Celsius and so then you can say
+if we've got a cooler that's measuring
+at 51 versus another one at 52 they are
+effectively identical you cannot do any
+further validation to prove that one is
+better than the other and of course
+functionally the basically the same
+anyway even if those hard numbers are
+accurate but if you've got a 1 or - what
+plus 1 minus 1 degrees Celsius change
+then just I make a note of that of
+course hours of 0.5 or so after
+calibrating for the thermo
+and all of that stuff a test environment
+matters too so that would include things
+like thermal paste open versus closed
+there I'm not going to go into that
+today or the there's a couple other
+themes GPU load things like that so
+let's let's do kind of talk about go
+back to Kyle situation Kyle was testing
+in a system and he is using a utility
+that loads both the CPU the GPU and some
+of the memory as unit in heaven and so
+when you're doing that the the potential
+thing to look out for is GPU workload
+because now we could do all these
+controls I've already listed for the CPU
+but now if you're involving the GPU it
+gets a whole lot more complicated we
+don't involve GPUs for for cooler tests
+for his Testament but you have to
+control for one it's got to be the same
+video card so if you're changing coolers
+pick a reference board pull the
+reference cooler off put it on whatever
+you're testing use the same card and
+then you've also got to control for of
+course clock freak like the frequency
+you have to control for boosting if it's
+a Pascal cards the whole good luck
+that's a lot more difficult control for
+a voltage fan speed power draw and
+temperature thresholds and things like
+that I could impact performance ideally
+you fix the fan speed on the GPU ideally
+you fix all fan speeds which if I
+haven't mentioned it yet that's the next
+most important thing I have to CP
+voltages every fan you must have a fixed
+speed for no variants no smart CPU fan
+header no letting Windows or BIOS or the
+motherboard or a fan controller or the
+built-in software for the cooler try and
+control the fan speed that ruins
+everything you can do those tests
+separately but not for the main
+benchmark but back to Kyle stuff so GPU
+the back the GPU can radiate heat when
+we tested the EVGA cards for vrm
+temperatures we saw that we were able to
+get the backplate one card up to
+something like 130 Celsius when we
+really really really tortured it beyond
+any reasonable measure by dumping 40 or
+50 degrees Celsius air straight into the
+VRM fan from a liquid cooler so the
+point is the back of the GPU can radiate
+a lot of heat in the penny
+how're your coolers oriented that can
+impact the CP temperature now that's a
+valid test environment that's a valid
+thing to look for but you know it's got
+to be controlled and understood so the
+example would be if you are radiating
+Heat off the back the card and you flip
+the cooler so that it is now oriented
+this way it could be sucking hot air in
+through here and and that would actually
+increase your CPU temperatures because
+you're now just yeah I mean you're
+pushing more heat through the cooler and
+it's only got so much you can handle
+before it's kind of saturated so that's
+something to look out for basically
+control GPU and everything else with the
+system everything it's it's really
+annoying every single thing has to be
+fixed and you've gotta log it around the
+test a million times and make sure you
+understand the the variance for each
+particular component pretty annoying but
+great once it works thermal paste so we
+have their own pace from the same batch
+that we know same conductivity oh this
+is getting really really gritty not
+necessarily that important compared to
+all the rest because the variance is
+going to be small here but you know once
+you've already done all the other work
+for all this other stuff you might as
+well so we used with liquid coolers
+they're all paste applicators this makes
+sure that we've got a video on it when
+we apply the thermal compound to any
+liquid cooler it's exactly the same it's
+equivalent to coming straight out of a
+factory and then fixed application
+method for your air coolers is important
+as well and of course there's all kinds
+of oxide variables curing time
+technically pays can cure we don't
+really account for that that is one
+variable I don't care about right now
+because they're tested and it's not
+important versus all the other stuff to
+worry about I think about covers the
+basics anyone thinking about thermal
+cameras we've got a whole video on all
+the problems with using one of these
+they're great tools but they it's
+another thing that you got to understand
+what it's doing so I think that I think
+that goes through most of it I will add
+as many images and things as I can to
+this video as I said it's a Sunday video
+which means I'm producing it myself so
+hopefully just the knowledge will help
+if anyone out there finds this useful
+please
+if your content creator just you know
+let folks know that we we helped out
+because this has been many years in the
+making it's been very expensive to
+develop the methodology and sharing it
+is a you keep something secret but
+sharing this much if it's helped you
+please just let folks know and point
+them our way so thanks for watching if
+you have any questions
+I suppose submit them on the ask Jian
+video that check those every week
+tweeted us at gamers Nexus subscribe for
+more patreon link in the post roll video
+or at patreon.com slash gamers next to
+the scammers echoes botnet for the site
+I'll see you all next time
+you</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

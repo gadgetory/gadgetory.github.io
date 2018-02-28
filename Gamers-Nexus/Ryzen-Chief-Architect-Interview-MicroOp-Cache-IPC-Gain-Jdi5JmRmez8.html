@@ -1,0 +1,251 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Ryzen Chief Architect Interview: Micro-Op Cache &amp; IPC Gain | Gadgetory - Your Gadget Factory</title><meta content="Ryzen Chief Architect Interview: Micro-Op Cache &amp; IPC Gain - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Ryzen Chief Architect Interview: Micro-Op Cache &amp; IPC Gain</li></ol></div><h2 class="post__title"><b>Ryzen Chief Architect Interview: Micro-Op Cache &amp; IPC Gain</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/Jdi5JmRmez8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">this video is from our archives we
+interviewed two leading and the
+architects and CPU designers at the
+initial Rison press event that video
+disappeared under a pile of other work
+that we had to produce and we only just
+resurfaced the content the video walks
+through some key architectural elements
+of the Rison cpus and zen architecture
+so we'll let the two guests take it away
+and describe you op cache and other
+aspects of Rison enjoy this revisit -
+our archived content
+we're with Sam and Mike who Mike is the
+chief architect Sam as a corporate
+fellow at AMD
+hopefully we can get some more depth on
+rise in the architecture and how some of
+the lower level stuff works so that I
+suppose the first question that I had if
+you haven't read the article or seen the
+core video check that out first as I'll
+give you a primer but in that content
+we'll talk about something called micro
+app cache and this is one of the newer
+things that David Kanter spoke about in
+his microprocessor report you've spoken
+about on stage to us so could you
+provide a top-level overview what is
+this and then maybe go into more depth
+sure yeah one of the hardest problems in
+trying to build a high frequency x86
+processor is that the instructions are
+actually a variable length and so that
+means to fight to try to get a lot of
+them to dispatch in a wide form it's a
+serial process so to do that generally
+we've had to build deep pipelines very
+power-hungry to do that so what the we
+actually call it an op cache because it
+actually stores them in a more dense
+format than in the past but what it does
+is we haven't seen them once and we
+store them in this op cache with with
+those boundaries removed so when you
+find the first one you find all its
+neighbors with it and so that we can
+actually put them in that cache eight at
+a time so we can pull it out per cycle
+and we can actually cut two stages off
+that pipeline of trying to figure out
+the instructions so it gives us that
+double whammy of a power savings and a
+huge performance uplift so on the on the
+power saving side is there anything you
+could add about specific power saving
+steps you've taken with Rison
+cookie here alarm yeah well I mean Mike
+Mike mentioned the OP cast and that's
+one example of microarchitecture and
+power reductions working in to get a
+hand in hand right I mean the thing he
+didn't mention is that x86 decode the
+variable length instructions are very
+complex requires a ton of logic I mean
+guys make their career doing this sort
+of thing and and so you pump all these
+x86 instructions in there burns a lot of
+power to decode a mob and in our prior
+designs then every time you encounter
+that code loop you got to go do it again
+right you got this expensive logic block
+chunk going away now we just stuff those
+micro ops into the OP cache all the
+decoding done and the hit rate there is
+what it's really high it can be up to
+90% on allowing workload so that means
+we're only doing that heavyweight decode
+10% of the time so it's a big power
+saver which is great the other thing we
+we did you know one example that was on
+your slides is the write-back l1 cache
+so we aren't consistently pushing the
+data through to the l2 there are some
+simplifications if you do that but we
+added the complexity of a write back so
+now we keep stuff way more local right
+so we're not moving data around because
+I waste power and I can keep going you
+know one of the things that that I
+highlighted earlier today that I think
+is really cool is the effort the team
+put in to squeeze down the overhead
+power so in a CPU core I mean these
+things running over four gigahertz very
+hard to get the clocks out to all those
+billions of transistors with picosecond
+accuracy takes a lot of wires a lot of
+big drivers to do that in the silicon we
+invest a ton of engineering to optimize
+that down and cut 40% out of that clock
+Network and we'd worked really hard
+cutting the power out in prior
+generations but we got 40% more this
+time and we also optimize the sequential
+elements that move the data in between
+the logic they're kind of like the glue
+that holds the logic together we
+optimize the crap out of those things
+made them really small and power
+efficient and the net-net
+is that you know when you look at the
+power breakdown for the core there's you
+know most processors you got clock power
+you have sequential power and any
+a little bit that's the logic gates
+right the things do in actually work and
+what we did on this car is we grew that
+logic gate percentage by 35 percent
+right so now it's bigger than the other
+two overhead pieces so those are a
+couple of the things efficient micro
+architecture allocating more power to
+useful work and a bunch of other things
+I got all that IPC enhancement right so
+we talked 52 percent plus IPC a rule of
+thumb with experienced processor
+architects is that you pretty much pay
+1% power for 1% IPC if you work really
+hard at it it's easier to do a lot worse
+than that
+but if you give you know you push your
+designers you're gonna you're going to
+grow power as you push more instructions
+through the pipe makes sense right
+you're doing more work you're switching
+more gates eating more instructions
+running that decoder burns power but
+what we did here we burned no additional
+power for all that increased IPC that's
+that's a hell of an accomplishment and
+one thing you going back to what you
+were talking about with cache l1 cache I
+think you're talking about a right back
+versus right through which says from
+reading again Cantor's report that was
+one of the major changes with rise and
+it sounds like could you go into more
+detail about what the what sort of the
+specific meaning is of right back versus
+right through well so so on the write
+through cache your rights would both go
+into the l1 and then it would be
+propagated again in the structure to go
+into the l2 and so with the write back
+cache the write that the rights go into
+the l1 cache and they don't go into the
+l2 in the States maintained in the l1
+they may transfer the l2 once they're
+evicted from the cache but they're not
+kept updated in both places okay so you
+more back to everything else
+efficiency and power savings and things
+like that not moving the data till you
+absolutely have to you want to talk
+about the shadow tags too that's another
+yeah a little widget we put in there
+yeah the shadow tags was a nice
+optimization we have a victim cache for
+our l3 and so when a core misses in sl2
+it might miss in the l3 but it might be
+in another l2 cache local in the core so
+typically we would just probe all those
+to find it
+that causes some performance problems
+with bandwidth in the l2 and burns a lot
+of power so instead we built the shadow
+tags within the l3 macro and that lets
+us quickly know which one of the course
+the day is in and go get it and we also
+did in a unique way
+two-stage mechanism so that we can with
+a partial lookup we can know whether
+we're going to hit or not and only fire
+the second stage if we hit on the first
+stage and that lets us save about 75% of
+power than a equivalent implementation
+when it we can probe every one so it's
+pretty amazing right I've got a one more
+sort of higher the high level question
+to start with and we'll see see where it
+goes so talking about stages in a
+pipeline let's come up a few times here
+already
+as I understand it Rison is is it
+accurate to say somewhere around
+nineteen twenty stages in the energy
+paper we haven't really released that
+but it is shorter than our previous
+generation so what we can say that okay
+so yes I play every pipeline stage you
+know is more power for getting the same
+amount of work done now we typically do
+that to reach a higher frequency but if
+you can hit the same frequency with less
+pipeline stages you've won and to give
+perspective what sort of checks or what
+is happening within each stage generally
+as a concept well I mean the
+instructions go through a process of
+fetch you know we break the pipeline
+down into we have the branch predictor
+we have fetch
+we have decode we have execute and then
+we have and that's what there's both a
+floating-point integers or execute and
+load store kind of works in there all
+execution units and then a retire stage
+so we break those funds there those are
+functional blocks within the chip and
+they're all pipelines and they kind of
+feed the whole pipeline feeds that way
+and pipeline stages have direct
+correlation with frequency or way I mean
+the amount of work you know your
+frequency is up by how much work you can
+think it done per cycle you know and
+meet the frequency target and so yeah
+you try to get it you try to balance
+each stage of the pipeline to the same
+amount of work so you can get the
+highest frequency if one pipeline stage
+tries to do too much work it'll set the
+frequency for the whole chip and you'll
+kind of be an unbalanced design so we
+work very hard to make sure each
+pipeline say
+properly balanced throughout the design
+that's why it's in is very cool so for
+more information on then risin and the
+CPUs as we review them links in the
+description below as always thank you
+for joining me Sam my pleasure
+and Mike nice to meet you and we'll see
+you all next time
+you</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

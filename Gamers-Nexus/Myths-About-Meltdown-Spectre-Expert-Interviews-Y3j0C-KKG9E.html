@@ -1,0 +1,588 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Myths About Meltdown &amp; Spectre: Expert Interviews | Gadgetory - Your Gadget Factory</title><meta content="Myths About Meltdown &amp; Spectre: Expert Interviews - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Myths About Meltdown &amp; Spectre: Expert Interviews</li></ol></div><h2 class="post__title"><b>Myths About Meltdown &amp; Spectre: Expert Interviews</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/Y3j0C-KKG9E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">1995 is the year that the first
+vulnerable processors to the meltdown
+and specter attacks were created it's
+also the year that the discoverer or one
+of them of those attacks was born fast
+forward to today January 2018 and we
+have industry luminaries like linus
+torvalds not not not that linus no
+disrespect
+saying things like the intel patch for
+meltdown are quote complete and utter
+garbage probably while waving his middle
+finger around as he often does before
+that this video is brought to you by the
+gamers nexus at patreon and our patreon
+backers do you want to help us out
+directly you can go to
+patreon.com/scishow and check with the
+GN team or you can support us at $5 or
+higher and get access to behind the
+scenes videos as we release them once or
+twice a month
+learn more at the link in the
+description below it's been nearly a
+month since major news that broke on the
+meltdown and spectre exploits and the
+tech press along with all of the users
+in the space are still swarming like an
+upturned anthill trying to figure out
+what exactly is going on Intel is one of
+those ants they've released a couple of
+patches now some of which have actually
+been detrimental and they've had to
+recall them and AMD arm Apple pretty
+much everyone has put out some kind of
+patch Microsoft all of them because
+everyone at some level is affected by
+meltdown inspector basically anyone who
+is using out of order processing on
+their CPU which would include phones
+tablets laptops desktops servers
+anything you can think of the most part
+smartwatches as well I suppose so we
+wanted to come back to that topic and
+see where we are today now that it's
+been a month what's been going on what's
+the current state of things and in doing
+so we realized this is a pretty complex
+topic let's bring in some experts so we
+reached out to several of the
+researchers who were initially credited
+with the discovery of meltdown inspector
+and we greatly appreciate their time and
+responding to our questions to clarify
+how these exploits affect you and to
+what extent they
+have been addressed or resolved and
+where they are today so we'll be also
+addressing some misconceptions on
+specter and meltdown we basically said
+to the researchers here's your
+opportunity have you seen any commentary
+online that you find either mislead or
+misguided or inversely have you seen
+anything that's been left out of the
+discussion so we've got all that today
+along with a bit of a timeline for a
+preview of this we have a great quote
+from cyber s technology who stated to us
+with respect to Spectre it became
+obvious that CPU software aka micro code
+is not being developed with the same
+level of quality as the hardware at
+least at Intel so were you talking about
+that more as well we should start with
+some terminology here there's a common
+phrase that is used pertaining to
+meltdown and Spector and that phrase is
+a side channel attack which I'm going to
+read a definition from a brief by the
+European Union Agency for information
+security this brief says that a side
+channel attack is quote an exploit
+observable and measurable with
+computational side effects to extract
+infer otherwise unavailable secret
+information and data side channel
+attacks are well known to be used
+against cryptographic operations while
+addressing this term we should also
+address the idea of speculative
+execution this is something we discussed
+in our first meltdown inspector
+explanation video and it's worth coming
+back to because in speaking with the
+researchers we've learned that one of
+the biggest misconceptions that's been
+going around with all this is the idea
+of that speculative execution itself is
+the exploit or is the bad thing in all
+facts and reality speculative execution
+is what allows us with modern processors
+to achieve at the level of performance
+that we can achieve basically everyone
+uses it it inspector effects everything
+basically going back to 1995 so this is
+a big deal and speculative execution is
+in all those things because it's an
+accelerator it allow us CPUs to more or
+less step ahead of their current queue
+they can think ahead by looking at
+what's going on now what has gone
+in the past in this situation what do we
+think is going to happen next and then
+the CPU will try and predict or preempt
+as the key word is that next task it's
+possible that in doing so that next task
+never occurs it might be a wasted
+preemption step however the upside is
+significant and losing a couple of
+cycles every now and then because you
+predicted something incorrectly as the
+CPU is far less of a hit to performance
+than the gains because of how accurate
+it often is so speculative execution
+itself is actually a good thing
+Spectre is the specifically named attack
+that is sort of branded and leverages
+speculative execution as an entry or an
+attack vector to work its way into the
+data stream more or less which is where
+you get your exposure in terms of
+security vulnerabilities so difference
+there between spectre and speculative
+execution this has been around for more
+than 20 years and is why we see the
+attacks so wide reaching the most
+comprehensive hub of information on
+meltdown in Spectre is the website
+hosted by gratz University of Technology
+in Austria this is home to one of the
+research teams that discovered and
+reported the issues to Intel and that's
+one of because there are no fewer than
+three other teams acknowledged by grads
+in their independently discovered and
+reported vulnerabilities over the past
+few months we've assembled a rough
+timeline of events with the aid of some
+research from other outlets that you can
+find on our website linked in the
+description below in the article of this
+but for purposes of the video let's
+focus on the email exchanges with these
+researchers who are obviously experts in
+the field and some of the best people to
+talk to you right now about meltdown and
+Spectre first off we spoke with anders
+fogh of GData GData is one of the first
+if not the first firm to publicly talk
+about and draw attention to potential
+abuse of speculative execution as an
+attack vector they also have one of the
+more detailed and early blog posts about
+these attack vectors we further spoke
+with cyber s technology CTO Verner house
+and architect Thomas pressure we also
+spoke as Michael Schwartz of gratz
+University who discovered meltdown
+apparently separately from these others
+so multiple researchers at once working
+independently of one another coming to
+similar or the same conclusions and in
+our separate emails with them they all
+pretty much agree on what's going on
+the meltdown attack comm website that's
+widely sourced is from the team that
+Michael Schwartz is on so we've got his
+answers as well the questions and
+answers will be truncated for video you
+want to see the full questions and
+answers again article below we'll have
+them without any cuts at all we first
+asked whether Spector the exploit with
+the least public focus requires physical
+access to execute we read some early
+reports and user comments on videos that
+suggested Spector needed physical i/o
+access and all three research teams
+replied to tell us that no neither
+meltdown nor Spector required physical
+access to quote anders fogh of GData
+they are purely software that just
+utilized how the hardware works
+referring to the exploits house and
+pressure of cyber is explained to us
+that meltdown inspector only need code
+to execute on the victim machine but
+noted that physical access is not
+required
+Schwartz of Graz University reminded us
+that spectra can be mounted from
+JavaScript thus in the browser and
+therefore requires no physical access so
+in short no an attacker doesn't need
+physical access to your computer for
+spectre to work which is one of the main
+misconceptions that has been around
+regarding inspector the next question we
+asked whether Spector could be executed
+remotely so this would be for example
+via browser this is important because if
+it can execute through JavaScript
+JavaScript is everywhere basically every
+website you visit uses some amount of
+JavaScript for the most part especially
+anything with an ad network which is 90
+plus percent of the Internet so if it
+can be executed via browsers or hijacked
+ad networks it's a concern meltdown
+inspector have both been proven to work
+with JavaScript and a compromised
+website or a malicious website could
+therefore be used as an attack vector or
+a compromised ad network which is
+actually somewhat common so we wanted to
+ask about that GData tells us that that
+browse
+vendors have been made of aware of the
+attack and that many of them have
+already released updates so if your
+browser has recently received an
+annoying icon that says hey it's time to
+update it's time to update just you're
+gonna lose your tabs it's okay you'll
+get them back it's probably a good idea
+to update though it'll protect you later
+GData also noted that kpti or kernel
+page table isolation will work well
+against meltdown specifically from a
+browser and suggested using kpti and
+updating browsers where relevant for
+example with linux as your OS and g data
+also emphasized the following further
+current versions of Spectre and meltdown
+are members of the class of timing
+attacks other timing attacks have been
+shown to be launched a ball over the
+network even without JavaScript
+thus it is theoretically possible that
+we'll see such attacks in the future my
+personal opinion is that this is more
+likely to be an academic exercise than a
+real-world vector regarding the same
+question the group at Cypress replied
+and they stated similarly the good news
+is that browser vendors have already
+rolled out patches addressing the
+vulnerabilities and continued to state
+that an attacker needs good quality
+timing information in order to be able
+to detect traces of a misled speculative
+execution and caches so it sounds like
+this has been somewhat addressed with
+the browser updates now this is still a
+concern as we'll see going through all
+of this information but the immediate
+severity of it has been at least
+somewhat mitigated with the browser
+patches we haven't yet gotten to
+hardware level issues though and we'll
+get there as far as common
+misconceptions we asked the researchers
+what online commentary they'd seen that
+seems misguided or seem to misunderstand
+the core story here G data noted that
+speculative execution is used as an
+attack vector but in and of itself is
+not an attack something we clarified
+earlier G data also further emphasized
+that quote Specter style attacks can be
+launched without speculative execution
+but would usually require the presence
+of a classic software bug even in the
+absence of software bugs and speculative
+execution we can do scary things with
+side channels
+see the earlier side-channel definition
+for that house and pressure also
+highlighted that spectate of execution
+again as a standalone feature is not a
+bad thing nor is using cash both are
+required for modern-day performance that
+we see out of our CPUs doesn't matter if
+it's AMD in teller arm they all need
+those advantages to get the performance
+we see today they also need to
+essentially reaaargh attack for the
+future but we'll see where they go with
+that the Cypress team noted that quote
+requests for the replacement of all
+processors currently in use are unduly
+exaggerated and further stated having a
+vulnerable CPU does not imply that the
+system it can be readily compromised
+which is also a good bit of
+level-headedness injected it into the
+conversation so out of all this the good
+news from what the researchers tell us
+is that meltdown has very obvious
+changes that can be made and are being
+worked on at least for future
+architectures whether or not we can get
+them in today the other bit of good news
+is that these things can be made to
+resolve the problem at a hardware level
+and nip it in the bud so to speak and
+the researchers believe this will lead
+to future processors not being
+vulnerable to the same types of attacks
+we're seeing today and to be clear
+meltdown inspector don't really have any
+proven real-world attacks yet we know
+that it's possible to do them the
+researchers have all released their own
+proofs of concept or discussion
+conceptually of what can happen but
+whether or not specter meltdown have
+been used at a wide scale is either
+unknown or it just hasn't happened we're
+also told that the linux kpti and other
+patches are recommended as an effective
+protection against meltdown Spectre
+currently has stopgap solutions proposed
+and will likely require more testing and
+research to close up and then finally on
+the more negative side of things
+Schwartz highlighted for us that the
+specter and meltdown attacks can bypass
+sandboxing or virtualization so if you
+have JavaScript code from a browser or
+from a browser application that is
+usually contained within an isolated
+sandbox it is capable of breaking out of
+that sandbox and attacking the hosts
+this is the nature of the spectra and
+meltdown attacks so it does that by
+reaching outside of the sandbox and then
+if you have stuff going on in the rest
+of the machine you potentially grant
+code execution to untrusted code that's
+running through the browser or wherever
+its source is from so that's a bit of a
+concern but again this is under the
+attempt of being addressed with current
+patches to at least mitigate browser
+concerns via browser updates and then
+Microsoft has its own updates Linux has
+its kernel page table isolation so
+everyone's working on a solution as for
+potentially overlooked aspects of
+meltdown inspector GData noted that
+meltdown is quote surely the more
+dangerous one fortunately it is also the
+easier problem to fix spectre in my
+opinion will in variations be with us
+for a very long time but it'll probably
+lose importance with time as we figure
+out better approximations for a solution
+sigh Buress expressed disappointment and
+how little information has been revealed
+about low-level details for meltdown and
+noted a quote for example initially I
+postulated that presence in l1 would be
+required but now I am fairly confident
+that any memory location can be read the
+memory subsystem is rather opaque and it
+would be nice to have some insight this
+is probably irrelevant from a security
+perspective but it could help writing
+more efficient code they further stated
+with respect to Spector it became
+obvious that CPU architecture aka micro
+code is not being developed the same
+level of quality as the hardware at
+least at Intel what I find irritating is
+that enabling three new MSR capabilities
+related to branch prediction can trigger
+reboots
+ok I'm oversimplifying a bit they
+concluded with the public is left
+wondering about what is really going on
+which certainly does not increase my
+confidence in a solution so this is
+specifically referring to Intel's
+patches that they push recently where
+were some systems like Haswell and broad
+wealth systems were experiencing reboots
+or other instability in the environment
+and those patches at this point have
+been more or less recalled Intel has
+actually requested that their partners
+stop pushing them through official
+channels so that's where we stand within
+tiles
+patches for the time being as for wider
+reaching impact we queried GData about
+the extent to which AMD is affected
+because we know that intel is affected
+by meltdown we know that everyone's
+affected by Spectre but what is the
+impact of meltdown on AMD specifically
+so GData noted that AMD appears to be
+unaffected by meltdown and called
+meltdown the more severe of the two
+issues GData also noted that handy is
+affected by spectre and as our mobile
+devices arm and so forth but they
+further speculated that there likely
+isn't much difference in severity
+between Intel and AMD with regard to
+spectre specifically spectre isn't as
+bad as meltdown from what we've been
+told but can still fully expose higher
+privilege system memory and quote
+shouldn't be taken lightly as for
+responses to meltdown inspector coming
+to public the vendors had about two
+hundred days to respond to the attacks
+before researchers went public with
+their information thus far most vendors
+have shipped patches of various
+functional states some causing issues on
+specific CPUs but overall G data
+believes that the defenders did well in
+their reactions and emphasized the
+complexity of these decades-old issues
+some of the proposed changes constitute
+some of the biggest overall changes to
+operating systems in the last decade and
+they were pulled off in about six months
+which GData says is impressive and says
+I think there's room for improvement
+both for software fixes I'm actively
+researching this and hardware fixes in
+terms of security benefit and
+performance costs further stating as for
+intel's patches they certainly are not
+good solutions but it's probably all
+they can do it'll take time for CPUs to
+fully pass all these issues the only
+real solution is waiting for new
+architectures that all fully resolved
+things at least what we know of today
+and new things will arise as always CPUs
+take years to develop
+looking at long timelines 18 months for
+some of the recent CPUs and that gets
+even worse as you introduce new
+architectures or depart from existing
+architectures or rework existing designs
+to quote the GData group again they seem
+to think that the microcode updates
+we've seen from Intel are likely to be
+features meant for development being
+exposed
+to operating system vendors and used for
+something they were never meant to do so
+this is looking like at this point it's
+a matter of the hardware vendors and the
+OS or software vendors working together
+to try and piecemeal together a solution
+for the time being which is why you're
+gonna see some instability and some of
+those patches or some nebulous
+performance depend on what type of
+applications you use
+now speaking of performance we also
+asked the researchers about this and it
+seems the general belief is that
+performance impacts will not be
+significant or potentially even
+noticeable for the average consumer
+which seems reasonable but also noted
+that the high-end users which our
+interpretation here based on their
+response would be xoc type users anyone
+fighting for clocks and for higher
+scores to rank higher and competitive
+overclocking or anything like that
+those types of users may feel a bit of
+pain because they're obviously concerned
+that to some extent about security
+depending on what kind of environment
+you're in and then even more so about
+absolute speed so that's something to
+think about but in terms of overall
+performance penalty the biggest hit is
+going to come two specific types of the
+enterprise and data center applications
+which we're not covering today because
+that's not really our focus or core
+competency however from a consumer
+standpoint nothing to worry about too
+much then update all your browsers and
+everything else as soon as you can and
+then from a gaming standpoint you might
+lose some performance it just it's gonna
+depend on which CPU you're on and how it
+has been patched it's to deal with these
+issues so that's largely going to be a
+CPU dependent thin and it will depend a
+bit on the games as well so potentially
+some downside there though from what
+they're telling us but the big focus is
+on updating browsers so recap here
+there's no real evidence that these have
+been used in the wild to attack anyone
+yet and everyone's working together to
+try and fix it manufacturers have a lot
+more to worry about right now than
+consumers they're the ones you have to
+push out the patches you just download
+them obviously you want to get some that
+are stable though so you don't need to
+worry too much immediately but everyone
+is affected by specter Intel and the arm
+basically anything modern
+and Intel is primarily affected by
+meltdown with no real evidence that AMD
+has significant concerns regarding
+meltdown specifically software patches
+remain an effective stopgap solution
+until there are firm hardware solutions
+in the future looking a couple years out
+as we move to new architectures at which
+point the research to believe that this
+issue should be largely resolved for
+gamers and overclockers there might be a
+bit of a performance cost for the added
+security
+but Intel did have a 200 day grace
+period where they were alerted to
+meltdown and the public announcement
+came later along with some Paget so
+they're working on it but we'll see what
+happens as it's all ironed out what is
+embarrassing is that Intel has had a
+number of patches so far that I've
+proven just generally unstable if you
+have a has well abroad well system you
+might experience rebooting you should
+probably roll back your patches as for
+the answer of where are we now
+we're somewhere between the problem
+being revealed and a stable solution
+we're not quite there yet but we're also
+not left hopeless the progress being
+made is admirable thus far again these
+are major operating system overhauls in
+some cases especially with linux and
+they've been pulled off in a matter of
+six months as some of the biggest
+changes in a decade from what we've been
+to hold so that's a pretty massive
+achievement but there's still more work
+to be done
+so for consumers what you should do
+right now is update things as the
+updates roll out and if you experience
+instability contact whoever pushed the
+update and hopefully it'll get resolved
+with your reports but that's it for this
+one
+you can check the full article links in
+the description below if you want the
+full interviews without any truncation
+going on and as always subscribe for
+more you go to patreon.com/scishow
+sexist to help us out directly we're
+gonna store it gamers nexus net to pick
+of a shirt like this one I'll see you
+all next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

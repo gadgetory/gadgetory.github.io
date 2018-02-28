@@ -1,0 +1,305 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>DIY pfSense Rackmount Router Build Log - Part 1 | Gadgetory - Your Gadget Factory</title><meta content="DIY pfSense Rackmount Router Build Log - Part 1 - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1>Gadgetory</h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><h2 class="post__title"><b>DIY pfSense Rackmount Router Build Log - Part 1</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/RXvmKkhINQw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">all right so welcome to a pretty unusual
+build vlog around here we are gonna be
+building ourselves a badass new router
+yes we've got a wicked new internet
+connection we need a wicked new custom
+pfSense box to go with it so come along
+for the ride cuz this one I promise you
+is going to be interesting the
+mastercase 5 from Coolermaster gives you
+the freedom to truly make your mid tower
+case your own with modular parts and
+accessories click on the link in the
+video description to learn more you
+missed their lungs yeah first thing I
+need to do is follow my own rules about
+no garbage in the new office - next
+let's have a look at the hardware we're
+going to be using so step one is CPU
+we've got a low-power Intel Xeon CPU
+this is an e3 1260 L this is an Intel S
+1200 KP server board provided by
+Kingston we've got kind of a special
+stick of memory in here so this is a low
+profile
+ddr3 dent we've got a 1u server case so
+this is a rack mountable case that'll be
+going in our new cabinet from norcombe
+you could install up to I believe an ATX
+sized board in here if you really wanted
+to but we're just going to be installing
+an ITX board because we're going to be
+using this space over here for an
+expansion card
+yes it's an i3 4 TT 4 quad port network
+card and we're actually going to be
+installing that sideways we're also
+going to need this was provided by
+Anthony over at NCI XO huge thanks to
+the MC IX tech tips crew this is a PCI
+Express extension what else we got for
+hardware now yeah we're gonna be using
+an SSD yes I know pfsense can run off a
+USB stick I don't care the next this is
+a really cool piece of hardware it so
+this a 1u redundant power supply so each
+of these is an 80 plus gold 250 watt
+power supply and then you can actually
+slide these modules out
+last piece of hardware this is a Super
+Micro heatsink and that's another
+challenge in one you case you can't even
+use a stock Intel cooler you might be
+thinking to yourself gee Linus that
+doesn't have any fans on it how is it
+gonna cool the CPU great question I
+think this is definitely the most
+constrained case that I've ever worked
+in the part I was worried about was the
+clearance at the back now I already know
+about some challenges that I'm gonna
+have fitting our power supply in this
+case so the board goes in here you can
+see all of my ports stick through just
+fine but the case is actually shorter
+and if standard high household if I mark
+this really carefully I can basically
+just hack it off with a dremel tool aha
+I'm getting so much metal in my eye
+not too shabby I hope oh my way overdid
+it look at that so that is what its
+gonna look like okay so the next step is
+to get our CPU installed so the CPU
+we're using is 1260 L we could swap this
+out with relative ease if we needed a
+beefier router
+let's go ahead and install our back
+plate oh okay this chip on the back is
+interfering with our back place shoot
+and we're gonna need the angle grinder
+for this this is not a dremel task
+okay not bad at all
+just clean it off I might want to take
+that in a little bit tighter so there
+we've dug out a little bit more material
+still fairly strong I mean strong enough
+to hold a cooler on so uh yeah there we
+go
+we've got lots of clearance around the
+contacts for that chip there so
+orientation here is key
+because the air flow only goes one way
+so our CPU cooler needs to be you have
+got to be kidding me we are making
+contact with the pins and the fan header
+right there so the speakers okay but
+that fitness to the pins has to go this
+is intended to sit right flat against
+the back of the board but there's quite
+a few things on the back of this board
+we might just barely be able to screw
+into that back plate and then this
+corner yeah that goes in it's a fair bit
+of flex on the board but nothing deadly
+not a thing yeah I think we should just
+hack off the top of this speaker - it
+should be enough to get the job done I
+just don't want those pins to touch
+yeah take that speaker we've been at
+this for like an hour and we've
+installed an IO shield and install the
+CPU in a socket
+I haven't even managed to put a heatsink
+on hold thermal compound there let's put
+the backplate on again so if I could
+just get this on here then we're good
+okay
+no clearance issues this time not too
+shabby
+next step put motherboard in case so
+this heatsink basically sits millimeters
+from the top of the chassis
+meaning that you cannot install a fan on
+there most one you coolers are like side
+blowers you know we wanted to leave
+ourselves room for a beefier CPU in the
+future if we wanted it so that option
+was not going to work for us we're gonna
+have to be careful when we slide this on
+we gotta cover ok this is the next big
+challenge I had no idea that there even
+were standards for when you power
+supply's these two are not the same one
+the way that this goes in just has
+absolutely nothing to do with what the
+back of this power supply looks like
+that leaves me basically cutting the
+case to get this in here so I need to
+get this in here and I need to secure it
+somehow
+you know what let's just hot glue it in
+because I don't feel that comfortable
+drilling into the side of a power supply
+the last place you want metal shards
+okay
+go in go in push down cable management
+is gonna be key for achieving any kind
+of proper airflow in a system like this
+yep power LEDs great so this my friends
+is where we start to get into why it was
+important that we use this low profile
+ECC memory a full-height dim would
+pretty much block air flow to our fins
+now some boards have the dims this way
+this one does not so we have to deal
+with what we're given to work with here
+next up mounting the PCI Express card oh
+cool you can actually install it either
+way
+Wow I don't know if we're even gonna get
+a 4x extender in here our cable
+management is done so we have a nice
+clear path two of those so we have a
+nice clear path from our fans to
+everything here that needs to be cooled
+the heatsink on our NIC the heatsink on
+our CPU and all that's left to do let's
+close her up
+and find out how she runs now what I'm
+actually gonna do is put Windows on this
+machine first just so that I can use
+nice familiar testing tools in order to
+evaluate cooling because I am a little
+bit worried about this CPU
+so we were defeated we were defeated by
+a dead mother born but eBay to the
+rescue I can't say enough good things
+about eBay I ordered this motherboard a
+250 watt power supply and four gigs of
+RAM at least I cut the motherboard
+fortunately I didn't need that other
+crap so let's go ahead and rebuild the
+machine this time with a Oh working
+motherboard oh crap I can't even do it
+right the second time around let's try
+putting the actual cooler backplate on
+here I don't know how I missed this
+before but on the old board which
+fortunately we can now use as a tester
+for the additional cutting that it looks
+like we're gonna be doing there are a
+couple of components here that are
+clearly interfering with the backplate
+still so we actually need to do more
+backplate cutting so in theory this one
+actually fits on the board ok great it
+shouldn't be this much effort I build a
+router this is why most people probably
+buy order Nina have them at the store
+they have a whole aisle called routers
+ah alright and this speaker
+you know just rip this off this time
+that seems ill-advised on my working
+board doesn't it you could use the
+sacrificial board to find out if you can
+rip the speaker off okay you can't now
+we know we can use a dremel if I can
+find it oh yeah there it is sure there
+we go in theory we are ready let's sleep
+it's on nothing ever takes as long as
+it's supposed to okay that's in let's
+put our cable management nonsense back
+into place that's nice least I don't
+have to plan out the cable management
+anymore since I've already done it once
+there we go okay so that's good so in
+theory this time this stupid thing
+powers on come on baby please work what
+okay I'm at a total loss right now I'm
+not sure what just happened I have
+nothing to say at this point I I think
+something about our config just killed
+another board but I don't understand why
+that would happen because the only thing
+in here that I haven't run in this board
+before is a PCI Express riser and RAM
+which shouldn't make a board scream and
+then die it's unheard of but I think we
+just killed another board exact same
+behavior as last time we're getting
+beeps and then we stopped getting beeps
+our working hypothesis right now is that
+this is some kind of connector that I've
+never seen before and was actually
+providing power to the motherboard
+instead of acting as like an RPM sense
+or something so we're testing with the
+multimeter now we just bricked two
+boards time to order another one I guess
+sue tuned for part two so I learned a
+lot in this video you know what else I
+learned Squarespace their websites look
+better than me writing on a chalkboard
+yes my friends they do with Squarespace
+calm you can build yourself a beautiful
+functional website that serves whatever
+purpose it is that you're into you want
+to make a website about Luke having the
+best butt in the biz or how it doesn't
+you can do that you can make a blog you
+can make a personal portfolio you can
+make a hey you can make a store you can
+have a store where you sell you know
+license plate covers that say Luke has
+best but in biz or you know something
+people might actually want to buy say
+for example so head over to
+squarespace.com slash I think it's Linus
+I should know this kind of thing by now
+so head over to squarespace.com and if
+you guys use offer code line
+you can save 10% but you don't have to
+buy it upfront you guys can try it out
+for a couple weeks for free they do a
+free trial you can play around with
+their tools they've got 24/7 tech
+support so if you're having trouble
+building your site you can reach out to
+someone via email or a live chat and get
+them to help you out great stuff they've
+got all kinds of stuff that like I used
+to talk about but isn't in my talking
+points anymore but I still think is cool
+like their little logo builder app and
+they've got this really cool thing
+coming up that
+oh I guess I wasn't supposed to talk
+about that sorry sorry well whatever
+they're always developing their tools
+and making them better all the time so
+squarespace.com make a beautiful website
+all of your own alright so thanks for
+watching guys if you disliked this video
+as much as I disliked making it then
+press like also if you liked it press
+like and if you liked it then maybe
+you'll consider supporting us either by
+buying a cool t-shirt like this one
+directly through our community forum or
+by changing your Amazon bookmarks once
+our affiliate code you can find the
+instructions for how to do that up in
+the I in the top right corner I think
+that pretty much wraps it up though
+thanks again for watching and if you're
+wondering what to do next now that
+you've done all that stuff because you
+liked the video maybe check out channel
+super-fun where we've got a new video
+that just came out where we eat bugs
+it's gross but cool</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

@@ -1,0 +1,511 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Misleading FFXV Benchmark: GameWorks Object Improper Culling | Gadgetory - Your Gadget Factory</title><meta content="Misleading FFXV Benchmark: GameWorks Object Improper Culling - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Misleading FFXV Benchmark: GameWorks Object Improper Culling</li></ol></div><h2 class="post__title"><b>Misleading FFXV Benchmark: GameWorks Object Improper Culling</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/0eXbbh1f52I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">let me ask you something why do we need
+to render this or this or this or this
+or this tunnel or this piece of road or
+this large hairy animal this benchmark
+is rendering creatures that use hair
+works even when they're miles away from
+the character and the camera we
+discovered this while running benchmarks
+in a zone with no hair whatsoever zero
+none at which point we realized by
+accessing the game settings files via a
+hack that disabling hair works would
+still improve performance even when no
+hair works objects were on the screen
+before that this video is brought to you
+by thermal Grizzly makers of the
+conductor not liquid metal that we
+recently used to drop 20 degrees off of
+our temperatures thermal grizzly also
+makes traditional thermal compounds we
+use on top of the IHS like cryo not and
+hydro not pastes learn more at the link
+below so that was a cowl we showed you
+or something and it wasn't an accidental
+cow either
+that doesn't mean it's a malicious cow
+but it's not accidental we even found an
+LOD line drawn across the map where you
+can see the transition of details so
+Square Enix has marked this space as
+being clearly not visible to the player
+and yet still way beyond the boundaries
+of this line miles away we see the cows
+in full detail complete with fur there
+are also examples of : present in the
+game there are examples of selective
+removal of unseen objects there are
+examples of LOD scaling and yet here we
+are with our friends the hairy cows
+rendered in full detail this
+investigation derived from just an
+innocent game works benchmark when we
+found a guide online to disable various
+settings manually because the benchmark
+doesn't allow you to do that out of the
+box and what happened was we found that
+in our 90 second benchmark that we had
+been running for game works
+there was no instance of hair works in
+that 90 seconds it was cut intentionally
+that way because the next 30 seconds
+involved the hairy mammals in the game
+that used hair works so the idea was
+we'll benchmark all these other game
+work settings in the first 90 seconds
+and then we'll get the hair work stuff
+later what we found though was that when
+disabling hair works without ever
+encounter
+something that uses hair works we were
+still seeing a performance deficit on
+both nvidia and AMD cards it's actually
+quite significant
+even for nvidia they see frame time and
+consistency pop up from hair works being
+enabled when there's nothing with hair
+works being drawn i just really want to
+drive that point home so this is where
+it gets kind of interesting because it
+makes the benchmark disingenuous it's
+it's not really something we can base
+anything off of because it's not
+realistic to what the user is probably
+going to experience when the game
+launches and it's fun 100 gigabyte form
+what's more interesting is that the
+nvidia cards as expected have a hit of
+about 15% from hair works the AMD cards
+as expected have a hit of about 37% from
+hair works now it's expected because
+hair works is ultimately an nvidia thing
+they optimized for it they've had access
+to the game probably for longer at least
+closer access to it so not necessarily
+crazy what's crazy is that this is a
+technology not being used to enhance how
+the game looks in its present state in
+our current camera position and yet
+we're still seeing massive hits the
+extent of which is basically two acts on
+AMD hardware and the improper use of
+hair works and the improper culling of
+things that shouldn't be there isn't
+necessarily Nvidia's fault they're not
+the developers after all but they do
+have their name all over the box and the
+game so they have some level of
+responsibility here to ensure that
+things work we've been in contact with
+nvidia over this issue and know that the
+company is looking into it for now it
+seems like square-enix didn't add the
+buffalo to the list of things that
+should be occluded or removed and it's
+something which has detrimental
+performance impact we even validated
+that the grass is specifically using
+turf works just to make sure that hair
+works wasn't being used to make grass or
+something like that and the only thing
+that might use hair works would be the
+characters and we know that the
+characters aren't using hair works
+presently for two main reasons
+one there's no dynamic movement of the
+hair as the characters move and two by
+using Nvidia Ansel yes intentionally we
+actually intentionally used Ansel we can
+fly into the character's head and see
+that the hair is being drawn by using
+alpha textures the hair is attached to a
+plane
+the characters head similar to how
+leaves are attached to trees meanwhile
+looking inside the Buffalo we see the
+individual strands of hair protruding
+from the body clearly indicating hair
+works integration and indicating that
+it's even working we can toggle it on
+and off and see that there is a distinct
+difference in how the Buffalo looks with
+it toggled on and off via that settings
+file let's look at some charts for some
+basic examples before even getting into
+the details of the comparisons this
+chart of relative performance scaling
+with game works shows how AMD GPUs and
+NVIDIA GPUs are affected unequally by
+game work settings the Vega 56 card
+maintains 66.3% of baseline 100% of the
+gtx 1070 performance at 1080p high and
+when we completely disable game works
+something that typically is impossible
+while still maintaining equal graphics
+settings we see that the vega 56 card
+manages to maintain now 90% of the GTX
+10 70s performance hikes from a 66%
+baseline that's a massive gain and one
+that illustrates uneven performance
+scaling for perspective and video cards
+scale with one another almost one-to-one
+on this same chart as for what
+specifically causing the biggest
+performance hits that award goes to hair
+works the single disablement of which
+grants Vega a massive performance spike
+turf is the next most responsible and is
+what Square Enix is using for its grass
+technology as for a terrain tessellation
+our initial hypothesis for it was
+actually completely wrong because we had
+hypothesized that the tessellation of
+the ground was impacting performance the
+most noticeably potentially causing the
+biggest performance disparity for AMD
+who have historically had issues with a
+lot of tessellation although they've
+improved recently the reason that's
+wrong is because by disabling that we
+see very little difference in
+performance on a and the end Nvidia it's
+1 to 3 FPS different and it scales
+equally and linearly on both so when you
+disable it you can see the terrain kind
+of pushed down as the tessellated
+elements are pulled up so it's there and
+you can turn it on and off very clearly
+but it just doesn't impact performs like
+we thought it might now we would have
+never known that without the ability to
+change the graphics settings and that's
+entirely
+thanks to the users on reddit who made a
+utility that makes it pretty easy to
+change their settings so we thank you
+for that contribution it's very
+upsetting that Square Enix didn't
+provide something like that because the
+entire point of a benchmark is to allow
+people to rather transparently look at
+the game and figure out how it performs
+with different graphics hardware under
+different conditions not to produce a
+poison set of data that has users
+aggregate from all over the place with
+all different hardware configurations
+all different CPUs into one big pool of
+charts on their own Square Enix website
+which is completely invalid because
+there's zero control whatsoever and
+further not having the ability to change
+settings means that until we found this
+sort of exploit posted by others there's
+no way to know what's causing the
+performance disparities and that's
+really important because it's important
+to understand if it's something that can
+even be fixed when the game launches so
+anyway let's get to the FPS charts now
+that are building the relative charge
+this is the settings configuration we're
+using for the benchmarks
+we're toggling off game works under high
+and we're leaving the default options
+still enabled so basically when looking
+at the charts what you need to
+understand is that they are cumulative
+from a high baseline the high preset
+sets the game with all game works
+options enabled except for VX AO which
+is presently disabled them less manually
+enabled and it does work and the shadow
+library is also disabled so all the
+things you're going to see on the chart
+are the default all game works settings
+on except VX AO and shadow libraries and
+then disabling whatever the the test
+setting is for that line item on the
+chart even with game works completely
+disabled the Vega 56 card is offering at
+a 10% deficit to Nvidia that's not
+completely unreasonable just note that
+AMD is not free from anything here
+either they have some optimization work
+to do it's not all just Square Enix
+but AMD has drivers planned for closer
+to the game's launch so we'll revisit it
+then ultimately though the frame time
+performance is still undesirable under
+all settings for AMD even with game
+works completely disabled and AMD again
+should be addressing that closer to
+launch more importantly however
+the performance Delta between the
+various settings using just the native
+1080p high settings with our 90 second
+benchmark we recorded 38 FPS average
+across multiple runs disabling turf and
+hair works nearly doubled our framerate
+giving some perspective as to the
+perceived performance capabilities and
+we don't encounter flow very much on the
+benchmark till the very end so we can
+ignore that for now terrain tessellation
+also has much less impact than we
+expected and versus baseline Andy is
+gaining an insane 37 percent performance
+by disabling hair works but leaving all
+the other native gameworks technologies
+enabled and video meanwhile gains about
+15% from the same conditions and
+enabling vxa Oh shadow libraries things
+like that under the all game works on
+category shows that the devices take a
+further tumble but these settings appear
+to be disabled by default so as for the
+1070 then and videos handling of the
+same settings first note that we
+complained about frame times on both AMD
+and NVIDIA cards in our GPU benchmark
+showing that the company had trouble
+processing its own game works features
+without tripping over wide frame to
+frame intervals
+the result was occasional stutter and
+more disparate frame creation time we
+can finally illustrate this at baseline
+our 0.1% lows we're at 21 fps although
+higher than AMD's it's really not better
+in terms of average to low relative
+scaling disabling hair works
+specifically grants us a major uplift in
+frame time performance but just a
+moderate one in average FPS the average
+increases by 15% with a lows increasing
+by more than 2x game works seems to be
+hurting performance for no apparent gain
+here aside from some grass detail and in
+one location some hair detail and that's
+the big question here it's completely
+reasonable that gamers would worsen
+performance on even on video Hardware
+it's not like it's advertised as a free
+performance booster its advertises
+something to increase the apparent
+fidelity of the game and that costs
+resources so that's not the unreasonable
+part as a consumer however you should
+care about what you're getting for the
+technology and just looking at the
+benchmark which is not a full
+representation of the final game mind
+you but is being promoted as a
+futility and people are buying devices
+based on the results so that's what
+we're criticizing now so as a benchmark
+if you can enable these different game
+works technologies and let's just ignore
+the hair works magical cow that you
+can't see feign if you're enabling them
+and you can't really see a difference
+but there's still performance impact
+what are you doing why it's it's a
+completely invalid benchmark because you
+can't look at the numbers and this isn't
+sublime any particular party but you
+can't look at the numbers for something
+that gives you no settings control you
+can't disable those things unless you
+figure out how and no one ever expected
+that to happen and if you have no
+settings control and you can't disable
+things and you're forced to run on high
+settings or medium settings it's not
+knowing necessarily what those even do
+then you really don't have a good idea
+of what hardware's required to play the
+game and there's no actual visible
+advantage in a lot of the cases of this
+technology in the benchmark that might
+change it very well could ultimately
+this is a 3.7 gigabyte download against
+a game whose specifications call for a
+100 gigabyte plus harddrive it is very
+likely that none of these numbers will
+apply to the final game and if they do
+then that is indeed a very sad thing so
+let's just talk about a few places where
+we tried to find differences here hair
+works obviously is functional it's a
+little too functional because it's
+applying globally and you get the
+performance reduction everywhere but it
+is functional you can see it on the cow
+buffalo things tessellation however is
+seen at the beginning of the game for
+terrain tessellation you can see that
+Square is pushing down the road and
+pulling the rocks out as tessellated
+elements there's no big impact on
+performance at less than 2 FPS per card
+even on AMD so it's something that you
+can kind of see although it does go away
+later in the benchmark but we'll see how
+that acts in the final game
+either way though this is a setting that
+has some visual impact even if it's not
+really all that necessary but there's no
+real performance cost right now either
+we looked at grass as well this one's
+obvious they're taller blades and
+strands but they don't seem to conform
+to player movement to like in the
+promised tech demo
+maybe that'll come later either way it's
+denser strands which we think might be
+particle meshes and that's a versus
+textures for grass on the ground the
+result is that disabling turf works
+gives a patch your Balder look to the
+ground whether or not you think that's a
+good look or a bad look or worth the
+performance is entirely up to you
+although Nvidia users don't have as much
+to worry about we still plotted a six
+point five percent deficit on the 1074
+turf whereas AMD plotted a 12 percent
+performance deficit flow is visible at
+the very end of the benchmark where the
+campfire is lit up so that one does
+actually appear but it's not too common
+and other than that VX AO is presently
+disabled you can turn it on it's not
+really that visible of a difference
+unless you start zooming into things and
+the shadow libraries also take a bit of
+looking to really find the differences
+so at the end of all this there's
+rendering of unnecessary detail and
+that's problem for a benchmark because
+maybe the game ships like that maybe
+they ship a game that renders everything
+on the map when you're nowhere near it
+ok it's representative in that case and
+I apologize
+but I do implore you to revisit your
+development strategy that's probably not
+how it's going to work though so it's
+it's a useless benchmark in that regard
+it's also a disingenuous benchmark and
+misleading in the very least because
+what you end up with is charts that
+frankly make one vendor look a whole lot
+worse than the other where there is
+literally zero difference in what you
+see on the screen that is fact you can
+disable hair works you can enable hair
+works and if you're standing anywhere
+except for where the cows are maybe
+maybe one other place in the game but
+whatever it's a six-minute long
+benchmark stand anywhere else except for
+there you don't see the impact of hair
+works but you're taking a massive
+performance hit on the AMD cards and
+even a performance it down to Nvidia is
+just less so so just to kind of temper
+that a little bit that's not to say I'm
+videos being malicious but there is a
+problem where either square-enix or
+Nvidia or someone in between has a
+benchmark that is not representative of
+reality you're getting performance that
+doesn't match the visuals that are
+coming out of the screen so
+proud to say we found this bug ourselves
+you can find more information in the
+article below as always we've been
+working with Nvidia on this issue for a
+few days now and the company is working
+diligently with Square Enix in attempt
+to resolve the issue
+Nvidia didn't code the game but once
+again they've got game works branded all
+over it and considering how game works
+can be controversial it's in their best
+interest to work with Square to resolve
+this and to our understanding that's
+what's happening for now though this
+benchmark is not valid in our opinion
+and we will update you if and when that
+changes more likely that will be with
+the final release of the game not with
+the current benchmark so for a game that
+promises that it's a game based on
+reality maybe not so much but yeah
+that's that's how our discovery for this
+one so just to kind of reiterate here
+all the benchmarks we've done and
+everyone else has done on Final Fantasy
+15 are completely pointless because
+ultimately what you're dealing with is
+testing a benchmark utility that has
+things like random pieces of road weight
+way off in the map background being
+rendered any way that are impacting
+performance and yes they're being
+rendered no it's not ansel interfering
+with this or anything like that I mean
+you could you can fly on the map and see
+that Square Enix has LOD scaling lines
+drawn on the ground like lines in this
+head they have intentionally and
+selectively absent objects it's not like
+Ansel is reaching out into the game
+libraries and finding the exact object
+that was removed and pulling it in and
+putting it right where it belongs that's
+probably not that's almost certainly not
+happening so we're fairly confident that
+this is in fact an instance of overdraw
+or of elements being drawn when they
+really shouldn't be and that is at least
+that is well probably largely on Square
+Enix that said it's a benchmark utility
+that they clearly rushed and pushed out
+before it was ready and the game should
+hopefully be different so we'll revisit
+this topic then but for now just know
+that the benchmarks really they're valid
+insofar as the performance of the
+benchmark utility if you want to know
+how well you can run the benchmark
+utility we've got you covered not a good
+example though for how well you can run
+the final game particularly
+cuz you should probably be turning off
+gamer at settings that you don't
+actually see the effect of especially if
+you're on AMD hardware but even on
+NVIDIA hardware because again it's not
+just AMD here NVIDIA has a frame time
+hit for these settings too so you know
+turn those things off but you can't in
+the benchmark making it somewhat invalid
+anyway it's parked up benchmark utility
+we don't recommend it thank you for
+watching you can subscribe for more as
+always go to patreon.com/scishow and
+access to us that directly and to fund
+further swearing because that always
+brings up audience retention or we go to
+store that guarantees access dotnet
+slash mod matt to pick up a mat like
+this one they're on backorder now i'll
+see you all next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Real Computer vs Virtual Computer Performance Showdown | Gadgetory - Your Gadget Factory</title><meta content="Real Computer vs Virtual Computer Performance Showdown - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1>Gadgetory</h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><h2 class="post__title"><b>Real Computer vs Virtual Computer Performance Showdown</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/FvcxPufSRNo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">we've done a lot of content using lime
+text under a top rating system over the
+last little while some of it was focused
+on the safe redundant storage features
+of it like this one about repurposing
+older computer hardware to build a more
+robust Ness while some of it was more
+focused on the virtualization features
+of unread that allow multiple virtual
+computers we've demoed as many as seven
+discrete gaming rigs at a time to live
+on top of that safe redundant storage
+but while we've discussed how cool that
+is and demonstrated really strong
+performance with these VMs or virtual
+machines we haven't quantified
+apples-to-apples how they compare with
+running the operating system software
+directly on the hardware or the bare
+metal so let's do that today then shall
+we
+the gtx 980ti VR edition from EVGA
+provides an industry-leading graphics
+experience as well as a five and a
+quarter inch bay with easy access inputs
+for your VR device learn more at the
+link in the video description so I think
+we should open with a primer on what
+this word virtualization really means
+those of you who are intimately familiar
+with it can skip ahead because Tarun
+gave me a hard time after we filmed the
+pro Drupal your networking speed video
+about not really explaining what I was
+talking about now it's kind of like well
+it's kind of like SLI for networking and
+he's like well why didn't you just say
+that in the video so let's start with an
+analogy this is a gigabit network
+interface card or NIC it's physical
+because I can hold it in my hand and
+it's a network interface card because it
+connects whatever it's plugged into into
+a network and allows those two things to
+communicate or interface with each other
+at a speed of one gigabit or about a
+hundred and ten megabytes per second
+pretty straightforward a virtual NIC is
+inherently more abstract while it does
+still require some hardware I mean
+without a physical cable plugged into
+something it can't connect to a device
+outside of the machine on which it
+resides and in most cases it presents
+itself to the operating system as though
+it is a piece of hardware it's actually
+just some clever software pretending to
+be hardware which gives it some cool
+functionality not the least of which is
+that it is able to share its resources
+so back to our physical NIC again it's
+got that gigabit connection speed I
+talked about before well by creating two
+virtual NICs we can actually share that
+speed between virtual devices like I did
+in the gaming nas video where we had
+both a file server and the gaming
+machine using the same network
+connection so this is a very flexible
+solution because it means that either of
+these devices can use anywhere from 0
+all the way to 100% of the available
+resources sharing them dynamically and
+thanks to some really cool tech from
+Intel and AMD this can even be done on
+things like CPUs meaning that you can
+create entire virtual computers full of
+virtual devices that share physical
+resources with each other for better
+overall efficiency Poole Linus but what
+was up with that big asterisk a minute
+ago well the KDM kernel-based virtual
+machine project at Red Hat which is what
+on rate is using to power its
+virtualization is some pretty freakin
+impressive software but virtual devices
+do not have 100% of the performance of
+the physical devices because while the
+days of emulation that's a very slow way
+of doing this virtual device stuff are
+basically over there is still some
+overhead involved which thank you for
+your patience by the way brings us
+finally to the topic for today how much
+of our raw or bare metal performance are
+we giving up when we do a project like
+gaming nas or seven gamers one CPU so
+for this test I actually ended up using
+my personal rig because I had to work on
+it at home and I left my test bench at
+the office but the good news is that
+with it's 59 60 X rampage 5 extreme x99
+motherboard gtx 980ti and 64 gigs of
+Dominator memory my rig is pretty much
+the same as my usual test bench so I
+started then by establishing my baseline
+performance I ran my test suite with all
+eight cores active then I used the BIOS
+to turn off one of the physical cores on
+the CPU making it effectively a seven
+core this was done because for the best
+performance on on raid anyway in games
+it's best to leave a core aside for
+unread to use and give everything else
+to your virtual machine and while gaming
+actually didn't end up being affected
+negatively at all I mean these results
+are within my margin of error for these
+tests this was expected since games are
+not very CPU bound these days and the
+video card itself is actually passed
+through as
+a physical device to the virtual machine
+Cinebench also showed the same results
+our virtual 7 core and our bare metal 7
+core performed the same leaving the only
+tests that showed a dramatic difference
+being the synthetic memory and cache
+tests in AI 264 so depending on the
+workload it is possible that these extra
+nanoseconds of additional latency could
+be a problem but from looking at
+performance in consumer oriented
+workloads it seems like we are pretty
+darn close to a VM being a solid
+alternative to running straight on the
+hardware now then it's just got to get a
+little bit easier for everyday people to
+do because while some of the benefits
+virtualizing servers to consolidate
+functionality are more applicable to the
+data center there is some really cool
+stuff that I can envision for a consumer
+facing product like on raid as well with
+the gaming as we did a little while back
+being just the tip of the iceburg tunnel
+bear is the easy to use VPN app for
+mobile and desktop it lets you tunnel so
+to speak into up to 20 different
+countries allowing you to browse the
+internet and use online services as
+though you are in a different country so
+you know let's say for example you want
+to access a website that is blocked in
+your country or you want to access a
+service that is just plain not available
+in your country due to licensing or
+whatever else ha
+screw that because they've got apps for
+iOS Android PC and Mac and they also
+have a Chrome extension they're super
+easy to use just pick a country press
+the friendly-looking button and boom
+your connection gets encrypted which by
+the way tunnel bear doesn't actually log
+in any of your activity which is very
+cool and your public IP address gets
+switched so you show up as though you're
+in a different country and the best part
+of tunnel bear is that your first 500
+megabytes is absolutely free and after
+that the unlimited plans are very
+reasonably priced so check it out at the
+link in the video description and by the
+way you can save 10% by using that
+that's tunnel bear comm /l TT so thanks
+for watching guys if you dislike this
+video well you know where that button is
+but if it was awesome get subscribed hit
+that like button or even consider
+supporting us directly by using our
+affiliate code to shop an Amazon
+instructions up there by buying a cool
+shirt like this one or by joining our
+community forum you can answer people's
+questions you can get your questions
+about tech Anthony you can just hang out
+and chat now that you're done doing
+probably all of that stuff or at least
+some of it you're probably wondering
+what to watch next so click that little
+button in the top right corner to check
+out this video where I am doing
+something really cool or Luke is I'm not
+sure I don't know which video we're
+teasing</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

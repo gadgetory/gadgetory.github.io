@@ -1,0 +1,741 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Radeon Vega: FE Vcore Behemoth - VRM &amp; PCB Analysis | Gadgetory - Your Gadget Factory</title><meta content="Radeon Vega: FE Vcore Behemoth - VRM &amp; PCB Analysis - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Radeon Vega: FE Vcore Behemoth - VRM &amp; PCB Analysis</li></ol></div><h2 class="post__title"><b>Radeon Vega: FE Vcore Behemoth - VRM &amp; PCB Analysis</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/zeoiPVVUnl8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey guys build good here and today we're
+going to be taking a look at the Vega
+frontier edition PCV and this thing
+packs the most powerful V core vrm I
+have ever seen on a reference card so
+we'll just start right off with that
+before that this coverage is brought to
+you by the core g21 enclosure from
+thermal take a $70 case with two four
+millimeters thick tempered glass side
+panels mesh ventilation in the front for
+breathability a rarity in cases these
+days and a power supply shroud with top
+mounted SSD sleds learn more at the link
+in the description below the VMO
+monstrosity is this giant l-shaped block
+around the card around the court and
+this L shape is actually like it looks
+really weird because we've never seen as
+far as I know I've never seen this on a
+another card but this actually is the
+optimum vrm layout for any scenario
+obviously it isn't very popular on GPUs
+because generally you don't want your
+GPU being you know really really tall
+but the reason why this is the optimal
+layout and why I am be used it is
+basically the distance from any of your
+actual phases to the GPU core because
+that's what it's powering this brick
+right here that's the GPU core these two
+down here are the HBM sacks but this vrm
+is pumping current into this block right
+here and so the closer it can be to that
+the less voltage drop you suffer which
+ever so slightly improves your
+efficiency and it also slightly improves
+voltage regulation because you have less
+propagation delay from basically the
+core to the VRM so this does have
+benefits they are very very minor though
+that's why it's you know it's like it
+doesn't matter a ton really the really
+user to hit diminishing returns on like
+high-end cards where they have the
+massive power planes going through the
+of through the PCB anyway where this
+would be more like where you'd really
+start seeing a difference is when you
+have vrm layouts which are really unab
+simal right like this might be the
+optimal layout but the difference
+between this and something less than
+ideal is not that bad
+well less than this is not that bad the
+difference between well cars where
+you'll see this actually be a major
+problem is dual GPU cards because
+they're the you basically end up with a
+situation where having massive power
+planes is just not an option because you
+need to fix so much stuff on those cards
+that you actually see voltage drop a cup
+from the vrm to the GPU core you know as
+high as fifty to even a hundred
+millivolts under load which is crazy so
+like your erm will be be putting out 1.3
+volts by the time it hits the GPU core
+you're only getting 1.2 here you'll
+basically have like this phase right
+here would fit at 1.2 and by the time it
+gets to the GPU core you'd be at like
+1.19 alright oops one too many ones but
+you'd be at like one point one nine
+volts so this is definitely like the
+perfect play how forever erm but it
+won't really like you know it's cool
+that it that AMD opposite for it it's
+cool that it's possible thanks to the
+HBM ultimately it won't probably matter
+that much but I did feel like pointing
+it out since it does explain why am he
+actually sort of went for this l-shaped
+because you know it's like why wouldn't
+they just use all of this empty space
+over here well they put the fan over
+there and this layout is actually just
+straight-up better than trying to put
+you know multiple than trying to cram a
+16 phase DRM into this area so yeah
+that's kind of cool now let's talk
+actual details on on this erm why it's
+so powerful not you know funky layout
+obviously doesn't mean it's capable it's
+a one two three four five six seven
+eight nine ten eleven twelve phase vrm
+design so naturally it's obviously
+running a doubling scheme as you can't
+buy a twelve phase voltage controller
+which we need to go on the back of the
+card to check that out
+the voltage controller is this chip
+right over here and that is a eye are
+three five two one seven I currently do
+not have a datasheet for this thing as
+it seems to be so new that you can't
+look it up I don't think it's a rebrand
+or anything it is from the IR through is
+thirty five to
+100-series but yeah I can't get a
+datasheet for it right now
+so there is a 35 201 no 211 there's a
+201 there's also there's a bunch of
+other 35 200 series tips I'm assuming
+this is going to be just another one of
+those 30 well this has to be a six phase
+voltage controller just because we have
+one two three four five six
+these are IR there oops that's a be IR
+3598 but nonetheless this is just you
+know it's going to be a six plus
+something voltage controller because it
+also controls the HBM vrm down here
+which we have one driver I see right
+there
+but this is a 35 200 series chip so it's
+going to it should do the usual 200
+kilohertz to 2 megahertz switching
+frequency range not that the upper - you
+know the upper limits of that switching
+frequency range really aren't useful
+even here with the doubling scheme you
+could actually go all the way up to 2
+megahertz without having this erm catch
+on fire for you but the problem is as
+you really push the switching frequency
+on vrm their efficiency just goes down
+the drain
+most MOSFETs are basically not designed
+to function above 1 megahertz anyway
+the ones on used on this card they will
+function above 1 megahertz switching
+frequency the IR 3598 can actually push
+more than 1 megahertz switching
+frequency output so you can push 2
+megahertz into them but the problem is
+your efficiency is going to be really
+really bad so really that upper limit
+does not matter though pushing this up
+to say 1 megahertz switching frequency
+might see some benefit but with this
+being a 12 phase and with the decoupling
+job that AMD does on these high-end HBM
+cards I mean this is ceramic capacitor
+city this is more like just ridiculous
+amount of by decoupling capacitors right
+there and then we have high-end just
+these are SMD polymers these things are
+literally the best option
+for vrm capacitors and these are 470
+micro farad so the chances of this vrm
+needing more phases just to get stable
+voltage regulation very very low I I'm
+gonna when I get my card I'm going to
+still try attach even more capacitors to
+it but I really doubt I will see any
+benefits and E is generally really
+really good about getting ridiculously
+stable voltage regulation on their
+reference cards and this just looking at
+the design we have here the you know the
+IARC voltage controller which
+incidentally this thing is digital so it
+will support software voltage control
+and then the IR 3598 doublers these are
+not any and they don't have any advanced
+features but they do interleave your two
+phases so this does run cleaner than a
+native six phase and the six days on the
+fury X was excellent and you know it was
+smaller so this is even a step up from
+the fury X erm it's pretty much double
+what the fury ax came with so voltage
+regulation wise nothing to worry about
+really like it doesn't get better this
+is very much like this this vrm in terms
+of control scheme excluding the fact
+that this uses a different voltage
+controller is exactly the same as what
+you would find on a 290x lightning for
+the vcore so I can't find any complaints
+to to have about the control scheme
+except you know maybe they could have
+gone for the 16 phase but that would
+kind of get really excessive that phase
+count is really rare for a reason it's
+generally pretty impractical so back on
+the front of the PCB let's talk actual
+power capabilities so the control of the
+VRM is good there's nothing to complain
+about there now the actual power
+capabilities each phase has a single low
+side mosa and a single high side MOSFET
+the low side set is IMD's favorite IRS
+68 94 this is a international rectifier
+direct FET it is really easy to
+recognize these because they have the
+metal casing
+this helps with thermal dissipation as
+well as all well basically it's mostly a
+thermal dissipation thing these things
+are not cheap actually
+they come in well over air off the top
+of my head they're around 1.2 euros per
+thousand according to international
+rectifier zone website now the IR now
+the high side MOSFET is the usual IRF
+just because if you have a 68 94 this
+one always cut goes with it it's a 68 11
+and that is also a direct fat much
+smaller though and worse thermal
+handling capabilities but nonetheless
+this combination of MOSFETs are like
+this is the same you would find on a
+290x lightning and with each with two
+well with this set of MOSFETs in each
+phase this VR I'm assuming in operating
+conditions of 1.2 volts output 12 volts
+input obviously it's in a it's powered
+by an ATX PSU 300 kilohertz switching
+frequency and 5 volts gate drive which
+the 5 volts gate drive is very very
+unlikely on this card it might even be
+using 12 volts gate drive I am Not sure
+these MOSFETs can certainly run on 12
+volts however the thing is 5 volts gate
+drive is the minimum operating voltage
+for these MOSFETs well really is 4.5 but
+4.5 volts to 5 volts it's the same thing
+so I'm using the 5 volts gate drive
+voltage because I without the card in
+hand I can't check what the actual gate
+drive voltage is and this will give you
+the worst current handling capability
+figures for this erm 300 kilohertz
+switching frequency on the actual phases
+themselves I'm assuming based off of the
+fact that a.m. these past cards we're
+running 300 kilohertz switching
+frequencies so that would be 600
+kilohertz on the controller there's a
+pretty good chance that the actual phase
+switching frequency is even lower than
+what I'm using here so I feel pretty
+safe in saying that any current figures
+I writ list as well as he outputs are
+worst case scenario certainly they're
+not going to be driving the MOSFETs as
+it's 5 volts that's no AMD card ever has
+driven with 5 volts they usually drive
+with 7 or 10 so yeah let's get into the
+current figure so 200 amps which I don't
+think the card will actually run on 200
+amps just because we're looking at a 300
+watt TDP and HBM does
+not use a lot of power nor do any of the
+other systems on the card 200 amps we're
+going to be looking at around 23 watts
+of heat output and on the MOSFETs not
+inductors and capacitors included just
+the MOSFETs will put out about 23 while
+so heat output so that's the thing then
+300 amps you're looking at 43 watts of
+heat output now this I would say is
+slightly above what the card will
+normally use unless the card spends most
+of its sitting most of its time sitting
+at around one volt
+I haven't yet gotten my card I can't do
+checks on how the card runs under
+typical loading
+I generally when I do these analyses I
+like to run with numbers from cards with
+no power limit because then they don't
+change their voltage on the fly making
+it really easy to predict how they'll
+behave when you really really crank up
+the voltage instead of trying to figure
+out what the actual peak current rod
+that is like because basically if the
+card is power throttling right it'll
+drop the voltage it'll drop the clock
+but your current will still be up which
+is why it's still bouncing off the power
+limit and then if the current drops down
+it'll pull up the voltage and it'll pull
+up the clock because you're pulling less
+current but effectively your power draw
+is still the same but if I kept the
+voltage high and I didn't drop the
+clocks because the power limit was
+listed then your current would generally
+just shoot through the roof so I'm not
+currently sure how much power you would
+need for overclocking because
+overclocking you're obviously going to
+do everything in your power to reduce
+any kind of power based throttling or
+temperature based startling and so as of
+right now I don't have data on how much
+power this erm will actually have some
+handle when overclocked certainly for
+stock power consumption this thing is
+ridiculous overkill let's keep going up
+the current figures so 400 amps the CRM
+will put out 66 watts of heat that is
+starting to get into the problematic
+area the CRM is pretty spread out as you
+can clearly see a good amount of surface
+area on it so it's it's going to be you
+know it's not going to be the hardest
+thing ever to cool but sixty-six watts
+of heat is a good amount like that's a
+lot of heat so I know if you're
+hammering this card the arm temperature
+is our going to be work like you should
+keep an eye on them however the mall
+sets themselves can actually do 400 amps
+of current even at temperatures as high
+as 3 138 degrees centigrade so
+everything else on the vrm will complain
+at that point your your capacitors
+definitely capacitors generally don't
+come in ratings above 105 some of them
+comment 1 125 degrees rating but those
+are really really rare 125 degrees it's
+still less than 138 so the MOSFETs won't
+die if you run them really really haul
+everything else on the vrm will however
+suffer reduced significantly introduced
+lifespans so yeah in our short-term
+operation at very high like very high
+current load loads possible not
+recommended depends really on your VR
+I'm cooling the arm can go higher 500
+amps you're going to be looking at about
+92 watts of heat output and it can still
+go further as the I'm assuming that like
+in this is assuming you can keep the vrm
+at 125 degrees as MOSFETs do basically
+as long as you're not hitting the
+thermal Junction max of the MOSFETs you
+can keep watching more current once they
+exceed thermal Junction max they'll
+thermal runaway and blow themselves to
+pieces but if you can keep the vrm at
+125 degrees even with the 92 watt heat
+output then 500 amps you can totally
+push that through it as well in fact you
+can go all the way up to 700 amps
+however at that point it'll put out the
+same amount of power as ACE was a GPU so
+this is basically it'll handle it in
+short-term bursts the heat output at
+those kinds of current levels is so high
+you're not going to be able to cool it
+however the good news is basically that
+this vrm right here is certainly very
+very capable in fact the mosfet
+selection the driving setup and
+everything but the voltage controller
+here and the inductors and the capacitor
+selection is the same as what you would
+find on a 290x lightning so power wise
+this VRM is on par with high-end custom
+GPUs of a few years ago so yeah it is by
+far the most powerful vrm we've ever
+seen like ever on a reference card
+this makes the GTX 480 SVR M look like a
+bad joke and the GTX 480 would be the
+only card I can think of that should be
+in the same kind of current levels
+because the GTX 480 came at extremely
+low stock halted due to its ridiculous
+power draw
+but yeah this erm is just like it's a
+thing of beauty but the side effect is
+that leaves the question of does this
+card really need 12 phases or is AMD
+just being very generous you know if we
+judge based on the length of our X 480
+where the vrm was ridiculous overkill on
+the reference card like it wasn't
+exactly power efficient the MOSFETs
+really weren't the best for power
+efficiency but they were very very
+capable MOSFETs that card had a really
+liked that card out of VR I'm capable of
+delivering two to three times its stock
+power draw I will stall current
+consumption and what we're looking at
+here is you know it's really really is a
+really nice vrm the question is does the
+card pull so much power at stock that
+this is actually necessary or is md just
+doing what they did on the 480 where the
+stock we are I'm was like you could take
+a 480 in max like a reference 480 and
+max it out on liquid nitrogen and the
+vrm would not be the problem you've run
+into so that is the that is the question
+I'm still left wondering is just like I
+mean on one hand AMD does have a history
+of putting really nice crm designs on
+their cards even the fury acts it's like
+one point four volts the RM handles it
+no problem even the cooler on the fury
+ax will actually deal with one point 4
+volts and more I've just not been brave
+enough to go higher yet but yeah it's
+just this is like this is literally
+twice the fury axis erm so does it run
+twice as much power at stalk as a fury
+ax
+I mean twice as much current at stalk or
+you know I mean it is $1,000 cards so
+maybe AMD just went the extra step and
+actually gave us a vrm that's worth a
+damn but kind of concerning kind of
+concerning and leaves a lot of questions
+to still answer at least for me now then
+let's move on to the minor vrm then when
+I say minor I mean less than one twelfth
+of what the main vrm is this right here
+is the HBM vrm it is a significant
+downgrade compared to the recurve erm
+it's a single phase we just have one
+choke here and that power is in both of
+the memory stacks and it uses a on
+semiconductor dual and fat this thing is
+nothing amazing it's a for cat6 and
+that's not the full model number but if
+you put that into google it'll find it
+or into on semiconductors website it'll
+find it so that's a dual line fat so
+basically the high side MOSFET and the
+low side MOSFET are integrated into the
+chip this thing is not that great the
+end result is that the CRM can do 10
+amps at about 2 watts of heat output on
+the MOSFET 20 amps at about 4 watts of
+heat output which incidentally assuming
+one well again I'm assuming these
+operating specs for that MOSFET down
+here and the reason I'm assuming that
+1.2 volts not a higher voltage is
+because HBM at least by SK Hynix spec is
+meant to run on 1.2 volts now in the
+past on the fury axe AMD was running 1.3
+volts through the HBM but without a card
+in hand to check I have no idea what
+they're actually running it on I'm going
+to assume that this time around the HP
+m2 is actually working properly I hope I
+really really hope that at this point
+they can run the freaking memory at
+voltage spec voltage instead of over
+voltage just to hit the stock frequency
+that it's supposed to do and I'm
+assuming they're going to run 1.2 volts
+300 kilohertz 5 volts gate drive again
+so assuming those settings this 20 amp
+figure 4 was heat output is actually 85%
+efficiency which is just cool because it
+confirms for me that my calculate V RM
+calculation matches exactly the
+calculation that they have on the
+datasheet well more or less exactly it's
+about 85% for both my calculator and
+there and the datasheet so 20 amps 4
+watts and then 30 amps you're looking at
+7 watts
+now I'm not going to go into any higher
+current figures because really the HBM
+on stock voltage should only be pulling
+between 10 and 2
+I think around 16 maybe 17 amps on stock
+settings so it really doesn't need a lot
+of power and that's why we're looking at
+such a really small vrm so you know like
+such a small vrm for it now then moving
+on to the remaining minor rails we have
+the well these three guys over here and
+these are three different voltages I
+don't know which one is which I'm not
+sure how much any of these voltages pull
+the datasheet for this these MOSFETs is
+horrific ly useless in that it only
+gives me ambient temperature is ax am be
+like ambient air temperature ambient air
+thermal resistance which is useless for
+a GPU with a heatsink on the V R M that
+is the main problem it's like where like
+that 125 C figure right here that's
+MOSFET like if you put a thermocouple on
+top of the MOSFET that's the temp if
+that's the temperature of the MOSFET
+then this is how much current you can
+push through it before it starts to go
+you know thermal runaway on you
+obviously if the temperature goes up by
+one degree then you've just exceeded
+your current limit and bam it goes
+thermal runaway on you anyway but if you
+put a thermocouple on there this is the
+temperature that you'll measure and
+these are the current levels it'll do
+assuming you can keep it at that
+temperature the problem is I don't have
+the thermal resistance figure for these
+for case temperature so basically you
+put a thermocouple on these and I can't
+tell you anything about what they should
+handle ambient air temperature figures
+like I don't know what kind of actual
+operating temperature the MOSFETs will
+hit but it looks like from the datasheet
+any of these should be able to handle
+about 10 amps these are all dual n sets
+again and the voltages they're producing
+are going to be VDD C I so that's the
+memory controller on the AMD GPUs which
+if you notice compared to gddr5 AMD GPUs
+the VDD see i've vr m being one of these
+three is actually a huge difference
+because EDD CI on say something like a
+rx 480 is actually very similar to this
+so it's about twice to three times as
+powerful as what you're getting right
+here for
+DCI because the big difference with HBM
+you know you don't save that much power
+on the HBM own voltage it's not that
+different from gddr5 where there is a
+huge difference is the memory controller
+the memory controller for HBM is way
+wave mate way more power efficient and
+the end result is that we have a really
+really pathetic little VD DCI vrm as
+well as well it's not pathetic it's just
+you know reasonably sized now so you
+have a much smaller VDD see I've erm
+compared to what you would see on a lot
+of other cards now under well the other
+voltage these we'll be doing is VPP so
+this is a supporting voltage for the HBM
+gddr5 x also has a VPP rail basically
+this is a voltage that used to be
+internal to gddr5 ddr3 and all of that
+well ddr4 gddr5 acts I imagine whatever
+comes after gddr5 x h PM h vm - all of
+these have an external VPP and this was
+done because it improves memory power
+efficiency it used to be that the
+voltage would be created on inside the
+actual memory chips themselves here it's
+made external because this is the more
+power efficient way to generate it and
+then finally the third one of these will
+be the display drive ole tidge which I
+don't have a nice shortcut for so I'm
+just going to call it disp and that's
+basically that powers the some of the
+GPUs internal PLL's as well as the
+display outputs this voltage is very
+very useful when push when pushing AMD
+cards on liquid nitrogen because AMD
+cards on the quad nitrogen have a
+tendency to lose their display outputs
+as in your monitor will just go black
+the cards still running the display
+outputs just drop out and this happens
+specifically under load when pushing
+very high core voltages at very low
+temperatures the display just stops
+working for whatever reason and you can
+fix it by bumping up the display output
+voltage as that circuitry either gets
+too cold or power starved or something
+happens to it and it starts complaining
+so yeah but none of these voltages are
+well I think what man may or may not
+have VDD CI voltage control currently
+available VPP and v disp this one
+basically does nothing for overclocking
+this one is only relevant on liquid
+night
+neither of those going to be available
+in software so you don't have to worry
+about those really and yeah so that
+covers all the VRMs um you know vcore
+vrm could not like lovely i love it
+it could not be well i it could be even
+bigger but at that point i'd really
+start questioning like is AMD just like
+gonna start making extreme overclocking
+cards out of the box making all the non
+reference designs completely pointless
+or even worse because that's actually
+happened is like AMD's reference 7 970
+PTV was just so nice and expensive i
+guess that there was 7 1970s we've
+downgraded p cds in fact there's RX for
+80s with downgraded p cds so you know
+it's like it's somebody like on nvidia
+side it's like oh yeah we don't want the
+reference card it's awful on AMD side
+it's like sometimes the reference card
+is actually the best and you know that
+that's kind of starting to get ridicule
+so weak or vrm I really like I have no
+complaints about what I'm seeing so far
+I'm just hoping that it's not indicative
+of some ridiculous stock current
+consumption the HBM vrm it is a single
+phase and I will complain about that
+because the like I'd like to see a
+two-phase I it's just the HBM on the
+fury X I know that ran stock HBM over
+volted and it was just like you know
+generally a mess but that that card
+benefits from extra capacitors on the
+HBM vrm which basically tells you it
+should have had an extra phase because
+the voltage isn't stable enough on a
+single phase but here we do have a we do
+have a single phase and it really like
+it really depends I'm going to go and
+test if you know I'm going to obviously
+test if this single phase is enough I'm
+hoping it is but judging from the fury X
+it might not be so it's just going to
+throw that out there and then the minor
+ones is like you can't control VPP I
+don't care about even as an extreme
+overclockers I just don't care MIDI DC I
+really shouldn't pull enough power to be
+concerning and V this but never does
+that one has been
+10-amp basically can amp fully like
+fully integrated but converter chip for
+ages and ages and ages and it's never
+actually pulled the 10 amps and it's
+basically completely irrelevant for
+everything except liquid nitrogen
+overclocking so the are my is the card
+is fine
+now let's look at some of the cool
+features that this also comes with this
+right here is a dual BIOS which which is
+standard for all high-end AMD reference
+cards you'd find this on a7 970 I think
+even by 5 7 nope 580 70 doesn't have it
+but 6 970 yeah 69 70 has had it to 7-9
+70s had it - 90 - 90 s - 90s - 90 X's
+had it
+fury axes have it Vega now has it so you
+know bring that on I love BIOS modding
+and the BIOS which is really nice I just
+hope there's not going to be any more
+BIOS bio signature checks in the driver
+because that is those always just you
+know rain on your parade but it is nice
+that you at least get dual BIOS the boss
+there's one BIOS chip right here there's
+another one on the back of the card
+right on the basically mirrored with the
+BIOS chip on the front except tweaked by
+a little bit on the angle and then the
+last cool feature that has is the GPU
+tachometer right here which is basically
+a strip of LEDs it's I think it's really
+cool a lot of people think it's useless
+fluff like all the other RGB we see
+these days but this is actually useful
+because this delivers you know it's not
+system critical information like voltage
+or temperature but it's really useful
+for debug like figuring out what's wrong
+with like a crossfire setup because it
+will show you if you LPS is enabled it
+will show you if the cards aren't being
+loaded up properly and that's about it
+really it'll pretty much tell you it's
+like are the cards running the way they
+should be because this does indicate GPU
+load so very nice for you know if if
+you're running if you're doing what I do
+this comes in handy every so often which
+is a lot better than most of the RGB
+stuff where it's like oh like yeah it
+looks nice and also the cool thing is
+which a lot of people on the fury cards
+weren't aware of there's a
+little switch right here this is a
+two-channel dip switch you can change
+the color on the fury axes this was red
+in blue
+I assume it's red and blue again I would
+hope that it would have been blue in
+yellow because the card is blue and
+yellow and that would be
+color-coordinated but I'm going to just
+guess that it's blue and red anyway but
+you can turn change the color of the
+LEDs and you can completely turn them
+off using that switch so that's it for
+this video you know I hope you found it
+informative you can leave a comment down
+below if you have any thoughts or
+questions to share you can like the
+video if you like to dislike it if you
+disliked it please consider donating to
+the gamers Nexus patreon if you would
+like to see us do you know if you would
+like to support what we do here if you
+would like to see more content like this
+and more overclocking videos then I have
+a channel called actually hardcore
+overclocking you can go watch all kinds
+of hardcore overclocking related stuff
+like liquid nitrogen overclocking that
+kind of thing over there that's it for
+this video thank you for watching and
+see you next time
+you</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

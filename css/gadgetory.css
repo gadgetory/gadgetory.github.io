@@ -2,6 +2,13 @@
   margin: 0 auto;
 }
 
+.breadcrumb {
+  background-color: transparent;
+  background-color: #555;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .index__channel {
   background-repeat-x: no-repeat;
   background-repeat-y: repeat;

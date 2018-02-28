@@ -1,0 +1,345 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Primitive Discarding in Vega: Mike Mantor Interview | Gadgetory - Your Gadget Factory</title><meta content="Primitive Discarding in Vega: Mike Mantor Interview - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Primitive Discarding in Vega: Mike Mantor Interview</li></ol></div><h2 class="post__title"><b>Primitive Discarding in Vega: Mike Mantor Interview</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/XC5Dy_b-kE8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey everyone we are at the AMD event for
+RX Vega and thread Ripper modeled some
+WX stuff as well
+I enjoyed by mic mentor who is a
+corporate fellow at Andy Mike works a
+lot on the architecture side of things
+so very knowledgeable on actual GPU
+low-level architecture we're gonna be
+focusing on one topic today which is a
+primitive discard and kollene before
+getting to that this content is brought
+to you by the Thermaltake flow RGB
+closed-loop liquid cooler which is a 360
+millimeter
+radiator plus 3 120 fans that are RGB
+eliminated if then we'll take it ring
+fans at that this is a 4.5 done 8 attack
+pump which is one of the faster problems
+you can learn more at the link in the
+description below so the first question
+I guess is what is the small primitives
+this Carter or what do we need to know
+about the basics before diving into it
+let's just talk about the basics at the
+high level right when an application
+sends or renders objects every object
+has characteristics a model is built for
+an object that's then rendered into a 3d
+scene and an object is usually modeled
+as a complete object so no matter how
+you're viewing it where it is in your
+field of view the representations there
+and these models move around and view
+space and the graphics processor
+processes the triangles of the process
+or the of the objects that are in the in
+the field of view and decides whether or
+not they're visible and so one of the
+first things that happen when we run and
+are we draw an object is we we do run a
+shader sooner or later that processing
+the vertices and creates vertex
+positions in a common view space and
+part of the state data that defines the
+common view space is a view frustum
+that's to decide whether or not the
+triangles or the triangles of an object
+the primitives of an object are actually
+within the view or outside of the view
+so you can think if if objects are
+completely outside view there's no
+reason to sum down the graphics pipeline
+in many times applications do the
+first-level process of culling before
+the object is ever even sent to the GPU
+or they may send that
+a course for representation of the
+geometry which is just a few triangles
+to query the GP whether or not objects
+even in the view if it's not in the view
+there's no reason to send it to the
+rasterizer
+if you can predetermine that and if it's
+a very complex object instead of taking
+the time to render it you send down a
+bunch of bounding volumes find out
+whether or not each object is visible or
+might be visible in some way right so
+when the object comes to the graphics
+pipe and we do the position processing
+you can think that there's different
+kind of columns so part of the object
+might be outside of my field of view and
+part of the triangles are gone the
+backside of the objects made up of
+triangles too that are not visible or
+viewable and then obviously you can have
+an object that's in space such that part
+of the triangles far away and when it
+projects in the screen space to become
+very small triangles the front-facing
+one so I really described three
+different scenarios there were I maybe
+outside of the view frustum the triangle
+might be back faced or the triangle
+somehow in screen space can become very
+small and so for most content that comes
+to the GPU we see on average more than
+50% of the triangles that come down the
+pipeline are still in a place where they
+don't need to be rendered meaning we
+don't need to scan convert them and
+process them in the earlier that we can
+determine that the triangles out of the
+view frustum the triangles back place
+cold or the triangle is too small to hit
+any samples when you go to render it the
+quicker we can remove any effect of that
+triangle from the rendering process
+serum your immediate goal is reducing
+the load on I guess overall pipelines to
+get stuff out of the way that doesn't
+need to be there is you can free up
+resources for other tasks yeah and just
+unnecessary work so in the ships that
+we've been building for a while now we
+have a vertex process that runs and it
+could either be a domain shader or could
+actually be a vertex shader it could be
+a vertex process on the output of a
+geometry shader that's doing
+amplification or decimation and at that
+point when you finally have
+the final position of the vertices of
+the triangle is is one point where we
+can always find out whether or not the
+triangle is is inside of the frustum
+back faced or too small to hit and from
+up from a frustum testing you know
+there's a mathematical way to figure out
+whether or not a vertex is inside of you
+for us from and if any one of the
+vertices are inside the view frustum
+then we'll know that that triangle could
+potentially create pixels to do a back
+face culling perspective you can find
+two edges so with the three vertices you
+can find a one edge in a second edge and
+then you can take a cross product of
+that and determine the face it does up
+the triangle and you can then top
+product that with the eye rate and if
+it's a positive result then it's facing
+in the direction of the view and if it's
+negative it's a back face triangle and
+you don't need to do it now geometry can
+be defined with two sided geometry one
+sided geometry so state data goes in to
+whether or not you can opportunistically
+throw a triangle way so you can be
+rendering something where you can
+actually fly inside of an object can see
+the interior of it and then when you
+come outside you can see it from down
+side in in those cases you can't do back
+face culling and then the last one is
+really a zero area triangle in depend on
+how fine-grained you're sampling is you
+know it become less and less if that
+zero area as and effectively zero
+visibility because it's just that small
+is that it's just that small in screen
+space and you can determine that it's
+not going to invoke any sample in the
+sampling process say you're looking at
+something between samples that you're
+taking getting rid of that can not touch
+genetics because it isn't touching
+example sine across the pending samples
+and again it's a test and as we've
+talked today a bit about our premise
+Reiter which i think is what kind of
+been folks some of this discussion
+correct is that when we tradition have
+done a vertex shader we we do position
+and then we do attribute calculation
+which is per vertex data and after we've
+produced a
+per vertex data to be used in an
+interpolation process for how to be data
+to go into a pixel shader we have to
+store that that attribute data in a
+place that can be accessed when we're
+launching pixel shaders and so in the
+Vega architecture one of the challenges
+that we set out to take care of is that
+when we want to increase our efficiency
+which we operate work so we looked at
+one of the places that we could make an
+improvement in the latest architectures
+is to be able to discard primitives
+before we store the attribute data so
+that our storage in between the vertex
+processing and the pixel processing can
+be more effective at storing data that's
+really going to be needed for pixel
+shaders that are going to be launched so
+I guess if you're looking at this in
+terms of a canonical view of the render
+pipeline this type of calling happens
+essentially in one of the first stages
+it sounds like the the culling without a
+prim trader happens after all vertex
+shading which means we've already
+created that attitude data we go in the
+prim shader we can do it before we can
+do the position process and then if we
+can create a prim traitor we can have
+access to three vertices of a prim or
+two or one depending what kind of
+primitive you are and do the culling
+process and then conditionally do the
+attribute processing in the writing of
+the attribute data so one of the
+advantages of this new primitive
+processing is that you can remove the
+geometry before any attribute data is
+stored and before any day to go any
+primitive data it gets into the pipeline
+and once you put primitive into the
+pipeline some more later it potentially
+takes a clock cycle to take it out and
+discard it so if we can discard it
+before you send it down the river
+deliver doesn't have it in there Yeah
+right and what about for differences
+with Vega specifically versus previous
+architectures you've worked on are there
+any major milestones and changes like
+it's what grim shaders the big one I've
+been talking about but if we look back
+at Fiji for example are there any major
+differences there that are of note for
+Vega oh yes as we talk to this in the
+releases
+you raise so as we talked about the
+optimizations that we did to increase
+the frequency are a big challenge so in
+the same process is the Polaris class of
+GPUs um we've uplifted the frequency you
+know kind of a minimum of 400 megahertz
+yeah crouching 1700 is Oh actually
+exceeding 1700 so we're saying we can
+run at least 1700 and depending on the
+product defined the the device is
+capable and will burst up above 1700 so
+when you're pulling the object the
+primitives out of the pipeline earlier
+it sounds like if I understand sounds
+like you're saving potentially on a lost
+cycle because you're removing it before
+it's ever consumes the cycle and then is
+there an effect to memory bandwidth as
+well or anything else outside of cycles
+oh yes there can be so a lot of times
+you know I use the example the cup and
+you got a bunch of back face triangles
+on the backside so usually when we call
+a primitively
+we can call a group of primitives that
+are interconnected away which means then
+there's certain vertices that will not
+need attribute processing at all and
+after me processing involves touching
+per vertex attribute data from memory in
+to the shader and then doing some kind
+of calculations in it to prepare it for
+use in shading or at least position it
+in the on chip storage for use for that
+so if if I were doing my cup for
+instance and if I send this down the
+pipeline I don't do any back base
+calling for the triangles on the
+backside all of these vertices making up
+the primitives back there will have to
+fetch our attribute data when really all
+we needed what's visible on the front
+side of things what what sort of
+resource gets used on the GPU and you're
+fetching has that data what's being
+engaged the whole cache hierarchy and
+the memory pins right so we already do
+vertex for use in most cases so each
+vertex is only fashion and data once and
+then when you reference it from that
+one patch in other words a vertex can
+bring in cache lines neighboring
+vertices if they happen to be co-located
+and memory can find their data in cache
+lines but the whole cache hierarchy into
+the shade array the shaders doing that
+the per vertex any kind of calculations
+you have to do and then storing the data
+off into internal storage in the chip
+it's it's an interesting amount of
+circuitry that's engaged in what is
+there an average a percentage of objects
+that you're able to call yeah I think is
+a very when we first started talking to
+you that roughly in most scenes that we
+look at greater than 50% of the
+triangles are called which kind of makes
+sense just when we look at the object
+perspective right half of an object is
+usually visible another half but it can
+vary quite greatly right just depending
+on the scene in geometry sometimes it
+can be as high as 80 to 90 percent and I
+guess the the process sounds like that
+you're stepping through the process of
+figuring out which items to call in a
+way that theoretically there should be
+no visible impact to the what the user
+seen in other words you're not like
+reducing the geometric complexity by for
+the visible geometric complexity by
+difference no it's only it's not a
+change in the complexity of anything
+need to do in every sample or pixel you
+know so anything that the rasterizer is
+going to sample is not discarded so it's
+all very conservative discard in
+actually that's very important that you
+can only Dischord the things that have
+no impact to the scene right
+for focus are Vega epi coverage energy
+was one of the applications that really
+saw a massive output and performance
+versus previous architectures - this is
+just the mental what you're doing as
+always yes
+any other major items of note here you
+want to go over before we close out from
+I think that that does it hopefully this
+helps so you and your readers understand
+well thank you Mike I appreciate it
+thank you thank you all for watching as
+always you can subscribe for more links
+in the description below for more
+information or if you want
+transcriptions of some of the
+us to make it a bit easier to consume
+I'll see you all next time
+we had a Sam Knapp stick around
+previously and there's someone the
+taunts making some of the corporate
+fellow title like they just thought it
+they thought it meant some kind of like
+marketing executive like oh no like much
+different yeah</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Star Citizen - Electronic Warfare, Espionage, &amp; Tech Interview w\/ Chris Roberts | Gadgetory - Your Gadget Factory</title><meta content="Star Citizen - Electronic Warfare, Espionage, &amp; Tech Interview w\/ Chris Roberts - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Star Citizen - Electronic Warfare, Espionage, &amp; Tech Interview w\/ Chris Roberts</li></ol></div><h2 class="post__title"><b>Star Citizen - Electronic Warfare, Espionage, &amp; Tech Interview w\/ Chris Roberts</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/zLB0HwsPn9k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey everyone this is steve from gamers
+nexus Donna and I am joined by chris
+Roberts once again and we are talking
+about some of the community questions
+that you all submitted so today we're
+going through a couple reddit post and
+some posts from our own users that look
+at things like the x12 and mantle and
+the back end and that a couple of
+specific gameplay elements with the
+technical stuff we spoke previously last
+year at PAX East about the server
+back-end and a couple of how you're
+dealing with nodes and things like that
+to handle latency how is that coming
+along whether your plans are keeping
+clients in sync well we're looking out
+and I mean that's actually one of the
+big reasons why we sort of push back the
+dogfighting module and it's one of the
+big reasons why it's not going to be out
+right after pax is because we want to
+get the system right and beyond the
+proper services that the actual game is
+going to be on so it's a fairly
+complicated system for thing that we're
+trying to build to handle as many users
+and so it has lots of different levels
+so you know like a on a on a simplistic
+level because each most of the service
+levels have multiple servers handling
+different aspects of it you know there's
+going to be sort of three levels one the
+universe level which is if you think of
+the universe server which is actually
+gonna be a cluster of service but let's
+just say the University of it it holds
+all basically all the players and what
+they have and then sort of general
+status you know likes dislikes and
+general location and then the next level
+down is what we call the system servers
+which is basically a server that sort of
+handling the system star system part so
+star system part would basically be in
+charge of all the players that will be
+in that star system
+and matchmaking them when they sort of
+cross each other's paths and when
+there's player crosses each other's path
+to get handed off to the local instant
+server and that's where any sort of you
+know like flying around combat all that
+kind of stuff first-person combat
+whatever would all be resolved on an
+instant server so sort of goes universe
+the system to instance and it sort of
+hands it off and so a lot of handshaking
+handing off and tracking which is kind
+of even though we don't have star
+systems of all the rest of stuff we're
+using a bunch of those servers in the
+back end of the dogfight it sounds like
+a lot of that is custom outside that's
+all I mean all the back all the back end
+there's nothing to do with grey yeah so
+the back end is all completely new on
+our side on the CryEngine side there's
+some low-level network transmission
+stuff that's actually fine so we use
+that but basically the whole server in
+terms of all the structure I talked
+about is completely new and custom and
+it's thinking with technical aspects for
+a second you worked with AMD a while ago
+it I wanted their own Vale events was
+that at Montreal no no no was in Hawaii
+that's right so Montreal was it it was
+an nvidia event so sorry Andy so that
+was for the Hawaii garden update and
+they were pushing mantle pretty heavily
+at the time you said you were planning
+to use it and now we've got a lot of
+dx12 talk going on especially with gtc
+and GDC right behind us what's how is
+CID working too well we're gonna sit
+we're gonna support both of them you
+know mantle and the x12 I mean you know
+we supported mantle because like we're a
+big believer in like getting rid of all
+the blow in the operating system and
+just getting straight to the metal one
+of the big one of the big problems and
+PC development is you have sort of
+windows sitting between you and your
+hardware and it's a big resource blow
+and it gets in the way and especially
+sort of on the game side and the today's
+game world where everyone's on
+multi-core CPUs you know dx11 it's not
+particularly well set up for handling
+multitasking or being very efficient in
+that case so mantle one of the things
+mantle did was allow you to do
+that so draw calls are a big problem on
+on pc games in terms of every you know
+the reason why i like a concert like an
+xbox one or ps4 can match say some pcs
+with much you know much less powerful
+hardware is because they don't have all
+these operating systems so they could do
+yeah they can do you know so like you
+know they can do 10,000 plus draw calls
+a frame whereas on a pc you start to get
+bottlenecked cpu wise by three four
+thousand dress even though the pc could
+have a much more powerful GPU singh in
+it so so mantle and now dx12 i mean i'm
+quite happy because i think a lot of
+people supported mantle and that sort of
+forced the hand microsoft to you know
+kind of like do something with directx
+so I that's kind of my whole goal was
+like I hate this we need this sort of
+stuff so I'm supporting it and you can
+sort of see what's happening everyone's
+like oh we better get on this bandwagon
+or else we'll get left behind but it's
+just gonna make for better games and so
+that means that you can have more draw
+calls per frame and a higher frame rate
+which means more detailed scenery
+characters environments objects there
+are yeah we need it for star citizen
+because you know our ships are
+incredibly detailed the characters are
+incredibly deal to us their environment
+seem incredibly detailed so we're going
+beyond what you know people call
+next-gen in terms of face count you know
+if I could share polygon count on a on
+character models some of the smaller
+ships well it sort of a character models
+are probably ninety to a hundred
+thousand like something like the Hornets
+probably about three hundred and
+thousand or so you know something like
+the constellations a million and a half
+so it's bit I mean it's big so I mean
+obviously that's not that's the full hi
+Polly know you know not not lodd version
+that's what you get up close as all
+those fares but it's a lot to move
+around but we've we focus on high poly
+much more so than having detail and
+textures because you know our big design
+challenges that we got to go from sort
+of first-person all the way up to you
+know kill me too plus long ships and so
+we need everything to hold up so I
+you could still be in that sort of
+first-person mode go up that massive
+ship and you don't have huge pixels in
+front of you so we need the details so
+we tend to move towards geometry /
+texture detail like a lot of times like
+standard thing in games that you do
+panels and stuff that all be baked into
+the texture with normal maps and so we
+don't really do that like most of them
+especially the bigger ships you take a
+look at and even on the fighters a lot
+of the panels are actually modeled in
+geometry and what that means is like
+first time well yeah more depth and it
+looks better more realistic but also
+like I can show you on you know I run on
+a 4k monitor in my office but I could
+get you on a 4k and I can zoom right in
+and say to the Hornet and it holds up
+coming real close on a 4k and you
+couldn't do that are the old way when
+everything was baked into textures
+because then you start to get to texture
+resolution right but we sort of focus
+more on the textures being sort of
+general materials and then occasionally
+put detailing with textures but you know
+we're sort of because we move to
+physically based rendering sort of we're
+more sort of geometry detail you know
+even like nuts and bolts will get get
+model I think in the dog biting unveiled
+you showed a first pass of PBR yeah yeah
+well the sort of Hornets or basically
+all the ships the environments are all
+PBR the hangar is sort of a quick PBR
+pass but it has not been done properly
+in one I showed but it makes a massive
+difference I mean just the way that the
+surfaces react to the light I mean it
+just feels more tangible more real
+moving to gameplay topics in the real
+world we have some of our own electronic
+worker and
+more fair how is that a thought in star
+citizen how's it being handled well
+we're going to do that so like
+definitely on the bigger ships there's
+going to be a whole design post that
+we're going to release in the near
+future they'll come from the foundry 42
+folks because they're they're taking
+over there basically focusing on the big
+ship cap ship combat because that's a
+part of squadron 42 and then their work
+will also be part of the persistent
+universe there's a whole set of games in
+terms of running the big ships requiring
+multiple people at different stations
+communication so yeah you can have all
+levels like so you'll have a sort of
+electronic warfare you know station for
+you know an officer that does that you
+know combat air patrol kind of commander
+engineering helm so it's gonna be a
+whole bunch and there's a lot of stuff
+that you can do during like battles and
+combats in the bigger ship so in some
+ways the big ship combat is almost like
+another game so we're going to have the
+the fighters stuff that you sort of will
+see in the V one of the dogfighting but
+the big big sort of combat capital ship
+stuff will be a lot of fun too so I'm
+kind of looking forward to later on
+where we sort of have all that up and
+working and hopefully teams of people
+will be like one running on the big ship
+and then like people running on fighters
+and it would be cool we'll see my next
+question was going to be about how you
+are planning to be multi crew combat
+interesting and that sort of covers some
+of that oh yeah there you go no it's
+gonna be pretty awesome I mean we're
+already looking over it's an extension
+we've because we sort of went out of our
+way we spent a lot of time building
+systems so even the fighters or run with
+systems like there's no you know like
+basically like the radar its own plug-in
+system weapons controls and plugin
+system the weapons are all their own
+plugin systems we have like batteries
+that plug-in power plants to plug in
+shield generators that plug in the
+lights that you see on the vehicle you
+see on the Hornet they're actually all
+self-aware items too so anyone like the
+Hornet itself i think flies around with
+about 60 different items plugged into it
+so most of the functionality of all the
+spaceships comes with the items right so
+whether
+firing a gun the computers to do it your
+avionics the intelligent flight control
+they're all items to plug in so what
+that means and they're all they all plug
+into a system that they share their data
+via pipe so we have the basic types one
+is a power pipe one is a fuel pipe one
+is a data or CPU pipe and one is a heat
+pipe and they sort of plug into the
+system now the out printed and yeah yeah
+so so like you plug a power plant in
+right and so it feeds the power plant pi
+PI but you plug a weapon in it draws
+energy like a laser draws energy from
+the power or a light draws energy for
+the power plant right so why it's just
+like a magical name IPC building and
+then what happens is say if the part of
+your ship that had the power plant gets
+blown off there'll be no power going
+into the pipe all the weapons and lights
+will go dark because so there's no it's
+not like code in there that says oh if
+this happens then do this it's basically
+they just you know they have their own
+real set which is like okay operate I
+need this much power to operate if I
+have between this motion this which
+power on the operate it so much
+efficiency below this I can't operate
+that's pretty much about how most the
+items are set up so it sort of just all
+falls out of the system as parts blower
+for whatever it will affect your dynamic
+so you know and you know the intelligent
+flight control system obviously if you
+know some of your blast some of your
+thrusters are blown off in combat then
+you won't be able to correct your
+attitude of flight as well so it's a
+really nice sort of system based
+approach so it's not really custom code
+at all and then that extends really well
+to the big ships because they use the
+same thing it's just that now on one of
+those aspects you just have like a whole
+station that's dedicated to tweaking and
+controlling and and so there'll be extra
+things like on a big ship you'll be able
+to sort of redirect power when say you
+know the left side of your ships being
+destroyed you can redirect power away
+from the power lines that went there to
+the power lines on the right side of the
+ship can make sure power gets the
+tourists in the back that kind of thing
+and that'll be part of the sort of
+gameplay done through
+aui I guess in the ship command well eat
+so there's different this no notice so
+you have to there's all different
+stations you can sit down in control and
+they'll be some level of running around
+and having the patch things or plug in a
+new fuse or though that kind of stuff so
+it should be some pretty cool gameplay
+thoughts on espionage well we you know
+we I think we talked to the
+organization's we're going to have some
+level of support for people to do some
+level of spying yeah just cuz it's fun
+yeah like all those stories you hear
+about all the eve stuff haha yeah so so
+with figuring out population count in
+general for for the game as a whole that
+is the plan sort of two I guess there's
+a data server everyone to next to it for
+the persistent universe yes and then
+you're still just dropping players in
+and out based on PVE PvP settings well
+yeah I mean basically everyone runs on
+all the universe of the system server
+and then basically the settings in terms
+of like who your friends are your
+enemies are who your personal interest
+is what your ping is whether you want to
+be doing pvp or PVE those are all
+criteria that go into the matchmaking
+that happens at the system server level
+that hands you after the different
+instance servers and so it basically
+just matches up people so basically it's
+just sort of in the background dynamic
+matching where it's just watching where
+you are and saying who's close to you
+and do they qualify like someone's close
+to you but you know the pings really bad
+for instance you know you're in America
+and they're in Australia or something
+then it's likely not to put you together
+unless you said oh I always want to play
+with my friend and this is my friend and
+then it will put you together but your
+experience may not be so great so that's
+kind of what happened so a lot of what's
+happening in the background is you're
+just getting you know as you fly around
+in space from your point of view other
+people or other NPCs are just sort of
+streaming into your local area and in
+terms of up
+any patches or other modules I should
+say that are coming up what should
+players be looking forward to and where
+should they be going back to check for
+more details well Robert space
+industries com is the place to go we
+will be releasing the dogfight module
+pretty soon which will also agreed a
+little bit of an upgrade for the hangar
+module and then going forward there'll
+be some variations of that and hopefully
+we're going to be teasing the first
+person shooter side of the game later
+this year and more detail on that below
+we've already got a video of our first
+person shooting the elements once again
+thank you for all the work time you
+opened check all the links check Robert
+space industries com and we will see you
+all thank you guys for your time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

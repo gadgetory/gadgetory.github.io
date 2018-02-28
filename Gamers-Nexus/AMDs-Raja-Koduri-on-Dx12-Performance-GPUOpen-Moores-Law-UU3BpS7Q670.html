@@ -1,0 +1,595 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>AMD's Raja Koduri on Dx12 Performance, GPUOpen, Moore's Law | Gadgetory - Your Gadget Factory</title><meta content="AMD's Raja Koduri on Dx12 Performance, GPUOpen, Moore's Law - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">AMD's Raja Koduri on Dx12 Performance, GPUOpen, Moore's Law</li></ol></div><h2 class="post__title"><b>AMD's Raja Koduri on Dx12 Performance, GPUOpen, Moore's Law</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/UU3BpS7Q670" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">this is part two of our interview with
+AMD's Raja Kaduri and SVP &amp;amp; chief
+architect of the Radeon technologies
+group in this part of the interview we
+talked about GPU open the Boltzmann
+initiative which is pretty interesting
+for users who interact with CUDA but
+might want am the hardware and we also
+talked about how software is a major
+part of the optimization problem
+more so than Hardware these days so
+enjoy the interview for part 1 check the
+channel we spoke with Raja about shader
+intrinsics that's also link to the
+description below along with an article
+of this interview that contains a large
+transcripted portion so I will let you
+get to the interview yeah you mentioned
+a few moments ago GPU open so let's go
+into that cuz I know that's a big topic
+later Andy yeah so the the first
+question what is book you know so you
+know what the you know kind of projected
+I would say a few years ago that with
+the transition to low-level API right
+x12 welcome and opening up the you know
+the underlying guts of the GPU through
+shader intrinsic Sandahl to get
+performance out of a system right to get
+for best performance out of the GPU the
+best practices you know the best
+techniques to you know rendered shadows
+you know do lighting you know do draw
+trees or whatever right different ways
+to do that but what is the best way to
+do that that value-add we figured out
+that that value add kind of moves into
+engines right it's basically in the game
+engines and the games themselves have to
+figure out kinda they have to do more
+heavy lifting of figuring out kind of
+what's the most optimal thing to do the
+drivers themselves have become very thin
+writing I can't kind of you know do
+something super special and said the
+driver to work around a games and
+efficiency Android pedal right and we
+used to do that in like dx11 and before
+api is where you know when we focus on a
+particular game and we find that the
+game isn't doing the most efficient
+thing for our hardware
+we used to have pets you know if we call
+those application profiles for the for
+each application we said oh you know you
+could exactly draw the same thing if you
+you know change the you know particular
+shader that they have to something else
+right so we did kind of like manual
+optimization work within the flavors but
+with this law or had a pas we can't
+actually you know we don't touch
+anything right it's just this API
+whatever the game passes to us it goes
+to the hardware store it's nothing you
+know that we do so we said but how do we
+you know we have a lot of knowledge in
+optimization inside AMD and so do our
+competitors right so we said how do we
+get all of that knowledge easily
+accessible to the game engines and game
+developers so he said you know we have
+lots of interesting kind of libraries
+and tools and all inside AMD let's make
+it accessible to everybody let's put it
+out in the open so that's why I said you
+know can you write and and in white
+developers to contribute as well and
+kind of build this ecosystem of kind of
+you know libraries middleware tools and
+all that are completely open that work
+on you know not just AMD hardware but
+what can other people start where to
+write and and and you know the goal is
+to kind of make every game and every VR
+experience get the best out of the
+hardware right and so that was we've
+started this portal with that you know
+with that kind of vision and goal and
+you know we had a huge collection of
+libraries and all that we had internally
+that we put out and it's it's got you
+know good traction and it also became a
+good portal for developers to share best
+practices to so you know recently we had
+you know some nice blogs from some rheya
+in there sharing their techniques and
+all and and you know most more often
+than not they these blogs have links to
+source code as well and hey this is how
+I did this I did that I think that's
+right that's probably an important
+discussion point is just this idea that
+the GPU does obviously all the hardware
+level work but there's a lot going on in
+software
+yes we're just brute force in visual
+effects or volumetric particle effects
+or whatever isn't necessarily the best
+best yeah yeah so you know software is
+more than 50% if not higher portion of
+kind of the performance that you see on
+a system right so you know the GPUs I
+mean you know yeah we have transistors
+that kind of wiggle around and do
+whatever 500 or flops or something but
+it's like you know if they're not you
+know proprietary scheduled and
+appropriately used by by these software
+techniques you know they are wasted
+right so that was the intent and also
+tools right that making developers
+productive in debugging they're either
+you know their quality issues or
+performance issues what we noticed was
+that we just as a collectively as an
+industry haven't done a good job of
+providing a consistent set of tools
+right and and frankly if I'm a developer
+right just you know putting a developer
+hat I don't want to be learning like you
+know one set of tools for Nvidia one set
+of tools for AMD another set of tool for
+Intel right another set of tools when I
+get onto the game console you know what
+ends up happening is that they kind of
+you know don't use anybody's tools right
+you know relying on just kind of you
+know printf yeah bugging or like in this
+stuff so that's not a good place to get
+a few jobs here so so that was one of
+our goals with GPU open is that you know
+hey let me put out our tools as well
+with full source code our entire tool
+chain and we want to encourage people to
+kind of you know help us get their
+stools working on other hardware as well
+right now we are not married to our
+tools we are actually quite open to
+using other people's tools too or you
+know some other company wants to
+contribute a tool and you know put it
+out there and open we'd be more than
+happy to kind of pitch in and
+you know get those tools working because
+I think the opportunity the industry has
+right as we make transition to connect
+you know this immersive experiences we
+are at kind of get the beginning stage
+the first year or so of we are where we
+are going to be in four years is amazing
+but the performance kind of you know if
+we just use today's software in today's
+hardware the performance we we need to
+be able to support a 16 K by 16 K
+headset at 120 Hertz is a million times
+more info totally kind of you know to
+get to a photo really level right and
+you're not going to get million times
+more with Moore's law right I said kind
+of my goal is you know we need to get
+there before I'm dead or retired and
+we're not going to get there by just
+kind of doing what we what we're doing
+because the entire software framework
+need to change the software developers
+the game developers need to be they need
+to be a thousand times more productive
+than their today for it for them to give
+us the million X you know kind of
+explain of course hardware will move
+forward we'd have better hardware and
+all but you know it may be four times
+faster in four years rate or may be
+eight times faster right you know in
+different segments but not million times
+faster so but software can make it
+million times faster right we've seen
+like you know the amount of wasted
+computation like frame to frame in a
+scene is quite high right but that's you
+know but they need different ways of
+thinking of generating these pixels
+right and there is some fascinating work
+going on in kind of both you know we
+look at some things but you know game
+developer so let me get variety of
+things so this whole VR think has
+sparked a whole bunch of kind of
+fundamental research back on computer
+graphics again on you know am i drawing
+these things the most efficient way
+possible right right now will you see
+actually you know frame to frame you're
+generating like you know each frame is
+so complex and at 60 Hertz and it's
+regenerating the frame or and again and
+you see what is the difference between
+this frame and the next frame hmm these
+hundred pixels but that's more but i but
+I drew redo the entire
+right because that's the way the whole
+kind of you know pipe yeah that works
+that I guess speaks to just as one of
+the easiest examples Delta collar
+compression yes on the memory side yes
+it's the idea of basically not not
+absolutely pulling the number for each
+color yes yeah yeah so yeah I mean
+that's for memory itself right here so
+you know Delta color compression is one
+of the techniques you know we we have in
+Polaris and alright which it says a ton
+of memory and because there's so much
+what you call correlation between you
+know neighboring pixels or neighboring
+Texas right in there so yes so Delta
+color compression is one of the
+techniques but there are things like
+that that I can do or like hardware can
+do in its control but imagine the kind
+of things that the software can do
+because they know the context of their
+scene they know what is changing what's
+not changing they know what can be
+reused what can be reused i I can do
+certain things for them but I'll be
+guessing right you know they don't need
+to guess right you know what's good next
+right I would like one of the classic
+examples I give is that they know that
+you know you see in many games
+especially on load and hardware when you
+have a big explosion in a scene
+everything status right that really
+nothing slow down there because just
+like massive explosion I say I don't
+know that there is an explosion coming
+in the hardware but the game developer
+knows that there is an explosion right
+hardware right to say say they they have
+a mechanism to hint me like same in to
+hardware or to the drivers I can do the
+you know I can boost to the max o'clock
+if I have some o'clock Headroom for
+example right just for two frames right
+or three frames or four frames right
+right you know that won't make make me
+go beyond my thermal budget or something
+because I'm staying within thermal
+budget room you know TDP limit so things
+like that when the game developers start
+thinking in those terms they have more
+juice available in hardware then they
+get take advantage of here in different
+APM states or something like that right
+yeah they can you know they they would
+go like hey for most of my game I
+need to be running it I am sorry I
+really need you know because I'm smooth
+anyway so don't waste energy don't kind
+of or heat the graphics card because
+when I need it which is like this
+explosion sort of a massive stuff I need
+you to be there so not kind of all
+subscribed already and running at peak
+temperature right that's one example
+candy I'm just saying that you know when
+developers start thinking you know
+performance and there is so much
+interesting stuff available right right
+a one one topic I think partnered with
+GPU open so starting to Scott Watson
+about this idea of C reservation mm-hm
+so through audio next was the exactly
+why he gave where you can reserve some
+of the seat is just for this function
+yes you speak more about how that works
+yes yes yes so you know the interesting
+thing about the GCN architecture and I
+think even today it it's the only
+architecture that's kind of capable of
+this that you know the first thing is
+the whole notion of the asynchronous
+building where you can dispatch a
+compute task to the DCN engine and it
+can run asynchronously to whatever else
+graphics task that's running already
+right and it kind of it uses the Cu
+resources that are not fully used by the
+graphics engine right so it can come in
+and it can go out without kind of you
+know halting or pausing anything that's
+going on now with that kind of in that
+class of features we also give the
+ability save that task that is coming in
+and going out is a real time task like
+an audio audio you know it's not very
+intensive but it needs to be real-time
+it has to happen like and I say you know
+I submitted audio job it has to finish
+you know within a prescribed number of
+milliseconds so we needed an ability for
+the engine to say that hey no matter
+what for audio you know you can use all
+the resources but I need at least once
+you always available for audio sure okay
+or two or you know the whatever whatever
+the task is and so that feature is
+architected into our hardware to be able
+to do that kind
+you know reservation that we are in T's
+real-time now if you don't need
+real-time you can select the async
+compute method you can slide in and
+slide out but it's not guaranteed
+because if the graphics engine say is
+occupying all the see use right which is
+rare by the way which is completely rare
+where we have the graphics engine
+completely all subscribing all see is
+what we find is there's always one or
+TCU's you can slide in and get work done
+and get out but for audio we can take a
+risk right because you could have
+something very intense like I said this
+explosion case for everything and then
+you don't want your audio to try 50
+milliseconds later exactly right it's
+like I have explosion in the audio it's
+like you know the fight crackle that you
+have right so you don't want that so
+that's why we you know have to audio
+next uses the concept of CU reservation
+right I didn't and the API is flexible
+to kind of give developer a control of
+you know based on how much load they're
+putting you know how many see use you
+know to reserve so then what is the
+Boltzmann initiative is that what that
+is or is this a separate no boatsman
+it's a - it's separate it's late
+Boltzmann initiator is related to our
+GPU compute so you know we had a long
+history and the industry has a long
+history of kind of Kino the GPU compute
+API so it open CL is a standard for
+computing and right and then their
+proprietary you know initiatives like
+CUDA and others now the kind of the holy
+grail for GPU computing always that if
+you talk to the programmers and the
+computing world is that they would like
+GPUs to be programmed kind of directly
+in all the current tool chain that they
+use at C C++ Python for whatever you
+know languages they used to kind of you
+know do their daily work that that's
+really what you know they want to do is
+just get kind of you know here and I
+have some compute intensive tasks that
+can benefit from a GPU I should be just
+able to use from my language not kind of
+you know then
+have to learn some new language like
+OpenCL or something like that right so
+that was the Holy Grail and that was we
+were working towards and as we were
+working to to towards that goal what we
+discovered was the architecture of you
+know
+OpenCL and kind of graphics API is
+doesn't suit well for supporting you
+know all these random languages right
+you know and scripting languages and all
+we needed a completely different
+approach and second most of this kind of
+successful language frameworks whether
+it's you know poles pythons and they're
+all and LLVM has become a big compiler
+infrastructure that everybody is using
+are all based on open source frameworks
+and it is really hard to integrate a
+closed for runtime framework like
+graphics drivers into all of the stacks
+so that was kind of the genesis for our
+boltzmann initiated when we said what if
+we kind of gonna do a compute stack
+which is all the way from top to bottom
+including the kernel mode drivers it's
+completely open ok
+and the way the stack is structured that
+these frameworks can integrate right to
+any level they choose any level of
+abstraction that you some frameworks
+want to go all the way to Mission
+directly themselves right to the machine
+code Boltzmann allows that some
+frameworks want to stay one level above
+right kind of like you know like a
+Vulcan level type of share in a
+equivalent abstraction on computer they
+give that some frameworks want to go all
+the way up to kind of high some
+higher-level language like OpenGL or C
+C++ extensions or you know some other
+libraries that we have sitting on top of
+this we allow that so Boltzmann is the
+first open compute stack for GPUs right
+and it it is one of the key steps we
+took in you know my goal of opening up
+the GPU let's the GPU was it is a black
+box for 20 years now right black box
+abstracted by very thick API really
+thick runtime so it is a kind of voodoo
+magic behind there right so we're trying
+to kind of you know get the voodoo magic
+out of the GPU
+you know software stack and we believe
+that you know there is still you do
+magic in transistors and how we assemble
+them and there is voodoo magic in
+connect you know game engines compute
+engineers this libraries the middleware
+and kind in this experience so you know
+the voodoo magic in this kind of middle
+driver levels is not actually beneficial
+to anybody because it's preventing the
+widespread adoption of GPUs right so if
+there is it sounds like at least at some
+level it
+I guess the we work with Adobe Premiere
+a lot right in Premiere and these other
+tools Maya often have OpenCL
+acceleration in CUDA acceleration one of
+the things that I was curious about is
+is there a way to take CUDA code and
+make it work more efficiently on your
+hardware I'm glad you asked
+so you know one of the elements of for
+kind of Boltzmann initiator was you know
+a framework in the tool we put in that
+again fully open sourced called hip and
+what hip does is exactly what you're
+asking for it takes CUDA code and you
+know from sat on Indy Hardware very
+efficiently okay and and we got actually
+you know millions and millions of CUDA
+code converted over with the tool and
+like the rest of the tools that we put
+they're completely open-source and it
+can support other people's hardware as
+well right so yes so you know we you
+know we you know we have no religion
+against you know enabling couldn't
+really on our hardware cool one of the
+earlier projects you worked on was DX TC
+so looking at the I guess the modern
+equivalents are the the ants the that's
+that's sort of the ancestor of texture
+compression mmm-hmm what do you work
+with today to more efficiently process
+game graphics we've talked about some of
+the stuff shader intrinsics mm-hm
+what else is going on within the G yeah
+I mean you know now that you remain with
+that trust nineteen years ago
+oh my god it's yes DX TC was you know
+one of the first I'd say kinda keno
+standardised compression format and you
+know it's still kind of you know
+supported in you know almost all
+hardware and I think it's even in mobile
+rates from you know from phones to big
+computers you know compression has
+evolved in a since but you know the
+fundamental construct for GPU based
+texture compression Hardware compression
+hasn't you know evolved that much
+radically right it kind of improved in
+quality you know we got more interesting
+data types the compression is supporting
+the first you know instantiation of DX
+TC was kind of good for you know RGB
+texture Maps but then we got like you
+know very interesting other data types
+like in the normal Maps and you know
+like maps and residence maps this chance
+a lot like they changed a lot so the
+compression I mean we evolved like you
+know ATI and AMD as well kind of II
+contribute to the evolution of the xtc2
+kind of you know the next-generation
+formats and other stuff and of course
+there are new formats and you know
+higher compression rates that are coming
+to but I call all of the steps credible
+if you know evolutionary right from a
+compression standpoint the you know that
+evolutionary stuff that the developers
+asked for would be connect you know
+every developers dream would be hey if
+you can sample a texture straight out of
+like JPEG or something right right you
+know which has you know much higher
+compression rates and you didn't get
+thousand to one hey you know compression
+depending on the continent right so
+those are kind of variable rate
+compression stuff you know those are I
+mean if you are kind of understand you
+know hardware Mechanics for compression
+and decompression and all you know that
+sounds good on paper but you know it
+costs kind of you know just the
+decompression hardware to go at the rate
+at which say the HDD compressor goes
+it'll be a chip that's bigger than the
+entire GPU just to do kind of you know
+big completion right just so you
+understand the reason why we don't do it
+it's not because you know we don't know
+how to do it we can it just kinda cost
+you know and are going to like to do
+that but I think there is a happier
+medium again in collaboration at the
+level of course that is in between right
+between you know giving you that
+benefits of kind of you know JPEG like
+compression and the speed of kind of DX
+T class algorithms right it's like how
+do you kinda you know connect them how
+do you marry them in a better way so
+that all my assets from you know my
+authoring time to my you know your
+download time to coming onto the
+computer to you know into the GPU memory
+if it can stay compressed all the way to
+the GPU memory kind of the whole
+experience speeds up right you know like
+gee you know one thing that I say you
+know Hardware got so much faster but man
+the game loading time still is the same
+from whatever the last 15 years I mean
+if you have an SSD or something it's you
+know yeah that's a hardware solution to
+a software problem right and there but
+it's like takes you know loading time is
+you know and and with increasingly
+attention-deficit population on devices
+like this things start instantly I think
+games needs to start instantly right and
+and so I think there is a happy happy
+medium there that you know you will see
+I think industry together solving it in
+the next kind of you know or next forty
+years is that how do we make make this
+terabyte Triple A game titles just load
+instantly yeah that'd be awesome
+yeah I way down the road something like
+the SSD is kind of interesting to you
+for that I mean that's actually the you
+know I'm glad you brought up SSD because
+that's that's one of the you know
+driving factors even though you know we
+have positioned it for first for kind of
+professional drivers and others right
+you know you can kinda canna see the see
+the path there and you know the
+usefulness for
+you know gaming users send other stuff
+do ya peel off lands from the CPU or
+whatever there's SSD yeah yeah well lots
+of information as hoist we will have a
+recap of this in the article linked in
+the description below
+Raja thank you for joining me thank you
+Steve my pleasure
+we'll see you all next time okay thank
+you</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

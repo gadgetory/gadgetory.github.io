@@ -1,0 +1,128 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>BUG | But Why Intel? | Gadgetory - Your Gadget Factory</title><meta content="BUG | But Why Intel? - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Science-Studio">Science Studio</a></li><li class="active">BUG | But Why Intel?</li></ol></div><h2 class="post__title"><b>BUG | But Why Intel?</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/xx4R3aLbDI4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">oh my where do we begin if you're using
+a computer with hardware manufacturer at
+any time during the last two decades or
+so then this video probably pertains to
+you in at least some sense now I want to
+start off by saying that my job here is
+not to instill fear while your kernel
+memory may be at risk to thousands of
+hackers vendors Intel arm AMD and others
+are all ready to roll out patches for
+these issues but some of these come at
+costs in this minute science episode
+we'll discuss those costs and why on an
+architectural level we even have to pay
+in the first place
+Google anything with the words security
+or bug in it and you'll likely be
+inundated with reporting sites some that
+have absolutely nothing to do with
+technology attempting to describe the
+security threat to modern processors
+let's start with the basics first the
+first thing you need to know is that
+every modern CPU needs a modern
+operating system Windows Linux Mac OS
+doesn't really matter but it needs
+something by which to communicate with
+and manage onboard Hardware all of these
+operating systems rely on something
+called a virtual memory it's a way for
+systems to preserve RAM in favor of
+other storage drives let's say hard disk
+drives in this case this is often
+referred to as page filing when your
+computer dumps temporary data into
+literal files on your storage drives in
+place of system ram now in turn a
+virtual address space requires a sort of
+mapping process in comes the page table
+think of it like a translator every
+program in your operating system has a
+unique virtual address corresponding to
+a physical address when your CPU calls a
+physical address it uses the page table
+or more specifically the translation
+lookaside buffer that's basically
+dedicated CPU cache to locate and draw
+the file now without getting into rings
+and kernel specifics what you need to
+know is that a certain degree of
+speculation ensues when a CPU executes
+the task and stores it to memory for
+example it may anticipate a certain
+mathematical function tied to a physical
+address based on environmental cues and
+store the answer before the problem is
+even drawn this in turn speeds up
+processes and only requires a simple
+deletion if the prediction leads to no
+real address but the drawback now
+exposed to the public involves this
+speculative execution when the CPU seeks
+to predict it temporarily stores
+metadata in the TLB in cache which is
+relatively unprotected and vulnerable in
+fact it's been exploited by various
+research groups and brought to the
+attention of namely Intel whose
+architecture specifically prioritizes
+speculative execution
+the reason AMD claims to be free of
+these chains resides in the fact that
+their CPUs do not engage in page table
+speculation therefore no sensitive data
+is stored in cache while it searches for
+addresses anything from password
+fragments to full program and
+application control could be seized from
+this information and that's why it's so
+important here simply put programs
+aren't supposed to have this kind of
+access to other programs and thus users
+aren't supposed to have this kind of
+access to those programs but where do
+the expected performance hits come into
+play then well since this is an issue
+with the protocols of the architecture a
+simple micro code push won't remedy
+anything instead the bug requires a
+direct manipulation of the software
+because this is like something baked
+into the CPU for example Linux systems
+are now pushing an acronym dubbed Keizer
+which essentially splits kernel and user
+spaces to eliminate leakage until plans
+to do the same thing in the coming days
+but it comes at a price now regarding
+performance degradation and reports of
+30% slower Intel computers these are
+extremely workload sensitive and likely
+won't affect the average user a few
+users testing the latest coffee like CPS
+for example have reported substantial
+cuts and some very heavy CPU synthetic
+benchmarks but virtually no losses
+regarding gaming and content creation
+which is what I personally care about
+not sure how it's possible and I remain
+neutral in this matter in particular I'm
+not just I'm not filled in enough with
+the details to speculate but one thing's
+for sure many millions of systems are
+caught in the crossfire here I've linked
+a few articles pertinent to this topic
+down below if you want to check them out
+in the video description if you like
+this video be sure to give it a thumbs
+up I appreciate it thumbs down for the
+opposite glue subscribe but if you
+haven't already
+stay tuned for a more content like this
+this is sign studio thanks for learning
+with us</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

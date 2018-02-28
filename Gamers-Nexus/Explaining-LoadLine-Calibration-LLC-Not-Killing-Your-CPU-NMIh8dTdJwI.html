@@ -1,0 +1,567 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Explaining Load-Line Calibration (LLC) &amp; Not Killing Your CPU | Gadgetory - Your Gadget Factory</title><meta content="Explaining Load-Line Calibration (LLC) &amp; Not Killing Your CPU - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Explaining Load-Line Calibration (LLC) &amp; Not Killing Your CPU</li></ol></div><h2 class="post__title"><b>Explaining Load-Line Calibration (LLC) &amp; Not Killing Your CPU</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/NMIh8dTdJwI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey guys build Zoid here from actually
+hardcore overclocking and today we're
+gonna be talking about load line
+calibration and I can't write very fast
+so this is gonna be very painful
+so load line calibration also known as
+all C for short is a setting available
+on basically all high-end motherboards
+and most mid-range as well as I'm not
+sure I don't use that many low on board
+so I'm not sure if it's most or some but
+basically if your motherboard supports
+overclocking it should probably have
+load line calibration settings now load
+line calibration settings are not the
+most important thing until you're in a
+situation where you can absolutely max
+out the core voltage for your CPU pretty
+much so you're on a cooling system that
+can handle the maximum safe voltage
+force for your CPU if you're on a weaker
+cooling system you basically don't have
+to care about this because v droop is
+there to protect you before getting to
+that this coverage is brought to you by
+EVGA and on video with the destiny to
+1080 Ti bundle a 1080i SC to comes with
+a synchronous fan control for its dual
+fans and nine thermal sensors and again
+includes destiny to learn more at the
+link in the description below
+so let's actually talk about well the
+droop doesn't really have any negative
+impacts on you unless you're like
+starting to push up against the edge of
+max safe voltage and we'll go you'll see
+why that is very soon before we get into
+that we need to define something so
+first of all what what on earth is what
+is load line calibration well it's made
+up of load line and calibration and the
+load line is this magical thing which is
+actually it like it's not actually like
+a physical it's not a physical
+phenomenon or anything it's a V Group
+specification basically it looks like
+like if you have a graph where one line
+is current one side is voltage there
+would be zero that right here is your
+load line that's that's a load line yeah
+and you might be wondering what on earth
+does that mean well it's a simple way of
+defining a V droop sort of adaptive V
+core like an adaptive voltage V droop
+system very simply because essentially
+as your current increases your voltage
+decreases so if you're at idle and the
+vrm is outputting only 10 amps you might
+be at like you know say at this point on
+the line and none of this will be on to
+scale and that point might be 1.3 volts
+right and vid might be 1.35 like here
+vid at this point is pretty special
+because it's vid equals V core at that
+point but then you turn you know you
+start doing some intensive rendering or
+something and you go to this point over
+here that point is at say 60 amps but
+that's realistic for full load and your
+voltage might drop down to one point to
+four volts which these are completely
+arbitrary figures but you get the idea
+here
+well actually it would be more realistic
+if it was 1.25 volts and what you're
+seeing here is if because I decided that
+vid is gonna be like that up there is
+gonna be one point three one volts and
+essentially this means that you have a
+load line of 1 million because for 60
+amps you're getting 60 millivolts of
+droop so this is a way for Intel to
+define how much your voltage core
+voltage should be decreased at increased
+current levels and you might be
+wondering like why on earth would you
+want to lower the voltage as the CPU
+goes under load well one it makes sure
+that the CPU uses less power so you stay
+within TDP 2 it puts less strain on the
+vrm because the CPU uses less power 3 it
+keeps you in voltage tolerance levels
+which is actually the main reason why
+this is done because as some CPUs and
+everything is just like well CPUs got a
+finer and finer manufacture
+processes they get more and more voltage
+sensitive and Intel's also been like
+pumping up the you know the efficiency
+has been going up as well so load line
+load line has been used to basically
+make sure that all of that works as well
+as possible and the voltage tolerance
+thing is basically comes down to this
+scenario if you have voltage here and
+this lower graph will be current and
+we're looking at these over time you
+might see something that looks like your
+current level might go like that and
+you're gonna see a voltage graph that
+looks like and we're gonna say we have
+like an oscilloscope here so very
+accurate measuring tool and then you're
+gonna see a big voltage dip and then
+you're gonna see increased ripple until
+you get to the point where the VR like
+the current draw drops off at which
+point you're gonna get a voltage spike
+some ringing and then returned ripple to
+pre you know to this level of ripple and
+so load line you know having the load
+line allows Intel to basically grab this
+entire section right here take all of
+that and you know they want that the
+core out erm output voltage never
+exceeds this level right this is the
+voltage you must never exceed so they
+can grab this entire chunk here which is
+going slow like it's going out a spec
+here and they can just drag it down so
+that your because if you looked at your
+deep like if you had a multimeter on
+this right you would see us flatline
+because this this would be the average
+right so you'd be seeing an average
+voltage that's completely flat and then
+if but with load line you would see
+something that looks like this in terms
+of average voltage right and and this
+dip down here basically would take this
+spike and push it down as well as also
+push all of these spikes down so if
+actually you know if this
+line over here that I drew was lower
+these bikes would also go within
+tolerance because now your average
+voltage is lower and your vrm is trying
+to actually is aiming for a lower
+voltage output and your ripple is now in
+spec and you're not overshooting as hard
+so that's why load line exists now we're
+going to talk about why it's actually
+really annoying and why the load line
+calibration setting is so helpful when
+overclocking because well is it's rather
+simple right imagine this scenario we
+have a CPU a I seven we have an i7 for
+790 K why I chose that one and now let's
+go modern you have an i7 77 and no more
+modern 8700 K I like my upgrades and six
+cores so you have your i7 8700 K alright
+and the maximum voltage recommended for
+this is one point four five volts and so
+you decide that you're gonna set your
+and you have you have the CPU deal it it
+you have a giant water cooling loop and
+you decide that okay I'm gonna go and
+well actually you wouldn't even need a
+giant water cooling loop if it's deleted
+but it's deleted and you have a good
+good cooling system on top of it and you
+decide that yeah I'm gonna run one point
+four or five volts through the CPU so
+you set your voltage setting which on
+most motherboards would just be the vid
+you set that to one point four or five
+volts so you set that to one point four
+five and then you get a voltage reading
+of you get V core will have actual V
+core readings here and I'm sorry that I
+didn't prepare tables for this but I
+think it makes sense to just draw it out
+like that
+well I don't know if it makes sense like
+this I don't know anything about video
+production so deal with it I'm here to
+teach you about load line not how to be
+a good presenter so you have your vade
+you have your idle and you have your
+load B core and your idle v core on
+stock load line well actually
+let's add the LLC right load line
+calibration would be stock then you have
+your record levels and here you have
+idle and here you have load right an
+idle you'd be seeing say one point four
+four five volts and you wouldn't
+actually see one point four five because
+remember the only time you would ever
+see one point four five is if you're you
+know if you're at zero amps current
+output since you're not at zero amps
+current output there's gonna be a little
+bit of droop right so you're drooping a
+little bit off of that one point four
+five volts target now you go and you
+start up the render and your voltage
+drops all the way down to one point
+three five volts that's atrocious that's
+terrible you know that significantly
+limits how much you can overclock your
+cpu because your voltage that defines
+your max overclock is this right this is
+what limits your maximum overclock now
+if you're on a weaker cooling system
+that can't actually cool one point four
+five volts this is great this is awesome
+because you can idle on one point four
+you can idle on just under one point
+four or five volts all day and then you
+go under full load and you're at one
+point three five volts so the heat
+output of your CPU isn't high enough to
+actually overload your etes overload
+your eat sink but and and you know you
+might complain about the high idle
+voltage but if you just enable C States
+and like there's a few automatic power
+saving settings if you just leave them
+turned on it won't like your idle your
+idle voltage won't be that high as well
+as your idle clock won't be maxed out
+all the time and when you go under like
+light load where you need full CPU speed
+it will go up to all the way up to this
+but it won't be like idle idle
+it'll be like mid load or medium load or
+lightish loads so this would be
+perfectly fine if you know your your
+heat sink can't actually cool more than
+one point three five volts but we just
+established that our cooling system here
+is not the issue so we need to go fix
+this cuz
+this is severely limiting our overclock
+to only 4.9 gigahertz which really isn't
+that rare most of these chips should be
+hitting over that I actually know wait a
+minute
+4.8 gigahertz it's limiting us 4 to 4
+point 8 GHz which this is not high
+enough 8700 Kay's should regularly hit 5
+gigahertz if you can push 1 point 4 2
+volts into them so we're gonna throw
+some LLC at it 1 point 4 or 5 volts and
+we're gonna set our LLC to flat because
+I've not well there's a few motherboards
+out there like really good or extreme
+overclocking motherboards are starting
+to come out with LLC settings I can
+actually get you basically completely
+flat voltage output but most
+motherboards can't do flat but let's say
+you get a motherboard that does flat and
+now you're getting one point 4 or 5
+volts idle one point 4 5 volts load and
+you're getting your 5 gigahertz awesome
+great so this is why you want your low
+you know why you need the load line
+calibration setting now the problem is
+this right here not realistic
+ok I'm like I've tested a lot of
+motherboards well okay not that many I'm
+not a full-time motherboard reviewer but
+I have used a lot of motherboards and
+I've not seen a lot of motherboards
+where your voltage does this like this
+is really rare usually what you actually
+see is what you actually see in terms of
+actual load lines that you would see
+here is just an example graph so if you
+looked into a BIOS for for some
+motherboard right you would see
+something like stock so that would be s
+then say low medium and then you know
+this is what we'd want this is our flat
+this is what we're aiming for and then
+you get high
+hi LLC gives you just the smallest
+amount of boost and then you get very
+high gives you even more boost and then
+you get extreme and most motherboards
+with an extreme LLC setting go way out
+of whack and basically the end result is
+like if you were to set one point four
+or five volts and then put the LLC to
+extreme you end up in a situation where
+you're idling on say one point four
+seven volts because remember you're
+never at zero your you might be
+somewhere up here on the curve right at
+idle and then you go to full load and
+you're here on that line and when you go
+to full load you suddenly get one point
+five seven bolts right
+that kills chips that's really bad you
+don't want to be running that into your
+CPU long-term at all right if this was a
+workstation and you configured your and
+the funny thing is this would probably
+let you run 5.1 gigahertz right it would
+actually allow you to run a higher
+frequency it might even let you do 5.2
+in some cases so you have this 5.1
+gigahertz overclock you think you have
+it at one point four or five volts but
+the reality of the situation is is
+you're getting one point four seven
+volts at idle and then you're getting
+one point five seven volts at under full
+load and if this was a you know as I
+said a work machine where you know you
+render video on it for a couple hours
+everyday you can say bye-bye to that CPU
+in like six months in six months that
+CPU is no longer gonna be able to run
+5.1 Giga Hertz at one like it's not
+gonna like you're you're gonna lose that
+five point one gigahertz overclock
+you're probably gonna lose the ability
+to do five gigahertz at one point four
+five volts completely as well you might
+end up in a situation where your CPU
+goes from one you know one point four
+five load and 5 gigahertz to four point
+eight you know so that would cause
+degradation if you decided to keep that
+like if you just lowered your frequency
+and kept the
+insane LLC setting overtime it would
+probably just straight-up destroy the
+CPU to the point where it doesn't run at
+all and unfortunately there is no really
+good way of knowing uh well some other
+boards you'll get lucky and they'll have
+a good software voltage readout and then
+there's some other boards where the
+software voltage readout is completely
+idiotic and I don't know what it's doing
+okay and that that makes things very
+very difficult and overall I would say
+if you know if you don't have the
+necessary skills and knowledge on how a
+motherboard works and how to takes
+voltage measurements on a motherboard
+don't go above medium LLC just don't
+because once you go above medium LLC
+things tend to like these days more
+modern motherboards I've noticed aren't
+that bad even like surprisingly cheap
+ones I haven't noticed one where the
+extreme LLC was this extreme but in the
+past I have run into motherboards where
+extreme LLC was well pretty damn extreme
+and completely unsafe for normal
+operation as a result and I've never
+really run into any motherboard where
+the medium sighting would be this rich
+like this stupid right it wouldn't be
+unsafe levels of over voltage under full
+load it wouldn't even know and typically
+it would droop you a little bit and in
+my personal testing and everything if I
+am doing any kind of overclocking for
+daily usage and I do actually have full
+voltage measurements for the motherboard
+then I'll still intentionally set up the
+system to droop a little bit so you know
+I might go for a one point four five
+volts medium and then I get one point
+four five idle because you know medium
+LLC is starting to get to that point
+where we're almost at that flat flat
+line like that that's not actually a
+realistic medium I've seen mediums that
+look like that basically though again it
+depends on what kind of skin
+we have if this was 400 amps here then
+the scale is that that extreme is not
+extreme enough probably but you know so
+medium LLC and then it would just droop
+down gently to say one point four three
+volts and this is something I would run
+daily no problem that this is like this
+is pretty much ideal at that point I've
+actually lowered the core voltage a
+little bit so that we get that you know
+one point four two which is where most
+8700 case would hit five gigahertz
+anyway so you know it's just it's a kind
+of a an interesting topic load line
+calibration is but generally yeah my
+recommendation is if you're overclocking
+and your motherboard has load line
+calibration settings set it to medium
+like set it to the middle level like on
+an asrock motherboard you'll have levels
+that go one two three four five on as
+rocker boards I recommend two and three
+this one like it's not as bad as like
+what I've drawn out here
+I tested one but it does give you a
+little bit of overshoot if you are on
+ROG boards which I think they go like
+one two three four five six seven
+I would keep myself around while this
+range and actually I think they go up to
+eight but yeah you should always stay
+around the middle levels gigabyte
+motherboards always just stick to medium
+extreme LLC on those is a well extreme
+let's put it that way and yeah
+MSI boards I can't currently remember
+what their naming scheme is but
+generally just stay around the middle
+ground if you do know what you're doing
+then you know knock yourself out
+configure the LLC to give you completely
+flat lap voltage if you can figure out
+how to do that but under most scenarios
+you should be you know four asrock you
+should be looking at around two three
+level aces four five gigabyte medium and
+as a well MSI I can't like
+can't remember right now I think medium
+as well for them there's really no need
+for the using the higher levels though
+if you can find reliable information on
+the internet like there are I think
+turbo recently did a review of a bunch
+of low-end Z 370 motherboards and he
+actually went and measured what kind of
+voltages the various LLC's will get you
+so if you can get that kind of
+information then actually just use that
+information to figure out what LLC
+settings you want to run but if you
+don't know stick to the sort of middle
+ground because that's the safest because
+if you run like you know if you
+unknowingly shove 1.5 7 volts into your
+Mo's CPU well you're not gonna have a
+CPU very long so you know that that is a
+that's basically what you need to keep
+in mind with LLC if you're not bumping
+up against the Mac's safe voltage of
+your CPU I would straight-up recommend
+against messing with LLC at all because
+ultimately you know as long as you're
+not going over Mac's safe voltage at
+idle you don't have to worry about about
+the droop that much right because as
+long as it's true because you know if
+your cooling system is not capable of
+handling over like if your cooling
+system wasn't capable of handling over
+1.3 5 volts well this this configuration
+right here works great for you sure your
+idle voltage is a bit high but it's not
+like that's gonna kill it like that's
+not dangerous this is this is really
+really dangerous this is this is
+perfectly normal
+actually that's why it's called stock
+sense how intel configures their CPUs
+out of the box pretty much except of
+course this voltage would be a lot lower
+but you know it's uh it is that kind of
+situation now obviously if you had a
+cooling system that was good for 1.4 and
+not good for 1.4 you know that then
+you'd have to set like 1.5 and then it
+gets a bit dicey but uh you know I
+personally would recommend just
+on the safe side and even then just
+stick to medium and you might be
+wondering like why can't we just use
+software readings I've run into
+motherboards where like the software
+readings are just like a cool like miles
+away from reality there are motherboards
+where the software voltage readings are
+very accurate and you can rely on them
+and then there's motherboards out there
+where the software might as well be
+reading I like I don't know a mile just
+pulling numbers out of thin air pretty
+much it's really bad on some other
+boards and on those boards you know is
+like if those have LLC settings and pray
+that you you don't that the medium
+setting is actually medium and not
+extreme because you're like yeah there
+there's just no way to to know for sure
+that you're not gonna destroy your chip
+so yeah that's pretty much that pretty
+much covers I think what you need to
+know about load line calibration I think
+I've actually gone a bit overboard
+uh-hum but I think you get the idea
+right load line calibration is well the
+load line is Intel's way of specifying
+adaptive CPU adaptive voltage for their
+V RMS it is done to basically help with
+will voltage tolerance on V RMS because
+you don't get actual flat out line
+voltage output you get spikes and ripple
+and you want to keep that below your
+maximum voltage tolerance and load line
+and load line calibration the actual
+load line calibration setting allows you
+to adjust the load line from the stock
+setting to be closer to completely flat
+and under ideal and my recommended
+setting would be something that droops a
+little bit under low don't go up a bit
+under load that's just no droop a little
+bit always safer it's always safer if
+your voltage is going down and going up
+if it's going up then you know you might
+have a very bad day one day if it's
+going down unless your idle voltages
+for hi you're gonna be fine so yeah
+that's it for load line calibration I
+hope you learned something I hope it
+made sense no I don't know how
+successful I was on that part I hope I
+protect your CPU from extreme LLC though
+there are some other boards where
+extreme LLC doesn't actually work
+properly but again it's just not worth
+the risk in my opinion so that's it for
+this video thank you for watching like
+share subscribe leave a comment down
+below or any questions you have if you
+would like to support what we do here
+with gamers Nexus there's a patreon link
+down in the description below and if you
+would like to watch you know see more
+extreme overclocking kind of content
+like the well more of erm stuff and
+other overclocking ridiculousness
+I have my own channel called actually
+hardcore overclocking you can go check
+that out I imagine there will be a link
+down in the comments below for that so
+once again thank you for watching and
+see you next time
+if you would like to support what we do
+here with gamer uh you know what we do
+here with game I have the the outro out
+the window</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

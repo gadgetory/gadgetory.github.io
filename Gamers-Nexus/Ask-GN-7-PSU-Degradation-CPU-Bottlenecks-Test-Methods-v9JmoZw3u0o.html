@@ -1,0 +1,574 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Ask GN 7: PSU Degradation, CPU Bottlenecks, Test Methods | Gadgetory - Your Gadget Factory</title><meta content="Ask GN 7: PSU Degradation, CPU Bottlenecks, Test Methods - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Ask GN 7: PSU Degradation, CPU Bottlenecks, Test Methods</li></ol></div><h2 class="post__title"><b>Ask GN 7: PSU Degradation, CPU Bottlenecks, Test Methods</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/v9JmoZw3u0o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey Ron i'm steve from gamers nexus
+dotnet and we're back for another ask GN
+episode lots of good questions this week
+they get better every week and i really
+do mean that they're getting very good
+and it helps me call with new article
+ideas talk about some things that maybe
+I've thought about but haven't really
+written or done a video about so please
+keep it up if I missed your question
+sorry we you know we can only fit so
+many in a video without it being
+ridiculous so just post it again and
+I'll try and get to it or tweet at us at
+gamers nexus for the next video so let's
+get to the first one the first one is
+from mark mark has a pretty good amount
+of text here but the gist of the
+question is how do I know how many lanes
+talking about PCI Express Lanes my
+current processor has how does it
+allocate those lanes which would be
+referring to probably the chipset
+chipsets allocate lanes HSI o lanes
+differently then purely pcie a lot of
+the time excuse me and then he also says
+how many ladies motherboard has chipset
+and is basically asking how do you know
+what do you do with pcie lanes how do
+you figure out what you need so here's
+the thing we've talked about this a few
+times now it's been a recurring topic in
+the episodes and hopefully at this point
+things are starting to make a bit of
+sense pcie lanes come in a few forms but
+ultimately it's just a pcie lane it's a
+form of communication through which some
+device the cpu chipset communicates with
+a device in a pci express slot which is
+an interface it was what we call those
+and those interfaces have bandwidth
+limitations they have standards they
+have pin counts all this stuff and that
+creates the PCIe laying the PCIe device
+pcie slot all that so when it comes to
+PCI Elaine's first of all to know how
+many your processor has the best thing
+to do if it's not on our website or
+something just go to google and type in
+the name of the architecture for the
+processor or the chipset often will work
+as well followed by block diagram so if
+you go to google and you type in z 170
+block diagram that diagram which
+I've shown in a previous video several
+times now should include two thins it'll
+have the CPU normally at the top and
+then the chipset at the bottom which is
+Z 170 so even though you're looking for
+the chipsets block diagram it should
+include the current generation or
+generation appropriate CPU diagram in
+there as well which will tell you how
+many pcie lanes the CPU has those lanes
+from the cpu are generally what's
+allocated to your graphics processing
+devices the CPU unlike the chipset just
+has access to maybe 20 maybe 24 maybe 40
+in the case of the ex 99 2011 CPUs some
+amount of lanes it takes those it gives
+it to the high powered devices and then
+the chipset does the rest so in the case
+of the Z 170 chipset you have 26 HSI oh
+lanes those can be allocated to various
+things they can be allocated to SATA two
+gigabit ethernet but they can also be
+allocated 20 of them are already
+allocated to pcie however as we've
+discussed a few times out the chipset
+lanes are used for i/o so if you have 20
+pcie lanes from the chipset and they're
+in groups of four or five groups of four
+you're generally going to be using those
+not for graphics which you really would
+want x8 if you're doing SLI but you'd be
+using those for storage so m dot too for
+example a lot of people maybe don't know
+this i'm about to is a PCIe device even
+though it's called m dot to it will use
+pcie lanes and the thing to note here is
+well how many lanes doesn't end out to
+device use and generally the safe
+assumption is four lanes but some lime a
+bit slower or older and they will use
+two lanes you can assign them more not
+not that you assign them but the chipset
+can assign them more but it doesn't mean
+it'll go faster and this is true for
+basically any device on any interface
+just like SATA drives back in the day
+before SSDs were really a thing if you
+had a say too hard drive it really
+didn't matter if you have
+on SATA 2 or say 23 because it was
+generally other than maybe some bursted
+increments it was generally not the
+interface that throttled you but the
+device that's true here as well so that
+stated generally the items to look for
+would be look up the block diagram for
+the chipset or the CPU that tells you
+how many lanes are available figure out
+what your building is it multi-gpu is it
+more than two GPUs if it is you need to
+be very careful in your processor
+selection to make sure that that
+processor will support an adequate Lane
+configuration this is different topic
+for another video maybe but generally
+just keep it around by eight that's a
+pretty safe range us to buy 8 by 16
+thing yes there is a difference it's
+very small and the performance gain from
+just having another GPU is going to sort
+of make that difference irrelevant but
+the next thing to look at other than
+GPUs is actually SSDs if you have pcie
+ssds or if you have nvme SSDs or if you
+have m.2 ssds those all use PCIe lanes
+so you need to make sure those are
+available through the chipset or
+somewhere else if not I hope that helps
+the question was it left a lot to to my
+interpretation here so if that wasn't a
+good enough answer then just clarify
+below and I'll try and address the next
+week because it's a pretty fun topic and
+I think we people people probably don't
+hear about a lot easy over dose asks a
+big question asking about CPU
+limitations for benchmarking and it is a
+it's a pretty big question so the gist
+of easy overdoses concerns where why
+don't reviewers post benchmarks using
+custom settings for games and why don't
+reviewers try to use higher end or lower
+end cpu is appropriate to whatever
+graphics out there testing so this comes
+down to methodology and specifically
+talking to the question of custom
+settings will do a lot of that if you
+look at our Witcher 3 and GTA graphics
+guides I sit there i go through every
+single setting I test all of the
+benchmark performance
+FPS I'll figure out okay what's the best
+setting to use how can you get an extra
+5 FPS out of GTX 970 or r9 380 or
+whatever how do I get an extra 5 FPS out
+of that without just tanking all the
+settings down to high or medium from
+whatever the other setting is so that's
+something I do but in the benchmarks
+like with battlefront yes i'm using a
+preset and there's a few reasons for
+this and other reviewers will likely
+agree on at least one of these but the
+reason most reviewers stick with the
+presets for settings is about two two
+main reasons one is usability a lot of
+gamers will try to just choose a preset
+because they don't understand the
+options or don't care to understand the
+options so in that regard it's easier to
+present the data to someone who is les
+savy now it's also easier to search for
+the data on Google if you're looking for
+just an ultra bench it's easier to find
+that said the bigger reason that a lot
+of reviewers myself included will use
+the preset is because we want to
+eliminate the possibility for test
+errors so this is a testing methodology
+question which is something that I
+actually specialized in before and all
+throughout the creation and existence of
+gamers Nexus so test methodology was my
+field and with test methodology your
+objective is to eliminate the chance for
+tester or technician error during the
+execution of a test especially when
+we're time limited like we often are
+with games and video cards and one of
+the best ways to do that is to not screw
+with anything that you don't have to
+change so you want to use presets
+because maybe maybe I have Patrick stone
+one of our editors maybe I have him come
+in and run for tests on video cards for
+battle from for me in that scenario I
+need to be able to tell him just set it
+to ultra and set it too high and then
+run the tests the minute I start
+changing settings is a chance for him to
+miss that setting or a chance for me to
+screw up as the night drones on and
+missed the setting so it's a testing
+methodology issue where you don't want
+to inadvertently introduced test error
+and generally at least at our website we
+will always catch test error
+when it comes to settings if there is
+any but maybe some sites don't have the
+the amount of eyes on a benchmark before
+publishing it in that instance you
+really don't want to don't want to mess
+something up inadvertently because it'll
+skew all the data and you won't find out
+until it's published so that's why that
+happens there's other reasons too but
+one of the main ones battlefront for
+instance we published the benchmark on
+that I'm looking at the actual settings
+do a graphics guide but because I did
+the benchmark first and because that was
+the thing that we wanted to do first for
+strategic reasons we didn't go through
+and dig through all the settings to see
+what they all did before the benchmark
+so it's best just leave it on presets I
+hope that helps as far as CPU
+limitations bench test benches are built
+in a way that is specific to the
+component of tested so we have one bench
+for GPUs we have one set of components
+for CPUs where the platform obviously
+changes it was set up a bench for RAM
+all this stuff so there are four or five
+different computers that are in use on
+or off for different testing purposes
+and the reason for that is because you
+want to isolate all of your environments
+to make sure there's no contamination so
+as you install test equipment on one
+system software otherwise you don't want
+that to influence for example i'm
+installing so on the RAM system I don't
+want it to influence my GPU system you
+it's very important to make sure that
+environments aren't contaminated make
+sure they're the same every time make
+sure they easily deployable because any
+kind of change can mess up the data and
+then you have to rerun all of it
+potentially months of data so that's how
+the the benches are built and then in
+terms of CPU selection in GPU
+benchmarking you generally want a CPU
+that will make sure there's no
+throttling of the GPU so if we're
+throwing in an MSI seahawk into a bench
+we probably want to use and did use an x
+99 solution with eye on cpu to make sure
+the CPU does not bottleneck the GPU
+because if it does we're no longer
+presenting an absolute performance Delta
+between all the cards so that's sort of
+the methodology behind it that goes way
+deeper than that I'm happy to discuss it
+quite obviously I've been caught on
+now so if you guys do want to know more
+about the methodology just let me know
+I'll go more into it but I don't want to
+take too long here one question so
+moving on Samuel Clinton says my
+question is not related to specs or any
+items in specific but i think is
+something everyone struggles with how to
+minimize or even neutralize dust from
+getting in the case so I actually really
+like this question does it something
+I've been dealing with myself lately
+there's a couple ways to do it there's a
+lot of voodoo magic online arcane BS
+such a while but couple main ways to do
+it with cooling a system you have
+various options liquid cooling air
+cooling for the sort of primary to
+everyone's familiar with but there's
+also things like the stack effect the
+stack effect is when you create a system
+in which the air intake is normally on
+the bottom and the silverstone raven 02
+would be an example this it takes on the
+bottom there's no one take anywhere else
+only exhaust on top and so you're
+creating a smoke stack where the air
+comes in under the case there is going
+to be cooler towards the ground by the
+way and that gets pulled up and then
+shot through the exhaust fan at the top
+of the case now on this set up the
+motherboard is rotated which is actually
+very interesting it's a 90 degree
+rotation so in that instance your
+cooling the GPU more efficiently as well
+this is the best performing case I've
+ever tested so that uses the stack
+effect it cool as a sideline to this
+stack effect cool and often but not
+always often helps with dust management
+because you're forcing all the dust
+through a single intake channel which
+means it's easier to clean it so here's
+the the main thing with dust you're
+never going to build a system that's
+just magically impenetrable to dust it's
+always a good idea to clean once a month
+ideally but if it goes longer that's
+okay as long as you set it up properly
+so there is no such thing as a system
+which won't collect dust but you can
+minimize it quite a bit and the main
+ways to do it are to try and force the
+dust through one area just to make your
+life easier when you're cleaning so if
+you have one kind of primary intake area
+you can do it that way the other main
+theta is positive and negative pressure
+systems so if you bill
+your system with a case where you
+manually configure the case in such a
+way that the air intake is is considered
+positive where the in the air inside of
+the case is a higher pressure than the
+air outside that creates a suction
+action where the air is moving one
+direction or the other depending on if
+it's positive or negative so if you set
+it up the right way you can have sort of
+an all-in taker all exhaust system
+that's sort of the easiest top level way
+to do it but there are cooling issues
+there you can potentially create
+vortexes ideally you sort of set up a
+mix of positive and negative where you
+just have maybe one or two intake fans
+you position them somewhere easy to
+access with the dust cover like most
+cases now have some kind of dust
+filtration set up and then the rest is
+exhaust and the reason that works if you
+think about it is because if you have
+exhaust you have air blowing out of the
+top of the case dust shouldn't be
+collecting there because there's air
+coming out of it it should push the dust
+away right so that will help a lot just
+kind of do a couple intake fans in one
+spot and then liquid helps as well not a
+whole lot because what happens hand as
+the dust just gets all shoved into the
+radiator if you don't clean it off in so
+that is a concern but liquid can help
+especially do open loop because you can
+limit the amount of fans you need and
+then you just set it all up to be
+exhaust really except for maybe one fan
+if you if you want to make sure there's
+some intake of course but you can set up
+more exhaust that wait in line with the
+dust so moving on next question Derek L
+love this channel thank you that that
+means a lot definitely is a reason that
+we produce all this content work so hard
+love this channel my question is about
+psu degradation if my current setup is
+using a nineteen ninety percent of my
+500 watt psu should i replace it sooner
+rather than later EVGA recommends a
+minimum of 500 watts so you're right on
+the right on the middle I've talked
+about this a bit but not it not this
+specific question so first of all the
+power supplies are happiest when you're
+using them depending on the the supplier
+the manufacturer
+they're happiest when you use them
+somewhere in the sixty to eighty percent
+of power utilization range that's when
+they're the most efficient so a very
+easy example take a 100 watt power
+supply depending on the manufacturer it
+will be happiest if you're using 60
+watts of power maybe 80 watts of power
+leaving some overhead for heat and
+efficiency loss and degradation as we're
+just discussing here so degradation is a
+real thing with power supplies they do
+actually lose some of their ability to
+retain that advertised wattage over time
+they lose some of the charge and that's
+from things like capacitor aging and
+other electrical components aging but
+especially capacitors and especially in
+lower end power supplies where they're
+maybe not rated for as many hours like
+the solid or Japanese capacitors and
+that's because they start leaking the
+week power that happen is just from heat
+from age it makes them less able to
+retain all the power that they used to
+so in that case you you do actually face
+the the question of well when will my
+power supply died as long as you leave
+that overhead in there that rule of
+thumb sixty to eighty percent
+utilization you'll probably be okay if
+you're on 500 watts and they're
+recommending 500 watts for whatever your
+setup is then you're pretty up against
+the limit there but just looking at the
+specs provided to me by Derek Derek
+Scott at 46 90 k at a 970 I'm not sure
+how much power that that exact 970 draws
+but the 46 90 k with a 970 should
+probably not be really much above 300
+watts if it is about 300 watts and that
+k is written we're in pretty good shape
+because you're not they recommend 500
+but you're not going to be heading 500
+probably with that setup unless you have
+some crazy amount of fans or other stuff
+going on that I don't know about I hope
+that helps moving on you to be 24 hello
+Steve great show as always thank you my
+question is is it true that you need at
+least a minimum of 24 to 32 gigabytes of
+memory system memory to fully take
+advantage of
+12 gigabytes of vram on Titan X thanks
+in advance so this is an interesting
+question I'm if you could let me know
+where you read that that would be really
+helpful I'm not too active in the
+workstation communities so maybe maybe
+was there but it depends on what you're
+doing if you're gaming you're not going
+to use them at that vram anyway but the
+system memory will not be limiting you
+in game Ian what they might be talking
+about some sort of virtual memory type
+thing or maybe they're talking about the
+workstation application where the
+workstation will just bottleneck if you
+don't have that amount of system ram
+because for example adobe premiere adobe
+premiere eats all the system ram that
+you throw at it we have 32 gigabytes in
+one of our round two rigs 64 and another
+all of that Ram gets used when we're
+rendering videos of post-processing
+effects the video does not come out
+looking like this from the camera we
+have to do color correction audio
+correction stuff like that that takes
+memory and if we put 12 gigabytes of
+memory in the system then yes using a
+tight necks with 12 gigabytes it will
+probably be throttled by the limited
+system ram but not because adobe can't
+use or access the video ram on the titan
+exits it's more because it's choking on
+the system ram limitation if it wants
+more of that before it wants more the
+via gram so that's one very specific
+example where I think I understand the
+question but other than that please let
+me know specifically what you're talking
+about and I'll get back to it so hugs a
+lot was the last real question hugs lot
+says I asked the slack last week skylake
+isn't ideal for two-way SLI crossfire
+due to its twenty lane pcie limitations
+right so forcing two cards at a texts
+and significant loss on performance but
+then again if you can't measure the
+difference on skype anyway is it at all
+possible for pcie video card to use by
+16 off the cpu and then pcie another
+pcie card by 16 off the CEO and sony
+chipset so the answer to that is no
+these e170 chipset supplies its twenty
+pcie lanes
+groups of four as I've said two groups
+of four which means five sets of 4 20
+and because they're in groups of four
+you can't mix and match them it doesn't
+work that way they are more meant for
+i/o throughput stuff like that with my
+two devices or Wi-Fi cards or gigabit
+ethernet stuff like that for the HSI oh
+lanes so no you can't just mix and match
+the lanes like that for sli that said
+using two by eight cards currently I'm
+it might change the future but currently
+you're not losing a lot of performance
+by going to buy it from by 16 yes it is
+half of the potential throughput on the
+interface but as I said in the beginning
+of this video the interface is normally
+not a limiter to the device itself so
+the PCIe interface is starting to get
+that way where it's there's potential to
+limit the newer high end video cards but
+generally right now at the launch of
+this video if you have pcie 3.0 by 8 and
+you have some modern video card a 980 TI
+you're not going to be losing a lot of
+performance it will not be significant
+compared to the performance gain from
+just having two GPUs and by eight so I
+would not worry about that too much
+final thing here the count from dark
+drifter his head did you shave no and a
+frowny crying face so there sometimes
+videos where it might look like this
+goes unmodified for a while fun fact
+that normally is a way for you to tell
+if I've been up for 20 hours trying to
+produce content so like the the
+battlefront stuff the star citizen stuff
+that just came out recently both of
+those things are very very
+time-intensive and not friendly with
+sleep in those instances there might be
+some sacrifice of management of any kind
+of hair or a shirt or anything as you'll
+see in the videos like the star citizen
+one I have like a white dot right here
+something that I missed another video I
+had like a hair hanging off my
+shirt video so that's normally
+indicative of how long I've been up
+producing content but that is all for
+this time thanks for watching guys
+please leave more questions comments in
+the video in this video I'll check this
+one first and as always hit that patreon
+link if you like this coverage anything
+that helps as always big thanks to those
+of you who have backed us but I do want
+to make clear again the best thing you
+can do is is just watch subscribe
+hopefully learn something that's the
+goal of the channel and tell people
+about it posted on social media or
+whatever because that's that's really
+the biggest way to spread the word about
+the channel and help us grow it patreon
+is great but I don't need direct money I
+really just want the content to get out
+there because I feel like working with
+the audience with you guys we're
+starting to produce some really cool
+stuff and it's more time intensive but
+it's also really rewarding to do so help
+me share it and thanks for watching I'll
+see you all next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

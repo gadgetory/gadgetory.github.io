@@ -1,0 +1,330 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>AMD vs. Nvidia Low Level API Performance: What Exactly Is Going On? | Gadgetory - Your Gadget Factory</title><meta content="AMD vs. Nvidia Low Level API Performance: What Exactly Is Going On? - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Hardware-Unboxed">Hardware Unboxed</a></li><li class="active">AMD vs. Nvidia Low Level API Performance: What Exactly Is Going On?</li></ol></div><h2 class="post__title"><b>AMD vs. Nvidia Low Level API Performance: What Exactly Is Going On?</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/Xuea5nt4TnY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">so what is asynchronous compute reading
+through the comments section of my rx
+480 in GTX 1060 reviews you'll quickly
+learn that it's a special directx12
+feature that cripples in video hardware
+and shows just how awesome anybody's GCN
+architecture really is yes sometimes the
+YouTube comments section can be very
+educational the truth is we still don't
+really know how AMD is Polaris and
+invidious paschal architectures stack up
+in DirectX 12 titles and what the
+implications of eights in computer will
+be and we won't know until we have at
+least a dozen good quality titles to
+test that said we're beginning to get a
+glimpse of what the future might hold
+the first really well put together
+DirectX 12 title was ashes of the
+singularity this realtime strategy game
+created a heap of discussion and plenty
+of speculation regarding how AMD and
+video will stack up in a world filled
+with quality DirectX 12 titles the
+controversy began when it was discovered
+that in videos Maxwell and Pasco GPUs
+weren't actually faster using DirectX 12
+rather they were slightly slower in
+relation to the DirectX 11 performance
+on the other hand aimed is GCM base
+Radeon graphics cards enjoyed up to 30%
+more performance when using DirectX 12
+over DirectX 11 so why is this well many
+would have you believe it has everything
+to do with asynchronous compute it's no
+secret that AMD's GCN has asynchronous
+compute engines or ACS built into the
+architecture for hardware based async
+compute support whereas in video on the
+other hand doesn't feature dedicated
+hardware support for acing computer so
+then case closed Nvidia messed up
+despite knowing full well that AMD had
+implemented support over four years ago
+but how can that be billions spent on
+R&amp;amp;D only to make a crucial mistake
+that'll cripple them going forward well
+hang on a minute
+let's just take a look at what's really
+going on here why in a game such as
+ashes of the singularity doesn't video
+see no real benefit and why does AMD
+come from such poor DirectX 11
+performance to such strong directors 12
+performance and video would have you
+believe it's down to the fact that their
+more recent GPU architectures are
+already extremely efficient therefore
+they don't benefit from low-level api s
+and the features they offer such as
+async compute that seems like a pretty
+convenient answer but Nvidia might have
+a point
+I feel we are seeing the full potential
+of their Maxwell and Pascal cards and
+directives 11 titles they are after all
+extremely efficient when compared to
+their ng counterparts testing with
+DirectX 11 title sees the are X 480
+consume the same amount of power as the
+gtx 1070 which isn't great giving it on
+average 30% slower by now I think we can
+all agree the problem for AMD has been
+efficiency and these problems seem to
+stem not just from the architecture but
+also the software aka display driver if
+we first look at the architecture and
+how it scales then adding more stream
+processors you find some interesting and
+perhaps unexpected results the Radeon r9
+390 for example features 2560 SPU's or
+rather let's say cause the I know nano
+boasts 60% more cause at 4096 they're
+operating at the same 1,000 megahertz
+frequency the Nano cause also had 33%
+more bandwidth to play with so you'd
+expect the Nano to be around 60% faster
+however in reality the Nano is on
+average just a little over 20% faster
+than the r9 390 in DirectX 11 titles if
+we look at my Star Wars Battlefront
+results from the GTX 1060 video for
+example we see the Nano is just 15%
+faster than the 390 so in this title a
+60% increase in caused netted 15% more
+performance keep in mind there are no
+system limitations capping the
+performance of the nano either if we
+look at the gtx 1060 and compared to the
+1070 which features 50% more cores we
+see the 1070 is 32% faster so you won't
+get perfect scaling from nvidia either
+but the performance gain is much closer
+to the increase in cause this is a real
+problem for AMD because as they ramped
+up the core count in order to compete
+with in videos upper echelon this
+inefficiency continues to amplify for
+whatever reason the GCN architecture
+isn't able to fully utilize all these
+cores and as a result we see much
+smaller performance gains than what the
+specs would suggest this also doesn't
+help with power efficiency as those
+cores are still present and active even
+if they aren't being fully utilized
+getting back to ashes of the singularity
+here we have a game with AMD and NVIDIA
+architecture actually scaled quite
+evenly using DirectX 11 this isn't the
+best GPU test given it's a real-time
+strategy game and therefore
+predominantly CPU bound despite that we
+see when testing with DirectX 11 that rx
+40 and I know
+ix are only able to match the GTX 970
+meanwhile the GTX 1060 can be seen
+beating the Nano
+moving to DirectX 12 we find a rather
+different story the GTX 1060 is still
+faster than the our X 480 but only just
+well the 480 does be both 980 and 970
+the Nano however is now considerably
+faster than the 1060 and even beats the
+980 TI the odd thing here is that we go
+from one extreme to the other running on
+the DirectX 11 API the AMD cards are
+much slower than they typically are in
+other titles then when we tested with
+DirectX 12 they're much faster than you
+would expect the fury X for example
+beats the GTX 1070 basically AMD has
+made no effort to optimize the drivers
+for DirectX 11 performance and ashes
+well the game itself has been heavily
+optimized for aim DS GC and architecture
+so the results from this one game make
+it difficult to draw any real
+conclusions so I'm going to choose not
+to draw one moving on we find doom with
+its recent updated supporting the Vulcan
+API prior to the update the radeon gpus
+struggled using OpenGL here we see the
+RX 4 ad was good for 89 FPS on average
+of 1080p while the GTX 1060 pumped at
+112 FPS this meant using OpenGL dr x 480
+was 21% slower now with Vulcan and async
+compute shaders enabled thanks to the
+use of TSS AAA we see the GTX 1060
+maintains that same 112 FPS average the
+R X 480 on the other hand gains an
+incredible 36 percent performance boost
+making it now 8 percent faster than the
+1060 what's also interesting to note
+here is the I 9 390 was slower when
+compared to the rx 480 using OpenGL this
+is interesting as the r9 390 features
+11% more cause enabling Vulcan allows
+the more core heavy 390 to just
+outperform the 480 is the low-level API
+helps overcome any efficiency problems
+this effect is amplified to a much
+greater degree when looking at the core
+rich nano
+which sees a massive 53 percent
+performance boost for now acing computer
+is only enabled when using Vulcan in
+doom if anti-aliasing is disabled or
+tssaa a is used so what happens if we
+disable AC and compute by using
+invidious taa method well not a lot
+based on what we see here in fact the RX
+for ad delivered the same 121 FPS from a
+three run average using TA and
+yes si a given by using different
+anti-aliasing methods this example isn't
+an apples to apples comparison but it
+does strongly suggest the async computer
+isn't really responsible for aim these
+stellar performance in Doom and using
+Vulcan okay so what about 3d marks new
+DirectX 12 times fire synthetic
+benchmark that allows us to enable and
+disable async compute in to GPU tests
+looking at the first graphics test we
+find some interesting results
+the gcf's 1060 is indeed faster with
+acing compute enabled albeit by just 4%
+the rx 480 however was 14% faster with
+async computer enabled though I should
+point out in this test it was still 11%
+slower than the GTX 1060 still there's
+no denying that
+AMD's hardware support for async compute
+does give them a performance advantage
+in this test the second time spot
+graphics test shows different
+performance trends here the GTX 1060 was
+no faster or slower with async compute
+disabled the RX 4 ad on the other hand
+was temps and faster with async compute
+enabled though this wasn't me a 3 FPS
+game so it seems that in certain cases
+async compute can enable around 10
+percent more performance on the AMD GPUs
+that being the case how GPUs such as the
+Nano over 50% faster in Doom when using
+a low-level api in that example we saw
+racing compute was only improving
+performance by a few percent it's my
+opinion that the Radeon GPUs are so much
+faster when running on a low-level API
+such as DirectX 12 of volcán simply
+because that's how fast they should be
+the way in which DirectX 11 works simply
+doesn't suit the way AMD designed their
+drivers the issue here is a key feature
+of DirectX 11 command lists this is a
+DirectX 11 feature that AMD doesn't
+support and this is what hurts the
+DirectX 11 performance command lists
+essentially takes single-threaded code
+and try to multi thread it sounds
+familiar hey I'm of course referring to
+async compute actually it's probably
+more like hyper threading for your GPU
+these command lists were touted as a
+massive step forward for DirectX 11
+terms of multi-threaded performance when
+it was first announced so while Andy
+offers hardware basic compute for api's
+that support it it didn't bother to take
+advantage of a similar feature for
+DirectX 11 a driver level by failing to
+take advantage of this multi thread
+feature amy has run into a driver
+overhead problem that hampers CPU
+performance in a way Andy's been lucky
+to a degree firstly almost every review
+test with the most high-end hardware
+possible in an effort to eliminate or at
+least reduce system bottlenecks that
+could limit GPU performance and
+therefore shape the results I myself do
+this by writing a core i7 six to seven
+hundred K at four point five gigahertz
+and for AMD this helps reduce the impact
+of the driver overhead also for the most
+part modern games a GPU dependent which
+also helps to limit the impact of the
+driver overhead
+likewise when testing higher-end GPUs we
+benchmark at high resolutions such as
+1440p and 4k the GPU becomes the primary
+bottleneck here so any extra load on the
+CPU goes largely unnoticed
+the driver overhead does however present
+a real problem for those running lower
+end or older hardware it's been seen in
+the past when testing budget GPUs that
+AMD is faster than using a high-end rig
+but falls behind when using a budget
+system in short AMD has two things
+working against them when using API such
+as OpenGL and DirectX 11 firstly and
+most crucially I believe is the driver
+overhead which is a particularly big
+problem for both low end and high end
+AMD GPUs then you have the core
+efficiency issue which async computers
+believe to help solve though this could
+also just be the benefit of using a
+low-level api as that stops the cpu from
+holding the GPU up so it's my belief
+that we're really now starting to see
+the true performance of AMD GPUs in
+games using low-level api's as for
+NVIDIA is there more performance to be
+had should they have integrated async
+compute engines into their design
+honestly I have no idea but it stands to
+reason that doing so probably would net
+them up to 10% more performance in games
+such as ashes of the singularity keep in
+mind adding this technology could also
+increase the power consumption by that
+margin so then you have to wonder how
+worthwhile with such a change be for an
+already very efficient architecture in
+the end this is ultimately good news for
+everyone if the next generation of games
+do enable AMD to up their game then we
+should start to see more affordable
+graphics cards as a result perhaps
+that's just wishful thinking but I'd
+sure like to find out what do you guys
+think let me know in the comments I'm
+your host Matt as always and I'll see
+you guys next time
+youtubers like me depend on your support
+to continue improving the quality and
+content of our videos to support the
+channel directly consider becoming a
+patron to also get access to a heap of
+cool rewards and exclusive giveaways
+also don't forget you can check prices
+and buy the products I looked at in this
+four
+through the Amazon links in the video
+description below thank you kindly for
+supporting me and the hardware on box
+channel it means a lot to me and I
+really do appreciate it and in return
+I'll continue to work as hard as I can
+to keep producing the content you enjoy</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

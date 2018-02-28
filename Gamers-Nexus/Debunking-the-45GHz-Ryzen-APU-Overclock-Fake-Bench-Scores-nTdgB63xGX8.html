@@ -1,0 +1,197 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Debunking the 4.5GHz Ryzen APU Overclock | Fake Bench Scores | Gadgetory - Your Gadget Factory</title><meta content="Debunking the 4.5GHz Ryzen APU Overclock | Fake Bench Scores - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Debunking the 4.5GHz Ryzen APU Overclock | Fake Bench Scores</li></ol></div><h2 class="post__title"><b>Debunking the 4.5GHz Ryzen APU Overclock | Fake Bench Scores</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/nTdgB63xGX8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">so there's been word going around of a
+4.5 6 gigahertz rising overclock for the
+2200 or 2400 G we bought those ap use
+and I wanted to show you why that's not
+actually a thing so we can all move
+along and everyone understands where the
+numbers are coming from this is a timer
+bug that's been around since Rison came
+out it was patched out for most of the
+rise in CPUs at this point but some of
+the ApS are exhibiting the bug again so
+it's time to refresh everyone and I mean
+on the screen right now it says we're at
+43 50 megahertz or something like that
+for the core speed I've configured this
+to have a multiplier of 39 I've not
+changed the bus speed which it should be
+at 100 but it says 111 and somehow even
+though I've told to go to 3900 megahertz
+we're showing 40 300 megahertz so I will
+demonstrate that this is the sleep bug
+it will actually report higher scores
+and everything but it's not really all
+it's made out to be before that this
+video is brought to you by Thermaltake
+and the view 71 enclosure the view 71 is
+a full tower case that's capable of
+fitting 3 video cards and most
+configurations it's also one of the
+better cooling cases in our recent case
+testing bench lineup the view 71 has
+hinged a tempered glass doors on either
+side that make it easy to open and show
+off and it comes with at least one rain
+fan though you can get the RGB version
+if you prefer learn more at the link in
+the description below so a this works is
+really simple basically just before the
+camera started rolling I put the system
+to sleep with the windows s3 function
+brought it back and we see a 300
+megahertz increase in score and if I run
+the benchmark here it will actually
+score higher than it did previously so
+we'll just let this finish for a second
+okay so according to Windows that took
+about a minute to finish and we got a
+score of 643 CB marks don't take that
+score too far this isn't like hey this
+is what the score is because I haven't
+even installed all the drivers and
+everything all that matters is relative
+scoring against itself right now so talk
+about a minute in Windows that's not
+real time that's the root cause of this
+bug basically for every one minute in
+Windows
+minute and seven seconds is passing in
+real life and this benchmark Cinebench
+as with many others
+I think blender is included in that
+those tools that use a start versus end
+time for scoring are scoring versus the
+windows time that's reported and the
+windows time that's reported is
+incorrect because if you looked at the
+base clock for example that was showing
+111 megahertz a reality that's 100
+megahertz so somewhere in here Windows
+is reporting the incorrect time it's
+actually reporting time slower than is
+transpiring in real life and because the
+benchmark is completing in the exact
+same amount of time say about a minute
+and seven seconds what's happening is it
+thinks less time is passing because time
+is passing more slowly in Windows but in
+fact same amount of times passing
+however it's giving us a higher score
+and again I'll just bring this up so at
+4300 megahertz
+reported in cpu-z and now I'm gonna do
+is just restart it restarting is
+different in Windows 10 then shutting
+down shutting down will give us a hybrid
+shut down so we're gonna restart that'll
+clear everything and boot back in okay
+so we've rebooted completely cold
+restart which is a thin now and if we
+open up CPU Z there we go thirty nine
+hundred megahertz now so now that we are
+at 3900 megahertz
+again if we ran that test again we would
+get a lower score than what we just saw
+a moment ago even though both tests were
+actually at 3900 megahertz
+the timing is different now it's
+actually proper real-time way so this is
+very convenient timing and we've ended
+at 435 434 somewhere in there but either
+way it's taken more Windows reported
+time than the first one
+so 566 for the CPU score this time again
+don't compare that versus anything else
+not the point
+compare it only against the previous one
+643 so it looks like there was an
+improvement after putting the system to
+sleep but it's not improved all that's
+happening is you're cheating with the
+timer bug and software that validates
+time like 3dmark software would report
+it as an invalid bench run software that
+does not validate time Cinebench would
+report it as perfectly valid and you've
+just improved it by way of a fake
+overclock that doesn't exist so I think
+that pretty much covers it just to kind
+of prove a point let's get the windows
+clock up here alongside a cellphone
+stopwatch and and demonstrate the timing
+and then we should be done okay so three
+two one go so what we're doing is timing
+with the phone real time versus Windows
+Windows doesn't have access to internet
+or anything it's not updating actively
+it's just taking a lawn as as the host
+to dictate so right now this is pre
+sleepbug you can see we're at 26 seconds
+where I are well either way matter what
+I say it's gonna be a bit ahead so yeah
+they're tight that's all that really
+matters
+we're tied here I would go sleep and
+wake it back up okay so clearly it went
+to sleep because everything as still as
+it was and let's do this one more time
+just barely good so what should happen
+is the phone should start pulling away
+as time ticks on and we'll probably just
+cut to that or something or speed this
+up
+so we've hit a minute here and we're at
+54 seconds up there so let it keep going
+3 2 1 stop so a minute six point six and
+versus one minute so we're about six
+point six seconds over in real time
+versus what Windows is reporting that's
+all there is to it it's very simple if
+you think you got a four point five
+gigahertz overclock I'm so sorry to ruin
+your day you didn't perhaps on a future
+rise in architecture but this is not an
+architecture that is readily capable of
+doing four point five six gigahertz on
+an APU it's fully possible that rise and
+could get there but right now the only
+reason that numbers is appearing is
+because of the timing bug and then the
+score is aligned with it because they're
+all based on time so it actually looks
+like it validates like it looks
+legitimate but it's not and if you're on
+3d mark or some other I think hardware
+Bob's x265 benchmark also validates
+against time those would be what to use
+or you just use a cell phone so yeah
+that's it that's all for this one we
+have a lot of really cool content coming
+out for the 2200 G in the 2400 G that's
+a bit different from most of the reviews
+that you've seen thus far we have some
+some fun feature ideas for it because we
+did end up buying ours and getting them
+on the same day as embargo left so
+because of that we'll save the reviews
+and just do cool stuff
+one quick note on this it does depend on
+the motherboard we were able to
+reproduce this on MSI boards the Asus
+crosshair six hero did not have this
+problem so it seems to be patched out
+there already and other boards your
+mileage may vary so if you have the
+issue just check for BIOS updates for
+anything that's going to be getting that
+update later it'll probably come after
+Chinese New Year and subscribe to catch
+all of that you go to
+patreon.com/scishow sexist to helps out
+directly thank you for watching I'll see
+you all next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

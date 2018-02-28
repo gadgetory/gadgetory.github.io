@@ -1,0 +1,434 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>VRM &amp; PCB Analysis of ASUS ROG Strix Vega 64 | Gadgetory - Your Gadget Factory</title><meta content="VRM &amp; PCB Analysis of ASUS ROG Strix Vega 64 - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">VRM &amp; PCB Analysis of ASUS ROG Strix Vega 64</li></ol></div><h2 class="post__title"><b>VRM &amp; PCB Analysis of ASUS ROG Strix Vega 64</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/OAHTe7NyVuk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey guys builds lloyd from actually
+hardcore overclocking here today we're
+going to be taking a look at the rx
+Vegas Strix Edition from Asus this is
+the first of the Vega custom PCB cards
+and this one is surprisingly good which
+honestly it in some sense you know I
+shouldn't be saying that because Asus do
+make a point of generally not putting
+out subpar PCBs or at least not PCBs
+worse than the reference design before
+that this video is brought to you by
+thermal Grizzly makers of the conductor
+not liquid metal that we recently used
+to drop 20 degrees off of our coffee
+leak temperatures thermal grizzly also
+makes traditional thermal compounds we
+use on top of the IHS like cryo not and
+Hydra not pastes learn more at the link
+below with the sort of frontier Edition
+PCB and the reference PCB for all the
+Vega cards being so ridiculous because
+like that PCB is on par with say the
+290x lightning I you know I was thinking
+it would be pretty hard or very
+expensive for manufacturers like Asus
+gigabyte and all the rest to actually
+manage to produce a PCB better than the
+reference design or you know if that
+like do they actually care to produce a
+PCB better than the reference design so
+asus have actually gone ahead and made
+made some improvement they have still
+kept it a 12 plus one phase vrm design
+so 12 phase V core and one phase for the
+HBM so exactly the same as the reference
+card the vcore vrm is actually made up
+of two blocks of phases so you end up
+with this kind of weird layout which if
+you've seen the reference cards then
+this isn't that surprising it's still an
+L shape except it's further away from
+the GPU core and it's not completely
+wrapped around it so you know it's
+slightly different layout it's a bit
+further that could increase a voltage
+drop across the power plane to the GPU
+core which you know the voltage
+controller can't compensate for that in
+which case it's just a little decrease
+in vrm efficiency because you're burning
+some extra power on the actual power
+plane itself
+the benefit though to this sort of more
+spaced out vrm design that the Strix is
+taking is that this should be a lot
+easier to cool as this vrm has a lot
+more surface area and a lot more copper
+to it as in you literally have just all
+this copper up here which you know it's
+it is covered in a bunch of PCB masks so
+it's not the best not the best heat sink
+ever but it's still better than nothing
+so and the same goes for the power
+planes themselves as well as you know
+just all the extra area that this vrm
+gets which I imagine was done by ASUS
+InDesign specifically to try improve vrm
+cooling for the card so that's the V
+Corps of erm layout now below that you
+find the HBM vrm which that's the single
+phase and that's exactly the same as the
+reference design as well in terms of how
+many phases it has you also have on the
+PCB these three minor rails and this
+should be the auxiliary so that's the
+memory controller voltage this sits
+typically at 0.9 volts then above that
+you find the which well I'm not actually
+sure which of these is what because I do
+not have the card in hand but I'm going
+off of what a frontier Edition or a
+reference Vega 64 Vega 56 PCB would have
+here and the layout because aces haven't
+really changed what is where as the
+vcore vrm is still in the general area
+of where the vcore vrm is on the
+reference card the HBM is basically in
+the same place relative same place as on
+a reference card so I assume these also
+didn't change places in which case this
+one up here is the VPP so this is a
+supporting voltage for the HBM
+it sits at 1.8 volts and it does
+basically nothing for overclocking you
+do not have to worry about that and
+above that you have display drive which
+again does nothing for overclocking on
+some past generations of AMD cards that
+the display drive voltage could help
+with black screen issues when running
+liquid nitrogen Vega has zero issues I
+have very low temperatures it actually
+really really likes them except for the
+part where the driver currently doesn't
+let you set a clock so high enough to
+max the card out at low
+perjures so yeah but nonetheless those
+are the three minor volt three minor
+VRMs on the board and they're not really
+that important I just point them out
+because people because more details more
+better obviously anyway let's move on to
+the details of the things that actually
+matter the V Corps v RM and Asus did
+actually manage to make a slight
+improvement over the reference design
+while keeping the exact same phase count
+and the difference is all down to the
+MOSFETs or in this case power stages the
+reference design uses International
+rectifier direct FETs a sixty eight
+ninety four and a 68 eleven this right
+here uses international rectifier power
+stages these are the IR 35 55 ms these
+are 60 amp power stages from
+international rectifier they're pretty
+much the second best power stage that
+international rectifier makes asus loves
+using these they use them on a bunch of
+other boards they use them on a bunch of
+GPUs actually they use them on like all
+their GPUs that are higher-end
+and there are really nice power stages
+so the end result of actually this
+choice of power stage on this card is
+that in comparison to the reference PCB
+for 1.2 volts output 300 kilohertz
+switching frequency and an assumed
+because again I do not have the card in
+hand I can't check but I assume this
+card runs seven volts gate drive because
+if it runs five volt gate drive then
+actually there's no improvement over the
+reference design at all but if it does
+run seven volts gate drive then this vrm
+is capable of pushing 200 amps at 18
+watts of heat dissipation which is the
+same as a reference PCB 300 amps so this
+is where normally a Vega boils this is
+the normal Vega bias current limit so
+300 amps it can push at about 25 watts
+of heat dissipation this is actually
+about nine Watts better than what the
+reference card can do for 300 amps
+current output 400 amps you're looking
+at about 42 watts of heat output which
+is again a bow
+11 watts better than the reference
+design 500 amps this car does at 65
+watts the reference design would do at
+about 75 watts so you know it is a small
+but constant improvement over the
+reference design in terms of vrm
+efficiency as it doesn't put out as much
+heat as the reference design would and
+this maxes out at a whopping 720 amps
+theoretical as long as you can keep the
+vrm at well below 125 degrees centigrade
+well you could go higher than that but
+really you shouldn't go above 125 so you
+don't want to measure the anywhere in
+the vrm area being over 125 degrees
+centigrade it could push 720 amps
+however the vrm would at that point
+produce about a hundred and thirty-five
+watts of heat which is quite frankly
+uncool about I mean even this 65 watt
+figure is going to be an issue to cool
+so that 135 one is purely theoretical
+but that is the theoretical limit if you
+put a big enough heatsink on this vrm
+and say a delta fan for airflow so yeah
+it is a is a you know it's not a massive
+improvement over the reference design
+and it's not necessarily gonna change
+the if you were running this card and
+the reference design on liquid nitrogen
+I imagine you probably wouldn't see any
+difference between either of them as
+this is roughly 10 watts more efficient
+than the reference design so you know
+it's not a huge difference there but it
+is it is a small improvement and you
+know the extra efficiency for basically
+for free is all I imagine a welcome
+thing for anybody using Vega even if
+it's like 10 watts compared to a
+reference card which really isn't such a
+huge difference
+so yeah the vcore vrm definitely I have
+no complaints about it's still a 12
+phase and you know I could say yeah
+maybe they should have gone for a 16
+phase except the thing is with the
+voltage controller that AMD requires
+Vega which is this chip right here and
+that chip is an IR three five two one
+seven this is a six plus two phase
+voltage controller maximum you can't
+actually run more phases than six plus
+two out of it so basically for any P via
+PCB while any manufacturer of GPUs using
+this voltage controller basically means
+that they can only do vrm designs like
+twelve which would be two times six
+as this vrm is obviously using doubling
+you can't buy a twelve phase voltage
+controller and in this case the doubling
+is done by these chips right here those
+are ir35 99s they're really not that
+like these aren't anything intelligent
+they literally just take a PWM signal
+and send every other PWM pulse to the
+alternating phase so you know one time
+one so in twelve okay you know what I
+think you got it the first time I'm not
+gonna bother trying to explain how the
+how it interleaves the signal but
+basically it also does cut the switching
+frequency in half so the thirty five
+thirty five to one seven would be
+pushing out say six hundred kilohertz to
+the 3599 and that would then push 300
+kilohertz to the two phases in front of
+it so something like that for each of
+them but anyway the the rme setups
+basically are restricted to say 212
+which is a 2 x 6 or a 16 which would be
+a 4 x 4 this would actually be
+problematic
+this could arguably end up with worse
+voltage a voltage regulation results
+than the 12 phase and worse efficiency
+than the 12 phase because if you're
+running a 4 because at that point the 3
+5 2 1 7 isn't seeing a 6 phase vrm and
+seeing a four phase and it would be
+running all 16 phases like therefore so
+you could end up in situations where
+like 1 out of the 16 phases is taking
+way more load or very little load
+because the voltage controller has very
+little control over balancing them all
+ultimately any large you know doubled up
+phase design is going to run run into
+that issue as well but at least
+you'll have you know at least you'll
+have groups of four more groups of four
+balanced properly instead of just four
+groups of four balanced properly because
+it does end up just averaging all four
+phases together and sees them as one
+single big phase so that that's a bit of
+an issue so you're stuck with like a
+sixteen phase which is less than ideal
+or a twenty phase which that shouldn't
+be or a twenty phase which would be a
+four times five which wouldn't be that
+much worse than a you know that would
+are probably always end up being better
+than a two times six
+but that's twenty phases that's really
+expensive to implement and takes up a
+ton of PCB space and nobody's gonna
+bother with that it's just not worth it
+and then finally you could also go for a
+twenty four phase but you know if the
+twenty phase is expensive and ridiculous
+why would anybody do a twenty four so
+I'm really really not surprised we're
+probably gonna see all the Vega cards
+using twelve phase vrm designs I'm
+hoping that they all use twelve phases
+of the RM designs I hope nobody goes
+below that because that would be a
+problem but you know I really doubt
+we're gonna see a Vega with more than
+called phases just because the next step
+up that makes kind of sense with this
+voltage controller is twenty and twenty
+doesn't make sense it's too many phases
+so yeah that that's a kind of
+unfortunate situation forgive a guy if
+it wasn't stuck competing against a 10
+atti I sure I'm sure that we could see
+something like a you know 20 or 24 phase
+of erm equipped Vega lightning edition
+or you know matrix additions I'm crazy
+ln2 overclocking card but as it stands
+the 1080 Ti is just better in the
+competitive overclocking scene so
+nobody's gonna bother with some or
+ridiculously overbuilt vega card not
+that that's much of an issue as the 12
+phase will be almost like the current
+vrm for Vega the reference one is
+already plenty and even this marginal
+improvement just means more plenty so
+I'm not really that disappoint
+that we won't be seeing you know more
+overkill though twelve phases isn't
+really overkill it's just kind of enough
+as Vega does get ridiculously
+power-hungry once you start pushing the
+card the HBM vrm is a you know it's
+still a single phase this could be a two
+phase I don't see the pike I don't see a
+problem with just keeping it a single
+phase because the HBM - really doesn't
+pull that much power from this VRM
+anyway it's going to be in the range of
+maybe twenty possibly 30 amps at one
+point three five volts you know it's
+very low current it doesn't you know you
+don't need two phases and ultimately the
+HBM currently clocks great I've also
+tried extra capacitors on my own Vega
+cards for the HBM vrm they haven't made
+a single they like they didn't make a
+tiny amount of difference no improvement
+in overclocking range basically tells
+you that the single-phase hpm BRM is
+plenty in terms of voltage regulation to
+get the clocks as high as they can go at
+least without raising HBM voltage the
+only issue is raising HBM voltage is
+really risky as historically HBM has
+been very very sensitive to voltage and
+degrading very rapidly at higher
+voltages as one point 4 volts only took
+a few months to degrade at the HBM one
+on a few reacts so over volting HBM - i
+wouldn't really recommend either and so
+i don't see a problem with the
+single-phase vrm design here as you know
+there's not there wouldn't really be any
+benefit to a to face now for that 20
+amps current output the RM would produce
+about 1.7 watts of heat again assuming
+300 kilohertz switching frequency and
+seven volts gate drive and at 30 amps it
+would produce about 3.2 watts of heat so
+yeah yeah it's negligible amounts of
+heat you don't really have to worry
+about this VR I'm either no issues here
+so
+yeah that's that's the card in terms of
+the VRMs and you know good on Asus for
+actually making some improvement over
+the reference design because the
+reference design was already really nice
+this is slightly nicer it's a little bit
+more efficient not a huge amount but you
+know every little kind of helps and they
+did also make some nice additions to the
+PCB but not won over them the cards does
+still have a dual BIOS which which means
+if you buy a Vega 64 I mean Vega 56
+Strix Edition flashing a Vega 64 BIOS
+will be pretty much breaks free as if
+you screw up the flash for whatever
+whatever reason you can use that BIOS
+which to recover very very easily from
+the from the you know failed flash now
+one addition that asus has made to the
+card which is kind of cool ignoring of
+course all the fan headers and I assume
+RGB headers and more RGB headers is
+these over-voltage points up here these
+are really like I'm not sure if they're
+enabled they probably require some extra
+soldiering elsewhere on the card as
+that's usually what Asus does for these
+to make sure that you know you can't
+really use these without some specific
+information from Asus about how to use
+these but ultimately these allow you to
+based on their descriptions raised core
+voltage memory voltage so that be the
+HBM and the VCO VCI so that should be
+the VDD CI so that would be the
+auxiliary voltage over here this is
+really helpful because as of right now
+the software voltage limitations for
+Vega are far too low for anybody running
+say well if you're running water cooling
+I think you're still probably gonna want
+to stay with with it under 1.3 volts but
+if you go on something more extreme like
+say dry ice liquid nitrogen you're gonna
+be looking at voltages like at least one
+point three five volts and they
+massively help the card like this card
+Allah loves the extra voltage
+even on air cooling and water cooling
+the card does benefit from extra voltage
+it's just a case of it gets really
+really really inefficient in terms of
+power consumption it just burns like you
+know everybody already says Vega is
+power-hungry at 1.2 volts once you start
+cranking up the voltage these cards will
+very quickly exceed say 500 watts power
+draw on the eight pins so yeah you know
+cool for extreme overclockers not really
+useful for any other usage so yeah
+that's it for this PCB breakdown thank
+you for watching like share subscribe
+leave a comment down below if you have
+any questions or well thoughts and
+please support gamers Nexus on patreon
+if you would like to see more videos
+like this you can head over to my
+channel called actually hardcore
+overclocking where I do PCB breakdowns
+and a whole bunch of other extreme
+overclocking related stuff that's it for
+the video and goodbye</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

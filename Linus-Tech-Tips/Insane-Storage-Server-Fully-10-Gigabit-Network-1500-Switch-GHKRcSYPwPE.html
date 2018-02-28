@@ -1,0 +1,251 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Insane Storage Server - Fully 10 Gigabit Network, $1,500 Switch | Gadgetory - Your Gadget Factory</title><meta content="Insane Storage Server - Fully 10 Gigabit Network, $1,500 Switch - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1>Gadgetory</h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><h2 class="post__title"><b>Insane Storage Server - Fully 10 Gigabit Network, $1,500 Switch</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/GHKRcSYPwPE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">so the last time I updated y'all on the
+storage service sorry can you even hear
+me over this thing the last time I
+updated y'all on the storage server that
+is used to manage all the data that's
+constantly flowing around here was back
+in 2012
+I mean Linus media group wasn't even a
+company running out of my garage yet
+today's video is going to be a close
+look at one of the new servers that
+we're adding before the move to our new
+office and the $1500 Oh
+network switch that's going to be
+directing traffic on our new and
+improved fully ten gigabit network
+fractal design listens and the define r5
+case was made with feedback from you the
+PC community so click wherever you want
+to learn more about here and here
+alright so let's start with a look at
+our new network switch it's not that our
+old GS 752 TSX sucks or anything it's
+got a ton of regular gigabit ports and
+enough internal throughput that we'd be
+really hard-pressed to even put a
+significant load on it as things stand
+but while for sfp+ 10 gigabit capable
+ports was fine in the old days when we
+only had three employees total we've
+grown to eight team members now four of
+which will need access to a handful of
+servers at lightning-fast speed at all
+times so we're going to be adding a net
+gear XS 7 12 T 12 port 10 gigabit
+ethernet switch so here's a diagram of
+how the network layout is going to work
+we'll use two of our existing 10 gigabit
+ports running in a teaming mode called
+LACP and direct-attached copper cables
+to connect the sfp+ ports on our new 12
+ports which bear in mind that this
+renders two of our rj45 ports inactive
+so this will give us a total of 20
+gigabits of connectivity speed between
+these two switches this is important
+because our main high-performance
+storage server general bulk storage
+server will be on the excess 712 T side
+of things so let's say a hypothetical 40
+some-odd gigabit clients from the other
+side all wanted to hit it at once we
+want them to have a nice fat pipe to
+reduce bottlenecks the next high-speed
+20 gigabit link will be to teemed 10
+gigabit ethernet connections to our
+brand-new server that I'm building today
+Wanek server will be replacing our
+current storage server ruskin server as
+the day-to-day performance server it
+will deliver slightly better drive
+performance thanks to its faster Adaptec
+60 805 raid card but since Ruskin's
+server has such a massive array of 10 3
+terabyte Seagate consumer drives in raid
+6 some of which are actually refurbished
+and incredibly irresponsible setup but
+one that delivered most
+the space we needed and that we couldn't
+afford to replace up until now hmm
+this one won't deliver that much more
+storage and actually not that much more
+speed it's instead focused on
+reliability so it uses eight Seagate
+enterprise-grade
+six terabyte drives in raid six for a
+total of 36 terabytes of storage that
+can lose up to two drives before
+suffering catastrophic data loss and on
+top of that their drives that are
+actually designed for this workload
+instead of general consumer drives and
+there's some other cool stuff going on
+in the server as well so the revision of
+Ruskin's server that I showed off in
+this video when we first went to 10
+gigabit was using some weaksauce ITX
+board and the low-power LGA 1156 of xeon
+that stuff's for chumps man the backbone
+of Wanek server system is much beefier
+we're using an ass rock x99 WS e 10g and
+x99 motherboard with basically every
+single bell and whistle and then some
+that weighs in at a whopping $600 it
+works with Intel Xeon processors
+although that's not something that's
+officially sanctioned by Intel since it
+runs a consumer x99 chipset with our
+plan being to install an e5 26 18 L
+low-power eight core four great
+multi-threaded performance and very low
+power consumption it can also handle up
+to seven pcie 3.0 slots at 8 X 2 16 X
+bandwidth giving us tons of options for
+raid or other expansion it can handle up
+to 128 gigs of ECC ddr4 memory although
+we'll only be installing 32 gigs of
+kingston valueram that was generously
+provided by kingston at the moment and
+last but certainly not least it's got
+dual onboard 10 gigabit ethernet ports
+powered by an Intel X 540 controller
+that is some kick-ass onboard networking
+when you consider the cost of buying an
+add-in card with two rj45 ports running
+that chipset so the process of building
+the system was pretty straightforward
+mostly I actually reached out to an old
+contact of mine at Norco the rackmount
+case company not the bike one who
+provided the 24 drive capable RPC 42:24
+that we've actually
+using for Ruskin server for a really
+long time and have been extremely happy
+with so he sent over two more of those
+cases one for Wanek to give us a lot of
+growing room and another for an
+additional machine that I'm hoping to
+add to the network with a couple of 18
+core Zeon's as a network rendering box
+let me know in the comments if you want
+intel to support that crazy project
+maybe we can convince them might be
+tough anyway so this case supports
+standard ATX power supplies so I grabbed
+a 520 series boot SSD a Coolermaster v8
+50 80 plus gold power supply a basic
+video card that I had lying around and
+at our cooler that didn't end up fitting
+so I grabbed an Intel stock cooler and
+got to work the plan is you probably saw
+on the network diagram is not to have
+this server replace Ruskin outright but
+rather to have Ruskin act as a nightly
+backup for Wanek this has two positive
+effects number one it gives us something
+to switch to quickly in the middle of
+the day if want experience is some kind
+of problem like a failed drive corrupted
+OS or whatever else and needs time to
+rebuild and number two is it allows us
+to practice what we preach for a change
+data redundancy like raid is not the
+same thing as backing up and critical
+data should always be backed up once
+locally and then preferably again
+off-site in the event of a physical
+disaster but that won't come for us
+until a later stage now the astute among
+you may have noticed that my diagram
+also alluded to a 45 drives 100-plus
+terabyte server and you might be
+wondering what's up with that I wanted
+to do that build log today but the parts
+haven't arrived in time so you'll have
+to settle for this one but the ultimate
+plan when that arrives is to dump
+everything on it reconfigure Wanek
+server with purely solid-state storage
+pull all these six terabytes out of it
+and then put those in the 45 drives
+store inator that we have coming for a
+total of about a hundred and fifty
+terabytes of raw storage that we're
+going to use as an archive to replace
+the awful shelf of random hard drives
+system that we have going on in our
+right now which will also give us quick
+access to everything we've ever shot
+apart from allowing us to not have to
+just kind of swap drives onto an
+external drive dock in order to find old
+stuff so stay tuned if you're into
+completely bananas storage
+configurations guys because it is about
+to get really interesting I mean even
+now it's like pretty great except for
+the fact that until the new office is
+built it's going to be deployed in a
+bathroom speaking of bathrooms well
+actually these tools have nothing to do
+with working on bathrooms the Morpher
+like electronic gizmos tearing them
+apart repairing them upgrading them all
+that kind of stuff and they're from I
+fix it so these guys have all kinds of
+professional grade tools and fantastic
+guides on their site ifixit.com one of
+my favorites is their 54 bit driver kit
+that's part of their pro tech tools tool
+kit that's got a bunch of like prying
+tools and tweezers and magnets for
+getting stuff out of I use it for all
+kinds of stuff tearing apart SSDs that
+have like security Torx screws taking
+apart Nintendo DS's that use trying bits
+and all kinds of like triangle bit
+stupid stuff that's hard to find outside
+of buying an affordable kit like that
+you can use it to work on all kinds of
+things whether it's you know handled
+gaming consoles like I said before but
+I've also used it on everything up to as
+big as an iMac in fact I did a teardown
+with their guide with their tools of the
+iMac 5k and it was super simplified I'm
+not going to say super simple because
+there's some complicated stuff about it
+but super simplified by I fix its kit
+and guide so the pro tech tool kit is 65
+bucks and is backed by a lifetime
+warranty and if you use the offer code
+Lynas zero three at checkout you can
+save $10 off any purchase of 50 bucks or
+more so head over to ifixit.com slash
+Linus which is linked in the video
+description to check that out now so
+guys thanks for watching this video like
+it if you liked it dislike it if you
+thought it sucked leave a comment at the
+link in the video description to our
+forum where you can discuss this video
+if you have something to say also linked
+in the video description we have a merch
+link for cool t-shirts like this one a
+contribution link if you love the work
+we do and you think we should keep doing
+it and an amazon link so you can change
+your bookmark to one with our affiliate
+codes whenever you buy hard drives or
+whatever else we get a small kickback
+that kind of thing helps us out a lot
+thanks again for watching and as always
+don't forget to subscribe and follow and
+all that good stuff
+you</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Chris Roberts on Character Tech, Weather System, &amp; Engine Arch | Gadgetory - Your Gadget Factory</title><meta content="Chris Roberts on Character Tech, Weather System, &amp; Engine Arch - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Chris Roberts on Character Tech, Weather System, &amp; Engine Arch</li></ol></div><h2 class="post__title"><b>Chris Roberts on Character Tech, Weather System, &amp; Engine Arch</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/TbWh5inW7Fw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">in this second part of our interview
+with chris Roberts from cloud imperium
+games we talk about the upcoming demo
+for alpha 3 point 0 that will be shown
+at citizen Khan on october nine we also
+talked with Chris about some of the
+challenges faced in refactoring the
+engine talking about lighting tech
+visual effects hands-on with the
+environments and worlds and things like
+that before getting to that content this
+is brought to you by antec and their new
+MIT X cubed case as designed by razor
+which has an aluminum shell is an MIT X
+form factor and uses acrylic glass on
+both sides now as for the content you'll
+want to check back on Friday as well for
+our first part of the interview with
+Sean Tracy the technical director at
+cloud imperium games but let's get to
+the content so v2 for procedural
+generation where's the the plans unveil
+is that citizen khan yeah yeah so we're
+going to show so Susan calm we're
+actually we're going to show a exactly
+it's not a world that will be in V in 30
+because it's a we decided because I 30
+worlds are very specific as you know
+one's a gas giant which you can't go
+down onto ones are sort of polluted sort
+of Overmind world and another one's
+essentially a sort of snow ice planet
+like Hoth or something and then our
+corpse want just covered with buildings
+so we wanted to show one that had a bit
+more of a variety like oceans and
+forests and deserts and mountains just
+you could see the variety of kind of
+biomes and so that's what we're we're
+calling homestead demo in all the hopes
+that's not appropriate for what it's
+turned into but it's got some pretty fun
+stuff in it Sean sitting over here is a
+sort of
+you know working pretty hard on it with
+a bunch of the pretty town filled so
+that's sort of showing up sort of the
+potential of the v2 planet and the son
+of the cool stuff and potentially some
+of the sort of play action that you can
+happen in 30 and then we're doing a
+taking one of the missions that's in
+squadron 42 and we're sort of showing
+how that would you know feel like from
+getting your briefing to getting to your
+ship to taking after flying on the
+mission the combination of sort of like
+flying and running around FPS stuff so
+that's and so those are the two things
+were going to show we're basically show
+sort of you know full focus this is what
+v2 planets can do for you and then this
+is what squadron 42 is going to feel
+like and play like and this is sort of
+the experience of a mission in squadron
+pointer sure so squadron 42 is I'm not
+going to put any release question yeah
+thing that we had active and we voted I
+don't know whether data but so it's been
+demo'd basically as there's a big news
+at City yeah so this is it this is the
+first time we will show more complete
+gameplay I mean we showed last year at
+citizen Khan kind of an example of the
+walking around talking character stuff
+but it's very early character Tech has
+come on like a I mean we're going to
+release a 10 for the Chairman Thomas on
+the character stuff and if you look at
+that and you look at the quality the
+characters compared to what was last
+year its name day I mean I truly feel
+that our character stuff that we're
+showing is you know best in class at the
+moment so but we're going to sort of
+show you know a more complete like this
+is actually kind of like here you are
+you wake up on the ship you go get your
+briefing you do your mission this is
+what like one sort of sequence of events
+or what we call chapters in the in the
+game would feel and look like with the
+character tag does anything specifically
+you can talk about that that's improved
+that you are particularly well you can
+ask sure more more questions about that
+but I mean there's a lot of things that
+have mean the issue when we did the
+merit or was that we'd only just managed
+to get some of the stuff in there was a
+bunch of stuff that was broken in the
+shaders whether the skin or the eye
+shade or the hair shada the lighting was
+completely borked we were missing like
+the so in the Senate speech which you
+know was the best-looking one at one
+where you saw the blend maps and the
+wrinkle maps the diffuse map the
+tangents Adam were wrong and the actual
+skinning of him was incorrect it was the
+linear skins that have a quaternion skin
+so he looked a bit chipmunky and was
+wrong although we thought it looked
+pretty good at the time and then the
+might and the stuff that was live in the
+game wasn't firing like the a bunch of
+the things like the wrinkle maps of
+blend shapes the and like I said the
+lighting and everything was kind of
+broken in it so the characters now or
+leave some balance because not only if
+we just and there were also royal some
+raw deliveries of the head first stage
+that they didn't have any additional
+sort of time spent on making them look
+good so we have a process where we scan
+the actors but we scan the actors they
+don't have any makeup on because you
+don't want to have makeup on for the
+process of the photogrammetry that you
+build a head with and so we didn't
+really have any time to to work on those
+when we did the merit all this time you
+know so we've every actor gets a pass he
+gets you know essentially made up like
+you would like a makeup artist would you
+know make an actor look good for
+shooting
+you know we've you know we've made a lot
+of improvements to essentially how the
+whole rig and the engine works and so
+the goal is that as you're moving around
+and you're talking to people you're you
+will be seeing what you've traditionally
+seen as cinematic pre-rendered cinematic
+quality live in the end really these
+characters and that is the goal I think
+with citizen Khan we will show something
+that's a lot closer to that it will
+still get much better than what will
+show at citizen Khan as we continue to
+work and iterate on it because there's a
+lot of stuff that you dial in at the
+very end like with the eyes and the hair
+and the skin you know so I hair work
+still has a lot of stuff to like like we
+wouldn't be able to have your hair look
+at rest it does right now in the engine
+right now but we will we well I mean
+that's all sort of shader in terms of
+how the translucency and the cards work
+and everything so we've we've made some
+fixes but we haven't had a lot of chance
+the graphics departments been very busy
+they want long list of stuff and some of
+the list of stuffs been very fundamental
+so like you know a massive change we did
+which people may not think about is that
+you know if you see I think every every
+3d engine I know moves the Sun like so
+basically the Sun moves right well the
+Sun doesn't really move in our solar
+system stays in the middle we move
+around ray so it was a massive change in
+the engine where the Sun is fixed in
+place and so it depends on where you are
+relative to the Sun is where the
+lighting is it's not the sun's moving
+you move and that's actually a fairly
+fundamental base like rendering and
+shading change so that was an example of
+something that we had to do because of
+what we're doing our star systems and so
+night and day cycles on planet for us
+will not be because the sun's moving it
+will be because our planet is rotating
+on its axis and you know we'll also be
+able to rotate the planets around the
+Sun really something
+I've thought about from the perspective
+of playing a game where like because
+you're not normally traveling around
+multiple planets obviously not a fixed
+small map so that seems like a pretty
+big technical challenge no it's big
+that's why that's why we say would like
+a lot of the you know a lot of the
+fundamental of the rendering and the
+trading and how he approaches is
+completely being refactored from the way
+it used to be in CryEngine because we
+moved to you know 64-bit which was a big
+deal for the precision you know which we
+moved to last year which sort of two was
+enabled what we could do 20 and but
+there's a lot of other things like I was
+saying you know moving the Sun to be
+actually an actual fixed entity they you
+know Cass it's like correctly as opposed
+to being some some confusion is kind of
+a special little case in a shader or the
+rendering pipeline but they're all being
+built so because our approaches we're
+doing this at a sort of galactic scale
+basically and so we can't some of the
+cheats you would use in other cases it's
+the same reason for the first and third
+person unification some of the cheats
+that you would use in games that would
+be more of limited like travel or scope
+we it's if we could probably short-term
+get away from but we create all sorts of
+headaches for us so generally we always
+go okay how would this work properly how
+systemically should this function it's
+like was mentioning with the cloud
+simulation and the weather simulation
+you know we could create a visual
+effects house could create a flow map
+for clouds and it would look pretty cool
+and everything but then you'd have to be
+creating flow maps for every single
+planet you do and it won't fall out of
+it whereas this way if they create the
+planet and the biomes control you know
+okay this is a higher this is a cold
+area and the simulation just simulates
+the kind of wind and the weather
+patterns which will generate the cloud
+pans then you just don't have to do
+anything so it takes more work to do
+that up front but longer-term it allows
+for
+a greater sort of range of gameplay and
+fidelity and also less work needed down
+the road so generally our approach has
+been really investing the time and the
+upfront stuff because of the long-term
+payoff mostly because we know that 30
+and beyond I mean we're building you
+know we're not building something that
+we're going to release and you're going
+to play in two weeks right you're going
+to hopefully going to play this game for
+years and years and years and so we're
+thinking okay well what do we do this is
+at least a ten year you know our hope
+anyway is to be around for ten years
+after we released in the same way the
+you know Eva's being or World of
+Warcraft is being or whatever and to do
+that that's one of the reasons why we're
+trying to engineer a right which does
+mean that it takes us longer to get to
+the sort of initial stage where we said
+I would have a game ready for you we do
+obviously like people play it as we're
+building it but I think it's the right
+approach to build something for the long
+term again as large as star citizen the
+just a programming impact alone of a
+band-aid fix down the line is when I say
+so I will say that in almost every case
+you know a lot of like you know we get
+our vote you know we get the releases
+like 24 or 25 out and in an ordinate
+amount of time is spent fixing and
+patching systems that essentially
+generate bugs because they were just
+sort of patched and hacked at a certain
+way to work for a certain case so a lot
+of you know and in some ways it takes us
+longer to QA and get through things than
+we would like because there's been sort
+of a lot of short-term thinking in
+earlier iterations in the air because
+you know they're like well we're just
+making a game for this it's just a
+first-person shooter and and so there's
+shortcuts through and then most and it's
+not just cry and most engines do this
+and so invariably in all these cases we
+say well it's just not going to scale to
+what we need and we've got to adapt and
+change things around for that so we so
+we we have been you know because we've
+had the support which is great so I
+think you have one of those supporting
+us is it's allowed us to sort of go in
+and do things right so to speak which is
+all foundational for a long-running
+robust game that will have a lot of
+emergent gameplay because that's that
+for me super super important me I really
+love this idea and I can already see it
+and what people do right now and 25 but
+seeing you know the community go up and
+just do things that we weren't even
+thinking about because the system allows
+it and so our thinking is always about
+how can we create a system for people
+rather than specifically kind of control
+exactly what they want to do and say let
+them operate inside the set of rules in
+the system and make it work so for more
+information that this wasn't enough
+information it citizen can be the place
+to look next if you give every one day
+it's true yeah well say Susan comments
+October night so it's on sunday will be
+held here in Los Angeles I think
+there'll be more information on our
+website I believe we're going to go
+start at midday as I right Jared 3pm
+midday in Hawaii is we're going to start
+3 p.m. in LA and yeah it should be fun I
+mean we know we every year we do this
+event which is essentially a celebration
+of when we first announced the project
+and you know the amazing community we
+have and the support they've given us
+and we not just seeing in this amazing
+office we've got three other you know
+big I mean this is actually not the
+bigger studio the UK should be owes much
+bigger than this one it's about 185
+people now I think so it's about three
+times bigger than this one but where
+we've been enabled by this amazing
+community that support us to do it and
+we're just building the best like the
+game that I don't think I would ever be
+able to build anywhere else I don't
+think any publisher be crazy enough to
+invest this kind of time and money into
+it you know probably venture capitalist
+all the rest wouldn't have the patience
+to do it but it's allowing us to build
+something long term and and so that is
+pretty awesome and so we sort of Susan
+consoles celebrating how that started
+celebrating the community for helping us
+yeah stop and continued on the journal
+CT is your quote from one of our first
+interview is building the best damn
+space yeah ever yeah well yeah I say I
+sort of not have a best down space in
+anywhere because it's best done
+everything so far as we've we especially
+with the way the procedural planets of
+you know it's moved it moved on we were
+unable to do that variable and support
+which allowed us to sort of open up the
+Frankfurt office and and higher up some
+people that are incredibly talented and
+then their work went better than we
+thought it was going to work and so
+that's sort of that's kind of the
+iterates iterative way that starters and
+worked for we're like okay now this so
+now because I wasn't thinking we'll be
+able to do what we're going to be able
+to do now but I can view the additional
+play possibilities that comes with it
+and what players can do by themselves is
+you know it's really really exciting
+because you sort of opened up a much
+bigger palette of things that you can do
+just because you have planetary
+locations you can do things on go
+recover things rescue people create your
+own little place whatever you want to do
+whereas before we're more limited to
+space and then landing areas that were
+you know just a certain area so it's
+from a game from a game designer in
+standpoints on making games it's super
+super super exciting because it just
+means the world is going to feel bigger
+and more alive and anyway so citizen
+Khan is where we celebrate have one
+enable used to do that we tend to show
+kind of the you know the next step of
+stuff that we're working on and yeah
+it's a fun event so links in the
+description below for more information
+on that will post a link to the robert
+space industries website so you can
+figure out when that is live stream
+stuff like that and as always patreon
+link in the personal video if you want
+to help side directly subscribe for more
+content because we have additional
+interviews from this meeting and i'll
+see you all next time alright thank you
+all guys thank you very much and anyone
+that support its doesn't
+mrs.</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Quadruple Your Network Speed for $100 with SMB 3.0 Multichannel! | Gadgetory - Your Gadget Factory</title><meta content="Quadruple Your Network Speed for $100 with SMB 3.0 Multichannel! - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1>Gadgetory</h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><h2 class="post__title"><b>Quadruple Your Network Speed for $100 with SMB 3.0 Multichannel!</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/K4VnWQPW-f4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">you've seen all the expensive Network
+crap that we're using around here to
+break the one gigabit network transfer
+speed barrier that we've been stuck with
+for the last decade well today is not
+about that it's about hitting your
+network at home with a much needed shot
+of adrenaline on the cheap
+the Scimitar RGB from coarser features
+17 programmable buttons a 12000 DPI
+optical sensor and a shape design for
+comfort in MOBA and MMO games check out
+the link in the video description to
+learn more ok so the first time I tried
+to do something like this was way back
+in the NCIX tech tip days with this
+video here I had the right idea use a
+relatively inexpensive multi port
+network card with multiple cables
+attached to it to achieve faster
+transfer speeds than what would be
+possible with a single port and a single
+cable but the software implementation
+wasn't as mature yet and the only
+scenario where I saw a real benefit was
+with multiple clients hitting a single
+server connected in that way all at once
+today we're going to actually do what i
+theorize would be freaking awesome all
+those years ago and demonstrate a
+point-to-point transfer speed of more
+than one gigabit with about $100 worth
+of Hardware off of ebay assuming that
+you've already got a couple of decent
+Windows 10 pcs so it starts with the
+hardware shopping first you'll need a
+couple of quad port network interface
+cards or NICs I ended up with a couple
+of HP branded Intel Pro 1000 PT cards
+that I snagged for about $30 each next
+you'll need a network switch that can
+actually handle all of those plugs so
+the four port one built into your home
+router or even a standalone 8 port
+desktop switch won't cut it if you want
+to plug in anything else the good news
+is that for this functionality you don't
+need a fancy smart switch so any cheap
+16 or 24 port will do we used a d-link
+one that Johnny the networked guy who
+helped us with this project had lying
+around the last thing that you're going
+to need is a teather net cables but if
+that comes as a surprise to you you
+probably shouldn't be taking on any
+networking projects so our initial
+testing actually didn't go very well we
+through the two cheapo quad Network
+cards into my usual test bench and my
+upgraded personal rig disabled Windows
+Firewall plugged in all the æther net
+cables without actually worrying about
+plugging into the main router for
+Internet
+and then we wanted to see what would
+happen the answer was nothing they
+transferred at exactly gigabit speeds a
+disheartening result given that Johnny
+had assured me that he had gotten it to
+work on his test machines with no hassle
+whatsoever so we put new fresh windows
+10 installs on each and not a same thing
+what the heck
+time to bring out the big guns so Johnny
+ran home and got his custom z170 asrock
+board with an intel core i5 skylake chip
+in it and a random lenovo pre built with
+a core i3 4130 dual core we put his
+Nick's into those a couple of Intel i3 4
+TT fours that are a bit more expensive
+than the ones I bought but still quite
+affordable and voila transfer speeds in
+excess of one gigabit not particularly
+impressive still and frequently dipping
+below gigabit even but the important
+thing that we're looking for here is
+activity on all four interfaces and we
+got it from there though it was time to
+keep tuning we wanted to eliminate the
+mechanical hard drive in the Lenovo
+machine as a bottleneck so we threw a
+secondary SSD in there big improvement
+but still not enough we needed to do
+more
+so we tore apart Johnny's Lenovo machine
+and put in 16 gigs of ram so we could
+make a ram disk and still not the result
+we needed I mean this should have been
+capable of over 400 megabytes per second
+so we started trying a lot of other
+random stuff we wanted to boot the
+lenovo hard drive off of my 8 core
+machine we tried installing fresh with
+Jonny's Windows 10 ISO to see if maybe
+that was the issue we were having when
+before when I was trying to do it and in
+either of those situations the multi
+channel transfers that we wanted didn't
+work at all
+both of us were tearing our hair out at
+this point getting SMB multi-channel to
+work seems to be as much about luck as
+anything else and certain combination of
+hardware with certain windows installs
+were working while others weren't so in
+the end we did manage to get Johnny's
+boot SSD from his skylake personal rig
+to run on my
+99 testbench but we were stuck with that
+Lenovo box with the core i3 the good
+news is that making that change and we
+actually switched back to my cheap
+network cards at this point because the
+340s didn't seem to be making a
+difference anyway resulted in a much
+faster and more consistent transfer just
+still not what it should be capable of
+and then we had the Eureka moment
+SMB multi-channel leverages multiple CPU
+threads for faster file transfers so I
+tried adjusting the number of cores in
+my Extreme Edition machine down to two
+to see if that would slow things down it
+actually didn't but it did help me
+observe the very high CPU usage on that
+machine so the answer then was actually
+the core i3 the equivalent that I had
+tried to create on the other side so we
+turned the extreme edition back up to
+four cores
+eight threads to be similar to what an
+enthusiast where the core i7 would have
+then we swapped out the core i3 in the
+Lenovo machine with a 4790k and boom
+just like that it worked the proof is in
+the pudding SMB multi-channel for under
+a hundred dollars can improve your
+network transfer speeds and this is
+great for editing HD or 4k video files
+over an as for improving the ability of
+a single file server to serve multiple
+clients or even just making impatient
+people who hate waiting for access to
+network resources happier and the more
+CPU threads you have with a core i7
+being ideal on both sides of the
+transfer the faster it can go I do wish
+at this point in the video that I could
+explain some of the inconsistencies that
+I observed in getting SMB multi channel
+to work at all but maybe that's an
+investigation for another day for now
+that's the hardware you need and that's
+the results that you can achieve which
+leads us pretty well into our sponsor
+honor who has a showing off the 5x
+smartphone today and there's a few
+things about it that are notable first
+of which is the metal body the design
+for
+which was inspired by the famous
+Guggenheim Museum in Spain so the phone
+is actually made with four metal
+finishing processes making the diamond
+polished aircraft aluminum body actually
+surprisingly strong they've got a ton of
+color options sunset gold dark gray and
+daybreak silver as well as a fingerprint
+sensor built into the back that actually
+works surprisingly quickly and can be
+tapped in order to take photos or
+selfies you can actually set up
+different fingers middle pointer and
+pinky as shortcuts to open different
+apps like maybe you could use your pinky
+to open up your contacts your middle to
+you know open up contacts you don't like
+and your index to open up Instagram or
+whatever else it's powered by android
+5.1 lollipop with 16 gigs of internal
+memory and 2 gigs of ram as well as a
+qualcomm 64-bit octa-core processor in
+order to deliver actually a surprisingly
+smooth experience given the price point
+but we'll get to that after it's got a
+five and a half inch 1080p display as
+well as a 13 megapixel rear camera and
+multiple card slots in order for you to
+add additional storage as well as two
+SIM cards which leads us again to the
+price it comes in at 199 US dollars that
+is just the normal everyday price and
+you can check that out at the link in
+the video description so thanks for
+watching guys if this video sucked you
+know what to do but if it was awesome
+share it this is really cool right get
+subscribed hit that like button or even
+consider supporting us directly by using
+our affiliate code to shop and amazon
+instructions furniture up there buying a
+cool shirt like this one or with a
+direct monthly contribution through our
+community forum which by the way is
+pretty cool you should check it out link
+in the video description now that you're
+done doing all that stuff you're
+probably wondering what to watch next so
+click that little button in the top
+right corner to check out our follow up
+to the seven gamers one CPU video where
+we all actually game on it very cool
+stuff</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

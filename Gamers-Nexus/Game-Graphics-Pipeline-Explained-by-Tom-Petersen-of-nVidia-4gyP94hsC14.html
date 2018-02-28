@@ -1,0 +1,192 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Game Graphics Pipeline Explained by Tom Petersen of nVidia | Gadgetory - Your Gadget Factory</title><meta content="Game Graphics Pipeline Explained by Tom Petersen of nVidia - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Game Graphics Pipeline Explained by Tom Petersen of nVidia</li></ol></div><h2 class="post__title"><b>Game Graphics Pipeline Explained by Tom Petersen of nVidia</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/4gyP94hsC14" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey everybody I am joined by Tom
+Peterson from Nvidia and we're gonna be
+talking about the GPU rendering pipeline
+today so this is pretty cool stuff
+talking about basically how does it work
+yeah how does it interact with the game
+engine so there's all this different
+stuff in games obviously geometry
+shaders yep what's where do we start
+when I'm drawing a frame to the screen
+it's a good question so the way I think
+about it is the pipeline is all about
+creating a three-dimensional model and
+then translating from three dimensions
+to two dimensions which is what you're
+gonna see on your screen
+so to begin with obviously you first
+have to create this three-dimensional
+model independent of where you're
+looking at it and that's called geometry
+right and you basically assemble
+geometry from models each model has its
+own coordinate system and you do
+something called from translation
+rotation and scaling as you kind of put
+position these vertices in a
+three-dimensional world right so you
+really haven't started thinking about
+how do I view this thing you're just
+trying to create the entire geometry of
+everything that's in the scene okay now
+after you've done that you apply
+different geometric or vertex oriented
+transform so you're going to do things
+like per vertex lighting and again what
+you're doing is making that world more
+elaborate and more descriptive of the
+model year you're trying to describe but
+now you've created this world you have
+to figure out how to get it onto the
+screen and that's done using something
+called projection all of this is still
+happening in the geometry pipeline but
+projection is the very last stage of
+vertices where we're sort of taking a
+camera and virtually pointing it at a
+position in the world and then dealing
+with things like perspective and again
+all we're doing is math translating the
+geometry effectively to a different
+coordinate space that is from the
+screens perspective okay so now once you
+do that you do things called clipping
+which is gonna pretty much scissor out
+the geometry that you really want to
+render and the last stage is converting
+this geometry now to pixels okay so the
+process of pixel izing or rasterizing is
+what we call it is effectively imagine
+that you're going to sample across
+pixels on your screen now
+is another lookup that happens where are
+you saying okay I want to go after the
+first pixel on the upper-left I'm going
+to project into my little now clipped
+geometry and figure out which primitives
+or triangles or lines or dots are in
+affecting that pixel so by looking at
+which triangles are affecting a pixel
+you can actually run a shader program
+and now the shader program is tied to
+the geometry effectively that's a
+modifying that pixel okay so think about
+it as summarizing you kind of create
+this three-dimensional world you apply
+effects like colorization and lighting
+at the at the global level then you
+project it to your screen but you're
+still in a geometric pipeline and then
+you're going to kind of convert it to
+pixels and while you're converting it to
+pixels you're gonna apply elaborate
+effects and things like shadows and
+complex textures and and just beautiful
+ization that's all happening in a pixel
+shader and at the end of the day of all
+is asian a technically yeah beautiful
+ization but at the end of the day it's
+all about that transformation from
+three-dimensional geometry in the
+geometry pipeline and then in the pixel
+shader pipeline converting it to
+individual dots what do you think I
+think that's pretty good so let's let's
+zoom out what's a what's a canonical
+view of the GPU hardware as it pertains
+to this process oh you know what's
+interesting is GPUs have become very
+very programmable and as a matter of
+fact the entire geometry pipeline now
+almost until you get to the very end is
+all done in programs that are called
+shader programs they're actually called
+you know different types of shader
+programs as you follow the conversion
+from that three-dimensional model into
+the world and then doing different types
+of transforms like tessellation and then
+you can come into something called a
+geometry shader to do different
+deformations but at the end of the day
+what we're really doing is just sort of
+cycling through the same SM on on the
+hardware and it's a it's driven by
+different programs that are created by
+the game developers once you get to the
+bottom of the geometry pipeline that's
+there's some fixed function hardware
+that's doing things like again the
+projection transform and clipping and
+all kinds other good stuff
+now at the end of that you're kind of
+getting an array that you can index and
+raster into so that's the that's the
+kind of the way I view the canonical
+form very cool that's very different by
+the way from where it used to be which
+was you know every transform had fixed
+functions you know initially it was all
+just Hardware a lot of it was done on
+the CPU and then you know the idea of a
+vertex processor a geometry processor
+kind of emerged but it was fixed
+function again and then that over time
+somebody said you know if if we could
+have a program do that would that be
+cool you know wouldn't have to
+everything would not be so flat we get a
+bumpy and you know so that became shader
+programs with vertex shaders and
+eventually somebody figured out you do
+the same thing with a pixel shader so
+our pipeline has become far more
+programmable over the years and effects
+have have matured as programmability has
+enabled it could you provide some
+examples of different items or elements
+of a game that would be stored in memory
+the GPU memory specifically okay so one
+example of a game if you remember I was
+talking about textures that can be
+applied on pixels the texture is
+actually a giant it's like a JPEG a
+giant image and it literally looks like
+a JPEG it's a two-dimensional array and
+it's stored as a flat picture in memory
+and when you're trying to figure out
+what color to draw a pixel you kind of
+say okay my pixels here and I know the
+texture is kind of covering this
+geometry so you can calculate the
+specific location in the texture and
+therefore the memory to read the color
+that's going to go on that pixel so you
+can kind of think about the real
+challenge of this pipeline is you want
+it all to flow so you don't really
+calculate intermediate data structures
+and store them in memory you want the
+whole thing to just sort of be a vertex
+comes in it gets transformed and then a
+vertex go out it gets transformed and
+this whole thing is designed to
+basically be one in one out across
+vastly parallel structures alright so
+that's a quick recap of the pipeline of
+course a lot more to it links in the
+description below for some of our
+articles on this stuff we wrote about
+the
+lgt 100 architecture cool which is
+pretty interesting and we'll have
+another video actually you and I about
+the overclocking of paska oh yeah that's
+exciting so do check back for that thank
+you for watching I'll see you all next
+time yeah</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

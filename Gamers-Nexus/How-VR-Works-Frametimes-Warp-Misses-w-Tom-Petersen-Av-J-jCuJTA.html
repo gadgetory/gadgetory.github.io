@@ -1,0 +1,287 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>How VR Works: Frametimes &amp; Warp Misses w\/ Tom Petersen | Gadgetory - Your Gadget Factory</title><meta content="How VR Works: Frametimes &amp; Warp Misses w\/ Tom Petersen - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">How VR Works: Frametimes &amp; Warp Misses w\/ Tom Petersen</li></ol></div><h2 class="post__title"><b>How VR Works: Frametimes &amp; Warp Misses w\/ Tom Petersen</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/Av-J-jCuJTA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey everyone I am joined by Tom Peterson
+from Nvidia Hey and you may know Tom
+from doing a lot of the stage presence I
+do a lot of stage presence ray a lot of
+Giveaways Tom actually also worked on
+FCAT I did or the frame time capture
+stuff that you've seen pretty much
+everyone use at this point but today
+we're talking about how VR works so the
+question here is if we start with a
+timeline of VR you know for a monitor
+you have X milliseconds Y milliseconds
+the frame needs to be delivered in that
+time what does it look like for VR well
+VR is a little bit more complicated of
+course because there's more going on
+there's the game of course which is the
+application that you're running likes a
+raw data or something like that and the
+game's job is to take physical input to
+do a simulation and then to generate a
+new frame but because it's VR there's
+lenses and there's head motion a lot
+kind of stuff so the runtime providers
+folks like oculus or valve with vive are
+providing another program that I just
+call the run time and the run time runs
+in parallel with the game so the game is
+rendering a texture that's square
+effectively just like a regular PC game
+but then that gets read by the runtime
+and the runtime does a couple things it
+does effectively lens correction which
+is making the image work with the lenses
+that are in the headset and it's also
+doing something that's called late warp
+or reprojection and the reason that's
+happening is to kind of deal with the
+fact that there's a fixed 11 millisecond
+window because of 90 Hertz they're
+trying to hit that time and the the
+lenses are there of course because
+without the lenses you're got something
+right in front of your eyes
+of course yeah if you imagine looking at
+a VR headset you've got that that
+display about two inches from your head
+so the lenses are there to allow your
+eye to relax and still see what's on
+that the image but those lenses cause a
+distortion when it's on your lens so
+they actually do undistorted
+modifying the square images to make them
+a little bit more curved to get ready
+for the lenses so the big challenge with
+VR is how do you how do you make all
+this work so again you're looking at an
+11 millisecond when it might help if I
+just draw ok let's try try this totally
+impromptu
+all right so this is my my version of
+time right on these blue lines represent
+every time you're going to draw a new
+image on the VR head so you've got 0
+1122 milliseconds 30 milliseconds yeah
+so basically since it's 90 Hertz there's
+an 11 millisecond step and it happens
+over and over and over so think of it as
+you've got this window just a small time
+right before that next cycle that you
+have to be done with your image so since
+there's two people involved you really
+kind of never know what's gonna happen
+so the way it works is the game might
+start rendering so let's call that game
+and it's looking at things like you know
+taking a headset position and it's
+calculating animation and it might be
+doing some network stuff but it's
+figuring out what's the image that I'm
+about to put up on the screen right and
+the next thing that happens is the
+runtime which is actually going to read
+that texture and the runtimes going to
+do things like warping for the lens or
+lens warp and it's also going to do
+reprojection which is sort of retiming
+it right and it has to get all done in
+time to make that next refresh so on the
+headset this would be you know image
+number one so that's our frame yep
+that's what you see and this would be
+game frame number one right so that's
+the way we are supposed to work the
+problem is let's say your GPU is running
+slower or you have like CPU get busy and
+sometimes this game runs too long or
+sometimes that run time long runs too
+long so what it may have actually looked
+like is the game ran too long so let's
+call that game 2 but now you've already
+missed the next interval so the runtime
+still down here doing its stuff but it
+has to make a decision what does it want
+to show in the next frame so the are the
+headsets aware of when the runtime
+usually occurs and how long it takes
+yeah the headset manufacturers have a
+whole software architecture that is
+effectively defined in the runtime right
+so think of it this runtime as oculus or
+vibes or any other headsets guys it's
+their secret sauce of how do they give a
+great experience but no matter what
+their algorithm is they
+got a fundamental problem which is the
+game did not get a frame rendered in
+time but they still have to put
+something on the screen because your
+headsets you know running at 11
+milliseconds so there's a couple
+different strategies right one is I just
+take the old rendered frame and I rish
+it you know I resell it you can do
+reprojection where you basically take
+this a frame that was rendered by the
+game earlier and you modify it to put it
+on the screen again you can also just do
+nothing and take the unmodified frame
+from last time andrey show it so all of
+these different defects have different
+performance impacts and it's really kind
+of complex as to how do you how do you
+represent the performance of you right
+so with with traditional monitors non
+non VR stuff whether you have vsync or
+g-sync or none of those mm-hmm we have
+issues like stuttering tearing what is
+the VR equivalent of those okay so since
+it's well known that if you have tearing
+in VR it's absolutely really really
+horrible experience right yeah so so the
+first thing is that VR is almost always
+vsync on okay and that's that's
+hardwired right and so what that means
+is the real decision is what do you do
+at every refresh interval and you kind
+of when things are working right you
+just show the new frame and everybody's
+happy if you don't show a new frame you
+can either reproject an old frame which
+is kind of synthesizing a new frame
+right it's it's the runtime creating
+something to show that they didn't get
+from the sharing um or you do nothing
+right so when you do nothing which is
+like in this case I call that a warp
+miss okay so a work miss means that you
+replayed an old frame just like on
+desktop when you stutter it's exactly
+the same thing so is it does everything
+to stay where it was or is there still
+head tracks everything stays where it
+was because when you have a warp Miss
+the runtime didn't get a new frame done
+in time so the driver just replays a
+frame the other thing that could happen
+is what I call a drop frame and I think
+these terms are still settling you know
+everybody's got a different name for all
+these things so when there's a drop
+frame
+what that means to me is the runtime was
+able to take some version of a prior
+frame and then modify it and get that
+thing out in time using the latest head
+position okay so as long as you use a
+current head position and you adjust or
+reproject a prior frame you get a
+reasonably good experience right but the
+animation in this frame that's
+reprojected is actually coming from you
+know an older frame so it looks like a
+dropped frame from an animation
+perspective but in terms of fluidity
+with head tracking you're not getting
+sick from it right you're not eating
+sick so I on my experience has been when
+your reproductive reims it's a better
+experience than if you're doing nothing
+and your data frames or warping missing
+but you can definitely see the
+difference between a dropped frame which
+is these reproductive frames and native
+frames native frames that are running at
+11 milliseconds and everybody's happy so
+I think it's important as we start
+figuring out how should we represent you
+know all of this stuff that we're gonna
+we're gonna comprehend
+you know how long did the game take to
+render and that's like the new concept
+and that's sort of like frame time and
+there's some questions about how that
+should be measured but we'll get all
+that water out there and then so you got
+frame time which is kind of like it is
+on desktop but then there's this concept
+of a work mess which is the runtime did
+not have the time to put a new frame out
+and then there's a concept of a drop
+frame that is animation is from a prior
+frame right now when looking at the the
+games that are coming out I know it's
+possible for dynamic quality changing
+the valve has certainly talked about it
+from what I understand not a lot of
+games currently do it and we know the
+the tech demo does the portal tech demo
+yep so in theory can the games or does
+the API or what sees this happening and
+says I'm gonna miss that frame I need to
+lower the quality what's what's going on
+there I would expect most of that to be
+done by the runtime so it could be in
+the game but and it's not within and
+videos control but I would expect the
+runtime to do something like say hey the
+frame I just got was a little bit late
+right and because of that I suggest that
+you lower the quality settings of your
+render of the game and the the API would
+be something between the one-time and
+the game where they're cooperating on
+the technology to reduce quality at one
+time kind of needs to know about it but
+you know I think it's a little unclear
+right so recapping the major points here
+the runtimes it's sort of at the end of
+the pipe for delivering the frame yep we
+were talking previously about sort of
+how long that normally takes now with
+the vibe and the riff do they take a
+different it's very similar and then if
+the runtime is designed to be very quick
+and so you want to do you're not doing a
+full rendered of a frame you're you're
+basically doing a quick shader on an
+existing rendered image and then showing
+it so it's not it's not meant to take as
+long as the games take so it's a couple
+milliseconds typically and then outside
+of that the items look out for in the
+future
+we've got warm misses and then drop
+frames and then the difference is
+basically a totally still output from a
+previous rendering in render pass the
+verse is one with no animation yeah the
+way I think about it is when you have a
+warped Miss you're you're gonna get a
+stutter II experience and it can be
+pretty bad and when you have a drop
+frame you're going to be missing
+animation steps so you'll see some
+generate animation but it's better than
+a warp this sure yeah sure
+well very cool that's a good overview I
+think for the basics of how VR works
+yeah and I'm sure we'll have more stuff
+to talk about at some point in the
+future I hope so I haven't gotten into a
+whole lot of VR yet I'm sure our readers
+know we've looked at it a million times
+at all the doors but we'll see we'll see
+where expansion tops options are so Tom
+thank you for the walkthrough the
+glorious the glorious chart yeah what
+the yes and we'll give a little smiley
+face yeah parts to Rd you right but
+thank you for joining yeah good to see
+see I'll see you next time yeah</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

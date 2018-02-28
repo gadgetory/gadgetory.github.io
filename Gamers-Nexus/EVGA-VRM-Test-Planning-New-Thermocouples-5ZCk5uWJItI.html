@@ -1,0 +1,571 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>EVGA VRM Test Planning: New Thermocouples | Gadgetory - Your Gadget Factory</title><meta content="EVGA VRM Test Planning: New Thermocouples - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">EVGA VRM Test Planning: New Thermocouples</li></ol></div><h2 class="post__title"><b>EVGA VRM Test Planning: New Thermocouples</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/5ZCk5uWJItI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">everyone so we are updating our EVGA vrm
+testing I thought I'd give you an inside
+look as to what's going on with the
+first video we basically looked at a
+validated Tom's Hardware des testing of
+the EVGA FTW VRMs for the 1080 FTW we
+have this was also a problem with other
+cards 10 60s and 10 70s included in some
+cases that's all in the first video and
+then we also did a thermal pad
+replacement video to cool down the V RMS
+to an acceptable temperature now here's
+the thing that testing was done with
+thermal imaging I'm going to talk about
+why that's problem in a second but we
+were validating what Tom's did and use
+their methodology second thing I want to
+put a direct thermal couple probe on the
+trouble spots specifically the second
+and the seventh MOSFETs to see how the
+temperatures look but before getting to
+that project this coverage is brought to
+you by our patreon backers who helped
+out by providing some extra funding
+every month and in return we give some
+inside looks and this is one of those if
+you want to help out with future videos
+like this hit the link in the
+description below to patreon and you can
+check out our page there I'm not going
+to recap the entire issue here and all
+the testing that we've already done it's
+on the website it's on the channel if
+you want to look at the thermal imaging
+we did but we are expanding on that
+quite a bit I've done some endurance
+testing as well I'll talk with that soon
+first of all thermal cameras so these
+are pretty popular these days because
+they can plug into smartphones now but
+there's a lot of problems with them
+they're great for rapid prototyping they
+are great for quickly figuring out where
+the hotspots on something and have
+temperatures actually improved but
+they're not necessarily that accurate
+they're fairly accurate except for well
+I should rephrase that it's not the
+accuracy that's the issue it's where you
+use it and how you use it and in the
+case of these when you're dealing with
+something like a tempered glass side
+panel on a case or an acrylic window on
+a case these are pretty much useless
+because of the emissivity of the surface
+that's true somewhat for these as well
+for video cards looking at a PCB you're
+okay it's not quite as reflective shiny
+and it's a bit more accurate in that
+regard but when we take a thermal pad on
+here there's two problems with a thermal
+imaging device and it's not going to be
+resolved with the more expensive one
+either the first is the
+civet e of that surface how reflective
+it is things like that interferes with
+what's being read on the camera the
+second problem is just that it becomes
+an insulator so when we put a thermal
+pad on here yes we saw a pretty big
+improvement but if you think about it
+you're measuring the temperature of a
+pad that's sinking all of this heat and
+we don't necessarily know what the
+underlying components are measured at
+even though they're being synced now
+directly to a backplate in the case of
+EVGA is this is a metal back plate so it
+actually will dissipate some of the heat
+so it was a good first test we
+definitely saw an improvement overall in
+performance of the card I did stick a
+thermal couple down there thermocouple
+probe like one of these down into the
+heatsink for that first test and I
+validated the temperatures so we know
+that these vrm pads are a definitive
+improvement but we don't know the
+specifics of how it works with the hot
+spots that are way low down on the card
+which if you look at photos of the 1080
+FTW s and even the 10 70s that folks
+have posted online where they've had
+trouble the sort of explosions pots
+where the the fetes burnout are the
+second mosfet and the seventh or the
+eighth mosfet which is sort of well just
+above the middle so I want to test that
+and the way we're going to do that is by
+using a thermal probe and the problem
+here is these are the ones we have they
+are k type thermocouple but they're not
+flat they're pretty damn flat but
+they're not perfectly flat it's
+relatively flat that's not the main
+problem though the main problem is that
+it's exposed metal by nature of being
+something that's reading temperature so
+you can't just stick that into a card
+because it's electrically conductive the
+problem we run into is if I stick one of
+those in here I can't really just put it
+on top of the MOSFET because now you're
+interrupting the flow of heat from the
+MOSFET to the thermal pads and so now
+your temperatures are going to look way
+hotter than they actually are
+so our thought was well let's put one in
+the middle but now you've got a new
+problem now it's touching all kinds of
+electrical components including the feet
+for the feds sit ups on the MOSFETs feet
+touching the capacitor all the tiny
+components in there that can bridge
+something and cause a short so we don't
+want to do that because then the cards
+dead or there's damage to it and we
+don't know what's going on anymore even
+if it appears like it's working you kind
+of lose control the situation when
+there's electoral issues so couldn't
+quite do that the next thought was we
+could use captain tape this is ka pton
+captain tape is not electrically
+conductive it's pretty thermally
+insulating it can withstand far higher
+heat than these are going to put out so
+it seemed like a perfect solution the
+idea would be you put some tape around
+one of these like this and then it would
+theoretically not conduct electricity
+and jump any components and it should be
+resistant to melting the tape itself
+that is so that wouldn't be a problem
+the problem that had becomes well it's
+thermally insulating so we don't know
+kind of how much of our measurements
+getting lost in that tape so here's the
+solution I came up with I spoke with a
+couple thermal engineers in the industry
+we spoke with Bobby kanstul you may have
+seen a video with him he was the guy we
+spoke to at Corsairs lab previously
+basically told Bobby hey we're doing
+some tempt some some very specific
+temperature testing I need a
+thermocouple that I can stick to a
+surface and not worry about one
+conducting electricity and shorting
+something and to ideally something that
+I can stick to the top of a service
+between thermal pads and not worry about
+destroying the heat transfer from the
+device to the pad and Bobby helped us
+out he sent me in the direction of
+buying some Omega thermocouples and they
+were pretty expensive but I picked him
+up and as far as thermocouple goes you
+normally spent a couple couple bucks for
+one but these are $65 45 and then I paid
+a lot for shipping to get them here in
+time so these are pretty damn cool
+the cable may look like it's exposed
+here this is actually housing it's got a
+really thin film housing on it so it's
+not exposed copper that's good that
+means we won't conduct anything they're
+short anything or stuff like that then
+the end of it here the actual
+thermocouple itself is buried within
+it's very thin that's important and it's
+within a an adhesive pad that can
+withstand pretty damn high heat more
+than we need to worry about more than
+100 Celsius hundred 10 Celsius I'm
+worried about measuring and as a final
+benefit it's not going to cause the same
+issue where if we have one of these
+between the thermal pad and the device
+being measured the MOSFET we're not
+going to have issues with insulating the
+thermocouple or destroying the transfer
+of heat there will be some change it's
+not a perfect solution but it's a pretty
+damn good solution considering we're not
+a validation lab with a hundred thousand
+dollars of equipment so I'm pretty happy
+with that now the problem with these
+when i got them what huh so there's
+always problems never easy this is why
+it takes a while do these sometimes
+problem of these was these came without
+any kind of connector on them it's just
+two wires so you've got a positive and a
+negative wire and these are I'll give
+you a backdrop here so hopefully folks
+has been better so there's a positive
+and negative wire these have to go into
+the housing for our k type thermocouple
+zand then that'll connect to our amprobe
+thermocouple reader which is what we use
+for all of our ambient testing and so
+I've already built one as a prototype
+we're going to build another one now
+basically I'm taking these existing
+thermocouples I really like these for
+ambient testing for validating
+temperature for case tests and things
+like that we take a measurement actively
+with two of these connected to one of
+these and it'll tell us the temperature
+see if maybe you can get a reading on
+this let me switch these different spot
+so they just plug in the top there we've
+shown this before but you get a reading
+of the temperature so it's about 22
+Celsius here ambient temperature and
+just
+show you that it's kind of working I'll
+go ahead and grab the end of it and it
+will jump up so that's going to be a
+skin temp so pretty cool stuff this is
+fantastic for validating the ambient
+temperature we subtract it from our
+diode readings you can see it takes a
+bit to update but it does update pretty
+well and it's a second a second
+measurement so that's all stuff that we
+want this is all good news but what I
+have to do is I have to take apart a
+couple of these and and put the housing
+for the end the actual connector around
+one of these and it's not too hard but
+we're going to go ahead and do that on
+camera here this great tool but it's not
+the perfect solution so I do want to do
+these thermal couple measurements will
+take direct measurements of the vrm take
+some of the vrm without thermal pads
+some with it and that will tell us how
+hot is the thing and its hottest of hot
+spots and are they actually dangerous
+temperatures the final video of this
+series after this video will be after I
+analyze all the data and I'm going to be
+working with build Zoid from actually
+hardcore overclocking will get on camera
+together and we'll talk about what our
+findings were for all this EVGA vrm
+stuff going around I know there's
+questions about vram I've seen your
+comments I'm focusing on the VRMs for
+now because it's enough work already
+vram will come next if at all but I can
+tell you from our quick look at all the
+devices i have here which is for i've
+not seen any issues with Vee around
+contact but that doesn't mean it's not
+an issue I just haven't seen it but
+we'll talk about that later let's focus
+on the VRMs today so building the thing
+this is the easy part the next part of
+to tell you about what are our
+limitations and concerns when actually
+putting a thermocouple a probe on the
+device and see if this is right yes that
+will work so there's three screws in
+these there's a positive terminal here
+on the inside that's connected actually
+to the screw and a negative terminal or
+ground the positive is the thinner of
+the two prawns so let's take these out
+this will it's sort of open the housing
+and there we go yeah third hand here so
+open the housing once they're fully out
+and at that point we can wrap the copper
+exposed wire from our new thermocouples
+around the screws and get a better
+thermocouple out of it at least the
+better one for the specific purpose ok
+so these screws just hold the the
+housing to the connector I don't need to
+take those out or do anything with them
+these two screws are the ones that we've
+got wires around so if you look at it
+you'll see that this is the thermocouple
+if you look at the end of it hopefully
+that shows up there's a red and a yellow
+wire one of those is ground and ones
+positive or negative and positive and
+they terminate in the metal probe and
+touching that is what gives you a heat
+reading or even just an ambient it gives
+you a reading of ambient temperature so
+from looking inside here we can see the
+yellow one the smaller instrument the
+point the yellow wire right there at the
+end of the screw driver is the positive
+and that's connecting to this screw it's
+just copper wrapped around the screw and
+the ground the negative wire is the red
+one which also terminates in bare metal
+wire and goes to this screw so we're
+going to take those apart and I believe
+based on my testing I did earlier we can
+even take the existing thermocouple out
+without needing to cut the cable or or
+strip the wire to the cable housing
+which is nice because I'd like to be
+able to reuse those they're good and I
+like that so there you go that's the
+easy part it's got really nice housing
+but we're not going to keep it for the
+new cable your thermocouple basically
+you've got your two ends there and those
+wraparound the screws let me know when
+you have that that's good ok as so now
+we're going to move this aside don't
+need that anymore get one of these new
+ones unwrapped just enough so that I can
+work with it and I have to remember now
+which I believe it's the same I think
+it's still yellow and red and I think
+yellow was positive so I think yes that
+is correct so we're going to do the same
+thing with these really thin ones these
+are just flat a like straight cable the
+other ones were bent nicely so I'm going
+to have to replicate that I will be
+bending these do that need just some
+pliers or something kind of fine to work
+with so I'm going to bend these one at a
+time and a lot of this is housing it's
+just the very very end that's actually
+exposed wire that's decent enough to get
+started I'm going to go ahead and stick
+one of these screws in there and make
+sure it lines up yes ok so this will
+work and it's going to be very hard to
+see this on camera so a plan here is to
+what's the easiest I think it would be
+easiest if I get like one thread in
+there and then hook it yeah ok so that's
+in there so let's hook this around the
+screw and all it needs to happen is this
+metal wire needs to make contact with
+the metal plate that's down here so
+that's this plate right here so we're
+going to be making contact between that
+and the screw as long as it's touching
+that plate then it feeds out to the the
+prawns and that goes into our
+thermocouple reader and gives us the
+measurement we want so this is wrapped
+around I'm going to look in closer here
+okay that's pretty good so we're making
+good contact this will be pretty easy to
+test and validate once we're done
+alright that's pretty good so I think
+I'm happy with that I'm not going to put
+the enclosure back on we need to
+validate it for us to make sure that
+it's even reading a temperature and then
+hopefully it's reading an accurate
+temperature we've got some other
+challenges there too which I'll talk
+about in a moment so let's put this and
+I'll put this in slot wanna put it in
+slot 2 okay this is the other one I know
+these are accurate already now they
+should be like it may be a degree apart
+i think is about their accuracy they're
+a little different because this one is
+this one right here is reading
+temperature again through adhesive so
+it's not the same measurement as you'll
+see what the other but let's take a look
+22.7 on thermocouple one that's this
+yellow known good one I have the one we
+just built so to speak 22.7 that is
+pretty damn close so we're at times
+looks like we're about point four
+Celsius difference which is perfect
+that's that's what we want so I'm happy
+with that that means this is going to be
+pretty representative of what we're
+normally used to working with and
+obviously there will be more validation
+we're not going to show it on camera but
+i'll go ahead and put two of these on
+the same place on a hot component will
+see what the heat temperatures the load
+temperatures are but so far it looks
+pretty promising since the idols about
+the same or i should say the ambient
+maybe
+alright so we've got two of these off
+camera i'll build two more of these
+we're going to use for total i have to a
+thermocouple readers the same ones so
+we've got four total I will be placing
+those all over the card the plan is to
+do second mosfet seventh mosfet up here
+and then that'll be before and after
+thermal pad mods and also be formed
+after the bios mod that EVGA pushed do
+one on the back side to the hot spot is
+right around where the inductors are
+inductors are going to be dead center
+here this channel with kind of nothing
+these are the capacitor banks the other
+side as the capacitor bank and then this
+is looks like our faites so the hot
+spots right around here and I know where
+it is pretty well because if we put the
+back plate on the card which i'm not
+going to fully mount it but you'll get
+the idea it's always right around here
+in this first ventilation port I'm not
+really ventilation but you get the idea
+so the first hot spots always right
+there so I want to be testing with one
+thermocouple there for sure so that's
+that's pretty good setup now what are
+the concerns here so the zoe there's
+always a problem this problem with the
+thermal camera there's gonna be a
+problem with the thermocouples problem
+here is we've resolved the electoral
+conductivity concerns we've resolved the
+thermal contact concerns where i'm
+basically i'm going to peel this you can
+see it bends like that so on appeal it
+will have an adhesive thermocouple we
+can apply to the surface which will go
+right around here and then i'm going to
+cut it to size a bit not too much but
+just enough so cut it to size so the
+next question becomes before mounting it
+obviously how do we route the cable well
+the problem is whenever you're near
+inductors is a chance a pretty high
+chance of
+I electromagnetic interference so with
+electromagnetic interference your
+concern is if we run this cable let's
+say we came in from the other side for
+some reason wouldn't really want to but
+so you coming from this side you might
+now by crossing an inductor be
+introducing EMI to the system and that's
+just going to depend on the device
+you're measuring and on the quote Bob
+you can still on the black magic
+involved with the particular thermal
+probe and the card so we don't want to
+cross an inductor the way EMI manifests
+itself in a thermocouple reader is
+basically you have a thermocouple reader
+like this and you'll see the
+temperatures on the screen bouncing
+between let's say it's under load let's
+say it's maybe 50 Saul's ease and you'll
+get a jump 60 celsius then we'll go to
+50 again so there's a lot of jumps that
+are really big ranges in a very short
+period of time that's EMI you can tell
+it could also be a bad brew but probably
+EMI so how do we resolve that well like
+I said we avoid going over the inductors
+directly for one and then two you got to
+look out for traces but with a PCB like
+this we don't really have much much
+choice so we're going to have to cross
+traces and the ideally from what the
+thermal engineers have told me you want
+to cross the traces at a 90 degree angle
+but in this case I'm really not going to
+have a choice so we're going to come in
+with the probe from my thought is from
+the PWM section of the card and land on
+the fetes that we want to measure after
+cutting them this stuff to size so we'll
+land right around here and I'm thinking
+I'm going to route this cable just short
+of the stay away from all this stuff
+stated from this stuff I'm going to try
+and route it just like that straight out
+the bottom of the card and then it will
+feed into the thermocouple reader then
+we'll do the same up here seventh fat or
+eight and this one's going to be a bit
+trickier but I'm gonna have to decide do
+I want to ride out the bottom of the top
+and we need to do it in a way that the
+cable for the probe
+doesn't touch whatever thermal pads are
+on the original solution shouldn't be
+too hard really because there's not a
+lot of it that's all we're avoiding here
+is is that strip on the fetes so I think
+we'll be in good shape the next step is
+actually running the test so that's what
+we're going to do pretty cool stuff I am
+happy to get the process started here
+with this vrm testing I am sure that
+will run into continent some kind of
+complication and if we do all obviously
+take time to buy whatever I need to buy
+or rearrange whatever I need to
+rearrange that the tests are accurate so
+that may mean you're waiting about a
+week for the update but hopefully it
+will be the sort of end all be all of
+this vrm issue from EVGA so we know
+definitively a few things one how much
+of an issue was it with the stock card
+too does the bios update alone fix it
+and three how much do the thermal pads
+really do when you're looking through
+the lens of a probe rather than through
+the lens of a lens of a literal camera
+lens because again we've got the
+concerns of fem a-- civet e and of the
+reflective surfaces and just of the
+thermal pads insulating the backside of
+the PCB and if you're taking a thermal
+image of a device a weed just like toms
+did because we were validating toms
+methodology we took an image of the back
+the PCB that's great but and it's good
+for for validating finding issues what
+it's not great for is a PCB itself is
+sinking heat so we may be getting
+temperatures that are either slightly
+higher or slightly lower than whatever
+component were measuring depending on
+what it is and which side of the PCB
+it's on because you're going through a
+couple layers of PCB there so that
+impacts the results but that's the
+theory that's the plan thank you for
+watching as always subscribe to follow
+up on this because there will be at
+least one fault probably one follow-up
+hopefully the final hun and patreon link
+in the post roll video if you want to
+help us out directly there will be a
+link below thanks to those of you who do
+support us already because it does help
+with things like this like buying one
+hundred dollars of thermocouples and
+should be fun test I checked by
+soon I'll see you all next time
+you
+I'm not stuff later</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Star Citizen Multi-Crew &amp; Tech Update - Chris Roberts Interview | Gadgetory - Your Gadget Factory</title><meta content="Star Citizen Multi-Crew &amp; Tech Update - Chris Roberts Interview - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Star Citizen Multi-Crew &amp; Tech Update - Chris Roberts Interview</li></ol></div><h2 class="post__title"><b>Star Citizen Multi-Crew &amp; Tech Update - Chris Roberts Interview</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/3nVm3aKeOrc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey Ron i'm steve from gamers taxes
+dotnet we're joined again by chris
+Roberts I'm cloud imperium games and we
+just spoke about that PS module that
+should already be on the channel now
+we're talking about multi crew and the
+the previous roadmap I saw a sort of FPS
+module and multi crew were a little bit
+after each other multi cruise later
+what's what's that looking like in terms
+of feature set how complete our things
+well we're actively in the multi crew
+something will look down right now you
+hear where well most all the studios
+around the world are working on multi
+crew we're going to show sort of the
+next generation of it off at Gamescom so
+that's in about three weeks time or so
+and it's a there's a bunch of stuff
+that's really exciting so we you know I
+think we've talked before that we moving
+the engine over to 64-bit so yeah notnot
+like 60 so less about 64-bit compile
+more about 64-bit positional space so
+pretty much every 3d engine works in
+32-bit which is great for a normal FPS
+because you usually don't have maps that
+are bigger than say I know eight
+kilometres by eight kilometres but for
+us we've got you know star systems that
+are millions of kilometres across in the
+position on 32-bit stresses and I know
+so we spent about eight months now it's
+done moving the engine over to 64-bit
+world space coordinates so the last kind
+of part of it was moving the rendering
+over so it became camera relative
+because the GPUs themselves most of them
+don't work in significant they work 32
+bit but since you generally won't be
+able to see millions of kilometres away
+you know the visible range is inside 32
+bits but the actual overall system
+spaces is much bigger and then we'll
+have some special handling for big
+celestial objects that's something we
+just type out in our fury ax review as
+well the bit size of the different
+interfaces and architectures so it's
+definitely a hot topic right now yeah
+yeah no no I'm sorry and it took a lot
+of work because busy like I said most
+engines are sort of built with the two
+in 64 bit and back when I think they
+were written because you know CryEngine
+you know was you know first of all from
+Far Cry and the crisis and so on you
+know they didn't even think about have a
+successful bit so and you know there's
+tens of thousands of files so it took a
+lot luckily we've had some of the
+original engineers and architects of the
+engine join us and so they helped a lot
+with it so at Gamescom we are going to
+be showing a large world map just
+actually a small portion of it but if
+you were to fly from the starting
+location to the ending location would
+take you two and a half hours at top
+sort of current dogfight speeds you know
+I think it's several hundred thousand
+kilometres of the distance well of
+course do a bit of a quantum jump
+between them but it's all on the same
+map and the same scale and what's really
+nice is we've got that and the second
+piece of technology that the engine
+group is built which is called the zone
+system so one of the big challenges and
+this is one of the things we definitely
+multi crew is the zone system is what
+enables us to handle sort of sparse /
+dense data so you know in most FPS games
+like I said it's a you know eight by
+eight kilometres you know the density of
+the levels very consistent you know
+you're wandering around you know
+buildings or vegetation and there's a
+lot of objects and you know interest in
+small amounts of areas but in space you
+can have huge areas of nothing in and
+then you can have areas of high density
+like a space station or an asteroid
+field or say a big ship that has you
+know people inside and stuff like that
+so what we needed was a sort of method
+of handling this data and calling it and
+updating it in organizing in a way that
+was up to more because typical way
+engines use is like octrees which is not
+very good for sort of the sparse data
+only occasionally have and and
+so we build this thing called the zone
+system so essentially you break things
+into zones and you get into zones and
+the zones could have more and more
+fidelity into them so like you can have
+a big multi cruise ship itself has it is
+considered everything that's attached to
+is considered in it so and then inside
+there's an interior that its own so now
+that ship can exist inside space and
+Australian dealer now yeah so it can
+exist inside says one's own could be
+round a moon right and that moon zone
+could be inside the system zone and so
+it's ways of sort of container izing
+data or you know things that would
+render a things your update in a way
+that the engine can efficiently decide
+because I'm do I need to render it to
+anybody and that's tied into a whole
+bunch of other things like visibility
+culling so it's the only way we get our
+really big capital ships and some of our
+more you know heavy multi cruise ships
+to work properly so like if you play
+you're in the hangar one of the reasons
+why the hangars you know can run slow if
+you have a lot of big ships and
+constellations are freelancers is you
+know each one of those you know the old
+models are like two and a half million
+Polly's each you know a good million
+half is really on the interior right and
+right so do you know the original the
+way we're doing originally was very
+brute force it just gets thrown all in
+the renderer and then it just decides
+what's going to call out whereas our
+newer system has has that all plugged
+into their zones and so it's
+intelligently cooling out geometry
+objects you don't need to update if you
+can't see a or if you're not near their
+zone and so that's really what enables
+the large you know the promise of star
+citizen these huge massive areas but you
+have this incredibly high fidelity right
+you've got like this you know next-gen
+triple a first-person fidelity you can
+reach out touch and feel everything use
+the toilet whatever yeah it's all there
+in a detail you normally don't get wish
+you normally only get in sort of a
+contained small FPS kind of area but now
+we have that in you know that can you
+know you can get in and you can walk in
+and we're going to show in a gamescon
+you're going to start on the space
+station you're in a room you'll get out
+you'll open up the space into you'll see
+this sort of gas ran outside you'll go
+out to the landing pad to get into a
+Cutlass with your friends and they'll
+all get into the colors which all be its
+own zone running the local grid which is
+this is where we have the fizz
+partitioned for each individual ship so
+we can fly around you can be moving
+around the ship irrelevant of where the
+ship's go as hey there are there any
+loading screens in between all nope
+we're loading no loading screens that's
+the other thing is like so the zone
+system helps us determine what we stream
+so when you know where the zone system
+is you know what's contained in the zone
+system as you approach it in the
+background which streams that's the
+other tech we've been doing is
+background streaming of the graphics and
+background creations remove the entities
+some of us a little bit will be at 1.15
+because that's one of the reasons how we
+got rid of we've got more one of the
+issues with more players in arena
+commander words and all the ships are
+really heavy and so what happens is when
+you blow a ship up and you recreate it
+just building that ship takes a whole
+bunch of time on the main thread and it
+creates the stall both on the client
+hand on the server and so that's where
+you get this lag when you play a match
+and you see ship skip and so we've been
+working to sort of beat streaming stuff
+in the background so even though it's
+loading lots of data it's not it's not
+stalling the client or the server so
+that will reduce lag and there's still a
+lot more work to be done for it but it's
+all built to be sort of just dynamically
+streaming background we need to because
+the size of our ships and the detail
+mean you know they're huge we're talking
+hundreds of megabytes in terms of
+textures and geometry and all the rest
+of them so at Gamescom we're sort of
+demoing the sort of real system that
+will sort of enable you know that
+promise of the full star citizen
+universe's universe where you could you
+know walk around in this incredible
+fidelity get into your ship take it off
+fly somewhere else fly large distances
+get out of your ship EV a into another
+ship stop that ship up and then fly
+around and get to combat with that love
+it's and we're all so that's sort of
+what we're all focusing on right here
+which is sort of our demo of to give you
+a taste of arena commander 2 point 0
+which is the multi cruise ships our goal
+is to hopefully get arena commander the
+multi crew stuff out forward as six
+weeks after FPS drops we have some
+integration to do because FPS is on a
+separate code branch right now to the
+multi crew stuff so once es is out we
+after we've got to drop that back in to
+the co branch integrated get it working
+again get rid of any conflicts of bugs
+of problems and then finish out sort of
+multi crew but are a real girl with the
+multi crew stuff is you know we're going
+to have this huge like one of the play
+maps you'll have will be one of these
+huge maps and when you're going to sort
+of set it up in a free flight mode and
+just have places for people to play her
+out and see what happens because it's
+really going to be some of the
+playground for what is universally liked
+and from there that's why we're going to
+start to basically release parts of
+aspects of what will build them sister
+Universal because the original intention
+of arena commander and also what we do
+marine was really they're all sort of
+testing grounds for the gameplay and the
+features that are part of the a bigger
+system which you know Tony and his team
+in Austin supported by other areas like
+behavior and the folks in Germany is
+building some of this bigger persistent
+universe experience so I'm really pretty
+excited by where we're at with wanting
+to I think hopefully people will be
+impressed by what they see won't show of
+games karna mean it's it's it's a real
+system that has extensibility and we're
+going to show you transitioning you know
+you're getting into one ship taking our
+flying getting being across into another
+ship powering an hour from flying just
+all those things that you've seen in the
+match enema videos that people have done
+that you go okay I could do that in a
+game will be awesome so i'm i'm i'm
+super excited because a lot of the
+technology would be spending a lot of
+time working on but you know you really
+can't show because it's you know deep
+down in the bowels of the engine is now
+coming to fruition right and we're
+getting it in and we're actually getting
+in to show you know what it will allow
+you to do and of course yes there's
+going to be bugs and issues and edge
+cases but the potential of that you know
+you just haven't had the ability to ever
+do this and again before and i think
+that will be a new experience so people
+get to play it like I the way I sort of
+you and what happens on our stuff is
+there and this happened last year is
+that now we've got an incredible group
+of supporters and backers are allowing
+us to make this super ambitious game
+though I think no publisher would ever
+back and buy in general they're pretty
+patient but you know you at some point
+yeah when they don't feel like they're
+going a new content they get a bit rowdy
+and so last year you know you know we
+hadn't had to Rena commander out and we
+thought we were going to have it out
+sort of closer to sort of March April
+the game like a star Murray and it was
+getting pretty rowdy on the forums and
+then we dropped V 0.8 of arena commander
+and then know the rest of the year you
+know it sort of went pretty well I mean
+I'm not saying everything was perfect
+but you know he dropped out p 0.91 point
+no and you know people got new ships and
+play stuff and we they could see there
+was visible changes and alterations and
+the gameplay maybe not everything that
+everyone wants the way they wanted it
+but you know they definitely could see
+that we were working on and changing
+things and responding to what people
+were saying and so that you know kind of
+went and then you know on the arena
+commander side we stopped updating it I
+think I've covered when our last patch
+was out maybe a brother may at the time
+I think it was shortly after pack sees
+what happened was we thought FPS would
+be earlier and we didn't want to
+overload the QA guys and you know at the
+time we would look like the FPS patch
+potentially could drop five weeks after
+the most recent right arena commander
+patch like yeah you know normally we
+like a two to three-week cadence but now
+let's push it so we don't make it too
+much work for anyone and then of course
+FPS 21 Romano he never went back and
+updated a arena commander and fix some
+of the balance things or adding new
+ships and so no one's seen any progress
+on a reader commander for like three
+months and so this point I think people
+exciting rowdy and I like I want to be
+doing something in there's only so much
+you can dogfight with its own set of
+ships without changes and so would
+that's one reason why we're putting 1.15
+out there because it will have the mill
+in which is a smaller fighter and it
+will have the side there'll be flyable
+so the people the few people that have a
+side can fly around in you also have the
+ability to get that with Iraq which
+would be fun and get people playing
+again and then hopefully start
+stammering will be pretty soon after
+that and then
+multi crew and then we're going to have
+some sister unit so mal seizure is still
+after star Marines yes after summer yeah
+it's definitely up some right now it's
+it's the the multi crew for us is our
+whole process is its star marine will be
+so we have 1.15 then we'll probably have
+1.16 which is sort of an incremental
+improvement on 1.15 which will be about
+two weeks after 1.16 and that plan of
+that is to go to actually go live with
+that apps games con and then have star
+marine which is 1.2 oh because it's all
+on the same codebase roundabout games
+con on the PTU or slightly after the
+game's conscious depending on where we
+am at it and then after you're on the
+pdu usually it's a few weeks on the PTU
+and then you should go live and i hope
+that would be the case of i don't know
+that it on the PT we may expose some
+things that we haven't done before
+that's one of the cases where like our
+internal QA you know we've got maybe 30
+people around the company in QA which is
+not small yeah but when you're trying to
+do a multiplayer game it's really not
+much so you first go to the pdu or we go
+like that's when we get real testing so
+that will go and then after the FPS
+drops multi crew would would come after
+that so tentatively you know I would say
+if you're looking at it you know i would
+think that multi crew potentially is a
+citizen khan release so but you know
+again don't want to do it share MSL yeah
+but it's going to be very cool I mean
+it's going to be and I'm and I'm super
+excited because we're also having
+working on the different roles for you
+know the copilot and the pilots so it's
+not just the gunner and no there'll be a
+lot more stuff going around like the
+engineer and all the rest so it will be
+people playing co-op operating the same
+ship together and and I actually think
+it's one of the things that will make a
+big difference because right now
+everyone sort of judges sort of the
+space combat flight experience in the
+microcosm of single seater ships flying
+around and single seater ships it's one
+thing but we've got these big multi
+cruise ships and then one of these huge
+capital ships and so we have to have
+control schemes and systems that handle
+every
+and so it's pretty hard to sort of like
+really judge where everything sits until
+you get them all in you know like is
+this really overpowered or not
+overpowered or how does this ship sit in
+the overall scranton things because you
+know there's a lot more gameplay that
+we're planning on than just single
+seater dogfight combat so I'm really
+excited to get multi crew in there
+because it sort of opens up the palette
+there'll be things for people to do that
+won't just be straight about combat and
+i'll also be able to sort of see some
+interesting stuff we're like now we'll
+probably put some things in like a
+mission where you've got to escort the
+ship to get from point A to point B is a
+test which will be sort of a prototype
+of a cystic universe tight mission and
+you know then you'll have people
+cooperatively some people playing the
+big ship some people in escort and other
+people trying to take it out and that'll
+be this whole sort of cooperative
+gameplay that I think is one of the true
+promises as well yeah so there's multi
+crew brings us beyond that previous
+video as the FPS and check out of course
+Robert space industries for the the game
+and then gamertag just an app for
+updates and receive will see you all
+next time yeah thanks alright see you
+guys</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

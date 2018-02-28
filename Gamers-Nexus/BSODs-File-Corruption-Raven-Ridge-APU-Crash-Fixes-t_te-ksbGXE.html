@@ -1,0 +1,363 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>BSODs &amp; File Corruption: Raven Ridge APU Crash Fixes | Gadgetory - Your Gadget Factory</title><meta content="BSODs &amp; File Corruption: Raven Ridge APU Crash Fixes - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">BSODs &amp; File Corruption: Raven Ridge APU Crash Fixes</li></ol></div><h2 class="post__title"><b>BSODs &amp; File Corruption: Raven Ridge APU Crash Fixes</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/t_te-ksbGXE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">Raven Ridge didn't have the smoothest
+launch for compatibility even outside of
+pre-launch reviews we had issues getting
+our retail purchased samples up and
+running J noted instability issues
+before launch or well at launch Kyle has
+tweeted about frustration of trying to
+get the AP is working and we've done the
+same
+finally after lots of troubleshooting
+and some talking to AMD and others we
+got the AP is working pretty much
+smoothly at this point it's actually
+going well now
+the fact of the matter is that these can
+actually be good products as a middle
+ground between discrete GPUs and game
+ready graphics hardware in APU packaging
+but some use cases will require
+additional care to get it up and running
+and we'll be talking about the steps we
+took to get a perfectly stable Raven
+Ridge system which should hopefully help
+others having similar issues especially
+since it's actually out and you can buy
+it before that this video is brought to
+you by thermal grizzly makers of the
+conductor not liquid metal that we
+recently used to drop 20 degrees off of
+our temperatures thermal grizzly also
+makes traditional thermal compounds we
+use on top of the IHS like cryo not and
+hydro not pastes learn more at the link
+below so this is more or less what half
+of the war zone looked like as we were
+troubleshooting Raven Ridge trying to
+get it up and working and after I sent
+out a Valentine's tweet in response to
+am the horizons Twitter account
+Valentine's tweet they messaged me and
+said what problems are you having so we
+try and fix it so that was partially
+helpful the rest of it that got us to a
+functional stable Raven Ridge was just
+just beating our heads into the wall
+until it worked for like 16 hours
+basically so it does work now that's
+good we can go over all the issues but a
+recap of the problems so some of these
+you've seen other youtubers talk about
+probably I believe J talked about this
+first one which is video TDR failure
+it's a blue screen of death we have the
+same problem and we were able to find a
+solution I'll go through the solutions
+separately other issues that we've
+encountered or folks we work with have
+encountered include large network file
+transfer BSOD is on msi motherboards not
+sure about the others but I know the
+wireless drivers on the msi board for
+sure had issues
+and one of them was large network file
+transfers another one is onboard
+Wireless causing a BSOD in general and
+issues with version 1703 Windows
+versions 1703 freezing or hanging in
+potentially resulting in a BSOD as well
+so I was another problem we'll talk
+about that in a moment because 79 is
+required to get it to work I know but
+I'll get there gpu-z had a known bsod
+issue that will be fixed within days of
+this video coming out Windows has a
+there's a timer bug with MSI boards that
+we showed in a separate video previously
+so that was with this board that I think
+is a be 350 board from MSI so we showed
+a timer bug there where you could
+basically trick benchmarks into getting
+multiples of the score just by putting
+the system to sleep and it would
+basically fake the base clock because
+the windows time would operate slower
+than real time check that video if you
+haven't seen it so that was an issue
+3dmark installation corruption this
+one's really annoying it is fixable
+though so that's good but basically
+3dmark this box of shaken 3d mark wood
+upon certain BSOD user crashes it would
+basically break to a point of requiring
+an uninstall and reinstall and then
+finally some boards like the asrock pro
+4 are still severely lacking and bios
+options in general and there is a sort
+of solution for this as well but it's
+not really a great one ideally the
+vendors get their BIOS in a shape that
+is it's just better but there are half
+steps for now so the fixes let's go
+through these video TDR failure is the
+big one that I think a lot of people
+will see and these are all kind of
+wrapped up in each other but the short
+of this one future mark uses gpu-z
+technology the tech power up utility
+gpu-z
+so future mark uses part of that 3d mark
+requires a manual install of the newest
+sis info version to get it to not fail
+when you're running it on an APU so if
+you have 3d mark installed with the sis
+info version it comes with then you
+might need to go to their website
+and manually download the new version
+that they just launched and use that
+that should fix some blue screen issues
+and some issues with three mark
+corrupting itself I think I think
+they're tied together I'm not clear on
+that but either way it'll fix one of
+them and the other one will get fixed
+through all this other stuff so that's
+step one gpu-z
+the the maker's techpowerup GPZ they're
+all aware of the issue that's all done
+by wizard so that should be fixed within
+a couple of days at this point also
+running GPZ at all will cause a blue
+screen doesn't matter if you're using 3d
+mark but that will definitely
+instantiate the issue because when you
+launch leading market it calls for the
+sis info file if it's pulling the one
+that GPZ includes then that's that's
+where the issue occurs the video I think
+that's the video TDR failure but either
+way it fixed most of our problems so
+that's one thing you can do another one
+for Windows issues general stability
+crashes blue screens freezes and Hanes
+so first of all we would recommend
+installing the chipset drivers first and
+the GPU drivers second because and this
+may have changed by now but last I
+checked with the retail version of the
+product cuz we bought it we weren't
+sampled so we actually did do this as
+consumers it's not like a pre-launch
+complaint but the last I checked the
+chipset drivers that I used did contain
+the correct driver set for the APU for
+Raven Ridge however it contained a an
+older or an incompatible GPU driver of
+some kind if he didn't Express install
+to the effect that installing the GPU
+driver first and then the chipset driver
+using Express install would result in an
+overwrite of the GPU driver so you'd
+have the Raven Ridge APU Vega portion
+not functioning so we'd have to
+reinstall the GP driver yet so chipset
+first and GPU next thing we also noticed
+that performing a clean install of
+Windows version 17:03 via
+Microsoft's media creation key the USB
+key that you make we noticed that that
+and then upgrading to 1709 could further
+cause issues so basically the finding
+is you know a lot of people have
+versions 1703 media creation keys
+especially in media cuz we use them all
+the time so if you go from that and then
+upgrade to 1709 which seems like it
+should be sufficient that was causing
+some of the Haines and crashes we were
+getting and you could scroll through
+event viewer and see them popping up so
+the fix to that was make a new media
+creation key with version 1709 on it the
+newest one and install that clean with
+no windows upgrade pathways so not using
+Windows Update to get from o3 to own.i
+you just start at o.9 and the only
+reason not to do that is well there's
+really there's not a reason not to do
+that because it takes even on a slow USB
+key it takes minutes to make it so we
+would recommend doing that just start at
+7:00 to 9:00 you need to do a clean
+install to make sure everything works
+properly and it'll just it'll make life
+way easier to go that route rather than
+trying to do the upgrade path which
+sadly does not work very well for us
+so it may be different this is a big
+your mileage may vary thing all these
+boards have like half functional BIOS -
+pretty much fully functional BIOS depend
+on which board it is so that's another
+big factor to the gigabyte for example I
+think has like three new BIOS revisions
+in the last they have three BIOS
+revisions that work with Raven Ridge so
+that's just a shooting gallery you pick
+one and you hope it does what you need
+we found testing with the gaming k5
+which has some of the best features in
+general we found testing with that board
+that the absolute latest that time of
+filming BIOS revision is the one that
+worked the best and the two that
+supported Raven Ridge but came out
+before or at least one of them anyway
+didn't work as well for us so keep that
+in mind as well you may need to try a
+couple of those as for the rest so
+Windows is the big one
+gpu-z is a big one that'll be fixed - in
+3d mark was also with a Sisson fo thing
+a big problem that you wouldn't really
+expect that to cause the issue software
+shouldn't be causing blue screens but
+updating sis info will fix that limited
+BIOS settings are kind of a concern but
+should somewhat be
+although I guess with the x4 70 and B
+450 or whatever they call it
+so for limited BIOS although we
+typically don't like software for
+overclocking the CPU or CPU components
+like an IGP typically we prefer to do
+that through bio it's not through
+software but Rison master is
+surprisingly not awful so you can
+actually use it to overclock the GPU
+pretty reasonably it gets stuck stuck
+around 1650 1655 something like that so
+you get to 16 50 megahertz or so if
+you're lucky you push SOC voltage you
+can do that through eyes and master as
+well so if bios isn't giving you those
+options which some of these don't I want
+to say this one I think did not have a
+GB overclocking options but I've tested
+so many boards in such a short period of
+time now I can't even keep straight
+which ones had issues of the house which
+didn't so yeah if it if the board
+doesn't do what you want
+Ryze and masters okay it's not ideal but
+it's okay it works fine a gigabyte I
+think has the best BIOS revision for the
+IGP overclocking right now but they've
+had plenty of issues of their own with
+with BIOS if you kind of read through
+the forum's with Raven Ridge so it's
+gonna come down to your configuration
+very specifically in some cases I think
+that's most the basics
+so to recap it if you have had issues
+with Raven Ridge like we did we bought
+it on day one I'm sure people out there
+bought it on day one if you've had
+problems getting it working hopefully
+most of those will go away within the
+next week like this coming week so I
+don't think you're gonna be in the dark
+too long
+motherboards are kind of a problem a lot
+of people were asking about upgrading
+motherboards where what do you do if you
+buy a board or how do you know if a
+board is already good to go with Raven
+Ridge and these doing some stuff there
+so if you go retail physically the boxes
+that actually have the correct BIOS on
+it to support Raven Ridge will have a
+sticker on them so you buy from Micro
+Center that'll make it easy for you
+alternatively if you have a shop locally
+that can flash bios for you they should
+be able to take care of that
+and these also I think doing some kind
+of flash kit now that I read about so
+that should be taken care of but if
+you're not aware your board may show up
+you put Raven Ridge in it it doesn't do
+it's because that's Ron Byers in it so
+you need to put Rison in it or figure
+out what AMD is doing to support your
+region or whatever that boot kit was so
+that's one of the other things look out
+for but overall some boards keep in mind
+also won't support Raven Ridge really I
+mean it's like this the crosshair six
+it'll work it'll boot and it will
+support the CPU but you don't get any
+IGP out it has no video out so make sure
+you look at the i/o on the boards as
+well but yeah recapping the most
+important stuff clean install of Windows
+version 1709 don't go the upgrade path
+it just it sucks so 1709 clean install
+3dmark install that and gpu-z if you
+want gpu-z you're gonna have to update
+it later but install them both and then
+after installing them both go manually
+grab the new sis info file if it's not
+included in the 3dmark package when this
+video comes out and then keep an eye out
+for GPZ updates like by I don't know
+with them between Monday and Wednesday
+is it's kind of what my understanding is
+so yeah I think everything should smooth
+out it's it's been frustrating but it
+should smooth ahead it looks like
+there's actually like a path to making
+sure these bsod issues go away and the
+thing is that like I want to call them
+minor issues because on one hand these
+are problems that will be fixed
+pretty soon it's not like an inherent
+hardware flaw it's more software and
+BIOS and firms like all these things
+working together on the other hand they
+are technically major issues because
+anytime you have a blue screen of death
+or it crashed a desktop or system hang
+that's a major problem
+it's like sev one issue when you're
+reporting it and testing so but it
+should be fixed if you've had problems
+that's how to do it if you haven't had
+problems that's awesome I'm happy for
+you you whatever you did work then you
+got lucky too so yeah not everyone will
+have issues getting Raven Ridge working
+however clearly
+from the reviewer community alone pretty
+much everyone's had some kind of problem
+along the way somewhere well there's
+just wireless drivers causing crash or
+this video TDR failure that is more or
+less resolvable so yeah our platforms
+finally fully stable feeling good about
+testing it now for performance doesn't
+seem like it's gonna be crashing all the
+time and corrupting stuff anymore
+so keep an eye out for that subscribe as
+always for more go to store that gamers
+Nexus Don that to support us directly
+and gonna patreon.com slash gamers Nexus
+if you'd rather support that way thank
+you for watching hopefully it works out
+for you if you bought Raven Ridge I'll
+see you all next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

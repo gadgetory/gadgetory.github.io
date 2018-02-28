@@ -1,0 +1,528 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Ask GN 51: How PCIe Lanes Work (CPU vs. Chipset) | Gadgetory - Your Gadget Factory</title><meta content="Ask GN 51: How PCIe Lanes Work (CPU vs. Chipset) - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Ask GN 51: How PCIe Lanes Work (CPU vs. Chipset)</li></ol></div><h2 class="post__title"><b>Ask GN 51: How PCIe Lanes Work (CPU vs. Chipset)</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/JVihgHoy8Sg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey everyone welcome back to another
+episode of ask GN now that we are back
+from copy text we had a lot of questions
+to dig through through the discord chat
+for patreon backers if you're not one of
+those you can go to patreon.com/scishow
+to join the discord chat a lot of fun
+with everyone on there and they've
+submitted some great questions but we
+also have some from YouTube from the
+previous sgn video before that this
+content is brought to you by custom
+backplate makers at v1 techcom the UN
+tech builds GP back ways to order with
+their online customization tool making
+it easy to theme upcoming PC builds back
+plates cost $25 and up and are installed
+via magnets and can be seen in some
+shots of the cards reviewing that lately
+used code gamers Nexus 5 for five
+dollars off your order or click the link
+below before getting started as always
+you can leave your questions below if
+you have them for next episode and right
+now the one I want to start off with is
+pretty timely and topical this is from
+I'm a Jedi bra huh this cord who asked
+am I allowed to ask a question about
+this image and he sent me an image that
+we can probably put on the screen and
+said given the 28th lane at CPU and 24
+lanes on the chipset it seems to give
+you more lanes than x99s at 40 Lane CPU
+I'm curious to see if the grief Intel
+got was premature now regarding the the
+grief part of this this is in reference
+to a lot of the talk online the past
+week or so about PCIe Lane count on
+Intel's upcoming sky like ax and KB like
+xcp is mostly sky like axe really and
+how those CPUs the $600 one especially
+have a lower link count than you might
+have expected so the question being well
+if you add the lane count on those CPUs
+to the lane count available through the
+chipset why is there an outcry because
+that's still a lot of lanes so first
+thing to go through here is a primer on
+PCH vs. CPU lanes this is actually this
+is a question I've answered a lot and
+asked gns indirectly over the past
+probably six months or so but it's worth
+doing again in a more dedicated format
+PCH and CPU lanes are not the same at
+least on Intel platforms or
+and tell platforms the way Intel does it
+is that they have a certain amount of
+lanes on the CPU maybe it's 16 for some
+of them those lanes are pretty much
+reserved for graphics so those will go
+from the cpu straight to the PCIe device
+whatever that may be normally a video
+card in the first slot maybe you have
+two video cards and you can run 2 by 8
+configurations or if you're running AMD
+and you can crossfire then you could run
+three but you'd be stepping down to it
+by four in one of the slots and you
+probably want some kind of pecks or plx
+chip on there but the way their chipset
+works is the PCH has a certain amount of
+HS i/o lanes or high-speed i/o lanes
+high-speed i/o lanes on the chipset are
+somewhat assignable by the motherboard
+manufacturer so let's say you have 30 HS
+i/o lanes as with the current G series
+chipsets if you have 30 HS i/o lanes
+some of those will be reserved but most
+of them you can assign out as the
+manufacturer not as the user and send to
+devices like Gigabit Ethernet maybe you
+use some 4 10 gigabit ethernet if you
+have the capability on a workstation
+board you might send them to other PCIe
+devices like MDOT - SSDs that might be
+on an nvme protocol or something like
+that but you can send out these lanes to
+different devices on the board you too
+would be another example and those
+devices high-speed i/o are normally
+going to use something like 5 4 so
+because of this the PCH can only assign
+its lanes and chunks of four so by that
+I mean if you wanted to pull lanes off
+the PCH and use them for a device in a
+full length 16 PCIe slot what you would
+actually be doing is pulling four lanes
+off the PCH or peeling off the lanes we
+say and applying those to the slot so
+the slot might be wired for 16 but it
+will only receive four from the PCH now
+realistically what will happen is as
+long as the CPU has lanes available it
+will assign all those lanes down to the
+PCIe slots for all your graphics devices
+pretty intelligent about that but if you
+exhaust those lanes and run
+to them and you have to pull something
+off PCH it's an a by for config that's
+not compatible with SLI SLI demand by
+eight at a minimum it could work with
+crossfire but your quality of lane goes
+down off the PCH the the arguments I
+think or the the concern or whatever it
+may be from all the the discussion
+online is that generally speaking you
+want as many lanes as possible out of
+your total lane count to come off of CPU
+it's a bit higher value because those
+lanes are going to be assignable to
+graphics devices and they're on the CPU
+whenever you're eliminating steps from
+the process and having to go physically
+else around the board it's always a good
+thing it's a bit faster so I think
+that's that's what a lot of it is
+because the value of the lay on the CPU
+is higher and for multigp you kind of
+need it but also I think what happens or
+what has happened with some of the grief
+as you put it that Intel got was
+probably to do with with perception of
+how these lanes are created where it
+looks like I'm just kind of interpreting
+what I've seen online here not making a
+comment but I think what people see is
+it looks to them like Intel basically
+throws a switch and turns off or on a
+certain amount of lanes for a product to
+potentially artificially create a
+product in a different price category
+that would otherwise be identical to a
+higher tier product with more lanes that
+cost more and there may be some truth to
+that I'm not 100% sure how Intel manages
+their lanes I don't know the validation
+steps that go into having more lanes
+maybe there is actually some cost
+involved there there probably is but is
+it the cost that we're seeing in these
+new products I can't answer that however
+I think that's where a lot of the
+discussion online has come from is that
+that understanding of the situation and
+the fact that the CPU lanes are higher
+value than the PCH lanes for things
+outside of HSI oh like graphics cards so
+hopefully that that primer on how PCH
+and CPU lanes are assigned and used
+helps out with understanding
+why you would want more CPU lanes even
+though the total CPU plus PC a Chilean
+count is higher but if there's more
+questions on this leave them below that
+is by all means not the most
+comprehensive discussion you could give
+on this topic but given that this is an
+osteon we've got other things to go
+through I think that's not bad to get
+you started next question is from Jesse
+Shelton who posted on YouTube and said
+I'm choosing a 1080i for water-cooling
+do the better VRMs on aiv partner cards
+actually make a difference for
+overclocking or are they just for show
+some say the founders Edition has ample
+power capacities others say it does
+doesn't so as specifically speaking to
+the founders edition 1080i we have a PCB
+analysis which includes a vrm analysis
+done by build Zoid on our Channel and as
+build voices in that video the 1080i
+founders Edition card actually has a
+pretty good vrm it is one of the better
+products that intel has deserved Intel's
+talking out into all the time NVIDIA has
+designed in the past year or so with
+regard to reference boards actually
+longer than that probably if you look
+back farther but it's a good board the
+founders Edition card is actually not
+bad the problem is the cooler the cooler
+is kind of bad but if you're going to
+buy it and water cool it then the board
+itself is pretty good already that said
+it does have lower power capability it
+will it will physically push less power
+through the circuits than some of the
+higher-end cards like you might get with
+a Strix or if you go really extreme like
+a kingpin or a lightning card but it
+depends on what you're doing how useful
+those extra phases and those
+higher-quality VRMs might be so with
+something like a Strix you get you're
+buying more than just the different vrm
+the custom PCB you're buying a better
+cooler than the founders Edition has
+some of that value is lost when your
+water cool in any way and with a kingpin
+or a lightning card there is definitely
+value to be had in those boards because
+if you're doing XOC stuff lnto or
+otherwise you eliminate a lot of the
+footwork where you would have to do hard
+mods to the card in order to get it to
+carry the same capacity as
+a as an out-of-box kingpin card
+something like that
+is eliminating a lot of the work on the
+FB cards but for just normal water
+cooling and for maybe some very basic
+overclocking by which I mean you go
+through EVGA precision or MSI
+Afterburner or one of those tools and
+you set some kind of offset to the core
+and call it a day
+founders Edition is really not bad it is
+fine for that application and is
+basically exactly what it's meant for
+with regard to what are cooling there
+are better options but to answer your
+question I don't think that you will
+really get a significant gain in your
+clock out of those alternatives that
+said if you're running at stock the
+aftermarket boards generally do have a
+higher stock clock rate than the FE card
+almost always and in those cases you
+would see the difference in fps it can
+be anywhere from six percent well it's
+probably about a six percent but if
+you're moving from EFI air to
+liquid-cooled other card or air-cooled
+other card like Astrix it's six to
+eleven percent so hopefully that helps
+with that one basically epi is fine if
+you're doing something that some fairly
+basic overclock with it and what are
+cool next questions from ryerson on
+discord Ryerson says in the deleting
+video there Bauer mentioned re pasting
+this is something I hadn't really given
+much thought to I know stock control
+placed on om computers is usually pretty
+poor especially after five or more years
+I've never really noticed any thermal
+issues with my own build although I
+don't really check once it's set up and
+configured is this something that an
+enthusiast would want to check on a
+long-term or regular basis or perhaps
+preventative maintenance item
+nobody really covers long-term effects
+with respect to thermal pace and I
+suspect that's why because there's not
+much hard data out there on the subject
+let's not wait true anytime you're
+looking at something that takes years to
+accumulate it's hard to really do
+research on it so yeah they're bauer
+mentioned repay Steen he was I can't
+recall off the top of my head if we were
+talking about repay Seng after you've
+deleted the CPU or repainting the
+outside of IHS but either way let's just
+assume that we're talking to a more
+normal application where you
+the CPU installed it's not been deleted
+and you just have some thermal paste on
+top of it and then your CPU cooler I
+have seen the effects of thermal paste
+aging to some extent with poorer
+products laptops come to mind we did
+some thermal paste changes on one of the
+labs that I was working on recently I
+think we even have a video of it and it
+saw a pretty massive change in thermal
+performance so that also involves
+blowing out the fans but that paste on
+the laptops a lot of them it kind of
+turned into like a crystallized really
+hard useless compound that all it does
+is inter interrupt contact between the
+two metal plates that want to make
+contact or the dye in the metal plate so
+yes definitely there are long-term
+effects where their own compound can age
+not all of it ages the dow corning stuff
+that intel uses inside the IHS i
+actually does really well with thermal
+cycling which is how you measure the
+life of a thermal paste by the weights
+in thermal cycling so that does really
+well the stuff i've seen is a lot of
+laptops is garbage and should be redone
+in every couple years especially because
+laptops are not airtight and dust gets
+in there
+if dust can get into where you're thrown
+paste is in your desktop or your laptop
+it will rapidly age of the compound you
+start getting little particles in there
+that interrupt the contact between the
+services and overall the aging is a lot
+faster and the compound loses
+performance so the best thing to do is
+test your performance using something
+that you're going to remember how to do
+in a couple years and repeat that test
+maybe yearly or something like that and
+just see how it's doing as preventative
+maintenance it should be pretty obvious
+if your performance really gets bad
+because you're going to start dropping
+clocks or hearing the fans go crazy to
+try and keep up with with the CPU
+temperature so the fan speed starts
+ramping a lot over time and it's louder
+than it used to be it might be if their
+own compound contact issue or a pump
+fail or something's or a liquid
+permeation in the loop or something like
+that about it yes it's actually real
+thing you should repay every now and
+then but it does tend to be
+a couple of years it's not like
+something you're gonna have to do more
+than once a year or even once a year
+that we're talking a couple years for
+most pastes the next question is from no
+twist on discord he said quick question
+if there is a temperature line for CLC's
+which is allowed by it well I suppose to
+rephrase this is there a temperature
+limit for CLC's which is ill advised to
+surpass is a hybrid GPU that is 70
+degrees under load okay
+or will the liquid at that temperature
+give me headaches down the road going
+back to the focus on silent computing
+what's the max recommended temperature
+you would run a CLC at the max
+recommended temperature well the maximum
+temperature by spec for a subject
+coolers which is what you would find on
+a traditional hybrid bod is 60 Celsius
+for the liquid not for the silicon but
+for the liquid liquid temp is a whole
+lot lower than the silicon temperature
+but the 60 Celsius number is what ASX
+specifies for when there starts to be
+problems so those problems would include
+things like permeation almost
+exclusively where at 60 Celsius liquid
+temperature you start experiencing
+permeation into the rubber tubes at
+which point you've got less liquid in
+the loop so the pump has to work harder
+you're going to hear wine a lot more and
+your temperature will be worse over time
+because you're losing liquid out of the
+loop so 60 C is the number that you're
+looking for for a Sutekh products and
+other products like cool it or Kuwaiti
+although I don't have their number are
+not going to be dissimilar from that as
+for the max temperature for a hybrid GPU
+we've had pretty good luck running those
+EVGA hybrid kits specifically including
+their stock fan at 40% fan speeds and
+still staying below most air-cooled
+cards like less than 65 C for sure but I
+from top off top of my head I think most
+time we're in the 50 to 60 Celsius range
+out of 40 percent fan speed with the
+pomp at max so you should probably stop
+that down 10 percent also so you'll be
+fine there and it'll be really quiet
+quieter than everything else in the
+system on is you've got a fully passive
+like very quiet or passive power supply
+and very quiet or passive CPU coolers up
+forty percent fans beat is perfectly
+safe liquid temperature is well within
+control it's under 35 C and all of our
+testing but if your ambience really high
+it would still be under 40 C so that
+should hopefully get you started there
+the spec though 60 C is the number last
+question try watt toss it shun says I
+believe this is from YouTube says with
+new processors going to more than 140
+watt TDP well air coolers continue to
+suffice while remaining same proportions
+dissipation is roughly thin area which
+is pretty much the occupied volume of
+the thin stack so we take a Noctua and
+15 or c1 and scale by 140 over 90 5 or
+190 over 95 in the case of thread Ripper
+that arrives at quote huge
+hanging off your motherboard surely
+which is one of the most accurate
+specifications you could give for that
+system yes no hate on a iOS but my only
+worry about them as reliabilities
+because especially if one has a few
+systems to maintain do you think we'll
+be seeing a whole new generation of
+larger or more efficient air coolers or
+will those processors be limited liquid
+only there will definitely air coolers
+will still be fine they can handle 140
+watts if they're designed properly and
+have a good fan and have enough surface
+area and things like that thread Ripper
+is different story I'm not really sure
+what thread Ripper will be equipped with
+I'm thinking that it'll ship with a
+stock liquid cooler kind of like what we
+saw with the FX 9000 series that's my
+guess so I'm thinking stock liquid for
+those I'm not really sure what the air
+cooler market looks like once you start
+getting into the higher TDP is past 150
+which is what thread Ripper may end up
+in with at least with overclocks and
+things like that
+so I'm not 100% sure of the answer to
+that part of the question for 140 watts
+there will still be coolers they it
+should be possible to buy some that
+aren't huge I mean like the be quiet
+dark what is it the dark rock 3 pro dark
+rock pro 3 that cooler is gigantic
+as one of the worst mounting mechanisms
+I've worked with but it's huge like
+you're saying and I'm not convinced that
+it's within the Intel spec for some of
+the sockets that are like LGA 1150 exits
+so it would be fine for 2011 sockets so
+there's there's definitely a point where
+you can start entering into CPU coolers
+that should not be used on things with
+the smaller sockets like 11 5 X but keep
+in mind that the 2000 series sockets
+from Intel 20 66 now and the tr4 socket
+will have a stronger mechanism so that
+you shouldn't be as at risk of warping
+the board which is really what you're
+worried about when you have those higher
+weights and densities in a small area
+with the tr4 socket I don't have this
+back for it but if you look at the thing
+in its current state it takes three Torx
+screws I think make my b allen keys but
+three Torx screws to undo giant piece of
+metal with a huge really thick backplate
+like 1 2 1 2 3 millimeters thick on that
+on that backplate so it should be able
+to support a pretty large cooler but I
+do think those will be liquid for Intel
+the answer is yes you will still be able
+to get air coolers the thing you start
+running into is they might become a
+little less efficient if you were to run
+them out of fixed noise like if you
+normalized for noise between air and
+liquid you start running into problems
+with some of the air coolers on the
+market if you're trying to stick at
+something like 40 DBA but I agree with
+you that air coolers tend to be a little
+bit more preferred for an application
+where you really you don't want to have
+that one extra potential point of
+failure in a liquid solution like a pump
+or whatever it may be or just aging
+because those CL CS only really live
+usefully for about five years before you
+should replace them anyway so I agree
+with you there but I don't have a great
+answer for you I think we saw some of
+the coolers coming out of Computex are
+trying to solve for this problem some of
+them are going to be crazy with copper
+that seems to be one of the things this
+year which won't really help steady
+state temperature is a ton if you're
+looking at two identical coolers other
+than top
+in aluminum but it will help with
+controlling the fan curve and with ramp
+up and ramp down times so that we'll be
+testing all that stuff I have a lot of
+thermal testing plans for both Red River
+and skylake X not sure about KB like
+eggs but we'll be testing those so stay
+tuned for all that because we should
+have that information out pretty shortly
+after launch well the products so you
+can make your decisions before building
+the system that's all for this one as
+always you can leave questions below for
+next time patreon.com/scishow stuff is
+that directly or to join the discord
+chat where some of these questions come
+through it's just it's really easy to
+interact there and by and out there most
+today so easy to get some questions
+thanks for watching as always subscribe
+for more I'll see you all next time
+you</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

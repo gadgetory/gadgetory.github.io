@@ -1,0 +1,320 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>SMT &amp; Hyperthreading On vs. Off, &amp; Validating FFXV Findings | Gadgetory - Your Gadget Factory</title><meta content="SMT &amp; Hyperthreading On vs. Off, &amp; Validating FFXV Findings - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">SMT &amp; Hyperthreading On vs. Off, &amp; Validating FFXV Findings</li></ol></div><h2 class="post__title"><b>SMT &amp; Hyperthreading On vs. Off, &amp; Validating FFXV Findings</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/L-2nsMD9DCw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">so despite having just talked about how
+the Final Fantasy benchmark is basically
+pointless right now we still wanted to
+put out the last bit of data we had on
+it before moving on and that's CPU data
+so the primary interesting point here is
+testing the thread count and the
+utilization of thread count which you
+can specify through command line with
+the Final Fantasy benchmark hence why
+it's actually it'd be a great tool if it
+worked properly but anyway we're gonna
+be testing SMT and hyper threading a
+couple of other things today for CPUs
+not doing a whole suite of CPUs because
+halfway through doing all this data
+collection is when we realize like oh
+this benchmarks actually not great so
+but I did want to publish what we got
+before we just move on completely and
+forget about it till launch before that
+this video is brought to you by EVGA and
+their GTX ten ATT is c2 video card with
+icx technology the 1080 is c2 has a nine
+thermal sensors spread across the board
+which allows you to easily check the
+cooling performance of the vram the view
+RM power components and the GPU this
+makes for better noise to performance
+tuning in software and you can learn
+more about the sc2 at the link in the
+description below
+a few notes here before we get started
+if you missed it we have a video about
+why the Final Fantasy benchmark we think
+is sort of flawed this comes back to an
+issue of being optimization on square
+enix side I think we talked about this
+in the article a lot more than the video
+there's like six paragraphs at the end
+of that article talking about how
+ultimately comes down to square enix not
+down a game works because although game
+works is implicated in this and then
+Vidya does have a responsibility to
+clear their name and make sure the
+developers are implementing their stuff
+properly it's still Square Enix who are
+calling basically every object in the
+game which we're working on confirming
+with more tools by the way they're
+calling it in and rendering it and just
+loading down the GP resources all the
+time so it doesn't matter if it's game
+works or not game works objects like
+hair works applied to the buffalo are
+particularly impactful and are what
+tipped us off to this problem because
+you can toggle game works through an i
+and i hack and run the test in an area
+with zero game works
+and you'll still see it performance
+Delta when you turn it on versus off in
+an a/b test hence leading us to the
+discovery that a whole bunch of stuff is
+being rendered all the time we're now
+using another tool called render dock
+still learning a lot about it and we've
+pulled some of the meshes out from
+frames that don't contain those meshes
+in the camera in the viewport at all so
+yeah some interesting stuff we're still
+working on just out of curiosity at this
+point but basically there's a lot of
+stuff being drawn and that means this is
+actually an awful CPU benchmark as well
+because at 1080p medium we're still
+bumping into a framerate limiter on a
+1080i at 1080p 1920 by 1080 despite the
+name being a 1080 Ti it is not actually
+supposed to stop at 1080p resolution so
+it's not a great benchmark 1080 low
+we're still pretty much about mean up
+against the cap so it's it's really just
+not optimized right now and if it is
+then Wow huh yikes
+but yeah so let's just let's go through
+the numbers and you'll see what I mean
+we can start this piece by illustrating
+just how easily the game bottlenecks on
+the GPU even when we're trying to do a
+CPU bench this is at 1080p medium
+settings for the first chart and we're
+clearly hitting a bottleneck at around
+137 FPS average on the GPU GPU is a gtx
+1080i FTW 3 i'm on one of the best
+gaming cards you can get right now and
+it's at 1080p medium settings and that's
+still too much to be a viable cpu
+benchmark with these settings we only
+start seeing real divergence from
+high-end parts when we step down to $100
+our 3 CPUs for example so yeah
+illustrating the point this comes back
+to what we found with Final Fantasy 15 s
+benchmarks silent rendering of nearly
+everything on the map it's not just game
+works it's basically all the 3d objects
+like the Buffalo itself which is a game
+works object it's the host of game works
+objects but here's another example this
+is a frame we analyzed from the game
+where it's the main character on a
+fishing dock and even during this frame
+the game is still rendering cars that
+aren't nearby rendering item chests that
+aren't in frame were nearby and
+rendering large portions of highway that
+are located miles away we have another
+shot where the characters are drive
+around and we're still rendering for
+example the birds and the iguanas or
+whatever they are and things that are 2
+minutes further into the benchmark than
+they are at the current scene so we're
+still looking into this still need to
+clarify if this is actually stuff that's
+being drawn or if it's just this utility
+intercepting these things and we'll talk
+about this more later but anyway it
+looks like there's a lot of stuff going
+on that shouldn't be so after stepping
+down to 1080p low we can finally start
+to plot some actual CPU performance
+differences we're still bottle necking
+at the high end but not as flatly as
+before with these settings the Intel i7
+8700 K demonstrates our point of Givi
+limitations overclocked to 5 gigahertz
+or stock we're still bumping up against
+a rough 174 fps checkpoint the GPU
+utilization is nearly 100% at this point
+further illustrating that limitations of
+usefulness for this benchmark are bound
+by even GPUs at 1080p low anyway a shiny
+note here is that the game does seem to
+like threads but only up to a point with
+am these r7 1700 we noticed that
+performance improves a thousand he
+disabled and we saw performance uplift
+at 5.1 percent from the stock r7 1700 to
+the rs7 1700 with SMT off for the r5
+1600 X we observed a 4% vorontsov list
+by disabling SMT and note also that
+frame time consistency is not hugely
+impacted we are technically plotting a
+downtrend in low-end frame time
+consistency but we can't confidently
+state whether this is statistically
+significant or accurate as the benchmark
+is simply too inconsistent to establish
+confidence in that 0.1% lowest wane this
+is further illustrated by the opposite
+behavior on the r7 1700 where we still
+saw average FPS performance uplift but
+we also saw 0.1% low performance uplift
+relating this back to our previous
+research with the num threads commands
+we believe that the game encounters a
+point of diminishing returns at around 8
+threat up until that point more threads
+is better and after that point though we
+either lose performance from an
+inefficient load balancing across the
+threads or we stagnate in performance
+this leads to a greater discussion on
+CPU utilization
+Asian for which we also have charts from
+previous research because lower
+utilization is not in fact a good thing
+there's a misconception that a game
+utilizing minimal amounts of the CPU
+means that the CV has more Headroom for
+background processing in reality what
+this means is that we're load balancing
+across all the threads inefficiently and
+losing performance as a result with any
+component you want to be fully engaged
+or close to it in any task and a closer
+to 100% the better because that means if
+you're able to leverage the component to
+its fullest potential not wasting any
+performance the background operations
+that exist should have some native load
+balancing and the OS should work with
+them to distribute resources as needed
+otherwise you can manually do it and
+back to the Final Fantasy 15 1080p low
+chart the 7700 K and the r5 1400 both
+demonstrate we're disabling
+hyper-threading or as some tea results
+and a net negative in these instances
+the r5 1400 CPU sees a deficit in
+average FPS and frame time consistency
+the 7700 K achieves an appreciably
+different average FPS but has halved
+0.1% lows we attributed this to a four
+thread limitation on both devices which
+the game really seems to not like at the
+low end highlighting the r3 CPU the r5
+1400 and the 7700 K with us on T off the
+game does not like working with four
+threads at all at the high end with the
+r7 1700 and r5 1600 X the extra threads
+should actually be toggled down to a
+count of eight for peak performance we
+are uncertain about the 87 100 KS
+performance behaviors without hyper
+threading because we can't reduce GPU
+load enough to limit the CPU eliminating
+the CPU would require 480p or some other
+really low resolution which enters a
+realm of becoming a strict academic
+study and exits any usefulness
+whatsoever looking back at our CPU
+utilization chart from a few days ago we
+can show again that using num threads
+commands to limit thread utilization
+does have a noteworthy impact the result
+is improved or equal performance with
+half of the r7 seventeen hundred's
+threads interestingly despite this game
+seemingly hitting a point of diminishing
+returns at eight threads it will still
+attempt to use every thread you give it
+just in a less efficient way also
+interestingly this type of limitation
+would indicate an IPC bias or a
+frequency bias in the very least so when
+we consider that but you look at the
+numbers Final Fantasy 15 as a benchmark
+is actually doing pretty well on rising
+despite having performance behaviors
+that would typically suggest a frequency
+bias so in this instance we have for
+example an overclocked r7 1700 at 4
+gigahertz versus an i7 7700 K at 5
+gigahertz and the r7 is still favored by
+the Final Fantasy 15 benchmark which is
+certainly noteworthy and potentially
+impressive we'll see what happens as the
+square-enix developers continue to
+refine their game so that it's more than
+just a 4 gigabyte benchmark I mean this
+is not representative of anything
+however from a cpu performance
+standpoint I shouldn't suspect that
+would change very much it seems things
+would change more on the GPU side with
+all the rendering issues were
+encountering so from what we're seeing
+now especially given one month left
+there's no time to refactor the engine
+or anything like that it seems likely
+that the r7 will in fact retain a pretty
+good performance advantage in this
+particular title you will want to look
+into the option of running the numbers
+command will have to revisit at launch
+but running num threads equals eight
+would limit the thread count down to a
+point where you actually get some more
+performance than if you let it use all
+16 and it will use all 16 if you allow
+the game to however the load balancing
+is a bit more favorable on eight threads
+rather than 16 and I guess depend on
+where you benchmark it seems to
+outperform a 7700 K when both are
+overclocked which is absolutely
+noteworthy and the 8700 K does
+outperform both of those devices as it
+does have both frequency and threads
+however we can't actually pinpoint how
+high it would go without a GPU
+bottleneck without just without doing
+480p or something which is pointless so
+that's kind of where we're we're stuck
+now the 8700 K may be doing better than
+we're seeing on the charts because we
+just we don't have a way to know how
+many more frames it would be drawing if
+it were unencumbered by the GPU a very
+interesting game benchmark anyway from a
+an optimization standpoint and he is
+fullness standpoint I do genuinely like
+the Final Fantasy 15 benchmark as a tool
+for testing I just needed to be better
+so we'll see what happens when the game
+launches but I think that's more or less
+the last bit of data we might talk about
+it and it asked Gian or some of the
+short video at some point but for now
+that'll wrap up most the Final Fantasy
+15 benchmark stuff so as always
+subscribe for more check the other ffxv
+videos on the channel and go to
+patreon.com/scishow can next it's helps
+that directly and go to store gamers and
+access net slash mod matt to pick up a
+mat like this one they're on backorder
+because we blew through our entire first
+production run so thank you to all of
+you who ordered that's all for this one
+I'll see you all next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

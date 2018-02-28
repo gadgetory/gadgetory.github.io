@@ -1,0 +1,504 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>GPUs Doing Actual Work: Quad-GPU Render Machine | Gadgetory - Your Gadget Factory</title><meta content="GPUs Doing Actual Work: Quad-GPU Render Machine - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">GPUs Doing Actual Work: Quad-GPU Render Machine</li></ol></div><h2 class="post__title"><b>GPUs Doing Actual Work: Quad-GPU Render Machine</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/NdytWfiHYM8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">while some people use all of their GPU
+stockpiles for mining a few dollars a
+day we have real work we need to do with
+them and that is rendering our new intro
+animation so this animation was
+redesigned by Andrew for the site it's
+currently rendering on this machine this
+is our main camere and blender machine
+for production workloads
+you often hear us talking about this is
+a production card or a production CPU
+well this is a use case where that's
+actually at hello so this is where the
+real use case is for those production
+products and for today we're focusing on
+GPUs or using a lot of CUDA power to do
+the rendering it's taking about 50
+minutes per frame to render you know 120
+frames get through that's 120 hours of
+rendering and that's for a 2 second
+animation 60fps 2 seconds so pretty long
+time this is on a Titan X I'm a Maxwell
+GPU it's not good enough to right now so
+what we're going to do is build a system
+that's probably going to use three to
+five GPUs around what fits for PCIe
+lanes and what fits in the motherboard
+and all that and once we have that
+system built we can run the renders
+again on CUDA it does not need sli
+bridges it just needs the video cards
+and then see what our pickup is for
+render time with a real production
+system so this serves two tasks one it
+gives you insight as to what everyone
+means when they say this is a production
+GPU or this is a production CPU and it
+also lets you see the behind the scenes
+for how long something like this
+actually takes to render and so the
+reason for updating our animation
+blender actually updated its shaders so
+we're using new shaders with the renders
+and we also have some texturing applied
+so this is a this is a non final version
+of the animation we have a couple of
+tweaks to it but you can see some of the
+texturing and new shaders in play and
+also it'll be in 4k so that will match
+our new camera everything will be in 4k
+60fps and that's the point of doing this
+before getting to those that this
+coverage is brought to you by EVGA and
+their 1080p is c2 which we've
+recommended fairly highly for its build
+quality and the icx
+which are kind of fun to play with you
+can check our full fc2 review for the
+1080i if you're curious to learn more or
+you can click the link in the
+description below to find the product
+page for the 1080i sc2 so I'm gonna grab
+this Quadro this just came in and in
+fact I've study so this just came in
+this is I think a P 4000 we're using it
+for some benchmarking on basically what
+is a non gaming card but we're gonna use
+it first on rendering stuff
+the reason I'm grabbing this is not
+because the most powerful thing we have
+for rendering because the Quadro
+actually this one is not our 1080i is in
+our Titan XP will probably render faster
+they have more cores higher frequency
+but this is one slot so we'll be able to
+fit an extra card in by using a single
+slot GPU that's still relatively high
+power should be about 10 70 class for
+rendering the reason it's expensive is
+because of the drivers certification but
+that's our first one and then we're
+going to go to our 1080p I shelf to the
+rest so all these cards are GTX 1080p
+eyes that we've reviewed plus there's
+one more over here that's in pieces type
+are the Lightning card but we're going
+to grab I have a hybrid in the other
+room already for rendering we're gonna
+grab an FCW three because two slots and
+it's going to be hopefully cool enough
+so we have what we need let's go build
+that system okay so this is our X 299
+production bench one of the ones we've
+been using for Vega production tests and
+I've got it all hooked up right now to
+our current clamp for testing that I'm
+doing for build Zoid separately but
+we'll talk about that later and we also
+have a plug load meter down here which
+will allow us to see what sort of load
+this thing generates with all these GPUs
+to make sure it's within the specs of
+the power supply so what I'm going to do
+is mount these into an i-9 systems that
+has the lanes I need this is why people
+complain about Lane count by the way and
+why thread Ripper will be interesting
+for this application what I'm thinking
+it is Quadro here I'm probably I'll hook
+up these bands so that the Titan axe can
+breathe Quadro here and then I'm
+thinking we might be able to squeeze in
+a hybrid there
+that'll take those two slots and then
+maybe an FTW three there so let's try
+that first oh yeah right there okay six
+pin we got that will be six pin power
+for this one okay that Titans going to
+stop for a little bit but I'll work it
+out okay
+hybrid that was hiding in the corner
+that's going to be a six and an eight so
+we're still good for that please fit
+wonder if it's better to put thermals
+are the main concern here so I'm trying
+to think through it so this is a blower
+fan of this on the side it's got a big
+back plate on it could pull a minor and
+run like a riser cable out of there if
+I'm really worried about thermals but
+this thing should be pretty low
+temperature anyway you know six pin
+means it's going to be low power draw to
+4,000 is not the highest power dropping
+on video makes so it's going to generate
+lower temperatures so you know we're
+just we're going to run with this we'll
+check all the temperatures once I get a
+light load on there and decide if I need
+to make any modifications anything or
+hybrid cool anything and I'm going to
+actually space this a little bit somehow
+let's maybe we will end up running a
+riser let's let's get this in here to
+let socketed yes okay one two three four
+that's the value of a single slide GPU
+even though it's lower power could run a
+riser but we're going to try that a lot
+of power cables now we'll check thermals
+and power drawn next before going too
+crazy with the render this is going to
+be a little problematic I think so take
+the shortest one
+okay those will reach the head so those
+are candy and IMAX really needs to make
+the cables longer this is always going
+to problem I've had with enter max
+otherwise it's a 1350 watt 80 plus
+Platinum power supply so it's great
+except the cables are too short okay so
+that's good two more seriously this
+would not be a problem if the cables
+were standard length all right there we
+go
+okay okay so then this can go over here
+that should be will it turn on oh okay
+all right we're on so next thing to do
+is plug in all of these fans I didn't
+think we would need them but that
+clearance is just so tight that let's go
+ahead and do it for safety there's one
+okay should have good airflow
+okay all right so all the fans on
+there's some wine in here if you can
+even hear that I think that's from the
+Titan XP I don't know why there's so
+much coil line on that particular card
+that's incorrect
+all right so we got to redo the drivers
+it looks like cool man just shutting the
+thing down it's at 300 Watts right now
+that's the i9 CPU for UI 9 + 4 GPUs and
+Idol almost 200 watts
+other installations
+please work this time that president
+we've gotten before finally drivers are
+working a little too well
+I haven't restarted yet I need to but
+we've got 1080i 1080i Titan XP and
+quadra they're all detecting QP 104 TP
+102 to be 102 keep the 102 they're all
+detecting correctly see if it has
+thermals for any of these I probably
+need to restart for those I guess ok so
+good start so I rebooted and got GPZ
+open it is detecting everything now so
+you can see Titan XP is this is all idle
+we're at 36 see we'll see how it does
+when it's actually under load that's
+probably the hybrid card it's at 27 see
+this is probably the FTW three card at
+35 see the fans aren't even spinning and
+here's the P 4038 C so what we're going
+to do is kind of monitor these and keep
+an eye on those during the initial
+render testing and then once it looks
+like it's safe thermally we'll go ahead
+and let it rip and I might also
+interestingly open up a separate
+instance of blender and use some of the
+CPU power so one thing we could do to
+make use of the i3 Seaforth I three CPU
+the high nine CPU would be we could take
+two to four of the threads from it and
+let blender use the other 16 or 18
+thread keep a couple of them open just
+to make sure that as GPUs are still fed
+properly and then the remaining threads
+can render and we previously found in
+our eye 9 review that the with all 20
+threads available it was out rendering
+CUDA so that would be pretty cool to
+actually be able to use that capability
+plus the GPUs okay there we go Titan xpp
+4000 hybrid FTW three so open the render
+file for those of you don't know what
+we're talking about when we say
+production workloads or production GP or
+CPU this is what we're talking about
+it's
+during something like an animation so we
+get user preferences computer compute
+device for cycles it's going to be CUDA
+we select all of them that's pretty
+crazy actually see all those so we're
+going to use all four GPUs save settings
+and then we can open a separate instance
+for the CPU if we want over here we've
+got image editor is the display but the
+important parts are feature set
+experimental are supported we're going
+to try experimental device GPU compute
+rather than CPU we're focusing on GPUs
+today and then down at the bottom I'm
+going to make sure it's optimized for at
+256 by 256 tile sizes this should be
+less relevant going forward but as I
+understand it today that will speed
+things up for us and then for sample
+count or actually for resolution we're
+at four we should be at 4k 3840 by 2160
+so 3840 by 2160 at a hundred percent
+that's 4k then we have sample count
+we're at 500 which is production-ready
+sampling and then we've also got a
+thread count for the cpu and here so you
+can actually see that it's got 20
+threads right here from the cpu we could
+fix this and tell it to do like 19 or
+something for now I'm gonna leave it on
+auto tech so this is our GP render
+window anyway so think we're good to go
+let's let's start with just one frame
+and see how it does and then we'll try
+more from there that's pretty crazy
+nice I used to see in that like if you
+don't do any kind of rendering and this
+probably doesn't mean as much to you but
+to see four tiles at Tuesday six by
+three to six each going at the same time
+is pretty exciting so we get a CPU going
+to and that would be twenty more tiles
+or whatever we assign to it at a at
+probably sixteen by sixteen for optimal
+speed on a CPU but on a GPU we can get
+away with this let's keep an eye on em
+per atures are doing so far Titan X P 58
+c P 4060 C not bad really hybrid is no
+problem at all
+hybrid the hybrid sandwiched between
+everything doesn't even care at 35 as
+the
+w3 is a 53 and it's fans are still off
+by the way so we're doing okay here so
+far it's a power consumption from the
+wall is 700 plus watts right now and if
+there's anything interested in here for
+you so our maximum power consumption so
+far 755 minimum 100 and then we've got
+bolt amp readings but yeah so we're at
+600 700 plus and this is going crazy
+fast 780 equals x percent of 1550 so
+we're at 57 percent utilization on the
+power supply right now it can take a bit
+more and we've got fan speed zero decent
+on all these things
+71 see on a Titan 74 on the P 4000 let's
+help that one out a little more okay so
+we're going to make this better I'm
+going to get some more fans on here
+all right 70 and 72 for those first two
+DPS right now that'll feed air to the
+blower fans which will then push it out
+the hole that's warm oh crap
+push it out the back what's the I don't
+have a thermocouple nice to me so let's
+just take a spot reading of like the
+furniture behind it
+35 see for the shelf behind the video
+cards which is not meant to be
+scientific it's just meant to be like
+man that's pretty warm considering we're
+at 35 C on the shelf and room ambience
+is a about 23:36 C on the Shelf now full
+37 it's going up so that means this is
+pretty cool that means the fans actually
+helping get more air in there so we can
+force it out the back 38 on the park
+near the Titan XP all right so we are at
+pretty HD just on furniture behind me is
+saying the GPUs are now steady at 68 for
+the Titan XPS are at 68 here and then 70
+for the P 4043 67 and this just looks
+like it's still rendering along yes it's
+still going so good there our frequency
+is dropped a bit on the Titan XP I think
+we can pick that up temperatures
+dropping a lot Titan XP is down to 60
+now so that's going to free up power
+let's give it some nice drama core to
+670 43 66 everyone's pretty happy
+there's our memory consumption so here's
+a if anyone's curious memory consumption
+on these things
+platon XP is at two point three
+gigabytes use our animation just let
+them use upon a memory we're at 1.3 over
+here - and - it is using I mean it's
+using a pretty good amount it's at least
+2 gigabytes per tile is what we're
+looking at which honestly I think we
+might be able to step up the tile size
+if we wanted but that's doing ok for now
+and that fan really helped out the
+temperature
+is our Titan XP and our slightly
+overclocked to that 53 P 4068 instead of
+70 that's pretty cool just getting a fan
+up that really improved in significantly
+we're almost done with the first frame
+exams six amps 12 volts okay is that it
+that's it rendered time 14 minutes 22
+seconds so we have gone down from 50 oh
+we have saved ourselves well let's see
+over the if you're at roughly 50 to 60
+technically so let's just split it and
+call it 55 355 420 frames previously
+that would be 6600 minutes or if you
+prefer 110 hours versus now if we let's
+just make some assumptions here and
+assume that it is going to be fairly
+linear let's go ahead and call that just
+let's call it a with that 22 let's call
+it fourteen point two five and multiply
+that by 120 frame
+divided by seconds in two minutes era in
+two hours and it goes to twenty-eight
+point five hours so twenty-eight point
+five versus 110 hours
+it's our difference power draws don't
+really care about right now because it's
+more important to me frankly to get the
+render done and not use our primary
+production machine which here's the
+thing okay so even though it says 110
+hours for the first one it's not
+actually 110 hours because what's going
+to happen is we start the render and
+then it has to stop like every 12 hours
+so that we can use the machines of do
+videos to render videos edit videos
+can't run blender during that time so
+it's not 110 hours it's more like
+probably a couple weeks and this going
+down to twenty-something hours less than
+thirty means I can set it up run it walk
+away from it come back in the day and
+it'll be done now here's the thing I
+guess well first of all we need to do
+some small Corrections on this I guess a
+little blown out but
+that's still pretty representative of
+the time required now the next thing
+we're going to end up doing is running a
+cpu render at the same time and let's
+just give it 18 threads and what's best
+here sixteen by sixteen sixteen by
+sixteen Andrew tells me for faster
+rendering with CPU so let's just get a
+rough estimate of this one so CPU render
+oh well there we go
+eighteen threads ripping through it see
+this is where the sixteen core
+thirty-two thread thread referred GPUs
+will be really interesting is in an
+application like this so again this is
+what a production machine looks like
+this is what people mean when they say
+production task is cutting off four
+times the time required to render
+something that's huge and why I'm also
+interested in the future Intel 18 core
+chips and the future and the sixteen
+core chips but anyway so right now we're
+going on CPU I 970 nine hundred X what's
+our power draw here 320 Watts
+set up quite a bit from idle the GPS are
+doing nothing right now 14 amps by 12
+volt 168 Watts going to the CPU and the
+memory channels
+we're definitely against the TDP window
+there but so what we're going to do now
+is walk away from this let it finish it
+looks like it blender thinks it'll take
+45 minutes but it's going down rapidly
+so we're going to walk away from it CL
+on it takes and come back and then
+decide if it's best to render on the CPU
+and on the GPU simultaneously if it is
+we'll let that go and then I hope that
+cuts to sound like 20 hours that would
+be great
+alright so we came back after 47 minutes
+and it's still going so despite the 300
+X actually being okay and our blender
+benchmarks it's struggling here and part
+of that is a newer version of blender
+where the GPS are just being utilized
+better so this it looks like we'll take
+another 20 plus minutes to finish
+which puts us at over an hour for 18
+threads so CUDA is just blowing the sin
+away OpenCL I would do despite some of
+the blenders previous issues and OpenCL
+it's gotten better so basically if we
+let this thing run for the entire 20 to
+30 hours that the GPUs are running it
+will out it'll save us like they'll save
+us a couple frames ultimately if you
+look at the difference from either end
+it's the difference of like maybe a few
+hours
+natan so what we're going to do is not
+burn an extra 200 to 300 watts on the
+CPU and the memory and everything else
+and just run the GPS only so it'll be
+600 to 700 watt draw and CPU won't be in
+use other than to feed the frames and
+then we should be able to finish the
+thin in 28 and a half to 30 hours and
+we'll have a new intro animation for you
+which I don't think will make it in this
+video because it actually does need to
+be rendered but keep an eye out because
+it'll be a probably silent change over
+to the new one and those of you who saw
+this video will know where it came from
+so that's it for this one hopefully this
+gave you some insight as to what
+actually happens with a production setup
+there are plenty of other production
+applications this is just one of them
+but it gives you an idea of why you
+would use one card versus another or why
+it actually matters to save minutes off
+of rendering in this case 30 plus 40
+minutes yeah we're down to 14 minutes
+from 50 to 60 so if you're saving 40
+minutes on a render again the real-world
+example that we've given you here today
+is a difference of weeks of rendering on
+one machine or straightforward just 110
+hours 120 hours 230 enough time to let
+you render something else or increase
+your quality settings or whatever it's
+pretty cool stuff you can subscribe for
+more as always patreon.com slash gamers
+and access valves out directly and we
+haven't officially announced yet but
+there's a new shirt you can click the
+link of the description below it'll go
+straight to the new shirt or if you go
+to store documents next on that or
+gamers Nexus squarespace.com you'll get
+to the shirt page and you can pick up
+a new anniversary edition shirt which
+we'll talk about more in a separate
+episode thank you as always I'll see you
+next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

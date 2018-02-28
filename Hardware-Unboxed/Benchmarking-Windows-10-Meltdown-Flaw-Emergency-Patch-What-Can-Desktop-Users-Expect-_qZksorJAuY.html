@@ -1,0 +1,235 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Benchmarking Windows 10 Meltdown Flaw Emergency Patch, What Can Desktop Users Expect? | Gadgetory - Your Gadget Factory</title><meta content="Benchmarking Windows 10 Meltdown Flaw Emergency Patch, What Can Desktop Users Expect? - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Hardware-Unboxed">Hardware Unboxed</a></li><li class="active">Benchmarking Windows 10 Meltdown Flaw Emergency Patch, What Can Desktop Users Expect?</li></ol></div><h2 class="post__title"><b>Benchmarking Windows 10 Meltdown Flaw Emergency Patch, What Can Desktop Users Expect?</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/_qZksorJAuY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">welcome back to harbor unboxed today's
+video is a follow-up of yesterday's
+video where we talked about the Intel
+processor exploit now in that video we
+covered much of what we knew at the time
+and that was that major operating
+systems were getting patched or had just
+been patched to solve a potential
+security issue with Intel CPUs we've now
+let this issue also extend to a few
+select ARM processor architectures but
+AMD still appear to be mostly in the
+clear there are three variants of the
+exploit an AMD was vulnerable to one of
+them the bounds check bypass method but
+this can be solved via an OS update
+shouldn't come at a significant
+performance cost the other two variants
+though they don't appear to impact AMD
+processors due to the differences in
+architectural design now in yesterday's
+video we looked at some testing done by
+fir onyx so that was the main reason I
+went ahead with d'Ovidio at the time as
+we had some real numbers to talk about
+at the time only the Linux operating
+system had to receive the update
+addressing the exploit and for onyx
+benchmark performance before and after
+they found some pretty crippling
+performance for the server related tests
+using the core i7 87 are okay with a
+samsung 950 pro nvme storage device they
+then followed up with a Linux gaming
+test and looked at half a dozen tiles
+and mostly found the difference was
+within the margin of error so gamers and
+desktop users looked as though they
+would be unaffected and I assume this
+would be the case at the time but I
+promised I'd also test to the impact for
+Windows users as soon as I could after a
+late night working on that video I was
+up bright and early today for some
+reason I don't know why but it was a
+good thing that I was because Microsoft
+had already pushed out an emergency fix
+for Windows users Windows 10 users
+should be able to get that update
+automatically through the Windows Update
+feature now Windows 7 &amp;amp; 8 users well
+they can get the patch directly from the
+Microsoft web site today or they can
+wait till patch Tuesday to receive it
+automatically via the Windows Update the
+patch titled kb 4 0 5 6 8 9 2 does have
+one fairly severe known issue Microsoft
+notes that your update installation may
+stop at 99% and this may show elevated
+CPU or disk utilization if the device
+was reset using the reset this PC
+functionality after installing the KB
+4:05
+I've four zero double to update anyway
+the good news is we can finally retest
+to see what impact this update has on
+performance for desktop users if any at
+all now a few things to note here I've
+only had time to test the 87 okay so no
+older generation Intel CPUs have been
+tested yet I've also not checked to see
+if this patch has any impact on AMD CPUs
+the benchmarks you're about to see for
+the 87 ok were all conducted today they
+are all fresh and testing was conducted
+on the same test system under the same
+conditions I first updated all my pre
+patched data and then applied the patch
+and retested as usual a gaming
+performance figures are all based on an
+average of three runs now for the
+storage tests I dude things are a little
+differently since those numbers tend to
+fluctuate a bit more normally I again do
+take the average from three runs but for
+this test I've taken the best result for
+each individual test and shown that
+instead in total I gave each
+configuration for temps to post the best
+result it could and between each run the
+system was powered completely down and
+then build it back up ok so that's
+enough about that let's get to the
+benchmarks starting with the storage
+tests we have the a s SSD benchmark and
+for those tests I'm using the Samsung
+SSD 950 Pro with the 87 or okay here we
+see very similar sequential read and
+write results the figures after the
+update are actually slightly better
+though we're talking just a one to two
+percent difference here where we see a
+significant difference as we're looking
+at the 4k read result here we see a very
+large 23 percent reduction in
+performance going from a throughput of
+44 megabytes per second to just 34
+megabytes per second the random 4k write
+performance though well that goes
+unchanged so it's just the random 4k
+reads that are significantly down
+interestingly though the 4k 64 thread
+read and write performance is improved
+with the patch the write performance
+here has been boosted by 17% so that's
+certainly not bad news though I'd argue
+that the 4k read result is more serious
+read access times were also 14% lower
+before the update but the right access
+time is much the same moving on we find
+that crystal D smart confirms what we've
+seen when testing with a SSS D benchmark
+here the 4k Reaper formance has been
+reduced by 23% after the patch the rest
+of the margins are within 5% so nothing
+really worth noting the last storage
+focus test I ran was a toe disk
+benchmark and here we find something
+very interesting these are all
+sequential read and write tests so the
+4k results here won't necessarily
+reflect what we saw previously and while
+they clearly don't however as the file
+size grows to 16 kilobytes we start to
+see a noticeable drop in performance
+with the update the drop-off isn't as
+significant as the 4k read results seen
+previously but we are still seeing up to
+a 9% reduction in throughput the
+Cinebench r15 score is based on an
+average of 3 runs and here we see a
+slight variation in performance but
+nothing to be alarmed about the
+multi-threaded score is reduced by 2%
+while this single thread score was
+increased by a percent so margin of
+error stuff then we see much the same in
+blender the update came in a fraction
+ahead but again within the margin of
+error another render test this time over
+the corona benchmark and again nothing
+really to report here so it seems like
+your rendering workloads won't be
+impacted likewise your spreadsheets will
+remain as snappy as ever we see no
+improvement or decline in performance
+here at all
+the 7-zip compression and decompression
+performance looks much the same again
+this is within the margin of error for
+this test veracrypt also saw no
+difference for the one gigabyte and 50
+megabyte AES encryption and decryption
+testing okay so time to get serious with
+a few game benchmarks first that we have
+the always dependable ash of the
+singularity here we see a small uplift
+in performance after the patch has been
+applied granted the 1% low result was
+only improved by 1.7 percent but still
+it's certainly not slower
+we're also CPU bound for this test using
+the high quality preset so not GPU bound
+boosting the quality preset to crazy
+does result in a GPU limited scenario
+and again we find similar results before
+and after the patch has been installed
+Assassin's Creed origins was a game I
+was really keen to check out due to the
+type of protection that game uses to
+stop piracy that said though as you can
+see nothing worth talking about here
+apart from the fact that patch has no
+negative impact on frame rates and
+switching to the ultra high quality
+preset doesn't
+either then finally we have the
+battlefield 1 results and using the
+medium quality settings at 1080p with
+the gtx 1080i we see similar performance
+before and after the patch in fact once
+again after the patch has been applied
+we do see a very minor improvement this
+is again seen with the ultra quality
+settings so things look pretty good
+with the core i7 87 ok well there you
+have it as suspected based on the Linux
+results that we featured in yesterday's
+video and desktop users really have
+nothing to worry about particularly
+gamers that said I am yet to test older
+CPUs but given the type of workloads
+we're seeing impacted by the patch I
+don't think there's really gonna be any
+issue there with your typical desktop
+workloads but if there is I'll certainly
+report back with that information the
+reduction in 4k performance though for
+the high-speed nvme drives that is a bit
+of a concern and while this shouldn't
+impact things like games any
+applications that are sensitive to this
+might show a reduction in performance of
+course the brief list of applications I
+tested were all fine and there was no
+issues there as we also saw in
+yesterday's benchmark which looked at
+some server benchmarks that's really
+where the problem is so it's a bit of a
+non-issue for desktop users but it could
+be quite a serious concern for data
+centers and the like that's not really
+our area of expertise or interest though
+so we'll leave that testing for those
+better equipped to tackle it if you have
+any questions or something you'd like to
+add to the topic then please feel free
+to drop that down in the comment section
+below I'm your host Steve see you next
+time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

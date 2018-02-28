@@ -1,0 +1,156 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>What is Tessellation? Graphics Tech w\/ Epic Games | Gadgetory - Your Gadget Factory</title><meta content="What is Tessellation? Graphics Tech w\/ Epic Games - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">What is Tessellation? Graphics Tech w\/ Epic Games</li></ol></div><h2 class="post__title"><b>What is Tessellation? Graphics Tech w\/ Epic Games</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/wg2lP6Xv6a4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey everyone this is Steve from gamers
+Nexus tonight we are at the epic Game
+Studios in Cary North Carolina and I'm
+joined by Alan Willard senior technical
+artist at Epic Games and Alan can you
+give us a sort of quick overview of the
+types of things you work on here at epic
+well I'm a technical artist so I work on
+all sorts of stuff it depends on the
+needs of the project for the Gears games
+I did some levels I did cars that you
+could blow up I did particle systems I
+did some sound stuff for Unreal
+Tournament as well as levels so a
+technical artist is kind of the
+jack-of-all-trades we end up kind of
+getting pulled onto various things as
+fires break out or as new projects start
+up to help kind of define how things are
+gonna work can you give us a top level
+overview what is tessellation where do
+gamers actually see it in use sure so if
+you think of your average surface
+whether it's a floor or a wall we build
+them out of what we call quads which are
+really two triangles that are butted up
+together to make a square tessellation
+is a way of doubling that on the
+graphics hardware so what was two
+triangles becomes four becomes eight
+sixteen and so on and when we do that
+that allows us to do things like
+displacement or smoothing and increase
+the apparent detail not only making the
+surface look higher resolution but also
+adding bumps and hills and valleys that
+weren't there before so you get a much
+higher fidelity surface what what was
+the origin of tessellation as it
+pertains to epic games when did it first
+get implemented so near the end of our
+active development on Unreal Engine 3 we
+did the Samaritan demo and we added
+tessellation working with NVIDIA and you
+can see it in the Samaritan demo when
+the character becomes very kind of
+armored and rocky we increase the amount
+of tessellation on the character and
+then added a displacement map and that
+displacement is what takes his default
+shape and enhances it to get that kind
+of angular rocky look so going forward
+if if I'm a gamer I'm playing some kind
+of modern game and I
+enable or disable tessellation in the
+settings where should I be looking to
+see the most immediate visual impact
+so mostly it'll be in the silhouettes of
+things right if you have a boulder and
+it looks fairly low poly without
+tessellation when you turn on
+tessellation you'll start to see more
+curvature it will get smoother small
+things like bumps and gouges will start
+to become more apparent not just looking
+straight at it but also in the outline
+around the object is this dependent upon
+the camera angle it can be it depends on
+the implementation we tend to bias the
+displacement and tessellation based on
+camera distance right if you have a
+small object in its way far away you
+really don't want to spend any
+performance doing anything extra to it
+until it comes close enough to the
+camera that it's it now important to the
+the players eye right there's no point
+in wasting time on it and an earlier
+example we were talking about just
+pre-interview when looking at a flat
+surface like a wall with a brick texture
+on it so my understanding is that
+tessellation can help give this an
+appearance of depth right so if you
+think of a wall as just being a flat
+surface you can do a lot of shader
+tricks to make it look better what we
+call bump offset where we shift the
+location of pixels based on the camera
+angle and that can give you the sense
+that the bricks have depth and and and
+are coming out of the surface a bit but
+what you'll never get is you'll never
+get a silhouette off of that kind of
+technique so displacement and
+tessellation allow us to increase the
+triangle density and then actually push
+and pull those triangles in out to the
+sides whatever to get those shapes to
+really come off of that surface and then
+lighting and shadowing can can really
+work with those shapes too to sell the
+final look call on a performance side
+what's sort of the the performance
+impact here is it is it large or it
+depends on the GPU displacement and
+tessellation are typically done
+completely on the GPU so if the the
+project or the game that you're looking
+at is GPU bound where they're doing all
+the work that can be done on the GPU
+while staying within their performance
+boundaries then turning tests
+off we'll get you some performance
+improvements games do typically tend to
+be GPU bound we all want our games to
+look as good as possible so we turn on
+all the bells and whistles so unless
+you're you're running on an extremely
+high-end machine you'll notice some
+difference in performance but as you do
+get into the higher-end spec it'll just
+enhance the look without any significant
+performance cost very cool so for more
+information on tessellation check the
+link in the description below for the
+full article and any any projects we're
+talking about here today just to direct
+people towards new things obviously
+there's the Unreal Engine which we've
+released for free to everyone you can
+download it at Unreal Engine comm create
+your own projects we've got massive
+amount of tutorial content
+demonstrations we have a learn tab in
+our launcher that lets you get right in
+and see how we're building stuff we have
+weekly trip twitch streams covering
+everything from our community for
+tonight information Unreal Tournament
+information which is available through
+the launcher tab as a pre-alpha you can
+download it play the game right now and
+if you're so inclined you can even get
+in and start working on it you can
+actually build content and make it part
+of the game right from your home very
+cool so again links in the description
+below for more information and we will
+see you all next time
+you</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

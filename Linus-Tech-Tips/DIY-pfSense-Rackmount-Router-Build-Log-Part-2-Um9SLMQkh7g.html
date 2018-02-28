@@ -1,0 +1,409 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>DIY pfSense Rackmount Router Build Log - Part 2 | Gadgetory - Your Gadget Factory</title><meta content="DIY pfSense Rackmount Router Build Log - Part 2 - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1>Gadgetory</h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><h2 class="post__title"><b>DIY pfSense Rackmount Router Build Log - Part 2</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/Um9SLMQkh7g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">that feeling when a package that you
+ordered on eBay or whatever finally
+arrives you tear it open take out the
+packing material and it's that last part
+you need to build a machine that you've
+been waiting forever to build this is my
+new motherboard for the DIY pfSense
+router machine and hopefully the one
+that's going to survive drop a like on
+the video if you like that feeling as
+well and drop a dislike if you hate
+seeing me kill hardware
+course there are mi series power
+supplies feature premium components for
+great performance with very low noise
+check out the link in the video
+description to learn more Shh
+be respectful this is a graveyard the
+graveyard of motherboards so here is
+everything for the DIY pfsense router
+including my two dead s 1200 KP intel
+server boards let's see a third time
+really is a charm now in the comments
+under part one of this video there's a
+lot of people criticizing the choices
+that I've made in terms of the hardware
+for this machine with criticism number
+one being lettuce why didn't you just
+buy a cheap one new machine on ebay and
+use that with my response being well
+because that's not a very interesting
+video me sitting at my computer clicking
+the Buy and number two with people
+saying how overkill it is that I'm using
+a Xeon for a router I know we already
+had it I didn't I didn't run out in and
+buy it to make this video now with that
+said I have bought a couple of other
+boards now but that is because we are
+already many hours of 3d printing into
+creating some custom hardware in order
+to make this project work and could we
+have found something that would fit
+together better out of the box yes of
+course we could but that's not fun and
+we are going to start by testing this
+motherboard outside of the system to
+find out if it works at all before we
+introduce some of the variables that
+might end up killing it so we'll start
+with CPU installation this CPU known
+good I actually ran it right before I
+started up this build log in the first
+place and it was fine Ram very unlikely
+that's killing our motherboard it's
+actually on the validated list not to
+mention that it's kingston ram
+and the last time kingston produced ram
+that killed anything was oh i don't know
+never now i've got a lot of people
+saying that it's my cooler and back
+plate that are killing the board to
+which i would reply did you even watch
+like did you even watch the video the
+entire back plate is covered in
+electrical tape that is not what
+happened but for the haters I'm going to
+go and I'm going to grab a stock
+heatsink to test the board with first
+for extra safety I'm going to try a
+standard desktop power supply next now I
+don't think the problem is my power
+supply what I think the problem is is
+someone that almost nobody in the
+comments actually picked up on and that
+is this four pin connector that comes
+off of the one you power supply that I
+plugged into a fan header on the
+motherboard that I checked with a
+multimeter later and which appeared to
+be supplying rather than requiring power
+no power to my mouse and keyboard why
+don't we start with different RAM and
+see how it goes from there now it's
+always possible when a motherboard dies
+that it can take other hardware with it
+and I'm really hoping that it didn't
+kill our Xeon CPU let's try a different
+CPU so now I've got a 35 70 K from the
+CPU pile to try the weird thing is with
+the other chip I wasn't getting any beep
+codes and it was warming up it was
+actually getting power ok this time it's
+failing post new plan it's quite
+possible that even though they're on the
+same socket this motherboard doesn't
+actually support the 3000 series
+processor so I grabbed a 2600 and we're
+going to take this baby for a spin
+no power to the peripherals still I'm
+starting to think we've got a dead board
+on our hands here I can try a different
+stick of memory Oh
+oh hello so she's a little picky on the
+memory compatibility but we have a post
+this is good news now let's try our Z on
+chip with that Ram and see how that goes
+I think we may have not only killed our
+board but also killed our CPU and RAM so
+we're going to the 2600 and the full
+height ram even though that's not really
+going to work for the final build I'm
+going to give it a shot first I'm going
+to try the 35 70 K to see if our BIOS
+update at the very least might have
+given us more options for newer
+generation processors to work in this
+board so that's the end of that chapter
+now let's try the now let's try the
+original Xeon hi all right
+the RAM works but the CPU is dead which
+means I can build today and change out
+the CPU if I decide to do that at all
+remember Xeon for ECC support so we're
+not actually taking advantage of the ECC
+memory so if I decide to change out the
+CPU I can do that at another time
+all right let's let's forge ahead then
+we give you guys a little lesson on
+electronics a piece of plastic shroud
+over top of a speaker does not affect
+the functionality as I will prove right
+now so as you can see just like on the
+previous two attempts I have only
+removed the top of the plastic let's go
+powered on oh what's that oh oh cutting
+depth Oh cutting down the speaker
+doesn't do anything because why would it
+I could rip the speaker right off and it
+wouldn't do anything the speaker just
+wouldn't work ha how about that the
+number of people educating me about the
+dangers of a metal backplate fairly high
+I don't know if you guys know this but
+the manufacturer of the CPU heatsink is
+also aware of the dangers of metal back
+plates and the back plate actually had a
+non conductive coating on it so yeah
+that that was a thing but just in case I
+had damaged that non conductive coating
+I did there we go we've got CPU contact
+I did cover it in electricians tape last
+time around the internet was right
+I think the backplate heatsink mount did
+kill the board because we are now down
+to well up to three dead boards but not
+for the reason that they think it did
+because the back plates anti conductive
+coating was not penetrated I think the
+reason it died was actually from too
+much mounting pressure but there's good
+news and we are going ahead with the
+project because I've discovered that my
+z87 and Wi-Fi motherboard happens to be
+almost identically laid out to the Intel
+board that we were using before so I've
+grabbed a different Xeon and we are just
+going to build a router today damn it no
+matter what because our gigabit internet
+upgrade is already done so here we go
+now for my next trick I'm going to take
+my test bench and physically move it
+into the case all right
+power supply still works
+very good we are in good shape friends
+we are in good shape okay there's still
+one more thing to go wrong actually now
+I'm not going to use the same PCIe 1x
+riser that I was using before if I can
+get away with it because my 16x riser
+that I ordered on ebay actually has
+finally arrived so we should be able to
+get full 4x performance out of this card
+assuming that this solution works at all
+so now we're going to go almost all the
+way and boot into the OS and see if our
+network card is recognized let's pull
+this back off oh I think that was
+plugged in kind of funny maybe that was
+the issue all right that was the issue
+just needed to reseat that puppy and I
+really don't like that this keeps going
+load optimized defaults then boot you
+stop that what's your deal
+so it actually blue screen even without
+our network card in there which leads me
+to believe maybe it's something else my
+windows 7 bench drive could be just kind
+of flaky right now so let's try my
+windows 8 test drive
+so we're booted into the Windows 8 Drive
+so we're going to try our network card
+again if anyone from Microsoft is
+watching why the actual if I start
+typing my password immediately on that
+screen and I only have a single user
+account on the machine does it not just
+log me in there's always like 1/4 of a
+second delay and this is the first
+character or to fix that all of our
+network ports are showing up it is time
+to actually install it inside the
+machine
+so what I'm doing is I'm actually trying
+to jam enough wires through this gap
+that even if I accidentally press down
+on this tab while I close it it actually
+can't open because that will release my
+memory modules just for doing some some
+quick testing here put this baby up here
+oh we're close I can smell it now this
+is a cool thing about this case you can
+actually install your expansion card
+either way and I think we may be better
+served by doing it this way this time so
+if I press on these I'm gonna move nope
+it's finally here everything is working
+which leads us at last to the whole
+point the thing I wanted to test with
+this video our custom cooling shroud for
+our heatsink we need to test two
+different scenarios number one how does
+it perform with only these high rpm fans
+pulling air from the front and blowing
+it out the back of the chassis towards
+our aligned CPU heatsink and in order to
+give this config the best fighting
+chance we're actually going to try in a
+couple of different ways because you can
+see the way the chassis is meant to
+channel air flow is in the front / top a
+little bit and then out these
+ventilation holes at the back so we can
+actually try it both with the whole
+thing open and with everything around
+the CPU heatsink itself actually blocked
+off so that we're getting more airflow
+through the fins of the heatsink but
+let's try it completely open first
+so our Idol temps actually look pretty
+good sitting in the
+35 - you know 40 degree range so for the
+sake of this video I think we're going
+to use the CPU package temperature here
+alright let's start a stress test and
+see what happens to that
+well 65 still climbing ah so what are
+our hottest core sitting at around 60
+degrees with the package sitting at 63
+all right well let that reach
+equilibrium and we'll come back in just
+a moment
+okay small update temperatures are still
+rising we've reached 70 degrees on the
+CPU package 71 now hey I think our
+maximum temps have settled in now per my
+usual approach I'm taking the highest
+number that it's recorded so CPU package
+has spiked as high as an 80 degree
+reading a little higher than I'd be
+comfortable with with that said this
+system is not going to be under that
+kind of a load 24/7 but still so we're
+gonna go ahead and we're gonna block off
+the holes that we don't want it using
+and see if that helps now it's actually
+kind of hard to tell from looking at
+these temperatures because they're kind
+of all over the place but with our
+blocked off holes you can actually see
+from the curve that shows all of the
+core temperatures that we're getting a
+little bit more empty space under that
+70 degree mark right there so I would
+say yes we did get a few degrees
+improvement by using this approach this
+is kind of a funny story I've got the
+the architect of the fan shroud that
+we'll be installing for our second test
+and he was about to explain to me why
+one of the pieces of the shroud has like
+this janky thing cut in it so when I was
+modeling it originally I forgot that
+there's is it I think it's this thing
+yeah yeah this thing is right in the way
+so oh look it perfectly fits now okay so
+we actually had to change the
+motherboard yeah I know so now my all my
+plans
+are wrecked all the original
+measurements like is it significantly
+different no okay so now that you move
+that where it belongs this shroud should
+fit very nice oh look at how perfect
+that is it's so perfect and I gave this
+buffer room here I didn't make it as
+long as it needs to be because it can
+overlap a little bit your modesty is a
+really amazing yeah oh just just a flex
+room for it to be able to go in that's
+that's correct
+okay okay no no I want to do it I want
+it alright alright
+note that the design still allows these
+three fans to cool the network card
+although we did not determine that we
+needed a shroud for that that little
+that thing is in the way I didn't model
+that so it's uh oh
+well it's supposed to be flush on the
+top it's not the way I designed it but
+yeah I mean it it's supposed to be flush
+I mean it's mostly flush most of the
+airflow is going to make it to the
+heatsink I think which is okay because
+it won't kill the system to have a
+little bit of airflow over here looks
+cool doesn't it alright let's close it
+up and find out if our maniac scheme
+here worked so for those wondering we
+actually 3d printed this sucker on the
+ultime kerttu that we reviewed in the
+video that you can check out right over
+here
+you
+there you have it folks absolutely
+fantastic by using our 3d printed Shroud
+to direct more airflow towards our
+passive heatsink we were able to drop
+our CPU temperatures by somewhere in the
+neighborhood of about 10 degrees meaning
+that even under full load I would be
+extremely comfortable running this
+system all the time it took a long time
+for us to get here but our router is
+finally ready to load up pfsense and
+deploy in the server room with our new
+gigabit connection whoo oh hi I didn't
+see you there you know what's great
+master opcom just head over to draw dots
+slash Linus tech tips and they'll always
+of all not always okay but whenever we
+talk about it they're going to have an
+awesome deal over there right now
+they've got a DJI phantom 3 and actually
+you can pick a variety of different
+models of the phantom 3 depending on
+what you're into but it's not just
+limited to drones over at mass drop
+basically they reach out to the
+community they go what kind of deals do
+you guys all want to see and then people
+go well yeah hold on I'd love to see you
+know I don't know that cool knife for
+that amazing keyboard are those
+headphones and then mass drop goes to
+the manufacturer the distributor they
+make sure they're getting authentic
+products and if they can find enough
+people who are willing to buy and a
+manufacturer who wants to sell well the
+more people buy the lower the price goes
+it's the more mass the further it drops
+it all kind of makes sense in sort of a
+internet logic type of way so again
+that's drawed ups slash Linus tech tips
+to check out not just that phantom deal
+but any of the awesome stuff that they
+have over on mass drop it's definitely a
+good way to kill some time and kill your
+wallet and get some great deals while
+you do it so that's it guys thank you
+for coming along for the ride if you
+dislike this video well I think you know
+what to do but if you liked it click the
+like button get subscribed to Linus tech
+tips and maybe even consider supporting
+us you can buy a cool t-shirt like the
+one I'm wearing you can change your
+Amazon bookmarked one with our affiliate
+code instructions for that or up there
+or you can even give us a direct monthly
+contribution through our community forum
+which by the way you should just also
+join
+as well I think that pretty much wraps
+it up if you're looking for something
+else to watch now that you're all done
+with this one might I suggest you check
+out our channel super fun video where we
+play the game drunk stoned or stupid
+it's not nearly as dumb as it sounds
+it's actually a pretty fun game terrible
+name</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

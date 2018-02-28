@@ -1,0 +1,269 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Ask GN 58: What is Memory Bandwidth &amp; Voltage Validation | Gadgetory - Your Gadget Factory</title><meta content="Ask GN 58: What is Memory Bandwidth &amp; Voltage Validation - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Ask GN 58: What is Memory Bandwidth &amp; Voltage Validation</li></ol></div><h2 class="post__title"><b>Ask GN 58: What is Memory Bandwidth &amp; Voltage Validation</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/ZwhXX9VoWTM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">everyone we're doing an episode of ask
+GN it might be a little bit of bad code
+because we're in a cable car we're a
+gondola going peak to peak at Whistler
+this our last day here after PAX West
+drove up and we'll put a timer somewhere
+in the corner because I'm on a clock for
+this before we get to the other side
+before that this coverage is brought to
+you by the core g21 enclosure from
+thermal take a $70 case with two four
+millimeter thick tempered glass side
+panels and a power supply shroud with
+top mounted SSD sleds learn more at the
+link in the description below
+okay so STM first question enigma one
+asked Steve what's the latest on
+hardware Lux is Vega 56 under bolt
+validation so that comes from the
+livestream Vega 56 under volting kind of
+works but sometimes it doesn't so in
+that live stream you can see that I
+wasn't able to successfully replicate
+the results that doesn't mean the
+results didn't happen it means that my
+car didn't like those numbers and
+specifically here's the thing it looks
+like it accepts the under bolt but if
+you take a DMM to the back of the card
+multimeter and check the voltages it'll
+actually be a bit higher than what you
+tell it to run it so that's expected but
+the voltage wasn't dropping as much as
+we were telling it to so it looks like
+it's working but it's just I'm not fully
+confident in it basically I think the
+software it's kind of lying to us like a
+lot of other things with via the Vegas
+software so I'm not sure about the
+results they could be completely valid
+but we can't replicate it under Bolton's
+just like overclocking some silicon
+likes it some doesn't next question for
+him says Steve I have a question
+regarding memory bandwidth and GPUs
+different graphics cards can have
+different bandwidth like 200 300 400
+gigabits per second or gigabytes per
+second rather what does that
+specifically mean how much data the GPU
+can move per second or something else
+because higher bandwidth doesn't
+really mean faster cards so as quickly
+as possible this is the speed at which
+the GPU can maximally move data to and
+from memory some GPUs care a lot more
+about memory bandwidth than others you
+can look at the Vega GPUs they get
+choked on bandwidth which is provable by
+overclocking the HBM and basically what
+it comes down to is well let's do the
+calculation first so to calculate many
+memory bandwidth do you take the memory
+bus width divided by 8 which converts
+your bits to bytes makes a bit easier
+and then you multiply that by the memory
+clock the actual clock drop the
+effective 1 times 2 for ddr times 2 for
+gddr5 and some architectures are more
+bound than others so depend what number
+you get they may not mean anything that
+may mean a lot with Vega we tend to be
+limited on bandwidth with Furio tend to
+be limited this is getting very high up
+and then with some of the Nvidia cards
+it behaved a bit differently Nvidia
+doesn't need the bandwidth quite as much
+as the bigoted architecture does part of
+that is the color compression memory
+compression so as you push and pull data
+from memory if you can compress a lot
+more of that data you can compress the
+colors 8 to 1 even stuff like that then
+you really reduce your reliance on that
+pipe being wider the memory bandwidth
+being larger and in numerical value so
+the more compression you have the better
+off you are higher memory bandwidth
+doesn't mean better card but it is
+important for some architectures
+especially all eventually at some level
+a quick example though when I wrote down
+here we take a gtx 1060 that's 192
+gigabytes per second memory bandwidth
+192 bit bus the equivalence between this
+two numbers is basically a coincidence
+so 192 divided by 8 equals 24 times 8
+gigabits per second effective you get
+192 gigabytes per second or if you're
+working from base frequency which makes
+more sense that would be 2002 megahertz
+so 192 divided by 8 24 times 2002 gives
+you 48,000 48 times 2 for DDR 96
+gigabytes times 2 for gddr5 192
+for a second so that's a quick
+explanation of memory bandwidth think
+we're about halfway through this video
+oh yeah compression matters a lot but
+that's that's the very basics maybe
+we'll do something separate when I'm
+like not in a car doing this as Street
+guru these are all from discord today
+says should Andy add an automatic under
+boat utility to wat man we're in the GPU
+would where and the GP would render a
+scene at a user-specified frequency say
+1600 megahertz or Vega then gradually
+scaled down the voltage until it sees
+instability where it hopefully stops
+itself to prevent a crash all the data
+could then be output to a file where the
+user could set States and white man
+accordingly this is a fantastic idea
+I hope AMD takes your idea so vote
+frequency tuning exists in precision and
+in the NVIDIA Pascal and onward cards
+there is a volt frequency curve for AMD
+also it exists a lot more in Vega than
+in previous article textures so it's
+possible for them to do this and I would
+think you'd basically run it through a
+bunch of checks at different and take a
+while run through different frequencies
+and voltages see where it's not stable
+and output your results from there and
+then load them if you want to load them
+and if you I don't know I think the
+challenge is how do you recover from the
+driver crash how do you save the stage
+do you put it out to a text file for the
+user or do you try and do it all for
+them that's the challenge but they have
+plenty of other things to work on on the
+driver side so not sure that'll come
+anytime soon but I next question is from
+contractor three one six who says Steve
+do you know if there's any qualitative
+performance and/or power consumption
+difference between using a single split
+PCIe cable or two separate PCIe cables
+to power the graphics card and what's
+the effect on the power supply so not
+really so this is just you don't really
+want a daisy chain cables that's what
+you're talking I was where you get one
+that splits we did that in the cooler
+master C 700p built that we did at PAX
+this past weekend and I did it because
+it was cleaner but I mean if you're
+trying to be technically correct using
+two separate cables would be
+it's just a matter of are you exceeding
+the amount of power that the gauge of
+that cable can handle generally the
+answer's no you're probably going to be
+fine
+but if you're working with say an
+overclocked tin pin card or high
+overclock lightning Z something like
+that you're pushing enough power where
+it's probably time to use two separate
+cables reduce the heat load on the
+cables so that you're not burning
+through your wire by pushing 300 Watts
+through it or something like that and
+they can handle more than the PCIe spec
+says that they can handle but there's
+really there's no reason to to beat the
+cables up like that if you can run an
+extreme overclockers high overclock
+you'll improve your stability a little
+bit as you approach the upper limit of
+the cables you'll reduce the heat load
+on that specific cable rails come into
+play here to 12 volt rails maybe we can
+get builds or to talk a bit about that
+sometime the future and do some
+demonstrations of what happens when you
+do use a daisy chain cable can you make
+it catch fire or melt or anything like
+that you can it just depends on what
+kind of hardware you're working with and
+if you are well the demonstration parts
+are because you don't want it damaged
+the high end card obviously I can
+produce that much current and power so
+that's the concern with that but yeah I
+think it just comes down to like if
+you're working with lower wattage cards
+you'll be fine with a daisy chain but
+just try to do two separate cables so
+that's mostly questions I had here for
+today and this thing is still going so
+we can add a couple more let's talk
+about the under bolting a bit more and
+so the backlit card under bolting the
+first question that I talked about will
+have a I can put a photo have Andrew put
+a photo in the video of the voltage
+checkpoints on the back and you can
+check for HBM to voltage that you can
+check for vcore so take the you know I'm
+the DMM take the black and stick it into
+a ground on a molex cable that's
+probably the easiest you want to be as
+close to the sword as possible and then
+take the red and probe the back of card
+you can check the HBM to voltage you can
+check v core they will be a little bit
+higher than what software tells you
+because just because we're you're
+checking of a stage but that will give
+you a better idea of if your voltage is
+actually changing from the one under
+bolting this is probably more accessible
+than the other solution which is take a
+current clamp clamp the cables and check
+the current ideally you do both to make
+sure that the power actually goes down
+which tends to coincide with voltage
+because volts times amps equals watts so
+you see one go down probably the other
+one went down but just to really make
+sure check the voltage on the back of
+card you'll see a bit higher than
+software but it should go down each time
+you step it down and software relative
+to each other so if you drop 10
+millivolts you should drop 10 millivolts
+in the back of the card readout or
+roughly there about so that would be
+something I'd suggest we'll have a photo
+to show you where you check those
+yourself if you want to remove the
+backplate and you're good to go on that
+we're approaching the end here I think
+so if you want to check out content that
+was from Whistler like a bike park check
+the G on Steve channel we'll leave a
+link below you can subscribe to that one
+thing we're gonna start building that
+one up a little bit more for non-gamers
+Nexus content stuff that's like kind of
+related like the riding down the
+mountain while talking about coffee lake
+and things like that
+that's probably the most related we'll
+get so check out the GN Steve channel
+for that hope the echo isn't too bad for
+you all thank you for watching and
+subscribe for more patreon.com/scishow
+and was an access to help side directly
+I'll see you all next time
+you</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

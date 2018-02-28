@@ -1,0 +1,294 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Our 36 Core Video Rendering Server – Finally Explained | Gadgetory - Your Gadget Factory</title><meta content="Our 36 Core Video Rendering Server – Finally Explained - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1>Gadgetory</h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><h2 class="post__title"><b>Our 36 Core Video Rendering Server – Finally Explained</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/YQ96fLCGFRw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">this journey begins over six months ago
+when I reached out to Intel about
+supporting us with some chips a
+low-power Xeon to build the high speed
+storage server for our new office that I
+first showed off here then a pair of
+their top-of-the-line 'if I've $26.99 v3
+18 core Xeon processors to build a
+network video rendering server also for
+the new office well as it turns out they
+couldn't send us the low-power chip for
+the storage server so we bought our own
+but whatever the reason was they were
+able to honor our request for the pair
+of $4,500 processors so it is with much
+things to Intel along with Super Micro
+who provided a dual socket motherboard
+Kingston who provided 128 gigs of DDR
+for ECC Ram and Norco Noctua and FSP who
+provided our case cooling and redundant
+power that we are able to bring you
+these findings because you see the deal
+was this send us the chips and we'll
+make a video about how we're using them
+which sort of puts a lot of pressure on
+us to figure out not only if the concept
+of network rendering also known as a
+render farm works I mean that's been
+pretty standard stuff for years
+especially in animation but also to find
+a way to efficiently use those resources
+in our workflow so without further ado
+thanks two weeks of work by Edsel and
+much patience from the rest of the team
+I am pleased to present our new editing
+workflow it's fast it has built-in
+redundancy for our files and to quote
+Dimitri from Hardware canucks who has
+already switched to it it brought the
+joy back to 4k video editing for me so
+here we go
+the Logitech G 303 features a
+lightweight design and advanced optical
+sensor with delta0 technology for
+precise tracking and RGB lighting to
+match your setup check out the link in
+the video description to learn more so
+the most obvious bottleneck in a video
+editors daily life is waiting around for
+encoding tasks to complete outputting a
+finished ready to upload h.264 video
+file can take anywhere from 15 to 30
+minutes for us with one pass VBR or even
+over an hour with two passes so that was
+the first thing we tried to tackle with
+the 36 course server machine for
+software Telestream episode and Sorenson
+squeeze desktop were the frontrunners
+initially Telestream was intriguing
+thanks to its unique ability to split an
+encoding project into pieces process
+them across many course and then stitch
+them back together at the end regardless
+of the codec and Sorenson due to its
+excellent handling of multiple
+concurrent projects also a time-saver if
+you have many processing cores and its
+ability to utilize all course for a
+single project with supported codecs so
+episode is a great concept but we
+abandoned it quickly due to stability
+issues Sorenson on the other hand
+impressed the snot out of us the
+software worked their support staff was
+professional and even as a trial
+customer we were escalated to
+engineering whenever we encountered more
+complex issues outstanding so next we
+tested a variety of different output
+formats and found that thanks to
+optimizations within Premiere Pro our
+projects could be exported very quickly
+by our editing work stations in DNxHD to
+our server where Sorenson would utilize
+all CPU cores to output in h.264 master
+copy that was suitable for upload to
+YouTube and other video sharing sites in
+a fraction of the time that Adobe Media
+encoder could do it and all of this
+while leaving the video editors
+computers free to work on other things
+instead of just sitting there barely
+usable while they encoded video so
+mission accomplished then right well you
+know how the rabbit hole
+is the discoveries we made about how
+dramatically a programs optimizations
+around a given codec could affect
+performance raised more questions than
+they answered and while premier pros
+claim to fame is that unlike competitors
+like avid and Final Cut it allows any
+video file you want to simply be plunked
+on to the timeline and edited in real
+time it made us consider the way that 4k
+footage off our Panasonic gh4 camera
+just seemed to chug as you scrub through
+it on the timeline even on six CPU cores
+and a 10 gigabit network connection
+maybe there's some merit then to going
+back to the old way so we devised a
+workflow that would utilize our copious
+amounts of CPU horsepower to transcode
+footage from whatever format our various
+cameras captured in natively - an
+intermediary or mezzanine codec that was
+compatible with all the programs in our
+workflow so for a number of reasons avid
+dnxhd was chosen and would you look at
+that comparing prefetch latencies with
+native gh4 footage the delay when moving
+the playhead in premiere was reduced by
+nearly 25 times at 4k depending which
+program exactly was used for the
+transcode so it was at that point that
+the goal actually changed obviously we
+could just have the individual video
+editors convert all the footage off the
+cameras to our mezzanine codec when
+they're working but then we'd be right
+back where we damn well left off with
+highly-skilled video editors staring at
+their barely functional computers
+waiting for a big queue of videos to
+transcode so now we needed a way to
+avoid that by using our overpowered
+hardware and the answer of course is to
+do the transcode at the time of ingest
+or when the footage is initially removed
+from the camera and here's some bad and
+some good news
+while squeezed desktop Sorensen's
+low-end offering can perform a task like
+this across many cpu cores because we
+dump so many video clips off our SD card
+at a time it just wasn't stable enough
+with our workload so we turned to their
+server offering which operated much more
+smoothly to automatically monitor our
+video file dumping folders and transcode
+everything we dropped in them so the
+benchmark was a folder of 41 video files
+totaling sixteen point seven gigs and by
+prioritizing multiple tasks this could
+be processed in about 14 minutes a small
+price to pay even on a video that needed
+to be edited immediately for the
+improved timeline performance but
+unfortunately time wasn't the only price
+the server version requires a Windows
+server operating system to run on top of
+and costs $5,000 plus yearly maintenance
+fees and furthermore despite the
+assurance we received from Sorensen's
+engineers that there shouldn't be any
+gamma or color shifts using QuickTime as
+a wrapper between squeezes DNxHD export
+and premiers import it was there and
+very difficult to compensate for so it
+was back to the drawing board somewhat
+which led us to a conversation with
+Blackmagic Design where they said that
+Sinha form could also be a great
+mezzanine codec an option that had been
+dismissed early on due to its limited
+compatibility with most software
+including Sorenson squeezed although
+they had said they could add
+compatibility with the next yearly
+release so could we quickly transcode
+our footage to sinha form it turns out
+that yes even with only 30% CPU
+utilization effectively ten and a half
+of our 36 cores Adobe Media encoder yes
+back to that again managed to kick
+Sorensen's ass converting to Sena form
+versus Sorenson converting to DNxHD and
+all of this without a significant loss
+in quality regardless of whether we're
+working with native 4k footage for
+better green-screen and punch in
+performance or settling for upsampling
+1080p footage for our finished project
+by the way please see this video for
+more details about the benefits and the
+drawbacks of 4k so that's all
+and good linus but does sinha form
+deliver the answer again yes
+while file sizes are significantly
+larger especially at 4k then even the
+source files timeline performance is
+better than even DNxHD thanks to an
+extraordinarily poorly documented
+feature of sinha form its GPU
+accelerated so even though DNxHD also
+performs like a champ it can eat 50 to
+60 percent of a 12 cores Aeon while
+scrubbing through footage while sinha
+form is using the fancy titan x graphics
+cards that nvidia sent us for our
+workstations to keep CPU usage much
+lower so then here is the process that
+we finally settled on we're using Adobe
+prelude 2015 to ingest our footage
+automatically dumping the raw files off
+of the camera to a local storage array
+on the machine in case of an emergency
+and then queuing up transcode jobs for
+each of those clips in media encoder
+2015 to send to our network share we
+then use media encoder 2014 which is
+included with your Creative Cloud
+license by the way to monitor the watch
+folders that we export our finished jobs
+into and turn those into h.264 files
+ready for publishing on websites like
+YouTube vessel yuku Billy Billy and
+Facebook and while hitting both
+instances of media encoder we've seen
+CPU usage as high as 90% but that
+doesn't mean that you need a
+multi-thousand dollar Network render
+machine to utilize this workflow all
+we've demonstrated here is that it's
+scalable to that kind of hardware for a
+small team you could easily take
+advantage of this on a smaller scale
+with a low-power networked machine if
+you just wanted to improve your timeline
+performance and not sit around waiting
+for exports on your main station while
+something else works on that in the
+background speaking of things that run
+in the background
+Colbert is an easy to use privacy app
+for mobile desktop and browser so they
+got support for iOS Android Mac PC and
+Chrome it allows you to tunnel to 14
+different countries allowing you to
+browse the Internet as if you're in that
+country it works for accessing things
+like geo blocked websites the apps are
+super easy to use so you just like pick
+your country and turn tunnel there on
+and your internet connection gets fully
+encrypted and you don't have to be
+technical to use or install tunnel Baron
+if you get stuck you can contact their
+friendly support bears that are standing
+by 24 hours a day they've got a plain
+English privacy policy and they've got
+five million users that trust them
+already so you can try it out for free
+tunnel bear actually gives you five
+hundred Meg's of data for free every
+month and an extra gig if you tweet at
+them but if you need more prices for
+unlimited plans start at $6.99 a month
+so head over to tunnel bear comm slash
+LTT linked in the video description to
+try it out today thanks for watching
+guys if this video sucked come on this
+was a lot of work but if it was awesome
+please hit that like button get
+subscribed or even consider supporting
+us directly by using our affiliate code
+to shop at Amazon buying a cool t-shirt
+like this one or with a direct monthly
+contribution through our community forum
+which you should definitely join links
+up there and now that you're done doing
+all that stuff you're probably wondering
+what to watch next so click that little
+button up in the top right to check out
+Luke's video where he goes through the
+ins and outs of password protection that
+is protecting your passwords making as a
+lot of people don't have them see you
+next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

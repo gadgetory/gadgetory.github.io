@@ -1,0 +1,168 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Unedited DOOM Gameplay on Vulkan with GTX 1080 | Gadgetory - Your Gadget Factory</title><meta content="Unedited DOOM Gameplay on Vulkan with GTX 1080 - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Unedited DOOM Gameplay on Vulkan with GTX 1080</li></ol></div><h2 class="post__title"><b>Unedited DOOM Gameplay on Vulkan with GTX 1080</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/-EmclNsAFw4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">today we're looking at eed software's
+new doom iteration and this is running
+on the Vulcan api with a gtx 1080 so
+this is the sort of interesting part
+about the demo otherwise it's just
+gameplay of doom which is of course a
+good looking game but mostly interested
+in the API in the GPU so for a bit of
+backstory this demo was first given to
+us in Austin Texas during the GTX 1080
+unveil in a closed doors press event and
+in that demonstration as we published on
+the website this particular demo that
+you're looking at right now was running
+at a range of 120 fps to 200 FPS maximum
+and then we were also told by developers
+in software that the FPS it's actually
+capable of going higher than 200 but to
+do to a game timing bug which will be
+resolved by launch they were capping the
+FPS to 200 so this has a range of 122
+200 the video itself is rendered of
+course at 60fps and what you're looking
+at is 1080p ultra gaming with doom on
+the vulcan api to Vulcan is a new
+low-level API it's sort of similar in
+some ways to Direct X 12 and that it
+grants low-level access to the hardware
+and developers or game engine developers
+in most cases will be able to manually
+tap into things like memory and
+registers and make all those calls to
+better accelerate the graphics
+processing and that's what helps out
+here with reducing load on the cpu and
+things like that so this is on Vulcan
+the Vulcan patch won't be available on
+game launch you won't be able to play
+with Vulcan on day one but the proper
+Vulcan update will come within I think
+we were told a few weeks of launch if
+not sooner so you can expect it pretty
+immediately and we will be trying to
+benchmark that assuming computex doesn't
+interfere too much in terms of the
+graphics that you're looking at most of
+the things worth pointing out here are
+you can see some decals all these blood
+decals everywhere that's just normal
+sort of two-dimensional images arrays
+that are painted onto the surface as
+decals that will likely eventually
+disappear but the more interesting
+effects are all these particle effects
+and there's a lot of lighting and
+shading stuff going on some volumetric
+effects that you can
+in here that gun that was just being
+shot looks I can't really tell from this
+short clip but it looks like it's just
+almost shooting a sprite the explosives
+that are pretty damn cool and the
+gameplay looks quick I mean it reminds
+me of the old quake or UT games
+certainly old old doom games but I
+haven't played those in ages those look
+pretty interesting though graphically
+you're looking at some medium geometric
+complexity nothing too crazy going on
+low to medium geometric complexity with
+a lot of particle effects and shaders
+and lighting for the post-processing
+things like that to really drive the
+graphics to a different level other than
+this I think there is if i'm not
+mistaken physically based rendering
+within doom that's a pretty big thing
+now where you can actually watch our
+interview with Crytek about PBR
+physically based rendering and learn
+what that is and how it works interacts
+with the world interact with GPU on the
+GPU and cpu side of things vulcan does
+mean that a lot of the draw calls will
+be moved away from the cpu and on to the
+GPU and so a draw a call if you're not
+familiar with one is basically a term
+representing the process or the act of a
+cpu telling a GPU individually to draw a
+triangle and if you have complex
+geometry all these polygons and things
+we have complex geometry the CPU is
+going to making a lot of command issuing
+a ton of commands to the GPU to draw
+these triangles that's very inefficient
+and that's how it works with directx 11
+there's really no way around it with a
+Vulcan and with DirectX 12 the API is
+able to bypass a lot of the overhead
+that's present in directx 11 and so
+these draw calls suddenly can just sort
+of be moved off of the CPU and handled
+entirely by the GPU that reduces a lot
+of the workload which means that in
+instances where CPU might start choking
+on the render thread or some other
+thread maybe the physics thread whatever
+where the CPU might start choking on one
+of these threads it is able to push that
+over to the GPU and you end up with
+these really high fidelity high frame
+rate graphics that we get
+now in the doom demonstration presented
+by its author and this is brand new
+gameplay footage by the way unedited by
+our team other than the voice-over so
+pretty interesting stuff draw calls have
+it's just one part of the advantage of
+DX 12 and Vulcan generally memory
+management's is another major item
+depending on how these Engine developers
+take advantage of the new API s and a
+lot of this is going to be on the end
+inside that's one of the more
+interesting things here is that from an
+industry standpoint it is it's really
+hard to properly build for Vulcan and
+dx12 it's not just like a free
+performance game that you get by sort of
+plugging in an API and this is why if
+you've seen some of the benchmarks with
+maybe rise of the Tomb Raider this is
+why you'll see Direct X 12 sometimes
+perform worse than directx 11 even
+though in theory it should perform
+better in almost every scenario and the
+reason is mostly because developers will
+either not build from the ground up for
+the new API which means it's not taking
+advantage of every aspect that does net
+these gains or they are wrapping the
+game so that it's just calling the x12
+but it's not really instituting it at a
+low level and reaping those benefits and
+so when you wrap a game just like
+wrapping anything else and software all
+it's doing is actually creating an
+additional overhead and hence you'll see
+maybe a 1 or 2 FPS slow down with the X
+12 / 11 so I believe that wraps up our
+doom at demo it's about six minutes here
+pretty good looking game I have not
+played it so I'm not going to comment on
+the gameplay but certainly looks good
+Vulcans a big deal but as always thank
+you for watching if you have questions
+about this stuff post them below maybe
+we'll address it in an ask GN otherwise
+or gt x 1080 review is coming up very
+shortly so do you subscribe for that
+patreon like the petrol video if you
+want help us out directly i'll see you
+all next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

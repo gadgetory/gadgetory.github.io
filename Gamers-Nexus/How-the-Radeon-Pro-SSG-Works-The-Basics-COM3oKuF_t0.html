@@ -1,0 +1,173 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>How the Radeon Pro SSG Works - The Basics | Gadgetory - Your Gadget Factory</title><meta content="How the Radeon Pro SSG Works - The Basics - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">How the Radeon Pro SSG Works - The Basics</li></ol></div><h2 class="post__title"><b>How the Radeon Pro SSG Works - The Basics</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/COM3oKuF_t0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">following AMD's SIGGRAPH announcement of
+their Radeon Pro SSG or solid-state
+graphics we followed up with Andy to
+talk about more of the specs on this
+device it's we don't have everything but
+we've got a good amount now so first of
+all I spoke to Andy is Robert Jamison
+who gave us a bit more information on
+the SSG from Radeon Pro this is not a
+gaming card but it is very interesting
+to the industry because it may be
+something that we see in the future so
+SSG solid-state graphics there is
+effectively a solid state drive volt
+bolted on to the video card that's
+what's new here other than that it's the
+the same thing that we always know for
+GPUs so or for video cards so there's a
+card it's PCB goes into a PCIe slot
+there's a GPU on it which is by the way
+a last generation chip not Polaris the
+WX 70 150 140 101 pro cards are the only
+Radeon Pro cards from that SIGGRAPH
+announcement that are on Polaris this
+SSG is on the last generation so that
+aside video card goes into a PCIe slot
+standard PCB with a GPU standard V RAM
+on the card even the only thing that
+that's different is this extended frame
+buffer so it's a one terabyte extended
+frame buffer effectively again an SSD
+bolted to the card and that SSD which
+AMD is calling an SSG or solid-state
+graphics because does function
+differently the SSG pulls eight lanes
+from the allocated lanes to the card so
+if you've got it in a 16 slot then eight
+of those lanes will communicate with the
+rest of the car the GPU and then the
+remaining eight lanes will talk to the
+solids a graphics device or power it
+anyway so that's the the big thing here
+you may be asking if we're taking eight
+lanes from the GPU does it sort of
+reduce the theoretical maximum bandwidth
+that the the card can push and therefore
+reduce its performance but because of
+the way this system works it actually
+comes out as a positive with those eight
+lanes being allocated to local on card
+storage the extended frame buffer it
+uses a NAND flash which we explained in
+another video with an animation that you
+can see on the screen now it's
+effectively again an SSD on the GPU and
+that allows production news
+to store local large files that are
+actively being crunched by the GPU so
+whenever the GPU needs a large texture
+or big data or composite objects it will
+talk to the CPU and the CPU then talks
+to system storage or memory or wherever
+that data may be located and if that
+data happens to be loaded it from the
+system's SSD or hard drive or a network
+drive you encounter a lot of latency so
+the SSD bypasses this by storing local
+files for entire projects at one time so
+this is something that you kind of use
+on a project project basis with the
+production or workstation environments
+and if we take an example of an
+architectural CAD model you might be
+marking a city using ray tracing for
+example to determine where light will
+hit as it interacts with your building
+so the example that AMD gave us was in
+Europe there are apparently laws that
+restrict buildings from blocking light
+as it interacts with other buildings so
+you can't build something that's just
+gonna abstract light for the whole city
+and that can be modeled with ray tracing
+in these applications and it's pretty
+intensive on the GPU so to load massive
+CAD models takes a lot of time as the
+GPU paint ponds with system storage from
+in some cases minutes to an hour and an
+SSG means that you can eliminate the
+communication over the PCIe bus to the
+CPU and then you further eliminate that
+communication from the cpu to storage
+and then back again to the GPU that is a
+lot of physical distance across the
+board and products and everything in the
+system it's also a lot of latency that
+gets cut down I've asked for a specific
+number by the way on the latency haven't
+gotten one yet but well you know if we
+do get one the GPU can now directly
+communicate with local storage with that
+SSG on there it's up to one terabyte as
+I said and that's mostly usable if the
+vram capacity on the card has been
+exceeded which it probably will be with
+these production work cases so and these
+rep told us that the card will probably
+have four gigabytes of RAM a VRAM rather
+but he said it might be more but it is a
+one terabyte confirmed on the SSD so
+right now today the card is being sold
+exclusively as a pre-order with a dev
+kit only there's no standalone card
+available but there's good reason for
+that because you can
+do anything with a standalone card just
+yet so a dev kit which includes the
+let's see includes the card developer
+support of course from AMD and their
+software team and andy built api to make
+the card actually work with software and
+documentation that's ten thousand
+dollars the card itself will be coming
+out separately at some point but this is
+what you can get right now for the
+workstation users and in terms of using
+this card out of box you really can't
+right now so the applications have to be
+specifically and purpose-built for this
+on card storage because it's not a
+normal thing so you they have to be
+built to accommodate that and make sure
+it's actually being leveraged to its
+fullest potential and andy has told us
+that they're working with ISPs already
+to build existing applications to
+support an SSG so good news on that
+front and then the rest of it basically
+if you are one of these people you would
+use the dev kits to sort of build your
+internal or other applications to
+support an SSG and once all that
+software is built the GPU can basically
+dump geometry textures composite objects
+shaders all these models onto the SSG
+rather than onto vram and then purge
+that over and over and over again or
+painting the SSD on the system and that
+helps with real time scrubbing and
+camera angle modifications for
+animations where you're not sure of
+where you want the camera angle to be
+but you don't want to render it out at
+super low resolutions just to play
+around this bypasses that AMD scrubbed
+8k video from at 90 plus FPS from 17 fps
+previously without the SSD so that was
+their demo at SIGGRAPH anyway we'll see
+how it works out there in the real world
+speeds we're looking at a 3 to 4x gain /
+system storage in terms of operating
+speed with this card for large models
+but a lot more info closer to
+availability which will be in 2017
+probably pretty early that's all for
+this as always pitch online commercial
+video links in the description below
+I'll see you all next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

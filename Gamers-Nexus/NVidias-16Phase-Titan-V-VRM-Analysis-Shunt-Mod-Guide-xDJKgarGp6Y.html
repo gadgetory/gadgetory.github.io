@@ -1,0 +1,633 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>NVidia's 16-Phase Titan V VRM Analysis &amp; Shunt Mod Guide | Gadgetory - Your Gadget Factory</title><meta content="NVidia's 16-Phase Titan V VRM Analysis &amp; Shunt Mod Guide - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">NVidia's 16-Phase Titan V VRM Analysis &amp; Shunt Mod Guide</li></ol></div><h2 class="post__title"><b>NVidia's 16-Phase Titan V VRM Analysis &amp; Shunt Mod Guide</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/xDJKgarGp6Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey guys build Zoid here from actually
+hardcore overclocking and today we're
+taking a look at the Nvidia Tyson V PCB
+so you know without any delay let's get
+right into it we'll start with the
+various VRMs that are located on the
+card and then we're gonna go into some
+of the details for the vcore vrm the HBM
+vrm and also how you could lift the
+power limit on this thing because well
+it chokes on the power limit pretty hard
+out of the box even after you increase
+it you know to the limit that the
+software allows that this card is still
+very very very very power limited as in
+video opening allows you to increase the
+stock power limit by another 20% before
+we get into those this coverage is
+brought to you by EVGA and their 1080
+tee is c2 which we've recommended fairly
+highly for its build quality and the icx
+sensors which are kind of fun to play
+with you can check our full sc2 review
+for the 1080i if you're curious to learn
+more or you can click the link in the
+description below to find the product
+page for the 1080i sc2 anyway let's get
+into the VRMs starting with the very
+oddly laid out V core vrm so you get one
+set of phases for v core right here and
+then you go across the card and get
+another set of phases for v core on the
+other side this vrm layout is you know
+as pretty much optimal it gets the vrm
+as close to the load which would be the
+GPU here as is possible for a you know
+PCB format of this kind and the reason
+why getting the vrm as close to the GPU
+core as possible is important is that
+well the less distance the current from
+the vrm has to travel the less voltage
+drop you get across the power plane and
+the better you get an better transient
+response you get because obviously if
+there's a big change in power
+consumption from the GPU core that
+change in current demand has to take
+some time to propagate so the longer
+your power plane is the bigger the delay
+between the current draw from the GPU
+core and it getting to the actual
+capacity
+banks and the inductors which results in
+slightly worse voltage regulation
+so this vrm layout is definitely really
+really good behind that we find the V
+the HBM vrm now the HBM vrm has kind of
+where the V curve erm sort of got layout
+PCB layout priority the HBM v RM is
+actually behind the V Corps V RMS one of
+the V Corps Buffay you know parts of the
+V Corps v RM this is really awkward for
+me to deal with because most cards you
+just have one big block even if that
+block might not necessarily you know
+like Vega has an L shape but this is two
+separate blocks but the HBM erm is
+located behind one of the sets of ecore
+phases and this does actually negatively
+impact the voltage drop from the HBM v
+RM luckily the HBM isn't super you know
+high power draw or anything so it's not
+you know it's not as critical to have
+the HBM v RM as close to the card as
+possible but it is noticeable as the
+voltage coming out of the HP mprm is
+pretty high considering what actually
+ends up getting to the HBM stacks that
+you have on the GPU so you know that's
+the HBM v RM and then you get the 2
+minor v rms up here so this one and this
+one we will not be going into the
+details of these i'm not actually sure
+which one does what but basically this
+card requires two more voltages in order
+to function one of them is the PEX
+voltage this is typically between 0.9
+volts and 1 volt this powers the PCI
+interface as well as some of the PLL's
+inside the GPU core this voltage is
+completely useless on air cooling I mean
+obviously the card won't work without it
+but worrying about tweaking this voltage
+is pointless it doesn't it won't help
+you overclock any higher the other world
+did you get is the 1.8 volts VPP as well
+as bias voltage so Nvidia cards have a
+the bios system on and video cards runs
+on 1.8 volts the HBM also has a
+supporting voltage of 1.8 volts this is
+similar to gddr5 XO
+is not a huge difference from what you
+would normally see on an nvidia card so
+those are your two minor rails I'm not
+sure which one does what
+but there's go these have to be present
+on this card to function another
+interesting thing you kind of find on
+this PCB is well is these two groups of
+four MOSFETs right here I am NOT one
+like I do not have confirmation on what
+these actually do and unfortunately the
+card is in the US and I'm in the I'm in
+the you know in Europe so I've not had a
+chance to probe this myself and well
+trying trying to get you know long range
+measurements just does not work for
+these kinds of things so I'm not a
+hundred percent certain what these do
+but based on the fact that there's an
+inductor right in front of them and that
+they're well you know between the PCIe
+eight pins and the V curve erm I have a
+sneaking suspicion that Nvidia these
+might be actual sort of sub V RMS which
+would be used for boosting vrm
+efficiency because when you have well
+basically we are converting doing DC DC
+voltage conversions from say 12 volts to
+anything less than 1.2 volts
+tends to be pretty inefficient due to
+the very low duty cycle that you end up
+running and you know the G V 100 here it
+runs on voltages anywhere from 0.75
+volts at full load to 1.09 3 volts full
+load so it's very much in that sort of
+it's outside the sweet spot for your 12
+volts down conversion and Intel for
+example deals with this on their mult
+very high core count Zeon's which run on
+very low voltage very high current they
+deal with that by having a fully
+integrated voltage regulator into and
+video doesn't have one so what I assume
+they're doing is there this this set of
+MOSFETs right here and this inductor
+basically would step down 12 volts to
+something like 8 volts and that would
+slightly boost the actual efficiency of
+the main V curve erm without really
+costing you a lot of
+power because this is a low current erm
+high voltage high voltage output so this
+can be very efficient without too much
+difficulty and it could significantly
+improve the actual efficiency of the
+conversion of the of the B curve erm but
+without the card in hand I I can't say
+for sure that that's exactly what it
+does but you do get two of these which
+would nicely line up with the fact that
+you have to you know power connectors so
+yeah just that's just my theory on what
+they do I'm not 100% certain so with
+that out of the way let's get right into
+the actual sort of meat of this which is
+the details of the vcore vrm and the HBM
+erm so the vcore vrm is an absolute
+monstrosity it may look like a one two
+three four five six seven eight nine ten
+eleven twelve thirteen fourteen fifteen
+sixteen phase V core vrm design however
+it's not actually a sixteen phase at
+least not with the way it's driven you
+do have sixteen inductors you do have 16
+power stages you do not have sixteen
+interleaved PWM signals back of the card
+here you can actually see that the card
+has mounts for PWM doubler chips but
+they're unoccupied so this card how it
+deals with the vrm is that assume this
+voltage controller right here is 4 v
+core unfortunately Nvidia decided that
+the voltage controllers on this card are
+two over the same chip so I'm not sure
+which one does what because either it
+could drive either vrm they both have
+the right phase counts for it but either
+way this is a monolithic power systems
+which I'm just going to abbreviate as
+MPs which is their company logo this is
+an MP 2 8 8 8 I'm not sure about the
+feature set of these chips I do know
+they do go up to 8 phase v r8 phase
+output and they do switching frequencies
+in excess of
+300 kilohertz however there is no public
+data sheet so I can't really give you
+any details on what other features these
+offer but either way on this card they
+are running you know one of them is
+running eight phase-- mode 300 kilohertz
+for the beaker of erm the other one is
+running two-phase mode for the HBM but
+basically the card is essentially a
+massive eight phase because of the lack
+of doublers so normally if you had a
+doubling scheme you basically would have
+a PWM signal is getting multiplied into
+sixteen by the actual doublers and here
+what you get is you basically have eight
+PWM signals and well if we have like say
+we have one PWM signal go here pw1 one
+then that signal also goes to want one
+other chip so essentially why this looks
+like an eight phase-- is that you have
+two phases turn on at the same time
+however this does still have benefits
+the huge number of power stages and
+inductors means you get very good
+thermal performance because the vrm is
+absolutely like it has a huge amount of
+surface area the other thing is the
+actual power stages are extremely
+high-end and you basically cut the
+current load on each power stage in half
+by basically having two of them turn on
+at the same time so the this vrm is it
+ends up being ridiculously powerful
+because these aren't any old you know
+any old power stages now these are
+Fairchild Semiconductor my C is terrible
+so these are Fairchild Semiconductor FD
+mf3 one seventies and the thing is these
+are 70 amp smart power stages so just
+SPS for short and the reason why these
+are well so they're 70 amps max output
+well they won't actually shut down at 70
+amps they shut down at 80 amps so that's
+part of the smart power stage
+functionality they have a
+an overcurrent protection of 8880 amps
+and they have a built-in over
+temperature protection of a hundred and
+thirty six degrees centigrade so
+basically once they hit one hundred and
+thirty six degrees centigrade they raise
+our flag that hey the vrm is kind of
+overheating here you might want to shut
+it down the OCP on the other hand shuts
+down the power stage the moment the
+current value is exceeded for the time
+period specified in the datasheet so
+basically you don't have to worry about
+this vrm you know destroying itself or
+anything because it has built-in
+temperature monitoring built-in current
+monitoring and built-in protection
+features right on the power stages
+themselves they are capable of
+sustaining up to 70 amps output however
+at that point their heat output is about
+14 watts each which you know that's just
+unsustainable so if you had one of these
+chips and a big enough heatsink for it
+yeah you could actually push 70 amps
+through it in a 16 phase vrm design on a
+cramped PCB like this that is not gonna
+work
+luckily the Titan V doesn't really pull
+that much power it does do it very low
+voltages but it really doesn't pull that
+much power on the stock power limit
+you're only looking at about 200 amps
+coming through the vrm because I'm
+assuming there's another 50 watts of
+power dedicated rest to the rest of the
+PCB and you're looking at about you know
+so you're looking at about 200 watts
+going into the GPU core which around 1
+volt works out to about 200 amps current
+output obviously at the lower voltages
+it would actually be more current output
+on the with the power limit max out so
+with plus 20% power limit you're gonna
+be looking at the whole card pulling
+about 300 watts I'm gonna assume that is
+still pulling the same amount of power
+for the fan and the HBM because we're
+only looking at the core power
+consumption here because the route I'm
+that's an assumption but is it probably
+a pretty good one in general that works
+out and then with the lifted + 20% power
+limit you basically be looking at
+something like 250 amps output for the
+core vrm which for these monstrously
+overpowered smart power stages
+is really not a workout which is really
+really good because it means this vrm
+ends up being ridiculously efficient and
+in fact it ends up being a ridiculous
+overkill I think this might be because
+the this PCB is probably used for tests
+laws as well that go into outright data
+centers and well data centers want
+tip-top reliability so you know anything
+less than massive overkill is just kind
+of not acceptable there so the end
+result is that at these typical current
+figures both that around one volt output
+because really the on stock the voltage
+output and fluctuates so much it's
+really hard to say and on on the plus
+20% power limit actually ends up
+hovering around point 0.99 three volts
+well I'd like to say at 1 volt you know
+for these current outputs I have actual
+heat dissipation numbers for these power
+stages unfortunately the datasheet for
+these power stages does not specify how
+output voltage impacts efficiency so the
+datasheet is entirely SPECT at 1.8 volts
+however at 1.8 volts 200 amps output
+you'd be looking at 19 watts of heat
+output for the entire v core vrm so
+spread across this much air surface area
+that's going to be nothing and I would
+like to point out that these power
+stages should get more efficient at
+lower output voltages because this is uh
+they're optimized for ten percent to
+fifteen percent duty cycle that 1.8
+volts output is on the high side of that
+ten to fifteen percent so realistically
+you're gonna be looking at less than
+nineteen watts of heat output at stock
+and four plus twenty percent power limit
+you're gonna be looking less than twenty
+four watts heat output because again
+it's 1.8 volts 300 kilohertz switching
+frequency for the whole vrm which I did
+mention earlier so really really
+efficient unfortunately it's hard to say
+how this compares directly against some
+other top-end you know say gtx 980ti
+VRMs like say a hall-of-fame because for
+those i actually have these sheets that
+work at lower voltages and
+yeah it's hard to do the comparison when
+these are only rated at 1.8 volts they
+should be right about in line with the
+other power stages that are used on say
+a gtx 10a DTI hall of fame or a gtx
+980ti kingpin edition in fact this VRM
+is more powerful than what you would
+find on a gtx 980ti kingpin edition and
+probably more powerful than what you'll
+find on the hall of fame - just because
+these power stages do max out at 70 amps
+instead of the 88 instead of the 60 amps
+that the International rectifier is 35
+75 and the 35 55 used on the Hall of
+Fame and the kingpin max out at so
+basically NVIDIA has for the first time
+built a card where I'm gonna say you
+don't need to upgrade the vrm on this
+you're gonna need to strap a pretty big
+heat sink to the vrm maybe get a lot of
+airflow so very high rpm fine if you're
+gonna take this on liquid nitrogen which
+I doubt anybody will do because you know
+if the card is three thousand dollars
+but on the off chance that you know if
+you want to take one of these on liquid
+nitrogen you don't you shouldn't have to
+worry about the vrm and if there is a
+vrm problem on this thing there's not
+really an alternative unfortunately they
+don't make a 32 Phase II power that I'm
+aware of at least so there is not much
+you know there's not much room to
+upgrade the VR and this is pretty much
+the peak of GPU vrm power capability
+certainly I think it would be better if
+it interleaved and maybe ran a higher
+switching frequency after interleaving
+but at least in terms of raw power
+output this thing is an absolute beast
+and to put a real number on that well
+let's say you wanted to push 600 amps
+through this monstrosity at again that
+1.8 volts figure it would only produce
+about 90 watts of heat which is in line
+with every other top-end 1080 Ti as well
+as any other top-end extreme
+overclocking GPU that I've ever seen in
+terms of erm heat dissipation so yeah
+this thing is amazing
+absolutely amazing in terms of the B
+curve erm
+so nothing to complain about
+unfortunately except you know it could
+actually get 16 phases I think here 16
+phases would be justifiable compared to
+like 780ti is in you can you can get
+away with 10 you can get away with 12 or
+16 but here I it's liking those those
+doublers don't cost that much there's
+footprints on the PCB already for them
+why aren't they there I have no idea but
+power-wise I I've got no complaints now
+then let's move on to the HBM VR I'm the
+HBM vrm as you can clearly see is a 1 to
+phase affair the third phase took a
+vacation I think along with the HBM
+stack that is actually disabled on the
+Titan movie as the GV 100 chip and it's
+full implementation this would come with
+for working HB m stacks this version
+only has three so I assume that one of
+the phases got taken away because well
+you're not running all four stacks of HP
+m you're only running three so you can
+you know you can get rid of that extra
+phase the power stages are exactly the
+same as what you had for the vcore vrm
+so again massive freaking overkill for a
+assumed output of about 35 amps for the
+HB m which i think might be a little bit
+high
+or maybe I'm overestimating the vcore
+vrm output currents for 35 amps at well
+again that 1.8 volts cuz the same power
+stage with the equally limited power
+datasheet you'd be looking at the power
+consumption below 40 watts for the CRM
+so in terms of at least efficiency
+there's nothing to complain about is
+it's a two-phase memory vrm so you know
+that this is more phases than a few
+reacts had for its HP m1 this is more
+phases than a Vega has for its HBM I
+can't complain about this again very
+very impressive controlled by the same
+monolithic power systems MP 2 8 8 8
+voltage controller but this time
+configured for only two phases I imagine
+there's some versions of this card where
+it has the full three phases I assume
+that would be the tesla version so yeah
+again just Nvidia like where did this
+come from
+I'm super surprised cuz I'm used to
+seeing you know reference and video PCBs
+and recently they've gotten a lot better
+but most of the time it was a case of
+like this this is kind of impressive too
+especially on some dual GPU and video
+cards it was actually outright
+concerning like how long do you expect
+this vrm to last I imagine you know no
+overclocking allowed is is a policy that
+actually for example a GTX 590 doesn't
+support overclocking at all specifically
+because the vrm on that was so shoddy
+but this is just like this is up there
+this is up there with the Hall of Fame
+this is up there with the kingpin
+edition arguably this has the better vrm
+layout than basically any other extreme
+overclocking card because as I said
+before the you have the V curve erm
+flanking either side of the GPU core
+which there was some ln2 like there was
+some extreme overclocking GPUs and high
+phase count V RMS that we've seen on an
+exam 1080 T eyes 980 T is and a few
+other cards where they would actually
+like put two rows of phases behind each
+other which like it works out great for
+your power capabilities but you end up
+in a situation where you're wasting
+power on on basically just getting power
+from the furthest the sets of phases to
+the GPU core so this thing is just like
+amazing absolutely amazing I I'm not I
+mean I I've never had any doubt Nvidia
+could design a good vrm I never thought
+they would want to but they have this is
+awesome now then let's go and take a
+take the chains off and lift those power
+limits so the cardia has an interesting
+power monitoring situation there's
+actually way more shunts on this than
+you would expect there's only three 12
+volts inputs you have plus 12 volts on
+the PCIe you have plus 12 volts on the
+six pin you have plus 12 volts on the
+eight pin but for some reason there's
+three current monitoring shunt resistors
+so you have one down here which would be
+for the PCIe slot this one up here which
+is probably for this expen this one down
+here which is for the eight pin and you
+have an i na three to two one Texa this
+is a chip from Texas Instruments
+Nvidia's favorite voltage
+current and voltage monitoring chip for
+basically monitoring power consumption
+so this thing is really easy to trick
+I've done it on a 1070 you can actually
+do all kinds of if you feel like doing a
+lot of soldiering you can basically
+de-solder the monitoring circuit that
+this normally runs on the actual power
+inputs and you can replace it with well
+you can set up a voltage divider from
+plus 12 volts which you can source from
+the PCIe slot or the eight pin or the
+six pin you set up a voltage divider and
+you can feed they're completely fake
+voltages into the actual monitoring
+inputs that will remove all power limits
+you can also use resistors varying sizes
+to reduce power readings by up to five
+times and the last option which is
+probably the option most people will opt
+for is well most people there's not that
+many people with this so it's gonna be
+like what three people on earth they're
+gonna do this but the last option is
+that you put liquid metal across the
+actual shunt resistor or you can go with
+with conductive ink pens and you can
+basically just draw across the shunt
+resistors this lowers the electrical
+resistance of the shunt and the way
+shunts work is the well by a three to
+one just monitors the voltage drop
+across the shunt resistor and from that
+voltage drop it calculates the amount of
+current going into the card and also
+since it's monitoring the voltages it
+does current times voltage e were called
+power consumption and that's how the
+in-video driver knows how much power the
+card is pulling and if it needs to lower
+the core clock or if it can just go wild
+well if you tweak the resistances on the
+shunts or you know just completely fake
+all the measurements for the ia three
+two to one the driver will not know how
+much power the card is pulling and as
+long as it thinks it's pulling less
+power than the maximum than the power
+limit it'll allow the card to clock
+higher and higher and higher and let you
+push basically as much power as you can
+possibly want so that's the shot mod
+there's also this shunt down here but I
+would recommend that you basically don't
+touch that one because I can't figure
+out what it's hooked up to and why it's
+there if I had
+the card in hand I could probably figure
+out what it's for but as it is right now
+I have no idea so I would just not
+bother with that one for safety's sake
+so yeah that that covers the PCB the
+only other side note I have about this
+thing is there is a loss of unoccupied
+solder pads on this it almost looks like
+an engineer like is it kind it just kind
+of looks like an engineering sample PCB
+but I guess this thing is so low
+production volume or maybe it's just
+since it's a professional card it might
+be because they want to be able to check
+for any damages better but yeah this
+thing this PCB is really cramped and
+there is a lot of unoccupied solder pads
+which I find really odd but there's no
+negative there's no real downside to
+that there's also the missing a pin up
+here but we've been seeing that on a lot
+of a high end in video cards for a while
+now so I don't find that surprising even
+remotely but yeah this thing you know if
+you're buying a $3,000 GPU especially
+this one you can be at least certain
+that for once you're getting a vrm that
+it's more or less worth the $3,000
+asking price on the card I still say I
+would like to see doublers but you know
+power capability wise this is this is
+amazing but yeah I'd like to see
+doublers because with more interleaving
+phases you basically get better or vrm
+ripple voltage ripple but going from
+eight phases to 16 phases tends not to
+make as much of a difference as going
+from say three to eight so and video
+probably calculated that past this phase
+account it doesn't really make a
+difference for their usual applications
+and decided that we're just gonna keep
+the efficiency of the 16 phase
+monstrosity that we built and you know
+that's that's fine but I'd still like to
+see a 16 phase and that's it for this
+PCB breakdown thank you for watching
+like share comment leave a comment down
+below or any questions if you would like
+to support
+we do here at gamers Nexus and we have a
+patreon you can find a link down in the
+description below for that and if you
+would like to see more overclocking
+related videos I have my own channel
+called actually hardcore overclocking I
+do other PCB breakdowns for GPUs
+motherboards and I also do various
+modification guides experiments
+overclocking live streams and all kinds
+of other overclocking related content
+thank you for watching and see you next
+time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

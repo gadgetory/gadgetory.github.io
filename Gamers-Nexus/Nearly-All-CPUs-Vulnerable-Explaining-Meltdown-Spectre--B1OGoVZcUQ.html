@@ -1,0 +1,380 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Nearly All CPUs Vulnerable: Explaining Meltdown &amp; Spectre | Gadgetory - Your Gadget Factory</title><meta content="Nearly All CPUs Vulnerable: Explaining Meltdown &amp; Spectre - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Nearly All CPUs Vulnerable: Explaining Meltdown &amp; Spectre</li></ol></div><h2 class="post__title"><b>Nearly All CPUs Vulnerable: Explaining Meltdown &amp; Spectre</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/-B1OGoVZcUQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">we know there's a big story when we got
+several tweets messages and emails about
+one topic in rapid succession and that
+topic is the new Intel and potentially
+AMD an armed security vulnerability
+that's been discussed on the Internet
+this would be pertaining to specter and
+meltdown two new attacks that can be
+used to gain access to information on
+your computer these topics enter areas
+where I am personally not an expert I am
+NOT knowledgeable enough on them to
+provide an opinionated response and a
+lot of you wanted that when tweeting at
+us so what we did instead is some
+research we looked around a lot dug up
+all the information we could on these
+topics and we've put together a piece
+that should hopefully give you
+information on what this vulnerability
+is from a non opinionated standpoint
+just strict facts about everything and
+how it impacts you what the next steps
+are for the companies involved and the
+discussion on performance so the point
+here is to look at this completely
+factually and journalistically and avoid
+opinions because again it's not really
+what we do but we can do research and we
+do know a technology a bit so hopefully
+this helps you out with understanding
+what all of this is before we get into
+that this content is brought to you by
+the Thermaltake flow RGB closed-loop
+liquid cooler which is a 360 millimetre
+radiator plus 3 120 fans that are RGB
+illuminated if then we'll take it ringg
+fans at that this is a 4.5 done a stack
+pump which is one of the faster pumps
+you can learn more at the link in the
+description below the shortest version
+of the issue is this Linux and windows
+operating systems are undergoing major
+reworks to cope with security
+vulnerabilities that are present on the
+last 10 years worth of Intel CPUs with
+Spectre exploits discovered on AMD arm
+and Intel CPUs alike everyone is
+affected and at least some capacity but
+the exploits affecting each vendor vary
+the hardware itself isn't insecure or
+physically compromised but it requires
+software changes to close security holes
+that are present the concern from the
+community has been how these security
+holes will change the performance
+because as we close those initial
+reports from gr secure
+indicated between 5% and 29% performance
+deficit and note that the commonly cited
+29% number was derived from a 6700 test
+bench with page table isolation one of
+the proposed hardening techniques for
+increasing security this was found with
+our ap or rap Linux benchmarks and the
+number is not a blanket number for all
+performance changes but we'll get to
+that momentarily
+what is the vulnerability though project
+zero a Google team reported that there
+is a system call issue with the kernel
+which could lead to security
+vulnerabilities when a virtual memory
+allocation is read projects a zero
+reported this issue to not only Intel
+but also AMD an arm back in June of 2017
+there are two separate attacks that have
+been developed around this security
+vulnerability and they are codenamed
+meltdown and specter meltdown is a
+breakout attack this means it's capable
+of exiting the confines of virtual
+environments and spectre is a
+speculation execution attack meltdown is
+the worst of the two attacks and is
+known presently to affect Intel with
+indeterminate effect on Andy and arm the
+team is still researching and Spectre
+does affect Intel Andy and arm alike but
+we'll see about meltdown both attacks
+are capable of intercepting user data
+that is currently being read
+particularly when involving virtual
+memory allocation these attacks give
+access to data stored in memory which
+could include passwords usernames and
+other transactions that are being
+actively moved between memory and the
+CPU this is particularly concerning from
+an enterprise or service standpoint as
+one of the attacks leverages at branch
+prediction exploits too as a KVM guest
+read the memory of the host kernel this
+has severe implications for virtual
+machine users primarily those who may
+slice servers into multiple virtualized
+environments for customer use meltdown
+for example is capable of granting an
+attacker full access or control over the
+contents of physical memory on the
+machine and that breaks the boundaries
+of virtual machines project zero notes
+that the meltdown quote
+brakes the mechanism that keeps
+applications from accessing arbitrary
+system memory and that quote Specter
+tricks other applications into accessing
+arbitrary memory locations in their
+memory stating further that both attacks
+use side-channel attacks to obtain
+information from the accessed memory
+location the researchers at behind
+meltdown inspector have published papers
+on these exploits and have also
+published an FAQ for consumers the very
+first question am i affected by the bug
+the answer is equally simple most
+certainly yes the researchers note that
+we meltdown exploit has worked on Intel
+CPUs dating back to 2011 and they've
+also noted that they are not yet clear
+on whether meltdown
+explicitly works on arm or AMD
+processors when we asked Intel for a
+statement we were sent this page where
+the company alleges that these exploits
+may also affect Andy and arm
+we've asked AMD for a statement
+countering this but we are currently in
+a holding pattern Andy did however
+publish its own a short note about these
+exploits as of now Andy isn't mostly
+noting that they're aware of the
+vulnerabilities and that the company is
+investigating further critically Andy
+notes that they do not think these
+exploits have been used in the public
+domain
+though the meltdown researchers say that
+they are uncertain whether meltdown or
+meltdown like attacks have been deployed
+publicly so we're not fully sure yet as
+for the specter attack the team notes
+that this exploit has been verified on
+Intel Andy and ARM processors and notes
+that it will work against nearly every
+type of computer including smartphones
+and cloud servers Google by the way has
+confirmed that Android is affected and
+has issued a security advisory about the
+attack Intel issued a statement
+finally and Andy issued its own short
+news item neither of the latter have had
+much information while google has
+published some of the most detail on the
+subject if you're interested in further
+reading check out what project 0 wrote
+so then why did this happen at all to
+begin with the meltdown white paper
+indicates a root cause being branch
+prediction on the cpu's particularly
+speculative
+branch prediction the foundation for
+spectres name speculative prediction is
+something we have talked about before
+primarily with GPU architectures branch
+prediction is the goal of the CPU or GPU
+to execute commands before those
+commands are ever issued the idea is to
+reduce wait time maybe the command never
+comes and so the work is wasted but the
+potential upside is worth it as the
+pipeline is sped up and tasks can
+execute with lower latency and in this
+instance of the attack some data can get
+left behind in l1 cache which should be
+protected data but the exploit is able
+to gain access to that orphaned
+information giving attackers access to
+potentially sensitive data like
+passwords or usernames Specter is
+interesting this one is able to attack
+user space in virtual machines the white
+paper details an example where Java
+Script code running inside of a Google
+Chrome browser could be leveraged to
+read data sent through Chrome like
+reading a field from inputs on websites
+this attack can be deployed through
+JavaScript downloads and as we
+understand it this could mean that an ad
+network compromised for example could
+have disastrous effect this has already
+been tested as successful by the way on
+the Chrome browser and could
+theoretically work on other browsers so
+it's not just hypothetical this works as
+an attack this issue doesn't come down
+to just sacrificing security for sake of
+speed either kernel level security would
+indicate that memory should be protected
+by other models like address space
+layout randomization GN patreon backer
+Steve straizo was able to provide a
+great example of this and quoting Steve
+with address space layout randomization
+or ASLR it's basically real inking a
+program at random locations at launch
+time you can't just say give me the
+memory at zero by de adb EEF because I
+know that the users password is there as
+well as kernel ASLR or a KS lr which
+does the same thing but for kernel
+memory since the kernels memory isn't
+protected any more it can be read at
+will by the attacker it's not a speed
+versus security thing the security was
+supposed to happen elsewhere what
+happens now
+I expect a large dump of information on
+January 9th this is when the embargo
+lifts on everything that's been kept
+behind doors so far this will be the
+next major milestone for us and we point
+at which the general consumer and in our
+community we should be able to obtain a
+better understanding of what's going on
+and if it changes the way pcs perform
+the most immediate steps are being taken
+by the hardware and software
+manufacturers with Microsoft
+fast-tracking updates to Windows for
+security this is a software level
+solution as the hardware itself is not
+physically compromised if you own
+affected CPUs and you do even if
+specters affecting AMD you can expect
+software level patches to help resolve
+some of these concerns arm has already
+developed software solutions that can
+mitigate the effect of Spectre
+specifically Linux kernel virtual memory
+systems are already being overhauled and
+Microsoft is working toward a January
+9th patch and has already issued
+improvements to the fast-track or fast
+train users the question is whether or
+not any of these fixes will impact
+performance negatively that's the big
+concern
+so then performance claims early claims
+by gr security have gone through a game
+of telephone at this point initial
+reports showed potential for 5% to 30%
+performance deficit in some specific
+tasks with different tasks suffering in
+different ways the performance loss
+comes by the way of introducing more
+latency done by nature of adding more
+layers of security what this does not
+mean however is that every CPU in every
+application will instantly be 30% slower
+most of the major performance slowdowns
+have been reported with enterprise level
+software not necessarily consumer level
+software for onyx for instance has
+already published some preliminary
+gaming benchmarks on Linux and they have
+shown a performance deficit that is
+largely within margin of error this is
+only one operating system of course with
+only a few games so there's room for
+other games OS Azure CPUs to be impacted
+in greater ways but for now it doesn't
+look too bad for gaming what we're most
+curious about though is the impact to
+workstation and for
+type applications these straddle a line
+between consumer and enterprise uses and
+we're unclear of the performance losses
+and whether they can be mitigated with
+more time for example of these panicked
+fixes were just thrown together quickly
+there may be better solutions later this
+isn't to downplay the significance of
+the exploit nor the significance of lost
+performance but to restore some sanity
+to the discussion when citing numbers
+for example 30% performance loss it's
+important to know where they come from
+and if they impact the implications
+you're talking about in that context
+we're waiting on further performance
+testing at this point and we'll have to
+see how that goes with CES going on as
+well because right now we've got CES to
+worry about as does everyone else and
+the patch publicly will launch on
+january 9th which is when CES is
+basically starting so that's nice gifts
+from Microsoft and everyone else in the
+community we will be talking with
+vendors at CES about this performance
+concern or these security concerns in
+general and we'll just have to update
+from there until that time though we're
+gonna do our best to stay on top of the
+story you can get faster and updates to
+Windows and do some preliminary testing
+we might but it's just a question of if
+we have time before the flight and we
+probably don't but we'll try and in the
+meantime don't be too concerned because
+there's not a lot you can do anyway and
+just see what happens with the patch if
+you do want to use the faster an update
+though of course be aware that there are
+some stability concerns with any early
+deployments of a patch or OS and it's
+just a matter of how much you think or
+how likely you think you are to be
+affected by this bug Intel statements
+thus far have left a lot to be desired
+they are not responding in a way that
+that really reveals information that
+could be useful in determining what
+specifically they plan to do in the
+future to resolve this and tailed it a
+big statement saying they're gonna be
+more aggressive in the future so this
+would be a good time Intel to show us
+what you mean by that
+Andy has issued a brief it's not really
+a statement but just just a brief really
+short quote that they are aware of
+vulnerabilities and they're researching
+them we've been in contact with both
+companies we did not receive more from
+Intel than the statement they've already
+publicly posted andy is they basically
+have us in a holding pattern and we'll
+update everyone via the website gamers
+nexus net which will link below if they
+do provide more information for us but
+that's all for now
+hopefully this type of video worked out
+for you because as stated it's not
+really our core expertise so it came
+down to researching and compiling
+everything to just provide a facts only
+overview of it and hopefully we did an
+okay job of that for you
+quick thanks to Steve Strasser from the
+GN patreon community who also runs a
+YouTube channel stress byte
+Steve's Reza is a developer and I was a
+decent amount about this stuff though he
+didn't want me to note that he's not a
+security expert but he did help provide
+a lot of the backing information for
+this topic so subscribe for more as
+always you go to patreon.com/scishow and
+extra stops that directly or store
+gamers nexus net to ping my shirt like
+this one I'll see you all next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

@@ -1,0 +1,585 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>2x Power Draw: GPU Shunt Shorting Mod (Titan V) | Gadgetory - Your Gadget Factory</title><meta content="2x Power Draw: GPU Shunt Shorting Mod (Titan V) - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">2x Power Draw: GPU Shunt Shorting Mod (Titan V)</li></ol></div><h2 class="post__title"><b>2x Power Draw: GPU Shunt Shorting Mod (Titan V)</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/3pflC72NfnU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">so we're finally doing the shot mod and
+we're trying it first on a three
+thousand dollar card the Titan V the
+idea of this mod is to help reduce the
+power restriction that we're facing with
+the card and Vidya has shunts that are
+inline and those help determine how much
+power is being drawn so if we can trick
+the card the GPU into thinking it is
+drawing lower power than it actually is
+that will give us more power Headroom
+for overclocking and for maintaining
+higher clocks for longer periods of time
+this will help us in our endeavors to
+hold the top slots on time spy extreme
+or whatever until the real overclockers
+get their hands on cards and it'll be a
+good learning experience so we can show
+how you can find shunts and what the
+process of shorting them does this video
+is brought to you by the gamers Nexus
+anti-static mod mat our mod mat uses a
+high quality anti-static surface with a
+rubberized finish we also have a custom
+paint job on it which includes reference
+points and cheat sheets for PCIe eps 12
+volt and other power cables along with
+quick reference throne paste application
+guides a screw sorter for your video
+card tear downs and it includes a common
+ground point and a grounding strap to
+help protect the products you are
+working on from electrostatic discharge
+preorder your mat now at the link in the
+description below so starting at the
+very basics the shunt resistor exists so
+that Nvidia can figure out how much
+power is being supplied to the GPU at
+any given time which allows them to then
+determine at what point it's time to
+start power throttling the GPU we have
+removed the thermal throttle scenario by
+modding the card to have a liquid cooler
+on it there are three primary candidates
+for clock drops or clock monitoring or
+mitigation on NVIDIA it's thermals we've
+resolved that it's voltage and then its
+power the last you kind of go
+hand-in-hand so to figure out how much
+power is going to the GPU and Vidya is
+putting an inline shunt resistor which
+has a known voltage going into it 12
+volts coming from the PCIe connectors
+and it has a known resistance in this
+case five milli ohms if you look at the
+components it's written right on
+so what they need to know is the current
+and they can figure that out from all
+the other numbers that we've laid out so
+then if we short the shunts with liquid
+metal we are basically tricking the GPU
+into thinking it's pulling less power
+than it is there are components on the
+board like the AI na 3 2 2 1 which we
+can highlight over on this side of the
+board so this thing right here is the AI
+na 3 2 2 1
+this device is responsible for
+monitoring the voltage drop across the
+shunt resistors this is a shunt resistor
+there are several of them on the card so
+what happens is when the AI na 3 2:21
+detects that we are starting to near the
+power limit it's going to send the
+signals required to start power
+throttling the clock we're going to have
+lower core clocks as a result and that's
+what we're trying to fix so point out
+the shunts that we have we've got this
+one over here the suspicion is that this
+links up to this 8 pin connector and I'm
+going to show you how we can prove that
+just to be safe there's this one over
+here this shunt also 5 milli ohms we
+think talks to the 6 pin by way of
+proximity there's another shunt this one
+we know talks to the PCIe slot and then
+finally there's mystery shunt
+over here and we're not sure what this
+goes to and then we're going to short
+these two exclusively to try and trick
+the GPU to a point of thinking that it's
+facing less resistance maybe increase
+our power budget a little bit by doing
+so so let's start off by making sure
+that the shunts are the correct ones if
+you're ever planning to do a shunt mod
+on an expensive card and you find a
+tutorial on the Internet whether it
+comes from us build Zoid or so on random
+you should probably double check to make
+sure the information is accurate you can
+do this by taking a cheap digital
+multimeter or voltmeter and what we're
+gonna do is measure to determine which
+shunt is in the power line for which
+power connector so let's just go ahead
+and start with a scenario that we think
+will will not work so what we're looking
+for we're measuring resistance so you
+switch into ohms so measuring resistance
+between the the power line which is
+going to be actually we have our our GN
+mod mat over here showing its usefulness
+already so this is a plug it really
+quickly if you got a store that gamers
+Nexus dotnet slash mod mat you can pick
+one of these up we have them on
+pre-order now they're anti-static as
+well but it has this handy chart on it
+so we have an 8 pin and a 6 pin and what
+we need to do is measure the 12 volt
+lines from each against the shot you can
+measure either side of the shunt versus
+any of these yellow pins on our mat if
+and I can demonstrate this if you
+measure this pin the extra cents pin
+actually right here cents B if you
+measure this cents pin it's not gonna
+work it'll give you an invalid value if
+you measure any of the ground pins same
+thing so we need only the yellow and
+those are our 12 volt lines the reason
+we need these is because this 12 volt
+line is going to have the shunt in line
+with it so if we are measuring
+resistance from the shunt to the correct
+12 volt line we should see zero ohms or
+very close to it zero resistance if
+we're measuring incorrectly or to the
+incorrect line or to a ground you'll see
+an increasing number over time a nonzero
+number we'll call it okay so we already
+know where we think each one goes to I
+think this goes to eight this goes to
+six I'm gonna measure them to the
+opposite of what I think just to make a
+point so we can measure either side of
+the shunt resistor again so let's just
+choose the sense pin so again
+referencing our mat this far right pin
+is a green pin it's sense it is not
+voltage so we're going to measure that
+verse is the shunt resistor and we
+should get an increasing value over time
+a non zero value as you can see that
+number is increasing right now if we
+measure it versus the ground or the
+black on the mod mat you can see that is
+an increasing nonzero value so then if
+we measure it against a 12 volt line
+we're gonna see either a zero value or
+nonzero let's measure
+first against the 8-pin that should be
+nonzero and it is so you can see that
+numbers going up so it this is not this
+shunt resistor is not in mine with that
+power connector let's measure against
+the six pin all three of the bottom row
+are 12 volt referencing our mod mat so
+we can point out one of those I mean you
+get a zero value now it will
+occasionally increase a little bit
+because it is one a cheap meter and two
+it's refreshing its measurements
+regularly but whenever we kind of back
+off and go back on to check we're gonna
+get a zero value or extremely close to
+it
+so this shunt then is in line with that
+six pin because we're getting basically
+zero values every time we check next
+thing to do is check this shunt
+so we've now has determined that this is
+goes to here this goes to here so we can
+short these two so here's the safety
+disclaimer liquid metal contains gallium
+gallium could potentially react poorly
+with ten solder contains ten these shunt
+resistors are soldered to the PCB with a
+ten solder
+if we put a gallium liquid metal on the
+top of it it is possible that if we
+don't protect the solder you could over
+time have a reaction that causes the
+liquid metal to eat the solder and your
+shunt will fall off the card so that's
+your disclaimer we are only doing this
+mod for benchmarking and it will be very
+brief we're not leaving this for months
+at a time I'm not recommending that you
+do it it's at your own risk so we should
+be fine but I wanted to point that out
+so to prevent any issues there you can
+use a nail polish around the perimeter
+you can use a liquid tape you can use
+electrical tape there's all kinds of
+options we're gonna put a very thin
+layer on here and just make sure we're
+protecting any components that are
+neighboring to prevent the liquid metal
+from shorting those while we are also
+shorting the shunt so it's just kind of
+paint over those now part of this
+process is building like I said a wall
+or a moat or a well around the resistor
+per take you
+below it we're gonna have this vertical
+and a bench that means if liquid metal
+drips off it's gonna drip down so this
+we're gonna use thermal grisly conduct a
+knot and I have actually some liquid
+metal that is still still on the q-tip
+from originally using it like a month
+ago which goes to show that this stuff
+doesn't actually just evaporate over a
+period of a month like some people say
+online so we're gonna use whatever's on
+there and if I need more I'll add it and
+trying to be very precise here this can
+be removed with rubbing alcohol pretty
+easily cotton ball also is very helpful
+in removal and we just need to bridge
+each side of the shunt to the other side
+as always with liquid metal the key is
+to use as little as possible
+especially when we're concerned about
+solder joints and solder health of the
+ten underneath it so we don't want any
+excess that'll drip down and cause
+damage and this you'll notice it doesn't
+have any liquidy look to it actually
+looks like it's going on more like a
+paint than anything right now like a
+paint pen almost so if we get kind of a
+zoom on that painted over shunt you can
+kind of look at the other ones around
+for comparison there's no pool of liquid
+metal here obviously you're gonna want
+to watch multiple sources if you're
+really doing this rather than just take
+it only from me but I think you'll be
+able to get an idea of what it looks
+like from a first-time perspective while
+also hopefully understanding why we're
+doing it so that should be okay at this
+point you can still see the five million
+text on it for the most part so it's not
+too thick of a layer if it doesn't work
+I'll put more on there and at this point
+what you need to know is what happens
+next so next we're going to clamp the
+twelve volt on each so we've got six
+cables to clamp and they're gonna be the
+lines closest to the back of the card
+where the backplate would be so that
+would be
+this bottom row down here is what we are
+clamping so we've got one two three four
+five six and this is a sense pen we
+don't want it so we're clamping these
+six connectors and that will tell us
+power consumption the next part is to
+run a test that has a known power
+consumption for us we can use x bi or
+firestrike and then we compare those
+numbers to the numbers with the shunt
+mod not applied with the cardstock and
+if in fact we are seeing higher current
+going into the card through PCIe that
+means that it worked because that's all
+of that happens before it ever hits the
+PCB so the shunts aren't doing anything
+yet and we're measuring only input
+current what's happening over here is
+the GPU is being tricked into thinking
+that it has it's actually able to pull
+that extra current through the headers
+because it thinks that it's running at a
+lower wattage than it is which is again
+just P equals VI calculation so that's
+what we're testing okay excuse the set
+layout changed it's been a few days we
+did some more testing on it so for the
+card we had up making a few changes from
+what was done in the first half of this
+video the main ones are that the third
+mystery shunt which builds I'd had
+initially said until we can figure out
+what it does leave it alone we end up
+shorting that one anyway we needed to so
+the first round of shorted testing done
+with the modded version that you saw
+leading up to this point did not really
+work it didn't do anything bad but we
+weren't when we tested the frequency and
+the current it wasn't any different at
+all really
+than a reference card we're talking
+tenths of an amp difference within error
+well with an error so it didn't work so
+the next step was to apply some liquid
+metal to the third shunt and did a quick
+multimeter check of that one to checking
+the resistance and found that it aligned
+to both eight pins the empty eight pin
+and the wired existing eight pin that's
+on the card so the third
+Gault's is two shots go to that eight
+pin connector so we shorted that one as
+well and started to see a bit of a
+difference it was maybe one to two amps
+getting to be enough of a current
+difference where your 1020 watts more
+than you used to be pulling through the
+cables that's still not a lot it doesn't
+really change anything the frequency
+looks about the same so after some
+consultation with build Zoid and others
+we found that the amount of liquid metal
+you apply to the shunt directly impacts
+how much you are bypassing that
+5,000,000 resistance per shunt resistor
+so the reason for that is well there's
+so there's two things consider one is
+the more liquid metal you apply you
+start encountering two issues one is
+that it can drip and cause damage or
+short things on the card the other
+concern is that it can start eating
+through the solder around the edges of
+the shunt resistor if there's a lot of
+it that's kind of dripping over the
+edges of the shunt or just you leave it
+there for long enough that it will start
+eating through what's what's on there
+for the solder for the 10 so that's a
+concern we apply just a little bit more
+what we'll call a medium amount of
+liquid metal it's basically it's not
+quite a pool of liquid metal but it's a
+it's another layer to the surface that
+started showing real impact and then we
+did a bit more than that what we called
+heavy but it still wasn't a pool of
+liquid metal and that allowed us to go
+from something like 18 amps to at the
+high 32 amps it's a big difference there
+a major difference nearly double getting
+towards it so it works we finally were
+able to get a shunt mods work we're
+gonna go through the data now on some
+very quick fire strike scores using our
+game bench this is different from our X
+299 bench that we used for the the top
+10 record attempt we'll talk about that
+more later but we're starting with the
+game bench to establish a baseline of
+what kind of frequency difference we saw
+and what kind of current difference /
+power consumption difference we saw
+let's start with some fire strikes
+scoring just to establish the gains were
+seeing and we'll move on to frequency
+and power next with fire strike ultra
+our first shunt mod attempt had us going
+roughly the same as our normal hybrid
+card without the shunt mod the
+differences were within variance
+and error so non-existent and again
+after consulting build Zoid and several
+dare bower videos on this we decided to
+short the third shunt which got roughly
+the same results initially but after we
+added more liquid metal we finally
+started seeing change with a medium
+application of liquid metal a bit more
+than what we showed in the earlier half
+of this video but not yet a giant pool
+of it we were able to achieve a constant
+score uplift of about 0.7 percent it's
+not much but it was consistent
+repeatable and was enough to show that
+we were on to something
+adding up more liquid metal helped we
+boosted up to 95 18 points equating a 3
+FPS gain if you were to convert it over
+the non shortage shunts and the result
+is a boost of about 2.7 percent that's
+enough to start budging our score is
+higher for firestrike competitive
+overclock and a testing or Hardware
+bought scores things like that if you're
+shooting for higher ranks and
+overclocking is worth considering
+it's not really worth much for actual
+gaming but that's just something you can
+see in our sniper elite scores which
+we'll throw on the screen now as you can
+see what something like Sniper Elite an
+actual video game that even leverages
+the extra clock stability more than most
+games would the games still aren't
+gigantic it's something it's enough to
+prove that it works but not really
+enough to do as a normal gaming upgrade
+you really want this for more
+competitive workloads we saw less
+scaling with fire strike extreme
+expectedly it starts becoming a CPU
+bench at that point but we'll look to
+our ex 299 bench momentarily for bigger
+gains what's more interesting is that
+the shunt mod provided enough power to
+our GPU to complete the times by
+benchmark previously without these
+shunts shorted we had issues with times
+by crashing under this plus 200
+megahertz offset overclocked for the
+core and the HBM we could not complete
+the benchmark without reducing our clock
+offset or increasing liquid metal on the
+shunt resistors and here's why we're
+seeing those gains this chart is a
+frequency versus time chart you'll
+notice that most tests like the
+benchmarks without shunt shorting have
+some fluctuation and dithering between
+clock frequencies although we can hit
+peaks of two thousand twenty thirty two
+megahertz
+the clock won't hold those and we'll
+spend a lot of time ramping up and down
+based on boost for
+amateurs we've mostly solved for
+thermals and are operating at a steady
+state temperature at this point
+so our limiter is power the heavily
+shorted shunts show a nearly flatlined
+frequency which is exactly what you want
+notice that the frequency isn't any
+higher than the previous Peaks but is
+holding completely steady at nearly a
+perfect twenty seventeen megahertz this
+studying is similar to what existed
+during Boost 2.0 era is what contributes
+to our boosted scores the clock is
+holding rather than bouncing between
+2032 and 1900 and so we get higher
+scores as a result out of fire strike
+and here's a look at wattage down the
+PCIe cables as a reminder power is equal
+to current times voltage so we're
+pushing up to 33 amps in some situations
+where we previously were stuck to about
+eighteen to nineteen amps with a twelve
+point three volt rail that puts us at
+406 Watts peak down the PCIe cables
+versus the previous maximum of about 234
+Watts that is a massive difference and
+is starting to exit what well is way out
+of range or what the card was designed
+for but it can handle it as long as you
+have cooling on the BRM so this does not
+account for PCIe slot power so there's a
+bit more power being drawn there but we
+didn't short that shunt
+so it remains baseline from before the
+chunk mod and for anyone worried about
+the V around temperatures we had that
+covered as in our live stream of taking
+the top ten slot one of them we had a
+120 millimeter Corsair maglev fan
+blastema left half of the BRM a be quiet
+fan blasting from the top and a knock to
+a fan from the right side on the back of
+the PCB where we were able to cool the
+right half of the vrm plus the
+controller not only were the FETs
+operating within range they were
+operating cooler than the stock card was
+because of direct air flow it matters
+more than just a heatsink and finally
+here's a couple graphic scores from the
+X 299 bench with one of our fire strike
+runs we've improved a bit here as well
+it would help pump us higher on the
+hardware bot score charts if we want to
+play around with those again in the
+future at least for now until the other
+overclockers get their hands on the
+Titan V's and give us us an idea of how
+the improvements scale across a
+different platform so that's it for this
+one it's pretty cool the thing here to
+take away is that this would work on any
+pass
+gal card so this applies to a 1080 tea I
+just as much as it does to it 1062 a
+Titan V same idea the difference of
+course is when is it worth it and
+probably not very often for most of you
+that the risks can potentially outweigh
+pretty heavily the gains you're looking
+at you can get better gains than we did
+I think from what I've heard from their
+Bower and from Build Zoid there's
+potential for better gains but this is
+not a mod that increases your overclock
+offset in any meaningful way for the
+most part it's a mod that stabilizes the
+clock so that it does not choke on the
+power consumption to running the same
+high clocks it's just it flatlines
+instead of jumping around that's what
+improves your performance so it doesn't
+give you a ton of headroom that by
+nature of the mod but it gives you
+enough that if you're competing for
+overclocked scores or something like
+that it would be worth doing
+I wouldn't recommend this for a 24/7
+gaming machine certainly people do it
+their Bower himself has talked about
+having 1080s setup for half a year at a
+time at least with the liquid metal
+shunt mod but he's not like every user
+so generally speaking I don't know that
+I could in good faith recommend the mod
+just because it's if you're not
+experienced with liquid metal which
+we've got experience for all the D lids
+it's easy to screw up and depend on the
+orientation of the card if you do a
+vertical GPU mount for example you're
+fighting gravity now so depending on how
+strong your fans are if you move the
+system around if it gets bumped or just
+time it's possible that you could have
+some drip that would short other
+components it's also possible that you
+could apply too much or too little and
+either it does damages the card it does
+nothing it might just short it and stop
+it from booting at which point you clean
+it off and you're fine there's a lot of
+different things here and the point
+isn't the scare you away from doing it
+it's just to say that make sure you
+understand why you want to do the mod
+and then be careful and you should be
+fine if you're careful about it don't
+rush it and be patient with the
+application and all that stuff make sure
+you test thoroughly and it should be
+fine it's just I
+no that is worth it for gaming but it's
+worth it to get higher scores if that's
+what you're going for so there's nothing
+wrong with that so that's all for this
+one as always if you wanna helps out
+directly you can pick up the mod mat
+that we used in the first half of the
+video this one on store like Aaron's
+Nexus dotnet slash mod mat it's up for
+pre-order now or you can go to store it
+at gamers access not net to have a shirt
+like this one or one of our other
+products subscribe for more I'll see you
+all next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

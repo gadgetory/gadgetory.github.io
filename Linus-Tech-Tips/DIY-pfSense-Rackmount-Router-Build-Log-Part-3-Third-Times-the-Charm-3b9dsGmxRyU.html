@@ -1,0 +1,277 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>DIY pfSense Rackmount Router Build Log - Part 3: Third Time's the Charm? | Gadgetory - Your Gadget Factory</title><meta content="DIY pfSense Rackmount Router Build Log - Part 3: Third Time's the Charm? - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1>Gadgetory</h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><h2 class="post__title"><b>DIY pfSense Rackmount Router Build Log - Part 3: Third Time's the Charm?</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/3b9dsGmxRyU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">okay through good times and bad times
+through sickness and in health
+something-something we make videos every
+day and sometimes when our teleprompter
+mysteriously goes missing you make a
+different video than we were planning on
+doing today so while I was going to
+review the rog swift PG 279 Q instead I
+am taking yet another shocked yes my
+friends yet another shot at building my
+own pfSense router this time with a
+chassis that a isn't 1u because that was
+way more of a nightmare than it was
+worth and B actually is the correct
+width for a server rack is apparently a
+known design flaw with the 1u chassis
+that we used before that if you put the
+lid on it which we used to create like
+that cool ducting cooling system for the
+CPU heatsink it is well known that it
+then does not fit in a rack which would
+raise the question what is the point of
+a rack mount chassis that doesn't fit in
+a rack when you close the top of it so
+after all that after all the dead boards
+or blown it up we're starting again from
+scratch hurry up
+the mastercase 5 from Coolermaster lets
+you truly make your mid tower PC case
+your own with a variety of modular parts
+and accessories check out the link in
+the video description to learn more this
+computer is gonna go together just like
+that there will be no problems alright
+so let's do a rundown of the new
+hardware so for our chassis we went with
+an AI star us ad 200 LS II the reason I
+chose this is for a couple of reasons
+number one I think it looks super cool
+with like these blue things on the front
+number 2 we didn't need a ton of drive
+space because it's a router so we didn't
+need anything with like you know front
+hot-swap rails or anything like that
+and number three I wanted something that
+was able to mount our expansion cards
+rotated 90 degrees so that we could use
+full height expansion cards if we wanted
+to even in a 2-u chassis so just like
+last time we've gone with a redundant
+power supply this time it's a different
+size obviously to go with the chassis
+that we have so this is a 500 watt
+redundant power supply meaning that
+either of these two power supply units
+could fail out right let me be able to
+slide it out keeping the system
+operating and put a new replacement unit
+in this is pretty important for any kind
+of mission-critical machine something
+like a router where the entire company
+literally shuts down if it's not working
+for you know 10 minutes and I mounted it
+upside down ah I do these things to
+myself add
+ah yeah good on the subject of
+reliability we opted for server grade
+Hardware this time across the board so
+we've got a p9 ve / 4 L motherboard 4
+masseuse the reason this one was chosen
+was we could have gone with an M ATX
+board quite easily but our chassis has
+room for an ATX this gives me the
+flexibility to do something else with
+the board in the future if I so desire
+and the main reason right there for
+Intel gigabit NICs built-in that'll give
+us a total with our 2 expansion cards so
+one of which is an i3 for TT 4 so
+that'll give us a total of eight gigabit
+rj45 ports then we actually have another
+card here though this is an i3 50 based
+SFP card so this is also a gigabit 4
+part card but this one we're going to be
+using for the uplink from our modem
+essentially are like our fibre modem so
+that will give us a total of 12 ports
+using those 2 expansion slots at the
+back for our CPU we've gone with a
+low-power Xeon it's a 1265 lv3
+and then for our boot drive we are going
+to be using an old SSD that I had lying
+around it beats a thumb drive but it
+won't matter anyway because I'm looking
+at running the embedded version of PF
+sense so we're not going to have to
+worry about a bunch of writes on the
+disk either way for ram we're going to
+go grab some kingston ECC Ram
+off-the-shelf and throw that in alright
+so the machine is built it was a tight
+fit with that PCI Express ribbon cable
+and that bottom network card at is it is
+still unclear to me if all of this biz
+in here is is definitely going to work
+but one way or the other it is time to
+find out if this system posts so come
+along with me for a little journey ok
+powers on it's a good side Hey
+now the monitors not on that won't help
+what is this monitor doing get in there
+come on baby yes okay so the machine is
+built the machine is posted we're in the
+BIOS it's working now seems like a good
+time to address the comment that I'm
+sure many of you have already left under
+the video yes I know this is an overkill
+machine I get it
+it's way overpowered for a router the
+reality of it is the manufacturer sent
+us this stuff the only piece that I
+provided was actually the low-power Xeon
+CPU so do I have a badass router the
+answer is yes do you watch - tech tips
+for like just good enough the answer is
+maybe but either way we're going to
+overkill on this one so now we're going
+to get into how to actually install
+pfSense
+on your machine so you head over to the
+pfSense website you download whichever
+is the appropriate version for what
+you're doing so in this case we really
+could go with either the embedded or the
+full install with the full install being
+more heavy-handed on our SSD especially
+if we enable things like logging for
+example then once you go through the
+pretty straightforward setup process
+that we're going to show kind of quick
+on screen here you are landed at a
+prompt that shows you the IP through
+which your router can now be accessed on
+your local network and from this point
+on you pretty much never have a reason
+to look at the display output from your
+router box ever again because everything
+will be managed through the web UI all
+right so now that we've mostly got
+things sorted out we've decided we're
+just going to go for gold we're going to
+rip our cisco router out we're going to
+put our pfsense router right back in and
+were going to finish the configuration
+wizard with that all happening
+garbage-can router
+this is Mel Begley of burning in here to
+you the smell like burning yeah
+everything seems to be working
+alright I'm just throwing this up on the
+top for now and then once we've
+determined that it functions then we'll
+put it then we'll put it into this spot
+in the rack so let's get some power run
+up here and then let's see if everyone
+is ready to go so there will be a
+network outage oh for hopefully about
+fifteen to twenty minutes okay okay
+this always makes me so nervous that is
+everything it'll probably take me 20
+minutes so off my dish to this coffee
+don't put that camera on me it's making
+me nervous this is it here we go so I
+have informed everyone the network's
+going down let's uh let's boot up the
+pfSense box and hope for the best
+what the heck how did I end up with two
+keyboards plugged in okay it's working I
+think sometimes it's hard to be me okay
+do I sort of be lens right now no enter
+Oh an interface or a for auto detection
+here goes
+no link-up detected let's try one of the
+other ones yeah but there's no link up
+okay well I'm calling the tech okay I
+think it's yeah it's number two oh it's
+definitely not in my server room so I
+have an MRV in my server room would it
+help if I just sent you a picture of
+what I'm looking at I'm at the main menu
+so here it is guys our overkill router
+is finally working there were a number
+of issues it seems mostly related to our
+fiber media that were causing ports to
+not show that the link was up or show
+that it was what it wasn't when actually
+the setup process for this is as simple
+as you sit there at the console you type
+in the interface that corresponds to
+your internet connection the interface
+that corresponds to the switch that goes
+out to the rest of your internal network
+and you can tell everything else okay
+full auto I'm ready to rock you put in
+an IP address which it just lists on the
+console you get into here there's a
+wizard should be pretty much good to go
+we had some issues don't worry too much
+about that basically the reason we're
+running pfSense is we want a nice
+high-performance router we want
+something that has a GUI so you can
+actually get in here and you can
+configure all kinds of different
+firewall stuff all kinds of different
+port forwarding you can actually set up
+some really cool features like when I
+was using back at our old office when I
+was trying to figure out who the heck
+was using up all the freaking bandwidth
+cap so you can actually get cool little
+plugins that will do things like monitor
+which IP addresses are sucking up all
+the bandwidth just a great little piece
+of kit and I'm sorry it's taking us so
+long to get it set up but that's in a
+nutshell why we went with pfSense for
+this box finally finally finally
+managing to actually install it so we've
+actually got a giveaway to announce for
+you guys no it's not a router it's
+actually a little bit cooler this is the
+zotac magnus en 970 and while it
+unfortunately doesn't have a gtx 970
+graphics card in it it is still pretty
+darn impressive with Core i5 5200 you
+dual-core hyper threaded processor two
+slots for two and a half inch tribe's
+1m2 slot as well as up to 16 gigs of
+ddr3 l memory support now the graphics
+card that it is using is a gtx 960 and
+all of this is packed into a super tight
+little device so
+guys sign up for the giveaway at the
+link in the video description and the
+full details can be found there but the
+usual things applies a one entry per
+person is a worldwide giveaway with no
+restrictions and thanks to ZOTAC for
+sponsoring this sweet giveaway make sure
+to let them know you're happy in the
+comments below below below I need a
+drink of water we're good so thanks for
+watching guys if you like this video
+click that like button if you just liked
+it though click this like we can take it
+we can take the hate leave a comment if
+you have feelings that are more
+complicated than that if you did like
+the video get subscribed though maybe
+even consider supporting us providing a
+cool team oh I'm wearing as well well
+okay that one might not ever be
+available again it was limited anyway
+buying a cool shirt like the ones that
+we make changing amazon bookmark for
+fire affiliate code instructions for how
+to do that are up there or even just
+supporting us directly through our
+community forum I think that pretty much
+wraps it up I'll see you guys next time
+when I'm hopefully feeling a lot better</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

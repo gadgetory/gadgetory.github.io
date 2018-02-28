@@ -1,0 +1,147 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>MSAA, MLAA, &amp; CPU Threads in Total War: Warhammer | Gadgetory - Your Gadget Factory</title><meta content="MSAA, MLAA, &amp; CPU Threads in Total War: Warhammer - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">MSAA, MLAA, &amp; CPU Threads in Total War: Warhammer</li></ol></div><h2 class="post__title"><b>MSAA, MLAA, &amp; CPU Threads in Total War: Warhammer</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/G0z5cmzZqB8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey everybody I'm Steve from gamers
+access net and I'm joined again by Alva
+come from the total war Warhammer team
+at Creative Assembly we previously
+talked about some of the new Warhammer
+features on the game inside now we be
+talking about so the optimization stuff
+the technology and before we get to that
+this coverage up from PAX East 2016 is
+brought to you by cyber power to make
+the fan book that we recently
+overclocked past four gigahertz so wow
+what what can we talk about immediately
+with regard to the engine what's the
+most interesting thing to talk about
+with Total War well I think we could
+probably start with yeah the engine
+optimizations that we've done
+essentially graphics programming team
+has taken quite a lot of time in the
+schedule this time around months in fact
+to work simply on optimizations and you
+know implement things in a more
+efficient way so one of the things we've
+done there is we've got a much better
+sense of load balancing across the
+different CPU cores in Warhammer than
+we've ever had before so for example we
+used to have the game logic and the
+renderer running on the single thread
+which you know kind of maxes out one
+core maxes out one thread leaving the
+other threads not really doing an awful
+lot and we've decoupled those so
+information is passed and one thread to
+the other from the game not into the
+renderer so now you're seeing a much
+more evenly balanced load across the
+across the different CPU cores so and
+that's really helping just with general
+frame rates and the model update which
+dictates you know how smoothly
+everything runs after and frame rate so
+so with the game logic thread and the
+renderer thread what are some things
+that each of those does what's the logic
+thread responsible for so the logic
+thread is responsible for welfare
+essentially for the game running for
+everything you see on screen so in a
+battle it's it's running the battle
+model which is literally executing
+everything you're seeing so you know you
+give an order to something it's moving
+away you're seeing all the animations
+different units and they're clashing
+those calculations are done the a is the
+a is responding that's all that's all
+bound up in the game logic so in the
+battle model so and then it pass the
+information to renderer which then draws
+what you see on screen so so yeah having
+those separated is a big win basically
+frame frame rate wise on the GPU side we
+were targeting for it sounds like you've
+some other particle effects to the GPU
+yeah we've offloaded our particle
+simulations model to the GPU that again
+that used to be able to CPU so that's
+yet more load off the CPU making it less
+CPU bound that we've ever been so we've
+also optimized our targeted task system
+as well which is you know everything
+that's being executed by the CPU to
+further balanced load across across the
+different calls so once again it's more
+of a win less CPU bound GPUs freed up to
+do its job better so what about some of
+the anti-aliasing techniques so you
+doing anything special there yeah we've
+actually we've done a ton of
+optimization with MSA so R 2 R 2
+anti-aliasing solutions we've got in the
+game MLA and MSA a so you know MLA a
+being a bit of a post-process hat almost
+so you know it improves it improves the
+look and feel and doesn't hit the frame
+rate too badly MSA is much more much
+more framerate intensive so what we've
+done there we've made our solution a bit
+more kind of selective and a bit more
+intelligent about what actually aunty
+aliases so looks at the whole scene it
+looks for the edges rather than rather
+than anti-aliasing every line every line
+and every edge is just looking for the
+edges which are going to be visible to
+the player so and it's selectively
+anti-alias as those all of which adds up
+to less you know less hit on the
+framerate this will be something of
+course it's still you know it's still a
+fairly intensive operation but much less
+than before and we've got MSA a two four
+and eight times running
+yeah so it's not not as abusive because
+it's just only anti-aliasing the things
+that actually can be visibly seen
+exactly yeah so if you think of ever you
+know a soldier standing side on and the
+edges are there that's where you're
+gonna see the jaggies so that's what
+it's working on rather than absolutely
+everything so sure and other future
+topics of course we'll eventually be
+able to talk about DirectX 12 you're
+working with AMD on that right yeah work
+very closely with work we have got AMD
+engineers coming into our offices and
+helping and helping the graphics team
+out with that so yeah we'll be rolling
+that out we're happy performance it's
+great and it's nice and stable so what's
+this based on the I guess one one final
+note here just on the game itself so
+reminder what's the launch day in any
+any major items you wanna remind people
+of with total war Warhammer
+yeah so we're launching on May 24th
+actually so ya know it's any month away
+now wow it's kind of scary but yeah yeah
+I would say get on our social media and
+look at look look at some of the videos
+we're putting out of gameplay at the
+moment and yeah it's just not like any
+other tie ball game ever made basically
+very cool so to see more about the
+fusion of a Warhammer in total war links
+in the description below for more
+information thank you as always for the
+information right good to see and we'll
+see you all next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

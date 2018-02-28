@@ -1,0 +1,128 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Personal Project - Make a PCIe 1x Slot Compatible with Longer Cards Linus Tech Tips | Gadgetory - Your Gadget Factory</title><meta content="Personal Project - Make a PCIe 1x Slot Compatible with Longer Cards Linus Tech Tips - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1>Gadgetory</h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><h2 class="post__title"><b>Personal Project - Make a PCIe 1x Slot Compatible with Longer Cards Linus Tech Tips</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/fZed5r9tXHQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">okay guys so part of my project with the
+server storage upgrade is that I'm going
+to be adding a remotely located server
+however I've run into well it's just a
+minor hiccup but I thought it'd be an
+interesting tip so I need to take this
+LSI 92 48 I raid card and I need to
+quickly copy all of the essential data
+that I'm going to be doing nightly
+synchronizations
+from this array the the 8 by 3 terabyte
+array from my Windows Home Server so I
+don't want to do that first sync over
+the Internet so what I want to do is I
+want to install that other raid card in
+here and then install the other drives
+in here so that I can do a do a quick
+copy so the challenge is that this
+motherboard only has two PCIe 16x slots
+however based on some quick math PCIe 1x
+2.0 is good for 5.0 gigabit per second
+which is plenty for this PCIe 4x
+ethernet card so what I really want to
+do is install the 4x card in that 1 X
+slot so if you guys know about PCIe
+you'll know that the first pins here
+these guys right here that's all your
+power and whatnot and then everything
+from here on is data so the only thing
+that makes this a 1x lot and this a 16x
+slot is how many pins it has for
+bandwidth so some other board
+manufacturers are considered enough to
+leave these edges open here so that you
+can install 4x or 16 X cards in a 1x
+slot and they will work however my Intel
+Board in my home server doesn't have the
+ending open like that so to give myself
+the option of installing higher end
+cards in there what I have to do is and
+I'm hold on give me SEC guys so I've had
+a few promising ideas
+guys I got to keep my voice down baby
+sleeping but it looks like none of them
+are going to be applicable to those say
+the system that's installed already the
+motherboard that's in the case so idea
+number one was melting so I used my
+torch to keep off the tip of this blade
+and then slice through the back of it so
+that it would accommodate a bigger card
+now the problem with melting is that I
+had issues with some of the melted
+material moving this way towards the
+pins that's going to be a real big
+problem because you don't want to lose
+any pins from a PCIe 1x interface so I
+scrapped that idea next idea was seeing
+if I could cut through the plastic with
+a razor blade and slice it
+either side the problem with that one
+was that it required far too much force
+and if you slip with a razor blade you
+cut a bunch of traces and gonna be bad
+all around an idea number three was to
+use a dremel use a cutting wheel on a
+dremel to grind through the back this
+one looks like it's probably going to
+work but unfortunately with the other
+motherboard which is stalled in a case
+with things in the way you can see I
+can't get the Dremel in the street and I
+don't have one of those extension bits
+so uh I'm stuck for now but thanks for
+coming along with me for the ride guys
+so I decided to pull the board out and
+we're just gonna go for it um I haven't
+actually tested it successfully on my
+test board yet we're just going to use
+the Dremel and file out that back piece
+and see if we could install this PCIe 4x
+NIC card into the PCIe 1x lot more right
+now it's yeah won't fit so it'll run at
+1x speed but pcie 2.0 1x and this is a
+2.0 card isn't 5 gave it per second so
+we should be ok alright so I did one run
+at it with the Dremel and cleared all
+the debris out hopefully you guys can
+see this but it's mostly clear one of
+the pins that top-right one seems to
+have broken in half while I was Dremel
+about it looks like it should still make
+contact so it should still be able to
+pass data and it should be ok all this
+is in theory of course I don't recommend
+doing this
+home folks so I do have to take another
+pass at it because it's not quite clear
+I wish that my Dremel could run in
+Reverse because then instead of throwing
+all the gunk into the slot it could
+throw it out but such as life so I'm
+going to take another run at it and I'll
+see if I can fit the card in actually
+the card fits in now so let's just find
+out if it works
+here we go thrown it back on the server
+lo and behold it works there's my four
+gigabit network adapters
+there's my network adapter installed in
+the bottom PCIe 1x slot and there's the
+network cables all plugged in so I've
+got my Adaptec raid card here for
+testing my Rika raid card that my actual
+storage runs off of and then my 4 port
+NIC all installed yay and all hopefully
+with enough bandwidth for what I'm using
+them for don't forget to subscribe -
+tech tips on also don't forget to wear
+appropriate safety glasses whenever
+working with a dremel
+I could hit the switch I could in this
+video</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

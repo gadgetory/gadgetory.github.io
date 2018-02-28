@@ -1,0 +1,230 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Setting Up NVMe RAID On AMD Threadripper - INSANE Speeds! | Gadgetory - Your Gadget Factory</title><meta content="Setting Up NVMe RAID On AMD Threadripper - INSANE Speeds! - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/HardwareCanucks">HardwareCanucks</a></li><li class="active">Setting Up NVMe RAID On AMD Threadripper - INSANE Speeds!</li></ol></div><h2 class="post__title"><b>Setting Up NVMe RAID On AMD Threadripper - INSANE Speeds!</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/csiqG_rkSWI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">what's up guys ever hear with hurricane
+X and if you would call about a month
+ago I put together an awesome kick-ass
+threat repair gaming slash workstation
+PC if you haven't watched that video you
+can check it out right over here but to
+sum it up the build featured Indies
+flagship 1950 x16 core 32 threaded CPU
+which was cooled by the NZXT X 62 a i/o
+cooler 64 gigabytes of G skills glorious
+RGB transient a strict gtx 980ti from
+asus all housed inside this beautiful
+Corsair air 540 chassis now for storage
+I was rocking two samsung 960 pro SSDs
+one as my primary boot drive along with
+storing a few of my recently obsessed
+titles and other being a scratch disk
+for adobe premiere I was amazed by the
+read and write performance on these
+drives we're talking roughly 3.5
+gigabytes per second on read speeds and
+2.1 gigabytes per second on writes but
+it was right around the time and AMD
+announced their nvme write support on X
+399 platform and I was anticipating that
+update ever since that announcement and
+now I'm here to walk you through the
+setup and some of the results that I was
+able to achieve after creating the raid
+array so that me further ado let's get
+into it to quickly refresh your memory
+the 960 pro is one of the fastest SSDs
+on the market that comes in an m2 form
+factor its high level of Nan endurance
+is a great feature to embrace especially
+for professional applications that
+heavily rely on reading and writing huge
+data sets and they're backed by a
+five-year warranty so that's awesome now
+setting up a raid array involves some
+serious precautionary steps and let's
+address the obvious and that's backing
+up your existing data it is crucial that
+you complete this step as creating a
+raid array would completely erase the
+data on your existing drives and it's
+pretty hard to recover that if you have
+an existing SATA raid configuration AMD
+recommends that you back up that arrays
+data and break down the current array
+before proceeding with the driver
+install and BIOS upgrade
+speaking in which most motherboard
+manufacturers should have rolled out a
+BIOS update for their ex 399 boards that
+basically adds support for nvme raid in
+my case I'm using the rog Zenith extreme
+x-29 and motherboard and I have a data
+the BIOS to version 701 as I'm making
+this video this board features a single
+- connector right underneath the PCH
+that comes with a thermal pad and
+there's this a dim dot - card it plugs
+into the slot right next to the memory
+modules and it can have two additional
+MD two drives installed each of which
+has access to four dedicated PCI lanes
+and this is what we'll be using to mount
+the SSDs initially I was thinking of
+doing a bootable r8 setup but I thought
+to myself that I might complicate things
+down the road so I decided to stick with
+a non bootable array and use my
+three-year-old Samsung 840 pro SSD as my
+primary OS drive that's right my friends
+I will be using this three-year-old SSD
+and believe it or not it's still staying
+strong
+now the raid array is gonna be used to
+store creative applications like
+Premiere Pro After Effects Photoshop and
+some games so that should contribute
+towards a much faster workflow okay so
+with that out of the way let's move on
+to the setup process after updating the
+BIOS I put it into Windows and
+downloaded the care package containing
+the AMD's raid expert to utility and the
+standalone nvme raid driver for Windows
+10 directly from a DS website I'll link
+that down below I should also mention
+that you should be running build 1703 of
+Windows as that's what's currently
+supported for this setup now the raid
+driver is technically embedded within
+the executable file ie the utility file
+which needs to be extracted I said the
+extract destination to the desktop once
+the software version was updated I then
+rebooted the system and proceeded to
+install the expert 2 utility which
+annoyingly was deeply hidden within
+AMD's root files after installing that I
+ran into a problem where the web GUI
+didn't allow me to login now by default
+the username and password was admin
+admin but oddly the submit button wasn't
+functioning after spending countless
+hours of troubleshooting I finally
+figured out the problem
+huge shout-out to Wendell from level one
+texts who helped me figure out what went
+wrong so as you can see with the expert
+2 utility the raid level is sent as zero
+and that means that the nvme raid
+drivers aren't being detected so the
+next step was to check out device
+manager and see if the drivers were
+installed properly now nvme SSDs
+required two parts on the software side
+to function properly the disk driver and
+the nvme controller driver if the UEFI
+BIOS is up to date then its device
+manager related in this case I was using
+Samsung's nvme driver that was
+and installed directly from Samsung's
+website but in order for raid to
+function we have to upgrade that to
+AMD's nvme driver so what you want to do
+is head over to storage controllers and
+select the Samsung and mimic controller
+we have two nvme SSDs in this case so we
+have to update both of them manually you
+then locate the standalone and me me
+rate driver zip file that you downloaded
+from AMD's website extract that and
+locate the RC bottom file within the RS
+2 x64 folder repeat that step for the
+other controller then navigate down to
+system devices find the AMD rate config
+device and update that with the RC CFG
+file within the RS 2 x64 folder
+finally restart services for the rate
+expert 2 utility and login once it
+create your username and password you'll
+be directed to the main menu here we can
+see the two 964 SSDs we'll first have to
+initialize both drives upon completion
+we are ready to create the new raid
+array select the two drives name the
+array and hit create last thing you want
+to do is initialize the disks within the
+disk management inside device manager
+and you're done now what kind of
+performance came expecting when you
+decide to put two of these SSDs in raid
+0 let's start with Crystal dis Marc we
+averaged reach speeds around 6 gigabytes
+per second and writes around 4 gigabytes
+per second guys that's just that's just
+insane I really don't want to what to
+say yeah
+next up running the a todas benchmark
+results in a 3.9 gigabytes per second on
+read speeds and three point eight
+gigabytes per second on writes a schultz
+mentioned that my CPU and memory were
+running at stock settings so what
+happens when you overclock both of them
+would that impact our raid arrays
+performance indeed I ran the crystal dis
+mark one more time after overclocking
+the CPU to 4 gigahertz and the memory to
+26 66 megahertz and damn check out those
+read speeds just a tad above 7 gigabytes
+per second on the read side and 4
+gigabytes per second on the write speeds
+I ran the a todas benchmark again and
+noticed a significant increase in we
+performance we're talking an extra
+gigabyte per second so to me that was
+just phenomenal and this makes sense
+because the processor houses the piece
+necessary for nvme raid so the faster
+the processor the higher the i/o
+throughput
+I also transferred a 20 gigabyte folder
+packed with 4k videos a few game folders
+and Excel files and it took roughly 25
+seconds to transfer from the desktop to
+the 960 pros rate a raid that's pretty
+fast but as you can see the speeds are
+hitting roughly 1.6 to 1.7 gigabytes per
+second on the read side of things and I
+guess primary bottleneck here is
+obviously the 840 pro SSD performing
+that backwards took roughly a minute so
+once again this is heavily due to the
+bottleneck or the 840 pro SSD being the
+bottleneck so I'm going to leave you
+guys on that note I definitely like to
+hear your thoughts on nvm support for
+thread Ripper
+especially professionals out there who
+have already hopped on to X to $8.99 do
+you syrup if you you know currently have
+a 964 SSD do you see yourself you know
+picking up another drive and configuring
+them in raid so get those blazing fast
+read and write speeds and of course what
+do you think of what kind of
+applications do you think might take
+advantage of this setup definitely me
+know in the comments down below a huge
+shout-out to Samsung for sponsoring this
+video by the way stay tuned for the full
+performance segments of this build it's
+still in the works I'm still you know
+pulling up putting them together a set
+of benchmarks I'd like to run and yeah
+stay tuned for the next video until then
+I'm Eva with heart connects thank you so
+much for watching make sure to subscribe
+for more similar content and we'll see
+you in the next one</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Fallout 4 Volumetric Lighting Benchmark - AMD &amp; NVidia | Gadgetory - Your Gadget Factory</title><meta content="Fallout 4 Volumetric Lighting Benchmark - AMD &amp; NVidia - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Fallout 4 Volumetric Lighting Benchmark - AMD &amp; NVidia</li></ol></div><h2 class="post__title"><b>Fallout 4 Volumetric Lighting Benchmark - AMD &amp; NVidia</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/ZvdbNog-EaA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey everyone I'm Steve from gamers Nexis
+dotnet and this is our fallout 4
+volumetric lighting benchmark and
+explanation of volumetric lighting in
+fallout 4
+when benchmarking fallout 4 on our
+lineup of GPUs we noticed that the r9
+390x was outclassed by the GTX 970 at
+1080p with ultra settings this has
+certainly happened before in some very
+specific games but it's rare and it
+caught us by surprise that given the 390
+X is comparatively high raw horsepower
+the performance differential was still
+about 5% at 1080p favoring the GTX 970
+which theoretically should perform a
+little bit lower in frame rate than the
+390 X so this gap is reversed a little
+bit when moving to higher resolutions
+like 1440p we see the 390 X actually
+pull ahead and that reversal makes sense
+because the 390 X should be objectively
+superior at 1440p than the 970 it's just
+capable of handling more pixels but the
+advantage 970 at 1080p required more
+research to fully appreciate so that's
+what we're here to do today these
+findings spurred on a day's worth of
+research of settings and that unveiled a
+few settings that heavily impact FPS but
+we were never able to produce any
+particular favor toward one manufacturer
+or another by changing these it
+generally kept the same Delta just with
+a higher FPS output by lowering settings
+shadowdistance is a really good example
+of this we saw FPS wins of about sixteen
+point seven percent which translated to
+around 20 FPS on the 970 and the 390 X
+when lowering shadow distance to medium
+from ultra but even with these changes
+the 970 still outperformed a 390x at
+1080p and that was worth investigating
+further so we eventually discovered that
+console commands can be used to toggle
+levels of volumetric lighting and
+godrays in the game which seemed to
+impact FPS fairly heavily and you can do
+this by using the tilde button and then
+do gr and on or off or you can just type
+gr and look at all the options you can
+set
+detail levels and debugs and things like
+that as well
+fallout uses Nvidia's volumetric
+lighting effects and godrays something
+that immediately sort of through a red
+flag as a benchmarking item for us so
+for the unfamiliar volumetric lighting
+is named such because it appears to sort
+of creep through the air and it
+interacts with other volumetric effects
+like smoke and fog and clouds and in
+games with volumetric particle effects
+this is another big visual gain to have
+the volumetric lighting interaction as
+well and fallout for volumetric lighting
+is primarily comprised of godrays which
+are basically just shafts of light that
+shine down from the Sun or other very
+bright sources of light and we decided
+to run benchmarks and see if the 390x
+can outpace the 970 at 1080 and take a
+lead when God rays are disabled on both
+devices before we get to those results
+though let's get back into some basic
+information on how God rays work and
+talk about the way the beams are
+actually displayed in the game and
+translated through the engine and things
+like that
+so God rays cast beams of light that
+also interact with reflective surface
+materials and shadows and generally
+create the apparent depth that is given
+in some of these objects and what you're
+looking at right now is a debug tool
+built-in to Fallout 4 and the tool shows
+us the presence of God rays using two
+different modes wireframe which creates
+red and green wires indicating strike
+points and light passing and then
+godrays only which turns off all of
+their light sources and shows only the
+illumination created by a god raise the
+ladder the god rays only mode is
+extremely useful in understanding
+exactly why God rays are volumetric in
+this game and shows that even when an
+object isn't directly in the line of a
+beam of light it will still receive
+light from illumination shed by that
+beam
+hence volumetric and actors in the
+vicinity actors being NPCs in this game
+in the vicinity of reflective materials
+will receive some of the light from God
+rays as well so because volumetric light
+can bounce and proliferate when inner
+acting with certain surfaces you'll see
+that standard standards by passers-by
+those types of people in the general
+area will receive light from the
+reflectivity and the bounce and things
+of that nature we talked about this in
+more depth in our GDC 2015 interview
+with Crytek who explained physically
+based rendering to us we talked about
+star citizen and things like that so do
+you check that interview out to go to
+the channel and just search for
+physically based rendering you'll find
+it or Crytek probably and with Nvidia's
+implementation of volumetric lighting
+everything is done using tessellation or
+the process of effectively doubling the
+triangles on the graphics hardware for
+increased apparent detail so
+tessellation that's what it does it
+ultimately doubles triangles it
+increases triangle count and creates
+more apparent detail that where the
+parent is very important because it's
+really just an appearance thing it looks
+like more detail but in the game the
+Polly's it's still the same polygon
+count it's not increasing the poly count
+and walls or faces or anything like that
+this apparent detail increase allows for
+more displacement and smoothing of
+surfaces something we talked about with
+Epic Games in an interview JH searched
+the channel for tessellation for that
+and tessellation also creates the
+appearance of high resolution surfaces
+which means you'll see more bumps and
+divots and generally higher fidelity and
+apparent depth with volumetric lighting
+through Nvidia's fallout for
+implementation which uses game works
+the lighting is fed through tessellation
+processing instead of post-processing
+effects which will sort of hammer the
+GPU clock and eat more cycles so there's
+a valid reason to move the tessellation
+especially because tessellated lighting
+gives the advantage of allowing light
+shafts and effects an illumination to
+still show even when the source of light
+is obfuscated by some object in the game
+or something like that
+tessellated lighting lends itself to
+cooperation with occlusion and is
+exactly why you can see the light poring
+over the edges of a surface area or a
+surface rather even when that surface is
+physically blocked for the light source
+so if the lights if you were looking at
+the Sun
+and you sort of walk around a building
+that building ends up blocking the Sun
+but you can still see the sun's rays
+being cast around the edges of the
+building like the roof or something that
+is a result of using tessellation and
+Vidya as it happens is really good with
+tessellation and they know this and they
+built their architecture around
+optimizing it for tessellation and games
+look at the witcher 3 with hair works
+that's all tessellation and am these
+struggles with it so again look at the
+witcher 3 with hair works md is not
+great with tessellation they're good at
+a lot of things they're good at
+different things than nvidia each
+company has its advantages from its
+architecture they've taken different
+approaches philosophically to their
+architecture but the use of tessellated
+lighting does mean that andy will
+struggle a bit in this regard and fall
+out at least so we tested that stuff
+first off note that our original bench
+course took place during a nighttime
+playthrough around 11 p.m. in game and
+that created the best mix of GPU
+workload for FPS testing this new test
+for volumetric lighting strictly was
+conducted during the games at daytime to
+get the most exposure to god rays here's
+a look at the chart showing tessellation
+impact on the 390 X and the 970
+obviously the FPS results will be
+different than the previous test because
+it's conducted at a different time of
+day different weather or things like
+that
+the 390x still trails the 970 at 1080p
+even when both device is disabled
+godrays and that's probably an
+optimization issue or drivers or
+something with the game but we still see
+a measurable performance gain for each
+device by toggling God raised and the
+390x has the biggest gain of the two it
+moves from 71 fps 280 FPS average and
+increases its 0.1% bottom line
+considerably to 44 from 36 by disabling
+God raised the average FPS gain
+calculated is about 12% and the 970 s
+average FPS gained is about 7% it moves
+from 81 to 87 fps so the gap shrinks but
+the 970 still retains its lead at 1440
+the 390x still runs just ahead
+of the 970 thanks to the 390 X's
+advantage in the additional pixel
+workload processing Department the 970
+kind of gets bogged down by all those
+extra pixels and the gap is of course
+shown still when you toggle godrays so
+if you need some extra performance
+that's a good way to do it what we found
+though ultimately is that even disabling
+many of the volumetric lighting effects
+will not inherently grant Andy a
+performance advantage it fixes a lot the
+performance advantage for AMD is a
+larger Delta than for NVIDIA in general
+because of the way the optimization
+works but the gap is still there it's
+not eliminated this is a good way of
+improving your performance of about 12%
+or so on something like a 390 X so if
+you do need a quick gain for performance
+then I would suggest playing with
+godrays but it does take away a lot from
+the games environment because the game
+isn't particularly impressive and the
+textures and modelling Department anyway
+so make your changes wisely shadow
+distance and godrays are the places I
+would start the gap is still present for
+AMD and NVIDIA even with volumetric
+lighting off and if you like this kind
+of content check out our patreon page to
+help us out help us make more of this or
+just hit the channel and watch the other
+stuff cuz that's the biggest way you can
+support us is by watching more things or
+reading things on the website that's all
+for this time I will see you all next
+time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

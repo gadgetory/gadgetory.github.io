@@ -1,0 +1,248 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Battlefield 1 HBAO vs. SSAO FPS (&amp; What is Ambient Occlusion?) | Gadgetory - Your Gadget Factory</title><meta content="Battlefield 1 HBAO vs. SSAO FPS (&amp; What is Ambient Occlusion?) - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Battlefield 1 HBAO vs. SSAO FPS (&amp; What is Ambient Occlusion?)</li></ol></div><h2 class="post__title"><b>Battlefield 1 HBAO vs. SSAO FPS (&amp; What is Ambient Occlusion?)</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/gCwHMcHtI5I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">the goal this content is to show that H
+Bao vs. SSAO in battlefield 1 does not
+have a major impact performance between
+AMD or Nvidia we already benchmark the
+game on our GPUs now we're back to
+benchmark just the ambient occlusion
+settings and before diving into the
+benchmarks the plan is to go over what
+ambient occlusion actually is what
+horizon based is versus screen space
+z-buffer and its impact on how these
+work and all that stuff but before that
+this content is brought to you by
+Roseville and their new Cullinan case
+which has a limited offer that includes
+a power supply with the purchase of the
+Cullinan tempered glass side panel the
+case let's start with the name ambient
+occlusion occlusion is the obstruction
+of one object by another and ambient in
+this case is a reference to the ambient
+light source in-game for almost all
+games ambient light comes from a single
+source and for battlefield that's a
+faked Sun which is really just a light
+traced across a skybox ambient light
+scatters more or less everywhere in game
+and that's with a mostly uniform pattern
+but there's also directional light which
+impacts how the light meets at a single
+point and that makes for uneven shadows
+and lighting on certain surfaces
+depending on where the lights coming
+from occluded surfaces are the most
+noticeable as recipients of uneven
+shadowing and light objects that are
+visible to the player but are not
+visible to off screen light sources will
+feel the most bereft of natural shading
+the best earliest example of this mix of
+directional and ambient light is the
+movie Toy Story wherein Woody's a mouth
+appears LED backlit almost like a
+monitor and that's because of the mix of
+ambient and directional sources of light
+this can be resolved with various AO
+techniques ao methods help approximate
+shadowing of areas with mixed levels of
+light interaction this used to be done
+with shadow tracing and CGI but has
+generally been far too expensive on
+system resource available in crunch in
+real time it's a lot different when
+you're rendering it for a movie gaming
+GPUs use SSAO HD a ohpa ovx AO or any
+number of other real-time ambient
+occlusion solutions or you could always
+go off of course screen space or SSAO is
+the most prevalent and assumes the
+entire world is limited to the z-buffer
+so that's anything that exists outside
+of the z-buffer
+or the cameras perspective basically
+what you can see in the game actively is
+not traced to calculate shading on
+screen here's an example of that this is
+an image of a tank with SSAO enabled and
+note that the underside of the tank is
+not shaded despite the fact that
+naturally the underlying ground beneath
+the occluding body of the tank would
+actually be darker than the rest of the
+ground this happens because the tanks
+underside is not drawn in the z-buffer
+it's not visible and not visible to the
+player so it's not rendered obviously a
+geometry isn't needed why would you draw
+it so we instead turn to other
+techniques to resolve this issue of
+uneven lighting the X AO is one of the
+newest methods not really the point of
+this video today but it is used in Tomb
+Raider and the same image of the tank
+shows the change the x AO isn't alone
+though other forms of AO like AMD's HD
+AO not too prevalent these days and
+Nvidia's HB AO plus also not that crazy
+hound but it isn't some gamers titles
+have both resolved issues with
+attenuation out of frustum objects noise
+and grain within shadows and this
+continuity we've talked about this in
+the past - earlier this year I wrote
+about a 2000 word article plus or minus
+about ambient occlusion and other game
+technologies that impacts lighting and
+shading hfst all that stuff but we'll
+cover briefly here VX AO just kind of as
+a point aside because I didn't mention
+it basically converts the scene into
+voxels so it takes all the geometric
+data converts it into voxels and that's
+so that the pixel shader can use the Z
+buffer as an input and from that point
+it performs all of the proportions to
+basically approximate the shadowing on
+the scene but battlefield 1 does not use
+VX AO so today we are focusing on HBO or
+horizon based ambient occlusion and SSAO
+screen space ambient occlusion so the
+question is does HB AO negatively impact
+and these performance in a way which is
+demonstrable in a way which would make
+AMD look worse in benchmarks than Nvidia
+the reason that question came up I
+suppose is because technically HB AO is
+an Nvidia made technology but it's from
+2008 so the answer the short of it is no
+not really at least not in this game
+battlefield one can either run screen
+space or horizon based a o and
+again HBO is from 2008 it's well
+documented at this point if you want to
+learn more about it
+that'll field one as far as we are aware
+does not offer HBO Plus at least the
+options don't call it that but maybe the
+developers were just lazy
+our testing methodology is all the same
+as the battlefield Juan GPU benchmark
+that we published earlier today so you
+can view or read the previous content if
+you have questions about what drivers
+reuse test location multiplayer and
+singleplayer scaling other curiosities
+it's all defined before you post a
+comment to check there the only
+difference is that we ran our new tests
+with battlefield version 1.01 that's
+important that includes performance
+optimizations overall within the game
+and for that reason we reran some of our
+dx11 tests on the two devices under test
+here just for the specific HB AO vs.
+ssao benchmark so again 1.01 and before
+we get into the AO here's a look at the
+scaling we're seen on battlefield
+version 1.2 1.0 1 we're getting about a
+1.5 percent better performance on the RX
+480 and on the GTX 1080 fairly uniform
+between the two though higher framerate
+gameplay with lower resolutions is
+posting a performance improvement of
+about 3 to 4 percent but that's really
+only visible when we're north of 100 FPS
+already for tests where frame rate is
+closer to 60 to 80 we're seeing a 1.5
+percent performance gain with a
+battlefield version 1.1 and we still
+retested HPA OH&amp;amp;S sao with the newer
+version of the game just to make sure
+we're isolating the variable here's a
+look at HB AO vs. SSAO on and these are
+X 480 with 1440p ultra settings there's
+no real impact here this is 1440p we're
+seeing a performance delta of about 1.4
+percent or right around one FPS is very
+nearly within normal test variants
+though we always test multiple times and
+average the collections of results so it
+is a hard 1.4 percent this isn't just
+normal arjun of air or anything like
+that at 1080p with ultra the difference
+is about 3 FPS so it's a little bit more
+from 90 to 93 average and the lowers are
+basically unimpacted they're all pretty
+much the same the next thing to
+determine is how it plays out on Nvidia
+since we can't yet reached a conclusion
+with just this one settings change all
+this does so far has tossed at a higher
+quality ambient occlusion setting is
+more
+in which everyone already knows here's
+Nvidia's GTX 1080 at 4k high seen a
+performance win of again almost exactly
+one point four percent so that is the
+same as what we saw on Andy's Hardware
+between Sao and HB AO with a higher
+resolution which is taxing other aspects
+of the GPU enough that it's just a 1.4
+percent scale in between each reduce in
+the GTX 1080s resolution to 1440p our
+performance Delta is now about 2 FPS
+average and that's pretty much the same
+as what we saw in AMD so the conclusion
+very briefly disabling HB AO creates a
+scaling at higher resolutions between
+nvidia and AMD that is effectively equal
+that's because the GPU is taxed
+elsewhere the resources are occupied so
+we've got about a 1.4 percent change and
+because it's the same on each card it
+doesn't matter if you enable or disable
+it the results will be pretty much
+linearly comparable and the game looks
+better and it's 1.4 percent so if you're
+just playing and you're not benchmarking
+probably have it on anyway because if
+you really need one FPS you're in bad
+shape and it's time to get a new GPU or
+reduce the settings elsewhere as for the
+lower resolutions that's where we see a
+little bit more of a difference it's a
+three percent difference versus 3 FPS
+versus two fps obviously it depends on
+the scale of the range of the data which
+is different between the two cards but
+the percentage difference basically is a
+1% advantage for Nvidia at lower
+resolutions when running frame rates
+that are in the 80 Plus range 80 to 120
+fps in this point so it's really not
+significant in the scheme of things 1
+percent only at the higher frame rate
+test runs and that's generally going to
+be with lower resolutions where you're
+not bottlenecked just because you're
+pushing so many pixels through the pipe
+anyway so hopefully that answers that is
+always patreon link the post roll video
+if you want to learn more about ambient
+occlusion all that stuff there is a link
+in the description below there's two
+ones the GPU benchmark for battlefield
+one the other one is our description
+definition deep dive article on ambient
+occlusion and other game technologies so
+as I said patreon link post related
+helps that directly links below
+subscribe for more I'll see you all next
+time
+you</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

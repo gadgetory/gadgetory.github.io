@@ -1,0 +1,202 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Personal Project - DIY Offsite Backup Storage Server Deployment &amp; Software Config Linus Tech Tips | Gadgetory - Your Gadget Factory</title><meta content="Personal Project - DIY Offsite Backup Storage Server Deployment &amp; Software Config Linus Tech Tips - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1>Gadgetory</h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><h2 class="post__title"><b>Personal Project - DIY Offsite Backup Storage Server Deployment &amp; Software Config Linus Tech Tips</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/7nNGrLkPBE8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">so I finally gotten around to going to
+my in-laws house to set up my off-site
+backup server so here's the fractal
+define our three that has my server
+config in it so I'm just going to get a
+little closer here I'm using manual
+focus today which is sort of difficult
+because this camera has a really clunky
+way of doing it but let's do a quick
+tour of the machine while I talk a
+little bit about what I'm going to be
+doing to make use of this off-site
+backup server so I'll need to actually
+get the side panel off for one thing and
+then that fan is plugged in there so I
+got to be careful with it so here we are
+the off-site backup server what's the
+point of this well I've got my regular
+home server which backs up all my data
+and doesn't protect me in the event of
+theft or fire or whatever else that can
+happen so I built myself a separate
+machine that can do nightly backups of
+all of my essentials and I want my so
+okay so my home server will do a nightly
+backup and then it will do a nightly
+sync to this one so the home timer is
+about 20 terabytes and this one is only
+eight by one terabyte running in raid
+five with a hot spare off of this LSI 90
+240 - 4i raid card so this one's
+significantly smaller which means that
+I'm going to be only doing my essentials
+you know my family pictures and videos
+and stuff like that the boot drive is of
+course air force GT 60 gig SSD and then
+this ninth Drive here is actually only
+for the purpose of backing up the boot
+drive so backing up the actual OS it's
+running Windows Home Server v2 so
+Windows Home Server 2011 and it's got a
+denim or rather Rob FX 81 40 so that's a
+lower power but still quite high point
+quite powerful eight core chip two gigs
+of ram
+just just random video card and it's I
+mean this was the only AMD motherboard I
+had lying around so it's got a crosshair
+for formula
+so I'm going to be throwing it under the
+desk here and I'll show you guys the
+software configuration shortly so the
+software setup is actually fairly simple
+there's just a few things you get to do
+so you got to make sure that you set up
+your FTP server on the on the remote
+backup server so I did add NCIX tech
+tips episode about this the one thing
+that I left out and that one is making
+sure that you set a static local IP for
+the server itself because otherwise
+every time you want plug or plug in an
+ethernet cable it can change and that's
+going to mess up all your settings so
+you just set your FTP port set all your
+user account settings yeah set up your
+router now this is something that's a
+little bit tricky so I've got all my
+Windows Home Server ports forwarded and
+then what I've discovered and this is
+sort of weird is that whenever I'm
+forwarding the FTP board even though
+it's a single port if I use the single
+port forwarding on my Linksys router it
+doesn't work and then if I use port
+range forwarding and then just put the
+one port in there then it does work and
+then this is my FTP transfer so once
+that's all set up then what you've got
+to do is make sure you're testing it so
+in this case I'm remote desktop remote
+desktop into my computer at home and
+then making sure that I can actually
+connect you can see the the FTP server
+is seeing the connection and I'm in and
+I can browse and so everything is
+working as it should in fact here I'm
+just going to show you guys you know
+every time I do something here both of
+those are active so this is this is my
+computer at home that I'm remote desktop
+tin - using Windows Home Server so now
+everything is set up for remote access
+to the FTP and what's left is to
+actually set up the nightly sync now
+that I'm back at home I can show you
+guys what I've got set up here so for
+those of you who haven't seen it already
+that's my free buy are rather 8 by 3
+terabyte storage server and this is the
+software that I'm using so I'll show you
+guys a couple things this is web drive
+this is the
+tickle $80 utility that makes this all
+happen this is a heck of a lot better
+than paying for a monthly service
+because you set up the hardware for
+yourself once you set this up and boom
+you've got your own personal clouds very
+cool stuff so all you got to do is add a
+web drive map into a drag letter see
+this is the key because without being
+able to map because FTP doesn't work
+exactly the same way as your local as
+your local Drive so you have to kind of
+trick vos so we have mapped using web
+drive this off-site backup server to the
+Z Drive with that we can use free
+synchronization tools in order to do the
+nightly sync that don't involve any kind
+of like special pop special software
+configuration so we can just sync some
+folder to some other folder no problem
+now you can do a one-time syncs with
+free file sync or you can actually setup
+batch one so just see if I don't know
+nope wrong one see if I remember how to
+do this I just did it last night yeah
+here we go
+so you set up these batch ones and then
+you basically yeah
+yeah Cree bad shot there it is okay here
+we go here we go here we go
+so you set it up put your batch settings
+and all that and you save as you create
+all these batch files now this is a very
+manual way to do it but I couldn't find
+anything more elegant sync TOI didn't
+work I did have trouble with sync TOI
+deleting things that were gone from the
+left folder from the right folder no
+matter how I set up the relationship so
+so free file sync ended up being able to
+do that even over the FTP so you set up
+all these things and then you go into
+the task scheduler in windows task
+scheduler there it is windows and you
+set up a nightly task of all of these
+see where they are of all of these
+things to run at a particular time every
+day now as long as you don't make huge
+wholesale changes in one day then it
+shouldn't be shouldn't be too hard on
+your internet connection but you should
+have a pretty decent upload so I have a
+5 megabit upload I'm hoping to upgrade
+to a 15 megabit upload soon which will
+give me much much faster nightly syncs
+and that's pretty much it in terms of
+the in terms of the software setup and
+then I should show you guys what the
+navigation is like from the the FTP so
+this is an FTP you'd never know it
+losers Linus finds some I don't know
+some video or something
+and videos look there's a fly in the
+house so you just you can't play
+directly from there it doesn't quite
+work that way you can paste and then
+download the file for you and because
+they're there internet connection is
+kind of not that fast you can see it's
+not coming down all that fast as a 960
+Meg file so I think you guys get the
+point but you can see that this behaves
+like a native Windows transfer which is
+what makes all this sort of magically
+come together so thank you oh okay right
+so security securing your connections
+outside the scope of this video
+so you guys will have to figure that
+part out on your own there's FTP
+security there's a variety of different
+things what I've done is I've set a hard
+IP blacklist and then I've set a
+whitelist for just myself to that remote
+backup FTP so that doesn't secure me
+against everything because I'm not
+actually encrypting the data that I'm
+transferring right now but it does
+prevent people from just randomly
+logging into that backup FTP by the
+off-site FTP so thank you for checking
+out this episode of Linus tech tips and
+don't forget to subscribe for more
+boxing's reviews and other computer
+videos</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

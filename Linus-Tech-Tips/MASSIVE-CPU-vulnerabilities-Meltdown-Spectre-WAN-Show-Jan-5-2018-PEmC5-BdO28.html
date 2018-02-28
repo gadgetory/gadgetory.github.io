@@ -1,0 +1,1603 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>MASSIVE CPU vulnerabilities, Meltdown, Spectre - WAN Show Jan. 5 2018 | Gadgetory - Your Gadget Factory</title><meta content="MASSIVE CPU vulnerabilities, Meltdown, Spectre - WAN Show Jan. 5 2018 - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1>Gadgetory</h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><h2 class="post__title"><b>MASSIVE CPU vulnerabilities, Meltdown, Spectre - WAN Show Jan. 5 2018</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/PEmC5-BdO28" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">welcome to the wine show the first wine
+show of 2018 and uh the last window the
+last man show of this week where see yes
+there we go I forgot what was important
+yes is gonna happen soon yeah that's
+that's I'm gonna blame my mind
+scattering on that so who's all going
+cuz this is your first year it's my
+first year it's gonna be Alex's first
+year Alex the gray dish yeah it's gonna
+be Jake's first time away from home yes
+away from the nest
+his mom's driving him to the airport but
+after that he's a free man
+I'm gonna give her a wink in the parking
+lot there oh yeah knowing smile and that
+so so you Alex Jake max yeah and then I
+think that's everyone who hasn't been
+I'm not sure if pelo was there Lassie or
+not he's been around there's gonna be a
+pack of us though hey Brandon lookout
+was Pella at CES last year yeah yeah
+okay so it's out so it's all just
+writers who weren't there last year well
+and Max cool that was almost here all
+right all right
+okay so that's that's what's going on
+and see yes that's gonna be next week
+expect a huge torrent of videos to be
+hitting YouTube and floatplane it's
+gonna be insane bunch of stuff coming
+excited and stressed you should be
+already it's a pretty insane experience
+a performance anxiety on the one hand
+I'm so stoked because as a kid I
+subscribed to Xbox Magazine and they're
+always talking about going to e3 yeah
+it's totally different sure but I never
+thought that I'd go to any yes giant
+complex like that and see all this
+cutting-edge stuff face up yes is more
+more insanity in terms of like let's
+OOTS me the people on the floor where
+you need to go so III is nicely
+contained in one building and it they're
+like super way more hardcore or at least
+they were they've loosened it up a
+little bit but who could go so there
+wasn't a ton of people on the floor and
+it's all in one building this is well
+early in the earlier day it's like in
+the early 2000s it was less yes yes
+tighten it up yeah you should grow your
+beard longer you have so much more
+wisdom than I do in our ears are the
+same length
+make any sense but yeah CES is gonna be
+insane
+I'll be at CES with a mustache no wisdom
+[Laughter]
+either way what we're gonna talk about
+this week is a lot of Intel stuff a lot
+of arm stuff a lot of Andy stuff as you
+guys know CPUs right now are in kind of
+a terrible spot with meltdown and
+Specter are both going around rampaging
+things we're all talked about we're
+talking about what different companies
+are doing to deal with this how it's
+being dealt with how it might affect you
+how it's affecting other companies
+different responses that are happening
+due to it
+all that kind of stuff let's talk about
+all that kind of stuff and there's a
+bunch of other interesting things as
+well
+like some stuff to do with Spotify and
+Luke's super-secret New Year's
+resolution yeah well the intro for
+dramatic effect
+now I made that last bit up you got a
+few minutes to think aside
+eat about as much sugar as I usually do
+for making this show viable moving back
+okay
+let's get into it I'm gonna post an ARS
+technica thread it was or a post an
+article article there we go we'll go
+with that it's posted by Peter bright
+it's a very good article thank you Peter
+bright for making a very nice concise
+package this is everything that's going
+on it's way too long most people aren't
+going to read it grab a coffee and a
+doughnut to go through it kind of
+article there's a lot of information
+this whole story is like an onion layers
+yeah so we're gonna take you through the
+entire story of how these
+vulnerabilities were discovered the what
+the response from the parties involved
+was and kind of all the insanity that
+has ensued and it's still in something
+today yes so I'm gonna jump slightly
+forward and explain what they are and
+then we'll jump back to the start and
+explain how it was founded all that kind
+of stuff okay that's okay jump around a
+little bit it's gonna be crazy tangent
+so I'm gonna steal some of this from Ars
+Technica again thank you very much Peter
+bright melt so there's two main
+vulnerabilities and they're kind of
+related they are kind of related they
+they source from the same type of area
+so jumping to the ARS article modern
+processors performs speculative
+execution that's where a lot of this is
+based on that is where a processor will
+assume what needs to be done next and do
+that thing and do those calculations and
+then if it is wrong and that isn't
+what's happening next
+that is fine it doesn't matter it
+ditches all that code no big deal if
+it's right then hey it's already done it
+and it's able to execute that thing
+faster this is a great thing
+it makes things run a lot faster it's
+not a big deal that it's running some
+code and coming up with some answers and
+then ditching those answers because it's
+making a lot of other things faster when
+it does guess correctly pretty much only
+upside this is the property of modern
+CPUs yes that would be a reason why no
+spoiler alerts
+these these vulnerabilities don't really
+have as much of an impact on older much
+older chips yeah so specter and meltdown
+that we're gonna be talking about today
+are it perturbs the processors state in
+detectable ways which is bad that
+essentially when you break that down
+means that these vulnerabilities can
+watch even though it doesn't have access
+to these code paths the speculative
+execution code paths it can figure out
+what they're doing which is bad because
+it gives them more information and it
+could result in more things down the
+line
+meltdown inspectors what we know of
+right now so again to break down what
+meltdown inspector our meltdown it's
+applicable to every Intel chip made for
+many years I don't think we know
+necessarily right now actually is a list
+yeah I should show the list I don't
+entirely know if the list is don't
+believe my list oh we didn't do screen
+share we have an HDMI like the classic
+meme of wind show which is it's late
+screen sharing has never stopped
+prepared an audio doesn't work
+yes except what screen is that that's
+awesome hold on anyways there is a list
+I can post it in the twitch chat so you
+guys can check it out yourselves suffice
+to say it's basically every Intel chip
+for the last 15 years yeah it's kind of
+a big deal and it's going to affect
+different chips in different ways which
+is another interesting part newer chips
+have certain standards which will
+actually help them deal with this a
+little bit better than certain older
+chips it also affects different programs
+differently so certain programs are
+gonna get hit by this really heavily
+Microsoft has found I will go into that
+more later but Microsoft has found that
+certain anti viruses have been using
+things in undocumented ways that utilize
+this type of stuff so when they try to
+turn it off again we're gonna get into
+that more later I'm trying to be vague
+because we'll go more deeply into that
+later it causes problems for the
+antivirus programs which is a nightmare
+but any
+it's all it's all a whole mess but only
+a verbal Table of Contents meltdown
+after one applicable to every Intel chip
+for many years listed in the twitch chat
+and will be in the dock if you access
+the forum so if you're watching this on
+youtube or you're listening to this on
+soundcloud which a few people do it does
+actually happen
+some people do listen to this on
+soundcloud you can go into the
+description and there will be a forum
+link if you go to that that'll show the
+dock and in the dock there will be a
+link with all capital letters that says
+list of affected Intel CPUs anyways
+moving on every Intel chip for many
+years along with certain high
+performance arm designs only high
+performance arm designs this flawed
+depends on the way that operating
+systems share memory between user
+programs and the kernel and the solution
+right now carries some performance
+penalty in certain cases really brutal
+ones I believe the highest reporter that
+I've seen is about 30% yeah but I think
+that's more anonymous it's usually
+that's usually especially if it been
+newer CPU it's about 5% yeah yeah it's
+not very rarely that bad it's also only
+certain processes and programs that are
+gonna get affected by it and it's also
+less as impactful if you have near chips
+and it's gonna depend what you're doing
+- I've heard in gaming it can be it can
+result in like three frames per second
+yeah yes yeah but it really is going to
+depend but the the answer to this is to
+put an end to that sharing of memory
+between user programs and the kernel
+which is why there's that performance
+penalty and then Specter it's applicable
+to chips from Intel AMD and arm this is
+where some of the confusion came in that
+we're gonna talk about soon where AMD
+didn't think they were susceptible to
+anything and then now it's just Intel
+susceptible to more stuff and everyone's
+susceptible to something that each
+company is trying to minimize what are
+the yeah like AMD said this is a near
+zero chance of affecting us and in Intel
+doesn't want their stock to drop so
+they're saying is it it does affect you
+yeah yeah it's a lot of politics
+involved as well
+there's a huge amount of politics in
+this we'll get into that a little bit
+more in the future yeah it even says
+Intel AMD arm and probably every other
+processor on the market that offers
+speculative execution which is like all
+of them it's also more subtle it
+encompasses a trick testing array bounds
+to read memory within single processes
+which can be used to attack the
+integrity of virtual machines and
+sandboxes which is rough that's a big
+deal for the cloud yeah and and cross
+process attacks using processors branch
+predictors which is the thing that I was
+mentioning earlier where I can take
+little bits of resulting information to
+figure out what it was actually doing
+fixes for some aspects of Spectre appear
+to have been developed already but
+protecting against the whole range of
+fixes will require modification or at
+least recompilation of at risk programs
+and that is also a very rough part
+because that brings way more players
+into the space because now you're
+talking about programs to so I think
+it's fair to say that the only true
+fixes new chip architecture
+it's one it depends what we're talking
+about
+unfortunately the sketchy one that
+requires the most amount of tinkerer
+level fixing for the most amount of
+people is Spectre which affects
+everybody everybody that has Beck you
+ative processing which so that's that's
+really annoying but you can on a single
+system know that you're okay if you go
+through like everything make sure
+everything has been modified or
+recompiled that is affected by this
+make sure your OS level is happy all
+that kind of stuff
+turn on Windows updates guys at least
+yeah it's this this it's it's it's kind
+of a nightmare so how did this first get
+discovered you want to jump us there but
+I can clarify some things because you
+know okay so the way this was discovered
+was through Google project zero project
+zero is one of those little Google
+subsidiaries that has a specific task
+their task is to find what are called
+zero day bugs or vulnerabilities that's
+where the zero from project zero comes
+from that's right so basically you're
+finding a bug as soon as you can fast as
+you can and fixing it as soon as it's
+found so the way this works is there are
+bug bounties a certain amount of money
+put up if bugs are found
+so all these freelancers Joe schmo's
+hackers white hats around the world are
+actively searching for bugs among the
+suite of software and hardware that is
+on project zeros list so a company can
+say we're on your list we want your
+freelancers to find bugs for us yeah so
+a person it's a really cool program
+found this vulnerability I believe in
+the summer time actually it's been a bit
+people have been working on this for a
+little while
+yeah and they notified Intel at the time
+but it's only just become known to the
+public this week one quick thing someone
+in the chat was like idiot this doesn't
+affect iPhones Apple has already issued
+a Apple has updated both iOS and Mac OS
+to use dual page table mappings I
+believe specifically for
+or Spectre yeah so it does affect it the
+thing is it's such a low-level
+vulnerability that if Apple is gonna
+patch it they're doing it at a higher
+level so they're only gonna be able to
+defend from certain aspects of it yeah
+well do and there's some nice stuff like
+we're jumping around all over the place
+I know it's going to be a little bit
+hard to follow I would highly recommend
+checking out the Rancho doc on the forum
+for this reading a few of the different
+actual articles that have been properly
+posted we're trying to talk live the ARS
+article is really good but also with
+something like this you should
+cross-reference information just to make
+sure you're getting everything good so
+if this is affecting you or you're
+really interested in this I would
+definitely recommend diving into it but
+people like Amazon with s2 instances are
+pushing updates of their own which is
+like handling everything on their side
+which is really nice but there's that
+that's not the case in all situations
+but sorry continue
+well you continue so when I don't know
+that they found moving after that at
+universities they made a nice white
+paper about it yeah so universities from
+America I remember it cuz it's 3a
+countries America Austria and Australia
+oh no it did this thing randomly when
+we're doing the wine show I get signed
+out of my Google account and I have to
+it's okay I don't actually need it this
+second I'll get signed in while I'm
+talking it's so much yeah and everything
+now hopefully not but yeah universities
+from America Australia and Austria and
+Google project zero and people working
+at Microsoft and Google and Amazon and
+all these huge companies all came
+together to try to work on this and
+they've been working on it actually for
+quite a while there's this is where we
+get into there's a lot of different
+information and it's a little bit
+confusing what happened next but the
+public figured out and the public
+figured out not that long ago the main
+article that really blew
+in a lot of people's minds because it
+was much more public-facing I believe
+was the register article register code
+at UK which is posted in the land och if
+you want to check it out on the forum
+that was as far as I know one of the
+biggest explosions in terms of more
+people knowing there was talk about it
+on on more like programmer focused back
+channels this was a big news outlet
+bringing it on I could be wrong about
+that it could have been someone else
+first this is the first one I saw saying
+and I think it's the first one most
+people saw it got to there as far as I
+know because a programmer at AMD pushed
+code to the Linux kernel let's see here
+yeah so there was an embargo on all this
+kind of stuff through the Google project
+0 platform not everyone agrees with
+having embargoes on these types of
+things some people position themselves
+with like all information should be open
+everyone should know everything that's
+going on and your opinion on that is
+whatever ZZZ but there was an embargo
+and it wasn't like technically broken I
+don't know you can frame that however
+you want but
+yeah so it says it's true that AMD
+didn't actually reveal the details of
+the flaw before the embargo was up but
+one of the company's developers came
+very close and close enough to infer
+what was actually going on an Ambu
+developer contributed a Linux patch that
+excluded AMD chips from the meltdown
+mitigation in the note with the patch
+the developer wrote the AMD
+microarchitecture does not allow memory
+references including speculative
+references that access higher privileged
+data when running in a lesser privileged
+mode when that access would result in a
+page fault so with that information
+knowing that people are writing code and
+it's extremely important having that
+basically is like we are not vulnerable
+to this and knowing that people are
+working on something very major and he's
+like excluding themselves from you can
+kind of figure out what's going on but
+then the guy kind of got murked by us
+but wait there's a notice more so as
+always to this is where the politics
+part comes in because and ok
+this is where it gets confusing too
+because I have also heard that there was
+stuff at Google that was leaked there's
+also been some emails that have been
+leaked there's been tons of different
+stuff I'm not entirely sure which spark
+was lit first this is what I read in the
+ARS technica article there's other stuff
+that I've read who knows anyway it got
+exposed to the public at some point and
+from there people started freaking the
+hell out and that was mostly based
+around meltdown that's where we got most
+of our information about meltdown which
+AMD is essentially as of right now as
+far as I know as far as I've seen
+published everywhere they're excluded
+from that they're fine about that and
+that's why there's a bunch of confusion
+even when you google this because
+there's a timeline here where the first
+part of the media wave was everyone
+responding to meltdown and saying like
+yeah you're gonna read articles let's
+say AMD is not affected it'll say that
+in bold but it depends when that was
+written yeah like the the the register
+article which exposed a lot of this
+stuff and really started exploding
+things like I was saying earlier
+specifically says Intel CPU design flaw
+then there's another one by the Enquirer
+that says Intel arm and AMD all affected
+by meltdown and specter security
+bypassing CPU design flaw in the
+freaking title so who knows because that
+one says that AMD is affected by
+meltdown but then almost everything else
+is saying that AMD isn't affected by
+meltdown I'm kind of going with the
+isn't side of things but then this is
+where it gets political because AMD goes
+ha ha ha we're not affected or
+everything's fine and then Intel
+releases super vague really confusing
+details like one of my favorite lines
+it's it's in the arse article the
+company's initial statement produced on
+Wednesday says for example these
+exploits do not have the potential to
+corrupt modify or delete data which is
+great because that is completely not the
+point and no one claimed that it did any
+of those things that's like
+there's another CNBC article somewhere
+in the forum linked where it's like this
+doesn't affect Nvidia but it's just a
+relevant title for all those or AMD
+graphics like non techie people who just
+bought it Nvidia stock because it was
+going gangbusters here yeah thank God
+computer stuff we're safe yeah so it's
+it's it's confusing for a lot of people
+again I highly recommend that you read
+these articles but we'll do our best to
+go through stuff but anyways that's
+where I started getting political
+because AMD is trying to sit over here
+and be like yes it's not us and then
+Intel's respond to that by being like
+confusing statements and then I like
+that AMD daddy did yeah but then Specter
+comes out of nowhere and now it's
+everybody everybody's included everyone
+who uses speculative processing and not
+even just arm Intel and AMD which is all
+the ones we largely know but like
+basically every chip maker that uses
+speculative everything your screen lock
+up your daughters and shoot your sons
+[Laughter]
+yes yeah so I'm gonna talk about what
+how affected is the average person here
+what can they do about it
+cuz I have heard slash read that even
+though the vulnerability does affect all
+these chips that we all have this isn't
+something that you can really exploit
+willy-nilly does it take quite a bit of
+work to as far as I know it takes quite
+a bit of work most random people are not
+gonna be targets for this as far as I
+know again this is really early on
+especially right now and I'm juggling a
+lot of different conflicting information
+but especially your add depth at
+exploiting this right now you're gonna
+go for the the highest knowledge sure
+see target's not not for Bob swarm as
+his battlefield for gaming PC I just
+can't look at that name I like it though
+it's pretty sweet I think that a gamer
+he's got a restaurant oh yeah yeah
+swarm oh he gets that all the time yeah
+yeah anyways yeah like it's it's very
+unlikely that
+your personal PC is gonna get attacked
+it's very unlikely to tie back to that
+dude calling someone an idiot in the
+twitch chat that your iPhone is going to
+get attacked but essentially all these
+processors are susceptible to Spectre
+there are updates that are coming
+certain programs are going to have to be
+recompiled or modified those things are
+going to happen especially for major
+mainline programs we can look forward to
+a lot of blue screens at CES you look
+for a lot of updates Windows updates
+program updates lots of different things
+are going to be updating this is where
+we're gonna tie into what different
+companies have done arm has released a
+really really nice white paper detailing
+how it affects their processors and all
+this kind of stuff which is gonna be
+uninteresting for almost everybody in
+this audience because those are for the
+most point not consumer level processors
+and what I mean by that is not consumer
+serviceable processors they're things
+like in your phone or in your IOT
+devices or all these other kind of
+things I doubt that you're running a
+desktop setup that has an ARM processor
+but you know you might be doing
+something weird it's possible you could
+plug in your phone if it's possible to
+exist yeah it's you could plug in your
+phone and use like external keyboards
+and do weird stuff yeah it's it's I
+doubt anyone watching has that setup but
+it is possible
+anyways ready for this aspect Oh let's
+jump let's jump there and in a quick
+moment so so yeah
+Apple is already releasing updates for
+iOS Mac OS and dealing with some other
+crazy things Microsoft is going ham the
+Microsoft section of this article is
+super long one thing that I really like
+that they did Microsoft has already
+published a PowerShell script that
+describes the current system protection
+against meltdown inspector on your
+computer so if you're into PowerShell if
+you're comfortable with that check out
+the ARS article it's linked in the forum
+link in the description if you're
+watching this on archive if not I've
+already posted in twitch chat there you
+go and you can check out what's going on
+on your own system they're releasing
+updates for edge internet explorer
+windows itself
+mozilla is trying to copy some of mostly
+lab mozilla whatever they're trying to
+copy some of their approaches to
+different things there's tons of stuff
+going on microsoft has already updated
+its Azur cloud computing platform which
+is awesome I would expect that Google
+was updated before I even heard about
+this Oh they've been on top of this for
+a long time yeah
+Amazon has already started rolling out
+patches for ec2 in terms of meltdown
+against specters gonna be weird for all
+this kind of stuff I'm mostly talking
+about meltdown
+Google's to consumer-facing operating
+systems Android and Chrome OS both
+depend on Linux kernels and that's
+already been being worked on as I
+mentioned earlier the AMD guy working on
+the next kernels and most and but most
+Android hardware and most and Android is
+a weird thing to think about because
+there's a lot of really low-end Android
+devices most people don't think about
+but is it susceptible to mount meltdown
+yet but that's going to change probably
+anyways right now it's a huge mess
+everything's a mess it's mostly a mess
+because it was leaked and when it was
+leaked everyone had to scramble super
+hard to solve it instead of trying to
+take their time and be very coordinated
+about everything and buried behind the
+scenes and then one day you just get a
+Windows Update you don't even know
+anything was ever wrong no instead of
+that everyone's freaking the hell out
+and trying to solve all of this at once
+and speaking of how this was very behind
+doors for a while Intel CEO sold what is
+it like 49 or 24 24 million dollars
+worth of stock right so he knew about
+this Google told Intel about this in the
+summer so the CEO knew that they were
+gonna have a fiasco once the public
+found out about this he knew the gravity
+of the situation and then before this
+became public he sold 24 million dollars
+worth of his stock in the company which
+was a majority I think a majority of
+this stock so that doesn't look very
+good no but but I think this is actually
+kind of click Beatty because
+intel says that the stock sale was
+unrelated to the vulnerability and came
+as part of a planned divestiture program
+and those things are things they exist
+the other thing is Intel stock price has
+only fallen about two bucks
+since this Fiasco kind of hit the public
+so that's it's not like it tanked and
+this is like a huge insider trading
+thing granted $2 like with the number of
+shares outstanding it's still like
+millions of dollars going you're mostly
+going from Intel stock right now so it
+is look it is huge but I think this is a
+little click bTW it's it it really
+depends I'm sure there's gonna be legal
+oversight into this because like man if
+if that was planned without insider
+trading and this was just routine
+whatever the timing on that yeah oh like
+you couldn't be worse in the last huge
+amount of years it could could not be
+worse timing so it could be an
+unfortunate coincidence
+I think people claiming that it's
+insider are you can't really hammer on
+them too hard because there's a lot of
+things a lot of red lights going off in
+terms of timing in terms of how much it
+was twenty four million dollars is quite
+a bit of money I also read this is why
+this is so confusing I read a number
+that was over 40 but like I'm not even
+saying it's right because I just read
+that like well that actually if this
+program it could be multiple phases so
+that was the number that went out
+recently in December so it could be over
+40 like since summer since he's known
+maybe sure yeah I don't know yeah it's a
+mess but potentially looking into his
+legal ramifications for what that might
+potentially end up being in terms of
+insider trading or not and I'm sure if
+it was planned he has tons of
+documentation for it and if it goes back
+before this bug was released to them
+he's going to be fine if it doesn't
+that's gonna that's gonna be a little
+bit was planning is fine you're probably
+not gonna hear about it because no one's
+gonna click on that article yeah it just
+it's gonna be boring it's not a story
+it'll be too boring to bring up on weigh
+in show you know it's not boring and
+getting sued over this ball they're
+super hard yeah there are multiple
+lawsuits about one quick second before
+we go forward
+this article is posted by SC to Mitch on
+the forum the previous one was found by
+James and the big hole entire thread the
+source that we have for that is Doctor
+Who 1975 on the forum he's getting the
+credit but there actually are like six
+I'm sure there's a lot and I'm sure
+there's gonna continue to be more thank
+you to everybody who's been posting
+about this stuff and that's not to say
+the duplicate threads there's just so
+many yeah there's there's and and
+there's conflicting ones and there's
+ones that grow on otherwise our forums
+happening peut place if you don't go
+there you shoes yeah its key yeah the
+people who are suing intel do you think
+so here's the grounds of at least one of
+them okay
+the lawsuit this lawsuit particular I
+think it was the familiar the first one
+Garcia the Intel Corporation filed on
+Wednesday January third the suits
+plaintiffs a plaintiffs allege that the
+computer chips containing the fatal
+security flaw well there's a lot of apps
+here they violate California and
+Tennessee law specifically the plaintiff
+spring claims for breach of warranty and
+violations of consumer protection
+statutes alleging that Intel's selling
+of computer chips with this fatal
+security flaw mislead consumers about
+the performance and reliability of the
+computer's operating with this hardware
+um my first thought like they have a
+quote here saying that they look forward
+to holding Intel responsible for
+exposing millions of Americans to a
+necessary data and security risks our
+data risks data security risk that
+sounds noble it's like yeah stick him
+break him over the coals like someone's
+fighting the good fight for us but my
+first thought actually when I read this
+was like I think these people might be
+those like professional sewers yeah
+there's also constantly security issues
+with this type of stuff it's just
+usually handled it's usually much
+smaller and it's usually handled much
+more quietly like like if you could sue
+Microsoft for having a security
+vulnerability in Windows Microsoft would
+be gone it's just it's obviously because
+of the scale
+yes scale is why this is a big headline
+and a big deal skills hand man to a bull
+yeah someone said it's usually handed by
+the NSA I have no freaking idea someone
+said in the chat he sold them shortly
+before ime vulnerabilities became public
+in November yeah that's not what we were
+talking about though if it was planned
+far beforehand if if if he comes in one
+day and board of director guys in his or
+his financial advisors or whatever the
+heck I don't know I'm not into this kind
+of money or like hey we should downscale
+our stock whatever that thing that you
+said it's not gonna happen the next day
+it would be planned on paper for a while
+it's he's moving a huge amount of stock
+it's gonna happen over time yeah anyways
+that's about it for that that's we did
+it I hope we did it again there's a huge
+amount of information if we actually
+wanted to go over every single little
+tiny bit of it it would take us the
+entire show and more if you do want to
+know more and if you're into computers
+and hardware this is super interesting I
+would highly recommend you read more
+come up with your own opinions about it
+all that kind of stuff check out the
+links that will be in the forum dock
+thing that i'll be posting that'll be in
+the description on youtube and yeah good
+idea on youtube and soundcloud and there
+we go that's it that's the giant not
+just Intel definitely everybody but
+mostly Intel and people are trying to
+obstacle skate information and some
+information is out there and crazy stuff
+and no official information completely
+entirely yet put your head in the sand
+what can you do about it really it's
+probably not gonna affect you update
+windows live your life yeah am i right
+for the most part yeah there is a lot of
+minority who's going it's it's it's
+definitely affecting some people it's
+affecting floatplane and it's it's going
+to affect other kind of businesses as
+you've seen Google and Amazon and
+Microsoft we're all tweaking out right
+now yeah anyways and now a word from our
+sponsors yeah
+yes bug alright
+why is there no lower third alright well
+there just isn't one how's it going
+FreshBooks is the small business
+accounting software that you need if you
+want to do awesome stuff like like what
+run a VPS hosting company or or run to
+VPS hosting companies or run a dog
+grooming shop or a plumbing company any
+any like I know a lot of people in the
+audience run small-scale computer
+hardware technician service companies I
+know I did when I was younger going
+around doing small-scale IT work for
+some businesses and building computers
+for people and doing IT stuff around as
+much as I could while I was going to
+school because the hours were all nice
+and flexible because you're working for
+yourself and you can often just remote
+into machines and fix them from home and
+all that kind of stuff it's great and
+you can manage the invoices and finances
+that are a nightmare I can tell you from
+personal experience are a nightmare if
+not if you don't have fresh books you
+can generate invoices in an extremely
+short period of time you can check if
+those people have seen the invoice this
+is all super helpful because you don't
+want to spend all your time while you
+could be studying or working or doing
+other more productive things chasing
+people down for invoices it does it for
+you which is great you can set up online
+payments with just a couple clicks which
+is awesome and you can get paid up to
+four days faster which is super cool so
+yeah stop the guessing games get paid
+for an unrestricted 30-day free trial go
+to FreshBooks comm slash tech tips and
+enter Linus tech tips and the how did
+you hear about a section freshbooks is
+great and moving on if you are doing
+what I just said running a small-scale
+IT business thing you might want to
+bring a laptop somewhere and have that
+hooked up and be able to use your laptop
+and the other computer all at once or
+there's tons of other use cases for this
+say you go to work and when you're at
+work you work on a laptop I know I was
+at the twitch offices we're on twitch
+right now is that the twitch offices not
+that long ago a lot of people worked on
+laptops there you'd be able to pick up
+your laptop from work where it's
+connected into the monitors and all
+nicely hooked up
+bring it home put that on a dock or
+something like just I have a little
+laptop holding arm plug it into power or
+whatever and over the network your
+keyboard or mouse will connect from your
+main computer to your laptop what are
+you talking drag-and-drop documents what
+business are even talking about energy
+you didn't say that yet I did synergy -
+synergy - that seems well yeah this is
+synergy - not synergy one synergy -
+instead of just having all the awesome
+stuff that synergy one has and it has as
+well with like mouse and keyboard going
+from computer to computer like be able
+to drag-and-drop files it working over
+the network so you don't have to plug
+them in through USB or anything you just
+have to be on the same network
+it also has stuff like cloud bridge so
+it can work across VPNs and tricky home
+networks if you have a weird set up and
+if you get the pro version you get to
+access other cool features like
+clipboard sharing drag-and-drop files
+copy and pasting lock screen sync and
+tons more which is great as SSL
+encryption which is nice you're not
+going to get jacked into all the time
+share anywhere automatically control any
+computer without reconfiguring which is
+really nice one thing that synergy 2 is
+apparently a lot better at is detecting
+computers which is nice because synergy
+was a little bit harder to set up before
+I'll show you now yeah so you can go to
+this link right here seamless comm slash
+synergy slash win 3 specifically that 3
+there is important and save 50% when you
+do that oh wow really oh yeah not bad
+save 50% ok and then last but not least
+we have Squarespace we've had
+Squarespace for a long time they have
+24/7 live chat and email support so if
+you're running your little IT business
+thing you have synergy you have fresh
+books all that is running nicely and you
+have your little website advertising
+your services and you have troubles with
+your site you can call their IT support
+or you can you can live chat or email
+their live support and it's only 12
+bucks a month you get a free domain if
+you subscribe for a year which is cool
+because domains you you usually rent
+them for a year anyways so if you want
+the domain for a year you subscribe for
+a year they come
+it's all nice they have a commerce
+module so you can use their free online
+store they have cover pages so you can
+have one nice beautiful page if you want
+that set up or you can even if you want
+to have some type of blog or something
+like that you can publish content in
+Apple news format directly from their
+blog module which is cool and if you go
+to squarespace.com forward slash LTTE
+and use offer code LTT you get 10% off
+your first purchase so there you go
+someone in the twitch chat it was
+scrolled by it was like what are those
+glasses you fool
+you don't even know your own folly all
+right what do you want to talk about now
+let's pick one
+I believe that Waring yeah no okay
+that's great if you have an HP chef an
+HP laptop this is me not talking about
+this one it might be getting recalled
+right now there's a big list of pro
+books and Zen books that are getting
+recalled because of the battery you can
+get a free battery fix from HP if you
+send it back in don't bring it to a
+third party fixer guy because these
+aren't actually supposed to be user
+fixable batteries so give it a Google
+look it up see if your HP book our
+notebook is one of the effective ones
+and get that puppy fixed and no reason
+to bring it to a third party anyways
+because this is a actual recall that HP
+is asking you to contact them about so
+they should be handling everything yeah
+yeah so I wouldn't I wouldn't worry we
+don't want to have a note seventh
+situation you're just yeah don't have
+just send her in yeah yeah that's
+probably good idea so next Spotify sure
+all right so Spotify they're possibly on
+the hook for a one point six billion
+dollar copy billion that's a lot of
+money why why you might ask
+because they've been streaming songs
+without giving money or getting consent
+from the owners of those songs yeah
+pretty much
+so it's what's the name of the company
+CSUN music publishing yeah they've got
+Tom Petty Neil Young and rage against
+the machines Tom Morello and many more
+so that's some
+pretty major names last summer Spotify
+faced a suggested 43 million dollar
+settlement which is still yet to be
+approved in court and they also agreed
+to a 30 million dollar settlement with
+national music publishers association
+and MPA for unpaid royalties in 2016 so
+they're just getting stomped got a
+license that content bro yeah speaking
+of music streaming rumor rumor has it
+that YouTube a grown YouTube is gonna
+launch a music streaming surface why you
+might ask since Google Play services
+already heard Google play music already
+exists we don't know this would actually
+be the alphabet the parent company of
+Google and YouTube this will be their
+third attempt at at a music service
+actually because Google Play Music
+launched in 2011 and to my estimation is
+doing just fine but on top of that I use
+it they had something called yeah I just
+switched to it from Spotify actually and
+I am digging that algorithm it's pretty
+good course the algorithms off yeah of
+course why did you think that someone
+likes pot if I could beat Google who
+owns YouTube YouTube by the way being
+the second largest search engine in the
+world is better than Bing YouTube's
+search engines it's huge their their
+algorithm for what to play next it keeps
+you on YouTube for hours doing not what
+yeah so obviously their music algorithm
+is great you can search a song and it'll
+just go for the rest tonight it's
+awesome
+Oh someone said could play music
+streaming service is not supported my
+company that pisses me off a huge amount
+about YouTube red oh my goodness I want
+to watch I think it's called minefield
+yeah it's on YouTube red I can't do the
+thing yeah they want you to that's the
+teaser they give you one episode to
+watch and then you got a YouTube reddit
+I think I might like subscribe to
+Emperor Lee while we're in Vegas and
+just try to like binge them you know I
+have time yeah yeah if you have time to
+watch that then that gives me a nobody
+no I don't let's go back every time that
+I go to see yes I'm like oh I'm gonna do
+all these things I'm gonna bring my
+personal camera I'm gonna take cool I'm
+gonna do all this kind of cool of extra
+stuff on the side and then it's like
+nope you work from like 8 to like 3 and
+then you sleep for a few hours and then
+you get back up and keep going
+I'm really hoping just to eat meals
+that's all what I want to go to Vegas
+and actually be able to hit at least one
+buffet you know probably average one or
+two a day yeah okay meals yeah yeah I
+want to just have to eat that spar Oh
+Pizza that's in the convention center
+yeah there is okay there's some hidden
+spots in the Convention Center on four
+to your ways yeah don't tell everyone
+hidden that's a good cause so back to
+the chronology out of play came out in
+2011 I think that I had never heard of
+called YouTube music key came along in
+2014 which gave subscribers ad free
+music videos which is awesome because
+obviously a ton of awesome music and
+remixes and everything there on YouTube
+but you hit play you try to put that on
+a party and then ads interrupt it and
+you look like a dork but then YouTube
+music he kind of just turned into
+YouTube red in 2016
+yeah which expands to letting you watch
+any video without advertising and now
+it's just kind of like its own thing so
+they keep just changing stuff in super
+weird ways this service this alleged
+rumored service is internally referred
+to as remix okay it's gonna have
+on-demand elements like a regular like a
+Spotify but it's also gonna have some
+YouTube elements maybe like some video
+clips maybe some lyrics on screen that'd
+be nice
+so you can already do YouTube music
+videos through google play music but
+alright alright I I don't know I think
+part of this might come from the supply
+side apparently some of the creators
+whose music is getting listened to
+through YouTube they don't feel like
+they're getting compensated as as fairly
+as they would be on dedicated music
+streaming services like Google Play
+Music or on Spotify so it might be like
+a money thing okay they put it on there
+[Laughter]
+I don't know I don't know yeah that's
+for deploying this thing warner music
+group is already on board they're one of
+the big three yeah the music
+and the other two of the three already
+in talks with YouTube that includes the
+Sony Music Entertainment and Universal
+Music Group they're also talking to
+Merlin a consortium source of
+independent labels so hopefully they'll
+have a good spread on content yeah I
+like I don't know it'll probably be good
+I it seems weird because it seems like
+alphabet is now creating things to
+compete against themselves yeah this is
+like a hangouts a load yeah yeah that's
+a good call so maybe something weird for
+them it's because there's they're so
+federated that they don't talk and they
+step on each other all the time yeah
+anyways going back to the Google Play
+Music thing one of my favorite things
+about it is just how creepy it is you
+know it'll pull in a lot of data which
+is unsurprising because it's Google
+so it'll like you know when you're at
+the gym yeah yeah you can see that you
+can turn on notifications location
+notifications like I see you're in the
+border lineup I'm gonna play gangster
+rap to me yeah I don't know it's it's
+it's interesting every once in a while
+I'll just jump into the different
+playlists that it recommends for me to
+try to see where it's trying to take me
+and sometimes you know it'll go off in
+totally a weird direction I'm like I
+don't like any of this stuff but often
+it's pretty good I've been happy with it
+because when I had two problems with
+Spotify the first was the discover
+playlist was just totally like and stuff
+I didn't listen to it all and the the
+second was now maybe you can do this on
+certain services with Spotify but I
+usually use this with my TV and my
+Google home and what I want to do is I
+have a song on this on in my head and
+I'm like I want to play this song and
+then that's all I want to do and after
+that I wanted to just go forever playing
+related music and Google Play Music is
+wicked app that's very good at that not
+only will it play other songs that
+you'll like they might not even be from
+bands you know of yeah I start with a
+Nine Inch Nails song the other day Nine
+Inch Nails die hard the next ten songs
+were for bands I never heard of it I
+didn't skip a single one they're so
+sweet nice actually really like doing
+that sometimes yeah that's wicked if you
+try to do this on Spotify guess what the
+second song will be
+the second song would be the same song
+again because instead of playing the
+song you search for and then a bunch of
+related songs it will play all the
+search results so it'll be like so you
+try to put on so be like that same song
+or like remixed by someone else try to
+yeah you try to put on stairway to
+heaven you get server to heaven then you
+get live then you get cut that's like
+yes yes Spotify this is what I wanted
+no one's ever wanted this I'm gonna
+hopefully troll at least one person ok
+Google Play that hipster song with the
+whistling ok so that's in one of their
+you jerk did it work no no dang oh I
+should have said with Google Play Music
+so sometimes it gets confused if you
+don't include that I don't know why but
+because you guys in a different default
+music player yeah yeah so if you have to
+installed it might have to like ask or
+whatever but you got me it did it yes
+some people got ok now let it keep going
+you can even mute it and leave it off on
+the side or whatever but let it keep
+going it does a pretty good job and it
+doesn't continue to play whist or
+whistle songs or what do you mean that
+good job but it continues to play
+hipstery kind of songs but that actually
+sound kind of similar and fun with the
+same tonality and all the other things
+it does it does a pretty good job I
+ended up already cancelled some people
+like no that's good
+someone actually said it didn't
+recognize the voice yeah yeah I've got
+that recently someone tried to troll me
+and then Google was like that doesn't
+sound like James yeah don't friend even
+trying to impersonate my voice couldn't
+get into my phone using that's not
+surprising
+yeah yeah I know but it's just it's it's
+interesting it did a pretty good job I
+would love to hear three devices are
+some guy said three devices are playing
+that song of my house right now when I
+did the there's a previous rancher where
+I did a similar command with some weird
+Russian song that goes boom yes yes yeah
+people kept tweeting me like man it was
+it was 1:00 a.m. my whole family is
+awake now yeah it's pretty bad we're
+gonna we put a lockdown on that recently
+okay so we're yeah maybe maybe that was
+bad do that on purpose I did
+it's the accidental ones
+outpour hey there's actually an Amazon
+echo topic here we can go right into
+sure so this has to do with Amazon
+trying to monetize and and place ad
+units into echo devices so there's a
+thread on the forum by man keys who
+actually pretty much supplied a lot of
+almost all of the threads today Thank
+You Man key thank you very much however
+I kind of think that your bank your
+title for this is fake news because ooh
+as far as I read it's not the case that
+your Amazon echo is going to be reading
+out ads to you that would just be so
+brutal this as far as I've seen I don't
+think that's what they're trying to do
+but what they are trying to do is have
+brands be like the sponsored search
+results so just like when you google
+something if you google new truck
+there's gonna be a for data at the top
+of your search results page right but
+now we're talking about voice so there's
+no page just so there's gonna be a
+suggested product so if you ask like
+there's an example here that says if you
+ask a LAX a because we're not trying to
+trigger the local commands anymore good
+idea yeah to add an item to your
+shopping cart it will suggest you buy a
+particular brand so I think that means
+like a LAX a can you add some
+toothpastes it's my shopping cart and it
+would be like okay I can look for a
+brand like Colgate would you like that
+and if you're like no it can find some
+other stuff but the default matters does
+a lot of people are gonna be like yeah
+instead of being like no actually I
+would like Sensodyne complete yes
+[Laughter]
+so yeah it's that is really intriguing
+problematic yeah so apparently it might
+suggest it based on your previous
+purchasing decisions which is not that
+bad so that would be a situation like
+hey al exa I would like some surface
+cleaner and they know that you bought a
+Clorox Clorox product in the past so
+they'll say okay do you want
+Clorox pine-sol that kind of makes sense
+it's gonna keep people in a little
+bubble which is maybe not great mm-hmm
+but if you're just trying to order
+something with a voice command you're
+probably not trying to shop around
+you're probably just trying to stay
+within your bubble you probably just
+want the transaction done faster so
+that's maybe not a bad thing I'd be
+interested in hearing what other people
+have opinions in terms of that if I'm
+making a purchasing decision that I'm
+even remotely unsure of I always yes
+search this is probably for your second
+time exactly Yeah right so and and it
+says that it's going to suggest things
+based on what people have previously buy
+so if you've already bought one of these
+and you're like hey I need some
+toothpaste and you've been buying the
+same toothpaste for freaking ever and
+it's like hey do you want the same
+toothpaste that you've been buying for
+freaking ever you'll just say yes and
+well that's what we want but now we're
+talking about that not happen because of
+sponsored posts yeah do you want the
+thing you've always been getting or do
+you want this new featured product that
+like maybe sucks but they paid money so
+that's what there's gonna be the default
+yeah interesting it would be cool if
+they had a voice command for like no I'd
+like the usual the huge you know what I
+mean yeah if you're you know at a
+restaurant they might know what you want
+like the dude at mucho burrito knows my
+people at Subway over here they know me
+too
+yeah I took them like six months I have
+a very simple order I get everything for
+the veggies like everything yeah it's
+like they have two decisions anyway
+they're on it now question I think this
+is interesting and I don't know I think
+there's a if you're a glass-half-full
+person or a glass half-empty person you
+might have two answers here okay is it
+likely that Google will also seek to
+monetize and similar ways I will have
+their the main advertiser in this space
+right but is it antithetical to Google's
+mission statement or corporate culture
+be given that they're coming from a
+place where they're taking the world's
+information and putting down onto one
+search result page they're giving you
+options
+it's democratic it's supposed to be
+based on like the link juice of the
+internet you know the democracy the
+population popularity contest of the
+Internet
+when you get into voice you only get one
+answer so does Google do the same thing
+amazon's doing or do they never do that
+I suspect they will Green yeah paid
+advertising is Google's whole thing I
+would say what I this this is just
+making me think like we need more
+competition for Amazon because like with
+Google situation what is it going to
+suggest you buy can you even Auto buy
+things through voice with Guk Walmart
+they have a partnership with Walmart
+yeah well I just like it's it's the same
+situation with Amazon where it's just
+some like giant massive company eating
+everything up this is gonna take more
+purchasing from other random companies I
+don't know Alibaba is coming soon yeah
+of here yeah the usability about Alibaba
+is not there compared to Amazon you know
+has its own shop Express yeah come on
+it's not there I mean like on the same
+scale in terms of usability trust like
+if something is a prime product on
+Amazon if it's shipped by Amazon it's a
+prime product it's uh it's highly likely
+news that you're gonna get it on time
+that you're gonna be able to have an
+easy time with returns and warranty and
+all that other kind of stuff I don't
+know it's it it shelters you like most
+normal stores do and a lot of online
+situations don't do that properly and
+they're shipping stocks and stuff like I
+understand why Amazon's where they're at
+but they need better competition one
+more well we got a Duflo place let's do
+floatplane and one more I'm gonna I
+don't even know if I can maybe you can
+find me in the club we don't call it
+that anymore it's still not I don't know
+if we're gonna be able to show
+well either way screen sharing is not
+happy right now but full plane has a
+bunch of really cool stuff on it
+at the moment there's even one thing
+that doesn't happen that much there's a
+poll ladies there's a discussion poll
+asking you guys how you guys want us to
+share CES content on Flo plain because
+there's a few different good question
+usually we don't care what you think
+they'll not working so we will not be
+able to screen share oh I bet you I know
+why it's not working and I could fix it
+if I had more time but I don't that's
+okay there's yeah there's a poll asking
+how you guys want us to share content
+and essentially the decision was was
+something like YouTube we have to
+timeout our releases or YouTube's
+algorithm is gonna be like no screw you
+guys and they're already they're already
+gonna do that a little bit because of
+just the nature of how rapid-fire we
+have to do CES content but we're gonna
+do our best to spread it out and make
+the YouTube robot happy but with Flo
+plain whatever it doesn't matter we
+don't have to fight any weird algorithm
+so you guys have so far decided posted
+in the main section and just fire ladder
+at fire hell let her go so right when
+it's ready we're just gonna post it up
+you guys gonna get the content a little
+bit faster it's not gonna be the
+one-week window that it normally is
+because that would be terrible but it is
+gonna be a little bit faster in general
+we're gonna give it up to you guys right
+away it's gonna be good
+you can look like a Twitter magician
+yeah you're gonna be in the know it's
+gonna be awesome on here regardless
+outside of the pool
+there is a tech wiki for why is windows
+display scaling so bad I'm excited for
+that I know a fair amount about it
+because I did the surface studio review
+and there's a lot of really interesting
+information in that as to why the screen
+is the resolution and aspect ratio and
+stuff that it is it seems to me like a
+topic that's like yeah it sucks but it
+has to be this way
+yeah like you just haven't thought about
+it as hard as the engineers it sucks we
+reason there's the 1 + 5 t review now in
+white if you haven't seen the
+for that it's been everywhere so I'd be
+surprised there's a flow plane exclusive
+behind the scene from right before
+Christmas that just got released so I
+don't know I think release now but I
+will not spoil so the behind the scenes
+thing I know some people are salty that
+we don't release this in other places
+but YouTube would destroy our search
+ability if we did that because most
+people don't care about these things I
+think they're awesome and the people
+that do care about them are pretty
+hardcore about it but anyways there's
+the 13 GPUs in one PC mining adventure
+part 2 this is a very large departure
+from the kind of amateur hour mining
+adventure part one just you know you
+know there was some comments they were
+accurate
+we're just know what by but we're moving
+forward part 2 strong return part 3 is
+gonna be even stronger of a return so
+we're coming at you with some really
+interesting mining adventure videos
+they're coming PCI Express 4.0 as fast
+as possible John back at it again with
+the epic videos and LTT hand-made
+there's an LTV video of a handmade
+portable arcade box not that thing is so
+et handmade one that's made by Kerry 42
+as far as I know check it out
+super cool and there's also some like
+extra footage from the chiller
+resurrection which is super cool so if
+you were into that there's extra footage
+the untold story of the Chile
+resurrection again stuff that if we
+threw this on YouTube people wouldn't
+care as much it would hurt the channel
+so we're just throwing it on flow plane
+for the super-hard course and that's it
+we're done
+moving on to now this weekend there's
+gonna be another keyboard video Oh Janey
+keyboard video us I think we almost did
+every one of them is ending here okay we
+have another one yeah I think so this is
+a little simple guy yeah sure let's just
+do that I'm surprisingly if you think
+about it 2017 was the biggest year ever
+for electric car sales wow I'm super
+surprised actually tell me more there
+was a time in like in the
+thirty yes like before the Model T we're
+electric cars actually where the main
+had the most market share above
+combustion engines but since then this
+is the biggest year ever someone asked
+about the dust video I'm gonna just say
+this right now the dust video is gonna
+happen I'm gonna be in it Linus is gonna
+be in it there's possibly other people
+that'll be in it it's possibly not I'm
+not stand where you're going with that
+but no it's the dust computers they're
+up in the corner I'm not gonna be in it
+guys you should just you should just
+walk through the screen at some point
+hey
+yeah the glass it's gonna happen we
+haven't filmed it yet means it's not
+gonna be filmed too at least after CES
+so it's gonna be at least another week
+until it's filmed but it's gonna happen
+eventually anyways let me Chuck some
+numbers at you here yeah December marks
+the 27th twenty seventh month of
+consecutive sales gains for plug-in
+vehicles meaning v's so in 2017 there
+was nearly 200,000 V's sold in the u.s.
+one hundred ninety nine thousand eight
+hundred twenty six this compares to 100
+thousand 158642 what is that like a 30%
+increase pretty decent so if you break
+that down by the top five Browns that
+were sold the top Tesla Model S was the
+number one seller at 27 thousand sixty
+next in line Chevy Volt Chevy bolt the
+electric version at twenty-three
+thousand two hundred ninety seven next
+and I'm back to Tesla it was the Model X
+21 over 21,000 low sold and then what
+was that you're like whoa Lex no no
+Frank the fourth one was the Prius Prius
+prime from Toyota over twenty thousand
+almost 21,000 sold and everyone wants to
+know how many Tesla Model 3 s got
+delivered in 2017 and it looks like it
+was about two thousand about two grand
+they're doing what a thousand a week now
+which is less than a previous promise
+that they'd be doing five thousand week
+by the end of year they're now hoping to
+hit five thousand a week by this summer
+in terms of production
+estimations that's pretty standard from
+what we've been able to expect so far is
+there's the estimation they won't hit it
+but we'll do pretty darn good and that's
+cool because they'll figure it out
+eventually there you go
+someone said in chat stream Labs is
+releasing their own kind of version of
+OBS cuz OBS is open source that is a
+thing I'm gonna be screwing with out on
+my personal stream I believe Colton is
+as well but I don't know if I'll end up
+using it we'll see that's another
+interesting news bit though because if
+your industry mning it streamlines a lot
+of haha get it streamlines a lot of
+different stuff which is cool and I
+think we will see you guys at CES yes
+we have so far never missed a wine show
+at CES so theoretically there will be a
+LAN show at CES but every single year
+it's super random how it works is super
+random who's on it is super random where
+we are is super random what time it
+starts not that that's different from
+normal but it's pretty random be pretty
+cool if we get it from a plane like here
+we have Wi-Fi on the plane B that'd be
+dope you might even be able to get by
+with like a super Crapo resolution if we
+get like everyone else on the plane to
+not use Wi-Fi you may be able to get by
+with a super terrible resolution if you
+think sitting beside a baby on a plane
+sighs wait till you're beside two
+podcasters I think it would just get
+rejected from twitch though because the
+latency hmm because like I connected to
+a game while I was on a plane just to
+check out my latency and it was like
+quite a few seconds between input and
+what actually happened we can always do
+another pre-recorded one like this one
+was oh why
+no joking and joking look it says Friday
+January 5th right there Oh
+JK oh the joke I gotta go man anyway
+I'll see I'll see you guys see us video
+see us when show next week see you later
+good bye huh</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

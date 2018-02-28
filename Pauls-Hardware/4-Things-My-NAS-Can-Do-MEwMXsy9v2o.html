@@ -1,0 +1,254 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>4 Things My NAS Can Do! | Gadgetory - Your Gadget Factory</title><meta content="4 Things My NAS Can Do! - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Pauls-Hardware">Paul's Hardware</a></li><li class="active">4 Things My NAS Can Do!</li></ol></div><h2 class="post__title"><b>4 Things My NAS Can Do!</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/MEwMXsy9v2o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">excellent so a few weeks back I built a
+Nass that is network-attached storage
+it's been running FreeNAS and last you
+saw I got as far as assembling the
+system and getting it booted up that I
+went just fine fortunately but I wanted
+to use my Nass for some useful tasks and
+that list of tasks spoils down to four
+things one is basic easy access to mass
+storage on my local network at home
+which is pretty much what an ass should
+do two is regular backups of my
+important irreplaceable personal files
+like photos three is remote access so I
+can download stuff while I'm off on the
+road and then four is media server
+capabilities I can now do all of those
+things with my Nass thanks largely in
+part to several videos and websites that
+taught me how I'm going to walk you
+through what I set up and for each topic
+there's a link in the description to the
+article or video that helped me figure
+out all of this stuff since I'm kind of
+learning as I go so feel free to check
+those out down below don't accidentally
+click the like button while you're down
+there though as that should only be done
+intentionally so mine ass is currently
+deployed in my computer room connected
+via a gigabit switch to my home network
+for all this setup I accessed it via the
+Chrome browser on my primary desktop PC
+running Windows seven before I set the
+NASS up to do any of my four things
+though I first ran updates we're up to
+FreeNAS nine point three point one now
+and then I needed to create a ZFS volume
+across my 4wd read for terabyte hard
+drives
+here is where I encountered my first
+problem after going to storage volume
+manager and trying to create a raid Z to
+volume across my four four terabyte
+drives I got an error unable to GPT
+format the disk
+ata three these drives are used they
+were formerly in a raid 5 array and to
+be honest I should have cleaned them
+before installation but unfortunately
+even the wipe command that you can
+access under view disks in freenas
+wasn't working anyway i internet
+searched that error i found a website
+bit fix table ee with a fix so i pulled
+up the shell and FreeNAS entered the
+commands listed on the site and i was
+able to wipe the disks and proceed i
+then pulled up volume manager i named my
+volume big i dragged over my four drives
+and FreeNAS auto selected raids e2 for
+me which is actually the configuration
+that I wanted because it means that I
+will have up to two drives be able to
+fail without losing data I do lose half
+of my capacity though kind of like with
+raid 10 so I will end up having only
+terabytes of storage which should be
+enough so with my big volume set up it
+is time for the first thing the most
+basic thing in ash should do gave
+locally accessible mass storage over
+your home network Wendell and Logan from
+Tech Syndicate were immensely helpful
+with their videos on FreeNAS here this
+seems basic but it doesn't necessarily
+just pop up after FreeNAS is installed I
+had to create a dataset on the new
+volume this one was for media like
+movies TV and music so I called it media
+and before I moved on I changed the
+permissions to allow guest access that
+made a repository on the big volume for
+data and to access it over my home
+network I went to sharing and then add a
+windows CIFS share and then I browse
+until I found that media dataset on the
+big volume and then connected the two
+together you can give it a unique name
+here if you want it to have a different
+name as it appears over your network and
+don't forget again to allow guest access
+keep in mind that this is the quick and
+less secure method of setup you'd want
+to add users and permissions and FreeNAS
+for these datasets in the future rather
+than just leaving them open to all
+guests on the network but again this is
+a fast and easy way to get set up now if
+I access my home network via one of my
+Windows PCs I can see my FreeNAS system
+there even in it there's my newly
+created media shared folder you can
+create subfolders for different types of
+media as you might expect so I just
+started to drag and drop my movies music
+and TV shows over to them and the thing
+one was complete thing too is backups
+and whereas I eventually want to have
+another FreeNAS box in a remote location
+that syncs with this one my immediate
+concern was protection from viruses and
+malicious software like cryptolocker
+that could compromise my data tech
+syndicate to the rescue once again with
+their snapshots walkthrough freenas can
+take snapshots of your data at regular
+intervals and the snapshots are
+read-only for your protection
+since my media collection is replaceable
+and it's also backed up elsewhere I
+created a new data set called records to
+use for my more important files like
+African film scripts and my scandalous
+partially nude selfie collection before
+adding the windows CIFS share for this
+data set though i jumped over to
+snapshots to add a periodic snapshot
+task for records I stuck with two weeks
+to keep each snapshot and once a day
+seemed about right so now every day the
+contents of this folder will be backed
+up via a snapshot and these snapshots
+tab the first one popped up after a
+couple minutes and after setting share
+permissions I was able to access the
+records folder over
+network via Windows Explorer if you're
+in Windows Explorer you can go to
+properties and the previous versions tab
+will also show me the staff shots and
+allow me to restore from them if I want
+to I have backups now and thing to is
+completely to set up remote data access
+for thing the three I used a FreeNAS
+plugin for BitTorrent sync BitTorrent
+sync has apps you can get for just about
+anything Windows Mac Android iOS Linux
+and more so once I got it running with
+help directly from FreeNAS team's
+YouTube channel and they're very
+thorough video I can use BitTorrent sync
+to synchronize data that means that I
+can set up a folder on the nest with a
+bunch of raw video files for example use
+the BitTorrent sync GUI to pull up a
+shareable key or you can also do a link
+or a QR code and then I can send that to
+a friend
+my editor Joe who handles about three to
+five videos a month for me in this case
+who would load the BitTorrent sync app
+on their device enter that key or scan
+the QR code if it's a smartphone and
+then mine ass will sync the files
+directly to their device with no
+middleman or cloud service needed it's
+not quite the same as a service like
+Dropbox and there is another plugin for
+free and asked called own cloud that is
+a bit more flexible for this type of
+usage but since exposing your home
+storage server to the Internet does
+involve some security pitfalls I've
+decided to set own cloud aside for
+potential future investigation
+BitTorrent sync will get the job done
+for now and if you hadn't already
+noticed I'm sparing you the installation
+walkthrough for this one because there
+are quite a few steps I will point out
+that I've added one more drive to my
+freenas rig though a 32 gig SSD that I'm
+using for jails jails are basically like
+quarantined areas that allow processes
+to run in a safe environment separate
+from the rest of the system you can
+create an independent data set for a
+jail on your main volume but from what
+I've read using it faster SSD for jails
+can help with some plugins like plex
+media server aka thing for which we can
+move on to now because thanks to
+BitTorrent sync thing 3 is also
+completed plex media server is more than
+just a plugin for FreeNAS but thanks to
+the plug-in you can easily set up
+FreeNAS to be a plex media server I did
+this with ease thanks to a great video
+by byte my bits that walked me through
+it and once you have a plex media server
+on your network set up and attached to
+your media collection you can use plex
+client software to enjoy that content
+from just about any device like
+literally
+from a Mac or a PC to a tablet to all
+variety of smartphones to Xbox and
+Playstation 4 even more specific devices
+like amazon firetv chromecast Roku and
+Nvidia shield you just have to create a
+Plex account and then you have access to
+what is essentially a glorified media
+player but it also pulls metadata and
+thumbnails from the Internet's and it
+does sorting and it lets you do stuff
+like seamlessly continue watching a
+video from your smartphone by throwing
+it up on your TV not actually throwing
+up but like virtually tossing it from
+one device to the other device you get
+my points it even encrypts the data
+between the server and the clients and
+there are social sharing features that I
+haven't even really messed with yet I do
+not have Plex premium yet but I did get
+these smartphone app for five bucks and
+I already really like it it's fast and
+responsive and it just seems pretty
+awesome I feel like I should have tried
+this out a while back to be honest but
+what can you do and oh yeah thing for is
+now also complete and those are four
+amazing things you can do with an S
+thank you very much everyone for
+watching this video if you enjoyed it
+don't forget to hit that like button you
+can also support me by using my amazon
+link which is down in the description
+just click it before you shop for stuff
+that helps me a lot
+feel free to visit my store as well at
+store dot paul's harbor net net where
+you can also support me by picking up a
+mug or a shirt I also have pipe glasses
+and hoodies now subscribe to my channel
+if you're not already for the latest
+tech videos and as always thank you for
+watching</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

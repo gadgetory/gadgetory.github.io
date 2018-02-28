@@ -1,0 +1,224 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Shader Intrinsic Functions with AMD's Raja Koduri | Gadgetory - Your Gadget Factory</title><meta content="Shader Intrinsic Functions with AMD's Raja Koduri - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Shader Intrinsic Functions with AMD's Raja Koduri</li></ol></div><h2 class="post__title"><b>Shader Intrinsic Functions with AMD's Raja Koduri</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/MD-u3K_Ltq4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">everyone I am joined by Raja Kaduri from
+AMD how's it going Raja it's going good
+it's good to have you here yeah thank
+you for hosting us we are in the am the
+offices in Sunnyvale and the last time
+we spoke was at the Macao event for
+Polaris right so since then a couple
+major things have happened in game
+technology the main one I guess to call
+attention to it would be doom with
+Vulcan being kind of like a seminal
+example mmm-hmm a Vulcan working so a
+major topic I wanted to ask you about
+was this idea of shader intrinsic
+function so we talked about this briefly
+in our 480 review since then it's become
+a lot more relevant can you give folks a
+top-level overview of shader intrinsic
+functions then we'll drill down into it
+yeah absolutely so kind of you know
+before we go specific on children 26
+right you know the thing about first
+wall command dx12 is the reason we are
+very much excited about and you know we
+start with the whole mantle initiative
+for low-level API is it was around
+reducing the overhead of the API so that
+you don't need as many CPU cycles to you
+know push a frame to the GPU right and
+and also take advantage of all the
+courses that are available in the system
+and all the resources available in the
+system and that was the intent of those
+aps and and there was a basis for that
+that game consoles we're all based
+around kind of a very lower head low
+level APRs and if you look at a game
+console and compare it to a PC right if
+you just kind of as a game outright if I
+put myself as a gamer right you look at
+like can you pay $2.99 or $399 you get
+the whole box and you get the game and
+if you compare to the experience for the
+hour of game console to the experience
+for dollar of a PC game console is so
+far ahead you know that you get so much
+more I'm not saying that PC games don't
+look good right but they cost all right
+yeah no one's saying consoles or
+whatever's better than the other is just
+nuts per dollar it's just if you see
+experience but I call it
+so much better right and when you look
+at it and you know that bothered us all
+the time that you know it's the same
+hardware you have actually more hardware
+sitting on a PC and why is it that we
+can't give you know better experience
+per dollar can see right and when you
+kind of analyze it from a technical
+standpoint right all this kind of you
+know software infrastructure issues come
+about right one is the you know the API
+itself is I overhead you know the
+developer has more control of all the
+you know CPU cores and GPU on the
+console and not on the PC so the first
+step to that was hey can we do a lower
+head API on the PC which was kind of in
+a check with the x12 and welcome okay
+the next step so the API is one thing
+the next step is they are a whole bunch
+of hardware features right and
+instructions and all that are not
+exactly exposed through standard API so
+right like the experiment welcome okay
+so we had and we see that these features
+are leveraged by the developer on the
+console to get you know 10% 20% 30% I'm
+saying 2x performance and when they
+poured their game over to the PC they
+say ah I was doing this on the console
+and I know it's the same GCN
+architecture but I can't get access to
+this stuff right and so shader in turn
+six were one of those things that the
+you know the folks at Bethesda were
+using on they were doing some
+interesting things on the console and we
+said hey how do we give you access to
+the same thing on a PC so that's how you
+know that's kind of the motivation for
+the shade of intrinsic functions that we
+added to welcome where they could map
+their algorithms that they were doing on
+the console onto the PC I guess at a top
+level to it if I understand it right
+shader intrinsic functions sort of
+remove some abstraction layers to the
+hardware yes right so that is it going
+straight to machine code or when your
+motor dies I mean the compiler still has
+to kinda you know make sure that you
+know that everything is a you know
+legal proper program right that that's
+effective the hardware so compiler helps
+but yeah it's it's almost like inline
+assembly you know if you're an assembly
+program or you know you can inject in
+some versions of C compilers you can
+have inline assembly right say hey this
+this instruction just pass it on right
+you know don't do anything so it's kind
+of like that where you can insert these
+instructions right so so they can get as
+far at least as far as shader programs
+go near equivalent to whatever they can
+do on a on a game console right and and
+and it's cool that you know we we love
+welcome that allows us to extend the API
+to add these kind of features within our
+own schedule within our own control we
+don't have to go ask permission for
+everybody and you know other than you
+know getting the game developers to
+adopt it so that's so you're excited and
+what you will see us doing Steve from a
+game developer perspective is you'll see
+us kind of opening up a min the whole
+GPU open initiative and you know we can
+go more into that but was the idea was
+to make all the tools available on the
+PC right so if something is available in
+the hardware the developer needs to find
+a way to get to it so that was our goal
+right so it's not always easy to provide
+the console level access but we are
+trying you know you're opening up every
+every door we can right so I think you
+know if you drive the experience per
+dollar for the PC to be I it doesn't
+need to match console but it you know I
+think right now it's probably a factor
+of two or three easily factor of three
+off right sure so if it kind of gets
+closer
+you know PC gaming will try Vivaan more
+right I mean you know it's like it's a
+rich rich ecosystem and also things like
+we are happening and other stuff it just
+takes it to the next level right so I
+guess to take a step back and remind
+folks
+it's important to have this more direct
+access to the hardware we can look at I
+guess the the most probably cited aspect
+would be with direct x12 revoked in
+where you can move these draw calls
+directly to the GPU mm-hmm and eliminate
+that overhead on the cpu so speaking to
+that when looking at shader intrinsic
+functions with doom as an example what
+is sort of the immediate performance
+benefit that people should be looking
+for with Shaden so Sheldon yeah it's a
+really interesting question it could you
+know the lower head API is the benefit
+comes in application scenarios where
+your CPU bomb right right with children
+26 it's actually a GPU feature it is
+like it helps in a GPU bound scenario
+right so my game is GPU bound you know
+whatever rendering I'm doing whatever
+drawing or anything then I need to find
+a better way to do the drawing right so
+I still want to accomplish drawing the
+same picture but can I do it in less
+number of cycles right you know less
+less number of instructions and that's
+where you know hey what is the hardware
+capable of you know can I do like you
+know combine these four operations
+together into kind of an interesting
+instruction that the hardware may have
+but I don't have control of that because
+I'm writing code at a high level and
+passing it through a compiler right so
+that's where shader intrinsics kick in
+is when I'm GPU bound which is a very
+common scenario especially if you do
+anything 1080p are about you know yeah
+your GPU Bond right so your CPU burned
+at lower resolutions but you know at
+1080p and above you tend to become more
+GPU bound right where the shader
+intersects kick in and help you write
+which is part of the the immediate
+benefit there too is I feel like this
+generation of hardware more than ever
+we're seeing like there are X 480 as an
+example is a 200 250 dollar card but
+you're able to play pretty easily 1440p
+yes I write you know higher definition
+graphics yeah which is you know what's
+long time coming to town
+you know $200 level but yet it's an
+exciting place for a PC game all right
+that is it for part one of our interview
+with Raja Kaduri check back on Saturday
+the 22nd for part 2 where we talk about
+GPU open what it is how it compares to
+CUDA and we also talked about how
+software is more than 50% of the formula
+when talking about software and hardware
+and what they output for gaming BR and
+otherwise so check back for that on
+Saturday otherwise patreon links the
+post roll video as always subscribe for
+more and I'll see you all next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

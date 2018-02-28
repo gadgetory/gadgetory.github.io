@@ -1,0 +1,437 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Chris Roberts on DirectX12 &amp; Vulkan in Star Citizen | Gadgetory - Your Gadget Factory</title><meta content="Chris Roberts on DirectX12 &amp; Vulkan in Star Citizen - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">Chris Roberts on DirectX12 &amp; Vulkan in Star Citizen</li></ol></div><h2 class="post__title"><b>Chris Roberts on DirectX12 &amp; Vulkan in Star Citizen</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/XD9_L5o4mhQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey everyone I'm Steve from gamers
+access net and this video is a
+discussion I had recently with chris
+roberts from cloud Imperium games he is
+perhaps best known for his work on star
+citizen and this time we were talking
+about technology so we talked about it
+as it pertains to the greater games
+industry and who star citizen
+specifically and the technology up for
+discussion primarily was DirectX 12 and
+Vulcan the two new API is coming to
+market that promise to brain developers
+closer to the metal so to speak when
+they're developing their games and that
+should allow more draw calls and greater
+graphics on lower end hardware so that
+discussion is in this video we had two
+parts for this video the second one
+comes on Friday and that talks about
+game engine architecture and game engine
+design going into the future the next
+generation of gaming so you'll find that
+on Friday come back for that for this
+video please check out the patreon link
+if you like this type of content and
+want to support us through in more of
+these endeavors but that's all for my
+interest so enjoy the interview with
+Chris link in the description below for
+the full article if you'd rather read a
+compressed written version of this so I
+don't know what what David sent over to
+you but I was hoping we could revisit
+some of the tech topics sure so DirectX
+ya dx12 and Vulcan a bit if that's
+something you know anything about but
+the x12 first right so that's kind of
+you know what our focus is but the
+refactoring that we're doing at the low
+end of the engine will work for that
+because I mean they they have sort of
+similar approaches and I sort of been
+more about that kind of you know multi
+multi core multi-threading you know
+multi job paradigm which were where you
+know doing a lot in the engine moving
+towards so we know we're doing a fair
+amount of it's not just adding more jobs
+basically because it's also about
+refactoring some of the pipeline and how
+you deal with the data and how you sort
+of organize your resources right so you
+can be sort of more paralleling
+which is kind of how you gather the real
+power of dx12 a lot of people you can
+just you could basically take the x11
+sort of renderer and make it the x12
+pretty quickly you know gonna get the
+benefit of the x12 or or sort of the
+Vulcan stuff until you've done some more
+fundamental refactoring so that's kind
+of what we're doing is we're we're
+saying okay we're going to do it right
+so we'll really get the performance
+gains and so that's that's one of the
+things actually that Frankfurt the
+German office is leading on because
+we've got quite a few the engineers
+there that build the engine in the first
+place and they've actually been involved
+in the various you know dx9 of the x11
+implementations of CryEngine there was
+something interesting I was talking to
+another editor about I don't know how
+how difficult is it to integrate with
+dx12 as a game developer the same way
+you dealt with the x11 frame it's pretty
+easy
+mm-hm but you're not gonna get the full
+power so the the issue is that most game
+engines were not really written with A's
+you know massively parallel kind of
+architecture in mind and that's
+fundamentally what you need to do to
+really get the best benefit out of the
+next generation of graphics API s which
+is you know just that you can be feeding
+lots of stuff at the same time to the
+graphics card right and you're not but
+only by just one thread or whatever so I
+mean typically you know like the old
+CryEngine has one thread for the
+rendering one fret to the main game with
+one fret for the physics you know and
+that works fairly well like back in the
+xbox 360 days and you know there's been
+slight scaling of it for you know more
+PC use so like the engines move more to
+a job approach as opposed to a thread
+approach so you know drum approaches you
+just say his is a task BAM and you just
+kick it off to the job manager of the
+job manager manages hundreds of
+thousands of these amongst all the
+progress
+train sounds available and that sort of
+requires sort of thinking of your task
+differently compartmentalizing it making
+sure it's not dependent on other things
+and other data and so there's been some
+java fication CryEngine over the last
+few years but we're sort of taking it
+further because you know we know that
+with where yo we're building for a PC
+and we're building for high end PC so
+now we have quite a few we have more
+threads available with more power than
+you would typically do even on a
+next-generation console but part of that
+is you know there's a big test is you
+know the renderer in CryEngine pretty
+much it was sort of build with the
+conception of a 1-1 thread kind of thing
+going on so it's a bunch of stuff that
+gets put on the render pipeline you know
+and then it then it gets printed out for
+the sort of assumes it's all in the same
+space area etc and so we need to
+compartmentalize that better and do a
+better management of the individual
+resources so it's not sort of one
+monolithic kind of render pipeline yeah
+that's kind of what the the the
+fundamental sort of big work that were
+embarking up and I think that's
+something that you know is kind of
+pretty fundamental to an engine and
+they're not noise constructed with that
+in mind I mean even Yui for which is
+obviously a bit newer than CryEngine hey
+if you know originally the way
+instructable structured was very much a
+lot McCrea into paradigm I have pretty
+much the same sort of delineation of of
+threads now I haven't looked at the code
+recently but that simply was quite a
+while ago but but I think that
+fundamentally you know there is some
+definite work that has to happen on the
+low-level
+in all game engines to really push the X
+well I mean it's you know it's easy to
+sort of do the demo like that now you
+saw squaring it to do with the final
+panics and yeah but that's just pushing
+raw and you know look at the rig it was
+on I mean yeah look at the graphics part
+in there I mean you could probably do
+the same with the x11 that's just proof
+force to really see the benefit of the
+f12 it's going to be more about you do
+that lower level refactoring and then
+you'll be able to actually get some
+pretty interesting for
+even on some you know cops are quite
+powerful pcs are quite powerful right so
+for for star citizen I would imagine the
+type of stuff you're trying to do would
+pretty directly benefit from the newer
+api's then with yes yeah I mean you know
+like draw calls like everyone will tell
+you in entrance and graphic stuff
+drawable huh five everyone has because
+it just gets bottled man can only push
+so much through one high and you know
+that's the thing that you get where say
+add x12 Vulcan is that if you factor
+your engine correctly you're not so
+funnel neck by draw calls and you can
+run you know you know 10x 100x draw
+calls through at the same amount of time
+right so you know that's obviously a big
+one I mean for us we actually do we do
+some stuff already we've we've got some
+tech that we've worked on that kind of
+also get around the draw call so we've
+got a we've got some specific character
+shaders that are using a very different
+approach to like how you would texture
+characters which is which is more a sort
+of material a material sort of lock up I
+guess would be the best way to say it so
+you apply a shader we don't actually
+bake textures onto the characters
+anymore we we have a we we have our base
+character and then we sort of doing a 3d
+program kind of like the areas that
+would be say material one material to
+material three material for and then so
+like if there was only four different
+materials on that character there would
+be one draw call because the whole
+character would be there and then it's
+an index lookup from material into a
+much higher resolution PBR material and
+you can like really have high really
+Texel density and really scale so you
+know you can get right up on it with the
+camera and it's not gonna break down Wow
+so that's kind of you know for us that's
+sort of like some of the tech that we've
+been doing for characters and smaller
+props to allow us to have the fidelity
+that you can get super up-close but also
+sort of you know how in the world that
+houses many assets in the scope that we
+we have and and you know in this tech
+also has various blending and dirt and
+material levels and stuff like that
+it's kind of the next generation
+approach to probably character shading
+and stuff I mean you're sort of seen
+parts of it being done and say the order
+1886 and also I think the e4 filtrated
+that I use some of these techniques to
+to make the infiltrator and everything
+look quite as good but no one's taking
+it quite as far as we're doing on the
+character stuff because we take it all
+the way through so I mean it still you
+know we're still working on it and doing
+some R&amp;amp;D but we sort of we we know we've
+we've actively been looking at stuff
+that also kind of defeat the draw call
+issue in other methods rather than just
+relying on a pirate ship DX well with
+dx12 is have you already sort of
+prioritized support do you know are you
+already trying to build for it or is
+this something out in the future process
+it's part of one of the tasks of the
+engine group right now so it's actually
+something that we've it's commenced on
+and we'll be working I'm just saying
+that it's we're doing it I guess the
+right way but just slapping you know
+changing a couple of API calls and
+saying we've got the x12 so it will it
+won't won't be ready until sort of next
+year sure but but yeah we're actively
+working on it I mean it's part of you
+know now we work pretty closely with a
+and B and it's part of one other things
+that is a big deal for them and would be
+a big deal friend video - really but you
+know we really want to try to utilize
+more more of the power sort of today's
+graphics cards now so it's that it's
+also on the compute side where we're you
+know when there's a whole bunch of stuff
+that we're starting to layout to compute
+to allow us to do some pretty cool stuff
+like box holes and stuff like that so
+we've got a whole bunch of other cool
+stuff I mean there's a lot of stuff the
+other thing is that we're focusing a lot
+of our efforts and work so things that
+like things for like things are fluid
+Sims that we could use for gas clouds
+more than you know the background sort
+of compute
+stuff to allow us to
+sort of voxel ization of asteroids you
+know and then there's also a whole bunch
+of sort of GPU tessellation stuff that
+we've actually planning for our sort of
+planet mature we've kind of looking on
+sedated stuff cut out there for a second
+that you were planning for your country
+so you know we may be able to deliver
+some of the stuff it all you have an
+adult you work on like the procedural
+planet level so you know so we'll see
+what happens to that promise
+so we may actually you know do something
+that I felt with the maybe stage two
+with stage one or the persistent
+universe which would be pretty awesome
+yeah yeah that would be cool is a is
+Vulcan of interest here at all is that
+because you know from my standpoint we
+we we would like to be the x12 as well
+as you know OpenGL next or whatever you
+want to call it often yeah because I
+mean we want to support units so I mean
+we have our servers run units for a
+start so we actually this works and unix
+as well as just you know straight
+windows but the problem we have is that
+you don't have a you know there is a
+graphic driver yet there's an OpenGL
+implementation that was just recently
+released with CryEngine but it's
+probably it's pretty early it's pretty
+slow and then the other problems we've
+done it's quite a lot of customization
+already to the pipeline so the render
+pipeline so a lot of the stuff like it's
+it's not simply it's not a plug-and-play
+basically right and so you know for us
+we sort of have this debate about you
+know you know supporting the always like
+what do we you know if we didn't have
+the if we only had the X well when we go
+back and support the x11 mapping so I
+think probably our tendency would be the
+more focus on the next level of OpenGL
+but that would be after the X well right
+and then I of course dx11 is still fully
+supported in star citizen you're not
+just abandoning it at the export so
+basically you need the X 11 or 12 we're
+not no abandon it so we're gonna make
+sure performs pretty well on the X 11
+and with the X 12 is steps it up and
+some of the refactoring is going to help
+no matter what even for the X 11 because
+just being better about organizing your
+resources and data and java fiying it
+even though you may still be bottlenecks
+on the draw call issue and there's a
+plenty of other stuff that can can be
+paralyzed on the render and so so that
+will benefit the X 11 as well well in
+terms of the the star citizen stuff more
+specifically outside of all the
+technical things going on is there
+anything you want to you know address
+for fans or bring up or say we have a
+couple of weeks when I share some stuff
+that hopefully people will like I think
+they will we're going to show some you
+know on the tech stuff that you know is
+hard to do with smart 42 and you know
+the multi crew that we've demoed back in
+games con is moving along quite nicely
+so that's something we're pretty
+confident of being able to share which
+people use over probably towards the end
+of October but it's it's it's looking
+good and I think people will actually
+have a lot of fun because it's not it's
+a big level and it's not really it's not
+an empty level there's lots of things to
+do so it's like a bit of a playground
+right I'm kind of looking forward to
+people getting out there you know
+getting in there you know ships whether
+they're a multi cruise ship or a single
+seater ship and you know flying around
+and you know just kind of getting into
+trouble with each other against each
+other you know counting AI it's it's a
+it's you know the very very very
+beginning stages are kind of like what
+the actual sort of distant universe in
+space will feel like right so it's not
+you know it's not a sort of limited
+arena combat map it's not just gonna be
+about small single sea fires dog
+fighting
+so I'm actually I'm pretty I'm pretty
+interested to see you know the community
+getting to that and the kind of cool
+stuff that I'm sure are seeing videos
+you're saying I'm looking forward to
+getting the multi-crew of people's hands
+because really it's going to have all
+the core elements they'll have FPS it
+will have sort of kind of the social PE
+elements obviously it will have the
+dogfighting flying around which is arena
+commander and it's sort of like the
+basic skeleton that focuses in Universal
+behind although it's missing lots of
+features and functionality you know
+we'll be adding them as are as you know
+every month as we go along it really
+will be the first time that people will
+get more of this sort of scope or scale
+and the possibility of star citizen
+detail the whole idea of being on foot
+walking around space station getting
+into ship powering it up flying off you
+know coming across the derelict getting
+EBA encruster back to investigate the
+derelict have been back in your ship
+flying to an abandoned Space Station
+landing I am going and exploring and
+finding some items or whatever and then
+getting into gunfight with other players
+all that sort of stuff is going to be
+possible and available on there the
+multi crew release which is with you
+know our PU alpha right now it's 1.3 so
+I wear I'm pretty excited to sort of see
+how yeah people react and what kind of
+things they all do with the videos help
+they'll record because yeah it's it's
+it's essentially going to show the
+framework of wealth will be so cool
+about stuff because it's that sort of
+fidelity and being able to sort of
+transition between those states is
+something you don't get on any other
+game so you know you have space games
+where you can travel you know - you know
+loads of different star systems and
+trade between you and everything but you
+don't have that sense of like visceral
+like being inside a ship or being inside
+environment or being running around a
+detailed city or whatever and then you
+know getting a ship and fly somewhere
+else and visit some other place so I
+think yeah just the early stage of that
+will hopefully get people excited and
+reminding them why why they that star
+citizen and even though it's taking
+longer than everyone would like it to
+take that it's worth</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

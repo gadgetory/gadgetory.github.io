@@ -1,0 +1,306 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>NVidia Pascal Architecture Deep Dive w\/ GP100 | Gadgetory - Your Gadget Factory</title><meta content="NVidia Pascal Architecture Deep Dive w\/ GP100 - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">NVidia Pascal Architecture Deep Dive w\/ GP100</li></ol></div><h2 class="post__title"><b>NVidia Pascal Architecture Deep Dive w\/ GP100</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/ppBr2oSzB_o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">and Vidya hasn't owned up to the recent
+order of ten puzzle that we solved you
+can check the channel for that but it's
+pretty fairly obvious that it's from
+them because it does indirectly mention
+Fermi it directly mentions Kepler
+they're all related somehow to Maxwell
+or Pascal and so today I thought it'd be
+fun to talk about the GP 100
+architecture and this is the GPU for
+Pascal the 1st GPU for Pascal that was
+unveiled at GTCC about a month ago in
+the tesla P 100 graphics accelerated or
+accelerated card so this is not a video
+card for gamers it's a scientific card
+but it's on the Pascal GP 100
+architecture and this Pascal
+architecture will be used in the gaming
+cards in some form now they're gonna
+strip things out of course that are not
+necessary they don't want to validate or
+build to increase cost when that can be
+reduced so reducing cost by eliminating
+things like HP m2 and some of the lower
+end cards makes sense or by reducing DP
+double precision or other things of that
+nature so we're gonna talk about the SM
+architecture or streaming multi
+processors within GPU 100 talk about the
+cache unified memory and HBM 2 versus
+HBM 1 before we get into that here's the
+specs table showing the GP 100 Pascal
+specification compared against previous
+kepler gk110 and maxwell GM 200 chips
+there are various versions of Pascal and
+the versions shown here the chip is
+actually simplified slightly compared to
+its maximum potential we'll talk about
+that in this video
+meet Pascal this is the GP 100 block
+diagram on screen now that we showed
+from GTC last month although the GeForce
+gaming chips will be a lot different in
+terms of their architecture their design
+at the high level the low level is the
+same it'll likely at least at some part
+have the same memory subsystem but other
+cards may have gddr5 or gddr5 X we don't
+exactly know quite yet what the
+so-called gtx 1,000 series cards will
+have but Pascal overall is going to look
+like this GP 100 is the biggest GPU that
+NVIDIA has ever made measuring at 610
+millimeters squared and using the new 60
+nano meter FinFET process note from TSM
+see all previous generation
+architectures from both Andy
+have been on a 28 nanometer process note
+so this dice drink has been years in the
+making the process shrink champions an
+era of reduced wattage and more densely
+packed in transistors which continues
+the performance for walk gains that
+nvidia and AMD have been boasting for
+the past few years and he began its
+performance per watt improvements with
+fiji by liquid cooling the fury acts
+which reduced capacitor leakage and
+resolved other potential issues but it
+didn't undergo the tremendous die shrink
+that Pascal and polaris herald further
+performance and power efficiency gains
+are aided by move to FinFET transistors
+which means that power leakage becomes
+less significant this also marks the eol
+for planar FETs
+in GPUs as all major silicon
+manufacturers have now transitioned to
+the FinFET design FinFET transistors use
+a three dimensional design which
+extrudes a fin to form a drain and
+source on the gate the gate encircles
+the transistors fins and GP 100 has a
+transistor count totalling fifteen point
+three billion across at six hundred ten
+millimeter squared GPI sized GP 100 is
+rated for a 300 watt TDP and pushes 5.3
+teraflops of FP 64 double-precision
+compute performance and ten point six
+teraflops of FP 32 FP 16 is also
+available natively at twenty-one point
+two teraflops on GP 100 but it's more
+critical than it might sound on paper or
+in youtube video it's mostly though for
+deep learning applications that we won't
+dive into here just as a quick primer
+deep learning benefits as the precision
+is less required by nature of the
+backpropagation algorithm so FP 16
+allows for reduced memory consumption
+and faster processing because that
+precision of FP 64 or FP 32 isn't
+required they can benefit instead from
+the speed and then sort of use the
+redundancy and parity to check and make
+sure all that data is good the tesla p
+100 pascal card host 3584 cuda cores for
+FP 32 and 1792 cuda cores capable of
+double precision at FP 64 the full GP
+100 will have 1920 FP 64 cores if is
+released and pascal's p 100 base clock
+rate just for reference here is 1328
+megahertz and is 14 80 megahertz when
+boosted pretty fast for a GPU for the
+first part of this architecture deep
+dive we'll start with the sm or
+streaming multi processor talk about
+graphics graphics processing clusters
+which enclosed the SMS
+then we'll get into a unified memory and
+HBM 2gp 100 host 6 graphics processing
+clusters orgy pcs each of which contains
+a set of texture processing clusters or
+tea pcs and for everyone TPC and Pascal
+there are two streaming multiprocessors
+or SMS in total there are 60 SMS on GP
+100 with the Tesla P 100 accelerator
+hosting 56 this is what an SM looks like
+in the Pascal architecture on the screen
+right now there are 10 SMS / GPC
+accompanied by 1/2 that count of t pcs
+or five total TBC's / g pc each s m
+contains 64 FP 32 a single precision
+cuda cores and 32 FP 64 cores or 1 FP 64
+core for every 2 32 cores and these
+stats are for a fully enabled GP 100g PU
+so that will of course be different for
+the gaming g-force guards when they come
+out still though it's a good look at how
+things work architecturally this is a
+market reduction in total core count per
+SM vs. max while kepler architectures
+despite this though there is an overall
+higher per GPU core count so the total
+core count is higher with 3500 plus on
+Pascal GP 100 but the per SM core count
+is lower Maxwell has 128 FP 32 - 2 cores
+per SM and predecessor Kepler had 192 FP
+DSP - two cores for each SM the reduced
+kuduk or count per SM is because GP 100
+has been effectively partitioned into
+two sets of 32 core processing blocks
+each of which contains independent
+instruction buffers warp schedulers and
+dispatch units there's one warp
+scheduler and one instruction buffer /
+32 core partition each partition also
+contains two independent dispatch units
+per SM there's four total per SM and
+each partition contains two of these
+dispatch units and there are four total
+per SM each partition further contains a
+32,768 32-bit register files the SM
+segments share a single instruction
+cache unified texture and l1 cache and
+for texture units or TM use each and one
+64 kilobyte shared memory block passed
+has half the course / SMS Maxwell but
+the same register file size and
+comparable warp and thread counts GP 100
+can sustain more in-flight threads warps
+and blocks partially because of the
+increased register access presented to
+the threads overall the core counts of
+Pascal GP 100 is higher than GM 200 even
+though the cores per SM are lower that's
+just because there are more SMS but as a
+whole this increases at processing
+efficiency by changing the data path
+configuration and that's something
+that's only aided further by the move to
+smaller processes and the FinFET
+processing node the data path
+organization of Pascal requires less
+power per data transfer management tasks
+and Pascal schedules tasks with greater
+efficiency and consumes less die space
+than max while also critical mostly by
+dispatching to warp instructions per
+clock one warp is scheduled per block or
+so called partition as we've been using
+that word or segments and that's all
+shown in the sort of block diagrams i've
+been showing on screen each sm has four
+texture units so there's a maximum
+possible count of 240 TM use l1 and
+texture cache are split for shared use
+unified memory most immediately benefits
+programmers it reduces their manual
+workload by eliminating the need for
+explicit memory calls between the CPU
+and GPU memory pools but it's still
+useful to us as well as sort of
+benefactors of this impact with regard
+to Pascal specifically l2 cache is
+unified into a single 4096 kilobyte pool
+as opposed to GM 230 72 kilobyte l2
+cache and that further again reduces
+reliance upon DRAM which is huge for
+speed increases Pascal dedicates a
+single pool of 64 kilobytes of shared
+memory to each SM eliminating previous
+reliance on splitting memory utilization
+between l1 and shared pools for more
+detail on that and all the other stuff
+we're talking about here hit the article
+links in the description below because
+that has more on unified memory sort of
+a GPU version of DMA and
+the SM architecture itself but now we're
+going to talk about HB m 2 and HB M 1
+which is of course very interesting to
+anyone who followed Fury and its launch
+Fiji first introduced high bandwidth
+memory on Andy's fury X which stacked
+memory vertically atop an interposer
+which is then on top of the substrate
+this reduced the physical distance
+between the GPU and memory which reside
+on the same substrate and was joined by
+a bus with increase and reduced
+electrical and thermal requirements each
+stack of HB ml one uses a 1024 bit wide
+interface capable of producing at 128
+gigabytes per second throughput per
+stack so it's 128 gigabytes per second
+per stack and that can put upwards of a
+terabyte per second depending on what
+you're using in terms of the GPU
+architecture gddr5 pushes a maximum
+theoretical throughput of about 8
+gigabits per second - per die with
+microns gddr5 X pushing 13 to 14
+gigabits per second per die VG it was
+limited to 4 gigabytes total capacity
+due to yields and cost but HBM 2 will
+change the game in terms of capacity
+HBM - relevant to Pascal devices like GP
+100 will be able to maximally host 16
+gigabytes of vram pursuant to increase
+dye density of the new version
+HBM - densities will run upwards of 8
+gigabits with 4 to 8 dies per GPU
+maximally enabling that 16 gigabyte
+capacity although the initial p100
+accelerated shipments will be 8
+gigabytes GPU 100 HP m2 is a composition
+of 5 dyes presented as a coplanar
+surface to simplify heat sink mounting
+and hotspot cooling basically it's flat
+that's all that really means and the
+stack starts with the base die then
+vertically turns into 4 DRAM module
+stacked above it and we have a micro
+photo of this under a microscope
+GP 100 has a 4096 bit wide interface for
+its HB m2 with each stack running a 512
+bit memory interface between them so
+that covers the initial Pascal GP 100
+launch and of course the geforce cards
+we're all very interested in those will
+be here eventually I don't know quite
+when just yet but hopefully sometime
+soon of course Polaris is coming out
+from AMD Polaris 10 and all these GPUs
+are moving to the new process node the
+14 and Andy's case or 16 nanometer
+invidious case FinFET process
+from in Nvidia's GP 100 TSMC being the
+the manufacturer of that process of the
+actual silicon itself so that's the
+basics of Pascal the or the in depth
+basics of Pascal for more as always
+article below it has all the charts and
+diagrams and things like that and more
+text which should hopefully help you get
+through the dense information a bit more
+easily
+other than that stay tuned because we
+have plenty of other content coming up
+this weekend we're out here in Austin
+for Dreamhack and we'll be talking about
+some of the goings on there we'll also
+be talking about very soon I actually
+Computex and that starts late May so as
+subscribe if you're not subscribed
+already and you'll find all of our
+Computex taipei factory tours things
+like that patreon links official video
+as always thank you for watching I'll
+see you all next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>What Happens in Your GPU When Creating a Frame? (w\/ AMD) | Gadgetory - Your Gadget Factory</title><meta content="What Happens in Your GPU When Creating a Frame? (w\/ AMD) - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">What Happens in Your GPU When Creating a Frame? (w\/ AMD)</li></ol></div><h2 class="post__title"><b>What Happens in Your GPU When Creating a Frame? (w\/ AMD)</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/CIuVZLw-n8g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">everybody i'm steve from gamers access
+net and i'm joined by robert Haluk of
+AMD we're going to talk about GPU
+rendering pipeline and DX 12 but before
+that this coverage is brought to you by
+cyberpowerpc who make the fan book that
+we recently overclocked past 4 gigahertz
+so Robert can you give us a quick run
+through of the top-level GPU rendering
+pipeline what's happening on the GPU
+between the game engine when a scene is
+being drawn yeah sure so from a really
+high level the game will ask the
+graphics card to do something the CPU
+will pull in that information order it
+up for the graphics card and send it off
+to the GPU the GPU will interpret the
+work as provided by the CPU that's
+that's what you would call a draw call
+anytime the CPU asks the GPU to do
+something and then at the front end of
+the GPU you have a hardware scheduler
+which organizes the compute and the
+graphics and the memory workloads and
+then sends that through the graphics
+pipeline where you set up the geometry
+the texturing the lighting the effects
+and then you spit it out on the other
+side and that's raster graphics it comes
+out in your monitor so we're in the
+pipeline when you're working with
+geometry does that get drawn before the
+shaders are applied or before the
+effects are applied yeah geometry comes
+first and then where do the ACPs come in
+for AMD with the x11 on this case so
+that's at the front end of the GPU with
+the hardware schedulers or the aces
+that's where the GPU decides is this
+compute work or is this graphics work
+and then schedules those separately and
+then with dx12 so do the ACPs benefit DX
+well for rendering yeah so in directx 12
+there's this feature called asynchronous
+compute where the set up for effects
+like compute related effects depth of
+field artificial intelligence GPU
+physics
+a lot of camera effects the the setup
+work for that can be done independently
+of the geometry work so you can do those
+at the same time so when the model is
+finished the geometry is finished the
+setup work for all the compute stuff is
+already done so you can jump right into
+rendering that out and that saves a ton
+of time what would you say in some of
+the we spoke to Roy Taylor previously
+about this at the capsaicin event what
+would you say is the responsible element
+for some of em these gains with dx12 and
+recent benchmarks I think it's two
+things one is asynchronous compute we're
+seeing five to thirty percent uplift out
+of that feature which is just huge but
+also it's more of a long-term strategy
+for us mantle was a big piece of that
+first off winning the console cycle
+getting all the developers familiar with
+AMD hardware and how to use our
+architecture every game developer studio
+that produces for console has AMD
+hardware the same kind of hardware that
+we use on the desktop architectural II
+and and so we train them on the console
+then we gave them an API on the desktop
+that work very similarly and then all
+the desktop gaming api's now kind of
+look and work like mantle so when you
+put all of those pieces together in a
+chain in a story you see the results in
+directx 12 people know how to use
+low-level api's on our hardware they
+were trained to it where does where does
+vulcan play into this compared to dx12
+programming on the game side is does it
+have similar gains for AMD how does it
+work well Vulcans still pretty early
+it's a you know I've seen developer
+conjecture that it's like eight months
+behind directx 12 in terms of
+development but there is already a game
+the Talos principle more coming we know
+that but Vulcan is based on mantle so we
+took the entire mantle project or the
+api specification and donated it to
+Chronos last year so they've built on
+that to make it multi-vendor multi
+operating system but at its heart it's
+still a lot like
+mental so I closing us out here give us
+a quick run-through of what you guys
+have at the booth at pax sure so we're
+doing a five-on-five League of Legends
+turn them in and then I believe saturday
+we're switching to a different game than
+sunday we're going to do user choice
+we're showing oculus VR some of our game
+partners like Banner Saga just all the
+the good gaming stuff that we're doing
+right now very cool so that's the AMD
+booth at PAX East 2016 link in the
+description below for more information
+photos things like that thank you for
+watching we'll see you all next time</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>100TB for $2,850??? - Are Archive Drives Useless? | Gadgetory - Your Gadget Factory</title><meta content="100TB for $2,850??? - Are Archive Drives Useless? - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1>Gadgetory</h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><h2 class="post__title"><b>100TB for $2,850??? - Are Archive Drives Useless?</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/wQS-IhjkBSA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">see gates archive drives these things
+are freakin cheap for how much capacity
+you get I can actually link my drive
+cost calculator spreadsheet that I used
+to make this chart under the video by
+the way but when I started looking into
+picking up some of these drives for our
+long term storage NAS I heard the
+performance totally sucked so I asked
+Seagate to send a few of them over and I
+went on a mission to figure out if
+there's a way to mask their performance
+penalty while still getting the cost
+benefit to build the cheapest 100
+terabyte storage box possible well my
+original concept ended up totally not
+working that's a new one right but I
+learned a bunch of interesting stuff in
+the process and here it is
+cooller masters master case maker five
+features they're freeform modular system
+allowing you to customize adjust and
+upgrade make it yours at the link in the
+video description now before I can
+explain why archive drives are so cheap
+and at the same time why their
+performance is less than ideal for
+certain applications we need a little
+bit of background without getting into
+too much grimy detail data is stored on
+hard drives by arranging the polarity of
+the tiny magnets that cover the hard
+disk shaped thing inside called a
+platter according to the instructions
+given by your operating system a
+magnetized bit is interpreted as a one
+and a non magnetized bit is interpreted
+as a zero so you lay down a few billion
+ones and zeros in the right order read
+them back and boom next thing you know
+you're playing crysis 3 okay then so
+traditionally these little magnets were
+arranged laying flat in concentric
+circles on the platter this is called
+longitudinal magnetic recording it's
+easier but eventually hard drive
+manufacturers ran out of room and
+couldn't increase capacity any more
+without making their platters so big
+that the latency penalty of moving the
+read and write heads around would be too
+high not to mention that I'm pretty sure
+that no one wants a 10 terabyte disk in
+their laptop if it has to be the size of
+a vinyl freaking record so the first
+solution then was perpendicular magnetic
+recording standing those magnets up
+instead of laying them down this
+required more complex read and write
+heads the the record needle type arm
+that moves around and makes that ticking
+noise whenever your drive is working
+hard but has gotten us all the way to 10
+terabytes so far with maybe a little bit
+more Headroom left before the magnets
+again just can't get any smaller which
+is where shingled magnetic recording
+comes in now the read component of the
+head remember the record needle
+thing is narrower than the right
+component so by layering the magnetic
+tracks half on top of each other like
+the shingles on a roof much more data
+can be stored without moving to more
+exotic materials to make the magnets
+smaller or even drastically redesigning
+the heads unfortunately this means that
+while you can read at pretty much full
+speed the eight terabyte archive drives
+that we used for our tests are rated at
+a hundred and ninety megabytes per
+second reads way more than enough for
+the gigabit networks that most home and
+small office users are running right
+speeds can be devastatingly slow
+especially when they're random you see
+the right head is so wide that it would
+actually overwrite both the intended
+track and the next one over on the drive
+so it has to read the data that it's
+going to accidentally overwrite store
+that somewhere else either in a
+solid-state cache or in a reserved part
+of the disk platter somewhere else
+organize it and then finally
+sequentially write back both the data
+it's supposed to be writing in the first
+place and that data it had to shuffle
+this is called a read modify write and
+it can be slow as all hell so let's talk
+then about my idea I wanted to use the
+reasonable read speeds the low cost and
+the 24/7 operation ratings of archived
+drives in one of my line tech on raid
+systems I wanted to combine that with
+the reliability and all-around high
+performance of enterprise capacity
+drives to get the best of both worlds so
+the way on raid works is that your data
+is actually written directly to the
+individual disks in the array which is
+great because in the event of a
+catastrophic failure let's say you lose
+two drives simultaneously at least
+anything written to the rest of the
+drives is still there and an additional
+drive or two drives acts as a parity
+disk that lets data from a single or two
+depending how many parity discs you have
+failed discs be rebuilt in the
+of a less catastrophic failure the
+problem is that while archive drives
+seem to be okay as standalone individual
+disks the worst use case I could find
+for them was in parity protected raid
+arrays with their poor random
+performance being pointed to as an
+unnecessary risk during a rebuild
+operation so the data rebuilding process
+actually puts more strain than normal on
+the rest of the drives and so the data
+across all the disks is in jeopardy
+until the corrupted or failed drives
+data has been rebuilt so now we're 70%
+of the way through the video and we
+finally come to my idea I figured by
+using archived drives in the array and
+an enterprise drive for parody and to
+replace any failed archived drives I
+could mask both the poor random write
+performance and the slow rebuild times
+of the archived drives and as you'll see
+from these performance numbers it didn't
+work out that way at all so my
+heterogeneous drive mixture
+configuration had worse performance than
+both all enterprise capacity drives
+which I expected and worse than a pure
+archive drive setup which I suspect is
+due to the mismatched disk spindle speed
+so that's kind of a drag I guess but
+there's some good news here for me
+anyway and that is that in an unrated
+vironment I can either settle for 50
+megabyte per second write speeds about
+half of what a gigabit network can
+handle in the default configuration
+where it spins up only the disk to which
+it's writing directly and the parity
+disk to reduce power consumption in disk
+where the cost of performing
+read-modify-write operations all the
+time or if I use their turbo write mode
+that spins all the disks during access
+allowing for much faster reconstruct
+writes
+I can still even with the cheapest
+drives I could find that are rated for
+24/7 operation get my hundred megabytes
+per second since I'm not striping data
+the way that I would in a more
+traditional raid which to be clear
+archive drives still are not recommended
+for so thanks for watch
+guys if this video sucked you know what
+to do but if it was awesome get
+subscribed hit that like button or maybe
+even check out the link to where to buy
+the stuff that we featured at Amazon in
+the video description I have my full
+hard drive like Nazz capacity and price
+calculator excel sheet down there which
+you can you're more than welcome to try
+out also linked in the description is
+our merch store which has cool shirts
+like this one and our community forum
+which you should totally join now that
+you're done doing all that stuff you're
+probably wondering what to watch next so
+click that little button in the top
+right corner to check out our video from
+last year which inspired a lot of this
+storage server stuff that I've been
+doing where we lost pretty much all of
+our data temporarily or did Irene the
+suspense I don't know</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

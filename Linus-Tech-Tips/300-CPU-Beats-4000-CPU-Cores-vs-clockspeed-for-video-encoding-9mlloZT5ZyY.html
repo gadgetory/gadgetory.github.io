@@ -1,0 +1,218 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>$300 CPU Beats $4000 CPU?? - Cores vs clockspeed for video encoding | Gadgetory - Your Gadget Factory</title><meta content="$300 CPU Beats $4000 CPU?? - Cores vs clockspeed for video encoding - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1>Gadgetory</h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><h2 class="post__title"><b>$300 CPU Beats $4000 CPU?? - Cores vs clockspeed for video encoding</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/9mlloZT5ZyY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">okay do you remember that project I was
+working on where for the better part of
+six months I built up this badass 36
+core dual Xeon server machine to handle
+our video encoding and transcoding tasks
+over the network here well fast-forward
+almost a year and many many hours spent
+on diagnosis not to mention a kick in
+the right direction from this post over
+on Puget systems I think I finally
+figured out why we never got quite the
+performance that I expected is it
+possible then that a four thousand
+dollar twenty two core CPU could be
+outperformed by one that costs only a
+few hundred bucks for video encoding is
+it possible that I made a mistake
+nothing to hold on to
+fails all I read in the sign I'm
+definitely getting their attention so
+does one of the recurring themes of
+these laptop or bus videos become -
+failure montages and I mean aside from
+those ones let's find out
+freshbooks is the super simple invoicing
+solution that lets you get organized
+save time and get paid faster click now
+at the link in the video description to
+try it for free ok so to open this video
+up we need to take a closer than usual
+look at my test bench i wanted to
+eliminate bottlenecks wherever possible
+so that the cpu is the only factor in my
+performance evaluation so for that
+reason most of the performance testing
+was done on an Intel 750 series 1.2
+terabyte nvme SSD a gtx titan X 128 gigs
+of DDR 4 quad channel memory on an X 99
+deluxe 2 motherboard and the CPUs tested
+are as follows intel's top of the server
+line $26.99 v4 22 cores e on their top
+of the high-end desktop line 10 core
+Core i7 extreme 69 50 X the 8 core and 6
+core 6900 K and 6800 K and finally I
+decided to throw in their flagship
+mainstream 6700 K quad core to give us
+the most complete picture possible at
+the end of the day as for the video
+tests I apologize in advance if the
+codec or encoder application that you
+personally prefer wasn't covered but
+this was done as much to optimize the
+linus media group workflow as it was for
+the purposes of creating a video so i'm
+looking at four different scenarios that
+we encounter pretty much daily 1
+transcoding a 4k mxf off of our sony FS
+5 to 1080p sinha form our mezzanine
+codec of choice for editing to exporting
+a finished project in this case a
+green-screen episode of fast as possible
+directly to h.264 for publication to
+youtube 3 a quick export in cinah form
+how we normally export so that a network
+media encoder machine with a watch
+folder can transcode it to h.264 and
+automatically upload it to the channel
+and for finally the performance of that
+Sinha form to h.264 conversion with the
+1080p to 4k up sampling that we perform
+for the reasons we covered more
+thoroughly in this video here so I ran
+every test with and without CUDA
+acceleration enabled in Adobe Media
+encoder and used a second machine to
+capture the screen output with CPU and
+GPU usage displayed so I could review it
+later let's begin then with scenario 1
+this is what most people probably expect
+from a multi-core CPU in a video
+encoding benchmark traditionally this is
+one of the easiest workloads to scale
+across more course and our CPU usage
+graph indicates that all is working
+beautifully
+throwing a GPU into the mix levels the
+playing field somewhat but this won't
+surprise anyone who knows how deep you
+dependent of video codecs Sena form is
+and how that bastard law of diminishing
+returns works moving on to exporting a
+project directly from our Sena form
+timeline in CPU only mode we see nice
+scaling with more cores but maybe not
+quite the dominance we'd expect from a
+chip with and yes I know it doesn't
+quite work this way like 60 gigahertz of
+theoretical total performance this is a
+hint of things to come and been throwing
+a GPU into the mix paints a much more
+extreme picture here the CUDA
+accelerated code path not only reaps
+very little benefit from more than 6
+course it punishes CPUs with lower clock
+speeds in a way that I really didn't
+expect observed GPU usage is much lower
+than any other processor in this test
+for our four thousand dollar chip and
+the CPU usage we see of about 25% tells
+us this is not a heavily threaded
+workload oops
+alright so let's break that down then
+into the individual steps and find out
+where our heavy multi-thousand dollar
+investment in an uber xeon falls apart
+exporting the project from a center form
+1080p timeline to a Sena form 1080p file
+theoretically elsewhere on the network
+but I'm using my nvme drive as a target
+for these benchmarks for consistency
+sake is pretty flat across the board and
+curiously this is true with or without
+CUDA acceleration enabled in media
+encoder GPU usage is 85% regardless of
+which drop-down so this is clearly
+nearly 100% GPU dependent which leads us
+then to the second step in the process
+converting from Sena form 1080 to h.264
+4k in CPU mode only we see a similar
+trend to our initial ingest test more
+horses is better but only to a point
+then in GPU assisted mode there it is
+we are almost entirely bound by per core
+performance with a lowly quad-core
+costing one tenth as much handily
+beating our xeon beast so then did i
+horribly miss configure our video
+encoding ingest stations and output
+server are Zeon's basically pointless in
+video work well if you're looking simply
+at the graphs i just showed you
+along with these charts of approximate
+CPU and GPU usage in all the different
+scenarios i tested then it's pretty
+clear that these lower clocked many-core
+chips are being underutilized and the
+money though i fortunately didn't pay
+for them would be better invested almost
+anywhere else but as always the real
+world isn't really that simple and it's
+going to come down to the needs and
+workflow of each individual or
+organization virtualization can be used
+to get damn near 100% scaling out of as
+many cores as you please
+encoding software like Sorenson squeeze
+can process many files at a time and on
+the subject of different software
+testing any given codec in any given
+software could yield very different
+results from what you're looking at here
+so there's no way around testing just
+make sure that when you do so for
+yourself you go in without any
+assumptions about what the right tool
+for the job will end up being so you can
+avoid pulling a Linus speaking of tools
+for the job
+it's summer apparently
+something-something boarding planes
+trains driving
+a car leave your worries behind okay I
+don't know what any of that stuff in my
+notes is but today's sponsor is tunnel
+bear and if today's lack of online
+privacy brings out your inner grizzly
+bear rawr rawr then you can try Tunnel
+bear it's simple and it is free to try
+at the link in the video description
+it's the easy to use VPN that makes it
+so you can browse privately and enjoy a
+more open Internet without all that
+hassle associated with more complex VPN
+solutions any you know port forwarding
+your DNS or any nonsense like that you
+just click the button and boom you can
+tunnel in to up to 20 different
+countries and it will appear to the
+websites and services that you are using
+as though you are coming from that
+country and Tunnel bear has a top rated
+privacy policy and does not log your
+activity so try it free with 500
+megabytes and no credit card required
+and if you decide you like it and you
+want to get a year of unlimited data you
+can save 10% by going to tunnel bear
+comm slash LTT linked in the video
+description so thanks for watching guys
+if this video sucked you know what to do
+but if it was awesome get subscribed hit
+that like button or even check out the
+link to where to buy the stuff we
+featured and Amazon in the video
+description also linked in the
+description is our merch store which has
+cool t-shirts just like this one and our
+community forum which you should totally
+join now that you're done doing all that
+stuff you're probably wondering what to
+watch next so check out that little
+button on the top right to check out our
+latest video over on channel super fun</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

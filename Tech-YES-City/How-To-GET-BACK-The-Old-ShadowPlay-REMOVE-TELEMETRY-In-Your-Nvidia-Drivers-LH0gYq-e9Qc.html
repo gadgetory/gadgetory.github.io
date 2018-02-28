@@ -1,0 +1,190 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>How To GET BACK The Old ShadowPlay &amp; REMOVE TELEMETRY In Your Nvidia Drivers | Gadgetory - Your Gadget Factory</title><meta content="How To GET BACK The Old ShadowPlay &amp; REMOVE TELEMETRY In Your Nvidia Drivers - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Tech-YES-City">Tech YES City</a></li><li class="active">How To GET BACK The Old ShadowPlay &amp; REMOVE TELEMETRY In Your Nvidia Drivers</li></ol></div><h2 class="post__title"><b>How To GET BACK The Old ShadowPlay &amp; REMOVE TELEMETRY In Your Nvidia Drivers</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/LH0gYq-e9Qc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">so today we're going to take a look at
+how you can decapitate driver install
+and I know I can't believe it's come to
+this but anyway welcome back to tech
+city this is Brad coming to you guys
+today with the tutorial on how to decaf
+I your Nvidia driver install now I
+should never have to be doing this
+tutorial but as times have it it seems
+that even your graphics card drivers
+aren't immune to all that telemetry and
+data mining crap this seems to be making
+its way into everything on the PC
+nowadays so we're going to split this
+tutorial into two different sections the
+first half will be doing just a basic
+clean driver install and then the second
+half will be getting back a clean
+version of shadowplay for those guys who
+want or need to use shadowplay also your
+mileage may vary with this tutorial I've
+tried it on two different computers so
+far and it's worked flawlessly so if you
+do come into problems after using this
+tutorial just be prepared to reverse
+what I did in this tutorial anyway let's
+get on with the first part and involves
+downloading your graphics card driver
+the latest one and also I'll put the
+links in description below for both of
+these downloads now the first thing
+you're going to want to do is just
+unpack your drivers and then cancel the
+install straight away because we're
+going to be going into the installation
+folder which is on C Drive slash Nvidia
+going deep into that folder until we get
+to the folder called telemetry and then
+I want you to delete the files in that
+folder and then continue on with a clean
+install so now if you've got your
+previous install done I want you to
+completely uninstall that or just
+perform a clean install and get rid of
+all the previous drivers on your
+computer and now what you want to do
+here is just install the graphics card
+only the graphs card driver that'll be
+the one that's grayed out at the top
+everything else you don't need to
+install unless you need those features
+so if you need 3d then install that if
+you need HDMI audio and install the HDMI
+audio driver so now's the part to
+disable the telemetry we want to go to
+the bottom left corner here and type in
+task scheduler and then you want to
+left-click on that open that up once
+you're in here you can left-click on
+task scheduler library and then there
+should be a heap of things that pop up
+here you want to focus on env TMP Mon
+env TMP
+envy TMP rep on logon now what these
+will do is these are the telemetry files
+so we just right click on them and go to
+disable and then go to the next one
+disable that and then disable the last
+one so these three should be disabled
+once you've done that we're ready for
+the next step now for this next part you
+can do this two different ways you can
+go into MS config and disable these
+services from here or you can type in
+the left corner here the bottom left
+corner services.msc and once you're in
+here this should bring up all the
+services that are on your computer that
+get loaded up and then what we want to
+go to is Nvidia streaming network
+service and then you right click on that
+and you go to properties and then you
+click on stop and then you can click on
+disable and once you've disabled that
+you can go down to in video streamer
+service just below that and do the same
+thing properties stop and then disabled
+but if you're using a shield device then
+you may wish to ignore this part but if
+you're not using a shield device then
+get rid of those services now we're on
+to the second part so after you've done
+that you can restart your machine and
+then we're going to install the GeForce
+experienced version 2 that's if you need
+or want shadowplay now the next part
+here I have to give credit to a person
+on reddit called underwear please so for
+this part we go to the bottom left-hand
+corner and type in regedit now once you
+guys to open this up and once we're
+inside here we can go over to H key
+local machine and expand that and then
+go down to software expand that and then
+go to a folder called Nvidia Corporation
+and then go expand global and then down
+to gf experience and this is the GeForce
+experience folder now there should be a
+folder called update if there isn't and
+I want you to also to close the GeForce
+experience down if you've got it open
+make sure it's closed even if you've
+installed version 2 I want you to then
+make this key so I'll just actually do a
+for you here I'll delete the one I got
+remake it so make new make new key and
+call it update with a capital u and now
+once we're inside here we want to right
+click on update and we want to go to
+permissions so now once we're inside
+permissions you will then have to go
+left click on advanced and this can get
+a little bit tricky so just bear with me
+here so
+once you're inside here you should see
+your username if you're the
+administrator of the computer you can
+see there the second one down I'm
+administrator Thunder Adamas but if you
+do have a username then you that's
+separate from the administrator then you
+will have to left click on add and
+manually add that username in and then
+after you've added that username in you
+will then want to go and left click on
+disable inheritance and don't click on
+the first one but you want to click on
+the second one there remove all
+inherited permissions from this object
+so let's click on that click OK and then
+click apply so make sure that's been
+applied and then once you're back in the
+folder you go back to the update folder
+and then go back and make sure there are
+no files in that registry key so you
+should see update here as you can see
+with mine there is no keys in there but
+if there are I want you to delete
+anything in that folder and then after
+that all you have to do is restart your
+computer and you will now have a
+crapless install of the NVIDIA GeForce
+experience so there we have a geyser
+crapless install of the Nvidia driver
+set not only did we get rid of the
+telemetry but we also made the GeForce
+experience much better by having it
+instantly recall without popping out a
+message and also having no performance
+drop by just having the option enabled
+and also you don't have to log in to the
+GeForce experience anymore to use it so
+that's a pretty cool thing and let me
+know in the comment section below guys
+what do you think of this install I
+thought it's a lot better I can actually
+also record YouTube and fullscreen again
+I guess that was something that they
+nerfed in the 3.0 driver said we'd love
+to hear your thoughts and opinions in
+the comment section as always and don't
+forget to hit that like button and I'll
+catch you in another tech video very
+soon peace out for now bye
+and overhead together are you sick and
+tired of seeing your favorite youtubers
+eat nothing but baked beans for
+breakfast lunch and dinner well if the
+answer was yes then for as little as a
+dollar a month you can help support your
+favorite youtubers directly via patron
+and you can also in the process help us
+overclock ourselves with some better
+food to find out more the patron link is
+in the description below</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

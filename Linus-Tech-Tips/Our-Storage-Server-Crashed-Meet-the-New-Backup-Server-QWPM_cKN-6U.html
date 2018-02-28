@@ -1,0 +1,234 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Our Storage Server Crashed – Meet the New Backup Server | Gadgetory - Your Gadget Factory</title><meta content="Our Storage Server Crashed – Meet the New Backup Server - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1>Gadgetory</h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><h2 class="post__title"><b>Our Storage Server Crashed – Meet the New Backup Server</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/QWPM_cKN-6U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">there's a video coming soon a video
+about the catastrophic failure of the
+raid array on our 2010 byte SSD server
+codename Wanek but before we do that
+video why don't we take a moment to
+introduce to you the newest member of
+the Linus Media Group server family the
+one I was literally in the process of
+backing Wanek up to when the failure
+happened meet plover server the Logitech
+G 303 features a lightweight design and
+advanced optical sensor with Delta zero
+technology for precise tracking and RGB
+lighting to match your setup check out
+the link in the video description to
+learn more so I think a video about
+clover server has to start with the
+differences between backup and
+redundancy redundancy protects from a
+hardware failure to an extent but not
+from accidental deletion encryption by
+ransomware vandalism or what I would
+call catastrophic hardware failure the
+benefit of redundancy is that it's real
+time a single Drive failure in a raid 5
+array for example would allow the
+business to keep operating completely
+normally and would result in 0 lost data
+as long as it could be offloaded or the
+raid array could be rebuilt with backups
+you'll only get back whatever was in
+your last periodic backup so clover
+server wouldn't have prevented any data
+loss from the catastrophic raid failure
+that recently occurred with Wanek server
+one of the raid cards crapped all over
+the inside of its pants took its pants
+off and started swinging them around
+what it would have prevented was
+projects that have already been shot
+weeks ago but not yet edited like this
+video that we had planned for Channel
+super-fun from being entirely lost so
+let's take a look at the hardware
+clover server is using a quad-core xeon
+processor on an asus p9 DM server
+motherboard with 32 gigs
+kingston ECC ddr3 memory to give me the
+best possible stability of course the
+redundant power supply from ISTAR USA
+helps with that and the tool list case
+well okay that's just for convenience
+but the hot swappable drive bays are
+really really nice
+ignore that RAID controller you see in
+this footage that's going to be replaced
+with an LSI HBA and I've also added a
+ten gigabit network card to handle the
+workload alterations that I've made
+since I built this box for storage I've
+gone with eight of Seagate's
+eight terabyte enterprise capacity
+drives these suckers do in the
+neighborhood of 200 megabytes per second
+and have a rated mean time between
+failure of two million hours however
+whatever the reliability might be in
+this particular application where the
+intent is to achieve reasonable speed
+but more importantly extraordinarily
+safe backup remember this will be the
+only copy of some data in the event of
+Wanek pooping itself again I'll be
+giving up a lot of my capacity to the
+redundancy gods as well as the speed
+gods so like most of our servers these
+days the software side of things starts
+with a fresh install of lime Tech's on
+raid which by the way they have
+sponsored projects of ours but this
+isn't one of them so we'll be setting up
+two of our eight terabyte drives in what
+is effectively an eight terabyte raid 1
+array configuration and then we'll take
+the other six in a butter FS raid 10 for
+24 terabytes of redundant storage the
+plan for the 8 terabyte array is pretty
+straightforward
+I'm going to set up a Windows Server
+2012 r2 essentials VM a pretty simple
+process since I don't have to do any
+video card pass-through or anything like
+that if you want to learn more though
+about on raid VN setup you can check out
+our to gamers 1 cpu video here I chose
+essentials 2012 r2 because even though
+it's quite expensive at about $500 for a
+license the way it handles incremental
+backup and restore functionality for up
+to 25 computers is really slick and
+seamless not to mention that if we ever
+wanted to move to a domain setup it
+includes Active Directory domain
+services
+for now we're still using a workgroup so
+I did have to use this simple workaround
+to enable the nightly backup
+functionality without requiring the PCs
+to join a domain from there you download
+and setup the connector software and
+this is basically a quick look at the
+dashboard that allows you to set the
+schedule for nightly backups how long
+you want to keep them for and change the
+storage destination to the secondary V
+disks that I created for those backups
+so seven terabytes should be lots for
+our SSD equipped workstations here in
+the office
+alright then Linus but what about that
+24 terabytes of RAID 10 storage on this
+machine great question
+I've got two plans for that number one
+is to use beyond compare a great piece
+of software that compares the structure
+of two directories and allows you to set
+up all kinds of rules for copying one
+way copying the other way or
+synchronizing between them and I'm going
+to use that to do incremental
+synchronizations so this is kind of
+somewhere between redundancy and backup
+since I plan to run them every 30
+minutes or so and I'm setting up the
+relationship so that a deleted file on
+Wanek will be removed on the clover
+server side as well then every night I
+will set up a backup operation from
+clover to the vault where files deleted
+from Wanek and therefore clover server
+will not be removed from the vault so we
+have somewhere to turn to if we
+accidentally delete something major
+so those operations can both be
+scheduled simply with windows task
+manager super handy and then a monthly
+or whenever we feel like it cleansing of
+the deleted stuff on the vault can be
+done using beyond compare as well
+now this isn't a perfect solution but
+butter FS snapshotting is still a ways
+out so it'll have to do for now and
+we've got lots of space on the vault so
+I'm not too worried about it
+anyway that still only accounts for
+about another 20 terabytes of the space
+on clover so we've got 5 terabytes of
+wiggle room for that plan number two I'm
+going to be leveraging my CEO nests to
+use that extra space as an off-site
+backup for my nas at home using
+CrashPlan normally I'd actually have to
+run crash plan from within a win
+environment or at least something with a
+GUI but the benefit of using docker
+within unready to do it I do plan to do
+a full video about docker containers and
+why they're awesome in the future is
+that if windows Bork's up crash plans
+backing up of key files there's not
+enough left over space for my whole home
+array will be uninterrupted normally
+setting up crash plan on a headless
+machine is kind of a nightmare but
+unraised way is a bit more elegant so in
+summary there's three main points for
+this video
+one backups are important to create two
+backups of something that's important
+during a data migration and three more
+details on the catastrophic raid failure
+to come speaking of catastrophic have
+you ever been in a situation where
+you're like I want to watch American
+Netflix but I am NOT American or I am
+American and I'm not in America
+well Tunnel bear is the easy to use VPN
+app for that and all kinds of stuff
+Tunnel bear lets you tunnel to 16
+different countries allowing you to
+browse the Internet and use online
+services as if you are in a different
+country
+they've got apps for iOS Android PC and
+Mac and they've also got a Chrome
+extension when you pick a country and
+turn tunnel bear on two things happen
+your connection gets encrypted with AES
+256-bit encryption and your public IP
+address gets switched so that you show
+up as if you are in that other country
+and they've fixed all the annoying stuff
+that's frustrating about VPNs while
+offering 500 megabytes of data for free
+to try it out with no credit card
+required then if you want to upgrade to
+unlimited data you can save 10% by going
+to tunnel bear comm slash ltte which is
+linked in the video description alright
+so thanks for watching guys if this
+video sucked you know what to do but if
+it was awesome get subscribed hit that
+like button or even consider supporting
+us directly by using our affiliate code
+to shop at Amazon instructions for how
+to do that or up there buying a cool
+shirt like this one or with a direct
+monthly contribution through our
+community forum you get a cool
+little contributor badge now that you're
+done doing all that stuff you're
+probably wondering what to watch next so
+check out that little button in the top
+right corner to see our video on channel
+super fun where Taryn and Luke compete
+to see who can wrap presents with drunk
+goggles on
+the best trust me it's better than it
+sounds</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html><html lang="en"><head><!-- google analytics--><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><!-- share this--><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Intel Kernel Security Check Fiasco - Is INTEL in TROUBLE?! #Meltdown | Gadgetory - Your Gadget Factory</title><meta content="Intel Kernel Security Check Fiasco - Is INTEL in TROUBLE?! #Meltdown - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Tech-YES-City">Tech YES City</a></li><li class="active">Intel Kernel Security Check Fiasco - Is INTEL in TROUBLE?! #Meltdown</li></ol></div><h2 class="post__title"><b>Intel Kernel Security Check Fiasco - Is INTEL in TROUBLE?! #Meltdown</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/pzWqV8s2_XE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">some crazy news for tech enthusiasts has
+just broke out and this is a potential
+security flaw in intel x86 CPUs that
+apparently dates back as far as the
+first generation core of ice series
+chips
+these are CPUs like the i7 920's and
+i-35 50s for example and this security
+flaw which needs to be patched still on
+Windows has already been patched on Mac
+and Linux operating systems and it was
+rumored to see a five to thirty percent
+performance drop post patch but has
+since been reported to see some drops
+that are even bigger than that and other
+applications where performance hasn't
+dropped at all so what exactly is the
+problem well we won't know 100% until
+Intel lifts their embargo on the issue
+and that will be very soon as Windows is
+rolling out and update within the next
+few days to fix this issue like Mac's
+and Linux have already done but a user
+on twitter named brain smoke has already
+confirmed that the exploit is real and
+it directly affects the Intel CPUs as
+rumored now the issue itself apparently
+comes from a security check that should
+be present but is not present on intel
+x86 cpus dating back nearly a decade and
+also a RM CPUs - oddly enough and here's
+where the problem lies apparently low
+privileged applications can access
+higher privilege application data
+through the kernel page table now you're
+probably wondering what is the kernel
+well here was this guy who made some
+awesome chicken there know on a serious
+note that's not the kernel we're talking
+about the kernel in this regard is a
+layer in your operating system that
+exists between your applications and the
+CPU and memory itself kind of think of
+it as a core of the operating system it
+also routes applications to use device
+drivers - though within this kernel is
+essentially a page table which helps
+speed up maps between virtual addresses
+and physical addresses which is the
+memory of your ddr4 or ddr3 and within
+that is the same addresses that are
+constantly being used then a portion of
+cache dedicated the page table mapping
+will then remember where to map the
+virtual to physical addresses and save
+time though with the TLB aka translation
+lookaside buffer doesn't have a memory
+of the mapping then the applications
+virtual address will then go to the page
+table to see if the mapping of the
+physical address is there if not then it
+will
+subsequently access something like your
+hard drive or SSD so now the problem
+itself lies within this page table and
+the solution on Intel CPUs is to
+momentarily isolate this page table at
+least until the physical address is
+mapped and then after that the
+processing can continue forward however
+of course by doing this isolation there
+is a delay introduced and of course
+delays equal less performance and this
+is not what we paid for when we bought
+those brand new Intel shiny CPUs or even
+$7.00 eons from our Lee Express though
+the good news is that AMD CPUs
+especially the price performance hitters
+Verizon are not affected by the security
+flaw at all as their CPUs implement a
+security check where lower privileged
+applications that try to access this
+higher privilege information within the
+kernel or page table will be met with a
+page fault or quite simply rejected
+though that still leaves us with the
+question of how much will performance be
+affected and a Linux Hardware site
+called for onyx has already tested the
+post patch performance versus the pre
+patch performance on two different Intel
+CPUs a 6800 K and an 8700 can I'll put
+the links in the description below and
+they found there to sometimes be a huge
+performance drop even to the tune of
+more than that reported 30% and
+sometimes absolutely none and the half
+decent news at least to the majority of
+you guys and myself included is that the
+update doesn't affect gaming or single
+computer star workstation productivity
+at least preliminary numbers and that's
+things like video encoding or rendering
+to now of course here at Tech yes City I
+will be crunching some numbers for you
+guys post windows 10 update and letting
+you know if there are any funny bug is
+taking place though of course the
+performance hits are looking like they
+will affect one market in particular and
+that is the server market at least when
+massive amounts of data input and output
+rights are concerned that is Google
+Facebook and Amazon servers cloud
+storage services virtual machines and
+the list goes on and this unfortunately
+fair Intel is a massive amount of their
+market share and to further complicate
+things the CEO himself has reportedly
+sold off practically half of his stock
+in the last couple of months and now
+holds the bare minimum required for the
+job
+so interesting times ahead to say the
+least but honestly Intel
+can't you just get things right i mean
+by apparently not having the cpu
+security check enabled they gain more
+performance and with that they're now
+doing a number on themselves but i guess
+with that they did get the short-term
+gains but ten years so probably not
+short or medium-term but they probably
+actually got long-term gains out of this
+and yeah though honestly this doesn't
+surprise me I mean just look at the
+thermal paste Fiasco in the history of
+rigging benchmarks and suppliers NuForce
+motherboards with same sockets every
+single year and you can only wonder why
+people while wanting to buy AMD CPUs now
+on other news AMD stocks are up five
+percent and Intel stocks are down four
+percent an Nvidia stocks are up 6.5% so
+I guess this whole cpu fiasco makes
+people want to buy a graphics card and
+that's about it for me today guys if you
+enjoyed this video then be sure to hit
+that like button and let me know in the
+comment section below what you think of
+this whole fiasco I honestly think that
+it comes at a time when really weird
+things are going on in the market I mean
+take a look at the top two institutional
+investors for AMD and Intel they're both
+the same companies I mean the sales of
+CPUs have been in decline in the last
+few years anyway so wouldn't you pick
+either one of the other but both I mean
+something seems a little fishy here also
+the new urgency P use apparently won't
+be affected as much due to a technology
+called PC ID or process context
+identifies so I just have this inkling
+that for some reason ask price
+performance enthusiasts will get screwed
+over the most I mean the exploit has
+potentially existed for ten years and
+it's just ironic that it's coming to the
+surface now when use price performance
+pcs are getting very popular ddr4 Ram
+prices are very high though really
+nothing surprises me in a market where
+the whole industry is built on new
+products and sales of those new products
+anyway guys I'll catch you in another
+tech video very soon peace out for now
+bye</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div></body></html>
