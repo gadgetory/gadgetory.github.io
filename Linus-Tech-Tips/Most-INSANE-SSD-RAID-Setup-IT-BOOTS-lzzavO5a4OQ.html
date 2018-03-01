@@ -3,99 +3,171 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'UA-114897551-1');
-</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Most INSANE SSD RAID Setup – IT BOOTS! | Gadgetory - Your Gadget Factory</title><meta content="Most INSANE SSD RAID Setup – IT BOOTS! - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Linus-Tech-Tips">Linus Tech Tips</a></li><li class="active">Most INSANE SSD RAID Setup – IT BOOTS!</li></ol></div><h2 class="post__title"><b>Most INSANE SSD RAID Setup – IT BOOTS!</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/lzzavO5a4OQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">Une des grosses histoire à Computex cette année était d'enlever les limitations des
-M.2 NVMe SSD que presque toutes les cartes-mères peuvent avoir et
-les partenaires tel que ASUS on même montré
-une incroyable carte qui pourrait contenir 4 disques à la fois pour un taux théorique de 16
-giga-octets par seconde de débit
-Alors, quand Samsung nous a demandé de parrainer une vidéo montrant leur produit phare:
-le 960 Pro, nous avions beaucoup d'inspiration
-pour savoir comment faire la plus incroyable
-configuration RAID SSD.
-Malheureusement le faire fonctionner
-a été ... Eh bien
-une aventure. Ouais
-voyons le ainsi.
-Il maintenant est un incontournable niveau vitesse depuis l'année dernière, 960 Pro a besoin de Samsung n'a pas besoin d'introduction.
-Mais ils ont parrainé cette vidéo, donc nous allons le faire de toute façon. Chacun de nos quatre disques a
-512 Go de stockage V-NAND qui est évalué à un ultra-rapide 3500 méga-octets par seconde en lecture et
-2100 méga-octets par seconde en écriture, comporte un processeur Samsung pentacoeur sur la carte
-et une garantie de cinq ans et étonnamment la chose est la taille d'un bâton de gomme.
-Alors allons nous allons tous les brancher et détruire des scores de référence?
-faux
-Trouver une carte-mères avec des fentes en quantité suffisente a été le premier défi que nous devions résoudre.
-Je pensais que je voyais un à Computex qui avait 5, mais qui se sont avérés être le fruit de mon imagination.
-Donc nous avons la carte-mère ASUS PRIME X299 DELUXE avec une carte séparée PCI Express pour gérer le dernièr
-M.2, mais un petit problème. Aussi bien qu'est d'exécuter un RAID logiciel Windows pour des résultats
-élevé des scores de performance séquentielle qui a été très (trop) souvent
-De plus, nous voulions réellement
-Expérimenter la vitesse d'utilisation dans des conditions d'utilisation normale ce qui signifie que nous devons démarrer
-Windows de notre RAID
-Parlons de la solution d'Intel de raid virtuel sur le processeur, mieux connu sous le nom de
-VROC
-Skylake x, les processeurs de bureau haut de gamme, ils partagent une grande partie de leur design avec un les processeur pour serveur: Xeon.
-Ils ont, en fait, trois
-Ce qui est appelés dispositifs de gestion intégrés dans chacun des volumes qui peut donner jusqu'à quatre appareil PCIe 4x
-acces au CPU pour une bande passante élevée et avec une faible latence
-Super, le problème est que aujourd'hui
-ce n'est pas encore officiellement lancé et pire encore
-une rumeur dit que Intel va activer la fonction à l'aide d'une clé matérielle
-qui ne seront disponibles par le biais des faisceaux avec X 299 cartes mères ou
-disques SSD.
-Heureusement, AMD a décidé de monter sur un cheval blanc et sauver la journée en annonçant
-mise à jour du pilote gratuite et
-Malheureusement, oui, leur marketing a souligné en particulier la partie gratuite. C'est le monde dans lequel nous vivons aujourd'hui
-Ce qui permettrait un raid amorçable de NVMe sur X399,
-plateforme de ThreadRipper, nous avons change notre carte ASUS Zenith Extreme et nous somme prêt à
-Pleurer sur le bureau
-parce que AMD a tiré le logiciel presque immédiatement après l'annonce en raison de
-Problèmes de compatibilité. Une fois qu'il a finalement été sortie à nouveau. Nous avons du nous retrousser les manches pour
-processus incroyablement mal documenté
-de A: Charger le pilote de contrôleur NVMe AMD qui permet
-B: Le pilote du contrôleur de débit AMD desinstaller, qui permet à
-C: Le pilote de configuration raid de AMD de s'installer.
-Ensuite, même si nous étions dans Windows sur quatre disques SSD. Nous avons frappé un autre barrage
-Nos résultats d'Iometer étaient loin d'être ce que AMD a publié sur leur blog
-Donc, après avoir encore plus de recherche, Merci à Gary de ASUS en passant.
-Nous avons trouver qu'en raison de ThreadRipper est techniquement deux matrices distinctes
-lié par l'interconnexion d'AMD Infinity Fabric.
-Considérations doivent être prises pour faire en sorte que la charge NVMe est équilibrée entre les matrices
-Sinon, ce lien 11 giga-octet par seconde, aussi vite qu'il est, pourrait effectivement devenir un goulot d'étranglement
-Donc, armé d'un schéma détaillé des allocations des lignes PCIe et un bios préversion. Nous avons continuer.
-Pendant ce temps, cependant. Nous avions fait pas renoncé entièrement VROC
-Cependant, je ne vous recommanderais pas obtenir vos pilotes Intel par des téléchargement russes
-Nous en avons trouvez un qui prétendait permettre VROC sans clé de raid, et techniquement ça la fonctionné
-Mais nos chiffres de performance étaient très loin
-par rapport aux gars de PC perspective qui ont également réussi afaire marché VROC par ce que nous pensons être une méthode similaire.
-Quoi qu'il en soit, aucun d'entre nous pourrait obtenir pour démarrer avec des SSD qui ne sont pas ceux d'Intel
-Revenons donc AMD ThreadRipper alors que pour le meilleur ou pour le pire a, aujourd'hui, un raid amorçable
-AMD a de nouveau à nous avec un préréglage pour IOMeter et quelques conseils pour nous aider à reproduire leurs résultats
-Pas démarré votre ordinateur vous me dites, mais avec un syteme fichier brute non formaté
-Et nous avons tout mis, ce qui signifie qu'il est enfin temps de le faire
-Donc, après avoir balancé physiquement nos Samsung 960 Pro entre les matrices
-En Utilisant dimm.2 d'ASUS pour deux d'entre eux et sa carte hyper
-M.2 x16 pour les deux autres, nous amorcé en mode UEFI et
-Configuré notre RAID en utilisant l'utilitaire RAID Expert 2 intégré
-Nous f6 alors à tous les trois pilotes
-En ordre et puis nous avons vu notre RAID de 2 tb prêt pour l'installation
-une fois démarré dans Windows, nous avons lançé IOMeter avec un méga-octet en lexture et écriture à
-32 profondeur de Q et a dû se frotter les yeux en voyant les résultats de 12 giga-octets par seconde en lecture et
-7.3 giga-octets par seconde en écriture et ce sans la technique dAMD de système de fichier vierge.
-Nous parlons d'un pleinement opérationnel,
-formaté en NTFS,
-RAID de démarrage avec ce genre de chiffres.
-à titre de comparaison un 960 Pro performe trois et demi giga-octets par seconde en lecture et
-Deux giga-octets par seconde en écriture dans la même machine. Cependant, Crystal disk ne performait pas tout à fait aussi bien en lecture
-Mais nous devons garder à l'esprit que cette technologie est encore à ses débuts
-Au moins sur le côté des pilotes et nous pourrions réellement voir
-Plus du potentiel du matériel brut débloqué à l'avenir
-Merci à Samsung pour le parrainer cette exploration du  raid amorçable haut de gamme sur le bureau
-Je ne pense pas que cette folle aventure est encore fini, mais nous allons prendre un peu de répit
-Et peut-être que nous allons revisiter une fois les choses seront plus stable, en particulier du côté Intel, au cours des prochains mois
-Alors merci la tous d'avoir regarder, si vous n'aimez cette vidéo
-Vous pouvez cliquer sur ce bouton, mais si vous avez aimé cliquer sur aimer, considérer un abonnement et   peut-être considérer de regarder les chose qu'on a présentez
-dans les liens dans la description de la vidéo
-Aussi en bas, il y a notre magasin, qui a des chandail comme celui-ci ainsi que notre forum que vous devriez totalement rejoindre</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Most INSANE SSD RAID Setup – IT BOOTS! | Gadgetory - Your Gadget Factory</title><meta content="Most INSANE SSD RAID Setup – IT BOOTS! - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Linus-Tech-Tips">Linus Tech Tips</a></li><li class="active">Most INSANE SSD RAID Setup – IT BOOTS!</li></ol></div><h2 class="post__title"><b>Most INSANE SSD RAID Setup – IT BOOTS!</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/lzzavO5a4OQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">one of the big stories at Computex this
+year was about removing the bottlenecks
+from high speed MDOT to nvme SSDs pretty
+much every motherboard was bristling
+with mounts and partners like a soos
+even showed off this crazy card that
+could hold four drives at a time for a
+theoretical 16 gigabytes per second of
+throughput so when Samsung approached us
+to sponsor a video showing off their
+flagship 960 Pro we had plenty of
+inspiration for how to build the
+awesomest dream SSD raid setup
+unfortunately getting it to actually
+work has been well an adventure yeah
+now as the de facto choice for Speed
+Freaks for the entire past year
+Samsung's 960 pro needs no introduction
+but they sponsored this video so we're
+gonna do it anyway each of our four
+drives has 512 gigs of v-nand storage is
+rated to a blazing fast 3,500 megabytes
+per second reads and 2100 megabytes per
+second writes has a custom 5 core
+Samsung processor onboard and a
+five-year warranty
+and somehow the whole thing is the size
+of a stick of gum so then let's go let's
+plug them all in and rip up some
+benchmark scores right wrong finding a
+board with enough slots was the first
+challenge we had to solve I thought I
+saw one at Computex that had 5 but that
+turned out to be a figment of my
+imagination so we settled Ben on the
+asus prime x $2.99 deluxe with a
+separate PCI Express card to handle the
+last m2 but one small problem as cool as
+it is to run Windows software raid 4 eye
+watering sequential performance numbers
+that has been done to death and besides
+we wanted to actually experience the
+speed in day-to-day use so that means
+that we need to boot windows from our
+array let's talk about intel's virtual
+raid on CPU or vrock since the latest
+skylake x high-end desktop processors
+share much of their pedigree with server
+level xeon chips they actually have
+three what are called volume management
+devices built in each of which can give
+up to four PCIe 4x devices direct access
+to the CPU for high bandwidth low
+latency performance cool the issue
+though is that today is not yet
+officially launched and making matters
+worse Intel is rumored to be planning to
+enable the feature with a hardware key
+that will only be available through
+bundles with X to 99 motherboards or
+SSDs thankfully though AMD decided to
+ride in on a white steed and save the
+day by announcing a free driver update
+and sadly yes their marketing materials
+specifically emphasized the free part
+that's the world we live in now which
+would enable bootable nvme raid on the X
+399 thread Ripper platform
+so a quick swap to the Asus zenith
+extreme and we are ready to cry on the
+desk because AMD pulled the software
+almost immediately after the
+announcement due to compatibility issues
+once it was finally re-released we then
+had to bundle our way through the
+incredibly poorly documented process of
+a loading the AMD nvme controller driver
+which allows B the AMD rate controller
+driver to be installed which allows C
+the AMD raid configuration to be
+installed then even when we were in
+Windows running on four SSDs we hit
+another roadblock our Iometer benchmark
+results were nowhere near what AMD
+posted on their blog so after still more
+research mad props to Gary from asus by
+the way man we figured out that because
+of thread Ripper CPU is technically two
+separate dies linked by AMD's infinity
+fabric interconnect considerations must
+be made to ensure that the nvme load is
+balanced between the dies otherwise this
+11 gigabyte per second link as fast as
+it is could actually become a bottleneck
+so armed with a detailed diagram of PCIe
+Lane allocations and a pre-release bios
+we pushed onward meanwhile though we
+actually hadn't given up entirely on
+vrock now while I wouldn't recommend
+getting your Intel drivers from Russian
+download mirrors
+did find one that claimed to enable
+vrock without a raid key and actually it
+technically worked but our performance
+numbers were way off compared to the
+guys at PC perspective who also got
+vrock working via what we think was a
+similar method and anyway neither of us
+could get it to boot with non Intel SSDs
+so back to AMD thread Ripper then which
+for better or for worse has bootable
+raid today
+AMD got back to us with a preset for
+Iometer and some guidance to help us
+replicate their results not while
+actually booted from it mind you but
+with a raw as an unformatted file system
+and we implemented everything meaning
+that it is finally time to do this so
+after physically balancing the for
+samsung 960 pros between the dies using
+a Seuss's dim dot 2 for two of them and
+they're hyper m dot 2 x16 card for the
+other two we booted in pure UEFI mode
+and configured our array using the
+built-in raid expert 2 utility we then
+f6 to all three drivers in order and saw
+our two terabyte array as available for
+OS installation once booted into Windows
+we launch diameter with one megabyte
+reads and writes at 32 Q depth and had
+to rub our eyes at the results 12
+gigabytes per second on reads and 7.3
+gigabytes per second on writes and that
+is without AMD's BS bra filesystem stuff
+we are talking a fully operational NTFS
+formatted bootable array with those
+kinds of numbers for comparison a single
+960 Pro delivered three and a half
+gigabytes per second on reads and two
+gigabytes per second on writes in the
+same machine now crystal disk mark
+didn't scale quite as well on reads but
+we do have to keep in mind that this
+technology is still in its infancy at
+least on the driver side and we might
+actually see more of the raw hardware's
+potential unlocked in the future so
+thanks to Samsung for sponsoring this X
+raishin of high-end bootable raid on the
+desktop I don't think this crazy ride is
+quite over yet but we're gonna take a
+little breather and then maybe we'll
+revisit it once things have settled down
+particularly on the Intel side over the
+next few months so thanks you guys for
+watching if you dislike this video you
+can hit that button but if you liked it
+hit like get subscribed maybe consider
+checking out where to buy the stuff we
+featured at the link in the video
+description also down there is our merch
+store which has cool shirts like this
+one as well as our community forum which
+you should totally join</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
     var b = d.getElementsByTagName('body')[0];
     var s = d.createElement("script"); s.async = true;
     var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";

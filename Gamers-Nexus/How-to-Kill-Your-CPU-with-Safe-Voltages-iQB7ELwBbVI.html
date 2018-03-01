@@ -1,0 +1,697 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>How to Kill Your CPU with &quot;Safe&quot; Voltages | Gadgetory - Your Gadget Factory</title><meta content="How to Kill Your CPU with &quot;Safe&quot; Voltages - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus">Gamers Nexus</a></li><li class="active">How to Kill Your CPU with &quot;Safe&quot; Voltages</li></ol></div><h2 class="post__title"><b>How to Kill Your CPU with &quot;Safe&quot; Voltages</b></h2><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/iQB7ELwBbVI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">today we're going to show you how to
+overclock a CPU to death so basically
+what we're going to be looking at here
+is how increasing SOC voltages or
+graphics voltages as it's called with ap
+use can result in voltages that are
+deadly or at least could degrade the
+integrated memory controller or other
+components on the CPU this is something
+that's very easy to do we talk often
+about how overclocking is of course at
+your own risk well there's a reason for
+that and even with guidance posted
+online by overclockers by media outlets
+like us by AMD or Intel official
+companies even with that guidance it's
+still possible to end up in a scenario
+where you input a voltage number that
+was suggested in one place but on your
+particular BIOS on your particular
+motherboard whatever it could end up
+being damaging without you even knowing
+it so we're gonna talk about that today
+two things we're focusing on are showing
+how the SOC voltage through the socket
+through the back of the motherboard is
+actually often different from what's
+measured in software like hard R and fo
+and of course if you were at the max of
+what's safe and hardware info but this
+is higher reading it off the real board
+that's where problems could arise before
+that this video is brought to you by
+thermal grizzly makers of the conductor
+hot liquid metal that we recently used
+to drop 20 degrees off of our
+temperatures thermal grizzly also makes
+traditional thermal compounds we use on
+top of the IHS like cryo not and
+hydronaut pastes learn more at the link
+below let's start with a basic example
+one of the first things that anyone asks
+including us with overclocking is what's
+a safe voltage so for most consumers you
+might go to Andy Intel Nvidia or come to
+us we go to people like their Bower or
+build Zoid or any of them and then
+hopefully between them and between the
+companies we can figure something out
+but at the end of the day it's all kind
+of just you're relying on hoping that
+the number is correct because without
+really testing it you don't necessarily
+know where things die and of course you
+know if you pump 1.5 volts into a CPU it
+will be bad but the question is more of
+is one
+point two five okay is one point three
+too far because these are only 0.05
+apart but there could be degradation
+over a period of six months for example
+which is of course very bad and you
+don't want that so with the Raven Ridge
+ap use as an example
+conventional wisdom with Rison suggests
+that a safe SOC voltage is one point two
+here's where the question comes in is
+that one point two as in the number that
+I type into the interface rise in master
+bios or is it one point two actually
+going through SOC on the board and
+through the SOC vrm with Raven Ridge a
+new suggested safe SOC voltage depending
+on which company you asked could be as
+high as 1 point three volts but again if
+we're talking one point three typed into
+the interface versus one point three in
+reality those numbers can be very
+different to give you a quick example we
+have three tables that we built took
+about 16 hours we'll put them on the
+screen briefly and then we'll go back
+through them very specifically later and
+in these three tables one thing we did
+was check the different input voltages
+SOC and APU graphics voltage versus
+what's measured on the back of the
+socket which you can measure with a
+simple digital multimeter and in some
+instances putting in a number of 1.3
+which is a new supposed potentially safe
+SOC voltage again depend on what company
+you asked putting that number in in some
+cases can equal about 1.3 in other cases
+it could equal 1.4 if it's 1.4 and
+especially if it's sustained you've just
+condemned your integrated memory
+controller to death or more likely
+degradation it's not like it's gonna up
+and die at 1.4 but what might happen is
+over a span of six months or it could be
+10 months over a period of time there
+will be degradation in what frequency be
+in this case and integrated graphics
+chip can sustain at its current voltage
+as it degrades you might have to
+increase voltage to a point that it is
+no longer safe or even less safe or you
+decrease the frequency and these are
+things we don't want so go through a
+couple more notes here before starting
+I'm going to show you how the
+discrepancy appears between the back of
+the socket and software hardware info
+arising master and then we're going to
+talk about some of the tables that we
+spent a whole day creating with just
+three motherboards only three and how
+much they differ one to the next in
+terms of V droop or over voltage or
+under voltage or whatever so some very
+quick things your V group can require
+higher LLC or load line calibration
+levels to stabilize the input voltage
+closer to the configured number this is
+one of the easiest ways to ensure the
+number you type in is what you're
+getting as opposed to maybe some auto
+LLC's will actually really under deliver
+on that voltage we've had this problem
+to pass you type in 1.4 and reality are
+getting 1.3 so load line calibration can
+help with this if you're not sure what
+that is and you want to know more than
+what I've just told you we have an
+entire video on that done by a hardcore
+overclocker if you use this allen tears
+names build Zoid so we'll link that
+below and that's that's one of the
+things we need to know LLC tables on
+boards can differ so one board to the
+next it's not gonna be the same that
+means if you follow a guide for a board
+you don't have you could kill something
+damage it or you might just end up in
+the best case with it unstable overclock
+because voltage isn't high enough to
+things specifically to Raven Ridge here
+before we start apu graphics voltage is
+a number that you'll see rise and master
+has it for example so rise and match
+recalls it AP graphics voltage they also
+have an SRC voltage these are more or
+less the same thing so ultimately AP
+graphics voltage and SRC voltage are
+going to the same place they're
+controlled by the same vrm it's the SOC
+BRM it's typically the well it's always
+the more limited phase count v RM on the
+board of the two main V RMS for AMD
+boards so when you adjust graphics
+voltage you are adjusting SOC voltage
+the same rules of safety apply to each
+even though for example you could type
+in a very high number it doesn't mean
+it's same so that those two numbers are
+basically the same now we have a kind of
+a hypothesis on what the difference is
+why there would be two different inputs
+for them and based on some limited
+testing on a couple of motherboards
+our current theory is that AP graphics
+voltage on some boards is instantiated
+specifically when 3d clocks are called
+whereas the soc voltage is instantiated
+when 2d clocks are called
+so if you have numbers of 1.14 SOC and
+1.2 for graphics then you launch 3d mark
+1.2 is what should be being referenced
+however if you're doing something
+without 3d clocks then it should be that
+as I see voltage however this theory
+only really worked on one line of
+motherboards from one vendor because
+graphics voltage actually doesn't work
+at all
+on one of the other boards we test it it
+does nothing and then on the third board
+it seems to stack with the SRC voltage
+so you would do 1.2 SOC 1.2 graphics and
+you'd end up with one point 4 volts SOC
+measured at the back of the board so it
+all depended on the vendor but let's get
+into the testing now this is going to
+start with a demonstration on a gigabyte
+board this is the gigabyte gaming k5
+it's one of the board's we tend to
+prefer for rise and overclocking however
+it does have some limitations and one of
+the things that gigabyte commonly does
+is they tend to push a bit more voltage
+through everything than what you've
+asked for now that's not necessarily a
+bad thing other vendors push too little
+so at the end of the day all that
+matters is that you were aware of the
+behavior of the particular board so the
+fact that it pushes more isn't
+inherently bad unless you're not aware
+of it then it could be very bad so I'm
+gonna do first
+we just have everything set up auto
+right now I'm gonna launch 3d mark on
+the host system so for this first
+demonstration on the gaming k5 we're
+gonna use the auto voltage settings in
+BIOS and just these rise in master for
+sake of ease and demonstration and all
+we're gonna do is set a super achievable
+1,300 megahertz clock so we're not
+really overclocking it right now but
+that's not the point
+so we'll go 1,300 it does in increments
+of 50 and we're going to set a 1.1 SOC
+and 1.1 graphics voltage so both of
+those are 1.1 and we just need to put it
+under some load so for SOC voltage right
+now and hardware in 464 we're reading
+about 1.0 volts
+point-9 to 1.01 volts and this is with a
+one point one configuration and risin
+master for both SOC and the APO graphics
+but what we need to do is check the real
+voltage at the back of the socket so we
+can do that with a multimeter pretty
+easily and all I'm going to do is stab a
+a molex ground which if you don't know
+where those are our mod mats have handy
+diagrams that show where they are and
+then I'm going to just hit the correct
+corresponding SOC cap which we've
+already determined 1.2 so we are at 1.2
+volts going into the socket as opposed
+to on hardware info 1.0 ish 11.0
+basically so in this instance you might
+think that you're only pushing about a
+volt into there and at max 1.01 which is
+quite a bit different from 1.2 that is a
+massive difference so we're getting a
+bit of over voltage versus what's being
+reported here a part of that is some of
+the resistance between the pin and the
+pads and the socket as we discussed
+elsewhere in this video but part of its
+just gigabyte behaving a bit differently
+from the other boards so if we want to
+further this maybe you didn't check the
+back of the socket you're a normal
+end-user you're just looking at hardware
+info and rise master you think your
+voltage is still pretty low so at this
+point you might go ok I'm gonna push the
+1500 megahertz and you know what just
+maybe I had some stability issues at
+this voltage so let's go all the way up
+to 1.25 and this specific number is
+really meant to just illustrate a large
+change we wouldn't expect you to and
+wouldn't recommend that you do
+increments that large but the point is
+to demonstrate something not to provide
+a guide of how to overclock so this
+number specifically some vendors have
+recommended 1.25 as a safe SOC voltage
+in the past some have a very hard
+recommendation of 1.2 as a max SOC
+voltage and then AMD has apparently also
+mentioned day 1.3 SOC voltage or APU
+graphics all digits same exact
+Thayne these two things they go through
+the same VRM so let's just apply 1.25
+and see what happens so now we're seeing
+in hardware info one point one five one
+point one four so we're we're under one
+point two and over one point three it
+looks like one point one three excuse me
+so yeah one point one five is about
+where we are now versus one point two
+five for the configuration so it still
+looks pretty good you might just kind of
+leave it here you can even push it a
+little higher if you're assuming one
+point three is safe you can push it
+higher if you're assuming one point two
+safe doesn't really matter if you listen
+to one vendor or the other if one says
+one point two one says one point three
+either way we're below both 1.2 and 1.3
+right now so let's check the socket side
+for its voltage one point three for
+quite high getting dangerously high in
+fact so with the folks we've spoken to
+about this one over 1.3 likes a
+sustained one point three six volts is
+getting kind of rough for an APU for the
+SOC specifically you could start
+damaging it degrading it or burning it
+out with a sustained over 1.3 volt input
+to the CPU but of course rise master and
+hardware are giving us completely
+different much lower numbers and this
+isn't necessarily a fault of one board
+or the other or even a fault of hardware
+info it's that they are technically we
+were reading two different things one
+we're reading at the back of the socket
+you can't get much more direct than that
+and the other one is through sensors
+through the CPU after resistance and
+aggregate data and all that other stuff
+so that's what we've got for basics now
+we could do one more example here and
+let's say that you know one point three
+five certainly is inadvisable however
+you might still be able to argue it
+let's say you ended up pushing out I was
+sixteen hundred sixteen fifty something
+like that and in the process of doing so
+you went with maybe a really high well
+comparatively high voltage of something
+like one point two eight seven five
+let's go with that because if you're
+listening to guidance from the board
+vendors or from AMD where sometimes they
+say one point three is say if once again
+there's difference between typing in 1.3
+here and getting 1.3 into the CPU and we
+need to determine which one they're
+talking about when they say that you
+need to understand what they mean when
+they say 1.25 or 1.3 or whatever is safe
+because they're different things so
+right now we're getting one point one
+seven five we're not quite at one point
+two yet and you could see this as
+potentially an LLC issue because higher
+LLC if we could set it with this board
+would potentially stabilize out of it
+but either way we're almost at one point
+two sometimes let's do one more
+measurement back the socket so one point
+two sometimes for hardware info versus
+one point three seven to one point three
+eight that's bad that will degrade the
+integrated memory controller over time
+it is definitely not a good voltage to
+push into there so one last number
+something we've determined is pretty
+stable on our sample is sixteen fifty
+megahertz on this motherboard at only
+one point one eight I think one point
+one eight one two five so we determined
+this to be stable that number is pretty
+damn low compared to the guidance of 1.2
+to 1.3 as a safety but again it's
+because there's a difference versus load
+line calibration V group stuff like that
+where the number we're reading out
+versus putting in our two different
+things so one point one for hardware
+info looks pretty good we're stable at
+sixteen fifty megahertz one point one
+eight for AP graphics which is SOC
+voltage and then at the socket one point
+two eight perfectly well it's hard to
+say exactly but some vendors have told
+us this is perfectly acceptable and then
+guidance for rise in speaking with some
+of the XO c guys the extreme
+overclockers we've heard one point two
+is the safety guidance and some other
+board vendors as well however Raven
+Ridge is a different products than Rison
+so it's possible it's changed but either
+way compared to one point three seven
+one point two seven is significantly
+lower that's a big deal so that's what
+we're talking about and make sure you
+know which voltage people are when I say
+people which voltage menu
+actuaries or overclockers are talking
+about when they say the number 1.2 is
+safe for the number 1 point 3 is safe
+because the difference in point 1 there
+is enough to seriously degrade or damage
+or destroy an SOC over time because a
+point 1 difference is one point three
+two one point four one point four
+definitely starts to create your IMC one
+point three I'm a bit nebulous on I've
+heard from multiple different people
+that one point three is fine I've heard
+from more people that one point two to
+one point two five is that they
+suggested the most reliable source that
+I've spoken with so far has suggested
+that peaking at one point three is
+perfectly acceptable for the Raven Ridge
+SOC and the same source has suggested
+that peaking at something like one point
+three six and holding there is bad so
+that's kind of your your margin for
+error if we go with that specific source
+but again this is all practical hands-on
+stuff so until things start dying it's
+hard to say precisely what's acceptable
+if you want my recommendation for a very
+safe guidance 1.2 is a good place to sit
+for the actual voltage going into the
+CPU not necessarily what you type in
+1.25 I would also feel somewhat
+comfortable with with Raven Ridge and
+one point three is where you're just
+you're you're just kind of betting on
+who said what because again some people
+have told us one point three is fine
+some have said the opposite so it all
+depends Raven Ridge as I understand it
+should be fine
+at one point three sustained but
+obviously lower is better so maybe shoot
+for one point to one point two five
+let's quickly recap some of our findings
+on the three boards we tested we
+observed to the following what's the MSI
+motherboard the be 350 tomahawk we
+noticed that APU graphics voltage the
+option and rise and Master did not seem
+to do anything that's broken we ended up
+using SOC voltage via bios instead to
+adjust the stability of it all and LLC
+options also didn't seem to do very much
+on this particular be 350 tomahawk board
+level six LLC resulted in lower voltage
+than auto and level eight is apparently
+somewhat equal to auto or slightly lower
+depending
+you're looking at and this seems to have
+V group issues and under-voltage vs.
+target at times as well so that's the
+MSI Board's characteristics again we're
+not necessarily saying what's bad or not
+all we're saying is be aware of those
+things
+the Asus Board behaves a bit differently
+first of all we tested an Asus at B 350
+M - E this is not an overclocking
+motherboard for from it and I mean you
+could tell that by looking at the lack
+of heat sinks on the DRAM so that said
+we wanted to test it for a specific
+reason which will be our second video
+and we'll talk about that later
+but either way the MOSFETs can easily
+breach 120 degrees Celsius if you're
+pushing high voltages because it's
+really not meant to handle that kind of
+voltage however we did find that we
+could reasonably hit 15 50 megahertz
+with a 1.1 volt SOC input and 1.2 volt
+graphics input the result was 1.25 volts
+via multimeter which seems acceptable
+MOSFETs still run pretty hot but not bad
+considering what a cheap board it is and
+conversely from that with Auto LLC 1.2
+volts SOC and 1 point 3 volts graphics
+which are settings that might actually
+be okay on some boards but not this one
+what you end up with is 1.3 7 volt to be
+a multimeter it was capable of 1650
+megahertz but you'd be roasting the
+MOSFETs and at one point three seven
+volts you'll be damaging the SOC as well
+gigabytes board we couldn't find any SOC
+LLC options for now users will need to
+be aware that while the msi board is
+often biased under volting the targets
+the gigabyte board is often biased over
+volt in it a 1.1 to 5 volt input is
+sufficient to stabilize at 1550
+megahertz and hardware info and the
+gaming k5 seems under report voltage
+somewhat notably versus reality to the
+effect that hardware info will show 1.0
+seven volts SOC but the multimeter will
+show one point two three seven which
+could lead to users killing the IMC if
+they are just applying some blanket one
+point two number and assuming it works
+because one point two can equal one
+point three two one point three four or
+higher in reality so now we're gonna get
+into some SOC and LC tables that we put
+together from hands-on testing with
+everything that was rude anyway I was
+saying with the
+tables what we're gonna be showing you
+is just some hands-on testing and we've
+got that for the same three board so
+let's go through those now here's a
+table of our issues SOC checks the color
+coding is based on frequencies when we
+changed frequency we changed row color
+at one point one volts SOC and one point
+one volts apu graphics input we were
+measuring one point one two to one point
+one three volts with a multimeter or
+1.05 vi 1.08 one with hardware info this
+was with a low frequency of 13 or
+megahertz going to fifteen fifty
+megahertz had a one point one volt SOC
+and one point two volt graphics reading
+out as one point two to three via
+digital multimeter or one point one five
+to one point one eight one via hardware
+info that's with high LLC which was
+required for stability here's the
+dangerous one at 1600 megahertz and with
+extreme LLC we configured 1.2 volts SOC
+at 1.2 volts graphics and read out one
+point three five volts SOC via DMM if
+you're relying on hardware info you'd
+think that you were only at one point
+two nine to one point three which again
+depend on who you ask are sort of
+acceptable though pushing it and not
+really acceptable on this motherboard
+mind you given the heatsink limitations
+but conventional wisdom would suggest
+that 1.25 volts is ok for most ap use
+according to some of our contacts this
+board isn't really meant to push this
+high but that's beside the point the
+point is that these voltage is 1.2 on
+each to grade the IMC over time that was
+with extreme LLC though let's dial back
+to Otto since that's what most people
+use even with Auto LLC a 1650 megahertz
+clock was held with a 1.2 bolt as our CN
+1 point 3 volt graphics voltage in
+reality these numbers equaled one point
+three seven volts and up in other words
+hope you don't need a memory controller
+for very long the msi be 350 tomahawk is
+next this one sometimes had V droop but
+not always and we also noticed the APU
+graphics voltage didn't really seem to
+do anything on this board it was all
+driven by normal SOC voltage going for
+1600 megahertz with a 1.2 volt SOC and
+1.2 bolt graphics allowed the frequency
+to hold using Auto LLC and the DMM
+output was one point two four five volts
+while hardware info reported one point
+one eight to one point two volts
+increasing graphics voltage to one point
+three did nothing here and did not
+change the voltage readings at all going
+to 1650 megahertz
+1.3 volts SOC had us reading 1 point 3 5
+volts via DMM but hardware info was
+reading one point to 7 to 1 point 3
+volts
+finally the gigabyte gaming k5 seems to
+push voltage more heavily than other
+boards this isn't inherently a fault
+with gigabytes of motherboard it's just
+that users need to be aware of the
+behavior on this board and how it's
+different from MSI and Asus which means
+that following a guide for a different
+motherboard could easily have you
+inputting unsafe or unstable voltages at
+1500 megahertz with a 1.1 volt SOC one
+fights evil graphics we have BIOS we
+measured a 1.3 volt output via digital
+multimeter harder info read 1 point 1 go
+into 1 point one volts SOC and 1 point 3
+volts graphics gave us at one point
+three nine one point four volts SOC
+which is dangerous to the health of IMC
+this is where we realized that gigabyte
+was being more aggressive than MSI again
+not a fault of either just the behavior
+we dropped to one point one five volts
+graphics input voltage which resulted in
+a 1.25 volt DMM reading as you can see
+in this table 16 50 megahertz was held
+with an input number of one point one
+volts SOC and one point one eight one
+two five graphics resulting in a one
+point two eight ball SOC voltage as
+measured at the socket but one point one
+volts via Hardware info the takeaway
+here is that the gig white board only
+required us to input one point 1 8 volts
+for graphics to get 1 point 3 out
+whereas the msi board would require 1.3
+volts input to get roughly the same out
+the Asus board would require 1.2 to 1.25
+to get 1.3 out and these are behaviors
+that you need to be aware of on the
+motherboards and they are somewhat
+unique to each board as for why the
+numbers are different between a physical
+measurement and software some of it is
+of course that software is relying on
+what the CPU tells it what it's gauges
+are telling it internally and going from
+the back of the board to the socket or
+to the CPU die level we enter an area
+where the resistance of the connection
+of pins to pads could be throwing off
+those numbers and it is quite clearly so
+ideally the board vendors get things to
+a point where LLC isn't crazy aggressive
+when Auto and that voltages are close to
+what you put in as an input but as long
+as you're just kind of aware of
+everything and read what you can on the
+boards you should be fine
+the biggest thing is that typing in a
+number if MD says or gigabyte or ace use
+anyone if anyone says something like
+1.25 is safe
+1.3 is safe you have to know what their
+what they're talking about because if
+you're saying 1.25 is safe
+is that 1.25 read at the back of the
+board in reality or is it 1.25 as in the
+number that you type in to get things
+stable because depend on what their
+perspective is they might mean the
+number you type in or they might mean in
+reality and they're talking reality but
+you type in a high number you could end
+up far over what they consider to be
+safe and that just comes down to
+communicating with the manufacturers
+some of them have websites dedicated to
+overclocking so check those but all this
+kind of made sense to do now just
+because Raven Ridge and Verizon in
+general but Raven Ridge is pretty easy
+to overclock and D although we don't
+like software overclocking at all Andy's
+done well to make rise and master at
+least kind of work for end users to some
+extent most the time so it's not great
+BIOS is better if you can do it but in
+terms of accessibility to the end user
+Rhys masters pretty accessible and it
+lets you change things that would be
+potentially bad for you to change if you
+don't know what you're doing whereas a
+lot of software solutions don't give you
+that control it tends to be in bios so
+yeah so worth talking about because
+Raven Ridge is pretty easy to overclock
+and most this information applies
+generally as knowledge to everything
+else so if you like this type of
+coverage as always you can subscribe to
+us for more we'll be talking out how to
+kill your motherboard next this was sort
+of how to kill your CPU and that'll be
+on the mosfet thermal level go to
+patreon.com/scishow stop us out directly
+or store that gamers nexus net to make a
+shirt like this one which we've just
+restocked it's the graph logo shirt
+thank you for watching I'll see you all
+next time
+you
+you</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>
