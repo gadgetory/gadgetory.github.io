@@ -35,7 +35,7 @@
 }
 
 .channel-index__post-container {
-  margin: 0 50px;
+  margin: 0 15px;
   display: grid;
   grid-row-gap: 20px;
 }
@@ -43,32 +43,44 @@
   text-align: center;
 }
 .channel-index__post-thumbnail {
+  width: 100%;
 }
 .channel-index__post-title {
   font-size: 15px;
   font-weight: bold;
 }
+.channel-index__post-date {
+  font-style: italic
+}
 
 @media screen and (min-width: 700px) {
   .channel-index__post-container {
-    grid-template-columns: auto auto;
+    margin: 0 20px;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (min-width: 1000px) {
   .channel-index__post-container {
-    grid-template-columns: auto auto auto;
+    margin: 0 50px;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media screen and (min-width: 1400px) {
   .channel-index__post-container {
-    grid-template-columns: auto auto auto auto;
+    margin: 0 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 .post__title {
   text-align: center;
+}
+
+.post__date {
+  text-align: center;
+  font-style: italic;
 }
 
 .video-responsive{
