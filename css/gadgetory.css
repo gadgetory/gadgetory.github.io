@@ -10,8 +10,7 @@
 }
 
 .index__channel {
-  background-repeat-x: no-repeat;
-  background-repeat-y: repeat;
+  background-repeat: repeat-y;
   background-size: contain;
 }
 
