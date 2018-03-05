@@ -12,153 +12,156 @@ hardware performance that's why our CPUs
 and GPUs underperform versus what their
 spec would otherwise suggest when it
 comes to gaming api's are things like
-directx11 3x12 and andy mantle they're
-all kinds of api's out in the world but
-specifically for gaming these are the
-three were talking about today an API is
-an application programming interface in
-the case of DX 11-12 and mantle it is
-what enables game developers to hook
-into the hardware and the operating
-system of the host computer this makes
-their lives easier for programming and
-it even enables things like better
-backwards compatibility on hardware when
-you're playing older games so directx11
-has a very heavy overhead when it comes
-to something called a draw call if
-you're not familiar with us that it is a
-draw call is effectively when the cpu
-asks the GPU to draw a new object to the
+DirectX 11 through X 12 and andy mantle
+there all kinds of API is out in the
+world but specifically for gaming these
+are the three were talking about today
+an API is an application programming
+interface in the case of DX 1112 and
+mantle it is what enables game
+developers to hook into the hardware and
+the operating system of the host
+computer this makes their lives easier
+for programming and it even enables
+things like better backwards
+compatibility on Hardware when you're
+playing older games so DirectX 11 has a
+very heavy overhead when it comes to
+something called a draw call if you're
+not familiar with us that it is a draw
+call is effectively when the CPU asks
+the GPU to draw a new object to the
 screen or new geometry it is not
 including things like shading and other
 special effects lighting stuff like that
 it's strictly geometry and object calls
 to the GPU from the CPU this causes a
-large bottle neck and one of the biggest
-limiters in pc performance is the
-bottleneck produced by AP is in fact it
+large bottleneck and one of the biggest
+limiters in PC performance is the
+bottleneck produced by API is in fact it
 can be up to 10 times different with
-DirectX 12 verses Direct X 11 the
-current one that you're most likely all
-using and we'll talk about this more in
-a second so first of all it's worth
-noting that AMD mantle is being phased
-out and has been publicly stated by
-andys developers that it is falling into
+DirectX 12 versus DirectX 11 the current
+one that you're most likely all using
+and we'll talk about this more in a
+second so first of all it's worth noting
+that AMD mantle is being phased out and
+has been publicly stated by Andy's
+developers that it is falling into
 disuse they are urging game developers
-to move to Direct X 12 as mantle is
-being adapted into OpenGL and will
-effectively be no longer used in its
-current state drives x 12 is an API
-owned developed and operated by
-Microsoft and it is being phased in as
-directx11 ages dx12 offers great gains
-for performance especially for cpus this
-is the same as mantle and this is a
-point of confusion for a lot of people
-API is although often associated with
-video cards are not entirely GPU bound
-in fact an API produces the largest
-overhead on low-end CPUs so having a
-more efficient API like mantle or dx12
-will actually allow you to buy
-lower end CPU like a quad core or dual
-core cpu even the g3 258 will see
-massive gains from it an API like dx12
+to move to DirectX 12 as mantle is being
+adapted into OpenGL and will effectively
+be no longer used in its current state
+drives X 12 is an API owned developed
+and operated by Microsoft and it is
+being phased in as DirectX 11 ages DX 12
+offers great gains for performance
+especially for CPUs this is the same as
+mantle and this is a point of confusion
+for a lot of people API is although
+often associated with video cards are
+not entirely GPU bound in fact an API
+produces the largest overhead on low-end
+CPUs so having a more efficient API like
+mantle or DX 12 will actually allow you
+to buy
+and CPU like a quad core or dual core
+CPU even the g3 two five eight will see
+massive gains from an API like the x12
 or mantle and the video card will take
 on some of that load it shares a little
 bit better with newer api's so in our
-testing we see that Direct X 12 often
-has a 10x draw call per second
-improvement over direct x 11 it's about
-on par with mantle although mantle does
-outperform it when using a quad-core 6
-core or better cpu and dx12 outperforms
-mantle when using something with more
-limited threads like AG 3258 so when
-these charts i'm showing you you'll see
+testing we see that DirectX 12 often has
+a 10x draw call per second improvement
+over DirectX 11 it's about on par with
+mantle although mantle does outperform
+its when using a quad core six core or
+better CPU and dx12 outperforms mantle
+when using something with more limited
+threads like a g3 two five eight so in
+these charts I'm showing you you'll see
 a few different things you'll see two
-variables for the cpu that's the g3 258
-which is a low-end seventy dollar cpu
-from intel and a 47 90k provided by
-cyber power which is a high-end
-hyperthreaded quad-core intel cpu with
-eight threads so these are two cpus
-these are where we'll see the biggest
-difference in terms of throttling with
-AP is the GP is we used a 290x strictly
-because it is required or similar for
-mantle and we used to tighten x just
-because it's new and fun to test i want
-to very heavily emphasize that these
-tests are not comparable to one another
-you cannot compare the 290x to the titan
-x in terms of draw calls per second
-using this test is not built for that it
-is not built to compare video cards it
-is strictly built to compare api's and
-api performance that BD x 11 12 and
-mantle so although one video card may
-outperform the other in some tests you
-really can't look at it that way for
+variables for the CPU that's the g3 two
+five eight which is a low-end seventy
+dollar CPU from Intel and a 4790k
+provided by CyberPower which is a
+high-end hyper-threaded quad core Intel
+CPU with eight threads so these are our
+two CPUs these are where we'll see the
+biggest difference in terms of
+throttling with api's the GPU is we used
+a 290x strictly because it is required
+or similar for mantle and we used to
+tighten X just because it's new and fun
+to test I want to very heavily emphasize
+that these tests are not comparable to
+one another you cannot compare the 290x
+to the Titan X in terms of draw calls
+per second using this test it is not
+built for that it is not built to
+compare video cards it is strictly built
+to compare api's and API performance
+that BDX 11:12 and mantle so although
+one video card may outperform the other
+in some tests
+you really can't look at it that way for
 various reasons and one of the smaller
 ones is that none of this is really
 finalized yet it's all still in
 development the other one is that this
-test was built to test ap is that
+test was built to test AP is that
 disclaimer stated what we're looking at
 here are draw calls per second so the
 draw calls per second will slowly stack
 up in the test as the CPU and GPU get
-loaded and once the frame rate finally
+loaded and once the framerate finally
 drops below 30 fps you will see the the
 test stops so once it hits 30 FPS it's
 concluded and the results are in so we
 count the number of draw calls made in
 the thousands and millions
-and then and then put that in his charts
-so what you're looking at is the draw
-calls per second made by each API and it
-is measured in thousands here so if you
-see the number 712 that's 700 12,000 and
-likewise for the items in the millions
-so with DirectX 12 and mantle were often
-using a 47 90k hitting in excess of 14
-15 18 million draw calls per second
-using the newer AP is and this is a
-massive gained over directx 11 so you
-can see why everyone's so excited about
-the new API is because it will
-effectively unlock potential in your
-hardware that you weren't able to take
-advantage of before because of the
-overhead produced by these during draw
-calls in other tests using the g3 258 as
-you can see in these charts the the
-gains are almost 10 X or greater in some
-cases and that's because the the CPU is
-so thread limited with a low on CPU that
-moving any amount of load from it to the
-GPU has a huge impact so the takeaway
-here is that Direct X 12 is very
-important to the world of gaming mantle
-is dead forget about mantle it's shown
-here for comparison purposes with the
-other api's but it will effectively be
-defunct by the time Direct X 12 ships no
-game developers that are noteworthy are
-using it going forward it is being
-deprecated Direct X 12 is critical to
-the advancement of hardware utilization
-and you can see that in these results
-pretty exciting stuff if you want to run
-this test yourself you can check out our
+and then and then put that in these
+charts so what you're looking at is the
+draw calls per second made by each API
+and it is measured in thousands here so
+if you see the number 712 that's seven
+hundred twelve thousand and likewise for
+the items in the millions
+so with direct x12 and mantle were often
+using a 4790k hitting in excess of 14 15
+18 million draw calls per second using
+the newer api's and this is a massive
+gain / DirectX 11 so you can see why
+everyone's so excited about the new API
+is because it will effectively unlock
+potential in your hardware that you
+weren't able to take advantage of before
+because of the overhead produced by
+these during draw calls in other tests
+using the g3 - 5/8 as you can see in
+these charts the the gains are almost 10
+X or greater in some cases and that's
+because the the CPU is so thread limited
+with our low-end CPU that moving any
+amount of load from it to the GPU has a
+huge impact so the takeaway here is that
+DirectX 12 is very important to the
+world of gaming mantle is dead forget
+about mantle it's shown here for
+comparison purposes with the other api's
+but it will effectively be defunct by
+the time DirectX 12 ships no game
+developers that are noteworthy are using
+it going forward it is being deprecated
+DirectX 12 is critical to the
+advancement of hardware utilization and
+you can see that in these results pretty
+exciting stuff if you want to run this
+test yourself you can check out our
 article linked in the description below
 I ran the whole test I described some
 very brief technical detail on how draw
 calls work and where the bottlenecks are
-and how you can run the test yourself
+and how you can run the tests yourself
 you need to use Windows 10 a preview so
 that is all for this test please check
 out the channel subscribe if you like

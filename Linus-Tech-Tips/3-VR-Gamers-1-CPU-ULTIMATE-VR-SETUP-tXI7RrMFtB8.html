@@ -1,0 +1,196 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>3 VR Gamers, 1 CPU - ULTIMATE VR SETUP! | Gadgetory - Your Gadget Factory</title><meta content="3 VR Gamers, 1 CPU - ULTIMATE VR SETUP! - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Linus-Tech-Tips/">Linus Tech Tips</a></li><li class="active">3 VR Gamers, 1 CPU - ULTIMATE VR SETUP!</li></ol></div><h2 class="post__title"><b>3 VR Gamers, 1 CPU - ULTIMATE VR SETUP!</b></h2><h5 class="post__date">2018-03-03</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/tXI7RrMFtB8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">so recently we created a two-in-one
+machine for twitch streamers using on
+raid and virtualization to capitalize on
+the hike or count of Intel's Core i9
+processors and the results got us
+wondering well just what other practical
+applications could such a set up have
+also you guys were wondering just how we
+got the whole thing working so thanks to
+Intel sponsoring this follow-up project
+we are about to boldly go where very few
+men have gone before and create a triple
+headed vr gaming set up with the whole
+thing running off of one tower and
+actually one CPU
+as you probably know vr gaming is a
+demanding workload for both your CPU and
+your GPU so when we set out to put
+together a system that could not only
+run triple AVR titles like Star Trek
+bridge crew but actually handle three
+instances concurrently we knew we were
+gonna need the best of the best so we'll
+start with the CPU if we were running a
+single instance of bridge crew a modern
+processor like an intel core i7 8700 k
+would be a great choice but since we're
+running free and we need a couple of
+course left over for our hypervisor we
+chose the Intel Core I 979 60 X so you
+can actually see with all three of our
+gaming rigs running at about 70 to 90
+percent utilization this CPU is still
+capable of running at nearly 4 gigahertz
+which means no dropped frames in our
+game due to CPU bottlenecks afraid to
+touch this thing too hard it's a little
+fragile anyway 4 ran we went with 64
+gigs of 32 hundred megahertz g.skill
+Trident ddr4 in a quad channel
+configuration and that last bit is
+important because it allows us to give
+16 gigs of memory to each of our gaming
+rigs with some left over and while very
+few desktop workloads benefit from quad
+channel memory when three demanding
+workloads are hitting it at once well
+it's a lot more important than usual to
+have all the bandwidth you can get now
+for our graphics cards we actually ended
+up with a mixture of different Nvidia V
+are capable cards ranging from the gtx
+1070 all the way up to the titan XP now
+the point we were trying to make here
+using different cards is that as long as
+we have enough CPU and memory resources
+and they're above a certain threshold it
+actually doesn't matter what mixture of
+video cards we use now the motherboard
+on the other hand was a really important
+piece of the puzzle you can't always
+count on virtualization features to be
+implemented correctly
+in the UEFI BIOS so we turned to the
+same asus prime x2 99 deluxe from our
+gaming and streaming combo machine now
+let's look at some special pieces that
+we needed for this config one of the
+limitations of KVM the underlying
+virtualization tech the done raid uses
+is that if you pass a USB device through
+to a virtual machine like say for
+example a mouse it won't be hot
+pluggable by default and if you have
+more than one of the same peripheral
+like all of our vibes they would all
+have to be passed through to the same VM
+which obviously wouldn't have worked
+very well for our demo of three people
+running their own discrete copies of the
+game in multiplayer mode fortunately
+this guy right here this thing exists
+it's a single USB PCIe expansion card
+that has four discrete controller chips
+on it so that means each of them can be
+passed through to a separate VM without
+any performance bottlenecking then this
+is cool
+when you pass the whole controller
+through to a VM you also get hot-plug
+support so we just used a few cheap hubs
+and now each of our VMs can have
+multiple USB devices all of which are
+hot pluggable next up is another sort of
+KVM but this one has nothing to do with
+virtualization this right here is the
+level one tax for port KVM switch it is
+super expensive at over 300 US dollars
+but it's DisplayPort 1.2 meaning that it
+is 4k 60 Hertz compatible and apparently
+it even works with free sync and gsync
+if both your connected monitor and
+graphics part support them now it wasn't
+strictly speaking necessary but it
+allowed us to use a single monitor
+keyboard and mouse to quickly switch
+between all of our virtual machines for
+configuration using this console right
+here finally we've got our handy dandy
+blinders here
+see if one vive headset can see both its
+own lighthouses and another one you are
+gonna have a bad time and then we had
+some weird timeout issues with our rifts
+even on a certified USB controller so we
+just put up these cloths now we can walk
+you guys through the steps required to
+set up a configuration like this first
+we need to land in the unread webui
+where we'll assign an SSD cache to run
+our VMs off of and hey did I mention
+before we've got four cores and 16 gigs
+of ram left 4 unread well we can use 60
+terabytes worth of Seagate's
+12 terabyte iron wolf pros and throw
+those in an on Radar a where they can
+safely store personal data off the
+public cloud or even serve up transcoded
+media files via plex then what we're
+gonna do is jump into the VMS tab where
+we need to configure our basic VMs set
+up pass-through for our graphics cards
+this is kind of the special unrated
+sauce that allows high performance
+gaming in VMs and setup pass-through for
+our USB controllers from there we need
+some KVM specific drivers for Windows
+and then it is mostly business as usual
+keep in mind though that without three
+discreet sound cards you'll be relying
+on the HDMI audio built into your
+graphics card or in our case the USB
+audio device built into your VR headset
+oh and here's a special headache we got
+to experience you see we had to fit
+three dual slot video cards and the USB
+card into a six slot motherboard now
+normally on raid needs an additional
+video card for itself bringing the total
+card count to more than the board
+physically has so we solved that issue
+by grabbing the primary cards BIOS
+modifying it and then presenting that
+BIOS to unweight as if it was an actual
+card yay virtual graphics card for a
+mainstream board with onboard graphics
+this step would probably be unnecessary
+but with a CPU that fits
+to a mainstream board this kind of
+performance wouldn't be possible so this
+was the most elegant workaround that we
+could find and quite honestly it's
+pretty darn elegant every one of our VMs
+is capable of delivering a smooth steady
+vr gaming experience concurrently and
+this is all thanks to the recent drop in
+price
+not to mention increase in clock speeds
+of high core count desktop CPUs and
+virtualization technology so a huge
+thanks to Intel for sponsoring this demo
+and the folks are done RAID for helping
+us out whenever we got stuck
+John you rock and Tom and Eric you guys
+are cool too so thanks for watching guys
+if you dislike this video you can hit
+that button but if you liked it hit like
+get subscribed or consider checking out
+the link to where to buy the stuff we
+featured in the video description also
+linked in the description is our merch
+store which has cool shirts like this
+one and our community forum which you
+should totally join</div></div><div class="container-fluid"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>
