@@ -1,0 +1,387 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Flappy Bird Unity Tutorial for Android in 10 Minutes | Gadgetory - Your Gadget Factory</title><meta content="Flappy Bird Unity Tutorial for Android in 10 Minutes - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Android-Authority/">Android Authority</a></li><li class="active">Flappy Bird Unity Tutorial for Android in 10 Minutes</li></ol></div><h2 class="post__title"><b>Flappy Bird Unity Tutorial for Android in 10 Minutes</b></h2><h5 class="post__date">2018-02-09</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/2uTLWau4ngo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">the story of flappy bird should be a
+highly inspiring one for any mobile
+developer or any budding mobile
+developer this is the story of an app
+created by just a regular guy a 28 year
+old guy called dong Yuen it was a very
+simple app something that anyone could
+really build but it just happened to be
+in the right place at the right time and
+he got really rich and famous from it so
+this just goes to show you that you
+don't need a huge budget you don't need
+to be a coding genius you don't need a
+massive publishing company behind you if
+you have a relatively good game a simple
+idea and you make it then there's a
+chance that you can still be successful
+thanks to the distribution platform that
+is the Google Play Store and this really
+would be an easy app for anyone to build
+even if you're a complete beginner and
+especially if you use a tool like unity
+which just makes the whole process that
+much simpler that much quicker so in
+this video I'm gonna demonstrate that by
+showing you how to make a flappy birds
+game for Android in just 10 minutes
+using unity you'll go from a completely
+blank screen to a fully working game and
+with just a few extra tweaks things like
+a high score maybe a menu screen you'd
+be able to release this on the Play
+Store and who knows maybe make your own
+millions actually remember me when
+you're rolling in piles of cash of
+course before we begin you are going to
+need yourself a copy of unity and you
+need to set that up with the Android SDK
+I'll leave a link in the description
+down below to show you how to do that
+there's also going to be a link in the
+description down below which will take
+you to the post that goes with this
+video that will share a lot more
+detailed instruction all the source code
+etc so if this is a little bit speedy
+for you then go there and you can get
+more detailed information and go at your
+own pace so we have much time without
+further ado let's get to it let's get to
+it or to
+okay so first you're going to create a
+new project make sure it's a 2d project
+and I'm dragging in some sprites here
+into my scene that are ready-made if you
+want to make sure the sprites the same
+size as mine so you can follow along
+exactly
+then set the bird to be at position zero
+zero and point five scale and set the
+pipe there to four on the X&amp;amp;Y axis we're
+going to copy that we're going to make
+another one that's going to be upside
+down like so I'm going to rename this
+one pipe down
+we're going to add a rigidbody to the
+bird so select that and then inspector
+so they've add component and I'm going
+to add the constraint on the z-axis
+that'll stop him from spinning around
+and rotating now gonna add another
+component that being a polygon Collider
+that's his bound so he'll bump into
+things and unity will know when he
+touches something and we want to tag him
+as a player this will help us to refer
+to him later in the code drag the camera
+onto the bird in the hierarchy there on
+the left and that make sure that the
+camera moves in relation to the bird now
+we're going to add the same Collider
+this time a box Collider to a pipe and
+then to the other pipe we only need the
+Collider there no physics necessary now
+I'm making three new scripts in a folder
+I've traded in the assets folder there
+c-sharp scripts that's character pipe up
+and pipe down so basically a script for
+each of our three sprites we have open
+up the character script first we're
+going to make a public midget body 2d so
+that is the the physics attached to our
+character now I'll make a public float
+that's a an accessible number that we
+can change we're gonna make several of
+these ones gonna be the move speed one
+will be the flapping height and we can
+change that later on you'll see we're
+going to create a public game object for
+the pipe up and another one for the pipe
+down so that means we can access those
+elements in our script so first we need
+to tell unity where the rigid body is so
+our B equals getcomponent and then
+that's the rigidbody 2d we have attached
+to our game object there okay and now in
+the update method that's a method that's
+called repeatedly with as the game
+refresh
+we're going to add some velocity to our
+rigidbody the script the physics script
+attached to the character so this is
+going to keep the character moving
+constantly to the right and we're
+keeping the y-coordinate the same see I
+say our PE bilasa T Y therefore the y
+coordinate we're basically saying
+whatever the Y velocity is keeping like
+that okay now we're using an if
+statement so that means that the
+following code will only execute if this
+statement in the brackets here is true
+and we're saying that if the player
+clicks the mouse button then we're going
+to add some movement going upwards so
+that's going to be a flapping motion now
+a mouse button is translated as a screen
+touch anywhere when you save this and
+run it on Android okay now we're gonna
+do another if statement and this time we
+basically want to just detect when our
+character goes too high or too low so
+when they're out of bounds then we're
+going to kill them because we don't want
+to be able to fly over or below the
+pipes that look strange and it's
+cheating okay so now we're going to
+create a new method and this one's going
+to be called death and that's where
+we're going to handle our player death
+so yeah our method is any piece of code
+you closed in curly brackets and you can
+call it from anywhere else within your
+script so we're saying public void death
+void means that it's not returning any
+data it's just performing a function and
+public music can access it from other
+scripts we're gonna remove all velocity
+because we want to be stationary when
+you respawn then we're just going to
+literally move him by taking the
+transform their transform being his
+current position and setting it back to
+zero zero now we're going back in here
+we're going to add the component the
+script to our player character change
+these public variables here in the
+inspector and then there you go so
+that's why you make public floats like
+that so you can change them from outside
+of the script okay now you're going into
+your pipe up script and I'm creating a
+reference to our character object and
+also to our other pipe up pipe down
+object so again we need to tell unity
+where to find those two the character is
+going to look for an object with the
+character script attached to it
+we just added that component to our
+character sprite then we're going to put
+another if statement in the update to
+method which remember happens repeatedly
+every time the game's refreshed and
+we're gonna say if the distance between
+the character and the pipe is bigger
+than 30 then what we're going to do is
+we're going to destroy our pipe and
+we're going to create a new one ahead of
+us
+so basically when the pipe goes off the
+left of the screen because remember the
+character keeps moving forwards we need
+to disappear and we need a new pipe a
+new challenge to appear in front of us
+so now we're creating three random
+variables and these are random numbers
+and we want that because we want the
+pipes been slightly different positions
+each time so we're getting a position
+for the X for the Y and for the gap the
+distance between the two pipes the top
+and the bottom one we want to make sure
+that we move the pipe the correct
+distance in front each time but also add
+a little bit of an random element just
+to keep things fresh and keep things fun
+now we're going to instantiate meaning
+create a new version of this game object
+what is a game object with a small G
+unity will assume you're referring to
+this game object that the script is
+attached to so we're creating this new
+game object using a vector that's a
+position and we're making it in front of
+our character 30 spaces in front but at
+the same time adding on that random
+element and then we're keeping the
+height accurate with a slight random
+element as well I'm going to instantiate
+the other pipe the pipe down that's why
+we added that reference to the pipe down
+up there at the top and the reason we're
+doing that in this script rather than in
+the pipe down own script is because
+we've generated these random numbers and
+this way we can make sure that they stay
+aligned with each other without having
+to do some you know do Hickory to make
+sure that the distance stays the same
+by sharing those random variables just
+makes more sense to put it here you'll
+see how it all works in a moment and
+then we're going to destroy this game
+object I want to create the new pipe
+ahead when used to destroy the old one
+who don't do that they're going to keep
+popping up ahead and it will take up a
+lot of memory ok now we're creating one
+more method and this is going to be one
+of the most useful methods you use a lot
+in unity is the on collision enter 2d so
+that means that when something touches
+the collider this happens and we're
+saying when the thing that touches it
+has the tag player remember we added the
+player tag to our character then we're
+going to call that public method from
+our character script called death
+so we're saying character death that's
+the great thing about public method that
+means that you can call that bit of code
+from other scripts attached to other
+objects so add the component add the
+script to the pipe up there same when
+you did before add component scripts ok
+click play and now each time you touch
+that pipe you respawn it kills you great
+now we need to do the same thing of
+course for pipe down except we've
+handled a lot of the code already and
+pipe up so this is going to be a little
+bit easier we just need to repeat a few
+of those same steps we used before so
+we've created a reference to our
+character up there and we're gonna tell
+unity where the character is we've done
+this before find objects of type
+character meaning it's looking for an
+object with that character script
+attached ok and then in the void update
+remember the method that is repeatedly
+called each time the game refreshes
+we're saying that if the character is a
+certain distance away from the pipe
+again and then we're just going to
+destroy the game object no need to be
+spawn it because it's being respond at
+the exact same time that the the upwards
+one is being created and then we can
+just copy that on collision enter script
+from the other place from the other
+script and there you go now creating a
+new folder called prefabs make sure you
+add that to the pipe down
+sprite by the way a prefab is a
+ready-made game object with all your
+attributes and scripts attached so I've
+deleted them from the scene and just put
+them into my prefabs folder there now
+you can see here in the pipe up script
+in the inspector I have that option to
+add my public game object and so I'm
+putting in there that pipe down so that
+means that the script will know where
+pipe down is and it will be able to find
+it and instantiate it and because doing
+it from the prefab that means that it's
+going to have all those important
+attributes
+attached as you can see it work there
+nicely so now I'm just gonna add in one
+more method called build level and this
+is where we're going to instantiate the
+first batch of pipes because you need to
+make sure we've got a good few pipes up
+there ahead so that they we're not gonna
+have spaces so that they'll fill the
+screen and if you use the same numbers
+that I did in the same sprites then you
+can just copy this fruit pause the
+screen and copy out but play around with
+way you want your pipes would be you can
+add random positions to start with if
+you want in the interest of good
+housekeeping would also be a good idea
+to destroy the pipes every time the
+player dies you can add that in later on
+but now when we press play because
+that's in the character script they're
+all going to be instantiated of course
+we need to add those public objects from
+the prefabs very important you as from
+the prefab not from the scene now when
+we click play those ones I've
+instantiate it in my build level script
+which is called at the start of the game
+and also when the character dies we'll
+be right here so for mine they're going
+to be in the same position every time
+and then as we go for they're going to
+start disappearing and reappearing in
+front of us and they go it works nicely
+so that's my flappy bird game it's so
+much fun I could do this for the days
+you know I don't want it don't want it
+to end really yeah there we go we've run
+through that all quite quickly I realize
+but you know slow it down when you need
+to and hopefully you've got to grasp the
+concepts if the only thing you don't
+understand then click the link in the
+description down below and I go through
+in a bit more detail and explain things
+like prefabs what they are they're just
+a really useful way of creating a game
+object with all the attributes already
+attached and also it means if you change
+an attribute on one it'll change those
+qualities across every instance of that
+object throughout your games you have to
+make lots of changes people said last
+time they want to see how you actually
+create an apk how you make this into a
+game that you can share let's do that
+you just need to go into build settings
+then you choose Android as your platform
+and then you choose switch platform then
+if you click player settings then I'll
+open up in the inspector a whole bunch
+of options where you can say things like
+them the package name the version the
+Android version you're targeting etc and
+then you just hit build and run and it
+will build it and one more thing you
+need to do before hit building run is to
+save your scene that's the level and
+then add that to scenes in build so
+there you go that's one way you can
+create a nearly fully working flappy
+bird game in just 10 minutes really was
+pretty quick and simple there's not much
+more you need to do to make that fully
+functional and release it on the store
+and who knows start getting some
+downloads take the Fallas video useful
+and interesting guys if you did then
+please leave a like please share it
+around comment down below subscribe to
+the channel all those things help us out
+greatly like I say check out the links
+in the description down below for more
+information
+and whilst you there why not look around
+to check out Angela thority comm if we
+are your source for all things Android</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

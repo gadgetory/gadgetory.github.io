@@ -1,0 +1,234 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Android Power User: What is the Dalvik VM? What is the Dalvik Cache? | Gadgetory - Your Gadget Factory</title><meta content="Android Power User: What is the Dalvik VM? What is the Dalvik Cache? - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Pocketnow/">Pocketnow</a></li><li class="active">Android Power User: What is the Dalvik VM? What is the Dalvik Cache?</li></ol></div><h2 class="post__title"><b>Android Power User: What is the Dalvik VM? What is the Dalvik Cache?</b></h2><h5 class="post__date">2012-09-19</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/xXZakK94hWs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">on our last episode of Android power
+user we talked about JIT Androids
+just-in-time compiler that takes
+advantage of the dalvik cache that's
+really powering all the apps that we run
+on our smartphones and tablets but
+what's dalvik what's a virtual machine
+what does it have to do with cache
+that's what we're going to talk about on
+today's episode Android power user
+dalvik is a word that gets thrown around
+quite a bit when we're talking about
+custom roms sometimes even when we're
+talking about stock roms and
+particularly when we're upgrading those
+stock roms from one version of the OS to
+the next kind of sounds a little bit
+different I'll tell you why in just a
+minute we have to understand a little
+bit more about computer architecture to
+understand what dalvik is what it does
+and why we have it why it's a really
+good thing so let's step away from our
+smartphones and tablets for just a
+minute and let's talk about computers
+whether that's a desktop a laptop a
+server really doesn't matter what we're
+going to do is we're going to describe
+how computers work I know this isn't the
+computer power user this is Android
+power user but stick with me computers
+are made up of physical components that
+might be your cd-rom drive or blu-ray
+player it might be your video card or
+your sound card any one of these things
+today we've got a lot of stuff
+integrated onto the motherboard so it
+doesn't look like you've got a lot of
+discrete components but you do each one
+of those components needs a driver for
+software to be able to talk to it that
+driver essentially bridges the gap
+between the software world asking for
+stuff to be done when you type on the
+keyboard or click on the mouse and the
+physical world when you actually want it
+to do something with that blu-ray player
+or make some sound for example well the
+physical world is all fine and dandy but
+it's somewhat fragile things can get
+broken you can have various different
+parts of your operating system or
+programs fighting over who has access to
+a particular device and it's really not
+all that cool when you think about it I
+mean it's going off we like reality here
+at pocket
+but we can virtualize that that's where
+the virtual and virtual machine comes
+into play you see it's not a physical
+machine it's a virtual machine it's a
+computer that doesn't exist anywhere
+except in software now why on earth
+would you do that
+there are lots and lots of reasons
+perhaps we'll go into a lot more detail
+in an upcoming episode of Android power
+user but suffice it to say the top just
+top couple reasons you do it
+number one is security stuff that's
+running inside a virtual machine pretty
+much stays inside that virtual machine
+so it protects the entire rest of the
+ecosystem also stability you remember
+back in the olden days when you were
+surfing the web and your web browser
+crashed and you had to reboot your
+computer one bad website cause you to
+have to reboot your entire computer not
+cool nowadays it's a lot less likely
+that that's going to happen it still
+might because we're not using virtual
+machines on our desktop computers yet
+but if you can virtualize that great
+that virtual machine goes down you'll
+restart it and you're done you still
+have your whole operating system and
+everything that you were working on you
+haven't lost anything but a little bit
+of time so two advantages now that's not
+exactly the way the dalvik VM works in
+Android but it's just giving you kind of
+an introduction to the way VMs work in
+general so dalvik it sounds kind of
+interesting the name where did it come
+from
+well dalvik is an open source project
+written by let me get this right
+Dan Bornstein according to one of his
+journals he named it dalvik because he
+has some ancestors who lived in a
+fishing village in Iceland you guessed
+it the name of that fishing village
+dalvik and I'm probably pronouncing that
+wrong so all of you who are watching
+from Iceland I apologize doing the best
+I can here so that's why it's named the
+way it is so how does an Android app
+work with the dalvik cache well I'm
+going to read a little bit of this so I
+don't get it completely wrong it's a
+little bit complex but I think you'll
+understand when I get through with it
+when you write an app for Android you
+write it in Java that Java is then
+filed into bytecode from there it's
+converted into a JVM compatible dot
+class file now Java applications they
+all run in a virtual machine it's the
+JVM so dalvik is it is a JVM just not
+the JVM that makes sense
+so what happens next we take that dot
+class file and we convert that into a
+dalvik compatible Dex file that's a
+dalvik executable for those of you
+keeping track of the file extensions
+here once that's done then they're
+installed on your Android pretty simple
+and then of course you open them and
+they're executed on your Android inside
+the dalvik VM sounds great but there's
+one step missing there okay let's go
+back just a minute why do we want to do
+that extra step well the dalvik
+executable format is quite a bit more
+compact than the dot class file for the
+JVM which means it takes up less space
+on memory constrained devices it runs in
+less memory space than regular dot class
+files and it's usually a little bit more
+processor friendly than some of those
+dot class files are so that's del Vic in
+the dalvik VM but what about that dalvik
+cache we're always hearing about
+specifically when you install a new ROM
+on your phone we're talking custom roms
+here primarily a lot of times the
+instructions say that you should wipe
+your cache well a lot of that is
+referring to the dalvik cache so what is
+that that takes us back to our JIT
+episode that we watched last week if you
+haven't watched that yet I'll have a
+link at the end of this episode so you
+can essentially what happens is these
+are essentially uncompelled applications
+well they have some compilation done to
+them they're not just raw code sometimes
+they are it's a little bit interesting
+there doesn't it but they're not
+compiled ready to run instead they have
+to be loaded up into this JIT compiler
+compiled on the fly and then run but
+that takes time so
+what do we do well we've got this nice
+dalvik cache where we kind of preheat
+things we optimize the apps so that they
+can run faster on first execution and we
+do that through something called if I
+can find it here the dalvik VM it
+inspects all of your apps and it creates
+a tree of dependencies and once it's got
+that done it stores it into your dalvik
+cache that enables your apps to run more
+efficiently they're optimized for the
+environment of course the the different
+apps that you have installed means that
+your cache is going to be different than
+everybody else's cash so there's not
+just a single cache out there
+everybody's cache is different so that's
+all kinds of great but it does explain
+why your phone takes a bit longer to
+boot up the first time after you've
+installed a new rom or updated your
+existing rom it's rebuilding that cache
+it's rebuilding that tree of
+interdependencies because well things
+have changed you've got a new rom on
+your phone now so it rebuilds that cache
+for you wiping the cache means you're
+going to have a nice clean slate for all
+of that new information to go into and
+can prevent some problems so make sure
+you wipe every time you install a new
+rom all righty then so does this have
+anything to do with Oh Dex and do text
+files yes yes it does but we're going to
+have to cover that on another episode of
+the Android power user if you like
+learning about this stuff please give
+the video a big thumbs up if you want to
+make sure you don't miss out on any of
+our future videos and all the extra
+learning that we're going to be doing
+there make sure you hit the subscribe
+button we'll have a link to that at the
+end of the video as well if you've got
+questions or comments would like to
+contribute to the discussion if you're
+watching this video on YouTube make sure
+you click the link right down there to
+go over to pocketnow.com and leave your
+comments on the article associated with
+this video where i've got a nice little
+summary of everything that we've talked
+about here today if you're already on
+pocketnow.com thank you go ahead and
+leave those comments right down below
+that's all the time we've got for today
+I'm Joe Levi this is PocketNow
+thanks for watching</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

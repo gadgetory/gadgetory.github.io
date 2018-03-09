@@ -1,0 +1,358 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Writing your first Android game using the Corona SDK! | Gadgetory - Your Gadget Factory</title><meta content="Writing your first Android game using the Corona SDK! - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Android-Authority/">Android Authority</a></li><li class="active">Writing your first Android game using the Corona SDK!</li></ol></div><h2 class="post__title"><b>Writing your first Android game using the Corona SDK!</b></h2><h5 class="post__date">2015-07-13</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/1hf0HYq5yzc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">Gamze has always been the most popular
+category in the Google Playstore
+although we all use proactivity apps
+like an email client or an instant
+messaging service gave me still an
+important part of the mobile experience
+and therefore is no surprise that when
+people want to start developing for
+Android they often say I want to write a
+game let's be honest it's actually much
+more fun than writing a Productivity app
+well today I'm going to show you how you
+can write your very first game using the
+Corona SDK for Android to get started
+with Corona you need to download and
+install the SDK go to the corona website
+and hit the download button you'll need
+to create an account which is free
+before you can download it if you want
+to build actual apk files rather than
+just running the program in your
+emulator
+you'll also need to download Java 7 you
+can find all the links you need in the
+written companion to this video once
+you've installed chrony need to activate
+it this is a one-time process which is
+free start the corona simulator and
+agree to the license enter the email
+address and password which you use for
+the download and click login
+from within the corona simulator click
+on new project enter the name of your
+app in the application field and leave
+the rest of the settings at their
+defaults now click on OK 3 windows will
+appear the first two are the corona
+simulator and the corona simulator
+output Corona will also open a file
+explorer window showing the files for
+your project and the majority of those
+files some 23 of them are for the
+application icon across all the
+different platforms that are supported
+by Corona however the most important
+file for us right now is main Lua as
+this is where you will write the code
+for our game before we start writing the
+game we take a whistle-stop tour of the
+Lua programming language
+now the interpreter is actually
+available for Windows Linux and for OS
+10 and it's also built into the Corona
+SDK however the easiest way to play
+around with Lua is to use the online
+live interpreter and you'll find a link
+to that in the written companion that
+accompanies this video here is more Lua
+program which shows you some of the key
+features of the language the code shows
+three important Lua constructs
+functioned loops and if statements the
+function double it is very
+simple it just doubles the past in
+parameter the main code is a four loop
+which runs from 1 to 10 and it cause
+double it for each iteration if the
+return value is 10 ie I is 5 then the
+code prints out the word 10 otherwise it
+prints out the number the result of the
+double it function writing games in
+corona is really simple you don't need
+to worry about one file main Lua and you
+let the corona sdk do the rest of the
+heavy lifting and today the game we're
+going to write is a simple tap game a
+balloon or a bomb will fall down the
+screen and the user needs to tap it if
+they tap on a balloon they score a point
+they tap on a bomb then as a penalty
+their score gets divided by 2 and to
+start writing the game all you need to
+do is edit the file main lower in any
+text editor that you have available on
+your system
+the Corona SDK has a built in 2d physics
+engine which makes building games very
+easy the first step in writing the game
+is to initialize the physics engine the
+code is quite simple the module physics
+is loaded and initialized is assigned to
+the variable called physics to enable
+the engine we just call physics dot
+start next we need to create some
+helpful variables which will be useful
+not only for this simple game but also
+for more complicated games 1/2 w and 1/2
+h hold the values of half of the screen
+width and half of the screen height the
+display object is a predefined object
+which Corona makes globally available
+now the first step that actually makes
+something happen to the screen is to set
+the background image as well as
+properties like content height and
+content width the display object also
+has a lot of useful functions the new
+image function reads an image file in
+this case a dot PNG and displays it on
+the screen display objects are rendered
+in layers so since it's the first image
+we are putting on the screen it means it
+will be the background the parameters
+1/2 W in half H tell Corona to place the
+image in the middle at this point you
+can run the program in the emulator to
+see that you've changed the background
+image if you save the file the emulator
+will notice that it has changed on offer
+to relaunch the Emily
+for you if that doesn't happen just go
+to file relaunch to set the whole thing
+in motion
+since the user will score points for
+tapping on balloons we need to
+initialize a score variable and display
+the score on the screen the score will
+be kept in a variable called score and
+the score text is the object which
+displays the score like new image new
+text put something on the screen in this
+case text since score text is a global
+variable we can change it from anywhere
+we like during the code but we'll get to
+that in a minute
+you can now relaunch the emulator again
+and see the score of zero displayed near
+the top of the screen now come something
+a bit more tricky but don't worry I'll
+explain it line by line we're going to
+write a function called balloon touched
+which will be called every time a
+balloon is tapped we haven't yet told
+Corona that this is the function we
+won't call every time a balloon is
+tapped but when we do this is the
+function that will be called tap or
+touched events have several stages
+mainly to support dragging of objects
+when the user puts their finger on an
+object this is the began phase if they
+slide their finger in any direction that
+is the moved phase when the user leaves
+their finger from the screen that is the
+ended phase the first line of the
+balloon touched function check to see
+that we are in the began phase we want
+to remove the balloon and increment the
+score as soon as possible if the
+function is called again for another
+phase like ended then this function does
+nothing inside the if statement our four
+lines of code let's do the last two
+first as they are simpler score is equal
+to score plus one just increments the
+score by one and score text or text is
+equal to score changes the score text on
+the screen to reflect the new score
+remember how I said that score text was
+global and it could be accessed from
+anywhere or that is what we've just done
+now for the first two lines once a
+balloon or bomb falls off the bottom of
+the screen it still exists in your apps
+memory just that you can't see it
+anymore as the game progresses the
+number of off-screen objects will
+steadily increase therefore
+need to have a mechanism which deletes
+objects once they're out of sight we do
+that in a function called off-screen
+which we haven't written yet that
+function we called once per frame during
+the game once a balloon has been tapped
+then we need to delete it and remove the
+call that checks if the balloon has gone
+off-screen the line event.target :
+remove self deletes the balloon when a
+touch event occurs one of the parameters
+of the listening function is event it
+tells a function about the event on
+whatever event it is it also tells us
+which object was tapped we find that in
+event don't target the remove self
+function does just what it says it does
+it deletes that object the line before
+that removes the interframe listener
+which is the function that is called
+every frame to see if the balloon has
+fallen off the bottom of the screen we
+will look at that in more detail when we
+come to write the off-screen listener
+function so to recap balloon touched
+checks to see if we're at the beginning
+of a touch sequence it then removes the
+interframe listener which is a function
+that is called every frame to see if the
+balloon has fallen off the bottom of the
+screen it then deletes the balloon
+itself increments the score and displays
+the new score well that was for balloons
+now we need something similar for bombs
+as you can see the code is very similar
+with the exception that rather than
+incrementing the score the score is x
+naught point 5 I divided by 2 the math
+dot floor function rounds down the score
+to the nearest integer so if the player
+had a score of 3 and tapped a bomb then
+the new score would be 1 and not 1 point
+5 I mentioned the off-screen function
+earlier this function will be called
+every frame to check if an object has
+gone off the screen or not there is a
+special situation in computing known as
+a race condition this is where two
+events can happen almost simultaneously
+and we're not sure which event will
+happen first now we have a race
+condition in this game that we're
+writing 30 times a second the function
+is being called check if the balloon or
+the bomb has formed
+the bottom of the screen the problem is
+when you tap on a balloon or bomb we
+want to delete that balloon or bomb from
+the game but then 30 times a second
+we're also checking to see whether that
+balloon or bomb has fallen off the
+bottom of screen and these two things
+can be in conflict with each other so
+therefore we need to write some special
+code to make sure we don't try to check
+if a balloon is falling off the bottom
+of the screen that were actually in the
+middle of deleting to get around this
+odd sequence of events the off screen
+function needs to check if the y-value
+of the object is nil if it is nil then
+it means the object is already being
+deleted and so we move on this is not
+the balloon we're looking for if the
+object is still in play then check its
+position if it has gone 50 pixels off
+the screen then delete it and remove the
+listener so the off screen function
+won't be called again for this object
+the code that makes sure that the off
+screen function is called every frame
+comes a little bit later the whole
+premise of our game is that a new bomb
+or balloon will fall down the screen at
+a regular interval so therefore we need
+a function that adds that new balloon or
+bomb to the game the first line of the
+function decides where the balloon will
+drop from on the X plane if the balloon
+or bomb always dropped in the middle
+that won't be very interesting so start
+X is a random number between 10% and 90%
+of the screen width next a random number
+is picked between 1 and 5 if the number
+is 1 then a bomb is dropped if it's 2 3
+4 or 5 than a balloon we dropped instead
+this means that bombs will be dropped
+around 20% of the time the bomb and
+balloon code are quite similar first the
+image either a bomb or a balloon is
+displayed using the new image function
+its exposition is set to that of start X
+while its Y position is set to minus 300
+ie 300 pixels off the top of the screen
+the reason for that is that we want the
+object to fall from the outside of the
+screen into the visible area and then
+off the bottom again since we are using
+the 2d physics engine it's a good idea
+to give the object a bit of an initial
+distance so it can gain some speed
+during its fall
+korto physics don't add body takes the
+image loaded by the new image function
+and turns it into an object in the
+physics engine this is really quite
+powerful any image file can be made into
+a physics body that responds to gravity
+and collisions etc just by calling
+physics dot add body the last three
+lines of the bomb or balloon codes of
+listeners setting the inter frame
+property tells Corona which function to
+be called every frame and the call to
+runtime add event listener sets that up
+lastly the call to balloon add event
+listener tells Corona which function to
+call if the balloon or bomb is tapped
+and now the game is almost complete we
+just need two more lines of code the
+first line makes the initial balloon or
+bomb fold by explicitly calling add new
+balloon or bomb the second line sets at
+a timer which will call add new balloon
+or bomb every half a second this means
+that a new balloon or bomb will fall
+into the game every half a second you
+can now run the game in the emulator the
+next step is to build the game for a
+real Android device to build a dot a
+peak a file click on file build for
+Android and fill out the fields the
+result will be a dot APK file which you
+can copy onto your device and install
+you just need to ensure that you have
+configured your device to allow
+installation of apps from unknown
+sources the next thing you should try
+and do is improve the game what about
+adding a popping sound every time you
+tap on a balloon or explosion every time
+you tap on a bomb what about some
+background music you could add a third
+object a super boost that comes down
+quite rarely but it doubles the player's
+score and so on now that you've started
+let's see where you can go well my name
+is Gary Sims from Android or thority and
+I hope you've enjoyed this video if you
+did please do give it a thumbs up also
+please use the comments below tell me
+what you think about the corona sdk for
+any problems writing this game please
+ask them below and we'll see if we can
+help you you should also subscribe to
+and royalties YouTube channel and as for
+me I'll see you
+in my next video</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

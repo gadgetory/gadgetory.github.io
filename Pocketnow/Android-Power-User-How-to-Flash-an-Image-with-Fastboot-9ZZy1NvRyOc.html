@@ -1,0 +1,140 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Android Power User: How to Flash an Image with Fastboot | Gadgetory - Your Gadget Factory</title><meta content="Android Power User: How to Flash an Image with Fastboot - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Pocketnow/">Pocketnow</a></li><li class="active">Android Power User: How to Flash an Image with Fastboot</li></ol></div><h2 class="post__title"><b>Android Power User: How to Flash an Image with Fastboot</b></h2><h5 class="post__date">2012-10-24</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/9ZZy1NvRyOc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey guys in our last episode of Android
+power user we talked about how to flash
+roms using Raw manager which is by far
+the easiest way you can get or is it
+there's another way that you can do it
+it involves a PC whether that's Linux
+Windows or Mac and you can do it through
+fastboot there are a few things you've
+got to have setup we'll call those
+prerequisites but the process isn't very
+difficult and if you spend a lot of time
+on a desktop computer it may actually be
+a little bit easier than flashing with
+ROM manager just how easy is it so we're
+going to talk about on today's episode
+of the Android power user so the first
+thing you're going to need to fastboot
+flash an image onto your device of
+course is a device in this case my Nexus
+7 you're then going to want to reboot it
+in fastboot mode and you can see I'm
+already there because that red text says
+fastboot mode you're going to need to
+hook it up to your computer with a micro
+USB cable or whatever cable connects
+from your device to your computer you're
+also going to need the Android SDK which
+is what you can see right here in front
+of us I've gone ahead and done this now
+we want to make sure that we can see the
+device so how do we do that
+fastboot space devices by remember has
+well and you can see we've got a serial
+number we're good to go the device is
+being seen by the operating system we
+can now talk to it now you're probably
+not going to flash a custom ROM like
+CyanogenMod this way but you might flash
+a data image or a system image or
+whatnot so that's what we're going to do
+I'm going to go ahead and run a
+directory here on everything that is dot
+IMG and I do have a system IMG file so
+let's go ahead and flash that before you
+do any of this you'll want to make sure
+you've backed up anything that you
+aren't comfortable with you know losing
+so do that very first of all but I'm
+ready to just to wipe this so let's go
+ahead and do it now it should be should
+be noted right now this isn't really
+going to wipe it's just going to
+overwrite
+so before you do this you may want to
+wipe everything in fact I'm going to
+show you something here in just a minute
+that you'll like but let's finish this
+we're going to fastboot flash system and
+we're going to flash the system dot IMG
+so the first part you're calling
+fastboot yourtongue fastboot two flash
+something particularly the system
+partition and we're going to flash it
+with this file go ahead and hit enter it
+sends that over tells you how much it is
+and puts it over on the device now the
+the nexus 7 at this point is just
+showing me the same thing that it's
+always shown me just that that fastboot
+screen so there's really no status to be
+seen on it that's going to take a minute
+so let me show you what I was going to
+show you and that is over here this is
+the the image file or the stock image
+file that comes for the Nagasaki which
+is the Nexus 7 that I have I've gone
+ahead and opened this up a little bit
+let me navigate back here so I've got
+this Nagasaki I've gone ahead and
+unpacked it and I've got this flash all
+flash all SH flash based on SH and then
+this compressed file if we come over
+here and look inside this flash all it's
+a really big long icky thing but you can
+see it's going through defining some
+paths and it's erasing everything before
+it flash boots anything so just to let
+you know it's it's not flashing anything
+but until it erases it so I'm probably
+you know breaking my device but hey
+that's all kinds of fun I'd rather do it
+than have you do it so there we go now
+it said that it went ahead and
+transferred over took about one minute
+56 seconds and that was ok basically
+just transferred the file to the device
+and now it is writing system that's
+going to take probably another couple
+minutes and then we can boot up so at
+this point I can reboot and the easiest
+way to do that is fastboot space
+reboot and I'm done now I don't want to
+do this here because I've just borked my
+device by only flashing the system I
+haven't flashed data or in
+and I really don't want to leave it in
+this state but that's how you would go
+through flashing an image file I highly
+recommend that you use the prepackaged
+stuff this flash all which will do
+everything for you as long as you're
+getting your image from a reputable
+source in this case I downloaded it
+directly from Google so we know it's
+good and by Google I mean you know that
+Android section not the search engine ok
+just to keep that in mind so there you
+go if you can try and do all this
+through a ROM manager like ROM manager
+but if you need to get in and do it
+through fastboot with a couple of things
+a couple of notes you can go ahead and
+do that so teaching you how to boot and
+flash boot and flash all kinds of cool
+stuff with flash boot for the Android
+guy weekly and pocket now I'm Joe Levi
+thanks for watching
+you</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

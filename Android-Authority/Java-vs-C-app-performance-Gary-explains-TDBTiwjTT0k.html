@@ -1,0 +1,333 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Java vs C app performance – Gary explains | Gadgetory - Your Gadget Factory</title><meta content="Java vs C app performance – Gary explains - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Android-Authority/">Android Authority</a></li><li class="active">Java vs C app performance – Gary explains</li></ol></div><h2 class="post__title"><b>Java vs C app performance – Gary explains</b></h2><h5 class="post__date">2016-05-03</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/TDBTiwjTT0k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hello my name is Gary sim from and with
+authority
+now Java is the official programming
+language of Android and Java is used not
+only on mobile but also on desktops and
+servers and Java is quite a unique
+programming language especially when
+compared to other programming languages
+like C there are some big differences
+that are easy to spot like C is not
+object orientated Java is object
+orientated however there's some key
+differences that affect the performance
+of programs written in C and program
+written in Java
+first of all Java programs are not
+compiled to machine code
+they are compiled to an intermediate
+code called bytecode Java bytecode and
+this Java bytecode is then executed on a
+Java Virtual Machine so to fulfill the
+goal of write once run anywhere a Java
+Virtual Machine can be implemented on
+Linux on windows on servers on Android
+and therefore the same bytecode the same
+intermediate code can be run on that
+platform without needing to be
+recompiled however that means that when
+the program runs it has to run through
+itself another program this virtual
+machine which of course uses CPU time
+uses memory and therefore that has an
+impact on the performance the other big
+difference is that Java uses automated
+memory management that means that if a
+program allocate some memory allocates
+an object the program it doesn't need to
+worry about when that object is no
+longer needed I think all the garbage
+collector will run periodically and
+collect up all the bits of memory that
+are no longer needed and discard them
+the problem is the garbage collector is
+an expensive thing to run for example if
+you're writing a game and you need to
+update the frames every 16 milliseconds
+having the garbage collector run right
+at the time when you're trying to update
+the frame will affect the performance of
+your app now C is quite different C
+compiled directly down to machine code
+if it's running on a desktop PC running
+an Intel chip it will compile directly
+to the Intel machine code if it's
+running on an ARM chip on a smartphone
+it will compile directly down to the
+machine code for the ARM chip and it
+doesn't have automated memory management
+if the program allocates memory is up to
+the programmer to free that memory at a
+time at the programmer field is the best
+so therefore generally considered that
+Java is slightly slower than C when the
+two are run side by side I thought would
+be interesting to see how that speed
+comparison looks on Android what is the
+speed difference between AC program and
+a Java program now normally Java
+programs are written using the SDK the
+software development kit and Google also
+release a thing called the NDK the
+native development kit which allows you
+to write C and C++ programs for Android
+so what I've done is I've written an app
+that uses both Java code and C code and
+implements the same functionality in
+both languages with an attempt to see
+how much longer it takes in one language
+compared to the other now the app does
+three things first of all it calculates
+the sha-1 hash of a block of data then
+it calculates the first million prime
+numbers using trial by division and then
+finally it runs a mathematical function
+that I wrote and it runs that a million
+times to see how long it takes now there
+are a couple of things I want to mention
+before we look at the actual results
+what first one is about optimization
+every software engineer knows that
+software should be optimized to run
+faster on each platform that it's being
+deployed to now while I was writing this
+code because I was looking at the how
+many nanoseconds it took to run each
+particular function because that was the
+idea of the benchmark I was quite
+surprised how drastically I could change
+the results by implementing a function
+one way or another now I've tried my
+best optimized the Java code and the C
+code so they give a fair test and if you
+want more details about the
+optimizations that I did in a comparison
+between the C code with Java code please
+get over to the Android ROM website and
+read the written article that goes along
+with this video it's also worth
+mentioning the Android Java virtual
+machines up to an including Android 4.4
+KitKat Android used a java virtual
+machine code named dalvik and it was
+basically a java virtual machine that
+interpreted the bytecode and ran the
+appropriate instruction there and then
+on the processor it had a thing called
+just-in-time compiling which means that
+some sections of the code would be pre
+compiled into the native machine code
+and called upon where needed and that
+did give a boost to the performance of
+virtual machine however from Android 5.0
+the default virtual machine became art
+the Android runtime now the Android
+runtime used ahead of time compiling
+which basically meant when a program was
+installed it was compiled at that moment
+in the background on to the processor
+for the processor of your particular
+machine probably an ARM processor though
+it could of course be an Intel processor
+and then with the advent of Android 6.0
+what happened is that arm had been
+working in the background with Google to
+improve that compiling stage in that
+ahead of time compiler so that the
+machine code that was generated was even
+more efficient that was known as the
+optimizing compiler and we'll seeing the
+results how those three different Java
+virtual machines affect the performance
+of the Java programs running on phones
+I'd also like to point out they run this
+benchmark on both 32-bit and 64-bit
+processors and while that's important is
+because a lot of the code that's in my
+test app uses long integers now
+traditionally in C and Java an integer a
+whole number is 32 bits wide however
+there are things called long integers
+which are 64 bits wide now of course if
+you're running a java virtual machine on
+a 32-bit processor but you have a 64 bit
+number it has to do twice the work to
+process that number now actually it
+turns out that doing division or
+specifically the modulus operator for
+working out the remainder in Java on a
+64-bit number is actually quite slow
+when running on a 32-bit machine and
+we'll see that again reflected in the
+code so what I did was I wrote this app
+and it runs these three tests in Java
+and in CA reports the relative
+difference in the time now but I've run
+this test over 21 different devices a
+big shout-out to my colleagues at handle
+Authority for helping me run this on a
+wide range of devices some are 32-bit
+some are 64-bit some have KitKat some
+have marshmallow some have lollipop ok
+and basically what I'm interested in is
+the difference in the speed between Java
+and C I'm not interested in the absolute
+time of course a modern-day snapdragon
+820 processor is
+to be faster than a quad-core 32-bit
+processor from two years ago but on the
+same processor the Java and the C are
+both running it's the difference between
+that performances is interesting to us
+not the absolute speed now once I ran
+the tests what I actually found was that
+the result grouped together quite nicely
+you find that 32-bit lollipop all the
+results were grouped into one area
+64-bit marshmallow those results were
+all grouped together so let's have a
+look at what I found out so the first
+test was to take a block of data and
+create a hash and sha-1 hash for that
+block of data and here are the results
+now again this is the relative
+difference the percentage difference
+between Java and C and the first thing
+we see is that Java is slower now in the
+worst case scenario which is on an
+Android 5 32 bit device it was three
+hundred percent 296 percent three
+hundred percent slow which is four times
+slower now as we go down through the
+different devices we find that next you
+find 64 bit Android 5 you find 32 bit
+Android 4.4 but the fastest of all of
+these was Android 6.0 running on a
+64-bit processor so for a real-world
+application like creating cryptographic
+hashes we find that Java is actually 60%
+slower than C on the most modern 64-bit
+processors and in fact up to 4 times
+slower compared to C on older devices
+now the next test works out the first
+million primes by using trial by
+division now as I pointed out earlier
+I'm using 64-bit integers for this and
+64-bit division on a 32-bit Java program
+is actually quite slow and we'll see
+that now in the results and the results
+here are quite amazing if we look at
+32-bit Android marshmallow we see that
+Java is 263 percent slower than C we
+also find that 32-bit Android 5 and
+32-bit Android 4.4 are significantly
+slow 172 % and 240 percent respectively
+however once we move over to 60
+orbit because we're using those 64-bit
+integers we find Android 5.0 on a 64-bit
+process was only 38% slower and look at
+this Android 6.0 on a 64-bit processor
+is only 3% slower now that 3% difference
+is really quite amazing and that's a lot
+to do with the new Android runtime with
+ease ahead of time compiling and the
+optimizing compiler that went into
+Android 6.0 marshmallow now my third
+test runs a mathematical function that I
+invented it's my own invention just as
+some multiplications and some hailing as
+and deprovision
+both integer and floating-point and it
+comes up with a result at the end and
+that's run a million times to see how
+fast it runs on Java and C now again
+like the prime number testing here I'm
+using 64-bit integers and we can see the
+difference with a java virtual machine
+running 32-bit and 64-bit integers so
+looking at the worst results first here
+we find that Android 4.4 on a 32-bit
+machine is 384 percent slower Android
+5.0 on a 32-bit machine is 259 percent
+slower and Android 6.0 on a 32-bit
+machine is in 191 percent slower now
+once again we move over to 64 bits we
+find that Android 5.0 on 64 bits is only
+52 percent slower but here's the amazing
+thing
+Java running on an Android 6.0 machine
+on a 64-bit processor was actually
+faster than the C code now there could
+be a couple of reasons for this one is
+definitely the optimizing compiler maybe
+it found a better optimization than the
+C compiler did and therefore was able to
+create faster code and then when you run
+that a million times that difference is
+seen quite clearly and the other thing
+cause to remember is that what now using
+this simple mathematical function the
+garbage collector doesn't run at all it
+doesn't need to run because it's just
+doing math there isn't much memory
+allocation going on so what does all
+this mean well first of all the choice
+between Android and C actually isn't
+that black and white because when you're
+writing an Android
+you actually want to have access to the
+Android UI to the Android API to the
+various Android services including
+Google Play and all of those are only
+available via Java C is really only
+useful if you want to write a game
+engine or you've got some real heavy
+lifting to do and it will be quicker to
+do that in C now previously if you had
+that heavy lifting to do it might have
+been worthwhile
+porting sections of your code large
+sections of your code to C to get the
+performance gain however what my quick
+testing has shown is that that
+performance gap is reducing rapidly and
+in fact in some cases it looks now that
+Java is just as fast as or even faster
+than C well my name is Gary Simms from
+Android or thority I hope you enjoyed
+this video if you did please do give it
+a thumbs up also please don't forget to
+subscribe to and royal authority YouTube
+channel also you should download and
+install the Android authority app that
+will give you access to all the latest
+news and things that we are publishing
+also please don't forget to use the
+comments below to tell me what you think
+about Java what you think about say what
+you think of a hand with development in
+general it will be great to hear from
+you also if you want to please head over
+to the andrew authority forums you can
+use this link here and there you can ask
+me any questions you want about this
+video including about the app that I
+wrote including about C including about
+Java and I'll try and help you if I can
+and last of all but not least don't
+forget to subscribe to Android Authority
+calm because we are your source for all
+things Android
+you</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Instructions per cycle - Gary explains | Gadgetory - Your Gadget Factory</title><meta content="Instructions per cycle - Gary explains - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Android-Authority/">Android Authority</a></li><li class="active">Instructions per cycle - Gary explains</li></ol></div><h2 class="post__title"><b>Instructions per cycle - Gary explains</b></h2><h5 class="post__date">2016-08-01</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/gLsdS0zQ82c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hello there - Gary Sims from Android or
+authority now the turn of the century
+Intel and AMD ends into a race to see
+who could release the first one
+gigahertz desktop CPU and I remember
+buying my first CPU my first PC with a 1
+gigahertz CPU from AMD core single core
+back in those days and it was great it
+was an exciting time however it did
+underline and reinforce a false idea
+which is that megahertz is the most
+important thing about a CPU design in
+fact is not because for example is more
+important how many instructions can be
+executed for every one of those
+megahertz and that gives us the phrase
+instructions per cycle so what are
+instructions per cycle and are they
+important for today's of modern CPU
+designs well let me explain now Before
+we jump into this I just want to say
+this is a quite complicated topic now
+I've written an article that you'll find
+over at the Android or thority com
+website which really will be a good
+reference to back up this video so if
+you don't understand something you can
+rewatch the video obviously but do head
+over to an approach comm and read the
+articles maybe that will help if you
+want to ask me questions then I would
+suggest you go over to Andrew or thority
+comm forums because there we have more
+liberty to discuss freely I don't think
+that all the questions could be answered
+here in the YouTube comments though I
+will try if you ask them so let's get
+cracking now back in the days of 8-bit
+microprocessor 's the way a processor
+would work was like this it would fetch
+an instruction which of course was in
+main memory it would bring it into the
+CPU it would look at the instruction to
+see what it was it's a load 0 into
+register once it worked out what it had
+to do it actually
+do that thing it would execute it and
+then finally the results of that
+operation would need to be written back
+into the status registers in the CPU and
+that gave us four stages fetch decode
+execute and write back now back then
+protesters were generally sequential
+which meant that it would fetch it
+decode it execute it and write back and
+then it would go back and fix the next
+one and so on and so on that means it
+took four clock cycles
+to do one instruction so the
+instructions per clock cycle was in fact
+a quarter because it needed four stages
+four stages to make that instruction
+happen now of course one of the things
+that Henry Ford is famous for is
+inventing the idea of the mass
+production line when he built his Model
+T Ford car rather than taking a car from
+the beginning and working on it all way
+through to the end he has lots of cars
+on a production line that were being
+worked at at each station now that idea
+can actually be applied to processors
+rather than doing fetch decode execute
+write back and then go back to fetch
+decode actually while one instruction is
+being decoded another one can being
+fetched and then when that goes further
+down the line that same instruction is
+being executed there's one being decoded
+and there's one behind that being
+fetched and then finally they could be
+one during the write back stage one in
+the execution stage one in the decode
+stage and one in the fetch stage in fact
+there could be four different
+instructions in the pipeline going along
+at the same time now that means every
+clock cycle something is coming off the
+end of the production line off the Reese
+writ write back stage and that therefore
+gives you an instructions per cycle of
+one because every clock cycle something
+is happening and this idea can be
+extended even further if one of the
+stages is particularly time consuming
+then it can be broken down into smaller
+stages so rather than having four stages
+you might break down the decode into two
+separate stages or the three separate
+stage or you might break down the
+execution into three separate stages and
+therefore you might grow your pipeline
+in fact what they call these super
+pipeline CPUs most modern CPUs are might
+have eleven stages like cortex a7 t3 has
+it eleven stages in its pipeline the
+cortex a seventy-two from arm has
+fifteen stages in its pipeline now
+although we like to think of programs as
+being linear sequences of instructions
+in fact they aren't futures have a
+simple app in your hand and you press
+the one button then the program I jump
+off to a place to do one thing if you
+press the other button it will jump off
+to a place and do a
+think if I even a simple loop is in fact
+going down jumping back going down
+jumping back until a loop is completed
+and this branching causes a problem for
+CPUs because imagine you've got this 15
+stage pipeline that's processing all
+these instructions that are ready to be
+executed and then you find out that the
+last instruction said will jump off
+somewhere else and do something
+completely different now all these
+instructions that are in the pipeline
+are rubbish that you can't use them and
+so the pipeline has to be emptied and it
+has to be filled up again with the
+latest instructions and that's called a
+branch penalty every time it happens the
+CPU has to do all this work which wastes
+time and lowers the performance so
+therefore CP using cluded technology
+called branch prediction particularly we
+think about a loop every time it goes
+around a loop it might do this loop bits
+a hundred times well for a hundred times
+every time it hits that branch it goes
+back up and does the same code again so
+if there was a clever bit of circle and
+say what are the chances of these sets
+of instructions being executed next the
+branch predictor would say yep I think
+there's a good chance and it goes ahead
+and that reduces the number of times
+that the pipeline has to be emptied now
+an interesting thing about the execute
+stage is that not all instructions take
+the same amount of time to execute you
+can imagine a loading 0 into a register
+is actually pretty simple for a CPU
+however multiplying two floating-point
+numbers is probably going to be a bit
+more complicated so therefore they get a
+bottleneck because if the CPUs is right
+now multiply these two floating-point
+numbers and then after that load zero
+into this register
+well that load 0 integer has to wait
+until all those floating-point
+operations are done but there's a thing
+called instruction level parallelism ILP
+which means that actually if the CP
+detects the next instruction doesn't
+have anything to do with the previous
+one so multiply these two numbers
+together is fine load zero into this
+register is not related to that then
+actually it can dispatch it can say will
+do this load while the floating-point
+operation is still going on
+now that means now the instructions per
+cycle has actually gone up it's greater
+than one at its peak it can be two and
+in normal running operation it's
+somewhere between because not all
+instructions can be man in a parallel
+fashion but there's more
+what is the CP you could look at the
+instructions that are coming and reorder
+them so that it executes them in an
+optimum fashion so that it has a load
+store operation going on at the same
+time as an integer add operation at the
+same time as a floating point
+multiplication instruction so that all
+parts of the CPU are being used
+simultaneously to bump up the
+parallelism to bump up the ILP well
+that's called out of order execution now
+not all CPUs are out of order execution
+CPUs for example the cortex a53 and the
+cortex
+a35 are in order they don't juggle
+around the instructions to try and
+optimize the execution and the reason
+for that is that out of order execution
+requires a lot of clever circuitry on
+the cpu to do all that scanning to work
+out what's coming up next to check
+whether it can really do that without
+mucking up the program and changing the
+results and therefore that requires more
+silicon and it requires more power
+because that circuitry is always on it's
+always being powered it's never being
+shut down because every time an
+instruction is executed it needs to be
+active to work out what's going on so
+the cortex a53 the quarters 8:35 are in
+order and therefore they're much more
+low-power CPUs now things like the court
+is a 57 the court is a 72 and the cortex
+a53 are all out of order CPUs and
+therefore they have an extra circuitry
+but of course they have that also that
+gain in performance now I talk about
+pipelines how long they are now in sort
+of technical speak of CPU design we talk
+about the depth how what's the depth of
+your pipelines that's the depth and then
+how many instruction units you have for
+executing the instructions floating
+point load branch and so on that's
+called the width so you have a width and
+a depth and these are two parameters
+that the
+designers can play with how long do they
+want the pipeline how why do they want
+the dispatch to be and of course these
+things have an impact on the performance
+of the CPU now when you come to having a
+wide CPU a lot of dispatch units lots of
+execution is that can do lots of
+instructions in parallel the problem is
+is you need to look how far ahead can
+you look to find the next instructions
+to keep all those little execution units
+busy and that's called the instruction
+window how far ahead can it keep
+searching to see what's available to
+stuff and those execution is out of
+order of course that it's doing it out
+of or it's scanning ahead to see what
+they can find now the bigger the
+instruction window the greater chance of
+having a high ILP high levels of
+parallelism because you can keep all
+those execution units busy the smaller
+the instruction window then there's a
+less chance of doing that so you have a
+smaller instruction window is probably
+better for the CPU to have a narrower
+not so wide execution stage now you
+would think great well then why don't we
+just have really wide and really deep
+CPUs and they have lots of instruction
+parallelism and everything is great the
+problem is first of all computer
+programs aren't necessarily paralleled
+by their nature there's a wall that you
+hit that where you say actually the idea
+of a computer program is that one thing
+has to happen and then another thing has
+to happen think about making a cake
+maybe you can add the ingredients in a
+different order sometimes but in other
+cases you have to do things in a certain
+order otherwise it's not going to work
+you can't put an egg in the oven and
+then crack it and put it in a bowl to
+add the flour you've got to do things in
+a certain order so that's called the ILP
+wall there's a parallelism wall a limit
+to how much parallelism can happen
+there's also a problem with very wide
+CPUs with a big instruction window and
+that is the internal timing is very
+tricky so though you do have the benefit
+of having a greater IPC instructions per
+cycle actually putting that together is
+quite hard so let's look at some of the
+CPUs from arm and Cole common Samsung
+Appl to see if we can work out how
+they're designing their CPUs so let's
+look at the clock frequencies of these
+CPUs the cortex a7 t2 can be clocked up
+to 2.5 gigahertz the cortex a7 t3 can be
+clocked up to 2.8 gigahertz and the
+Samsung Mongoose core can be clocked at
+a 2.6 gigahertz so these are all in the
+same ballpark but if you look at for
+example apples a 9 processor that runs
+at only 1.8 gigahertz so that's quite a
+big different about the previous
+generation the a8 only ran at 1.5
+gigahertz and if you look at cryo core
+that runs at two point one Giga so it's
+kind of somewhere there in the middle
+but yet we can all safely say that the
+performance of these CPUs are all in the
+same ballpark there is not a big
+difference between the 1.8 gigahertz
+Apple and a 2.5 gigahertz a 72 in fact
+maybe the Apple is better in some
+situations so they're all in the same
+area of performance and yet they do have
+different clocks be significantly
+different clock speeds so what can we
+work out from that well what we can work
+out is that arm and Samsung are going
+with the idea of a narrower CPU probably
+quite deep in its pipeline but narrower
+and a higher clock speed so in this case
+the clock speed is very important
+because it's the clock speed that's
+giving you the overall performance
+now the other end of the scale we seem
+to have Apple who are working on a very
+wide CPU with a very big instruction
+window trying to do lots of out of order
+speculation about what can instructions
+can be executed next and because that's
+complicated they can only actually reach
+a speed at 1.8 gigahertz 1.5 gigahertz
+and the previous generation and
+therefore that gives us the idea of the
+design of their process however the
+performance the overall performance is
+actually coming out in the same area as
+these 2.5 2.6 and 2.8 CPUs and it looks
+like the cryo protesser from Qualcomm is
+somewhere in the middle 2.1 gigahertz
+but yet its performance is the same as
+or even better than
+the quarter is a 72 and the Mongoose and
+one that's a discussion for a different
+way about the relative performance but
+they're all in the same area so what can
+we tell from that Apple and Qualcomm
+seem to be going with wide lots of
+execution unit and a great amount of out
+of order speculation going on to try and
+get these execution units running full
+capacity as much level instruction level
+parallelism as possible and it seems
+that arm and Samsung are going with out
+of water still but maybe with a slightly
+narrower execution stage and trying to
+get that extra performance through the
+clock speed and so here we have two
+different philosophies now which
+philosophy is better well at the moment
+they're pretty much neck-and-neck one is
+better than the other than the Knik
+generation the other one's better than
+that and it kind of swings and
+roundabouts so there you have it there
+is instructions per cycle so don't
+compare a 1.8 gigahertz Apple a9 with a
+2.8 gigahertz cortex a 73 and say oh
+well it's clearly what's going on here
+it's a bit more complicated in that
+instructions per cycle well my name is
+go sim from Android or thority I really
+hope you enjoyed this video if you did
+please do give it a thumbs up as I say
+please do talk in the comments below
+about IPC about processor design but
+really better head over to the Android
+40 forums where we can maybe have a
+better conversation don't forget to
+download the Android app because then
+you can get access to all of our news
+and features directly on your mobile
+phone but also don't forget to check out
+Andrew thority comm because we are your
+source for all things Android
+you</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

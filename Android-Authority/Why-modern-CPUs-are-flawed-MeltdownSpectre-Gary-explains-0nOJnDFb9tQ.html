@@ -1,0 +1,214 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Why modern CPUs are flawed (Meltdown/Spectre) - Gary explains | Gadgetory - Your Gadget Factory</title><meta content="Why modern CPUs are flawed (Meltdown/Spectre) - Gary explains - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Android-Authority/">Android Authority</a></li><li class="active">Why modern CPUs are flawed (Meltdown/Spectre) - Gary explains</li></ol></div><h2 class="post__title"><b>Why modern CPUs are flawed (Meltdown/Spectre) - Gary explains</b></h2><h5 class="post__date">2018-02-02</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/0nOJnDFb9tQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hello there I'm garrison from Andrew
+authority now you've probably heard
+about these sort of CPU problems that
+we've got moment will melt down and
+spectra and so the question is what is
+the fundamental problem with today's
+CPUs that it's causing all of these
+problems well let me explain now of
+course you can read some really
+fantastic details on the neck about the
+real nitty-gritty of what the problems
+are but really what I want to do is
+explain it to you in the simplest
+possible terms and try not to kind of
+get too deep into the technically but to
+understand what this fundamental problem
+is and why really CPU design going
+forward and that's probably CPUs we're
+gonna see launched in 2019 onwards are
+really gonna have to have change the way
+they work at a very fundamental level so
+we're gonna do this in four stages and
+let's try to get through this simply
+number one and normal computer has a set
+of instructions that it follows load up
+this number from memory add one to it
+put that result back into memory and
+it's just basically a sequence of
+instructions and that's how computers
+work now I've got a whole video on
+instructions per cycle which would go
+much deeper into the things I'm going to
+talk about pipelines and decoding and
+all that so if you want to watch that
+and I recommend you do of course I would
+say that I'd recommend you watch all my
+videos okay but here's the link to that
+you really should go and watch that now
+what happens is is that when computers
+do these instructions we it's actually
+pretty obvious that it doesn't do them
+just one at a time it doesn't just load
+that thing and then wait around while
+the others are doing nothing because
+today's computers are so fast that
+actually the CPU can run faster than it
+can take to get memory information so in
+that time it's waiting something come
+back for a memory it's actually just
+sitting there saying well nothing to do
+now so what they decide to do is split
+up the execution of instructions into a
+thing called a pipeline and the
+instructions come down the pipeline and
+each little bit of the pipeline is a
+tiny bit step closer to actually
+executing the instruction and they kind
+of the the easiest way to show that is
+that you basically do a fetch sex
+next instruction from memory you decode
+it to actually work out what it is and
+then you execute and that would be a
+three-stage pipe but actually the pipes
+can get much longer you get 10 11 12
+stage pipes in modern CPUs now as it's
+going along it's becoming a step closer
+to actually executing the the thing and
+the the actual instruction when it's
+finally executing the registers has
+changed and the state changes inside the
+CPU that said that the instructions have
+been retired that means it's actually
+been always through that pipe drops on
+the end of the pipe and it's actually
+been executed actually been retired now
+that's all great
+if programs just ran in a straight line
+is they just kept running from one
+instruction one instruction to talk to
+the three hallway raid down and never
+ever jumped anywhere never branched off
+to another place that pipeline would be
+fantastic the problem is computers
+branch all over the place all the time
+it's one of their main things they do
+for example if you say you had a game
+and the little character was bouncing
+along and it gets to the edge of the
+screen at some book you say if he's at
+the edge of the screen then do something
+different you know bounce him back the
+other way or he dies because he dropped
+off the edge of the chasm so at some
+point there has to be a thing in the
+program it says if this thing has
+happened they branch off here and do a
+different bit of code now if you think
+about if the computers been filling up
+its pipeline with all the instructions
+that are coming ahead of it and then
+suddenly the computer branches off now
+all those instructions in that pipeline
+are no longer needed and that means they
+have to be emptied out of the pipeline
+completely cleared out and they call
+that having a bubble in the pipeline
+like an air bubble stuck in your
+pipeline because there's now a void
+where nothing actually happens and the
+computer has to wait around until it
+gets in the next set of instructions
+that are actually where the the program
+jumped to now to try to reduce the
+number of bubbles and reducing the
+number of bubbles is seen as one of the
+most important things you can do to
+increase performance they have a thing
+called a branch predictor now the branch
+predictor says actually which way is the
+program going to jump in three
+instructions time it's gonna jump is it
+going to jump back up on itself to keep
+on repeating or is it going to jump off
+somewhere completely different than the
+branch predicted tries to find out where
+the program's going to go and then in
+doing that it loads up the instructions
+ahead of it where it thinks to
+program is going to go and therefore
+when it does jump the right instructions
+are already in the pipeline and there's
+no bubble brilliant but there's a
+problem with this approach and that is
+is that instructions can be executed or
+half executed half-baked half travelling
+down the pipeline that I never used and
+they get discarded but if that that
+process of discarding them was
+completely atomic with completely black
+a box had no effect on the rest of the
+CPU then it would be greatly doesn't
+because in the moment that it has to
+fetch something from memory even though
+these structures never been executed it
+preemptively it's kind of ahead of
+itself is speculating what it needs it
+goes it gets that memory and it brings
+it in and in doing so it alters the
+cache now I've got a whole video on
+cache memory cache memories fast memory
+that's at the same space in the same
+space as the CPUs you can run very very
+fast and there's a link here to go and
+find out about cache memory and this is
+our fourth point the side channel access
+is that the cache can be altered and
+then doing some very clever stuff with
+timers you can go and get the same piece
+of information again and then if it took
+a long time you knew what was there if
+it didn't take a long time you knew that
+it wasn't in the cache and that
+basically means you can use this kind of
+a secret backdoor to examine the cache
+and take out things from there from
+instructions that were never executed
+and because they were never executed the
+checks on whether they're allowed to be
+executed whether that memory is actually
+accessible or not we're never done that
+means you can start trolling through the
+computer memory other users parts of the
+kernel
+whatever you like taking out passwords
+taking up cryptic every keys taking out
+whatever you like because the check to
+whether the program was actually allowed
+to do it or not he's never done until
+the instruction is actually executed and
+because the program the instruction is
+never executed because it's all
+disregarded then the printer computers
+at all I didn't do anything wrong I I've
+not broken any access barriers here I
+have not given you access to anything
+you should have actually I never
+actually read that instruction but it
+did in its pipeline and then by using
+these cache timing tricks you can work
+out what was in the cache and hence the
+whole memory becomes
+that available to any program and that's
+the fundamental problem I'm going since
+Rand or authority I really hope you
+enjoyed this video if you did please do
+give it a thumbs up don't forget to
+subscribe to our channel click that Bell
+I content you get a notification every
+time we release a new video and last but
+not least please do go over to Android
+sorta calm because we are your source
+for all things Android</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

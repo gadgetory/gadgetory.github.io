@@ -1,0 +1,657 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>&quot;Ridiculous Overkill&quot; - EVGA X299 DARK PCB Analysis | Gadgetory - Your Gadget Factory</title><meta content="&quot;Ridiculous Overkill&quot; - EVGA X299 DARK PCB Analysis - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus/">Gamers Nexus</a></li><li class="active">&quot;Ridiculous Overkill&quot; - EVGA X299 DARK PCB Analysis</li></ol></div><h2 class="post__title"><b>&quot;Ridiculous Overkill&quot; - EVGA X299 DARK PCB Analysis</b></h2><h5 class="post__date">2018-03-08</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/hUBR57lRy5k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey guys build Zoid from actually
+hardcore overclocking here and today
+we're gonna be taking a look at the V
+RMS on the EVGA X 299 dark motherboard
+and I did specify V RMS because there's
+so much to talk about on this board that
+if I actually wanted to cover everything
+that's on the PCB this video would be 40
+minutes long and nobody would want to
+watch it so let's get to the V RMS
+starting with the largest and most
+important one the VCC in and or V core
+if you're running KB like exits week or
+if you're running sky like X its VCC in
+before that this video is brought to you
+by thermal grizzly makers of the
+conductor not liquid metal that we
+recently used to drop 20 degrees off of
+our coffee leak temperatures thermal
+grizzly also makes traditional thermal
+compounds we use on top of the IHS like
+cryo not and hydro not pastes learn more
+at the link below so the reason why you
+have this distinction is that skylight
+Dex has a fiber and KB like X being
+pretty much just KB like glued onto a X
+$2.99 package doesn't have a fully
+internal fire is the fully integrated
+voltage regulator this thing exists is
+basically a very low voltage low voltage
+DC to DC converter it's present on the
+CPU and Intel uses it because well let's
+say you have a 200 watt CPU well ok no
+welcher 200 watt CPU and there's kind of
+two ways you could try deliver that
+power right you could deliver it as 2
+volts and a hundred amps or you could
+developer it as 1 volt 200 amps both of
+them are still 200 watts now this one is
+really really hard on a vrm and the
+reason for that is is because power
+dissipation well there's more to VR and
+power dissipation than just this but
+very basically a good chunk of your V
+RMS power dissipation is conduction
+losses and those are expressed as
+power equals I squared R so your vrm
+resistance is kind of fixed well
+somewhat fixed you can get it down but
+the the amount of effort required to
+make this lower is kind of ridiculous
+past a certain point and takes up a lot
+of physical space now you have this
+current component which that grows
+quadratically so it's much much so in
+you know with the fiber you can very
+easily massively drop the heat output of
+the vrm by just going from you know
+VRML putting one volt at 200 amps to the
+R I'm outputting two volts at a hundred
+amps and then the VAR I'm doing the the
+fully integrated voltage regulator doing
+that last step of the conversion of
+going from 2 volts 100 amps to 2 volts
+to from 2 volts 100 amps to 1 volt 200
+amps so that final conversion happens on
+the CPU itself and your vrm has to just
+do 12 volts down to 2 volts instead of
+down to 1 volt and stupid high current
+which would produce a lot of heat so
+that's why you have VCC n instead of
+just straight V core because the actual
+V core is generated on die with skylight
+Dec CPUs as well as some other voltages
+those system agent and io are both
+external so let's talk about the VCC
+nbrm we have here it's 1 2 3 4 5 6 7 8 9
+10 11 12 phase and that means it uses a
+doubling scheme because nobody
+manufacturers a 12 phase voltage
+controller the voltage controller here
+is a is al 69 1 3 8 this is a inter sale
+part and Inter sale are owned by Rene
+sauce so that's just a little side note
+it supports up to seven phases at one
+megahertz switching frequency this is a
+seven phase it's kind of special because
+it'll support any phase configuration
+that's X plus y less than 7 so it could
+run like here it's running a six plus
+one phase with that plus one being this
+phase right over here but you could also
+run it as a four plus
+or a you know say a five plus one or a
+two plus one if you felt like wasting
+money because that is an expensive part
+so that's the that's the voltage
+controller running the operation and is
+running six phases here now the PWM
+signal from that goes into these chips
+right here these are the actual doublers
+and these are also inter-cell parts is
+l66 one sevens these are some of the
+smartest doubler chips you can get they
+support some amount of current balancing
+so they won't just let you know like the
+most basic doublers essentially just
+pass a pwm signal between one phase and
+the other these things will actually
+allow you to do things like turn off
+half turn off the extra phases if
+they're not being used balance current
+if one phase is pushing significantly
+more current than the other then it'll
+actually skip a cycle or extend or
+shorten a PWM signal for the phase
+that's that's doing less or more work to
+get it back into current balance so very
+very smart doubler this is about as
+close as you're gonna get to having a
+real 12 phase vrm as is possible there's
+not really any other like there are
+competing parts that can do the same
+amount of work but there's no anything
+better than this out there so yeah this
+this is as good as 12 phase as you're
+gonna get and the actual power stage
+used is also absolutely top-of-the-line
+inter-cell componentry this is an ISL 99
+22 set 22 7 B these things are five
+point five dollars apiece for and that's
+when you're buying them bulk okay so
+these are some ridiculously expensive
+MOSFETs and that's buying them bulk from
+like a normal part supplier like Mouser
+or digi-key I'm not sure if EVGA
+actually gets like a even better bulk
+discount on these but if you're buying a
+real of these from Mouser yeah you're
+paying five point five dollars a piece
+these are really really expense
+of power stages some competing parts
+like an international rectifier 3555 is
+about three dollars so these aren't
+cheap and there's a reason for that
+these aren't just regular power stages
+these are smart power stages and they
+come with a special casing so first
+let's go over the reason why these are
+considered smart they integrate current
+monitoring and temperature monitoring
+directly into the package so there's a
+thermal sensor and a current sensor
+built into these power stages so they
+also integrate protections like
+overcurrent protection and over
+temperature protection now over
+temperature protection on these is it's
+very soft it basically just tells the
+voltage controller hey you might want to
+shut down the VRM we're over a hundred
+and forty degrees centigrade internally
+we're probably gonna die if we keep
+running any longer but that is
+ultimately like the EVGA can ops to
+literally just disable that protection
+from the side of the voltage controller
+now the OCP on these is set at ninety
+amps and that is hard if if any of these
+phases exceeds 90 amps output it's gonna
+shut down that phase and raise a flag
+for the voltage controller that hey you
+might want to shut down the rest of the
+vrm because basically if one of those
+phases hits 90 amps then probably most
+of them are not far from that from
+hitting that amount of current either
+and shortly after one of these shutting
+down the current load would end up
+probably like it would push the current
+load onto the remaining phases which
+would probably push the rest of them out
+of well over OCP trip points as well and
+then the whole vrm would shut down
+luckily you should never actually run
+into that scenario because this is a 12
+phase and if you're pushing 90 amps per
+phase then that's like a hundred and
+eighty amps
+that's a thousand and eighty amps total
+which the yeah the skylake X is
+power-hungry but it's not two kilowatts
+power-hungry cuz you're VCC and will
+probably be between like one point eight
+and two point something volts two point
+six is considered maximum voltage for
+ln2 for air
+and water cooling you don't want to go
+over two point two volts my experience
+it doesn't actually like it seemed for
+at least the CPU I've been dealing with
+seems to prefer a lower VCC n rather
+than a really really high one but I'm
+still in that like I'm still pretty
+close to two volts so yeah you don't
+have to worry about the OCP on these it
+is there in case of some kind of
+catastrophic failure but you should
+never ever really hit it now the other
+cool feature of these is that they have
+this exposed metal contact and that is
+actually hooked directly into the
+silicon die inside of these MOSFETs and
+it massively improves a thermal
+resistance of the packaging so the
+internals of these run a lot lot cooler
+because they're transferring heat
+through a bit of metal rather than
+ceramic or resin depending on the kind
+of MOSFET packaging you're dealing with
+some will use ceramic packaging some
+will use resin so here you actually get
+proper metal thermal transfer to the
+heatsink VR I mean the you know the very
+significant vrm eats sink that EVGA puts
+on this board so those are all very nice
+features that these have and in terms of
+actual current capabilities these are
+rated for a continuous output of 60 amps
+assuming you can handle the heat output
+60 amps 1.8 volts on one of these
+produces 12 watts of heat so you're not
+gonna be pushing 60 amps through you
+know like if you end up in a situation
+where every single one of these is
+pushing 60 amps that vrm is gonna be
+producing a ridiculous amount of heat
+however you should not run into that
+scenario because for reasonable power
+outputs say for air-cooled overclocking
+on sky like X you're gonna be looking at
+like 200 to 300 watt power output on the
+VRM and I'm doing all of the ratings
+again with that 1.8 volts output of the
+VRM and 500 kilohertz switching
+frequency because well the vrm can't
+actually go over that because you have
+that one megahertz running through
+doublers which will cut down the
+frequency in half even if these are
+really really smart they won't double
+the they can't produce more frequency
+out of thin air well they can't maintain
+frequency while maintaining phase
+interleaving
+and phase interleaving is the most
+efficient way to run of erm anyway so
+it's not like they're gonna just pass
+straight in one megahertz pwm into the
+VR on the other thing is you don't
+actually get control over the switching
+frequency so it's whatever EVGA decides
+to program and throwing the erm
+efficiency out the window for marginal
+improvements in a voltage regulation
+it's probably not something they opted
+for so 1.8 volts 500 kilohertz
+air-cooled you're gonna be looking at
+200 to 300 watts CPU power consumption
+and AVR em heat output between 12 and 16
+watts so really not that bad and the
+ridiculous heat sinks that EVGA puts on
+this board is gonna handle that no
+problem now on water cooling things
+start to heat up you can probably push
+between 300 and 500 Watts depending on
+the workload overclock and voltages at
+which point you're looking at 16 to 30
+watts of heat and now the you know now
+that vrm heat sink that EVGA puts on
+this board starts actually being useful
+still massive overkill because there are
+other boards that can sustain this kind
+of power level admittedly they use the
+same vrm and a slightly less cooling
+oriented heatsink but there are boards
+that can sustain this just this thing
+has the best we are I'm cooling on a
+modern motherboard for a while now so
+it'll handle this kind of power output
+no problem now if we go on liquid
+nitrogen things go absolutely insane
+we're talking power draw levels from 500
+watts into the thousand watt range hot
+very very hot and that's what that's
+gonna be
+and the end result is that you're gonna
+be looking at VR on thermal outputs of
+32 96 watts and well that's like a GPU
+like that's the low-end GPUs worth the
+worth of heat output or a reasonably
+high-end CPU worth of heat output the
+good news is for the motherboard that
+most you know
+liquid nitrogen workloads that would
+pull a thousand watts won't last more
+than a couple minutes the other thing to
+consider is that when the CPU socket is
+at a minus hundred same yeah minus 100
+degrees skylake X has a pretty high cold
+boot bug due to the voltage or a
+fully-integrated voltage regulator it
+doesn't work below minus 100 degrees in
+most cases there's some CPUs that go a
+bit lower some that go a bit higher but
+in most cases around minus 100 degrees
+and below that you're not gonna be able
+to put like the the system's not gonna
+even run so for that you know with the
+socket at minus 100 minus 100 degrees
+centigrade
+the surrounding area of the CPU socket
+tends to end up very cold as well so
+what you'll find if you're doing any
+liquid nitrogen overclocking this entire
+area of the motherboard which actually
+with this being a to dim kind of this
+area of the motherboard tends to all end
+up below ambient with anything really
+close to the CPU socket actually just
+being sub-zero so something like this
+memory stick I would not be surprised if
+that ended up at minus 5 degrees
+centigrade and actually just building up
+straight ice as it's not that rare for
+the memory slots to literally freeze
+over on really long overclocking
+sessions so the vrm will actually end up
+it won't be like like if you're normally
+running your system your vrm will be
+slightly above ambient temperature if
+you're on liquid nitrogen your vrm will
+start at a temperature significantly
+lower than ambient because it's
+literally the closest thing to the CPU
+socket and it also is hooked very
+heavily into the ground plane and the
+collar and the power plane which are
+both massive copper layers that will you
+know transfer the cold from the CPU
+socket to the vrm very very quickly
+the flipside to this is is that the vrm
+area tends to end up being a puddle as
+you know you go idle and the vrm ends up
+at -5 degrees and then you go full load
+and the vrm ends up at like plus 50 or
+plus 70 by the time you finish the
+benchmark and all of that ice that built
+up when it was idling is now water which
+kind of sucks
+so yeah which is why insulating on
+liquid nitrogen
+especially for sky like X is like really
+really important now a few people might
+be worried about that power draw figure
+versus the eight pins the good news is a
+eight pin on 18 gauge wiring you can
+handle 480 watts because these are for
+12 volts and for ground connections
+they're not like GPU 8 pins which are 3
+to 12 volts and 3 grounds so these
+actually all the pins in these actually
+transmit power and each pin pair is good
+for 10 amps if you have 18 gauge wiring
+if you're on 16 gauge wiring you can
+push 624 watts per connector just fine
+so you don't actually have to work like
+you don't have to worry about these
+melting but cables might get pretty warm
+if you are you know again running
+extended loads that's the other thing it
+takes time for things to get halt so
+just because you're pushing a thousand
+watts doesn't mean these connectors are
+gonna have it like are gonna be at that
+really high stress level for long enough
+to cause you know to start getting
+really really hot and to the point that
+it's concerning so that's the V core of
+erm let's go cover I mean VCC n slash
+recurve erm let's go cover some of the
+others the VCCS AV RM right over here
+also controlled by the is l69 one three
+eight it's that plus one part of that
+six plus one and this is well it's a
+regular old power stage
+it's an is L part again and this is a
+ninety nine 140 and it's rated for 40
+amps continuous output 15 amps 500
+kilohertz switching frequency you're
+gonna be looking at about two outs of
+heat so you know no big deal there now
+if you look so you know VCC sa is plenty
+overkill because this is kind of what
+you'd be looking at in terms of current
+draw there now the VCC I OVR M is
+located down over here this thing does
+not actually have a heatsink this now
+the VC CSA shares its heatsink with the
+VCC and vrm so basically the temperature
+of this thing is in
+tirely bound to what the you know the
+core power consumption because that's
+what's really gonna change the
+temperature of that vrm heatsink now
+this thing doesn't actually have a
+heatsink which is why it ends up with a
+stronger power stage even though it
+doesn't have to deliver as much like it
+doesn't deliver more power than the VCCS
+a does the voltage controller used here
+is actually not inter-cell this is an
+international rectifier 35 to 0 for this
+is a four phase part it runs three plus
+one phases and any configuration up to
+that it's not flexible like the like the
+69 138 which incidentally looks 69 138 i
+forgot to mention this can run seven
+plus is zero but yeah anyway back to the
+35 to zero for this thing runs three
+plus one and it's controlling this chip
+right here which that's a international
+rectifier 35 50 56 that's a 50 amp power
+stage and for VCC which i should have
+labeled that VCC I oh you're gonna be
+looking at about again 1.2 volts you
+know around 15 amps and this will
+produce about 1.3 watts of heat because
+again this is a 50 amp part not a 40 amp
+part so yeah and this has no heat sink
+so it needs to be a bit more efficient
+than the one sharing it you know getting
+to share with the vcore vrm now then
+moving on to the even more minor V RMS
+the memory which is this right here is
+the actual phase and the controller is
+all the way over here now these are
+inter cell parts again and this doesn't
+make a lot of sense to me this as you
+can probably guess by the way based on
+what it looks like yeah that that's one
+of that's an is l99 22 7v I have no idea
+why EVGA decided to put these on memory
+power it makes zero sense to me it just
+like because here's the thing like you
+could make the argument Oh Bill of
+Materials they're already buying a bunch
+of these yes but they're evidently
+buying a bunch of these as well because
+these are doing VCC i/o all right if
+they used only these everywhere
+I'd guess it but
+they have the 35:56 that's a 50-amp
+party this thing is a lot lot cheaper
+they have the 35 2204 which the voltage
+controller isn't a 69 138 this is a this
+is the 69 1 3 eights little brother this
+is the 69 1 3 3 which is again X plus X
+plus y less than 4 this time so that's a
+four phase capable voltage controller
+and it comes with the where is it in my
+notes same switching frequency
+limitation as the as the 69 138 but yeah
+that so you know they downgraded the
+voltage controller but ultimately
+they're already buying 35 to 0 fours and
+they're already buying 35:56 A's so I
+really don't know why they decided to
+put the 60 amp power stage on to memory
+power like this is such a ridiculous
+overkill and it's a single phase as well
+which compared to say the like the core
+like the main competitors for this
+motherboard are the rampage 6 apex and
+the asrock OC formula and both of those
+used to phase memory power whereas this
+uses single phase the asrock has a more
+powerful memory vrm but like it doesn't
+matter like it literally doesn't matter
+ddr4 is like like 2 to 4 watts a stick
+maybe really it's around 2 watts most of
+the time and when you really hammer the
+voltage you might get to 4 volt to 4
+watts if you're on like a dual ranks
+take with you no chips on like 16 chip
+memory stick which would be dual rank
+and really crank up the volts you might
+hit that high power consumption figure
+but again it's just like it's nothing
+compared to any of the other things and
+then you get this ridiculous power stage
+here and I have no idea why it just
+makes zero sense to me then again asrock
+did basically the same thing on their OC
+formula or they have a two-phase with
+like 40 amp power blocks and it makes
+just as little sense to me as why the
+vrm is so powerful now ROG
+you know asus rog decided that yeah
+we're doing into phase but we're doing
+it with like really like MOSFETs that
+are like what would you say I had to
+quit for the job
+yeah that's one way to put it there
+they're much much weaker MOSFETs than
+what a ga or as ROC opted for and they
+use they did a two-phase design so this
+is not as powerful as the OC formula
+it's stronger than what Asus has but
+it's still ridiculous like even the Asus
+one is just overkill like if this is
+ddr4 it doesn't pull any bloody power
+and you do get one memory phase for each
+set of DIMM slots on either side of the
+CPU so you get the same thing right here
+with the voltage controller there and
+then the the phase is this part so yeah
+and ultimately you know you might think
+compared to the OC formula and compared
+to the rampage six apex this has less
+memory phases this is going to be worse
+at memory overclocking well again ddr4
+pulls so little power it's a very low
+strain like very low power strain device
+so it doesn't actually matter how many
+phases you put on this ultimately what
+matters is the trace layout and the BIOS
+you find like the the BIOS programming
+that's what really decides memory
+overclocking know how many phases you
+throw at the memory slots because the
+memory doesn't really use that much
+power
+and that's why EVGA opted for you know
+that's why I guess EVGA decided that
+they're gonna go with just one phase cuz
+it really doesn't matter I have one of
+these boards for for tech like I have a
+review sample of this board to test with
+and it's incredible like the the four
+memory slots that EVGA has opted for
+they work they really really work like
+this board is beastly at RAM
+overclocking on sky like X it's
+ridiculous so you know as much as it
+would make sense to complain that this
+doesn't have to phase memory power I
+couldn't care less this board is
+absolutely amazing at memory
+overclocking like EVGA no evidently no
+what they were doing when they just
+decided to you know not bother with
+wasting board space on more more phases
+that ultimately wouldn't do anything and
+instead went and really like nailed the
+BIOS and and tres lay outside of the of
+the memory memory overclocking here
+because this thing's a beast
+Lumi who was the number one overclocker
+in finland he's got this board to run 41
+41 20 megahertz on ddr4 at CL 12 and
+I've gotten to 39 50 and I'm very very
+close to making 4,000 working at CL 12
+as well the last little vrm that is
+worth mentioning kinda the VPP rail is
+conveyed by a fully integrated buck
+converter which is a eye are 38 99 and
+that's a 10 amp output part but I don't
+know how much power VPP actually pulls
+and this VPP that's of EPP DDR and this
+is basically a supporting voltage for
+your memory sticks it doesn't actually
+really do much as long as it's a 2.5
+volts your memory is going to overclock
+just fine you can't you can't actually
+change it on this motherboard if I yeah
+I don't think there's a BIOS setting
+even for this voltage which is fine like
+I don't see a problem with that this
+voltage never helped anything in all of
+my like with all the motherboards where
+I had access to that voltage it doesn't
+do a damn thing so it's just good that
+it's there and again plenty overkill
+because this is a supporting voltage
+that's main memory power this is just a
+minor rail for the memory so yeah that's
+that's the V RMS on the EVGA X 299 dark
+it doesn't get better than this
+literally there isn't any retail
+motherboards that I'm aware of that use
+better Maus like all the top X is 299
+boards for in terms of erm capabilities
+use the exact same component tree that
+the EVGA x2 99 dark uses for VCC end
+like this 12 phase VCC nbrm it's the
+same
+you would find on an OSI formula as ROC
+uses it on a few other boards I think
+gigabyte has basically the same vrm but
+the EVGA dark takes it a step like EVGA
+is dark here takes it a step further
+because they put the most ridiculous he
+liked the vrm heatsink they have is
+amazing it is just awesome and they've
+also gone ahead and tried to like the
+gold placing is supposed to allow them
+to expose the ground plane for better
+you know heat dissipation from the PCB
+itself but I think they're mostly using
+it as a gold trim to make the board look
+better which it does so you know can't
+really complain about that and yeah so
+this is a beast of a motherboard you
+know it is absolutely a beast of a
+motherboard and huge props to EVGA for
+for making you know a motherboard that
+does truly compete with the ram-paige
+six apex and the OSI formula and from my
+personal experience with the OSI formula
+and the X 299 dark I like the dark
+better and we will go into more details
+on all of that in a separate video later
+because this is already long enough so
+yeah thank you for watching like share
+subscribe leave a comment down below if
+you would like to support what we do
+here at gamers access then there's a
+patreon link down below there's also
+merch you can buy and if you would like
+to see more extreme overclocking related
+content I have a channel called actually
+hardcore overclocking and that's it for
+the video thanks for watching and good
+bye</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>How does public key cryptography work – Gary explains | Gadgetory - Your Gadget Factory</title><meta content="How does public key cryptography work – Gary explains - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Android-Authority/">Android Authority</a></li><li class="active">How does public key cryptography work – Gary explains</li></ol></div><h2 class="post__title"><b>How does public key cryptography work – Gary explains</b></h2><h5 class="post__date">2016-10-04</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/rLiEA06Bcic" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hello my name's Gary Sims from Android
+authority now this is my second video on
+encryption I've done the first video
+which talked about how encryption
+started with the Caesar cipher with
+substitute alphabets all the way up to
+modern-day encryption using DES and AES
+hardware acceleration in ARM chips for
+AES and so on and I asked the end of
+that video would you like another video
+on public key cryptography and the
+resounding responsibles yes so here it
+is a video on public key cryptography
+now the biggest problem with encryption
+is you may have very very powerful
+encryption method like AES but unless
+both parties know the key the password
+that you use to encrypt any particular
+piece of data it's useless and the
+question is how does the other party get
+to know the key now if there are two
+friends we'll call them Alice and Bob
+and they live near each other they can
+meet up and they can say is my is my
+secret key okay thanks and then they can
+exchange messages using that piece of
+information that they exchanged but if
+one lives in another country maybe on
+the other side of the world then getting
+that key securely to that person is
+difficult because the moment that key is
+read by a third party and we'll maybe
+Eve and Eve dropper
+now if Eve gets hold of that key then
+all of those communications between
+Alice and Bob become useless no matter
+how strong the encryption method is
+because the key is known now in the past
+governments have used some very very
+complicated systems couriers diplomatic
+bags you know armored cars to try and
+get keys distributed around the
+different parts of the government
+different organizations that needed
+these keys but is there a way that two
+strangers who've never met before can
+exchange keys and then exchange messages
+encrypted using those keys without
+anybody knowing what the encryption key
+is well thankfully there is so what we
+need to look at now is a thing called
+the diffie-hellman Merkel key exchange
+system now it was discovered by Martin
+Hellman he was work
+with Whitfield Diffie and Merkel was
+later added for recognition for his work
+because they were working together as a
+team so let's look at it but before we
+do that I need to explain one concept
+that's the idea of modular arithmetic
+sometimes called clock arithmetic now
+when you divide two integers and you're
+not dealing with any fractions if you
+divide two integers you get the number
+of times that can be divided and a
+remainder so 11/5 for example is 2 2
+times 5 is 10 and a remainder of 1 now
+it's this remainder that we're
+interested in that's the remainder is
+what you get from modular arithmetic so
+11 modular five-in-one you might call
+that 11 mod 5 and sometimes the computer
+programs you see the percentage sign
+used instead of the word modular so 11
+modular 5 is when a wise Eagle Claw cool
+because 12 modular 5 is 2 13 modular 5
+is 3 14 modular 5 is 415 modular 5 is 0
+because 15 could be divided by 3 times
+and there's nothing left over and then
+16 modular 5 is back to 1 again so we go
+round and round and round and you always
+go number of digits on the clock is the
+number that you modular that you user
+bytes of modular 5 now the thing about
+modular modular is that you can't go is
+what a one-way function you can't go
+backwards so we know 11 modular 5 is 1
+but also 16 modular 5 is 1 also 22
+modular 7 is 1 so having that one
+there's no way to go back to where we
+came from Neph what's called a one-way
+function and one-way function are really
+important when it comes to key
+distribution now hit those one more
+thing to understand in fact there are
+two it's a little ever thing I want to
+mention that is that the factorization
+of large numbers is infeasible
+now what do I mean by factorization well
+if we take again the number 15 okay and
+I ask you what are the prime factors you
+can tell me pretty simple it's 3 &amp;amp; 5 3
+is a prime number five is a prime number
+3 times 5 is 15 that's great
+and in fact you could probably do that
+in your head for several small numbers
+you know 20 49 I mean you could you
+could just work it out it's not that
+difficult but if I start to give you
+bigger numbers then how easy is that to
+work out here's one for you for example
+yeah what are the prime factors or
+of 44 million 120 3267 what are the
+prime factors well if I gave you a pen
+and paper you might be to start working
+out with a calculator it might be a bit
+quicker with a computer you could
+probably write a program that would
+solve it in a few moments however it's
+not the maths that's hard it's just
+division and trial by error to find you
+get the right thing there's no system
+for finding you have to just keep trying
+different variations in case you're
+interested the actual answer is seven
+thousand six hundred ninety one
+multiplied by five thousand seven
+hundred and thirty-seven those are the
+prime factors that number that's great
+but what happens if I gave you a number
+that had two hundred digits in it just
+ten two hundred digits how long would
+that take you to work out its prime
+factors well actually they discovered
+they did this is experiment a few years
+ago and they're using hundreds of
+computers in a network they took two
+years to find the prime factors of a two
+hundred digit number now when we're
+dealing with key distribution we might
+be dealing with three hundred digit
+numbers or even larger and the whole
+basis of public key cryptography and key
+distribution is based on the idea that's
+really hard to work out which two
+numbers multiplied together to give you
+a bigger number multiplication that step
+is easy and go up to that number but to
+go back down again it's another kind of
+one-way function is really hard by the
+way if you do crack this problem you can
+find a quick method or factorizing any
+number you'll bring the whole world to
+its knees all cryptography will crumble
+down into heat okay so we've got two
+parties Alice and Bob we've never met
+each other and they can't exchange keys
+because they're far apart from each
+other how do they do it well it starts
+by Alice and Bob both picking random
+numbers now in this case we're going to
+say that Alice picks 10 and Bob picks 2
+now they've both previously agreed on a
+one-way function which is y to the power
+of X mod P and we're going to say that Y
+is 7 that something is established
+beforehand it can be publicly known by
+anybody and we're gonna say that P is 13
+that's also established beforehand and
+note that their prime numbers is all
+we're dealing with prime numbers here so
+a lot of these numbers are going to be
+prime and I'm using small prime numbers
+but obviously in a real world situation
+you may use
+big prime numbers with like lots and
+lots of digits hundreds 200 300 400
+digit numbers so Alice plugs her random
+number into the former and therefore
+gets 7 to the power of 10 mod 13 which
+gives us 4 and Bob does the same he goes
+7 ^ 2 2 is his random number mod 13 and
+that gives him 10 so Alice has 4 Bob has
+10 now this point Alice sends the 4 to
+Bob and Bob sends the 10 to Alice now if
+a third person is listening to that
+exchange it doesn't matter because all
+they see is a numbers 4 and 10 and they
+don't know the random numbers that they
+have picked now he comes a magic if but
+Alice uses Bob's 10 as why and keeps X
+as 10 that was around the number she
+picked then she gets 10 to the power of
+10 mod 13 and that's equal to 3 now Bob
+that exactly the same thing he will use
+the 4 from Alice use his matter random
+number which gives him 4 to the power of
+2 mod 13 which is also equal to 3 now
+Bob and Alice both have the number 3 and
+all the eve was able to see was the
+number 4 and the number 10 going past
+she doesn't know the random number
+picked by Alice she doesn't know the
+random number picked by Bob and yet now
+after applying this they both have the
+number 3 and that number can be used for
+a key to encrypt a message clip between
+each other
+now obviously they said you would use
+bigger numbers and that you wouldn't
+just use 3 you'd use much bigger and now
+here's an example I was going to flash
+up on the screen for a moment that shows
+you the bigger number you also find it
+over the anger Authority website here we
+go now you want to pause the video hall
+to look at that more go tendril sorta
+calm website to find out the math behind
+a bigger number ok so now we have a
+system where two complete strangers can
+exchange messages exchanged keys having
+never met before well done Martin
+Hellman
+well done diffie-hellman and Merkel now
+while Whitfield Diffie was looking at
+this stuff with Martin Hellman about
+modular Sun to the powers and come out
+with this key exchange system he'll also
+come up with the idea of something
+called an asymmetric cipher now at the
+moment all crypto we've discussed is
+symmetric you take some data you encrypt
+it using
+with them using a key a password then to
+decrypt it use exactly the same
+algorithm maybe in Reverse and you use
+the same key and you get the data
+there's a symmetry down the middle
+encode and decode but Hellman came a
+diffi story came up with the idea that
+what happens if we could have one
+function and password for encrypting
+something and then a different function
+and a different password for decrypting
+it so no longer symmetry here it's a
+symmetrical one thing for encrypting and
+a different thing for decrypting and so
+in having that idea he came up with the
+idea of public key cryptography because
+the part to encrypt it can be publicly
+public for anybody hey here's my key if
+you want to send me a message encrypt it
+using this password I don't care if
+everybody knows it you should all know
+it because no one can decrypt it unless
+they have the second half which is a
+different process and a different
+password public key cryptography and
+that's what we use today on the Internet
+HTTP I'll talk about that in a minute is
+all public key cryptography now that's
+what he invented he published a paper in
+the mid 70s but he didn't know how to do
+it so he liked the idea brilliant idea
+they didn't know how to do it now it
+actually fell to others to come up with
+a mathematics for a system that would
+work as Diffie explained it and there
+were three people working together there
+was Rivest Shamir and Adleman r s a when
+you put their initials together who came
+up with this idea of a practical way of
+implementing whitfield diffie idea and
+RSA is something it's companies it
+states the system we use today and it's
+very very powerful and I'm now going to
+try and explain it to you
+keep your hat on it's a bit complicated
+but let's see whether we can work to
+work through an example see how this
+works ok we start off by Alice picks two
+prime numbers and we're gonna call them
+P and Q and again we're going to use
+small prime numbers let's use 17 and 19
+ok and now the product of these P times
+Q 17 times 19 is 323 now remember
+323 means is more difficult now to work
+out the factors of the
+okay this was a 200 digit number it'd be
+really difficult okay so the idea of
+using the product of these two numbers
+is it's difficult to go backwards
+towards the two numbers you multiplied
+together to get the final product
+now we'll call this n okay so two
+hundred three hundred and twenty-three
+is M now we choose another prime number
+that's publicly known it's called E and
+waiting for it seven everybody agrees on
+it is part of the system so seven is e
+now Alice publishes n 323 hey everybody
+here's my public key information 323 use
+it if you want to now Bob wants to send
+a message to Alice now I'm going to say
+he wants to send the word hello we'll
+start with the letter H H in ASCII has a
+value of 72 so we're going to try and
+send the number 72 to Alice and the way
+Bob does that is he takes the 72 he
+raises it to the power of seven which is
+the number a that we chose and he
+performs modular arithmetic on it using
+Alice's public key so 323 so 72 to the
+power of seven mod 323 is 13 now Bob
+sends Alice that 13 now if someone else
+sees that number going across the 13
+going from after Bob they can't use that
+to recreate bulbs messages it's
+impossible now when Alice gets that
+number she needs to plug it into her own
+formula a special formula that uses P
+and Q now to do that she needs to
+calculate another number called D okay
+and in such a way that 7 which is our
+number e 7 times D mod P minus 1 times Q
+minus 1 is 1 now way to work that out we
+have to use you cleared we have to use
+some algorithms but in this particular
+case we'll see here that D is 247 now
+the point is you can only make this
+calculation if you know P and Q now
+Alice published the product of pain cube
+she never published P and Q so she can
+now use this special information she has
+which is the factors of that number to
+decrypt the message she now plugs it
+into her own formula which goes like
+this
+you take the ciphertext you raise it to
+the power
+d which is 247 and you perform the
+modular arithmetic on it of 323 so 13
+the number Bob said ^ 247 mod 323 is 72
+which is the ASCII for the letter H so
+now Bob and Alice have exchanged
+messages it was encrypted one way and it
+was decrypted another way and anybody
+intercepting it in between cannot guess
+P and Q and they cannot guess the
+message that Bob sent so that is public
+key cryptography now if you go to the
+angel tourists comm website there is the
+whole article that goes with this video
+and I go through all those steps there
+again so you can really watch and follow
+it through to see how that worked out
+now today we use HTTP HTTP hypertext
+Transfer Protocol the S at the end means
+secure and that's what we use to connect
+to web servers when we don't know the
+web server we don't know they don't know
+us we don't know that we need to
+exchange keys we defined a way of
+getting some information encrypted
+information and what we use today is RSA
+we also use the different held member
+call key exchange programs or depending
+on how it's done now basically HTTP uses
+used to be called SSL that got
+transplant superseded applaud on by a
+TLS but TLS was based itself on it and
+also you find times people to omit SSL
+TLS they're kind of interchangeable
+basically it's a protocol that says hey
+web server how are you I'm great can you
+give me your public key yes here it is
+can I trust you I you say who we are yes
+I am good well let me say encrypt a
+message to you and that's basically this
+protocol defines that how those two
+computers talk but basically it's just
+using RSA or diffie-hellman local key
+exchange and that's how it works today
+and the whole thing is that today they
+use 248 bit or 496 bit public keys and
+the certificate basically from an
+authority that says you can trust this
+computer it really years eBay it really
+is Amazon it really is PayPal you can
+connect and vote and I sign this to say
+those are really them and that's where
+we are today public key cryptography
+what my name is garrison from Andhra
+thority I really do hope you enjoyed
+this video if you did please do give it
+a thumbs up please don't forget to get
+over to the and or atif forums because
+i've got a topic open there where we can
+talk more about public key cryptography
+please come over there and have a chat
+with me don't forget to download Endora
+app is a really good app and it's great
+for getting all the latest news from our
+from us directly on your mobile phone
+and also don't forget to go to and our
+Authority comm because we are your
+source for all things Android</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

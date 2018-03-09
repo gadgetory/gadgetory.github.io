@@ -1,0 +1,251 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Let's Make a Star Wars Quiz In 7 Minutes! | Gadgetory - Your Gadget Factory</title><meta content="Let's Make a Star Wars Quiz In 7 Minutes! - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Android-Authority/">Android Authority</a></li><li class="active">Let's Make a Star Wars Quiz In 7 Minutes!</li></ol></div><h2 class="post__title"><b>Let's Make a Star Wars Quiz In 7 Minutes!</b></h2><h5 class="post__date">2018-01-19</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/WoAAJ1RdpbQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">okay so there are some scenarios where
+learning-by-doing isn't such a good idea
+abseiling lion-taming flying a plane
+these are scenarios where it's better to
+really know your theory before you jump
+in but in coding or development getting
+started on projects is often the best
+way to really understand all that fear
+me to sit in context and how it all
+works that's what makes all the
+difference so whilst it's a good idea to
+do some background reading as soon as
+possible you should start trying to put
+that theory into practice and come up
+with some kind of beginner project and I
+think a great beginner project is to
+create some kind of quiz because a quiz
+is a simple project that you can make
+easily it's something rewarding you can
+play on your own or with friends and
+something you can change and develop and
+turn into all kinds of other things in
+this video I'm going to show you how to
+make a Star Wars quiz because everyone's
+in a stall with mood right now
+but you could easily turn this into any
+other kind of quiz or you could turn it
+into some kind of brain training program
+or a maths game or an app that shows you
+information so follow along and
+hopefully you'll learn something
+hopefully you'll enjoy the project and
+read the accompanying article to get a
+better understanding of what everything
+does so this project is aimed at
+beginners yes but beginners with a
+little bit of background understanding
+regarding Java regarding XML and Android
+if you have no prior experience you can
+still play along but I highly recommend
+you do some reading in order to
+understand some of the things that I'm
+going to skim over I will explain a bit
+but for a much better understanding
+follow the link in the description or
+just do your own background reading the
+whole thing is going to take seven
+minutes because that's what I do and if
+you get stuck of course just use the
+force okay so in most new apps you're
+going to have an activity and activity
+being a page or a screen in your app and
+this will be made up of a Java file in
+this case mainactivity.java and a layout
+file in this case activity underscore
+main dot XML and the great thing is that
+if we use the design view by making sure
+you're on the design tab down the bottom
+here that's the text tab then you can
+simply drag and drop the different
+elements you want to onto the screen and
+if you select a view then on the right
+here you can change the attributes in
+the attribute window you can also change
+the name of a view
+by changing the ID and this will allow
+us to refer to it later we're going to
+call this one question now if you want
+to add another textview we simply drag
+and drop from here like so and we're
+actually going to have four more so
+we're going to name these answer one
+answer two and answer three always a
+good idea and that will be called
+outcome that bottom one you need to
+anchor all four sides to either the edge
+of the display or another view that's
+anchored and that's nice and easy we are
+going to add one more thing though and
+that's an on click for these so we want
+to click view all attributes in our
+attribute window here and we'll call
+this on answer one click what this is
+going to do is allow us to refer to what
+happens when someone clicks on this in
+our code can you guess what this one on
+the called on answer to click and on
+answer three click okay so there's lots
+of different ways we could approach
+making a quiz but I think we should use
+a map and seeing as I'm kind of in
+charge that's probably what we're gonna
+be doing so okay so with that in mind we
+need to create our map and we do that
+like say so we're saying a map with two
+strings that's the key in the value
+we're gonna call our map questions I'm
+gonna say new hash map string string
+brackets now you'll notice these are red
+if you find things red like this just
+click on them and press alt + enter that
+imports a new class I won't go into what
+that means okay next we're going to
+create a new integer which is a whole
+number I'm gonna call that question no
+and as you can probably guess that's
+going to refer to which question we're
+on and the next thing we need to do is
+create our views text view outcome text
+view question text view answer 1 ok next
+we need to tell our code that those
+views are the ones who defined earlier
+in the XML and do that by saying find
+view by ID our meaning resource
+answer one remember we used capitals
+there let me can do the same thing for
+answer two and answer three I'm also
+gonna want to do the same thing for the
+question we're gonna want to do the same
+thing for our out to come okay now we're
+going to need to populate our map that
+means putting in our questions and
+answers and we do that by saying
+questions remember that's what we called
+the map put and then we can say question
+one that's the key and then the value
+might be what is kylo ren's real name
+there so I made earlier you can steal
+mine from the article on the site or
+writing your own notice that I've got
+write one wrong a one wrong b1 so we're
+using this number and we need to be
+consistent with the naming conventions
+here and you're gonna see why in a
+moment okay so now we're going to create
+a new method set question so that's read
+for now because that's not actually a
+normal command I'm going to say private
+void which means that it's a method that
+doesn't need to be accessed by other
+parts of the program so to assign those
+questions and answers to our views we go
+like so question set text which is a way
+of changing the text questions get so
+questions remember is our map and then
+we need to use our key to retrieve that
+we're going to get that with question
+and then plus question now so that's
+going to change as the question goes up
+and then we need to do the same thing of
+course for the answers I'm gonna do one
+more thing here as well and that's to
+set a tag for answer one and that's
+going to be correct okay the next thing
+I want to do is to create another method
+this won't be a public method because
+we're using it from outside this script
+and it's called on answer one click and
+it has view V there as well and here
+we're just going to say if answer one
+get tagged
+is equal to correct then we execute this
+bit of script which is to say on our
+outcome set text well done and then
+we're going to reset our questions but
+only after we've iterated the question
+number so now it's moved on to question
+two or three and then we're going to say
+accept question again otherwise else
+outcome set text try again to our view
+which just means whichever view happens
+to have been clicked and the reason for
+that is because it makes it much easier
+for us just copy and paste this and put
+in our announcer to click and on answer
+three click again there are quicker and
+better ways of doing this we could for
+instance have a global on click and then
+look for that tag and that's really the
+reason to be doing that however I'm
+keeping things simple here just so you
+can follow along and this is the easiest
+way to do it okay so all that's really
+left to do now is to change the order so
+that it's not always the same and for
+that we're going to need a random number
+you'll need to import that class by the
+way and we get that by writing this dot
+next int three
+there we go and then we can say if the
+value one equals zero so that's going to
+have a value of zero to two because it
+starts at zero three options starting at
+zero in quantal equals there okay and
+then we can say else if the value 1
+equals 1 then we put our correct answer
+and our tag in the second position and
+else if the value 1 equals 2 then the
+correct answer and tag go in the third
+position it doesn't really matter where
+the wrong answers are and there you go
+and of course again there are better
+ways of doing this what I would actually
+do is enter that data into a list and
+then shuffle the list using a good
+random algorithm but again for
+simplicity sake this will work just fine
+and there you have a complete working
+quiz in just seven minutes today it Reds
+at the bottom now well done and you hope
+there's more to do obviously at the
+moment we'll crash when you get to the
+end of the list so you need to do
+something about that and of course we
+want to make it look nicer and you'll do
+that in the XML and you can change the
+background and I set a Star Wars logo at
+the top you can do that by just using an
+image view for instance and you can mess
+around with your colors by going to the
+values and go to the colors XML change
+the scheme mess around with it as you
+like well that's the basic bones the
+bare bones of your quiz and of course it
+can change the questions and the topic
+to be anything you like but if you make
+a horticultural quiz that you can
+probably assume you're going to have
+fewer people wanting to play so you
+found this video useful interesting guys
+if you did then please leave a like
+please share it around and let me know
+in the comments what you thought if it
+gets stuck or if you have any requests
+for future videos of course stay tuned
+to Android Authority com hit the bell
+button for notifications and check out
+the website who we are your source for
+all things Android</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

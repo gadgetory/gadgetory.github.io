@@ -1,0 +1,240 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>How to Build a Basic Android Game in Just 7 Minutes (Unity) | Gadgetory - Your Gadget Factory</title><meta content="How to Build a Basic Android Game in Just 7 Minutes (Unity) - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Android-Authority/">Android Authority</a></li><li class="active">How to Build a Basic Android Game in Just 7 Minutes (Unity)</li></ol></div><h2 class="post__title"><b>How to Build a Basic Android Game in Just 7 Minutes (Unity)</b></h2><h5 class="post__date">2017-11-18</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/4BD3y0NYNqk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">so the trick to Android development is
+to choose the right tools for the job
+and to learn only the skills you really
+need to build the kind of app that you
+want to make I believe that the best
+tool for Android game development is
+unity it makes the whole process so much
+quicker and simpler so much so that in
+this video I'm going to show you how you
+can get something up and running in just
+seven minutes so unity is a game engine
+that means it handles things like the
+physics and controls it provides certain
+assets for you ready-made it basically
+makes the whole process of creating a
+game much simpler so you can focus on
+what makes the game unique and on the
+assets and on the design and that unity
+handle of the more advanced code
+you only need very little code to get
+started with unity and what you do use
+you can find tons of guides and
+references online to help you through
+that said unity is still very powerful
+very flexible and C used by a lot of
+professional developers in fact many of
+your favorite games from the Play Store
+were probably built using unity way to
+try and make a game in Android studio
+you need to learn Java you need to
+understand classes and libraries you
+need to create the physics engine
+yourself so you're handling things like
+gravity and collision whereas unity does
+all that for you makes it so much easier
+while still being as powerful as you
+could need even as a professional
+developer if you're someone would like
+to create an android game but you think
+maybe it's too difficult it involves too
+much code then I hope this videos gonna
+demonstrate just how quick and simple
+and easy the whole process can be I'm
+gonna really run through it though so if
+you want to slow things down and
+understand what each step does then
+follow the link in the description down
+below as you'll see though the process
+really is very simple you don't need any
+prior knowledge and as long as you've
+got unity and the Android SDK installed
+on your computer already then you'll be
+good to go okay so seven minutes let's
+go so the first thing you want in any
+game is probably play a character so
+you're gonna open up paint or whatever I
+mean obviously there's better tools to
+use for this foot this is all about the
+morality and the easiest and quickest
+player character to make is
+a square with a face full of attitude
+this guy you're gonna take squarey
+and you're gonna drop him into your game
+like that so he's a sprite we also need
+some platforms for him to walk on so
+drag your platform into your game in the
+exact same way cool thing is look you
+can drag and reshape this so if you copy
+that and then paste it you can make as
+many as you want
+select your player character squarey and
+then you gonna open up up here on the
+right the inspector and then the
+inspector you're gonna say add component
+physics 2d rigidbody 2d so this is
+basically 2d physics for your character
+what we're gonna do is we're going to
+drag the camera onto squarey like so in
+the hierarchy these along the top here
+are controls that you can use to decide
+what you want to do with your game
+objects and that one's used for moving
+stuff around if we place it right on top
+of squarey
+then it kind of makes more sense cuz you
+can click play and now he's in the
+center of the screen so anything that's
+a child of anything else will follow
+that thing around anyways enough talk
+work okay so it selects query the
+problem you can obviously see here is
+he's falling through the ground so we
+want to add another component and this
+time we're going to add physics 2d box
+Collider 2d I'm gonna do the same thing
+with the platform here add component
+physics 2d box Collider 2d once more and
+if we copy these now then we'll also be
+copying over that new Collider and the
+new physics okay so now click Play and
+hey that's starting to look more
+promising okay now the next thing we're
+going to do is create our first script
+so that we can actually start
+controlling what happens in this game
+but don't worry it's very easy so first
+of all go down to your assets folder in
+the project window here and you're gonna
+right-click anywhere and say create
+folder script now with that open right
+click and say create c-sharp script
+and we're going to call this player
+controls
+okay so double-click on that and it
+should open up the visual studio for you
+here all right this is your first script
+you'll see there's already some code
+here I'm going to reference here because
+I'm not no mister remember however I did
+write the reference so it doesn't feel
+like cheating alright so what we're
+doing up here is we're going to create a
+new object of the type rigidbody 2d like
+I say don't worry too much about this
+you can learn as you go it's gonna be
+that same rigid body that is attached to
+our player character so in order to move
+our character all we need to do is say
+RB which is the new rigid body which
+refers to the rigidbody attached to our
+player velocity equals new vector2
+and that's a point that has two axes and
+we're going to say one that seems like a
+decent speed to start with and then RB
+velocity y okay so now open back up
+unity click on your player like that and
+then go to add component just as you did
+before and this time we're gonna say
+scripts and then there you have it you
+have your player control script that you
+made click play
+we should speed along well speed along
+is a strong word but yet is he's
+certainly moving make that three and
+then we've three times as quickly yeah
+that's challenging we want to open up
+our script again okay and then we're
+going to say during our method if input
+get mouse button down index zero
+then I'm gonna BRB velocity will why
+robbing be blustery equals new vector to
+the velocity X and then we'll make that
+three so the player clicks the mouse
+whilst the game is running then he
+should move upwards now we I know you're
+thinking you're saying Adam there isn't
+a mouse click on Android but that's the
+cool thing because a mouse click is
+equivalent to tapping anywhere on the
+screen bear with me
+we're just going to type out some
+variables and you don't need to worry
+about what these mean
+I will explain it all as we go
+on ground so our boolean are true or
+false statement equals physics 2d
+overlap circle ground check dots
+position ground check radius what is
+ground and I'm going to add one more
+thing here which is and on ground now
+we're going to create a new empty game
+object and we're gonna call that check
+around and this is an invisible object
+that we're gonna use to see if there's
+an overlap to see whether or not we're
+hovering over the ground of course we
+want it to move as square emu so just
+like the camera I'm gonna drop it
+underneath square e so that it becomes a
+child and now for clicks query you
+should see that's in the script we have
+some new options and the ground check is
+a transform and take a check ground and
+drop it in to ground check then I set
+the radius to 0.1 we want it to be nice
+and small and then now we're gonna
+create our new layer mask so select your
+platform and up here in the inspector
+you can see it has the option for layer
+and you're gonna go add layer and then
+you're gonna make this layer called
+ground if you click back to the
+inspector you can now select ground as
+your layer okay so now go back to your
+player and then the last public variable
+what is ground you're gonna set that to
+your new layer as ground now fingers
+crossed it should work unless we've have
+gotten something something's on the
+ground you can click click and he'll
+jump when he's not on the ground he
+doesn't jump there you go and that is
+the basis of a fun little game and if
+you follow my advice at the start this
+video and you went through the
+installation process and set up unity
+and the Android SDK you should now be
+able to test your game on your Android
+phone and it's quite a great feeling
+when you see it come to life on your
+device ok so it's something pretty basic
+but it's a great foundation to build
+upon and there's not that much more code
+necessary for handling things like
+enemies collectables next levels and
+tilt controls once you've done that you
+can just focus on designing your
+different graphics and dragging them
+dropping them into the scene
+so you found this video useful and
+interesting guys if you did then please
+leave a like subscribe to the channel if
+you'd like to see more like this hit the
+bell button if you want notifications
+comment down below if you have any
+questions and of course check out and
+rule 40 calm for your your source for
+all things Android</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

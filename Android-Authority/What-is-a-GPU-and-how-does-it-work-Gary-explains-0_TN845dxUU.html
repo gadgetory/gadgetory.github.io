@@ -1,0 +1,302 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>What is a GPU and how does it work? - Gary explains | Gadgetory - Your Gadget Factory</title><meta content="What is a GPU and how does it work? - Gary explains - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Android-Authority/">Android Authority</a></li><li class="active">What is a GPU and how does it work? - Gary explains</li></ol></div><h2 class="post__title"><b>What is a GPU and how does it work? - Gary explains</b></h2><h5 class="post__date">2016-05-24</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/0_TN845dxUU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hello my name is Gary Sims from Android
+or authority now one of the most
+important components on a system on a
+chip
+besides the CPU is the GPU the graphics
+processing unit now for some people the
+GPU is shrouded in mystery how does it
+work what does it do well let me explain
+okay at the simplest lowest level a GPU
+is a clever piece of hardware that's
+very good at certain type of
+mathematical operations in 3d graphics
+everything is made up of triangles lots
+and lots of small triangles that are
+built together to make complicated
+models now as you know a triangle has
+three corners three points and each one
+of those points is called a vertex and
+it has a coordinate in the X and the y
+and the Z dimension so one of the things
+that happens in 3d graphics is those
+vertexes need to be processed for
+example they might need to be moved from
+one place to another place that's called
+a translation maybe it needs to be
+scaled to be bigger or to be smaller and
+of course it can be rotated now these
+three basic operations are called a
+transformation it turns out in 3d
+graphics the best way to express this
+XYZ coordinates is using a vector and if
+you want to perform a transformation on
+a vector you can multiply it by a
+special matrix a special four by four
+matrix now these matrices all have
+different properties you can do scaling
+and transfer translation and rotation
+just using a particular predefined
+matrix therefore a GPU needs to be
+really good at matrix operations if it
+needs to be good at vector operations
+floating-point operations and matrix
+multiplication now in the old days a GPU
+had a fairly fixed pipeline a fairly
+fixed process so you 3d graphics would
+go in or your vertex is all your
+triangles go at the beginning it would
+go through certain processes and at the
+other end you would get the display and
+the how that pipeline worked you could
+tweak some flags you could do certain
+things but basically it was a fixed
+pipeline and then what happened is that
+you came up with the idea of creating a
+programmable pipeline where the game
+designer could actually write the code
+food that handles the vertexes and
+something that handles the pixels so
+what came out of this was a the idea of
+a programmable vertex shader and a
+programmable fragment shader and we'll
+talk about both of those now now a
+vertex shader was programmable the game
+designer could write some code that
+would handle each of those vertex
+operations now a vertex shader runs once
+per vertex on a 3d model now after it's
+been down the pipeline at some point
+it's getting near to being pixels
+getting near to being something that we
+displayed on the screen
+and therefore you have a thing with the
+pixel shader or the fragment shader now
+basically the fragment shader decides
+the color the texture the lighting and
+the shadows that are being thrown by the
+different objects in the 3d world so at
+one end you have the 3d models with the
+vertex is the vertex shader let the
+other end just before we're about to put
+things onto the screen you have a
+fragment shader which controls the color
+of each individual pixel another
+fragment shader runs once per pixel on
+the screen now 3d pure is amongst you
+will say yes Gary it's a bit more
+complicated that and yes it is but I'm
+just trying to give here a basic
+overview of what's happening now where
+CPUs and GPUs differ significantly is
+that the vertex shaders are pretty
+autonomous they can run on each vertex
+independently and in fact it turns out
+the fragment shaders are fairly
+autonomous now of course there are some
+interlinking between these things but
+basically GPUs are very good at doing
+things in parallel and therefore you
+find that GPUs actually have multiple
+execution engines in fact what they call
+them is multiple shader calls a shader
+that can run vertex work or fragment
+work and if you look at an are Mali GPU
+it's often the end of the name like the
+are Mali t88 0 will have MP something in
+mp4 and p12 and that number at the end
+tells you how many shader calls it has
+and the more shader cores it has the
+more work you can do in parallel now
+because GPUs can do things in a parallel
+manner it actually opens them up to a
+whole other area of technology called
+GPU computing GPU computing is when you
+have a task that needs to be
+and highly in parallel using 12 shader
+calls for example that actually turns
+out that certain types of image
+processing certain types of computer
+vision and actually certain types of
+machine learning work very well on GPUs
+and so all modern GPUs both on the
+desktop and on the mobile phone support
+a kind of GPU computing renderscript
+maybe or OpenCL which allows them to be
+used for these kinds of tasks now
+there's one other thing I want to
+mention that is of course there is a
+difference between 3d graphics on a
+desktop and 3d graphics on a mobile
+phone of course if you've seen a 3d
+graphics card from Nvidia or from
+ati/amd they are they are big they've
+got big fans on them they've got huge
+coolers on them they need their own
+separate power supply sometimes they go
+occupy two slots you can have two of
+them in your car on your PC and so on
+now of course a mobile phone can't do
+that I mean the Stratis cars themselves
+are bigger than most phones so of course
+power efficiency is key when it comes to
+mobile GPUs and that's why it's
+interesting that companies like Qualcomm
+and companies like arm have actually
+seemed to be doing very well in the GPU
+market but maybe Nvidia isn't doing so
+well because it hasn't been able to
+translate its desktop GPU technology
+down into the mobile where as
+specifically designed mobile GPUs from
+say arm are doing a much better job now
+of course the amazing thing is is that
+we as consumers we expect to see the
+greatest and best 3d graphics we can on
+a mobile phone because we're used to
+seeing things on a console or on a
+desktop and the amazing thing is the GPU
+designs are maging to bring high levels
+of quality to a smartphone now of course
+you've always sensed to yourself when
+you've played a 3d game the back of the
+phone does start to heat up a bit and
+the reason for that is because of the
+parallel nature of the GPU with a CPU
+lit if you're doing something some of
+the cause might shut down it might be
+only running at a few megahertz now
+while there are power saving things that
+go on inside a GPU at that time when
+you're actually rendering those 3d
+frames it wants to get them out there as
+fast it can so all the shaders are
+working all of the stuff is going as
+quickly
+can so that it can produce those
+graphics pinnacles is doing that 60
+frames a second that means every 16
+milliseconds is processing a whole frame
+including the word from the CPU and the
+GPU and it's amazing that we can still
+actually get such great graphics from
+such a tiny piece of silicon and from
+such with such great battery life so
+hats off to all mobile GPU designers
+you've definitely got my respect now in
+a minute I want to talk to you about the
+unified shader model and about the
+Vulcan API but before I do that please
+just if you like this video do give it a
+thumbs up also don't forget to subscribe
+to Android authorities YouTube channel
+now I said I'd mention the unified
+shader model now previously the vertex
+shader and the fragment shader were two
+specific different types of shader if
+you look at say the Mali 470 GPU you can
+see it has a vertex shader and up to 4
+fragment shaders what happened with
+OpenGL ES 3.0 and the equivalent in the
+DirectX world was that the shaders
+became unified so any shade it could
+become a vertex shader or a fragment
+shader it could do both operations and
+that's useful because if a shader was
+sitting idle because had nothing to do
+because there wasn't any more vertex
+work to be done it was a waste but now
+if it can be a universal if it gets
+unified it you can do any type of
+shading work then your shaders can be
+employed to do all kinds of work and
+nothing ever has to stay idle and of
+course where it's not sitting idle that
+means you get greater performance now
+the latest thing that's happened in the
+3d graphics world is the release of the
+Vulcan API now basically the Vulkan API
+comes after OpenGL it's this new level
+with being supported by just about
+everybody across the 3d graphics
+industry and it's got two important
+improvements over the previous api's the
+first is that there's all the overheads
+for checking for errors has been reduced
+significantly because the idea is if
+you're writing again need to find the
+errors we're developing it they don't
+need to be running while you're running
+the program itself so they've been
+reduce and that means that there's
+actually greater performance because the
+error checking has been reduced the
+other thing is it plays very nicely with
+multi-core C
+P use which means that if two CPUs are
+trying to do two things to the graphic
+taper at the same time they can now do
+it at the same time previously they'd
+have to wait one for the other
+now it's multi-core friendly so you'll
+see that the Galaxy S seven for example
+actually with the first mobile phone
+Android mobile phone release that
+supported the Vulcan API
+okay to sum up 3d graphics are done
+using triangles triangles have three
+corners three vertexes and those three
+vertexes need to be transformed in size
+and in position into the 3d graphic
+world and to do that you use vectors
+floating point and 4x4 matrices and a
+GPU is very good at doing those kinds of
+operation and very fast now in modern
+day GPUs you can program the vertex
+shader that runs once per vertex every
+point on those triangles and you can
+program the fragment shader every pixel
+that appears on the screen to set the
+color and what happens is the programmer
+writes the shaders he writes the code
+that runs on the GPU to produce the
+final image and as the 3d designers come
+up with more and more interesting ways
+of handling lights and shadows and
+textures and all these amazing things
+you get better and better graphics so
+the next time you play a 3d game on your
+mobile phone or even on your console or
+on your desktop just give a thought to
+the GPU and all that hard work is doing
+just that you can enjoy your gaming
+experience
+I have to go Sims from Android authority
+and I hope you enjoyed this video if you
+did as I said earlier please do give it
+a thumbs up don't forget to subscribe to
+handle Authorities youtube channel also
+please come over to the android aura tea
+forums there's a special section in
+there where you can talk to me about
+GPUs and CPUs and other gary explained
+videos that I have produce I look
+forward to connecting with you there
+also don't forget to download our
+authority app so you can get access to
+all of our content directly on your
+mobile phone and last but not least
+don't forget to stay tuned to Andrew
+Authority calm because we are your
+source for all things Android</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

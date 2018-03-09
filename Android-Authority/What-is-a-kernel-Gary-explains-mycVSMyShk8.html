@@ -1,0 +1,273 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>What is a kernel - Gary explains | Gadgetory - Your Gadget Factory</title><meta content="What is a kernel - Gary explains - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Android-Authority/">Android Authority</a></li><li class="active">What is a kernel - Gary explains</li></ol></div><h2 class="post__title"><b>What is a kernel - Gary explains</b></h2><h5 class="post__date">2016-03-30</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/mycVSMyShk8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hello my name is Gary Sims from Android
+authority now hang around Android long
+enough hang around pcs long enough and
+you might come across this term the
+Linux kernel well what is the Linux
+kernel why is it important where did it
+come from well let me explain the thing
+that most people forget in fact is that
+computers are incredibly dumb all
+they're doing is following instructions
+and it's only when those instructions
+are actually designed to perform a
+complicated task that computers seem to
+have some kind of ability but actually
+all they're doing is repeating one
+instruction after another instruction ad
+infinitum and therefore they need
+software to do everything even just to
+boot up they need to be able to run some
+software and when you boot up your
+Android smartphone you're used to seeing
+a launcher and some apps and maybe the
+web browsers and games but there's lots
+going on underneath the bonnet for
+example underneath the launcher there is
+a bunch of Android services including
+the Google Play services below that
+there is things like the Java Virtual
+Machine and below that there is a thing
+called a kernel it really is the core of
+what's going on now every multi-tasking
+computer system uses a kernel Windows
+has a kernel os10 has a kernel iOS has a
+kernel and Android has a kernel now
+Windows and Windows Phone Windows Mobile
+use a thing called the NT kernel OS 10
+and iOS user thing called the Darwin
+kernel and Android uses the Linux kernel
+now these aren't the only kernels that
+are available there are just a whole
+plethora of kernels out there for us to
+try and play with some of proprietary
+some are open sources the FreeBSD kernel
+is the Kentucky kernel there's the free
+artist kernel there's the kernel from
+embed from embed OS that recently
+released by arm there are just so many
+different types of kernel now everything
+from us wearable from an IOT device
+right up to a
+the computer uses a kernel so what is it
+well basically the kernel is the theme
+manages the CPU resources the memory
+resources and the processes on any
+computer
+it also has device drivers in it so when
+you want to do any networking that goes
+through the kernel we want to talk to
+Bluetooth that goes through the kernel
+we want to use the file system that goes
+through the kernel it really is the
+lowest layer above the CPU so for
+example on Android when you start an app
+it is in fact the kernel that starts the
+process for that app and enables the app
+to be loaded from the flash into memory
+if that app then needs some memory it
+will be the kernel that will allocate it
+to it if the app wants to do some
+networking it will go through the kernel
+is the app want to do something in the
+background create a background service
+that's handled by the kernel eventually
+when the app closes that it all
+resources that we use will be tidied up
+and collected up by the kernel it really
+is the center of everything that's going
+on on your smartphone now as you can
+imagine kernels can be quite complicated
+they're doing a lot of essential work
+and there are actually some different
+ways in which kernels can be designed
+now the two main theories today for Co
+design are what's called a monolithic
+kernel and a microkernel now Linux is a
+monolithic kernel that means that all of
+these services that are going on all the
+drivers or the stuff handling memory all
+occur inside one program that occupies
+one memory space now the alternative is
+a thing called micro kernels and with
+micro kernels the kernel itself is in a
+very very small piece of memory space
+and then other things like device
+drivers and networking and file system
+drivers are running as user level
+programs and the kernel talks of them
+saying hey do this hey do that for me
+please go and get this file go and get
+that and they talk to the kernel the
+idea being that if one of those crashes
+the kernel itself doesn't crash now back
+in 1992 a man called professor Andrew
+Tannenbaum who is very very famous but
+he's operating system design books and
+he's networking but if you ever
+do any studying at university or higher
+education about computer science you
+will definitely come across an Andrew
+Tannenbaum book he had a conversation
+with Linus Torvalds
+online some sort of flame war about the
+merits of monolithic kernels versus
+micro kernels and of course what
+happened is that Lana's was writing a
+monolithic kernel and that's how he
+stayed doing it and the monolithic
+kernel is what we have today if you are
+at all interested in micro kernels then
+go and check out MINIX three it's and
+root an unbound unix-like operating
+system that uses micro kernels now as
+you can imagine the Linux kernel being a
+monolithic kernel can be quite big and
+complicated in fact they say there are
+15 million lines of code in the Linux
+kernel now not all of that code is used
+all at once because in there there is
+support for IBM mainframes a support for
+PC the support for SPARC processes their
+support for ARM processors there's a
+whole range of different device drivers
+in there in fact they say the 70% of
+that 15 million lines of code is just
+device drivers now when you build the
+Linux kernel you say which bits you want
+it's got a configuration program I want
+this I don't want that I want this I
+don't want that but you can do more than
+just say what you want including what
+you want execute you can also tweak the
+way the operating system works and that
+makes sense because if you're running
+Linux on earth on a mainframe you might
+want it to behave differently than if
+you're running it on a wearable if
+you're running it on a database server
+you might want to do think differently
+than if you're running it on a
+smartphone and this is where we get into
+the idea of custom kernels because you
+can download the Linux software it open
+source under the GPL because you can
+download Android it's very possible to
+build your own kernel build your own ROM
+which has their your own kernel
+including inside of it and of course
+there is a whole community of people
+that build custom kernels just for your
+smartphones now a quick word of warning
+to do that you're going to need root
+access and you're going to probably need
+an unlocked bootloader and if you go to
+a site like XDA and there are many
+others you can find a whole list of
+different kernels that are available
+alternative kernels that are
+your smartphone and there are some
+famous ones including the Franco Colonel
+Elemental ex and so on now there are
+some pros and there are some cons to
+using custom kernels first of all you
+need to have root first we need to have
+your bootloader unlock and some people
+don't like to do that it's not in
+everybody skill set to do that also you
+need to recognize that you're using a
+kernel made by some guy somewhere in the
+world and there is a question of trust
+and the real question of how reliably is
+if you start to get problems will he
+answer your question will he issue a new
+version of the kernel there's also the
+danger that you can break your phone but
+if you're prepared to go past all of
+those problems of course you can find
+you can get a kernel that's highly
+configurable it even may have extra
+features built into it it's got extra
+things that the standard stock kernel
+doesn't have in it and you may enjoy
+downloading new kernels tweaking them
+seeing how they operate with different
+CPU governors different IO schedulers
+different priorities for different
+things and you might say this kernel is
+better than the stock kernel now as I've
+said before a lot of this information is
+anecdotal people say oh I got more
+battery life I got better performance
+and they probably did but remember that
+companies like Samsung and Google and LG
+and Sony are spending millions and
+millions of dollars developing
+smartphones and if they could get better
+battery life or better performance just
+by tweaking a little thing in software
+you can guarantee they certainly would
+of course you can get better performance
+but you get less battery life you can
+get better battery life but it means you
+have to run your processor at a slower
+speed and of course the OEM Samsung
+Google LG and so on are trying to find
+that happy medium where you get good
+battery life and yet good performance
+and so as a summary the kernel is really
+the lowest level of any operating system
+it is responsible for the CPU resources
+the memory resources for the file system
+for the drivers for the networking it
+really is the lowest piece of software
+that comes just above the hardware now
+Android uses the Linux kernel which is
+an open-source kernel and with itself is
+open source and all of this software can
+be downloaded and you can build custom
+roms and separately or together a custom
+kernel now the kernel can tweak
+different parameters about how
+the scheduling occurs how the IAO
+scheduling occurs how the cpu is
+controlled and those things can be
+tweaked and put into a custom kernel you
+can download that custom kernel onto
+your phone as long as you have root
+access and as long as you have your
+bootloader unlocked however how much you
+benefit you get out of that custom
+kernel will depend on your usage
+patterns my name's Gary Sims from
+Android and I hope you enjoyed this
+video if you did please do give it a
+thumbs up also please use this link here
+to connect with me over at the Android
+Authority forums if you want to talk
+about kernel technology then please come
+over and let's have a chat I'm probably
+not going to tell you about how to flash
+a particular kernel onto a particular
+handset but if you're interested in the
+kernel in general and the technologies
+around kernels and come over and let's
+have a little chat together also please
+don't forget to subscribe to and rathore
+ities youtube channel you can follow me
+on twitter but most importantly stay
+tuned to andrew authority comm because
+we are your source for all things
+Android
+you</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

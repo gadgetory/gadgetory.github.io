@@ -1,0 +1,219 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>What is CPU frequency scaling? | Gadgetory - Your Gadget Factory</title><meta content="What is CPU frequency scaling? - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Android-Authority/">Android Authority</a></li><li class="active">What is CPU frequency scaling?</li></ol></div><h2 class="post__title"><b>What is CPU frequency scaling?</b></h2><h5 class="post__date">2016-02-12</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/THbnQcv66bo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hello there my name's Gary Sims from
+Android authority now maybe you've heard
+the term CPU scaling or maybe CPU
+frequency scaling or even dynamic
+voltage and frequency scaling and you've
+wondered what they mean well today I'm
+going to try and explain so if you're
+ready let's go one of the key
+characteristics of mobile computing and
+maybe the most obvious characteristic is
+that all of our smartphones and tablets
+and laptops run from a battery desktops
+and servers run from the mains and
+therefore they don't have power worries
+they can just draw as much power as they
+need but smartphones in particular have
+a battery and the more power they draw
+the quicker that battery will drain now
+it turns out there's a direct
+correlation between the frequency the
+clock frequency of a CPU one gigahertz
+1.5 gigahertz 2 gigahertz and the amount
+of power that it needs that's because
+there are all these transistors inside
+of the chip and every time they have to
+switch that uses air power and therefore
+if you switch them less frequency then
+there's less power used you could think
+about it maybe like the Reds of the
+engine in your car the more you rev your
+engine the more petrol the more gas will
+be used now when you're using your smart
+phone maybe you're reading a web page
+for example while you're actually
+reading the text as phone is doing very
+very little so it doesn't need to be
+running at 2 gigahertz just to keep
+displaying that webpage to you so
+actually there's a system that's inside
+the limits kernel and inside Android
+that allows the frequency to be scaled
+to be changed automatically when the CPU
+isn't very busy and so this is called
+CPU scaling and when the CPU seated for
+nothing to do it's in the idle mode then
+it works that it needs to slow down the
+CPU fat there's also a stake where you
+can switch off a core or switch off a
+couple of calls but that's a different
+subject than today now of course once
+you then start to use your web
+application again we started playing
+game or you have to do something else
+then of course the CPU frequency needs
+to go back up again so this scaling
+works in both directions
+and it actually also turns out that when
+you're running the CPU at a lower clock
+frequency you actually don't need as
+many volts to power that chip so you can
+actually
+or to the vault at the same time in
+tandem with the clock frequency and
+that's where we get the term dynamic
+voltage and frequency scaling devfs
+because both the vault and the clock
+frequency are changed at the same time
+now controlling this is a thing called
+the governor the CPU scaling governor
+and on Android it's set in the mode
+interactive and it's the interactive
+mode because it has a little trick
+inside of it and that as soon as you
+touch the screen then the CPU is wrapped
+up instantly to give the user that fast
+feedback to a UI interaction now if you
+want to see the CPU frequency scaling in
+action you can download an app like
+cpu-z CPU Z depending on how you
+pronounce it now inside that there's
+information about your make of your CPU
+and the model number the number of cores
+and there's also a section which talks
+about the clock frequencies and the way
+the clock frequencies change inside the
+app are actually dynamic you can see
+maybe some of them are stopped some of
+them are running at 300 megahertz and
+then if you do something like scroll the
+app up and down you'll see that it jumps
+up to a higher frequency in fact if you
+see running at a low frequency let's say
+300 megahertz if you just touch the
+screen you'll see it quickly jump up
+because this is the interactive governor
+working in anticipation of some UI
+interaction with the user now it's also
+possible to change the governor on an
+android but to do that you need to have
+a rooted phone there are several apps in
+the App Store that allow you to change
+it and there are some stories that if
+you change it you get better performance
+and maybe different battery life and so
+on and some of it's true and some of
+it's also a load of Miss information you
+have to remember this one thing that
+smartphone manufacturers spend millions
+and millions of dollars designing and
+building and selling these smartphones
+and you would think that if they knew
+there was a better governor out there
+they would change it to give to use that
+new governor in fact the interactive
+governor is the best governor for
+Android otherwise as I said they would
+all be changing to the other one or even
+writing their own which has been known
+in the past but that's a whole another
+story not for now now if you're a
+developer I just wanted to point out
+that this change from a low-frequency
+state to a high-frequency state can take
+around 20 milliseconds so if you're
+doing some system profiling and you see
+that you have a
+dropped frame may be the beginning of a
+particular segment in your program that
+is probably likely due to the fact that
+the CPU has to ramp up from a low
+frequency state to pay high frequency
+state so there's nothing much you can
+really do about it but now you know why
+it's happening now of course there is
+more going on inside your CPU than just
+DV FS one of the big changes that we've
+seen last year that will continue this
+year in many many phones is the use of
+heterogeneous multi-processing or big
+dot little from arm and that's what we
+find these octa-core phones where you
+have maybe four cortex a 72 cores and
+four cortex a53 cores and what happens
+is when the phone gets busy it switches
+from using the lower performance a53
+calls but they have a higher energy
+efficiency and it starts using the more
+power-hungry but faster cortex a 72
+cause now if the dynamic voltage and
+frequency scaling is like revving the
+engine in your car then this is like
+changing gear you change from one to the
+other and the original implementations
+are big got little the software
+component or big got little use the
+devfs system to switch from one quarter
+other when it got to a certain limit it
+would say well this core can't cope this
+anymore let's switch over to a higher
+power corner that's still actually one
+of the basic principles but now the
+whole thing is actually a lot more
+complicated because the scheduler takes
+into account not only what's going on
+but it take into account maybe the
+temperature of this of the CPU so it
+knows whether it can reach a certain
+level or not because otherwise there's
+overheating and armor actually working
+on an energy aware scheduler for Linux
+for Android which will actually mean
+that maybe rather than putting on a non
+active core which maybe would be the
+best choice in terms of performance it
+might actually put a task on to an
+already running core because actually
+that's more energy efficient because
+it's an energy aware scheduler rather
+than starting up a whole new core and
+ramping it up and start using energy for
+that but that's coming out in this year
+2016 and we'll start seeing that in
+phones maybe towards the end of the year
+that isn't there yet so as you can see
+there's lots going on inside of the
+processor to make sure it uses the
+optimum out of battery the option amount
+of power but yet delivers you the best
+level of performance my name is Gary
+Sims from Andrew authority
+I hope you really enjoyed this video if
+you did please don't forget to give it a
+thumbs up also ever get to use the
+comments blow to tell me what you think
+about devfs what you think about edge to
+Dias multi-processing what you think
+about big dot little what you think
+about energyaware scheduling what you
+think about any of the technologies are
+being used inside of your processor in
+your smartphone to make sure that gives
+you the best performance yet with the
+best battery life also don't forget to
+subscribe to and Reuters youtube channel
+also you can follow me on social media
+and ask for me I'll see you in my next
+video</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

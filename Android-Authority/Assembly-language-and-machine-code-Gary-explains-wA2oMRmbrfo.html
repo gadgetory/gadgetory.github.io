@@ -1,0 +1,238 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Assembly language and machine code - Gary explains! | Gadgetory - Your Gadget Factory</title><meta content="Assembly language and machine code - Gary explains! - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Android-Authority/">Android Authority</a></li><li class="active">Assembly language and machine code - Gary explains!</li></ol></div><h2 class="post__title"><b>Assembly language and machine code - Gary explains!</b></h2><h5 class="post__date">2016-03-17</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/wA2oMRmbrfo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hello there my name's Gary Sims from
+Android Authority now if you hang around
+with nerds with technical people long
+enough maybe they'll use vocabulary that
+you're not familiar with they might use
+words like machine code or assembly
+language when they use it you kind of
+just smile sweetly and let the
+conversation carry on because you don't
+really know what they're talking about
+well today I want to explain to you what
+is machine code on what is assembly
+language now we're all used to running
+multiple programs on our mobile devices
+whether they're laptops tablets or
+smartphones we ran a program we started
+up we use it we closed it we start
+another one where there's a word
+processing suite an email client a game
+a graphics program we're very used to
+going into a program exiting it and then
+going into another one but it wasn't
+always like that at the beginning of the
+history of computing the initial
+computers were hardwired they could only
+perform one task the circuit that was
+built into them that was the task that
+they performed of course it became
+obvious very quickly that we need a
+universal computer one that can perform
+any task so it's programmed to do now
+there are two key characters in the
+history of the development of these
+stored-program one is Alan Turing and
+the other is John von Neumann now Alan
+Turing is famous for breaking the Enigma
+code during the Second World War but he
+also did a lot of other things related
+to computer science and particularly he
+came up the idea of a thing called the
+Turing machine now he proved with the
+Turing machine you could execute any
+computable algorithm I were boy the
+details of how he talked about it but
+basically had the idea of some symbols
+that could be read and other symbols
+could be written to a tape because that
+was the technology of the time now this
+idea was picked up and taken further by
+John von Neumann and von Neumann
+proposed the idea of a CPU a central
+processing unit with some memory random
+access memory and that the CPU executed
+instructions and then could alter the
+random access memory in fact the
+majority of computers that we use today
+use what we call the von Neumann
+architecture what does all this have to
+do with machine code and assembly
+language well machine code is the name
+given for those instructions are
+executed by the central processing unit
+they're bad in fact just numbers they're
+a long number that tells the
+to do something for example under the
+ARM architecture the number 288 means
+move one inter-village to zero now a CPU
+has registers that kind little pots
+little holes you can put data in and you
+can do something with them quickly and
+then maybe put something else in there
+very temporary even the arm 64 chips for
+example only have 64 registers so they
+can't replace main memory not talking
+about gigabytes he'd you're talking
+about a few places to store temporary
+data man they're great when you want to
+perform maybe do something the string
+you can do things in little registers
+now each of these numbers 288 move one
+into register 0 each of these numbers
+mean something different now of course
+if you imagine writing that by hand
+trying to remember what 288 is what is
+329 though what is 54 do all these
+different numbers would be almost
+impossible so in fact there's another
+thing which is a slightly higher level
+more human-friendly version of machine
+code called assembly language and rather
+than just talking with raw numbers
+there's some opt codes some short codes
+that say I want to move something into a
+register that here's an example as you
+can see that tells us we want to move
+one into register 0 now assembly
+language when you start writing it it's
+in a text file it has to be converted
+into the machine code by a thing called
+an assembler so an assembler takes this
+very low-level code and turned it into
+machine code which the CPU knows how to
+execute so here's another snippet of
+assembly language so you can kind of get
+an idea of what it looks like now what
+this one does is it takes the number 15
+and puts it into register 3 and then
+stores it somewhere on the stack now I'm
+not gonna getting to stack now but base
+is a part of memory and it says here
+that this number is stored 8 bytes down
+the stack it then takes a number 25 and
+sticks it into r3 and then says let's
+store that at the 12th position on the
+stack and then finally it adds those two
+numbers together and store the result
+again in r3
+now in a higher-level language like C or
+Java
+you would probably do this in just three
+lines I is equal to 15 J is equal to 25
+I is equal to I plus J so as you can see
+using a higher-level language is easier
+to three lines of code rather than eight
+now imagine if you had to write a game
+like clash Royale or Riptide GP using
+just assembly language now it would be
+possible and in fact in the days of the
+home micro revolution the BBC micro is a
+tech spectrum the Commodore 64 that's
+what game programmers did they wrote it
+all in assembly language quite an
+amazing feat if you think about it but
+today we would use a compiled in our
+compiler takes a high-level language
+like C and converts it directly into the
+machine code so the C compiler looks at
+what you want to do normal to set this
+variable I want to add these two numbers
+and it works out what it needs to do in
+the assembly language and then in the
+machine code to actually get that to
+happen now there are other programming
+languages in Java for example which is
+the main programming language for
+Android apps what actually happens you
+use a compiler that converts the Java
+code into Java byte code
+kind of like a type of machine code bits
+for a virtual machine not for a real
+physical processor but for one a virtual
+one that exists on the Android phone it
+runs through a thing called a virtual
+machine which interprets those byte
+codes those machine instructions and
+turns them into real instructions for
+the ARM processor or for an Intel
+processor or for a mixed process and the
+idea of course is that therefore you can
+write apps and you can actually have
+them on any architecture that you want
+because it's the virtual machine that
+running them and then there's one little
+step you have to write when you
+implement Android to make it work on
+that particular processor cause at the
+moment the ARM processor is the most
+dominant one so you've got a compiler
+that converts it into a bytecode and a
+virtual machine that runs it on the
+Android phone now if you want real high
+performance then you really should be
+writing your game let's say or your
+mathematical modeling program or
+whatever is you want to do in C or even
+in assembler language and that's
+possible there's a thing called in
+native development kit the NDK which you
+can get from Google it allows you to
+write C and assembly language directly
+on your Android phone and that bypasses
+that
+a virtual machine and using compilers
+and assemblers to create that code but
+let me warn you nerds only need apply so
+let's do a quick sum up here so that you
+can really get the essence of what's
+going on here
+old days computers fixed didn't have to
+couldn't do multiple tasks weren't
+universal go do one thing invented the
+idea cheering and von Neumann ad the
+idea of universal computers that could
+have memory and a CPU and they can
+execute instructions and those
+instructions are called machine code for
+us humans to create that machine code
+there's a slightly higher level a
+readable form called assembly language
+which converts directly into machine
+code and then above that you get
+languages like C and Java and other
+languages that exist that can compile to
+machine code to run on a processor I
+hope you got all that my name's Gary sim
+from Andrew authority and I hope you
+enjoyed this video if you did please do
+give it a thumbs up also please use the
+comments below to tell me whether you've
+written any machine code have you
+written any assembly language do you
+like writing in high-level languages do
+tell us about your experiences with
+these low-level things on your Android
+phone also don't forget to subscribe to
+and royalties YouTube channel you can
+follow me on Twitter and if you use this
+link here you can find me on the and
+Roth or 'ti forums there's a place on
+the forums where you can ask me any
+question ask me that machine code ask me
+about assembler and if I can help you
+I'll get back to you and also don't
+forget to stay tuned to an authority
+comm because we are your source for all
+things Android</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

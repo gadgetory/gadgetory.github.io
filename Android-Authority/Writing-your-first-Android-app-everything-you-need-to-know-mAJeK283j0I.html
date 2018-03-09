@@ -1,0 +1,414 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Writing your first Android app – everything you need to know | Gadgetory - Your Gadget Factory</title><meta content="Writing your first Android app – everything you need to know - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Android-Authority/">Android Authority</a></li><li class="active">Writing your first Android app – everything you need to know</li></ol></div><h2 class="post__title"><b>Writing your first Android app – everything you need to know</b></h2><h5 class="post__date">2015-06-30</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/mAJeK283j0I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hello everybody my name is Gary Sims
+from Android authority now there are
+many reasons to want to write an Android
+app maybe you've got a great idea when
+you want to approach type it on Android
+maybe you know about PC programming you
+want to move over to mobile maybe it's
+part of a college or university course
+whatever the reason is writing Android
+apps can be fun and rewarding and today
+I'm going to show you how to write your
+first Android app okay before we begin
+we need to mention a couple of things
+first of all you really need to know a
+little bit about the Java programming
+language to get you through this
+particular tutorial now I've already
+done a video on Java basics you can find
+that video on the Android - YouTube
+channel you can also find the
+accompanying article on the Android or
+thority website I do recommend that you
+go and read that now when I made that
+tutorial some people left in their
+comments that they thought I was going
+too fast through the material so for
+this video I'm going to say two things
+first of all I'm going to repeat certain
+elements a couple of times just to make
+sure that you've got them when they're
+particularly important and secondly
+please do use the pause button and go
+back and watch things again if you
+didn't quite get it on the first time
+around okay so let's start okay so to
+write an app you're going to need a
+downloading installed Android studio
+that's provided by Google and if you
+can't find it you'll find the link to it
+in the written companion to this video
+on the Android authority website now
+included in the download is the software
+development kit for Android that all the
+bits and pieces you need to develop an
+app as well as the Android emulator so
+that you can initially test your app on
+a PC without needing to install it on a
+real device however before you install
+Android studio you're going to need to
+install the Java development kit from
+Oracle go over to the written companion
+and you'll find the links to tell you
+where to download the JDK now you need
+to make sure you download the right
+version I have a 32-bit or 64-bit check
+which version of Windows are running and
+download the right one because if you
+don't you're going to have trouble
+running Android studio install that and
+then you can install Android studio
+during the install you'll need to
+configure how much memory to reserve
+for the Android emulator now the
+emulator runs Android in a kind of
+virtual machine as an Android phone with
+an Intel processor this is faster than
+emulating an ARM processor on your PC
+however to do this the virtual machine
+needs to allocate some memory the
+installation program will recommend how
+much memory to reserve and it's probably
+best to accept the default however be
+aware that the combination of Android
+studio Java and the emulator all running
+together can be quite memory hungry and
+your PC will slow to a crawl unless you
+have lots of RAM google says you need
+two gigabytes of RAM as a minimum and
+that four gigabytes of RAM is
+recommended however my main PC has 8
+gigabytes of RAM and sometimes it still
+struggles when you first run Android
+studio it will perform some
+initialization including downloading
+installing the latest Android SDK this
+can take several minutes so you will
+need to be a bit patient when it finally
+does all start up you'll be presented
+with a nice menu that allows you to
+start a new project open existing
+project import a project and so on and
+as you might expect you to click on
+start a new Android studio project you
+will then need to enter in a name for
+your app in the application name field I
+will suggest something like my first app
+and in the company domain field you need
+to enter the domain name of your company
+if you're an independent developer or
+hobbyist enter your own domain name if
+you're just experimenting with Android
+and won't be publishing your apps to
+Google Play anytime soon then just leave
+the domain as it is maybe you could just
+change the word user to your own name on
+the next dialog make sure the phone and
+tablet is selected and that the minimum
+SDK is set to API 15 Android 4.0.3 make
+sure that where and TV are not ticked on
+the add an activity to mobile dialog use
+the default blank activity and then
+click Next again on the customize the
+activity dialog just use the default
+values and click finish the integrated
+development environment IDE will now
+start this can take several minutes
+especially if it's the first
+we've created a project when the IDE
+appears if you see the error message
+rendering problems rendering failed with
+a known bug then just click the rebuild
+link as indicated next to the error the
+default workspace for the IDE is split
+into three parts excluding the toolbars
+on the upper left is a project tree to
+its right is the code editor and
+designer and beneath them both is where
+you'll see the various messages from the
+compiler and so on at this point you can
+actually compile and run the auto
+generated code however it's not very
+interesting so what we're going to do is
+we're going to add a few things not very
+much but just enough to give you a taste
+of Android app development the project
+tree holds the different files and
+resources that you need to build your
+Android app under the app node in the
+project tree you will see several other
+nodes like folders subfolders which you
+can expand the top-level nodes are
+manifests Java and res and res stands
+for resources under manifests you'll
+find the file Android manifest or XML
+every application must have one of these
+files it's an XML file with information
+about the app including its name one of
+the most common things that you'll add
+to this file is the list of permissions
+needed by your app for this simple test
+we won't need to change anything here
+under the Java folder you'll find the
+Java code for your app in fact you'll
+find it under a subfolder some called
+something like condor example dot user
+dot my first app or whatever is the
+domain name that you entered earlier on
+when we started the project under that
+folder you'll find a file called main
+activity Java this is the entry point
+for your app and for our example app
+this is the only Java file we're going
+to need but we are going to need to add
+some Java into this file so just again
+so you got that the under the Java
+folder you're going to find a subfolder
+with a domain name of your company with
+the app name appended to it and under
+that you're going to find
+mainactivity.java and that's the main
+entry point
+very simple out under the resources
+folder the res folder you're going to
+find lots of other subfolders now this
+is where the different resources for the
+project are kept that means graphics
+string values menus and most importantly
+where the definition for the user
+interface is stored now the two that are
+of interest to us for this example app
+are layout and values under layout
+you'll find a file called activity
+underbar main.xml it is an XML file that
+describes the user interface there are
+two ways to edit this file the first is
+to edit the XML code directly and the
+second is to use the built-in UI
+designer so under res layout you'll find
+a file called activity main.xml and this
+is the file that describes the user
+interface for your Android app now once
+you become proficient and an expert
+Android app development you may find
+yourself often editing the XML file
+directly but thankfully Android studio
+has a built-in UI designer and as you
+change elements on the UI using the
+designer it automatically creates the
+corresponding XML file and that's what
+we're going to do in our sample app in a
+few moments the values folder contains
+several different XML files and the most
+important one for this example app is
+strings dot XML rather than hard coding
+string valued into the Java code values
+are placed into strings dot XML and then
+they are referenced using an ID now the
+advantage of this system if a string
+needs to be changed in multiple places
+all you have to do is change it once in
+strings dot XML and it will be changed
+throughout all of the code it also makes
+supporting multiple languages in the app
+that whole much easier so just to repeat
+that strings dot XML is where the string
+values are stored and in the Java code
+and in the XML file for the layout you
+just reference the string using the ID
+and we'll see about that
+in a few minutes
+so just to sum up then to create this
+sample app that we're going to do today
+you need to modify mainactivity.java to
+add some Java code we're going to need
+to modify activity underbar main dot xml
+because we're going to change the UI and
+we're going to need to modify strings or
+xml because we want to add some
+hard-coded strings like ok or tap me
+into that file so let's start by
+altering the text of the label and
+changing its alignment first find the
+activity underbar main dot xml file in
+the project tree and double click
+remember the activity main.xml is the
+file which holds the user interface
+definition at the bottom of the code
+window there are two tabs design and
+text make sure you are using the design
+tab now click on the text hello world
+that is shown on the rendering of the
+phone if it's too small user zoom
+buttons the plus sign the magnifying
+glass to enlarge the rendering of the
+phone in the property windows just to
+the right of the phone image scroll down
+until you find layout : Center in parent
+click the space next to it and select
+horizontal the hello world text will now
+jump to the horizontal Center now to
+change the text the string hello world
+is held in that file we mentioned
+earlier strings dot XML under resources
+values if you double click on the file
+you'll see a few lines of XML that
+define a few strings used by the app
+find the still line that says string
+equal to hello world in angle brackets
+then hello world and then the closing
+string tab and change the hello world
+exclamation point to tap me if you dare
+now to add the button back on the design
+tab of activity underbar main door XML
+fine and click on the button in the
+pallet list on the left hand side of the
+phone rendering now click somewhere
+beneath the text tap me if you dare on
+the phone image
+so it's somewhere in the middle now
+double-click on the button so that you
+can change the text the quick and dirty
+way is just to change the text and leave
+it hard-coded in the Java file however
+since we've already been used to using
+strings dot XML it's best that we carry
+on using it at the end of the text field
+is a button with three dots click on it
+in the resources window that appears
+click on new resource and then new
+string value in the resource name enter
+tap me and in the resource value enter
+tap me exclamation point now click OK
+and you'll notice that the button now
+says tap me the final step is to add
+some Java code which reacts to the
+button being tapped one of the UI
+elements of Android is called a toast a
+toast provides simple feedback in a
+small pop-up that appears for a few
+moments and then disappears you've
+definitely seen it when you've been
+using Android for example in Gmail
+navigating away from an email before you
+send it triggers a message saved as a
+draft toast toast appear automatically
+and then disappear after a predefined
+timeout for our sample app we will need
+to display a toast
+every time the button is tapped the
+first step is to add some Java code find
+mainactivity.java and add the following
+code beneath on create the word view as
+in view v will likely be in red with a
+message bubble displayed near it this is
+Android studio telling you have used a
+new construct view without importing it
+in the import section of the top of the
+Java code this is actually very easy to
+fix click on the word view and press alt
+enter Android studio will fix it for you
+if the word toast is in red then do
+exactly the same thing click on the word
+toast and then press alt enter now back
+in the designer for activity under bar
+main door XML click on the button and
+scroll down through the property list
+until you find on click
+click on the combo box to the right of
+it and it will see a list of functions
+click on on button tap that's the
+function we just added to the Java code
+so now the on button tap function will
+be called whenever the button is tapped
+when it is called it creates a toast
+called my toast that will display the
+message ouch
+to show the toast we just call my toast
+dot show and that's it in terms of
+writing the app now it's time to test it
+in the emulator under the Tools menu
+navigate to Android AVD manager this
+tool shows you the current list of
+configured Android virtual devices you
+will have one device configured by
+default
+probably a nexus 5 click on the play
+icon the triangle under the actions
+column and this will start the emulator
+now depending on the performance of your
+PC and how much RAM you have the
+emulator can take several minutes to
+start up once the emulator is up and
+running go to tools and click run app
+this will compile your app and send it
+to the emulator during this process
+Android studio will ask you which
+emulator to use you will see your
+emulator in the list it should be the
+default option so just click OK the app
+will appear in the emulator eventually
+you can now click the tap me button and
+watch for the toast to appear towards
+the bottom of the emulated device
+congratulations it's actually possible
+to run your app on a real Android device
+and the easiest way to do that is to
+enable USB debugging on your phone and
+connect it to your PC the USB debugging
+option can be found under settings
+developers if you don't have a
+developers option in your settings menu
+then go to settings about and tap the
+build number 7 times with the device
+connected click on run out under the
+Tools menu but this time don't send the
+app to a virtual device send it to a
+real device if your device isn't listed
+either means that you haven't enabled
+USB debugging or you need to install the
+appropriate USB development drivers for
+your device Google has some
+documentation on this and you'll find
+links to it in the written companion
+well obviously this is just the
+beginning but you have today written
+yourself your first Android app with a
+little bit of user interaction and what
+you should now do is write your second
+app and then your third app keep adding
+to it keep learning Google has lots of
+lots of training material there's lots
+of documentation there's lots of sample
+code but the thing to remember is just
+keep having fun keep experimenting and
+keep having fun you'll find it very
+rewarding now do keep coming back to and
+royal throaty calm because we're going
+to keep posting developer related
+content for you new tutorials new things
+in the future so do keep tuning in you
+should probably also sign up to the
+android authority weekly developer
+newsletter you'll find that dev weekly
+Android or thority com if you enjoyed
+the video please give it a thumbs up
+also don't forget to subscribe to our
+Android Authority youtube channel if
+you've got any questions please use the
+comments below and we'll see if we can
+help you if you had any problems
+developing this first app and as for me
+I'll see you in my next video</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

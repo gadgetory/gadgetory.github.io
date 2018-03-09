@@ -1,6 +1,13 @@
 [id^="amzn-native-ad-"] {
   margin: 0 auto;
 }
+.amzn-native-header-text {
+  color: #ddd;
+}
+
+.bottom-ad {
+  margin-top: 20px;
+}
 
 .breadcrumb {
   background-color: transparent;

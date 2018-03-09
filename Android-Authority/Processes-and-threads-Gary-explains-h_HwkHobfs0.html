@@ -1,0 +1,224 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Processes and threads - Gary explains | Gadgetory - Your Gadget Factory</title><meta content="Processes and threads - Gary explains - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Android-Authority/">Android Authority</a></li><li class="active">Processes and threads - Gary explains</li></ol></div><h2 class="post__title"><b>Processes and threads - Gary explains</b></h2><h5 class="post__date">2016-04-12</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/h_HwkHobfs0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hello my name is Gary sim from handle
+authority now I'm fairly sure that you
+know that your smartphone can run more
+than one program at a time even when
+you're running just a game or something
+you've got an app in the foreground you
+realize there are things going on in the
+background you get notifications you've
+got an email
+someone's mentioned you on Twitter and
+app is being updated all these things
+are happening while you're using the app
+in the foreground so therefore your
+smartphone is actually running multiple
+programs now if you've ever wondered how
+that works and please let me explain so
+first of all bit of background
+information inside your smartphone there
+are three very important components when
+it comes to running apps but of course
+it's the CPU the other is the round the
+random access memory and the other is
+the memory controller which is the
+interface between the CPU and the RAM
+now when you have a simple computer
+let's say a microcontroller used to
+display numbers on your microwave oven
+life is really simple there's one
+program to run all of the CPU time is
+given over to that program and all the
+RAM is given over to that program really
+easy but when you want to run two
+programs or ten programs things now
+become more complicated because the
+memory and the CPU time need to be
+divided up amongst those programs so how
+does the Linux kernel do that well this
+is where we get the idea of a process
+it's a logical container which holds all
+the information about each of the apps
+that are running on your smartphone so
+in there will be the name of the app
+it's binary where it can be found it's
+priority each one has its own unique IDs
+called the P the process ID there is the
+list of its memory where is it available
+in memory and it has a state is it
+running is it sleeping as it stopped
+is it zone beat now but once the kernel
+has all this information about all the
+apps that need to run it can start to
+schedule different resources for each of
+those apps so when an app is sleeping
+it doesn't need any cpu time we can just
+leave it alone but when an app wants to
+run the kernel says ok you can now have
+a slice of CPU time and then another app
+says hey I want a slice of CPU time so
+the colors
+well you can have a slice of cpu time
+now this is all happening at the
+millisecond level and like a cartoon
+which shows one frame after the other
+frame very quickly and gives us the idea
+of animation running little bits of each
+program very quickly gives us the
+appearance that's actually running
+things in parallel now of course a day
+we actually use CPUs with multiple cores
+four cores or eight cores
+so the CPU actually can run things in
+parallel but the good news is the
+concept of a process and the fact that
+it needs memory the faculty needs CPU
+time remains exactly the same but now
+the kernel has more CPU resources to
+give to each of those processes now
+normally when a process is created there
+is a single thread of execution through
+that program every process has a life
+cycle is a beginning
+it runs goes through the middle of it
+runs around and whatever it needs to do
+and then finally there's an end where it
+exits and goes away now if you have a
+game for example that you're writing and
+you're displaying lots of things on the
+display but at the same time you want to
+send information up to the internet
+about the position of your character the
+state of the character it may be a
+massive online playing game then now
+that app needs to do two things at once
+now there are ways of programming that
+where you can do two things at once but
+there's also a system provided by the
+kernel that allows each app to have
+multiple ways of execution through the
+program so while one path through the
+program is updating the game another
+path through the program is sending the
+network information up and that's called
+a thread multiple threads of execution
+now if you've been understood what I've
+said you may come and say to me but hold
+on Gary what happens if the same two
+threads come to execute the same bit of
+code and you would be right
+that would be disastrous because one
+throughputs let's say the number 10 into
+a particular variable the other 3 puts
+zero in there when the first thread
+comes back there again it was expecting
+a 10 but now it's a zero
+and always goes wrong there's just
+absolute chaos so to get round this
+there's the idea of locking that means
+that when a particular piece of code it
+is important it can be locked and there
+are a whole variety of different locks
+that are available and the way they work
+is different but the basic idea is this
+thread one comes into an area that is
+sensitive it will lock that area and say
+no one else can come in here it will do
+its work and while if that's happening
+thread number two comes along it will
+wait until threat number one has
+finished and then exits out the other
+end but of course then if that's not
+done right then the whole idea of
+multi-threading just disappears because
+rather than having multiple threads all
+running in parallel in your program what
+actually happens if they all end up
+queuing up one behind the other because
+they're all waiting for this important
+section so actually getting your locking
+right in a thread is very important and
+there are other problems for example
+what happens if a thread leaves that
+section under an error condition and
+because of a bug in the program it
+forgets to unlock the code then now it
+will wait forever because the code
+remains locked there are also other
+problems one if you've got two threads
+thread number one enters into a section
+of code that's locked and it then starts
+waiting for something from thread number
+two straight number two comes into a
+program area it locks it but it can't
+proceed until it's able to go into the
+code that is currently occupied by
+thread number one or thread number one
+is now waiting for threat number two and
+thread number two is now waiting for
+thread number one and we get deadlock so
+although these operating systems Linux
+and so on
+give us multi-threading that give us
+multi processes actually from a
+programmers point of view it's important
+to get them right because if you get
+them wrong your app actually won't
+behave any better in fact it will behave
+much worse so let me give you a brief
+summary because a Linux kernel Android
+can run multiple apps the Linux kernel
+needs to have a logical container that
+tells it which app terrain that's called
+a process and the presence has an ID has
+a priority it has some memory space it
+has a status zone and the kernel uses
+that information to give slices of CPU
+time to every single app that wants to
+run and because it does is a millisecond
+level each app gets the appearance it's
+running similar
+seriously with all the other apps and
+even on multi-core machines that's
+exactly the same just now there are more
+calls that can execute each of the
+programs inside each process there can
+be multiple threads of execution so that
+each program can do multiple things at
+once update the internet while updating
+the game and to make sure there's no
+conflict of interest inside those
+threads is a thing called locking and
+locking allows the program of the app
+developer to ensure that data isn't
+modified by two threads simultaneously
+well my name's Gary Sims from Android or
+throaty and I hope you enjoyed this
+video if you did please do give it a
+thumbs up I really would recommend you
+go to the Android or 'ti forums there's
+a whole section there where you can
+connect with me you can talk about
+threads you can talk about kernels we
+could talk about processes I'm there if
+you want to talk to me about any of
+those also please don't forget to use
+the comments below to tell us what you
+think about multi-processing
+Linux threading have you ever done the
+app development using threads let me
+know in the comments below also don't
+forget to stay tuned to android
+authority because we are your source for
+all things Android</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

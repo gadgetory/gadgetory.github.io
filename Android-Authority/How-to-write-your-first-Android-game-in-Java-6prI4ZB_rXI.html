@@ -1,0 +1,279 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>How to write your first Android game in Java | Gadgetory - Your Gadget Factory</title><meta content="How to write your first Android game in Java - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Android-Authority/">Android Authority</a></li><li class="active">How to write your first Android game in Java</li></ol></div><h2 class="post__title"><b>How to write your first Android game in Java</b></h2><h5 class="post__date">2017-07-21</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/6prI4ZB_rXI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">if you want to create a game for
+Androids there's plenty of different
+ways you can go about it probably the
+most official way though is to build a
+game yourself from scratch using Java in
+Android studio I'm going to go over how
+to create a very basic engine or show a
+sprite that bounces around the screen
+and from there you can build on that
+create a game or any other project that
+you're interested in put on the kettle
+and let's give it a shot
+okay so I'm going to assume for now so
+you've got Android studio already
+installed so go ahead load that up and
+you're going to create a new project I
+come with mine a 2-d game you can call
+yours whatever you want but select an
+empty activity because you don't need
+all that extra flux the fabs button etc
+all that xui just gets in the way when
+you're playing game so once you're in
+we're going to make a few changes right
+away first you're going to change at
+contact activities to just activity now
+we're going to make the game fullscreen
+you might be used to working with apps
+that use an XML script to find the
+layout and position as of youth we're
+not using one of those so you're going
+to change the line that reads step
+content views to new game view rackets
+this okay so what this is referring to
+is a class that we're going to build
+ourselves because 2-d game development
+requires two things that you might not
+be familiar with yet that's a thread and
+a canvas so a thread is like a parallel
+fork in your program that can run at the
+same time this allows you to do multiple
+tasks at once without slowing things
+down and without having to queue things
+up sequentially so we can handle our
+game code and show our graphics whilst
+doing other stuff and with next slow
+down at the same time the canvas is
+going to be what we show our graphics on
+this is basically just much like a
+canvas in the real world this is the
+surface that we can draw on we can put
+bitmaps on we can draw rectangles all
+sorts of stuff so we're going to create
+a class for each of those and the thread
+is going to run the canvas therefore
+we're able to update the graphics
+without slowing anything down the
+surface holder the surface view is what
+will hold the canvas you can think about
+a little bit like an easel okay so with
+that in mind what we need to create the
+new classes we're going to start with
+the canvas or the surface view I'm going
+to call that game view ok so right click
+on the apps package name of the window
+on the left and then choose new class
+you're going to call this classic game
+view and where it says superclass enter
+Android views
+surfaceview this means you'll be
+inheriting the methods from the surface
+view in other words it means that our
+class will be able to do the same things
+it needs to be able to do in order to
+create a surface view surface view is
+the superclass where it says interfaces
+right Android you surface holder
+callback okay so you should have
+something that looks like this so every
+class has a constructor and this is what
+builds the object that the class is
+designed to build so this is the case it
+will build abuse by calling the super we
+are calling the super class which if you
+recall is surface view and callback
+allows us to intercept events we're then
+going to override some of the methods
+from that class this means that we're
+taking control of them and so it's up to
+us what happens when they're called
+we're going to leave those blank for now
+okay so leave that to one side to simmer
+for a moment now we're going to create
+our other class which is going to handle
+the thread so right click and make that
+new class just like last time this class
+is going to be called main thread and
+it's going to have the superclass that's
+correct so once again we need to build a
+constructor
+this one's just going to call super
+which in this case refers to thread so
+essentially this is like having a script
+to wash the dishes and then all it does
+is call dishwasher or a script to wash
+your clothes and all it does is called
+white but might be in trouble on the
+plus the next part is a little more
+complicated we're overriding a method
+called run and this is where our main
+game loop is going to go this loop
+repeats over and over and on each cycle
+little rocks of canvas call a methods to
+update the positions of the characters
+and elements and then call a method to
+draw the new image those methods are in
+game view we're going to be adding them
+in a moment
+we need to lock the canvas before we can
+draw on it because that prevents more
+than one threads from attempting to draw
+on it at the same time the sets running
+methods sets are running boolean which
+is a variable that can be either true or
+false and therefore tells the programmer
+things ready to go
+we'll be handling that later to the
+trying catch block is there to handle
+errors should they arise and Java
+requires a good deal it'll compile
+okay so that's good so far now the class
+creates the surface the canvas and we
+have a class that creates the threat
+only problem is that the spread is never
+started so currently the program doesn't
+do anything so we need to go back to
+game view class in order to kick things
+off we're going to create a new instance
+of the thread in our constructor
+remember a class builds an object so the
+line new main thread will build one new
+thread for us to run our game in we're
+going to add code to start the thread in
+surface created and then we're going to
+add codes to stop the thread in steps
+destroyed it can take multiple attempts
+to stop the thread so we're adding a
+loop with a try-catch block again and
+just to save us time later on I'm also
+adding an empty updates method which is
+where our calculations will go and I've
+overridden the draw method which is
+where we paint our graphics and now the
+exciting flight can actually run the
+game and still be built so either plug
+in your device or set up an emulator and
+either way click Play pretty exciting
+it's a blank screen but it's a black
+screen of possibilities ok so what we
+really want to do is obviously put some
+graphics into there so that's what's
+coming next
+fortunately that quite easy all we need
+to do is include some statements in the
+draw method in our gauges in order to
+draw onto the canvas this isn't the best
+way to do it though it's not very memory
+efficient to be creating new objects in
+here and it's also not very well
+organized so the much more effective way
+to do this would be to create separate
+classes to handle all the different
+objects in our game world and this is
+also much more organized so that when
+you've got the loads of things going on
+the screens you have to read through
+reams of code to see what's happening so
+that means great news we need another
+class ok so let's start with a class
+called character sprites and as you
+might have guessed I'm going to use that
+to show our character on the screen so
+create that new class and then add in
+this code so this class basically just
+shows a bitmap I'm going to pass that
+bitmap from game view so likewise need
+to add this code to your game view class
+I'm loading the bitmaps and resources
+and I'm using an old character sprite
+from one of my previous games this guy
+is called BB Isis drawing on all my text
+books at school you can of course use
+whatever image you'd like here or you
+happen to have lying around okay now hit
+play and you should have
+fit map on the screen a little bit more
+impressive most of the best games that
+have some form of movement and that's
+often what makes them most enjoyable
+thankfully this is quite easy to add as
+well we just need to put in our
+calculation into the update method so
+going to add an update method to attach
+the sprite class and this will be called
+from the update method in the game view
+class we're also swap out the fixed
+coordinates of our bitmap for variables
+and then we can simply increase Y over
+time to make our character moves down
+the screen remember x and y coordinates
+measured from the left and then from the
+top okay press the play and now your
+character walk slowly moves down the
+screen thrilling okay let's mix things
+up a bit I'm not going to go into detail
+but this code makes the sprite bounce
+around the corners of the screen like
+there's old windows screen savers that
+were oddly hypnotizing if you pause and
+read it free will grab it from the
+company article you'll see it's fairly
+logical you can understand what it all
+does without me having to go into great
+set
+click plays and now you should have a
+sprite that bounces around the corners
+of the screen to convey all sorts of
+things this way all you need to do is to
+put your calculations in the update
+method and your sprites and your other
+drawings in the draw method of course
+the moments isn't so much the game as it
+is just a sprite that moves around the
+screen so if you wanted to make it more
+of a game you probably want to involve
+player inputs of some sort and
+thankfully that's pretty easy to handle
+- all you need to do is over either
+method in the game view class called on
+touch event this allows you to grab the
+coordinates of where the user is
+touching the screen and from there you
+can do all sorts of things you could
+have one of your sprites move towards
+that point excited move away or if you
+check the theater user is touching
+specific graphical elements then trigger
+an event there you go you have the
+groundwork laid for a full game
+obviously is all still quite basic so if
+you check the article you'll see that
+I've delved a little bit to help to
+speed things up and optimize the process
+I show you how to add an FPS counter
+your game and how you can cap the
+performance at a certain speed so it
+found this interesting guys if you did
+please consider leaving a like it really
+helps us out you've got any questions
+in the comments down below and I'll try
+and answer them and like I said check
+out the link in the description if you
+want the full article and tutorial that
+includes all of the code and all the
+step-by-step instructions whilst you're
+there stick around for the news reviews
+and features because of course we are
+your source for all things Android</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

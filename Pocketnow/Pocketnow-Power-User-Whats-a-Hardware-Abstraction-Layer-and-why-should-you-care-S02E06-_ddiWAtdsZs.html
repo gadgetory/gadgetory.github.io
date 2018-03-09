@@ -1,0 +1,210 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Pocketnow Power User: What's a Hardware Abstraction Layer and why should you care (S02E06) | Gadgetory - Your Gadget Factory</title><meta content="Pocketnow Power User: What's a Hardware Abstraction Layer and why should you care (S02E06) - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Pocketnow/">Pocketnow</a></li><li class="active">Pocketnow Power User: What's a Hardware Abstraction Layer and why should you care (S02E06)</li></ol></div><h2 class="post__title"><b>Pocketnow Power User: What's a Hardware Abstraction Layer and why should you care (S02E06)</b></h2><h5 class="post__date">2014-07-11</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/_ddiWAtdsZs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">on the pocket now power users so far
+this season we've talked mainly about
+hardware today we're going to bridge the
+gap I'm Joe Levi with pocket now here's
+what you need to know about the hardware
+abstraction layer begin with this topic
+is well let's just call it very geeky
+it's an interesting concept to
+understand but it's a concept that's
+been deployed in various different ways
+and different methodologies across the
+various platforms from iOS to Android to
+Linux windows and as/400 computers not
+all of the terminology is a one-for-one
+match but the concepts are trying to get
+across today so if I say hardware
+abstraction layer versus kernel level
+versus device driver know that to a
+certain extent in this context those
+terms can be used interchangeably we'll
+do that a little today in the video so
+far we've talked primarily about
+hardware and that's great because
+hardware it's wide its varied there's a
+lot of it and even when we're talking
+about say an SOC there's a whole bunch
+of stuff to consider today we're going
+to talk not about software but the thing
+that's in between the hardware
+abstraction layer the API the drivers
+the kernel no no those are not all the
+same thing and I probably just made half
+of you I may be your brains explode by
+lumping them all together depending on
+the platform that you're using this
+hardware abstraction and we'll get to
+that definition in just a minute this
+hardware abstraction can happen at any
+one of those different locations or a
+few of them combined kind of confusing
+so let's get into it
+hardware is hardware it's physical
+components it's stuff that you can look
+at and see it's a chip it's an antenna
+it's a screen it's a digitizer it's
+tangible software on the other hand is
+the stuff that we use we write code and
+it makes stuff happen it has
+instructions that tell that display I
+want you to make
+button that says this and looks like
+this and put it right here when you push
+on it it does this when you unhook it it
+does that that's essentially a computer
+programming in a nutshell there's a lot
+more to it of course but that kind of
+gives you the gist of things let's step
+away from mobile technology just for a
+minute and go back to kind of the
+ancient days when we had das and we had
+mainframes and we had a s for hundreds
+if you wanted to write a program for
+those environments you could write the
+program but if you wanted it to do
+anything you pretty much had to write
+the driver interface yourself you want
+to be able to print you've got to write
+a lot of what that printer needs for
+your software to say here's this letter
+that I just wrote to mom and now I want
+to translate that from dots on a screen
+to dots on a printed page HP printers
+well you had to talk to one way and all
+of the other printers you had to talk to
+another way and NEC printers were a
+different way and every one was
+different it's kind of a pain because if
+you wanted to get a really good word
+processor the developers that were
+writing the code for that had to take a
+good portion of their time and not make
+a good word processor they had to write
+print drivers so that you could print
+the stuff out onto paper for thousands
+upon thousands of pieces of hardware
+doesn't sound very efficient right it
+wasn't moving forward to today even in
+computer technology we have this
+abstraction layer so when I want to
+print something I say file print there
+send it off it translates all of that
+stuff and puts it into the hardware into
+a head moving across a page putting dots
+down or putting toner down however it
+may be and you get a printed sheet of
+paper out the other side the driver
+there is written in this case by HP HP
+makes the driver for their printer so
+that the word processing person doesn't
+have to okay so let's come back over to
+mobile technology
+I'm gonna use Android as an example here
+primarily because it suits the the
+illustrative point but the same thing
+applies to Windows Phone simply comply
+some blackberry same thing applies to
+Apple the reason I'm using Android is
+there are a lot of people a lot of
+different manufacturers that make
+hardware for Android devices and Android
+is kind of the one unified operating
+system there's some differences in some
+nuances and whatnot but let's pretend
+for this example we have two different
+pieces of hardware made by two different
+companies let HTC and Samsung let's say
+both of them running stock Android not
+sense not touch with stock Android so
+the operating system is quote identical
+there are some nuances there but those
+usually come in drivers in that hardware
+abstraction in the kernel any one of
+those places can do certain types of
+hardware abstraction so now when I touch
+the screen whatever hardware it is that
+I have powering my screen capacitive
+Hardware if I've got super LCD or AMOLED
+or whatever kind of display I had to be
+able to see it all of that has to come
+through this translation layer
+essentially as a developer I can say I
+want a button to appear on the screen
+that's this big this color says this
+word and when I push on it it does this
+that's all I have to do from there the
+operating system says this is what a
+button should look like and it talks to
+the driver it talks to the screen and
+says here put these dots here in this
+configuration and listens for that touch
+pad that touch input to feel my finger
+press on that button and once that
+happens it does something else entirely
+and it goes on and does its own thing
+the developer who put that button on the
+screen doesn't have to know if your
+capacitive or resistive or super LCD or
+AMOLED it doesn't need to know any of
+that because all that has been
+removed to this separate layer an
+abstract layer where you just have to
+say give me a button that looks like
+this and when I press it make it do that
+beautiful now behind the scenes that
+button may be saying report my GPS
+location on the screen it's got all
+these different pieces of hardware
+behind that API that can find out where
+you are from your altimeter to your
+digital compass to Wi-Fi to help
+triangulate your location to its
+cellular to help you trying the other
+your location to to GPS whether that's a
+GPS or glass notes or anything else and
+who knows what else we're going to get
+in the future but all of those are made
+by different manufacturers so you need
+another layer to go out and get that
+information translate it back pass it
+back through the location API and back
+into the app that's a lot of stuff
+that's happening and if the person who
+said I want to know where you are had to
+write the code to do that for all those
+tougher pieces of hardware their
+software wouldn't be that great they're
+spending all of that time at doing all
+of this other work so that's really the
+purpose of that hardware abstraction
+layer again whether it's a hal proper or
+drivers or api's or even in the kernel
+or various combinations of all of them
+the hal is becoming a much more abstract
+concept it's becoming much more useful
+much more powerful and its really what
+enables us to bridge the gap from
+hardware and software and brings the
+whole thing together thank you very much
+for watching if you liked the video and
+think you learned something please give
+it a thumbs up and if you want to make
+sure you don't miss out on anything that
+we're going to do in the future hit that
+subscribe button down below
+for PocketNow sharing information about
+the how and how your device works a
+little bit of why it does what it does
+I'm Joe Levi I'll catch you next time</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>How to Root Your Galaxy Nexus Without Unlocking the Bootloader | Gadgetory - Your Gadget Factory</title><meta content="How to Root Your Galaxy Nexus Without Unlocking the Bootloader - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Pocketnow/">Pocketnow</a></li><li class="active">How to Root Your Galaxy Nexus Without Unlocking the Bootloader</li></ol></div><h2 class="post__title"><b>How to Root Your Galaxy Nexus Without Unlocking the Bootloader</b></h2><h5 class="post__date">2012-10-10</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/airLghjJlQo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">some of the cooler things that we talked
+about on pocket now at least Android
+related stuff requires that you have
+root permissions on your Android powered
+phone or tablet that's not terribly
+difficult but it does require that you
+unlock your bootloader or does it today
+I want to show you a way that you can
+root your galaxy nexus without unlocking
+your bootloader it's not for that faint
+of heart but hopefully it won't be too
+bad for you let's go take a look first
+of all let's throw out some credit this
+is based on an article that was posted
+on xda-developers by E Frant who gives
+credit to binary bi n for our why that's
+leaked for binary I think basically what
+they've done is they put together an ADB
+restore that kind of is an exploit and
+kind of does some cool stuff so what
+you're going to need of course is a
+computer because this involves a DB and
+some commands you're going to need your
+Galaxy Nexus you're going to need a USB
+cable micro USB plug into your computer
+you're going to need some patients
+you're going to need the Android SDK so
+yeah that's that's the main stuff let's
+get to it next thing you're going to do
+is download some files or one file on a
+zip from the XDA post i'll have a link
+to that over at pocketnow.com you're
+going to put that somewhere easily
+accessible then you're going to come
+over to your android-powered device your
+Galaxy Nexus in this case we're going to
+open up developer options that's in
+settings we're going to turn those on
+yes we know we want to do that and we
+are going to enable USB debugging just
+like that say yes again that's going to
+let us use adb that Android debugging
+bridge to do some of this stuff next
+we're going to push some files over step
+number four we want to get this fake
+backup started so we're going to paste
+that in again adb is our friend here
+we're going to run the restore command
+and pass to it the fake back up a B
+which is this file right here but we
+don't want to hit restore on our device
+we
+just want to enter this and then press
+the return key to make sure that's
+correct just enter the command in the
+command prompt on your PC press enter
+okay come and entered and enter there we
+go now I look down here on my Nexus
+you'll notice I've got this full restore
+prompt I do not want to hit restore my
+data at this point I want to leave it
+right here very important step so the
+next thing step 5 is we're going to run
+an adb shell command with a nice while
+loop inside it and that is going to look
+just like this now essentially what
+we're doing here is we're running the
+exploit while that's running it we want
+to hit restore on our device on our
+galaxy nexus so let's go ahead hit enter
+it's running now let's it restore
+restore is starting once it's finished
+which it looks like it is then I want to
+reboot my device so it's all done at
+that point I to do this I want to do an
+adb reboot so again i'm going to copy
+and i'm going to paste just to make this
+easy and once I've done that my device
+turns off it comes up you'll notice i do
+not have an unlock down here ok so it's
+still just regular bootloader locked all
+that fun stuff i still have some time to
+go so all kinds of fun once it's
+rebooted l by the way on when this
+reboots it's going to be running in in
+debug mode that are in emulator mode
+rather so it's going to be really laggy
+the screen is going to flicker don't
+worry about that that's normal we just
+want to get to adb shell once it's
+booted back up i have a black screen on
+my device i don't know if that's what
+I'm supposed to have or not but I'm
+going to go ahead and try and invoke
+this adb shell see what I get I do have
+access to the device even though i don't
+have anything on the screen in fact it's
+an octave thou'rt some people call that
+the hash key or the pound symbol it's
+the octa thorpe you can look it up now
+that's a good
+because once I've completed step 8 my
+prompt should be an octave Thorpe and
+not a dollar sign if it's a dollar sign
+it didn't work go back to step 4 try
+again okay now what we want to do is
+mount our system partition as read write
+and that again we're going to just copy
+and paste here we're going to mount
+desho space remount comma RW space dash
+T our type is going to be ext4 and this
+is what we're going to mount so we'll go
+ahead and enter on that we're all
+mounted next thing we're going to copy
+su over to our system folder just like
+that next we are going to change
+permissions on that 206 755 just like
+that we're up to step 12 if you're
+following along at this point we're
+going to set up a symbolic link to su or
+rather symbolically linked su 2 x bin
+slash su and that's not how you do it
+you right click and hit paste by the way
+guys ok so symbolically created next
+we're going to copy our super user APK
+over to our system folder so that's now
+done let's try and change mod this guy
+so that we can do what we need to with
+it this time that worked just fine next
+if you're following along we're on step
+15 we're going to delete the file that
+our exploit created which is a file
+called local dot prop in our data folder
+again copy and paste that from our
+article and there we go next up step 16
+we are going to exit this now you may
+need to exit twice sometimes you have to
+exit out of your super user and then
+exit back but in this case I just had to
+do just one so that's good step 16
+complete step 17 is we need to type the
+following it might not be necessary on
+the Galaxy Nexus but it is on other
+phones that use this so we're going to
+go ahead and
+anyway this is simply an adb shell to
+sink sink sink and there we go it has
+sunk sunk sunk next up we're going to
+reboot again and I hope this will take
+us out of emulator mode step 19 now says
+done you should now have root without
+having to unlock your bootloader if you
+want to unlock now you can without
+wiping anything so in this post again
+that will have linked pocketnow.com
+there is a link to a bootloader unlocker
+that you can use once you've gone
+through this whole exploit and
+essentially it's just going to unlock
+your phone without doing a wipe if you
+do the the regular OEM unlock that will
+unlock your bootloader but it it's also
+going to wipe everything you can relock
+it it's also going to wipe everything so
+if you don't want to do that then you
+can go ahead and install this and then
+go through all the process so all kinds
+of fun now if we didn't have root access
+after doing all of that we have another
+step we can do so let's go ahead and
+fire up our device here and see what we
+have shall we now probably the easiest
+way to see if we have root is to launch
+up an android terminal window so that's
+what I've done here you can download any
+one of dozens of terminal apps from the
+market or the the Play Store I'm an old
+school guy that way so now what you'll
+see is I'm at a dollar sign prompt and
+if you remember when we talked about
+that it doesn't mean much so how can we
+come over here and find out if we've got
+super user access we type in su and we
+hit enter it sits and thinks and then
+hey look at this we've got a super user
+request let's allow that and now if you
+notice we have an octa thorpe symbol so
+yes indeed we do have superuser we do
+have root access on our device so there
+we go we can now do all the cool stuff
+install all the cool apps without going
+through and OEM or unlocking the
+bootloader not really OEM unlocking but
+unlocking the bootloader that's that's
+what we've been able to do here
+big long a hairy Wow all kinds of
+craziness we didn't have to use step 10
+be in this process which changes the
+owner of super user luckily yay so if we
+did we'd have to go back and do steps 10
+through 19 again but that shows us we
+can do it we're done we can now enjoy
+root and super user and all kinds of
+stuff and we haven't had to wipe or
+unlock or anything like that whoo all
+right for the full instructions head
+over to pocketnow.com we're going to
+give you the the brief run down there
+we're also going to link over to the
+article at XDA developers com which is
+where we were copying and pasting
+everything from that's where the files
+are going to be for you to download and
+copy over onto the device using adb so
+you can run through the exploits and
+whatnot did you like what you see if so
+please give us a big thumbs up it's
+always kind of scary to go through and
+do all kinds of untested stuff at least
+untested by us on our devices but we do
+it so you don't have to be as scared or
+as worried about it if you like us doing
+that yeah big thumbs up right there for
+potentially breaking my device but I
+didn't yay if you have any questions or
+comments head over to pocketnow.com it
+and leave a comment for us the link to
+the article is going to be right down
+there if you're watching this on youtube
+of course if you're watching this video
+on pocket now you're probably already
+there so you can just leave a comment
+down below we like having all of the
+conversations over there so everybody's
+all in one place not scattered between
+pocketnow and YouTube and who knows
+where else you could be thanks very much
+for watching for pocket now I'm Joe Levi</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

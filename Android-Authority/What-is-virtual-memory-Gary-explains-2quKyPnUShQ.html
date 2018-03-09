@@ -1,0 +1,315 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>What is virtual memory? – Gary explains | Gadgetory - Your Gadget Factory</title><meta content="What is virtual memory? – Gary explains - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Android-Authority/">Android Authority</a></li><li class="active">What is virtual memory? – Gary explains</li></ol></div><h2 class="post__title"><b>What is virtual memory? – Gary explains</b></h2><h5 class="post__date">2017-02-13</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/2quKyPnUShQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hello my name is Gary Sims from Andrew
+authority it seemed today everything has
+the word virtual stuck in front of it we
+had virtual reality we have virtual
+currency we have virtual machines well
+before any of those existed we had
+virtual memory and if the technology
+that we use every day you'll find it in
+Windows in OS 10 in Linux in iOS and of
+course in Android so what is virtual
+memory and how does it work well let me
+explain
+so back in the day of 8-bit computers
+and today with microcontrollers any app
+that's running any program that's
+running on a CPU have access to the
+entire physical memory and it basically
+assumed it's the only program running on
+that CPU and so it's get right to a
+particular address that's a address
+495 that address is actually somewhere
+in physical RAM and it is address 495 is
+it right something there that's what
+goes it right to a different address it
+goes there and there's a one-to-one
+relationship between the addressing of
+the physical RAM and the addresses that
+the computer program use it now that's
+fine when you've only got one program
+running but when you've got two programs
+running things now become a bit more
+complicated first of all you have to
+decide where you're putting each program
+in memory
+secondly each program in memory has to
+be careful not to overwrite the data and
+the program used by the other task
+that's running and thirdly all
+addressing has to be relative that means
+you can only able to say do something 10
+bytes fall from here or 15 bytes back
+from here you can't use an absolute
+address like 409 5 because that could
+actually belong to somebody else it
+might not be your address it's also the
+issue of memory fragmentation if you're
+trying to run two programs and you
+allocate one bit of the memory for one
+program and another bit of min with
+another program and then what happens
+the first program exits and then you try
+to write a second one it might fit in
+that space of the first app but maybe
+it's a bit smaller so there's a gap left
+and then when you run a third one it
+can't fit in that gap
+it goes somewhere else in memory and
+then you actually get these a little gap
+starting to appear as you get this thing
+called memory fragmentation so and
+that's a real problem eventually you'll
+run out of memory just because of
+fragmentation because you get around
+these problems we have this technology
+called virtual memory and in virtual
+memory each app was running on a mobile
+phone each program is running on Windows
+or on OS 10 thinks it's the only app
+running it thinks it's the lod program
+running and it has access to all of the
+address space in fact it doesn't even
+have to have that amount of physical
+memory on a 32-bit machine that protis
+thinks it has 32 bits worth of a memory
+to play with which is of course 4
+gigabytes and the way it works is this
+when the process when the app wants to
+access a particular address there is a
+particular piece of hardware in the CPU
+called the MMU the memory management
+unit and what it does is it maps from
+this virtual address that the app thinks
+it's running in to an actual physical
+address somewhere in memory and so now
+the idea of partitioning up the memory
+is actually taken over by the operating
+system and the app doesn't need to worry
+the apps thinks it's near only the only
+app running it can write to whatever
+address is it allowed to whichever
+memory it's been given to and actually
+it doesn't care about other addresses
+from other apps because it's equal its
+own virtual address space so if we look
+at this diagram here we can show that
+we've got app 1 and up to now app one
+has an address space from 0 through to 5
+2 4 2 8 8 0 that's about 5 gig of
+megabytes of memory and I've also got
+app 2 with the same width of 5 megabytes
+of memory and what you actually see is
+that although it's from 0 to there in
+the physical memory it might actually
+start at 5 2 4 2 8 8 0 and it might run
+for 5 megabytes I mean at the number 2
+actually starts at 104 eight five seven
+six zero and it runs from there for five
+megabytes and the virtual address zero
+in both apps is actually mapped to
+different places in the physical RAM now
+because there's nothing going on here
+the app can
+- absolutely anywhere that the operating
+system wanted to put them so let's have
+a look at this diagram so as you can see
+here app 2 is as it was before it's a
+five megabytes program from zero to five
+twenty four to eight a zero and it's
+been mapped over to an address in the
+middle layer or physical RAM but app
+number one have actually been divided
+into two part and the first half of it
+is mapped into memory before app number
+one and the second part of it is mapped
+into some memories after have one but
+app 1 and app 2 don't know anything
+about this they just think they're
+running in their address space from zero
+to the end of their program to the
+advantage of the virtual memory system
+each app is self-contained
+it doesn't write over other apps memory
+space because it had an own virtual
+address space secondly it doesn't matter
+where the app is in memory because the
+MMU
+does a mapping between those virtual
+addresses and the physical addresses and
+certainly the app doesn't need to be in
+one continuous block in memory can be
+split up over many many different parts
+of its the OS will on the MMU that make
+sure that each address arrives at the
+right place in physical RAM and
+therefore you get rid of that memory
+fragmentation problem now what I've
+shown you up until now is a one-to-one
+mapping so that every time you have one
+particular dress there's a kind of a
+table that gets looked up by the MMU Lee
+tells it where to put it in physical RAM
+but the problem is even for a 300
+megabyte program which really isn't that
+very big you'll need about 79 million
+entries in such a lookup table to do
+such mapping and obviously if you then
+got 10 20 30 40 different programs
+running on your system
+that's going to quickly turn into a huge
+amount of data and there's actually no
+space left for actual programs because
+it will just be mapping information so
+to get around this the main memory the
+physical memory is divided into
+different blocks and they called pages
+and typically they're about 4 K in size
+and so now using paging actually you'll
+find that a 300 megabyte app and we need
+77,000 entries in a lookup table which
+at 4 bytes for every entry is about 300k
+much more manageable so now what happens
+when an app requests something with a
+virtual address it actually goes to the
+MMU in the MMU finds out which pages in
+and redirects it to the physical address
+of that particular page however what
+happens when the address is in the
+middle of a page at the start of the
+pages either is a kind of a one-to-one
+lookup but I am doing it in the middle
+of the page well actually what happens
+is that 4k is sold bit so the first 12
+bits of the address are copied directly
+from the virtual address into the
+physical address then the remaining 20
+bits are used as the page look up that
+20-bit address is looked up in the page
+table I think what a page table entry is
+found and that then gives you the 20
+bits for the upper part of the dish and
+then the combination of the page address
+and the offset those twelve bits gives
+you an actual physical address in RAM
+now one interesting question is where
+are all these tables held well they're
+not held in the CPU because even at 300
+K or 400 K multiply that by many many
+many processes running image is not
+enough space in a CP desserts they have
+to be held in RAM now that leads us to a
+kind of interesting conundrum because to
+act as a virtual address the MMU needs
+to access physical RAM to find an entry
+in the table so it can then translate
+the virtual address into a physical
+address and then access Ram again please
+find those multiple ram axis is
+happening for one ram axis inside of the
+app and of course that's going to be
+slow if it's like two ram axes is needed
+or three-round maximum needed for each
+virtual address and that's going to slow
+down your program by up by a factor of
+three so the way CPU designs get banners
+if they have a cache a cache of recently
+looked up addresses casually called the
+translation lookaside battle the TLB and
+what that does is whenever there's
+address translated it gets stuck into
+this cache and then the next time
+addresses need actually it looked it up
+in the TLB but of course remember it
+only to look up the page size if the
+program is running through the different
+instructions inside of one page every
+time it goes to access it
+automatically be ATL being hit because
+that page is already been found just the
+offset changes which is absolutely okay
+in some CPUs in fact the TLB is only 20
+entries long it might be bigger than
+that maybe 60 428 but you don't need
+that many TLB entries to actually
+increase the performance significantly
+during this lookup so what happens if
+the MMU can't find an entry in its table
+for a particular virtual address when
+that case the MMU raises a page fault
+and it goes back to the kernel saying
+hey I can't find that address now that
+can happen for one of three reasons
+first of all the app is actually trying
+to access an address which is not
+allowed to access it hasn't been
+allocated that memory and therefore
+Linux will just basically kill it off
+you get a segmentation fault and the
+program just crashes and just it just
+gets wiped out of memory because not
+allowed to access memory that it has be
+given in the second case it could
+actually be what they call lazy
+allocation which means that the current
+suggest you can have that but it won't
+actually give it a physical page of RAM
+until it actually starts to write to it
+and so in that case a page what happens
+the kernel is okay I told the app you
+could use that memory here is where I
+want you to put it in physical Ram the
+MMU is reprogrammed and then the whole
+thing starts off again and the address
+is found in physical RAM and the third
+thing that can happen is the emam users
+we used to have that memory but actually
+now it's been swapped and therefore the
+kernel will go and get that page from
+the compressed RAM so they'd swap that
+it's actually put it in earlier it will
+uncompress it will put it somewhere in
+physical memory it will reprogram the
+MMU and say okay you can now find that
+there and then the whole thing carries
+on and so there we have it virtual
+memory we've got a whole load of things
+going on here you've got the virtual
+addresses you've got physical Ram you've
+got look-up tables you've got an MMU
+you've got the translation lookaside
+buffer you've got page fault and all
+this is being handled for you by the
+Linux kernel and by Android so the next
+time you tap an icon to launch an app
+just give a thought for all what's going
+on in the background just as that app
+can be loaded somewhere into memory and
+it can runs or you can make that little
+sprite jump across the screen my name is
+Gary Simms from Angela thority and I
+hope you enjoyed this video if you did
+please do give it a thumbs up there's a
+link here in the description below which
+will take you over to the annual
+policies forums but if you want to speak
+to me about virtual dressing or virtual
+memory please go over there and we can
+have a more detailed discussion than
+maybe we can have here in the youtube
+comments below don't forget to subscribe
+to annual authorities YouTube channel
+and last but not least I've get to go
+over to Angela's calm cuz we are your
+source all things Android</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

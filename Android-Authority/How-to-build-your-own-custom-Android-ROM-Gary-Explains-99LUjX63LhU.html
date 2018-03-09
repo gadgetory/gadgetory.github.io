@@ -1,0 +1,304 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>How to build your own custom Android ROM - Gary Explains! | Gadgetory - Your Gadget Factory</title><meta content="How to build your own custom Android ROM - Gary Explains! - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Android-Authority/">Android Authority</a></li><li class="active">How to build your own custom Android ROM - Gary Explains!</li></ol></div><h2 class="post__title"><b>How to build your own custom Android ROM - Gary Explains!</b></h2><h5 class="post__date">2016-10-14</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/99LUjX63LhU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hello there my name is Gary Sims from
+Android authority now I'm sure you know
+that Android is an open source project
+that means all the source code is
+available on the Internet and you can
+download it and build your own based
+version of Android now this means that
+there are plenty of private individuals
+hobbyist groups and even commercial
+enterprises that use the open-source
+code for Android to build their own
+Android variation if you think about
+signage and model sides and ink they are
+probably the two most famous examples
+now have you ever wondered how to
+download and build Android make some
+modifications and therefore produce your
+own customized version of Android well
+let me explain everyone we get any grand
+visions of producing the next version of
+Sandwich in modern we're going to just
+modify Android so much let's just have a
+reality check here Android is a
+complicated and full operating system
+and there is lots and lots of components
+to it there's all with the lips kernel
+and there are all the frameworks and
+subsystems and different stacks that
+need to do all the stuff that Android
+can do then there's the user interface
+on top of that and there's the core
+applications on top of that I mean it's
+big I mean the build space on my build
+machine is 120 gigs so that just shows
+you how much data there is involved in
+building a vote about not all source
+code by any means but it's a huge amount
+of data so what we're going to do today
+is do some very very simple things just
+pitting step baby steps really just to
+see the principles involved in building
+and modifying androids ah you get your
+own custom distribution now what we're
+going to do is two things first of all
+we're going to download and build the
+Android source code using the Android
+Open Source project and then once we
+have that successfully flashed onto a
+test device we are going to modify some
+things about it and then flash that
+modifications onto the test device to
+see a variation of Android that we've
+done using our own
+fingers now before we get started we
+must say there are some prerequisites to
+this now what are the prerequisites you
+need to have some command line knowledge
+with let's on Linux with us on Mac OS 10
+you really do need to have some command
+line knowledge and that includes also
+not only things like CD and LS and
+change directory and all that kind of
+stuff but also things like make and Java
+compilers and just editing source code
+from the command line if you don't have
+that kind of knowledge then really
+you're going to find this a bit of a
+struggle but you have that knowledge if
+you know what I make file is if you know
+what a compiler is then this is going to
+be fairly straightforward now Google
+have got some great documentation on the
+Android Open Source project website
+about how you download and build the
+Android Open Source project now I'm not
+going to repeat in verbatim all the
+things they've said there so a couple of
+bits of advice first of all go and read
+that documentation the link is here in
+the description it's also over on the
+Android chrome website with the article
+that goes along with this video read it
+then we in again and then when you think
+you've read it again read it a third
+time because if you skip over bits if
+you don't register things and it's said
+if you didn't understand something you
+said it's going to make the whole build
+process difficult but if you've absorbed
+all of those build instructions if you
+understand the principles are going on
+you can be a whole lot easier for you
+now the basic steps to building the
+Android Open Source project are like
+this first of all you need to have a
+compatible build environment and that
+means basically a Linux machine or a Mac
+os10
+machine now you're going to need quite a
+bit of memory in hard disk space my Mac
+has got eight gigs of memory and 120
+gigabytes of disk space was put aside
+for this build so you're going to need
+those kind of
+requirements to be able to download and
+start the build process now once you
+establish the build environment the next
+step is to sync your local repository
+with the repository without on the
+incident and that's pretty huge for me
+it took 24 hours so it's the kind of
+thing you're going to run overnight and
+maybe a bit longer and you're going to
+see the results slowly but it is working
+don't worry it is working it just takes
+a long long time now once you've got the
+source code once you've got the build
+environment established you need to get
+hold of the binaries now not all the
+drivers for the different parts of these
+Nexus devices are distributed our source
+code now I've chosen to use a nexus 5x
+really the nexus is the easiest devices
+for building the AOSP project and the
+binaries are available inside the
+project repository need to download them
+and unpack them inside of your build
+environment now once you have the
+binaries the source and the build
+environment setup the next thing to do
+is to choose the build type and you do
+that using the lunch tool and then
+you've got a whole bunch of options
+there you just pick the one for your
+particular device then once that's all
+set up you can actually go ahead and
+start the build process using make now
+again this process can take quite a
+while several hours again depending on
+the performance of your machine so be
+prepared to let this thing just churn
+away in the background until it's
+finished building the whole project and
+then once you have a built firmware or
+you get a success from that make command
+you then need to make sure the or
+bootloader is unlocked on your Nexus
+device and then you can flash over the
+new ROM onto the device now as I've said
+the instructions are pretty good that
+Google provide however there probably
+are some pitfalls and some bumps that
+you going to meet along the way and I've
+done this whole process recently and
+I've got over in the written article all
+the different tricks and tips I learned
+on how to make the build successful I'll
+give an example is one stage during the
+make process where I was constantly
+running out of memory even though I've
+got a gigabytes now there are ways
+around that and I've got that listed
+over in the article so please go and
+read article because I always expect in
+this recent process
+has been dumped out there I think you'll
+find that useful if you hit a barrier
+during this build process now if you
+make a download and build the firmware
+and flash it on to your device first of
+all congratulations well done that's a
+big step in this process now the next
+thing we're going to do is modify
+Android so that we can say we have our
+own custom very very slightly custom of
+course but our own custom version of
+Android and we going to do two things
+first of all we're going to modify the
+messaging app that's the app that's used
+for SMS messaging just to be slightly
+different something that we've added to
+it ourselves and secondly we're going to
+modify the Settings app so that we can
+have the build name and the build number
+of this rom inside of the settings okay
+let's go ahead and modify the messaging
+app what you need to do is you need to
+change directory into packages apps and
+then inside they need to find the
+messaging app which is in packages app
+messaging then drill down through source
+comm Android messaging and edit the file
+called bugle application Java now bugle
+application Java is basically the entry
+point into the messaging app now scroll
+down art of a long list of import
+statements you want to import the toast
+widget and you do that using this line
+of code now once you've added that in
+now go down to the oncreate function
+that's the function that's called when
+the app is first started and add in
+these two following lines of code
+towards the bottom of the function
+you they need to save that file CD back
+up to the beginning of your working
+directory the root of your working
+directory and then start another make
+and that will recompile the necessary
+files and produce a new system image
+which you can then flash on over to your
+device now once it's flashed over at the
+device reboots go into the meshing app
+and you will notice that the first time
+you open the messaging app a nice little
+toast appears at the bottom saying
+welcome it's a minor change but it just
+shows you that we can modify the Java
+code of these core apps and get them to
+do the things that we won't want to do
+now no self-respecting ROM would be
+without its settings page that tells you
+the name of the ROM maybe the name of
+the author when it was built the version
+number and so on we're just going to add
+two fields to the setting page in the
+about phone section to just talk about
+the name of our ROM and the version
+number so to do that you need to go into
+packages apps settings res XML and find
+the device info settings XML file and
+then right down at the bottom just
+before the preference screen close tag
+you need to add in these lines of code
+now as you can see they basically give
+us a preference we talked about the
+wrong name whiz-bang pop ROM and the ROM
+build number seven point zero point one
+I get you to follow the same process
+save that file go back up to the root of
+your working directory rebuild the
+Android Open Source project flash it
+over onto your device and then when it
+reboots
+go to settings go to about phone and
+you'll see those two new fields that you
+have added in there well done now it was
+like it add as a caveat that's really a
+hack what I've just done there with the
+settings page really all strings need to
+be defined in strings.xml under each of
+the individual languages that are
+supported by your wrong these are
+hard-coded strings it's the wrong way to
+do it but it's the quickest way to show
+you for this video if you're going to do
+any serious open source Android project
+development then you need to make sure
+you do it right you
+rings dot XML now let me just emphasize
+that what we've done here are some very
+simple changes however the principles
+are exactly the same you modify the Java
+code or you modify the XML for the
+layout and for the user interface and
+you make it you compile it and then you
+flash it on to your test device now
+again we've made some very small
+modifications however with more work and
+more effort you can make a more and more
+customized version of Android well my
+name is Gary Simms from anger Authority
+I hope you enjoyed this video if you did
+please do give it a thumbs up also don't
+forget to subscribe to handle
+authorities youtube channel definitely
+download the endless royalty app because
+that is a great place to get all the
+latest news and features directly on
+your mobile phone and also never forget
+to visit and refer calm because we are
+your source for all things Android
+now I'm glad you what hits into the
+video because I want to tell you I've
+now got a new green screen what do you
+think about my new green screen please
+tell me in the comments you think I
+should use it more in the future use it
+less I'd love to hear what you think
+because a new thing for me and I'm just
+playing around with it your opinion
+please</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

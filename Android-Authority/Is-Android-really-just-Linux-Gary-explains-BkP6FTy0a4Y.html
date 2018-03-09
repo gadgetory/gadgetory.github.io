@@ -1,0 +1,238 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Is Android really just Linux? - Gary explains | Gadgetory - Your Gadget Factory</title><meta content="Is Android really just Linux? - Gary explains - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Android-Authority/">Android Authority</a></li><li class="active">Is Android really just Linux? - Gary explains</li></ol></div><h2 class="post__title"><b>Is Android really just Linux? - Gary explains</b></h2><h5 class="post__date">2017-07-13</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/BkP6FTy0a4Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hello there i'm gary sims from android
+authority now as you probably know
+Android uses the leanest kernel it has
+done since the very beginning for that
+poses the question is Android just Linux
+on a mobile phone on a smartphone and of
+course the answer is yes well actually
+no maybe let me explain okay so at the
+heart of every operating system there is
+a kernel and the kernel is responsible
+for managing the resources of the
+hardware the memory the files and so on
+now I've got a whole video what is a
+kernel and I really recommend you go and
+watch that if you need to know more
+details about the role of Linux on
+mobile on the desktop and in the servers
+now androids need a kernel and the
+kernel it uses is a Linux kernel now the
+problem is when it comes to asking the
+question is Android just Linux is that
+Linux actually means different things to
+different people are at this point I'm
+going to just interrupt and say about
+the pronunciation Linux Linux I say
+Linux deal with it now basically if you
+say oh my laptop running Linux what you
+probably mean is running a Linux
+distribution which means it's a Linux
+kernel and then a whole bunch of other
+tools on top of it including the command
+line stuff including compilers including
+a desktop including applications that
+come bundled with that distribution of
+Linux if we're talking in the purest
+term Linux is just the Colonel Burton
+Linux kernel and that's the thing that
+Linus tour build wrote and that is why
+it has that name Linus Linux that's
+where it comes from and there's also
+this idea of this thing called GNU Linux
+because Linux as a kernel is great but
+it's actually completely useless unless
+there are some tools on top of it even a
+simple shell that you can actually just
+type in a few things requires some of
+these other external tools that Linus
+didn't write at the C compiler which you
+need to compile Linux and so on and they
+are all part of what's called the new
+tool chain so some people like to call
+it good news flash Linux personally I
+don't like that idea because actually on
+desktop
+we also use a desktop environment KDE or
+gnome where you think like web browsers
+so should it be called good news slash
+Chrome slash
+gnome / Cadiz lettuce that doesn't make
+any sense but the understanding is that
+Linux is just the kernel and a kernel
+needs user space tools to make it usable
+by everyday users so if you're wondering
+is Android just Linux well it depends on
+what you mean by Linux so here's a
+couple of reasons why we could say yes
+it is Linux first of all cause it uses
+the Linux kernel so when you boot up an
+Android phone is booting up the Linux
+kernel a same or very similar kernel as
+what you would get on desktops or on
+servers now to say something is Linux
+would mean it would be compatible with
+Linux on other systems and to do a test
+what I actually did was I took a
+Raspberry Pi one and I wrote some C code
+and I statically linked it and I copied
+that binary it ran on the Raspberry Pi
+one printed out what it meant to print
+out I then took exactly the same binary
+I copied it over to an Android phone and
+I ran it via the ADB tools and the same
+binary ran on my Android phone with no
+alteration then gave me the correct
+output in fact was even able to take the
+golang programming language from google
+compiler program of golang on a
+Raspberry Pi one on v6 architecture
+copying exactly the same binary over to
+an arm v8 64 bit Android smartphone and
+the same binary ran so in that way is
+Linux is certainly not win the who's
+it's certainly not iOS and certainly not
+the kernel you find in in Mac OS and it
+ran but everything you need to do
+printing things out and everything
+finding out system information it ran on
+whatever so in that case Android is
+Linux but by the same argument Android
+isn't Linux because for example I did a
+special thing when I compile those
+programs I use static linking now static
+linking basically means that when
+everything that's need for that program
+running is built inside of the binary
+itself now normally on most modern
+operating systems that you
+dynamic link which means the same code
+doesn't need to be copied again in the
+game Gators the code to concatenate two
+strings together doesn't need to be
+included in every single binary but on
+our system is a library that contains
+that information in fact it contains
+loads and loads of functions and
+functionality that a program might need
+to do with files and do with your
+printing system and to do with threads
+and to do with everything memory
+allocation everything you could possibly
+want and basically when a program runs
+up it starts it has AI li dis library
+this library need this library for me to
+run that's what the DLL czar in kind of
+the windows area now basically if you
+run own or if you compile a normal
+program or a Raspberry Pi and copy over
+to an Android phone won't run because
+all those deals or that runtime isn't
+there in fact standard Linux
+distributions use the GNU C library for
+its runtime and basically on Android
+Google write with own C library called
+Bionic and they're not compatible with
+each other you binary compatible you
+can't take an executable from one and
+copy it onto the other and expect
+bionics to do the same thing as Dipsy
+and actually it screwed the other way
+around you can't take an app from a
+Android smartphone and copy it over to
+your desktop and run it and it just
+works that doesn't happen but having
+said that of course if you've got Chrome
+OS which is basically limit with the web
+browsers stuff built on top you've got a
+modern version of Chrome OS but of
+course it can run angular applications
+so you can actually take a nap down in
+from the place where in fact and run it
+on your your Chromebook and I've done
+that recently on my my Chromebook cause
+it just became available for it so in
+that sense you can run android apps on
+linux and you can run Linux binaries on
+auto but the point of course here is
+that Android has its own stack its own
+functions all that stuff to do with the
+Java and the java virtual machine and
+how windows are opened and how
+applications work and fragments and
+intents and all the things that make up
+you know android apps has to be built
+into Linux distributions somehow
+including Chrome OS or using some
+emulator to get to work so at that level
+a Linux and Android are actually two
+separate operating systems based on the
+same core technology which of course is
+the Linux kernel so what does that all
+mean well it depends on how you are
+defined in it yes they both Linux a
+desktop and Linux server and an Android
+phone use the Linux kernel the new
+libraries that are there are not
+available on Android but they are
+available on Linux vionic the C runtime
+library for Android is not what you get
+standard on Linux see that the desktop
+chromium the Firefox the browser's
+everything you want or you don't get on
+on Android of course Android had its own
+stuff it has well in frameworks at own
+operating system it has own way of doing
+things as a java virtual machine it has
+all the stuff that we use to build apps
+and that isn't included in a standard
+Linux distribution but if you're running
+Chrome OS then you can have that stuff
+because they've brought it over from
+Android over to a Linux distribution so
+what can we say here's my kind of my
+definitive opinion yes they both use
+Linux as a user Linux kernel no they're
+not both GNU Linux in any sense
+whatsoever because Android is certainly
+not good news Linux and thirdly you
+could continue to be a Linux
+distribution if it means an operating
+system that is created with Linux of the
+core and then a whole bunch of other
+stuff built on top well that is what
+Android is and that is what anything
+like red hat or CentOS or Ubuntu or
+whatever that's what that is but their
+aims and their goals and what they're
+doing are different at some point you
+lose compatibility between the two
+personally I think is great that our
+Android smartphones are using the open
+source Linux kernel I've been a follower
+of Linux for since before version 1 of
+Linux and I think it's great that we can
+run this technology on our modern-day
+smartphones so I'm going to try and aura
+tea I hope you enjoyed this video if you
+did please do give it a thumbs up I'd
+love to hear from you in the comments is
+Android Linux yes or no don't start
+flame wars but let's just talk about it
+because that will be really interesting
+please don't forget to subscribe to
+Android
+YouTube channel and do go over to
+Android 40 calm because we are your
+source all things Android</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

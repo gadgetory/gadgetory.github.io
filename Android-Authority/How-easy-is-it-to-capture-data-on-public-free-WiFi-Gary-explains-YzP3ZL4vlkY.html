@@ -1,0 +1,396 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>How easy is it to capture data on public free Wi-Fi? - Gary explains | Gadgetory - Your Gadget Factory</title><meta content="How easy is it to capture data on public free Wi-Fi? - Gary explains - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Android-Authority/">Android Authority</a></li><li class="active">How easy is it to capture data on public free Wi-Fi? - Gary explains</li></ol></div><h2 class="post__title"><b>How easy is it to capture data on public free Wi-Fi? - Gary explains</b></h2><h5 class="post__date">2016-11-14</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/YzP3ZL4vlkY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hi there my name's Gary Simmons from
+Android Authority now if you've watched
+my videos about VPN or about encryption
+you'll have noticed that I've said
+several times we must be careful when
+using public open Wi-Fi hotspots now the
+reason for that is because the
+information the data that's sent from
+your smartphone or from your laptop to
+the access point is actually broadcast
+in every direction for anybody to
+collect and to to analyze and so
+therefore that obviously poses a whole
+bunch of different problems but the
+question is how easy is it to actually
+collect data collect network packets on
+a public open Wi-Fi system well let me
+explain
+so when you connect to a public open
+Wi-Fi the connection between your device
+and the Wi-Fi router is in the clear
+it's not encrypted and that's because
+people want you to connect to it to use
+it while you're in their shopping mall
+or in their coffee shop for example and
+therefore the data that's sent is
+completely open and as I said a moment
+ago it's sent in every direction it's
+not just sent kind of like directly in
+the line of sight of the router and if
+you have the right equipment anybody can
+pick up all those data packets that are
+floating around in the air now normally
+a Wi-Fi adapter whether it's one for in
+built into your laptop built into your
+phone or one that you use through USB is
+in what they call managed mode and that
+basically means it just wants to talk to
+a Wi-Fi hotspot it wants to send and
+receive data and it's not really
+interested anything else that's going on
+however the Wi-Fi standard allows these
+chipsets to be put into several other
+modes and one of them is called monitor
+mode now in monitor mode the Wi-Fi chips
+it can actually pick up and receive the
+packets that are going anywhere in the
+air whether they're going to the guy on
+the table next to you whether they're
+going to a guy who down the shopping
+more a little bit you can receive all of
+them because Wi-Fi signals are pervasive
+they go absolutely everywhere when they
+are sent out now not all Wi-Fi chipsets
+can do this it's cheaper just to make a
+Wi-Fi chip set that just sticks in
+managed mode because the firmware and
+the hardware logic is much simpler and
+that's actually the kind of a 99% news
+case that people just want to connect to
+a hotspot and to send and receive
+traffic home if you get hands on the
+right piece of equipment then actually
+you can put it into miter mode now for
+example I have here a dongle that I
+bought from Amazon you can get it for
+under $20 it's by tp-link and it
+actually has the right drivers that you
+can set this thing in to monitor mode
+now to do this you're going to need a
+thing called Kali Linux as a special
+Linux distribution but you don't have to
+install it on a laptop and then kind of
+over install windows or anything like
+that you can run it as a virtual machine
+and if you run it as a virtual machine
+you can then plug
+the USB adapter and you can actually
+associate it with the Linux distribution
+and it's like you're running on a
+separate meter with virtual machine now
+I've done some testing using my laptop
+and using my virtual machine for color
+dips and everything I'm going to tell
+you now is actually what I've done
+myself that and step by step I've
+actually proved that this works now
+rather than give you all the actual
+commands here during the video which
+will be hard for you to follow go over
+to the Android source comm website and
+look at the article that go to this
+video because there I've listed all the
+commands that you need and they're easy
+there for you to cut and paste and to
+read and to study to see what I'm doing
+but basically you first of all you boot
+up Kali Linux and then you plug in your
+USB adapter you make sure it can be seen
+and then you switch the adapter into
+monitor mode and you use some tools from
+the aircrack suite to do that and then
+once you've found the Wi-Fi network that
+you want to listen to you then basically
+just say to the air crack suite use this
+Wi-Fi adapter to just capture all the
+packets that are going around in the air
+and they will be captured onto your hard
+disk and then once they're in your heart
+is you can use tools like driftnet &amp;amp;
+Wireshark
+to examine all of that data and see
+what's there now very quickly you'll be
+able to grab out some URLs you can see
+what websites people have been visiting
+and you'll also be able to grab any
+pictures that have been flowing around
+in the air to see what people have been
+viewing now to test this I put my own
+Wi-Fi hotspot here in my house it was
+completely opened so maybe for a few
+days my neighbors were able to get a bit
+of free internet access but I'm sure
+they've all got into axes anyway and
+basically I use one laptop connected to
+that Wi-Fi hotspot and I use my hand
+with phone kicked a hotspot and then I
+use my laptop running Kali Linux along
+with this Wi-Fi adapter and I just
+captured all of the stuff that was going
+out and you can actually find that you
+can pretty get hold of a lot of
+information particularly for example I
+went to a particular football website
+soccer for those in North America and
+all the player pictures that I was
+downloading and looking at
+I've now grabbed from the Wi-Fi dongle
+and it's actually I've got stored on my
+hard drive and I wasn't even connected
+to the same Wi-Fi router that's the
+beauty of monitor mode you can actually
+grab things out of the air as they're
+they're whizzing past now obviously if
+this was the case that absolutely
+everything it would be a disaster every
+email you read every time you went
+somewhere to an instant messaging
+everything would be open now thankfully
+there is this thing called HTTPS you've
+probably seen it when you type in a URL
+and when you go to a website that's
+using HTTPS you'll see that little
+padlock sign now the s and the padlock
+sign are showing this is secure it's in
+encrypted connection so even if the
+packets are flying around in the air
+freely between your device and the Wi-Fi
+hotspot once those packets have been
+grabbed from the air if you have a look
+inside of them it's all gobbledy good
+because it's encrypted you can't see
+what's in this all the pictures are
+encrypted or the URLs and crypto all
+your emails are encrypted and so on and
+that's great now the number of websites
+that use HTTPS now is is increased a lot
+and that's thanks to project likely
+let's encrypt project and also the free
+availability of orbit relatively free
+availability of SSL certificates now
+what that means is that when you connect
+to a website in Google for example for
+their search and for everything that you
+do on Google including Gmail all over
+HTTP so whatever you're reading on
+Google whatever your search on Google
+can't be seen when you're on a public
+free Wi-Fi hotspot however many sites
+only use HTTPS when you're doing the
+login so at least your passwords
+protected and when you're doing the kind
+of the check out with what you've
+purchased if it's a commercial site so
+that's come as well but in between time
+when you're browsing all the different
+products they are freely available
+because they're in the clear however
+that's changing in Google have a report
+card available which kind of gives you a
+list of all of the sites that use HTTPS
+from end to end so things are really
+improving on the web browser front and
+of course you've got that little icon
+that tells you whether you're connected
+securely however things aren't quite as
+simple when it comes to Android apps
+whenever you use an Android app and it's
+getting data it might beginning advert
+data it might be sending some personal
+profile data about you you might be
+using a network service whether it be
+social media whether it be instant
+messaging or where it multiplayer gaming
+whatever you're doing you don't know
+whether that connection
+Oh encrypted connection and that's
+because there is a little padlock sign
+there is no little green sign to tell
+you that everything's going okay you
+just have to trust that app are not all
+apps by any measure use encryption
+during the networking part of their
+design
+now unfortunately is no easy way of
+telling which apps do in which apps
+don't you actually have to sit down with
+a Wi-Fi adapter like I've got and start
+to monitor this traffic and see what's
+available and that's obviously time
+because you know some people have
+written reports about this and they are
+out there to fine however it's really a
+problem we can't find out quickly
+whether an app uses encryption or not
+now
+if we take an app like whatsapp they
+have declared public clean it even says
+so in the app that everything you do
+over what tap is encrypted so even if
+I'm using it on a public Wi-Fi hotspot
+then it will be encrypted doesn't matter
+if someone grabs all those packets out
+of the air you can't see what's inside
+of them however other app like get
+Google's allo messenger has clearly
+stated it doesn't use encryption only
+when you're in incognito mode now I
+haven't tested it to see how bad that
+situation really is but it is
+interesting that even popular app by big
+companies aren't necessarily using
+encryption so do be careful when you're
+using an app on your phone be sure that
+you're 100% you know that it's using
+encryption otherwise it could be stolen
+when you're connected to a Wi-Fi hotspot
+now grabbing things out of the air is
+one thing that can happen on a Wi-Fi
+hotspot but it's not the only thing that
+can happen on a Wi-Fi hotspot another
+problem can be is people can set up
+rogue access points fake access points
+deliberately just to lure you in so that
+you connect to them and then they have
+control over your traffic so for example
+maybe you go to a particular coffee shop
+and it doesn't have Wi-Fi and then one
+day you see that it does you know great
+the shop got Wi-Fi I'm so happy I want
+them to have Wi-Fi for a long time and
+actually it's not there's a guy two
+tables down with his laptop and with a
+Wi-Fi adapter like the one that I've
+gone he set up his own access point all
+the tools for that are available on
+Linux distributions like Kali Linux that
+I mentioned earlier on and then what
+happened is everything that you send to
+the internet actually goes to his laptop
+first where you can store it and he can
+also manipulate it and worst of all he
+can
+Directive so you think you're going to
+amazon.com and in fact what comes up is
+a website that looks very similar if
+it's a clone of amazon.com but really
+it's a fake website that he put up
+deliberately just to capture your login
+passwords you then go and login it says
+login fail and then it will probably
+redirect you to the real website where
+you log in and go oh I must have typed
+in the password wrong but actually
+you've now given him your username and
+password so that's a danger of using
+untrusted Wi-Fi access point and that's
+the problem when you go to a shopping
+mall there might be like 10 20 30 40
+different Wi-Fi networks listed okay and
+someone will open some of them are not
+and they all look legitimate because
+they're all names of the shops that are
+around you you think I'll well I'll
+click to the Starbucks Network I click
+to the to whatever network and actually
+there could be a guy sitting on the
+bench behind you who set up that Wi-Fi
+network so be careful and there's a
+third thing that can happen when you
+click to public Wi-Fi and that is a
+thing called art spoofing now every
+single network card in the world has a
+thing called a MAC address even this
+thing has a MAC address and that's the
+media access control address and it's
+unique they're established in the
+factory when it goes out of the door and
+everyone in the world is different it's
+a PC it's a laptop it is a an adapter
+like this whether it's your smartphone
+they've all got these adapt unique
+addresses on them and what happens is
+when you have an IP address that's to
+the Internet address what happens is
+that another PC or another devices hey
+who owns this address and it uses the up
+the address resolution protocol to say
+who owns it and then it says I do and
+the MAC address is sent back in out in a
+normal security environment that's
+absolutely perfect that's how it works
+but actually when you're an open public
+Wi-Fi you can spoof that so someone
+comes along and says hey who owes his
+address and you say I do but you don't
+you don't own it at all but you lie you
+get your PC to lie about the fact that
+it owns the address and that means now
+traffic that was going to go to one
+place probably the router now comes to
+you and once it comes to you again you
+can then do lots of different things
+like phishing attack man middle attacks
+you can actually set it up so that all
+the data is restored on you and then you
+redirect it to some relatives they're
+going somewhere simple like a news
+website you just redirect
+if they're going to somewhere that
+you're interesting their past or as
+PayPal eBay Amazon whatever then you can
+send them over to a fake site and try to
+do a phishing attack on them to try to
+capture their username and password so
+there's three things that can happen you
+can capture the package out of the air
+using monitor mode on the Wi-Fi adapter
+you can set up a fake Wi-Fi hotspot to
+lure people in and in to capture their
+information and ARP spoofing allows
+people on open Wi-Fi networks to
+redirect traffic and you really don't or
+not even none the wiser about what's
+going on and then with web browsers we
+must be careful we're using HTTPS that
+you've got that sign up there on the
+padlock sign the little green box saying
+everything is ok but on Android apps
+it's much harder to know whether the app
+is using SSL or not so be careful unless
+it's something like whatsapp or other
+apps have declared publicly they're
+using encryption be careful when using
+those apps over a minute what my name is
+Gary Simms from Android or thority I
+hope you enjoyed this video if you did
+please do give it a thumbs up if you
+want the tutorial but how to do these
+things the exact command you type in to
+Kali Linux to replicate what I've been
+doing go over to the Android chrome
+website and find the written articles
+got all of the things listed for you
+there don't forget to subscribe to and
+royalties YouTube channel don't forget
+to download our Android or 'ti app
+because that will give you access to all
+of our latest news directly on your
+mobile phone and don't forget daily you
+should go to andrew authority comm
+because we are your source for all
+things Android
+Oh</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

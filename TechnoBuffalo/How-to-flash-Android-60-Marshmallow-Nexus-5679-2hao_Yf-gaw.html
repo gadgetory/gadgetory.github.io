@@ -1,0 +1,262 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>How to flash Android 6.0 Marshmallow (Nexus 5/6/7/9) | Gadgetory - Your Gadget Factory</title><meta content="How to flash Android 6.0 Marshmallow (Nexus 5/6/7/9) - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/TechnoBuffalo/">TechnoBuffalo</a></li><li class="active">How to flash Android 6.0 Marshmallow (Nexus 5/6/7/9)</li></ol></div><h2 class="post__title"><b>How to flash Android 6.0 Marshmallow (Nexus 5/6/7/9)</b></h2><h5 class="post__date">2015-10-05</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/2hao_Yf-gaw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">the day is upon us marshmallow has
+graces with its presence but you go to
+download it and what's this it's a tgz I
+just want marshmallow on my phone well
+don't you worry I'm our birth center
+we're TechnoBuffalo and we are going to
+flash stock Android on your Nexus device
+first things first we're going to need
+to head to the Google factory image page
+and grab the appropriate download for
+your device in this case we're flashing
+my Nexus 6 so we're going to grab the
+marshmallow build for Shamu which is the
+codename for the device we're going to
+leave the link to this this page in the
+description down below and we're going
+to do the same for all the other links
+in this video so check the description
+for all the good stuff that you need
+while we're at it let's also go download
+the Android SDK if you already have fast
+food and a TV setup on your computer you
+can go ahead and skip this step if I'm
+speaking gibberish to you then you're
+going to want to pay attention ADB is
+the Android debug bridge it allows you
+to run commands on your device from your
+computer fastboot allows you to do the
+same thing but while your device is in
+fastboot mode while it's off that allows
+you to flash or install that's the fancy
+word for it new software on your devices
+partitions that it's using while it's
+actually on and running once you've
+downloaded the SDK we're going to need
+to run the Android executable that's
+located in the tools folder this is the
+Android SDK from here we're going to
+select the most recent SDK and the tools
+you're going to check them all off and
+go ahead and hit install it's going to
+take a few minutes if you're on a Mac
+and you upgraded from Mavericks to
+Yosemite you may need to download the
+Java Runtime from Apple without this
+patch the executable might not work so
+if you're getting a few errors head to
+that page make sure you're running the
+most recent version of Java while that's
+all downloading let's make sure that our
+device is ready to go go ahead and head
+into your settings on your phone tap on
+about and tap on the build number until
+you become a developer congratulations
+you did it you can now develop apps not
+really
+this just enables the developer options
+inside the phone head into the developer
+options which should be revealed now in
+the settings and ensure that USB
+debugging is enabled Wow look at you
+you're doing so great I'm so impressed
+okay now let's grab ourselves a USB
+cable plug that sucker right into your
+computer I'm going to be doing this on a
+Mac but you absolutely
+can do this on a PC as well you just
+need the right drivers for your OEM and
+you can omit the period and slash at the
+beginning of the commands that we're
+going to get to in just a minute pop
+open your terminal or HL prompt if
+you're on Windows and if this is where
+you get a little light-headed stay calm
+this isn't terribly hard and if you've
+never done it before it'll be a great
+great learning experience for you just
+follow the instructions and you'll be
+running marshmallow in no time
+well you can install ADB and fastboot on
+your computer we're going to do it the
+harder way here it's important I think
+to learn what you're doing so you don't
+break your device all your computer is
+doing is issuing terminal commands when
+you're clicking on things in the UI all
+we're going to do is cut out the
+middleman of the UI and work directly
+inside the terminal while we're not
+going to install ADB and fastboot let's
+at least make our lives just a little
+bit easier in finder go ahead and move
+your new Android SDK folder to your
+Applications folder then make a new
+folder on your desktop you can call it
+anything you like here for the video
+we're going to call it marshmallow move
+your stock image that you just download
+into it then open up your Android SDK
+folder and copy ADB and fastboot to your
+marshmallow folder now we need to make
+sure that terminal is looking at the
+right folder so in the prompt go ahead
+and type CD and then users your username
+desktop marshmallow and hit enter what
+this is going to do is change the
+directory that terminal is looking at to
+focus on the folder that we're working
+inside of CD means change directory in
+Unix
+so let's make sure that that worked go
+ahead and type LS and hit enter that's
+going to list all the files that are
+inside that folder so that if you see
+what we're looking to work with you're
+in the right place what you're looking
+for is the image ADB fastboot if you see
+them great job we're almost there now
+that we know that we're in the right
+place let's make sure that our computer
+can see our device we're going to use
+ADB the Android debug bridge to see if
+we can see our device as it's plugged in
+go ahead and type period slash adb
+devices if the computer can see your
+phone you'll see a device in the list if
+not make sure that you're running the
+correct drivers on Windows and that USB
+debugging is indeed turned on on your
+device if you can see your phone let's
+move on now
+do you compress the tgz file and inside
+you're going to find a bootloader image
+a few flashing scripts the up
+image and the radio image go ahead and
+shut off your device and while it's off
+boot it into fastboot mode by pushing
+and holding the volume down and power
+buttons until you see the android with
+this little belly open look at that
+you're doing so well
+we're almost done you're also going to
+want to go ahead and decompress that
+image file that you see there you'll get
+five other files inside of their boot
+cache system recovery and user data
+ignore those flash files in the folder
+that got decompressed we're going to
+flash these one by one your device has
+multiple partitions on it and we're
+going to need to flash a few of them
+from here we're going to be dragging
+files into the terminal window for ease
+of use otherwise we're going to be
+typing and we're going to be prone to
+typos first we're going to need to make
+sure that your bootloader is unlocked if
+it isn't this command is going to unlock
+it and it's going to wipe your device in
+the process so make sure your stuff is
+backed up on your devices screen check
+on the bottom if it says device is
+unlocked you can skip this step making
+sure that your terminal window is always
+pointing at the marshmallow folder go
+ahead and type period slash fast-food om
+unlock enter after each command we're
+going to reboot the bootloader by typing
+period slash fastboot space reboot -
+bootloader you can get to this command
+quickly by accessing your previous
+commands in the terminal window by
+pushing the up arrow since we're going
+to be doing this more than once first
+thing we're going to flash is the
+bootloader so all of these commands are
+going to be basically the same except
+for the actual image file the name is
+going to change so for this one we're
+going to do fastboot flash bootloader
+and then the path to the actual file
+that needs to be flashed like I said
+we're going to be dragging these into
+the terminal window just for ease of use
+but feel free to type it out if you
+think you can do it next up we're going
+to flash the radio again same deal type
+in fastboot into the terminal command
+flash Radio this time and then drag in
+the radio and hit enter next up we're
+going to flash the recovery you guessed
+it we're going to type fastboot flash
+recovery drag the recovery file in and
+hit enter we're also of course going to
+flash that boot partition so yep
+fastboot flash boot and that file hit
+enter of course after each and every
+step make sure you're rebooting the
+bootloader and finally we're going to
+flash the system
+fastboot flash system and the system
+image file and you're good to go you can
+see all the things that fastboot can do
+just by running regular old fast food
+without any other commands we didn't
+wipe the device here so this is a dirty
+install you're going to keep all your
+data but if you want to start from
+scratch just append a dash W before the
+command that you want to wipe the
+contents of the partition for for
+example let's wipe our devices system
+and user data before we flash a new
+version of Android just remember this
+will wipe your device clean fastboot - W
+flash system and then the system image
+is going to make sure that that system
+partition is nice and clean before any
+of the system files for Android are
+installed and that's it you're all done
+you made it now you just need to type
+fastboot reboot and enjoy your new sweet
+treat it'll take a while to boot up the
+first time but don't worry it's just
+doing some work under the hood if it
+does get stuck at the boot screen wipe
+everything clean and using what you've
+learned now try again and make sure you
+follow the steps if you're interested in
+learning more about the command-line I
+highly recommend checking out the
+command-line crash course by Zed Shaw
+it's totally free and you're going to
+feel a lot more prepared the next time
+you're looking to flash stock Android or
+a custom ROM as I mentioned at the top
+of the video links to everything
+mentioned are in the description below
+everything from the links to the Google
+factory page to directions and you can
+also check out the article on the site
+if you want to find the commands so that
+you can copy and paste them thank you
+guys so much for watching I hope you
+guys learned something let me know in
+the comments how it goes for you and
+what you think about Android 6.0
+marshmallow thanks again for watching be
+kind to one another and I'll catch you
+in the next video</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

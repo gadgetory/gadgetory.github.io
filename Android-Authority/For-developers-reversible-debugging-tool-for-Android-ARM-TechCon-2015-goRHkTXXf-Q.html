@@ -1,0 +1,249 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>For developers: reversible debugging tool for Android [ARM TechCon 2015] | Gadgetory - Your Gadget Factory</title><meta content="For developers: reversible debugging tool for Android [ARM TechCon 2015] - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Android-Authority/">Android Authority</a></li><li class="active">For developers: reversible debugging tool for Android [ARM TechCon 2015]</li></ol></div><h2 class="post__title"><b>For developers: reversible debugging tool for Android [ARM TechCon 2015]</b></h2><h5 class="post__date">2015-11-19</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/goRHkTXXf-Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hello my name's Gary Sims wrangler
+authority today I met arm techcon 2015
+and I've come to undo software to speak
+to Greg law hi great how you doing there
+yeah good at anything about what you
+offer right so we we help software
+developers to understand really what
+their code is doing right so all too
+often the reality of what a program does
+is almost but not quite what the
+developer expected it to be and this is
+this is this is debugging right so
+understanding your code of that deep
+level is very important what we can do
+is to record a little bit like CCTV we
+call the execution of a program as it
+runs and allow them the developer to
+wind that tape back and forth they can
+take a recording take it away load it up
+somewhere else a different time
+different place and see exactly what
+happened right down to the instruction
+level wow great yeah so I'd love to show
+you a demo we can we can see it in
+action that we great yes very much yet
+all right so this is my little demo
+program here it's very small program so
+we can kind of understand it for the
+purpose of this demo it's demos in
+Eclipse obviously you don't have to use
+Eclipse in fact what we have is a
+reversible execution engine that
+different debuggers can plug into right
+so GD b is one so you can use it
+anywhere you use gdb in Eclipse you have
+customers use it from within Emacs or
+the command line also arms ds5 in fact
+we're inside ds5 so we have the feature
+known as application rewind inside ds5
+them and others as well but I'm going to
+show it in Eclipse here so this is my
+little program and all it does is store
+values and their square root in a cache
+writes very simple array hundred
+elements mapping values on two square
+roots and the function we care about
+today is called cash calculate which
+just gives give it a value it will just
+loop through the cash really dumb linear
+search find a match and return the
+square root or miss the cash get the
+square root put it in the cache and then
+populate one's one entry either side on
+the basis that there's some kind of
+locality of reference and then it
+returns the square root the main
+function is just a unit test that loops
+forever getting random values passing
+them into cash calculate and checking
+that what is returned really is the
+square root so let me
+IM in the Deveaux Grady to go so let me
+run the program and it's crashed right
+this demo is supposed to crash so so
+here we are inside the inside the c
+library there's no there's no debug
+information here so just machine code
+that's fine we followed that in and you
+can do what you do in every debugger
+what program has always do is to look up
+the call stack right because debugging
+as I said it's that process of reality
+is deviated from my expectations and I
+need to find out why that happened and
+where the source of the problem is right
+where did that deep weight of that
+deviation from reality from expectations
+first happen so cool that's very useful
+you can see how you got here so we look
+up the call stack and any debugger will
+do this it gives you based on a kind of
+split of guests based on what's on
+registers and what's on the stack but
+usually it's fine just like the smash to
+stack or something you can see where
+you've been and we can see here all
+right so cash calculate was given a past
+in value and it returns square root and
+I can look up here and I can see that we
+were passed in 255 and it returns 0 so
+this clearly is a bug 0 is not the
+square root of 255 and I need to know
+why cash calculate returned what if it
+bites is repeated steps why did that
+happen now normal debuggers can't take
+you any further at this point right
+we've got the call stack it's that
+sliver of execution history and if what
+you want is in there great but also
+often it's not what we can do is rather
+better so I'm going to hit this button
+here which is uncool which is like
+popping up the call stack but it's no
+longer a guess all the global state has
+gone back to what it was before and and
+now more interestingly than that I can
+start to step back in time right Wow so
+if I click this back button we're
+actually unwinding the program's
+execution all the Global's are going
+back to what they were now gone back to
+a point in time which is now just after
+cash calculate returned I'm at the top
+of this line the cash calculate has just
+returned so if i reverse step into i can
+actually step into cash calculate and
+see exactly what it did how did that
+happen so you step back to here now it's
+returning from the cash so this is
+looking like some kind of corruption of
+the cash which is always a horrible kind
+of odd to look at and enabled running
+the ice entry of the cash and i can see
+here that I is 90 so it's returning the
+90th
+the cash let me just come across as
+quickly do some typing so I can look at
+the 19th century in the cash here and we
+can see sure enough it contains the
+garbage because beta corruption in my
+cash I don't know whether that was a
+pointer error a logic error threading
+Eric I've got no idea who stomped on
+that data but what I can do here really
+know to really powerfully answer that
+how did that happen question is I can
+add a watch point sometimes these are
+called beta breakpoints and usually in a
+debugger what you would do is set that
+watch point and run the program forward
+until the data changes what I'm going to
+run backwards into our changes that's
+gonna be the line of code that wrote to
+that data structure so here we go back
+in time so gone back in time here now to
+point in the past where the cache
+contains good data the square root of 40
+really is six actually I step forwards
+this is a little bit like action replay
+watching sports on the television right
+so if I step forwards watch out data in
+the top right hand corner you can see
+step step that's it that's the
+corruption happening right there so
+let's back up a little bit let's see
+let's see box what what really is going
+on so this is definitely the smoking gun
+we're writing value to and square root
+into the cash let me go up here and have
+a look and I can see that value 2 is
+minus 1 and so I've tried to take the
+square root of minus one and it's giving
+me zero because you can't do that so
+again though the question once again why
+did that happen actually at this point
+now we can kind of get away with with
+this code inspection but this is a demo
+so let's just keep going let's add
+another watch point to value to and and
+go back again so we go back in time and
+we're going to go back okay so this is
+where value to is being set the value to
+is being set to value minus 1 and value
+is 0 so here's our bug called the
+function with the value of zero return
+the right thing as a side effect then
+left one entry and my cash corrupted I
+didn't see that sometime later now this
+obviously is very small you know can
+demo but actually it's it's a canned
+demo of the real life bug that we one of
+our early real little victories with one
+of our early as customers with cadence
+and they've guys who write all that
+software for chip design and simulation
+and one of their biggest customers was
+having a problem they were trying to
+type out the they're running the
+simulation simulation went 48 hours and
+about one run in 300 during all these
+tests are not 100 300 do similar to a
+crash so Caitlin engineers but on site
+for three months and looking at the core
+file call file contains a minus one
+where there should be a pointer but is
+no you know how did that happen right is
+no question how it got into that state
+so that's when they came to us they
+deployed undo DB I had to run a bunch of
+times right because it only failed one
+in three hundred runs and there is some
+overhead there is some slowdown so took
+eight hours to run normally with the
+inside undo it took about 20 hours but
+they just run it in a little server farm
+bunch machines again and again and again
+until eventually they caught it put a
+watch point on that minus one they went
+back my time and they had it fixed in
+three hours absolutely three months
+getting you know getting nowhere on
+fantastic so it's great story and it
+really shows how the other power this
+stuff but I always say it's not just for
+those really extreme cases obviously
+it's very useful to us but otherwise
+wouldn't get fixed but if you can
+repeatedly turn an afternoon debug
+session into ten minutes then that's a
+good win as well absolutely I tell me a
+bit about operating system support your
+Android and linen and Rendell next yeah
+yeah any particular version of Android
+any anything is any we need the Linux
+kernel or the Android colonel to be two
+point six or later which these days is
+basically anything yeah and and and
+that's it arm 32 bit today 64-bit just
+been announced last week so 64-bit ARM
+support is in beta right now and and
+also x86 32 and 64-bit fantastic and if
+you want to find out more where do they
+go to they go to our website undo dash
+software com and you can find everything
+you need from there that's excellent
+thank you very much
+you</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

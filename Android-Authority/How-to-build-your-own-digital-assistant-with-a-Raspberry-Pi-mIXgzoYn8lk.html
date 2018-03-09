@@ -1,0 +1,278 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>How to build your own digital assistant with a Raspberry Pi | Gadgetory - Your Gadget Factory</title><meta content="How to build your own digital assistant with a Raspberry Pi - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Android-Authority/">Android Authority</a></li><li class="active">How to build your own digital assistant with a Raspberry Pi</li></ol></div><h2 class="post__title"><b>How to build your own digital assistant with a Raspberry Pi</b></h2><h5 class="post__date">2017-05-11</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/mIXgzoYn8lk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">Helen I'm garrison from Android
+Authority now google recently announced
+support for the Raspberry Pi for its
+Google assistant API that company's
+cloud services which is absolutely
+brilliant idea because it means that
+hobbyists and education is the makers
+can now start to build small projects at
+home that have voice activation and are
+connected to Google services now once I
+heard about this I thought to myself
+well I've got to build a project to show
+you how great fun that's going to be to
+build while I was doing that Google
+actually released a special kit called
+the voice kit that includes a special
+piece of hardware called The Voice hat
+for the Raspberry Pi that has a
+microphone and a speaker built into it
+and some special software which kind of
+means all this stuff just happens
+automatically without you having to do
+lots of programming now I thought that
+would be a great thing to demonstrate to
+you and I tried to get hold of one now
+it was officially released on the front
+of the magpie magazine the official
+roster fire magazine but I couldn't get
+when I looked online I asked one of my
+colleagues Robert Trix to go out to the
+shops in London see if he could find one
+he couldn't find one so they're really
+hard to get at the time of making this
+video but it certainly gave me a clue
+about what Google were intending with
+this Google assistant API so I tried
+some more and I took what I learned from
+the voice kick and I took what I had
+here at home and I still managed to make
+a Google assistant running on a
+Raspberry Pi so if you'd like to know
+how to do it let me explain okay first
+things first do this you're going to
+need a Raspberry Pi 3 okay and that's
+the big one which is got the quad core a
+50 C processor in it's got lots of USB
+ports it's got Wi-Fi built into it so
+that's a really good device to have to
+do this because they need to be tethered
+necessarily to a network with an
+Ethernet cable you're going to need a
+speaker of some kind that has connection
+for a 3.5 millimeter jack plug as one of
+those here and you're going to need some
+kind of button and I've got a button
+here on a breadboard that you can use
+for pressing the button to activate the
+Raspberry Pi and then need a USB
+microphone I'll talk about that in a
+moment and of course while you're doing
+setup you're going to need a mouse and a
+keyboard and a monitor and so on to
+actually configure your Raspberry Pi now
+basically what we're going to do is when
+you take the voice kit software but
+Google are providing on their AI
+projects or website and we're going to
+modify it slightly not to work with the
+voice happ's hardware that they're
+giving away with the kit but actually to
+work with a normal speaker and with a
+USB microphone for the first step is to
+download that SD card image now all of
+the links and all the actual details are
+step by step because you're going to
+find in the article that accompanies
+this video that's over on the under
+authority comm website I really
+recommend you following the steps there
+but in broad strokes what you need to do
+is you need to download that image and
+write it on to an SD card and then boot
+your Raspberry Pi with of course a mouse
+keyboard and wanted to connect it to it
+now once you've done that we need to
+edit a few things because that version
+of Linux is running on the Raspberry Pi
+is specifically looking for the voice
+hat that special piece of hardware that
+Google are having their kit to do the
+microphone and to do the speaker output
+so we're going to need to change it now
+to do that you need to modify the booth
+slash config dot text file at the bottom
+there you'll notice that Google have
+commented out support for the built-in
+sound card of the Raspberry Pi and
+they've added in support for the voice
+app and we need to undo that change so
+we need to comment out Google's things
+and
+to put in again support for the
+Raspberry Pi and while you're there on
+your Raspberry Pi you're going to need
+to configure access to secure share you
+do that by going to the menu and then
+finding the Raspberry Pi configuration
+program those interfaces and then make
+sure that SSH is enabled and you also
+need to make sure that your network is
+configured go up to the Wi-Fi sign up on
+the top right hand corner by the clock
+and configure it your Wi-Fi network now
+you do one other thing before you reboot
+and that is to edit the file slash etc
+slash a sound dot cold now that's
+basically the sound configuration file
+that Linux uses to work out what sound
+hardware is connected now again the one
+that's shipped with it is expecting the
+voice hat a piece of hardware but we're
+going to change it so that you can
+actually just use a USB mic and you can
+use the 3.5 millimeter
+sound jack that you get on the
+motherboard now you'll find the
+configuration file that you need to put
+in there again over in the article on
+the Android home website now once you've
+done that it's time to reboot so the
+first thing I check is that the sound is
+working now there are two little more
+minor steps we need to go through first
+of all there's a file that is a Python
+file but Google are using to check that
+the audio is okay and that's expecting
+again the voice has hardware now give
+details over there when how you change
+that so that it can use the built-in
+hardware once you've changed that file
+you just need to plug in a micro USB
+microphone now I didn't have a USB
+microphone handy so a bit of a tip I did
+have an old webcam knocking about and I
+took the webcam and plug that in and the
+Raspberry Pi was able to detect the
+microphone that was built into the
+webcam and use that instead so if you
+don't go out and buy one don't have one
+you can actually use an old webcam if
+you don't even need to get hold of a
+Raspberry Pi compatible USB microphone
+now once you have the microphone plugged
+in once you've changed the script to
+make sure it's using the internal
+hardware then you need to double-click
+on that check audio link that you find
+on the desktop and that will ask you
+then to check that you can hear the
+sound coming out the speaker and it will
+also check so it can record your voice
+and repeat it to you on the speak and if
+you've done back the
+you're halfway to getting this system
+working testing testing 1 2 3
+the reason you did your Raspberry Pi
+case to be infinite is because a lot of
+these heavy lifting is done using
+Google's cloud services so to get this
+Google assistant working on the right
+with high you're going to need to
+connect to and configure a cloud
+services account over at Google now all
+the details on how you do this are found
+in this article and also Google have
+published them on the voice kit website
+and again there are links over at the
+article for that basically what you need
+to do is go over there you log in you
+create a new project you enable the
+Google assistant API for that project
+you need to create some credentials for
+logging in so it knows that your
+raspberry pi is authorized to log into
+your account and you do that by creating
+some o author credentials and you then
+download the JSON file which has those
+credentials in and you put them on your
+raspberry pi renaming the file to
+assistant Jason and once you've done
+that it should work with the Google's
+Google's cloud services now the last
+thing you need is a switch for
+activating the voice control now
+basically here I've got a breadboard
+with a switch and you need to take two
+wires from the breadboard here over to
+the Raspberry Pi one needs to make it to
+GPIO pin 23 and the other one needs to
+be connected to any of the ground pins
+and what happens is the software that
+Google provided monitors that GPIO pin
+and when you press the button it then
+starts listening for your voice command
+and finally to get it we're running you
+just need to run main Python which is a
+file that's part thereof the kit again
+detailed in the article and that will
+set this whole thing in motion and this
+is what it sounds like when it's working
+who is the queen of England according to
+Wikipedia elizabeth ii has been Queen of
+the United Kingdom Canada Australia and
+New Zealand since the 6th of February
+1952 now the voice kit comes with a nice
+cardboard box at Google of made but you
+can use your imagination to put your
+raspberry pie into any kind of cardboard
+box if you like cut some holes in it
+now I'm going to show you the one that
+I've made I'm a software engineer not a
+hardware engineer so don't laugh at my
+creation here but here's my box what
+time is it
+currently eleven twenty three years okay
+and it does work and you I'm sure you
+could do better if you do please do post
+pictures in the comment I would love to
+see the boxes that you make for your
+Raspberry Pi now as a final wrap-up what
+have we done we've downloaded the voice
+kit software from Google which has
+already been shipped ready to work with
+the Google assistance we've modified it
+a bit to work with the standard hardware
+rather than the voice kit hardware we've
+configured the Google cloud so that we
+can actually access the Google Assistant
+API and then we built a switch which is
+what triggers the voice activation and
+then we put it all into a nice cardboard
+case but this isn't the end you can also
+extend this further now Google of given
+instructions on how you can make your
+own triggers and they've got a little
+demo project there where you can say
+light on light off and it will turn an
+LED on or off on your grass with
+pineapples that could be extended to all
+manner of things so this kit is
+extensible you can actually just change
+it to do home automation to control
+robots to do whatever you want to do
+that you can do on a Raspberry Pi it can
+now be voice-activated I'm going Sims
+from an authority I really do hope you
+enjoyed this look at how to make your
+own Google assistant with a Raspberry Pi
+if you did please do give it a thumbs up
+please subscribe to the anti-authority
+youtube channel hit that Bell so that
+you get notifications whenever we
+release a new video and do go over to
+Andrew authority comm because we are
+your source
+all things Android</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

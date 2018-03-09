@@ -1,0 +1,264 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>How to flash Froyo on your Nexus One! (widescreen) | Gadgetory - Your Gadget Factory</title><meta content="How to flash Froyo on your Nexus One! (widescreen) - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Pocketnow/">Pocketnow</a></li><li class="active">How to flash Froyo on your Nexus One! (widescreen)</li></ol></div><h2 class="post__title"><b>How to flash Froyo on your Nexus One! (widescreen)</b></h2><h5 class="post__date">2010-05-23</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/w-G4XYC4Ex0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey everybody its Joe from pocketnow.com
+cool thing happened just the other day
+and that was Google i/o 2010 now that's
+the Google Developers Conference and in
+day 2 they showed us Android 2.2
+codenamed Froyo running on the Nexus One
+now that's really neat today we found
+out that a lot of people are getting
+Froyo pushed over-the-air to their Nexus
+ones but a lot of people aren't it looks
+like the press release versions of the
+phone are getting it but everybody else
+is gonna have to wait unless you're
+watching this video and I'm going to
+show you how so what I've got is a nexus
+one running CyanogenMod it's unlocked
+it's rooted and running a custom
+recovery ROM and a custom ROM so I've
+got a lot of work to do to be able to
+get this update but if you come with me
+I'll show you how to do that let's go
+okay for us to be able to install this
+update we have to go back from
+CyanogenMod to the stock rom so anytime
+we do that first thing we want to do is
+make a backup I've already done that
+I've booted up into recovery mode and
+I'm running the allman raw recovery bran
+nexus 1.7 point 0 really awesome
+recovery round by the way so I've gone
+ahead and done that back up next thing
+that I need to do is wipe everything so
+I'm gonna go ahead and do that we're
+gonna wipe there and I'm going to keep
+stepping through all of these options to
+wipe absolutely everything except for
+the SD card ext extension so that's
+going to take me a minute or so here
+and we're good to go
+now I'm gonna go back to the main menu
+and now we are going to flash a zip file
+from the SD card this one is ERD 79
+which is the stock rom we'll go ahead
+and flash that now and this is going to
+take a couple minutes so I'm going to
+let that run and I'll be right back
+I'm not done yet for this to work not
+only do I have to have the stock rom on
+the phone but I also have to have the
+stock recovery rom on the phone now it's
+important to note this is not going to
+relock your phone you're still going to
+have the Nexus unlock symbol every time
+you boot I still don't know how to go
+about relocking your phone so like I
+said in previous videos once you've
+unlocked it you've unlocked it you can't
+go back but what we do need to do is put
+the stock recovery ROM on so to do that
+we're going to reboot the system and
+we're going to boot it back up into our
+fastboot mode go ahead and reboot the
+system now hold down the volume down
+button and there's our H boot menu now
+you can see here we've got options for
+fastboot recovery clear storage and sim
+lock we want to go into fastboot so
+we'll select that and press the power
+key to choose it and now we're in
+fastboot mode so from here I'm going to
+plug in my phone and then we're going to
+go over to the desktop computer or the
+laptop in this case and I'm going to
+show you what I've got and what we're
+going to do from there to get the
+recovery image back on I've gone ahead
+and downloaded and installed the Android
+SDK for Windows where to get that is
+going to be in the article that
+accompanies this video on pocketnow.com
+in fact all of the files that I'm going
+to reference here are going to be
+hyperlinked in that article so if you
+wonder where to get it
+go to pocketnow.com look up this article
+and you can find it all there that said
+what I've done is inside this tools
+folder there's a whole bunch of tools
+that come with the SDK I've added some
+things to this most importantly is
+fastboot again check the article for the
+link for that and after that is the
+recovery image just right here it's only
+2.3 megabytes so not very big but that's
+the stock recovery image and we have to
+put that back on the phone to be able to
+flash the updated
+froyo version so what we're gonna do now
+is we're gonna switch over here to a
+command prompt in administrator mode and
+I'm gonna run you'll notice that I'm in
+that same folder in the tools folder
+I'm gonna run fast boot space devices
+make sure I spelled that right we're
+gonna press ENTER now the reason we do
+that is to make sure that the device is
+not only connected what you can see
+there it is but also that it's
+recognized and right there you can see
+yes we have a device showing up if the
+device wasn't connected it would either
+return nothing or throw an error so we
+should be good to go
+now this next part gets a little bit
+tricky I need to check my notes to get
+the syntax exactly correct
+okay here is that syntax again we're
+running flash boot and this time we're
+passing it the flash parameter and we
+want to flash into the recovery
+partition the recovery dot IMG so this
+recovery dot IMG needs to be in that
+tools folder right along with flash boot
+which I just showed you so we'll go
+ahead and do that now
+it's sending it writing it and done so
+all of one point two seven seconds so
+awesome what we need to do now is reboot
+our phone okay I've booted the system up
+for the first time and I'm getting the
+welcome to Nexus One Touch Android to
+begin prompt so I'm gonna go ahead and
+do that but I'm gonna skip through
+absolutely everything and at this point
+I'm looking at the stock wallpaper the
+the stock icon layout everything so I
+know that so far so good
+let's go in here and see if there's an
+update available for the phone menu
+settings gonna go to down to about phone
+and we are on firmware version 2.1 build
+number ERD
+79 so so far so good we're gonna check
+for system updates and it has not noted
+that there are any updates yet so we're
+going to check a couple other things and
+be right back
+and the next thing we're gonna do is
+force an over-the-air check in so to do
+this on your dialer you dial star pound
+star pound two four three two five four
+six pound star pound star when you do
+that the screen should go blank and you
+should get a update that says check and
+results success you cannot do this over
+Wi-Fi or it will fail you have to do it
+over your carrier so you do have to have
+your SIM card installed an active plan
+blah blah blah all that but once you do
+that hopefully when we come back here to
+settings and go to about phone and check
+for system updates you'll see that we
+are now getting an update in this case
+we're getting Android update 2.1 update
+1 now we could have gone ahead and
+flashed that version to begin with or
+flash the version that we did and then
+flash this update but the reason I want
+to do this is I want to make sure that
+that recovery ROM is doing its job if
+this update fails we know we've got
+something else to do and we cannot flash
+that Froyo update so we're going to go
+ahead and do this now it's going to take
+a little bit of time to finish
+downloading it's 15.2 megabytes so we'll
+do that and be right back ok after that
+system update has been downloaded it'll
+ask you if you want to install now later
+or get more information we want to
+install now so we'll go ahead and do
+that it's now going to boot up into
+recovery mode and this is where we get
+to see if that work that we did flashing
+the stock recovery ROM did what it was
+supposed to do now if you try this with
+the almond Raw ROM it will fail so you
+have to go through those steps ok now if
+we take a look here this is in the phone
+about information again we can see that
+the firmware version has now been
+updated to 2.1 update 1 the build number
+is e re 27 so we know that over the year
+update just worked successfully we're
+going to come in here to system updates
+it still says there are none we could
+check to see if there is another update
+and force it that way but we know that
+there
+are not at least not at this point so
+what we're gonna do is reboot the phone
+again into recovery mode to do that we
+wait for it to power off and then we
+boot up and hold the down of volume
+while it's booting so here we are in H
+boot we wait for it to do its initial
+load it's doing then we go down to
+recovery select that with the power and
+it reboots into recovery mode now we've
+already got the Froyo update zip file on
+the root of the SD card if you don't you
+should have we're going to go back in to
+flash their recovery in here
+when that should be power there we go
+and volume up and we are going to scroll
+down to apply SD card update dot zip and
+it's finding opening and verifying and
+this should take another couple minutes
+okay and we're up with the initial
+wallpaper let's go in and check the
+build so we'll unlock now the first
+thing that you'll notice this is indeed
+Froyo
+we now have down in the launcher area
+and I'm sorry I did the pinkie point
+again for that individual who commented
+that I pinkie point a lot you've got a
+phone icon your launcher icon and then
+your global icon which is the browser
+you also now have your Google search in
+color with some other options in the
+drop down menu you can search everything
+the web apps contacts etc etc but let's
+go back home the launcher is now even
+faster than it was before it seems to
+scroll through more than just one line
+at a time now when you do it so that's
+really cool but like I was saying let's
+go into about so we'll go into settings
+all the way at the bottom about phone
+and right there Android version 2.2 this
+is build number f RF 50 and we are
+running kernel version 2.6 point 32 0.9
+yada yada yada
+so there you go guys how to take a
+hacked or a customized version of your
+Nexus One restore it back to stock then
+flash Froyo or Android 2.2 on it so
+sorry about the length but this has been
+a pretty in-depth video for
+pocketnow.com I am Joe Levi and enjoy
+your frozen yogurt</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

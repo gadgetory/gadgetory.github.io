@@ -1,0 +1,248 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>What is cache memory - Gary explains | Gadgetory - Your Gadget Factory</title><meta content="What is cache memory - Gary explains - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Android-Authority/">Android Authority</a></li><li class="active">What is cache memory - Gary explains</li></ol></div><h2 class="post__title"><b>What is cache memory - Gary explains</b></h2><h5 class="post__date">2016-04-07</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/roeZs-eL-lw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hello my name is Gary Sims from Android
+authority now system-on-a-chip designers
+have a problem main memory the RAM on
+your mobile phone is actually quite slow
+now to solve this problem is a thing
+called cache memory if you don't know
+what cache memory is please let me
+explain you're probably quite surprised
+that I've said that main memory is slow
+of course this is all relative a hard
+disk is slow a cd-rom is slow but let me
+give an illustration the average mobile
+CPU is clocked at somewhere between 1.5
+gigahertz and 2.2 gigahertz now the
+average Ram module in your mobile phone
+is clocked at just 200 megahertz so you
+can see a big difference in 1.5
+gigahertz and 200 megahertz whenever the
+CPU wants something it has to talk to a
+device that's running ten times slower
+than it is before it can get the
+information back now in CPU terms that's
+an absolute age as to sit around waiting
+for something and therefore that affects
+the performance okay I'll admit that as
+an oversimplified view of the problem
+however that is basically the issue that
+every system of a chip designer has to
+cope with now because of things like
+double data rate memory which can send
+to lots of data per clock 200 megahertz
+suddenly now equals 400 megahertz and in
+fact the latest low-power ddr3 is
+actually about eight times the base rate
+clock speed that can push the data out
+to the CPU in fact the low-power data
+rate for memory motors are working
+effectively the same CPU frequency is
+1.8 gigahertz so if the CPU is running
+at 1.8 gigahertz and the memory
+effectively is running at 1.8 gigahertz
+there shouldn't be any problem or should
+there well in fact we don't remember
+that modern day CPUs have four or even
+eight cores on them so those eight cores
+are all accessing the same one set of
+memory banks and therefore there is a
+contention here on who can get the data
+and when they can get it so fact even
+though that's running at 1.8 gigahertz
+because there are eight CPU trying to
+get hold of the data actually it's still
+a lot lot
+a lot lot slower now this is actually a
+very well known problem in computer
+science and it's what's known as the von
+Neumann bottleneck now if you watch my
+video on assembly language and machine
+code you'll remember the von Neumann was
+one of the key players in developing and
+designing what is a modern-day computer
+now the von Neumann bottleneck is
+basically when the CPU is waiting for
+data in a resource that's slower than it
+that creates a performance bottleneck
+where in fact the system is running at
+the speed of the slowest device which in
+this case would be the RAM now the
+several ways around this problem and the
+most popular is cache memory now cache
+memory what is it well basically it's a
+small amount of memory that's actually
+on the CPU itself or right next to it
+and what that means is that when it
+wants data you can go and get this
+memory at the same speeds while it's
+operating so if it's operating at 1.8
+gigahertz you can get it at one point a
+Giga it's running at 2.2 gigahertz it
+can get it at 2.2 gigahertz and not only
+that every CPU core has its own cache
+memory so there's no contention about
+who can get access to it because they
+all have their own little cache memory
+now I can see you thinking well if
+that's the case then Gary why isn't all
+memory at cache memory on the CPU at the
+same speed as the CPU well the basic
+answer is price cache memory is very
+expensive the fabrication process is
+very difficult very complicated and to
+get large amounts of memory onto a chip
+is very very expensive
+so therefore when we're talking about
+cache memory we're talking about just
+maybe 64 K or 80 K or 128 K very very
+small amount of memory per core on the
+CPU so how does cache memory work well
+basically it stores a copy of
+information that's in the main memory
+when the CPU wants a particular piece of
+memory it says hey cache do you have
+that he goes yes I've got it and
+therefore you can get it at a great
+speed and that's called a cache hit
+however sometimes it will say do have a
+copy of that memory goes no sorry I
+don't have that you have to get a main
+memory to go and get it and that's
+called a cache miss now the greater the
+cache hits the greater the performance
+the more cache misses then the lower the
+performance now if you imagine there are
+a whole bunch of different ways of
+Phil English cash to make sure it has
+the optimum memory in it the optimum
+information in it now one of the systems
+they use to get that optimum information
+is to split the cash in two they split
+it into data cache and instruction cache
+now they do that because the instruction
+cache is actually easier to fill because
+normally a computer program excuse one
+instruction then the next one then the
+next one so you pretty well know that
+the next instructor could be the one
+after this one now there are things
+called branching which means the program
+jumps to another place and that will be
+a whole different set of cache but it's
+actually pretty easy to work out what
+the next instruction can be needed so
+for example on the cortex a 72 core from
+arm there is 48 K of instruction cache
+and 32 k of data cache and that is for
+every one of the four calls on the chip
+now another technique that cache
+designers use is to use multiple levels
+of cache so this cache right next to the
+CPU running at the best speed ever just
+maybe thirty to forty eight K of memory
+is called a level one cache now after
+level one you can have level two cache
+now level two cache can be measured
+maybe in megabytes four megabytes let's
+say now that is shared across all the
+CPU cores however it's a bigger pool of
+memory and therefore again there is a
+greater chance of having a cache hit but
+because four megabytes is expensive to
+build it's actually slightly slower
+memory it's slightly cheaper memory
+making it more feasible in fact on some
+systems for example the ARM architecture
+chips that are put into servers an AMD
+make server chip forearm and Qualcomm
+make chips for arm now those chips
+actually use a level three cache and
+that may be even as much as 32 megabytes
+there's one other piece of this jigsaw
+we need to talk about how does the CPU
+know where in the cache memory is the
+data that it needs from main memory the
+way it does this is basically using
+what's called a hashing function it
+takes the address and it wanting main
+memory applies a hash to it and that
+gives it a location in that 32 K every
+time you put in the same address you get
+the same answer and what happens is is
+that each address will give you
+location 1 cache location 2 lat cache
+location 3 and then that will go through
+when it gets the end of its 32k or 48k
+whatever it's got it has to loop round
+again and so therefore for many many Ram
+locations you have one cache location
+and of course the problem comes about
+when you want to cache two things in the
+same cache location
+you can't put two things in there at
+once so there's another thing which is
+called a two-way cache 2-way associative
+cache and what that does is it gives you
+two slots for every memory address and
+now when the CPU goes to look there it
+has to look between is it in the first
+one no is it in the second one okay I'll
+use that now obviously that's much
+quicker than looking through 32 K's
+worth in fact you can actually get
+four-way and 8-way and even 16 Way
+associative cache caches but of course
+the problem is there is the balance
+between the complexity of the chip the
+amount of power that takes because we're
+running on mobile phones in the amount
+of power that takes and the performance
+gains so let me quickly sum up for you a
+cache is a small amount of memory that
+runs at the same speed of the CPU and
+it's there so the CPU has a local copy
+of the most important bits of
+information the next instructions to
+execute or the next bit of data that it
+wants and it's much faster than going
+out to the main memory now the bigger
+the cache the better well organize the
+cache the greater the performance a
+smaller cache no cache even will mean
+lower performance and caches can come in
+three levels level 1 l1 here's a small
+one on board the chip may be 30 to 48 K
+level 2 may be 4 megabytes and level 3
+may be 32 megabytes so next time you
+look at which chip you're going to
+choose for your smartphone maybe you
+should look too much cache it's got
+because that's going to affect its
+performance well my name is Gary Sims
+from Android authority and I hope you
+enjoyed this video if you did please do
+give it a thumbs up also please don't
+forget to follow me on social media you
+can use a little comments here below to
+tell me what you know about cache memory
+is important to you have you even looked
+about the cache memory of the CPU in
+your smartphone also don't forget to use
+this link here over at the android
+authority forums where you can talk to
+me about cache memory we can have a
+discussion there if you want to and of
+course don't forget to stay tuned to
+android authority comm because we are
+your source for all things Android</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>

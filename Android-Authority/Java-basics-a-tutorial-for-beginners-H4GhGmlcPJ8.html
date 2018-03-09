@@ -1,0 +1,343 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Java basics: a tutorial for beginners | Gadgetory - Your Gadget Factory</title><meta content="Java basics: a tutorial for beginners - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Android-Authority/">Android Authority</a></li><li class="active">Java basics: a tutorial for beginners</li></ol></div><h2 class="post__title"><b>Java basics: a tutorial for beginners</b></h2><h5 class="post__date">2015-05-28</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/H4GhGmlcPJ8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hello there my name is Gary Sims from
+Android authority if you've ever wanted
+to write an Android app you're probably
+going to have to do some programming now
+Java is the official language of the
+Android operating system not only is it
+used to create apps it's also used to
+write actually parts of the OS itself
+now when you want to write an app there
+are two aspects the first part is the
+java language and the second part is the
+Android software development kit and
+today we're going to be looking at the
+first part Java
+to start writing Java programs you need
+a way to compile source code and turn it
+into an executable for the Java Runtime
+the normal way to do this is to install
+the Java development kit which you can
+download from Oracle's website however
+if you aren't ready to install the Java
+development kit then you want a quick
+route to trying your first Java program
+then I recommend coding comm coding
+gives you access to a free virtual
+machine with all the compilers and tools
+you need to run a Java program as well
+as developing other languages like Go
+Python node and C to sign up just visit
+coding com type in your email address
+and a password of your choice and then
+click sign up the coding virtual machine
+comes with an IDE and command line
+access the web view of the virtual
+machine is divided into four parts on
+the left is the coding control panel
+with access to your account details the
+virtual machines you have created and so
+on next is the file manager which shows
+all the files and folders you have on
+your virtual machine next to that the
+screen is split into two the top half is
+an editor for writing your code and the
+bottom half gives you access to the
+command line
+now all the code for today's video is
+available on the android authority
+website in the written companion which
+will be linked in the video description
+below
+so our first program is the hello world
+program cut and paste the hello world
+code into the editor and save it as
+helloworld.java now in Java the file
+name of the source code and the class
+name must be the same the first line of
+the code declares a class called hello
+world so the source code must be called
+HelloWorld dot Java encoding to save the
+file
+hover the mouse over the tab for the
+code probably called untitled text and
+click on the little arrow then click
+save as
+enter HelloWorld dot Java as a file name
+and click Save at the bottom of the
+screen is the command line the virtual
+machine is running Linux and the
+terminal is running bash to compile the
+program type in Java C space HelloWorld
+dot Java the compiles will only take a
+second or two you can then run the
+program by typing Java HelloWorld the
+reward is the text hello world being
+displayed in the terminal
+congratulations
+so let's just take a moment to look at
+what happened first the source code the
+file does three things it declares a
+class called hello world it defines a
+method a function in the hello world
+class called main and that main method
+calls system dot out dot print line to
+output some text each Java program must
+define a method called main in at least
+one of its classes it is the entry point
+where the program starts executing once
+the program is written you then have to
+compile it and compile the program you
+first call Java C and then to run it you
+call Java the first is the compiler and
+hence the letter C at the end and the
+second is the Java Virtual Machine
+when writing computer programs you will
+often need to store data for temporary
+use for example in an android game you
+might want to store the score for the
+current player these bits of data are
+stored in variables a variable is a box
+in which you can put some data and then
+come back to it later to retrieve it
+since data comes in different forms a
+variable needs to define a type which
+tell Java what you want to store in it
+some of Java's primitive data types
+include inter for integer double for
+double precision floating point numbers
+and boolean x' for true or false let's
+look at the variable test program it's a
+simple program that sets the value of a
+variable prints out the variable to the
+console changes the variable and then
+print it out again cut and paste the
+code into the editor and then save it as
+a variable test Java to compile it type
+Java C variable test dot Java and to run
+it use Java variable test as you can see
+the program defines a variable called I
+and then gives it an initial value of 1
+the value of I is printed to the console
+then I is set to a new value of I plus
+24 now since I is already one that
+really means one plus 24 which is 25 and
+so the new value is then printed out
+onto the console try modifying the
+program yourself to use a double rather
+than int set I to something like 1.3 and
+increase its value by a decimal number
+like 24.9 and see what happens if you
+take a look at the print line method you
+will see that an integer is being added
+to a string the string being the value
+of I is : and then of course it does
+plus I what actually is happening here
+is that Java knows that the first part
+of the expression is a string so it
+generates a string value for I in other
+words it converts the 1 or the 25 into
+the characters 1 or 25 and then
+concatenate them to the string giving
+you the final string output the value of
+I is 1 or the value of I is 25
+strings are an important part of any
+programming language including Java
+unlike int or boolean a string isn't a
+primitive type it's actually a class
+when you create a string variable you
+are creating a string object and notice
+it uses the capital S run the small s as
+an object it has certain properties like
+a value the string itself and its length
+strings can be manipulated in lots of
+different ways including being dissected
+concatenated compared and searched so
+let's take a look at the playing with
+strings source code cut and paste it
+into the web editor save it as playing
+with strings Java and compile it and run
+it using Java C and Java as we have done
+previously the first part of the program
+creates a string called hello and gives
+it a value of hello world although this
+might look similar to how you declare an
+assign an integer or a different
+primitive type actually there's a lot
+more going on here Java allows simple
+operators like equals and plus to be
+assigned to objects so really although
+it might look like you're just assigning
+the value hello world to the string
+what's actually happening is a new
+object of type string is being created
+and the value hello world is being
+passed to its constructor but we'll talk
+more about that in the object section
+the next part shows how you can
+concatenate strings in this case an
+exclamation point is added to the end of
+the string now since string is an object
+it can have methods so string dot
+substring is a method which returns part
+of the string in this case the first
+five characters string dot trim is
+another method that removes leading and
+trailing spaces the last part of the
+program demonstrates string dot to
+uppercase and string dot to lowercase
+methods
+computers are good at doing repetitive
+tasks as do repetitive tasks in a
+programming language you use a construct
+called a loop now Java has three types
+of loop the while loop the for loop and
+the do-while loop and they're all
+basically the same in that they keep on
+looping around until a certain condition
+is met so let's take a look at a loops
+example this particular one will show
+you how to print out the numbers 1 to 10
+11 to 20 and 21 to 30 using three
+different types of loops as before copy
+of the source code from the written
+companion and put it into a file called
+loop store Java you'll then be able to
+compile it and run it as you have done
+the previous programs the for loop has
+three parts the first part is the
+initializer that's the int I is equal to
+one and it's only executed once what it
+does is declare an integer called I and
+sets its value to one then comes a test
+expression I is less than or equal to
+ten this expression will be tested every
+time the loop goes round if the result
+of the test is true it will go round
+again and in our example is used to see
+whether I is still less than or equal to
+ten after each iteration the third
+section the iterator will be executed in
+our example it increases the value of I
+by one note the I is equal to I plus one
+is actually the same as I plus plus the
+while loop is very similar to the for
+loop except it doesn't contain the
+initialization phase nor the iterator
+phase that means the initialization
+needs to be done separately in our
+example is the int J is equal to 11
+which appears before the loop starts the
+iterator also needs to be coded
+separately in our example it is the j
+plus plus line which can be found inside
+the loop just after the call to print
+line a do-while loop is very similar to
+a while loop with one big difference the
+test to see if a loop should continue is
+at the end of the loop and not at the
+start this means that a do-while is
+guaranteed to execute at least once but
+a while loop doesn't even need to
+execute at all if the conditions aren't
+met the entrance into the loop like the
+while loop the initialization needs to
+happen outside the loop and in our
+example this is the int X is equal to
+twenty one line and the iterator needs
+to occur inside the loop
+X plus plus when X goes over 30 the loop
+will stop
+as I mentioned before Java is an
+object-oriented programming language and
+to really succeed in Android programming
+you're going to need to understand some
+important oo concepts the first one is
+what is an object an object is basically
+a set of methods or functions along with
+a set of data the data and the methods
+belong to the object and work for the
+object let's have a look at an example
+here is a program that create a very
+simple counter object the counter orbit
+has one piece of data the integer
+variable count and three methods besides
+the main method counter increment and
+get count leaving the first method out
+for the moment you can see that
+increment and get counter very simple
+the first one adds to the internal
+variable count and the second one just
+returns its value until now all the
+methods we have declared started with
+public void but if you notice the get
+count methods start with public int but
+the difference between void and int is
+this void declares that the method
+doesn't return anything
+there will be no result coming back out
+of the method but in tells us that the
+method will return a number specifically
+an integer you can actually create
+methods that return all kinds of data
+including objects notice that the first
+method has the same name as the class
+itself ie counter and it doesn't have a
+return type not even void this is a
+special method called constructor the
+constructor is called only once at the
+moment that the object is created it is
+used to initialize the object with
+default values and perform other
+necessary is initialization tasks in
+this example or it does is set count to
+zero
+now there's one last concept we need to
+look at before we come to a close and
+that's the idea of inheritance now in
+Java you can create an abstract class
+that represents an abstract idea and
+derived classes from it which are called
+subclasses in the written companion I
+show you how to create a class called
+animal it could be any animal and I
+derive from it a class called elk now
+when you do that what happens is some of
+the methods and some of the data that
+are in the superclass animal
+automatically get inherited now belong
+to the subclass elk go check out the
+source code in the written companion
+have a read about the explanations I
+give you there and see what you think
+well my name's Gary Sims from Android
+Authority I hope you've enjoyed this
+video if you did please do give it a
+thumbs up I really do recommend that you
+try out some of these examples I've
+given try out what's written in the
+written example go to coding com get
+yourself an account install the Java
+compiler if you need to on your PC or on
+your Mac just try it out can't do any
+harm it's good fun if you've got any
+questions why not leave them in the
+comments below we'll try our best to
+help you out if you've got any
+experience is about learning job you
+want to share with us leave them in the
+comments below if you've got maybe some
+books that you recommend also leave them
+in the comments below and as for me I'll
+see you in my next video</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));</script></body></html>
