@@ -1,0 +1,233 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Suspicious AMD Ryzen Security Flaws, We’re Calling BS | Gadgetory - Your Gadget Factory</title><meta content="Suspicious AMD Ryzen Security Flaws, We’re Calling BS - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Hardware-Unboxed/">Hardware Unboxed</a></li><li class="active">Suspicious AMD Ryzen Security Flaws, We’re Calling BS</li></ol></div><h2 class="post__title"><b>Suspicious AMD Ryzen Security Flaws, We’re Calling BS</b></h2><h5 class="post__date">2018-03-13</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/7HxkLlmh4EY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">welcome back to hardware iron boxed
+earlier today some interesting news
+broke surrounding AMD Rison security
+flaws a company called cts labs posted a
+white paper revealing four classes of
+vulnerabilities that affect risin risin
+Pro Rison mobile and epic curiously CTS
+labs only gave AMD 24 hours notice
+before publishing this white paper
+rather than 90 days or longer which is
+standard practice in the security
+industry and a bit more on that later I
+first wanted to cover the flaws and give
+you guys a rundown of what has
+apparently been uncovered as I mentioned
+there are four classes of vulnerability
+labeled master key Chmura rise and fall
+and fall out each with a couple of
+variants there's a fantastic article
+over on Anandtech that covers each of
+these variants so check that out but I
+will summarize it all here for you
+so master key is the first vulnerability
+and it allows arbitrary code execution
+in the secure processor on epic and
+Rison processes provided the attacker
+reflash 'as the bios to target the arm
+cortex a5 integrated into these CPUs the
+exploit could allow an attacker to
+disable and ease security features cts
+labs claims this has been successfully
+exploited on Rison and epic with Rison
+Pro and rise in mobile potentially
+affected Chmura
+revolves around the promontory chipset
+which could allow remote code execution
+on the chipset that could attack devices
+connected through it like USB SATA PCIe
+and so forth the exploit is possible on
+risin and risin Pro by running malware
+with both elevated administrator
+privileges and a digitally signed driver
+rise and fall exploits the AMD secure OS
+by leveraging arm trust zone with
+elevated administrator privileges and a
+vendor supplied driver it's possible to
+exploit the secure processor to
+arbitrarily execute code disable memory
+protection and authorize protected
+memory reads and writes epoch is not
+affected here but Rison is too
+varying degrees and the last one is
+fallout it's an epic only vulnerability
+similar to rise and fall in its results
+that requires compromising the
+bootloader and again requires elevated
+administrator access and assigned driver
+so those are the flaws that have been
+uncovered now I'm not a security expert
+or a hacker but I have been following a
+bit of the discussion in the security
+space about these exploits and to put it
+simply there are red flags everywhere
+firstly I'll circle back to AMD only
+being given 24 hours notice of these
+security flaws the standard practice is
+to give companies 90 days notice so they
+can prepare security patches such that
+systems are protected before word of the
+vulnerability reaches the public in the
+case of meltdown inspector which became
+public earlier this year
+AMD Intel arm and others received almost
+six months notice before everything was
+disclosed CTS labs gave basically no
+reason for only providing 24 hours
+notice other than saying it's a Public
+Interest Disclosure I don't really see
+how this particular set of
+vulnerabilities is more of a public
+interest than other disclosures that
+have seen companies get much more notice
+and it's no surprise that in Amy's
+official statement on the matter
+they say this company was previously
+unknown to AMD and we find it unusual
+for a security firm to publish its
+research to the press without providing
+a reasonable amount of time for the
+company to investigate and address its
+findings and of course M they are
+actively investigating and analyzing the
+findings right now when we asked AMD for
+a comment on the manner the vibe we got
+is AMD had no prior warning about these
+vulnerabilities and have been completely
+blindsided there are a couple of other
+unusual things about CTS labs the
+company was founded in 2017 so they're a
+relatively new player and they have no
+prior reputation in the security space
+in fact this is their first report their
+website on these vulnerabilities AMD
+flaws calm yes they did by AMD floors
+calm is quite well put together there's
+nice graphics again unusual for security
+disclosures typically we just get a
+white paper with CVE numbers
+but here there are no CVE references and
+instead a visually beautiful website in
+CTS labs legal disclaimer the company
+says this although we have a good faith
+belief in our analysis and believe it to
+be objective and unbiased you are
+advised that we may have either directly
+or indirectly an economic interest in
+the performance of the securities of the
+companies whose products are the subject
+of our reports so a company is founded
+in 2017 releases one report focusing on
+AMD vulnerabilities and in their legal
+disclaimer they say they may have an
+economic interest in the securities of
+the companies they are reporting on I
+wonder what company they might have an
+economic interest in now this is just
+pure speculation on my part here but it
+seems like CTS labs have released news
+of these vulnerabilities in the hopes
+that AMD stock will take a dive allowing
+the founders of the company and other
+invested parties to profit everything
+has been nicely constructed for the
+media through their website allowing
+reporters to easily warn the public
+about these issues which allows the news
+to spread and aim the investors to worry
+again just speculation but the legal
+disclaimer lack of notice given to AMD
+and company history do paint a pretty
+dodgy picture and let's look a bit
+closer at the vulnerabilities that were
+disclosed now I should note here that
+the white paper is very light on
+technical details and examples on how to
+use these exports things that are
+usually found in other disclosures in
+fact the CTO of CTS labs says we are not
+putting our technical details and have
+no intention of putting out technical
+details ever more red flags but let's
+move on so the first vulnerability
+masterkey requires the attacker reflash
+the system bios now I'm not a security
+expert but you can do a hell of a lot of
+things with someone's system if you're
+able to flash their BIOS in fact if you
+just give me the physical access to
+someone's system that is required to
+flash up by us along with the
+appropriate privileges to do so I'll
+probably be able to steal your data and
+run whatever code I like again not an
+expert but if I can flash a BIOS I can
+probably
+do a lot of other things rise and fall
+and fall out both require
+vendor-supplied
+signed drivers along with elevated
+administrator privileges again you can
+do a lot of things with a booby-trap
+signed driver and admin privileges it
+doesn't exactly surprise me that with
+this level of access you can do things
+like execute arbitrary code and access
+protected memory installing a signed
+drive occurs pretty deep access to a
+system in fact I wouldn't be surprised
+at all if on an Intel system you could
+do similar malicious activities with
+BIOS flashes and sign drivers but these
+exploits only talk about AMD again a bit
+of speculation here but there are red
+flags everywhere with this situation now
+it is possible and even likely that
+these vulnerabilities are legitimate but
+the actual security risk doesn't seem
+that high when we're talking about
+needing BIOS Flash's admin privileges
+and sign drivers and it seems that
+security experts along with Linux
+mastermind Linus Torvalds agree is that
+this disclosure is a bit dodgy to say
+the least so let's summarize the
+situation as it stands right now
+CTS Labs a company founded in 2017
+released their first white paper
+detailing Rison and epic vulnerabilities
+after giving AMD basically no notice
+there are no CVE tags for these
+vulnerabilities CTS Labs does not and
+will not release technical details and
+their website mentions there may have
+financial interests in the companies
+they are reporting on the
+vulnerabilities themselves require
+significant levels of access such as
+sign drivers admin privileges and the
+ability to flash a BIOS I'm sure more
+will come out in relation to these
+vulnerabilities in the coming days but
+right now looking at all the facts of
+what has been disclosed I'm very
+suspicious of this whole situation will
+continue to monitor all the reports that
+come out in relation to these am be
+vulnerable ease and keep you guys
+informed let us know what you think of
+this whole situation in the comments
+below and I'll catch you in the next one</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>
