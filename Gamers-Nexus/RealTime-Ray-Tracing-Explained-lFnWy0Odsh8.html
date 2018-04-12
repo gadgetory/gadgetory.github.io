@@ -1,0 +1,331 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Real-Time Ray Tracing Explained | Gadgetory - Your Gadget Factory</title><meta content="Real-Time Ray Tracing Explained - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus/">Gamers Nexus</a></li><li class="active">Real-Time Ray Tracing Explained</li></ol></div><h2 class="post__title"><b>Real-Time Ray Tracing Explained</b></h2><h5 class="post__date">2018-04-06</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/lFnWy0Odsh8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey everyone I'm joined by Tom Peterson
+at Nvidia and we've done a few talks
+with Tom before so today I think we're
+gonna talk about about r-tx and rate
+racing in general as a concept so r-tx
+obviously I think announced at GDC GDC
+that's right explored more here at GTC
+and let's do a let's do kind of the
+elevator pitch okay Bret for ray-tracing
+so the basics before that this video is
+brought to you by EVGA and the X 299
+dark motherboard for the Intel high-end
+desktop CPUs the X 299 dark is one of
+the only mother boards on the market
+with proper vrm cooling we've tested
+this and found a significant performance
+increase over those without active
+cooling on the prm's
+this board was used in our recent
+attempt to set a top 10 record in fire
+strike and you can learn more about the
+x29 dark at the link in the description
+below
+you're telling me before we went on
+camera this has been the Holy Grail
+since it is it's before you were born
+absolutely well before even Brian was
+born right yeah so ray tracing is is
+actually changing from well I'll call
+like an artistic artistic version of
+creating images to more of a physics
+version of creating images so today with
+rendering not many people know but most
+of that is kind of like an artist
+painting a painting there's lots of
+heuristics and you know you do things
+like texture colors and what you're
+trying to do is find a mathematically
+simple way to generate an image that's
+pretty compelling so you have geometric
+models you have shader programs but all
+these things have no connection to the
+real world right ray tracing is
+completely different and by the way that
+old method of kind of using computer
+approximations has artifacts you know
+things like the shadows don't look right
+or things Sparkle there if they're
+getting better and they've always been
+good and and they're great for gaming
+but they're not real ray tracing in
+contrast is trying to do a physical
+simulation of light and the way to think
+about it is you know we live in a world
+where light bounces all over the place
+and it hits on an object and bounces
+around diffusing deflecting subsurface
+scattering that's all kinds of stuff
+right but eventually one ray of light
+makes it into your eye and and hits your
+retina and that's what we perceive as
+vision so what ray tracing is all about
+is pretending that you're kind of
+modeling how a retina works and you
+project forward into the into the scene
+trying to figure out what other rays
+have hit the object that's lighting your
+eye so ray tracing is all about the
+physics of light and when you do that
+you get rid of all this artistic
+interpretation that happens with
+traditional renderings yeah so it's very
+it's very much the way movies do
+generating CGI and now what's really
+different is that we're able to do that
+in real time using r-tx right yeah well
+we we've done some ray tracing renders
+and not real time right and to get
+everyone up to kind of a an example for
+scale before this video started we'll
+have about a two-second intro animation
+that rolls that intro has some ray
+tracing in it and it's I think it took
+us over two weeks to render the two
+seconds right 120 frames Wow so is that
+the logo spinning cut that is yeah you
+know yeah so obviously that is not a not
+great for real time no coming down to
+real-time then I guess for RTX do you
+have any idea how many how many samples
+were taking or how many rays are being
+traced yeah well it's all different
+depending on you know the the platform
+that you're running on but the key thing
+to RTX is we have to make some
+simplifications with even our next
+generation hardware Volta it's still not
+enough to simulate every ray I mean
+obviously we live in a continuous world
+there's there's too many rays to
+simulate so you have to kind of have a
+heuristic that simplifies the problem a
+little bit and then you need techniques
+to make that simplified ray tracing
+experiment look good so we have filters
+that are built into our game works that
+effectively make simplified ray tracing
+or sparse ray tracing look really good
+and that's the key as technology gets
+faster as our GPUs get faster we'll be
+able to do more sophisticated ray
+tracing with more Ray's and get more
+phone arista photorealistic over times
+so right now it's all I think all the
+demos have been done on Titan B's
+revolted anyway yeah is there a is there
+a hardware or architectural limitation
+that prevents it from right on Pascal or
+is it is it just a raw speed thing yeah
+it's it's a speed thing I mean there are
+there are Hardware widgets inside of
+Volta that accelerate ray tracing
+you know you can you can do software
+back offs on older generation GPUs but
+they're they're a lot slower so at the
+end of the day real-time ray tracing is
+going to be reliant upon optimized
+hardware to accelerate that search of
+the space was was Volta built
+specifically with this in mind of
+accelerating ray tracing or was that was
+another I product one of many things
+that I had to does well right so ray
+tracing for us has always been something
+that we're super passionate about super
+interested in and it takes many
+generations many years and you know this
+like from our comput computer you've got
+to start somewhere and we're gonna make
+it better over time and Volta was the
+place where it really got its first big
+investment and it's gonna get you know
+increasingly competent increasingly
+better over time across more of our
+product lines when when dealing with Ray
+J's and then so we've talked about
+sampling so how many samples you do how
+many rays you trace there's also
+denoising right so what why do we need
+denoising again it's about that
+sparseness of current hardware
+capability so if we could simulate every
+ray accurately in a game you would need
+anything knowing you would have a
+completely continuous image generated
+from ray tracing but the truth is today
+on our hardware that's too expensive so
+what we actually do is generate a sparse
+image and that has little pops of
+simulated pixels adjacent to things that
+didn't get simulated so what the
+denoising does is runs deep learned
+filters on that to make it look a little
+bit more natural and that denoising
+technology is tightly coupled into you
+know what's your algorithm what's your
+what's your technique for picking race
+this in right reflections and
+refractions were also a big part of some
+of the demos yeah what mates
+let's talk kind of a general concept
+level on a hardware side what makes it
+difficult for GPUs to deal with
+reflections refractions or like we saw
+the one demo the Star Wars demo where
+you had sort of almost an infinity
+mirror effect right guns reflecting off
+the body off the gun yep so what makes
+that specifically difficult well it's
+really hard to simulate unless you're
+simulating the light reflections itself
+the truth is on GPUs today with
+traditional renderers
+you're not really simulating reflections
+you're generating a texture and then
+you're warping the texture all at once
+and you're kind of painting it onto a
+surface so that you can kind of get the
+impression of a reflection right but
+what's really hard about that is you
+have to you can only do that kind of
+with one immediate bounce if you start
+thinking about things reflecting on
+things reflecting on things then with
+traditional renderers you're generating
+these these images and then you're kind
+of transforming them on the surfaces and
+then re transforming that thing onto the
+next thing so it's the order of what is
+bouncing on a lot that gets very very
+complicated so that that's why it
+doesn't normally look very good or do
+very well on traditional renders ray
+tracing is completely different because
+it kind of goes backwards from your eye
+and it says what is my eye seeing and
+then what are the set of things that hit
+that eye so you can actually accurately
+calculate the the order that things are
+getting lit so we have a scene with the
+camera with the player and we have let's
+say one source of light like direct
+source of light the Sun or something
+like that where we tracing rays from in
+the sea and they is it coming straight
+from the light source so the way to
+think about it is to go from your eye
+you're actually going just coming out of
+the camera that yes so you say I don't
+need to simulate every bit of light in
+the scene what I really need to simulate
+is what light is going to hit my eye and
+so you start from there and say which
+pieces of geometry are are relevant to
+my current camera position and let's go
+figure out the color of those things and
+so now you know a collection of points
+that need to get lit and you can see
+what light sources are bouncing into
+that thing and it's just this tree that
+mushrooms out very quickly right here
+refractions is there anything special
+with refractions versus reflections and
+it's all just physics right it's just
+model the thing that you're you're
+interacting with accurately so if you
+have parameters built into your model
+that affect how light transmission works
+it all just works that's the best thing
+about ray tracing you don't have to
+special case everything you just sort of
+build your your physical model
+accurately and then the visual effect is
+just a result of calculations and I
+guess for the immediate future still
+kind of using traditional techniques
+raster
+in conjunction with ray-tracing for
+purposes of complexity I guess it's all
+computation right so for the short time
+being I think you're gonna see a lot of
+hybrids where maybe global illumination
+is done with traditional techniques and
+then you could do shadows or reflections
+or you know other other focused effects
+using ray tracing and I think you'll see
+those hybrids for some time before you
+know we get to the point where our
+hardware is more capable and you'll
+you'll convert wholesale to a different
+technique for current iterations of the
+r-tx stuff I guess you guys working with
+Microsoft for DirectX yes implementation
+I saw there was is was there some Vulcan
+news as well there's we did announce
+anything but the way to think about RT X
+is it's more of the layer that is the
+Nvidia layer exposing our hardware
+software capabilities up to AP aughts so
+DirectX takes advantage of RT acts and
+in the future other os's or other api's
+could do similar stuff right what's
+going on on the game engine side what
+are the when you hand this off the epic
+games what do they have to do for
+implementation I suspect you know I'm
+not really sure exactly what its gonna
+do but obviously we're working very very
+closely for ray tracing with all the
+game engine guys and I suspect you'll
+see adoption over time and we have game
+works which is intended to deliver a
+complete ray tracing solution to make it
+easy for integration both into games and
+game engines right cool
+anything from all the coverage you've
+seen of RT x ray tracing in general any
+other key points you want to bring that
+I think people have gotten wrong or have
+overlooked I think everybody gets it
+that it that it dramatically improves
+the fidelity of names and it's it's new
+and exciting it's kind of the Holy Grail
+and to me it's just a question of how
+much time is gonna happen before we
+start seeing real games that are taking
+advantage of it and we're doing
+everything we can to accelerate that
+obviously so the next step I guess is
+getting it off of dgx requirements
+basically right not to more consumer
+hardware yeah I mean if we want to see a
+big adoption of ray tracing technology
+we need to get it out into them into
+more platforms right right there'll be
+the future that may be yeah you know
+it's hard to say okay a lot of lot of
+things going on there
+cool well I guess we we might do some
+additional conversation after this if
+you find anything interesting here check
+the article links Lee description below
+I'll do follow-ups on any additional
+questions people have in the comment
+section if you have anything major and
+thank you guys always Tom yeah right man
+great see you soon we'll see you all
+next time</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

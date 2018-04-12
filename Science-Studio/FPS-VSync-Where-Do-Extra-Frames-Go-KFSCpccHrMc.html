@@ -1,0 +1,192 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>FPS &amp; V-Sync: Where Do Extra Frames Go? | Gadgetory - Your Gadget Factory</title><meta content="FPS &amp; V-Sync: Where Do Extra Frames Go? - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Science-Studio/">Science Studio</a></li><li class="active">FPS &amp; V-Sync: Where Do Extra Frames Go?</li></ol></div><h2 class="post__title"><b>FPS &amp; V-Sync: Where Do Extra Frames Go?</b></h2><h5 class="post__date">2018-03-28</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/KFSCpccHrMc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">especially old forums seem to be
+littered with misinformation in regards
+to topics like the one in this video
+for example this GameSpot threads Opie
+asking whether he can see 100 FPS on a
+75 Hertz display receive responses like
+it's true and you can't see 100 FPS
+anyways here's another LCDs do not have
+refresh rates they have response times
+but what really happens when more frames
+and the monitor can process are sent
+from the GPU and what is screen tearing
+on a technical level and how does vsync
+solve this issue
+welcome to probably a very long episode
+of minute science every point zero one
+six seven seconds or thereabout sir
+point zero zero eight three seconds or
+point zero zero four two seconds your
+monitor likely refreshes these are
+refresh rates adopting the unit Hertz
+the SI unit of frequency denoted as the
+multiplicative inverse of seconds so
+when a monitor has a 60 Hertz refresh
+rate it switches images or stills 60
+times per second frames are usually
+drawn from top to bottom at speeds our
+eyes are incapable of discerning and are
+left on screen for a duration of 1 / the
+refresh rate itself but what happens
+when you send more than the number of
+frames a screen can process what happens
+when a 60 Hertz monitor let's say
+receives 100 frames per second on
+average from a graphics card and no I'm
+not just talking about screen tearing
+that's the obvious answer I want to know
+what happens on a technical level inside
+the monitor well if we assume a constant
+60 Hertz refresh rate like with this
+monitor here and a constant 90 FPS draw
+from the graphics card then we're at a
+roughly 121.5 deficit on the GPU side
+meaning half of every other frame won't
+be processed by the monitor at least on
+paper now in the real world monitors
+only call frames when they need them so
+the very first frame at these ratios
+with a perfectly fine once the
+simulation starts one frame sent and one
+frame displayed but since the monitor
+isn't refreshing fast enough the next
+image displayed will consist of only
+half of the next full frame you can look
+at this mathematically by separating
+each rate in additive steps using our
+ratio one plus one plus one for the
+monitor and one point five plus one
+point five plus one point five for the
+GPU again
+constant framerate on the second refresh
+from the monitor when it's step is to
+the graphics card is already halfway
+through its second frame so the monitor
+compensates by displaying half of the
+second frame and the first half of the
+third in this scenario since the other
+half of the data from the previous frame
+was overridden by the graphics cards
+higher pace if it didn't override the
+previous frame the video would become
+delayed increasing input lag to the
+degree that this was allowed to continue
+at step three the graphics card will be
+sending its fourth frame because they're
+in sync again and then the cycle repeats
+it goes out of sync by a half step and
+then it's back in sync and it keeps
+alternating now the yield what we get
+from that is what we call screen tearing
+and it literally looks like the screen
+is being torn down the middle but I
+should clarify where it's torn depends
+largely on the refresh to FPS ratio at
+that time in this particular example
+everything's on a 1 to 1.5 ratio so the
+monitor would ideally split every other
+frame perfectly across the center and
+something else to note screen tere
+occurs horizontally because frames are
+usually drawn in a top-to-bottom fashion
+now this is where vsync comes in when
+enable that forces the graphics card to
+literally synchronize its frame rate the
+frames that it's outputting to the
+monitor with the calls from the monitor
+it'll also typically reduce hardware
+utilization but this isn't foolproof so
+you might notice a temperature drop or
+maybe the fans spool down just a little
+bit but this is more or less a byproduct
+of using vsync in the event that you
+would normally have a much higher frame
+rate being thrown to the monitor now
+there may be visual benefits to running
+at a frame rate higher than your refresh
+rate even though technically speaking
+you can't see those extra frames so many
+professional FPS gamers in particular
+keep vsync off because they swear by the
+decreased input lag and faster
+interpolations required when aiming
+here's what an overwatch player had to
+say in any case I disabled the vsync
+recently and wow what a difference
+I can aim now I always had this issue
+where I'd be tracking a target like a
+running soldier and my crosshair would
+always lag a tiny bit behind where they
+were I always thought this was just some
+practice or mental block issue where I
+hadn't trained my hand-eye coordination
+to compensate or something now it
+doesn't happen any
+or I have a couple of friends who have
+reported the same feeling it's such a
+tiny one sixtieth of a second delay it's
+hard for your brain to realize it's not
+the one making the mistake my wife
+swears by vsync off despite the
+occasional screen tearing and I can kind
+of see why but at higher refresh rates
+these advantages become less apparent in
+principle so at 60 Hertz the maximum
+delay incurred with vsync on would
+approach one sixtieth of a second right
+in time for the next frame to be in sync
+with the refresh rate but at 240 Hertz
+the max delay with vsync is 1 to 40th of
+a second which could make a visual
+difference to many though the
+effectiveness of vsync at these rates
+anyway is probably pretty moved
+so in summary extra frames are
+overridden or split in accordance with
+the refresh rate in question but with
+vsync on the graphics card draws as many
+frames as the monitor calls so no
+splitting or screen tearing is necessary
+maybe only a slight delay that I don't
+expect too many people would notice
+except maybe those who play and on a
+professionally or really intense
+first-person shooters I don't know what
+you think about this topic in the
+comments below if you play with vsync on
+or off we haven't really touched on
+freesync or g-sync which are proprietary
+technologies from AMD and both more
+proprietary for nvidia on the g-sync
+side but those technologies are for a
+separate video I just wanted to
+highlight vsync here because almost
+anybody has access to that as long as
+you're playing a relatively modern game
+you can turn on the vsync function or
+the you know 1x 2x or 3x buffer which
+would basically store those frames in
+your graphics cards memory kind of a
+similar process to vsync just call it
+something different on paper so if you
+like the video you can let me know give
+someone a thumbs up I appreciate it
+thumbs down for a V oppositely to
+subscribe button if you haven't already
+in stay tuned for more content like this
+this is science studio thanks for
+learning with us
+you</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>
