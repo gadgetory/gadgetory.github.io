@@ -3,95 +3,96 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'UA-114897551-1');
-</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Sean Tracy on 64-bit Engine Tech &amp; Procedural Edge Blending | Gadgetory - Your Gadget Factory</title><meta content="Sean Tracy on 64-bit Engine Tech &amp; Procedural Edge Blending - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus/">Gamers Nexus</a></li><li class="active">Sean Tracy on 64-bit Engine Tech &amp; Procedural Edge Blending</li></ol></div><h2 class="post__title"><b>Sean Tracy on 64-bit Engine Tech &amp; Procedural Edge Blending</b></h2><h5 class="post__date">2016-09-30</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/OB_AI9ukSp8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">this is part one of our two-part
-interview with technical director Sean
-Tracy from cloud imperium games even if
-you're not interested in star citizen
-right now the interviews should be
-pretty interesting because it contains
-information about 64-bit coordinates and
-world space and what is a 64-bit engine
-we talk about meshes and textures and
-mapping all the stuff load processing
-and management before getting to this
-coverage it is brought to you by antec
-and their new mini ITX cube case
-designed by razor it's got an aluminum
-shell acrylic windows on the side and it
-should be available shortly so just as
-an FYI part two of this interview will
-go up on Wednesday and that will include
-the character technology that's been
-updated for citizen Khan and also load
-management on the cpu threading pins
-like that so without further ado I will
-let you get to part one of the interview
-hey everyone we're here at the cloud
-imperium games offices near santa monica
-and la i guess i don't really know where
-we already are i'm joined by it Sean
-Tracy from CI g and we just talked with
-chris Roberts of course so that video
-will be on the channel now we're going
-to be going more technical so the first
-kind of question bring up in our
-interview with Chris he mentioned the
-concept of I use the word CryEngine yeah
-which kind of response was not really
-crying anymore yeah right so the working
-title we had then was star engines so
-yeah so storage has been kind of bounced
-around I don't know how how absolutely
-official it is or anything like that but
-yeah I mean it's a pretty different
-version than what the CryEngine is we
-branched quite a while ago so we haven't
-taken a new CryEngine version for quite
-some time it's about the 3.7 3.8 area of
-CryEngine so this was this was early
-last year might have been before that
-were we branched off so we branched off
-entirely because it was getting really
-difficult to take the integrations at
-this point at some point when you're
-developing your game on
-where you're going to get to the point
-that polling integrations is hard
-because you've customized it so much for
-your game so whatever changes you make
-to underlying engine systems when
-there's when there's a fundamental
-change that comes in from your
-middleware provider it's pretty
-difficult to consume that all the time
-and then you start being selective okay
-well we'll we'll take faith this feature
-but we won't take this feature and what
-you don't know right out of the gate is
-if there's any interdependent on it
-what's going to happen and then you find
-that out usually the hard way later on
-so we tried to stop doing that we do
-cherry pick on on occasion from our
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Sean Tracy on 64-bit Engine Tech &amp; Procedural Edge Blending | Gadgetory - Your Gadget Factory</title><meta content="Sean Tracy on 64-bit Engine Tech &amp; Procedural Edge Blending - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus/">Gamers Nexus</a></li><li class="active">Sean Tracy on 64-bit Engine Tech &amp; Procedural Edge Blending</li></ol></div><h2 class="post__title"><b>Sean Tracy on 64-bit Engine Tech &amp; Procedural Edge Blending</b></h2><h5 class="post__date">2016-09-30</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/OB_AI9ukSp8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">this is part 1 of our two-part interview
+with technical director Sean Tracy from
+cloud Imperium games even if you're not
+interested in star citizen right now the
+interviews should be pretty interesting
+because it contains information about
+64-bit coordinates and world space and
+what is a 64-bit engine we talked about
+meshes and textures and mapping all this
+stuff load processing and management
+before getting to this coverage it is
+brought to you by an tech and their new
+mini ITX cube case designed by Razer
+it's got an aluminum shell acrylic
+windows on the sides and it should be
+available shortly so just as an FYI part
+2 of this interview will go up on
+Wednesday and that will include the
+character technology that's been updated
+for citizencon
+and also load management on the CPU
+threading pins like that so without
+further ado I will let you get to part 1
+of the interview hey everyone we're here
+at the cloud Imperium games offices near
+Santa Monica and LA I guess I don't
+really know where we are I'm joined by
+Shawn Tracy from CI G and we just talked
+with Chris Roberts of course so that
+video will be on the channel now we're
+gonna be going more technical so the
+first kind of question would be not in
+our interview with Chris he mentioned
+the concept of I used the word CryEngine
+yeah which kind of response was not
+really crying anymore yeah right so the
+working title we had then was star
+engine so yeah so storage has been kind
+of bounced around I don't know how how
+absolutely official it is or anything
+like that but yeah I mean it's a pretty
+different version than what the
+CryEngine is we branched quite a while
+ago so we haven't taken a new CryEngine
+version for quite some time it's about
+the 3.7 3.8 area of CryEngine so this
+was this was early last year it might
+have been before that where we branched
+off so we branched off entirely because
+it was getting really difficult to take
+the integrations at this point at some
+point when you're developing your game
+on
+where you're gonna get to the point that
+polling integrations is hard because
+you've customized it so much for your
+game so whatever changes you make to
+underlying engine systems when there's
+when there's a fundamental change that
+comes in from your middleware provider
+it's pretty difficult to consume that
+all the time and then you start being
+selective okay well we'll take faith
+this feature but we won't take this
+feature and what you don't know right
+out of the gate is if there's any
+interdependent writing on it what's
+gonna happen and then you find that out
+usually the hard way later on so we
+tried to stop doing that we do
+cherry-pick on on occasion from our
 particular code base that we have up to
-and again I was pretty sure with 3.7 or
-318 I just can't remember the exact
+and again I was pretty sure it was 3.7
+or 38 I just can't remember the exact
 version right but yeah we've made some
 pretty pretty major changes and it's
-been ongoing for a while for CI g of
+been ongoing for a while for c IG of
 course I only came on about two and a
 half years ago from crime tech after
-supporting them with their engine drama
-revisions and as soon as they were done
+supporting them with their engine draw
+provisions and as soon as they were done
 getting the engine on my car and I
-better get over there No so one of the
-big fundamental changes and Chris had
-mentioned it was the support for a
-64-bit positioning right now what's a
-lot of people i think maybe
+better get over there No
+so one of the big fundamental changes
+and Chris had mentioned it what's the
+support for a 64-bit positioning right
+now what's a lot of people I think maybe
 misunderstand is that it wasn't an
 entire conversion for the whole engine
-um the engine split up in a very
+the engine split up in a very
 independent and you know not as much as
 they should be but isolated modules
 right and they do talk to each other of
@@ -99,126 +100,125 @@ course but things like physics things
 like render things like AI what are the
 purposes of changing the AI to 64-bit
 well all the positioning that it will
-use will be dressing for a bit but the
-day I module itself doesn't really care
+use will be drastic for a bit but the
+the AI module itself doesn't really care
 you know so there was a lot of changes
 to support this large world coordinates
 and it's actually pretty crazy I haven't
-on my wall the actual maximum it's 18
-zeros that we can support in terms of in
-terms of space which is crazy because
-especially for is that's a floating
-point limit or something yeah that's
-exactly yeah and at that point like I
-mean you just can't have any more time
-within the memory so it's pretty weird
-for people that have you know come over
-from Crytek that have worked on just
-CryEngine normally because and Chris had
-mentioned this you're working on like a
-42 I mean maximum eight kilometers of
-level and already at that scale I felt
-like that was pretty big but when it's
-such a you know for lack of a better
-word it messes with your mind in the
-large world coordinates because you'll
-be sitting there working on something
-and then you're so to start to zoom out
-in your life sort of searches a bit more
-and the job is going it really messes
-with your sense of scale though because
-it can be pretty confusing again if
-you're looking at a planet like I mean
-you're looking at thousands of
-kilometers of area right um so can get
+written up on my wall the actual maximum
+it's 18 zeros that we can support in
+terms of in terms of space which is
+crazy because especially for if that's a
+floating-point limit or something yeah
+that's exactly yeah and at that point
+like I mean you you just can't have any
+more time within the memory so it's
+pretty weird for people that have you
+know come over from Crytek that have
+worked on just CryEngine normally
+because and Chris had mentioned this
+you're working on like a 4 - I mean
+maximum 8 kilometres of level and
+already at that scale I felt like that
+was pretty big but when it's it's such a
+you know for lack of a better word it
+messes with your mind in the large world
+coordinates because you'll be sitting
+there working on something and then your
+start to start to zoom out you're like
+yeah and the job is going it really
+messes with your sense of scale though
+because it can be pretty confusing again
+if you're looking at a planet like I
+mean you're looking at thousands of
+kilometres of area right so it can get
 very easy to underestimate how large the
 undertaking of just populating something
-by area to not just exactly right so
-that can that can really mess with your
-mind but that's one of the bigger bigger
-changes made of course with with the
-implementation of planets but more just
-with the positioning of it right so now
-I think in the the first system that
-we're going to do and just right now and
-this is maybe quantum travel speeds will
-change or so but it takes about 45
-minutes at are at our jumper quantum
-jump speed to cross an entire system so
-that's just one system and if you want
-to think of the systems as levels i
-guess in them in themselves that's kind
-of how you would think about it they're
-ready basically no loading for you know
-45 minutes of quantum travel which is
-the actual realistic value of you know
-zero point to see which is the 0.2 times
-the speed of license it's crazy how
-large that area is educated can really
-mess your mind when you're working on it
-yeah awesome
-that so that is kind of cool so the
-64-bit conversion I can I guess the the
-clarity to be made is that it's not the
-entire engine that's right got some time
-you will be the entire right right um so
-yeah that was the big piece of clarity I
-think a lot of people have this
-understanding they just I I think it's
-just easier done so yeah they converted
-the engine 60 right well okay you know
-there was stuff within the engine that
-will already was 64 bit what we really
-needed was physics and positioning to be
-right and that's what got changed so and
-to put that into perspective for folks
-the world space coordinates is one of
-the big impacts from that you've got
-more space you can work with is there
-anything else specifically that you
-benefit from by making the conversion
-ought to 64-bit yeah not that I can
-think of right out of the gate it no
-it's more just supporting the actual
-threat itself more than anything it's
-not better performance or anything if
-anything it's a bit worse um but I mean
+whatever area - not just exactly right
+so that can that can really mess with
+your mind but that's one of the bigger
+bigger changes we made of course with
+with the implementation of planets but
+more just with the positioning of it
+right so now I think in the the first
+system that we're gonna do and just
+right now and this is maybe quantum
+travel speeds will change or so but it
+takes about 45 minutes at our at our
+jump or quantum jump speed to cross an
+entire system so that's just one system
+and if you want to think of the systems
+as levels I guess in them in themselves
+that's kind of how you would think about
+it they're ready basically no loading
+for you know 45 minutes of quantum
+travel which is the actual realistic
+value of you know 0.2 C which is the 0.2
+times the speed of light so it's crazy
+how large that area is educated can
+really mess your mind when you're
+working on it yeah awesome
+that's oh that he's gonna so the 64-bit
+conversion I can I guess the the clarity
+to be made is that it's not the entire
+engine that's right will be the entire
+right right so yeah that was the big
+piece of clarity I think I and a lot of
+people have this understanding they just
+III think it's just easier done so yeah
+they converted the engine sixty right
+well okay the you know there was stuff
+within the engine that were already was
+64-bit what we really needed was physics
+and positioning to be right and that's
+what got changed so and to put that into
+perspective for folks the world space
+coordinates is one of the big impacts
+from that you've got more space you can
+work with is there anything else
+specifically that you benefit from by
+making the conversion to 64-bit yeah not
+that I can think of right out of the
+gate no it's more just supporting the
+actual server itself more than anything
+it's not better performance or anything
+if anything it's a bit worse but I mean
 we're talking marginal different rest
-like I mean it yeah if anything it said
+like I mean yeah if anything it said
 it's actually tiny bit slower but with
 newer CPUs actually we did we did make a
-change now that the positioning work
-zone actually it ends up being faster
-Punta normally if you're just going to
-switch over to seach for bit positioning
-you would be a little bit slower in your
+change to how that the positioning works
+so actually it ends up being faster but
+so normally if you're just gonna switch
+over to seach for bit positioning you
+would be a little bit slower in your
 math so the other the only benefits we
 get is just just the sheer amount of
 space right and support for the players
 and they have to have that amount of
 space for a game that's young in space
-wreck exam for procedural generation
-intact of the planets so procedural
-generation written two point oh it's
-kind of a big topic yeah right there's
-there's a lot we can talk about here at
-eric lee we were talking with Chris as I
-said there's another video on that so
-there's biomes there's different I guess
-layers you got called for the biomes so
-oh and sort of interrupt you one of the
-things that we had done
-and I the difference between the V one
-of the few planets and because i was
-sitting in to the interview with chris
-or it wasn't super clear what the
-difference really was so on the v1
-planning it was our very first
-implementation um what you saw on our
-demos is actually just a single terrain
-layer like it's one material right um
+right exams for procedural generation in
+tech for the planets so procedural
+generation written 2.0 mmm it's kind of
+a big topic yeah right there's there's a
+lot we can talk about here technically
+we were talking with Chris as I said
+there's another video on that so there's
+biomes there's different I guess layers
+you got called for the biomes so oh and
+sort of interrupt you one of the things
+that we had done
+and I the difference between the v1 and
+the beaten planets and because I was
+sitting into the interview with Chris it
+wasn't super clear what the difference
+really was so on the v1 planet it was
+our very first implementation what you
+saw on our demos is actually just a
+single terrain layer like it's one
+material right um
 yes okay we've got different textures
-that are debtor that are blending at
+that are that are that are blending at
 different distances and so but all the
 planets that we had shown literally only
 had a single material across the entire
@@ -227,204 +227,204 @@ that's that's another oh and that's
 actually in a lot of cases where you see
 procedural generation tech it never goes
 beyond that um they're happy with just
-this one sort of rocky material whatever
-it happens to be across the entire
-planet so what this does is it brings us
-way more in line with how we were making
-crisis levels or levels down at Crytek
-with terrain because we always had
-access or designers always our artists
-always had access to up to 16 layers for
-different terrain textures so what we
-want to do with it is kind of give them
-back that same ability just on a
-ridiculous scale because again you would
-you know and I thought it was a lot of
-time to paint eight kilometers of space
-and just paint you know again like
-thousands of thousands times crazy but
-yeah we want to give them that amount of
-layers because that's the only way that
-you're gonna get the quality that you
-want out of a first-person shooter or
-anything like that you're never going to
-get that with just a single to sort of
-train there so another big improvement
-on the v2 planets is the biomes of
-course so on the v1's but v1 planets
-they had no bottoms there was no idea
-whatsoever it's a single terrain layer
-it's got the height map great but on v2
-we've got biomes so the biomes
-themselves have layers within them for
-object placement for weather like Chris
-note noted as well as the vegetation and
-other objects like Chris actually adding
-foliage now and things okay exactly and
-then
-and this this was one of the good
-reasons about coming from CryEngine
-anyways we reuse and try to reuse as
-much as possible a lot of the really
-powerful tools that CryEngine already
-had for these things just at the bigger
+this one sort of rocky material or
+whatever it happens to be across the
+entire planet so what this does is it
+brings us way more in line with how we
+were making crisis levels or levels down
+at Crytek with terrain because we always
+had access or designers always ever
+artists always had access to up to 16
+layers for different terrain textures so
+what we want to do with it is kind of
+give them back that same ability just on
+a ridiculous scale because again you
+would you know and I thought it was a
+lot of time to tell paint eight
+kilometers of space and just paint you
+know again like thousands of thousands
+right crazy but yeah we want to give
+them that amount of layers because
+that's the only way that you're gonna
+get the quality that you want out of a
+first-person shooter or anything like
+that you're never gonna get that with
+just a single to sort of terrain layer
+so another big improvement on the v2
+planets is the biomes of course so on
+the v1 v1 planets they had no bottoms
+there was no idea whatsoever it's a
+single terrain layer it's got the height
+map great but on V - we've got biomes so
+the biomes themselves have layers within
+them for object placement for weather
+like Chris note noted as well as the
+vegetation and other objects like grass
+actually adding foliage now exactly and
+then and and this this was one of the
+good reasons about coming from CryEngine
+anyways we've reused and try to be used
+as much as possible a lot of the really
+powerful tools that CryEngine Artic had
+for these things just at the bigger
 scale right so again in the thinking of
-the terrain layers while terrain layers
-were the same way and crying too before
+the terrain layers well terrain layers
+were the same way and crying - before
 that let's just apply that to planet and
-you've got the same sort of ability to
-just work on a larger scale same thing
-with the vegetation I had noticed in
-that in conversation with Chris of those
-more advanced rule sets for vegetation
-so in crisis to give you kind of some
-some history we really only had like 16
+you've got the same sort of ability just
+work on a larger scale same thing with
+the vegetation I had noticed in that the
+conversation with Chris of those more
+advanced rule sets for vegetation so in
+crisis to give you kind of some some
+history we really only had like 16
 different palm trees and like it did
 pretty well for entire force and people
-were like very low that vegetation
-zamane well what was really good about
-it was the system that we use to place
-these so we had a variable scale we
-would set rule sets on like a little
-layer or a group for these vegetation
-objects so again we'll take this really
-powerful tool and apply it to the
-procedural stuff so you'll do things
-like density okay how how close can
-other you know palm trees be to this are
-they randomly rotated because that's
-that's a really easy win for a lot of
-things so you might have like this tree
-that's sort of rotated like this right
-and if that's placed the same rotation
-every where you're like say NASA right
-but as soon as you randomly rotate it a
-lot of people will be like wow this is
-actually the statue then it's all
-actually the same asset though right um
-then you got randomized scale that will
-happen between them the density random
-scale and whether it aligns to hide maps
-so like if the tree ends up on the side
-of a hill does it go like this or does
-it go like there's a grass it's got to
-do that but if it's a tree it's got to
-go yeah so there's a lot of things we
-learned in in the crisis projects and
-just working on CryEngine generally that
-I think we're applying to that toolset
-there so that it's just as powerful
-because a mentality at Crytek was always
-used the tools to get you ninety percent
+were like very low that vegetation to me
+well what was really good about it was
+the system that we use to place these so
+we had variable scale we would set rule
+sets on like a little layer or a group
+for these vegetation objects so again
+we'll take this really powerful tool and
+apply it to the procedural stuff so
+you'll do things like density okay how
+how close can other you know palm trees
+be to this are they randomly rotated
+because that's that's a really easy win
+for a lot of things so you might have
+like this tree that's sort of rotated
+like this right and if that's placed the
+same rotation everywhere you're like say
+NASA right but as soon as you randomly
+rotate it a lot of people will be like
+wow this is actually the Statue then
+it's all actually the same asset though
+right then you got randomized scale
+that'll happen between them the density
+random scale and whether it aligns to
+height maps so like if the tree ends up
+on the side of a hill does it go like
+this or does it go like though the grass
+it's about to do that but if it's a tree
+it's gotta go yeah so there's a lot of
+things we learned in in the crisis
+projects and just working on CryEngine
+generally that I think we're applying to
+that tool set there so that it's just as
+powerful because a mentality at Crytek
+was always used the tools to get you 90%
 of the way there and then let the
-artists come in and do that last ten
+artists come in and do that last 10
 percent right so that's the exact same I
 deal with these planets we've got to
-have powerful tools because again you
-got you know a thousand planets or
+have powerful tools because again you've
+got you know have a thousand planets or
 whatever it's going to end up being how
-to make all of those you know it in to
-fidelity that
-you know is it we're all proud of right
-but it doesn't take you not take 10
+to make all of those you know it in at
+to a fidelity that
+you know is we're all proud of right but
+it doesn't take you know not take 10
 years or 11 years to do it so so again
 taking a lot of the tools from from
 CryEngine is is really one of the best
 things so a lot of people say oh yeah
-well crazy idea to go with crimes well
+well crazy idea to go with crime well
 not really because there was a lot of
 stuff in the engine that is very very
-powerful so I'm which was basically your
-own engine now anyway like exactly so
+powerful because basically your own
+engine now anyway like exactly so
 exactly but it would be a shame to you
 know just take all the old modules
 delete you know there's no reason to do
 that we know we want to try to save our
-time and it build off of good tool sets
-I were already there right so with the
-procedural generation stuff like we said
-multiple layers we're talking about with
-Chris about how you might have a forest
-layer younger biome rather not give you
-some other neighboring biomes swamp
-something like that yeah what what sort
-of parameters are in when the system is
-looking at how to blend these multiple
-biomes but yes edge funding and that's
-actually something we're talking a lot
-about right now even just last week we
-had a pretty large email that we were
-going back and forth on some things so
-so whatever I answer right now can
-change or T this is gonna take so I mean
-the the thinking generally is right now
-I'm just like Chris said there's a
-distribution map right so you can either
-use that to inform all your placement
-but then you don't really get perfected
-plans what you can do is on those edges
-of the of the clip maps because you kind
-of learn not to club as the distribution
-map you know where that ends so you can
-actually do a certain distance that
-you're kind of calling a blend distance
-or whatever so this is where one is
-blending into the other the problem is
-is if you have a lot of biomes the rules
-to blend those two are probably going to
-end up being pretty different um for
-drain layer blending it's pretty
-straightforward we did that in the
-crisis games that's a sort of a
-high-pass technique of you know kind of
-we have a detailed map that's gray scale
-then we have a low detail that's more
-color and it's just really easy to blend
-to greyscale details together on top of
-you know just a base color so terrain
-layer is probably going to be easy
-it's the it's the vegetation and like
-the actual assets themselves because
-again if you're blending from desert to
-jungle yeah just kind of you know just a
+time and it build off of of good tool
+sets that were already there right so
+with the procedural generation stuff
+like we said multiple layers we're
+talking about with Chris about how you
+might have a forest layer your biome
+rather nexu some other neighboring
+biomes swamps something like that yeah
+what what sort of parameters are in when
+the system is looking at how to blend
+these multiple biomes supply yes the
+edge blending and that's actually
+something we're talking a lot about
+right now even just last week we had a
+pretty large Eno that we were going back
+and forth on some things so so whatever
+I answer right now guarantee this is
+gonna take so I mean the the thinking
+general use right now just like Chris
+said there's a distribution map right so
+you can either use that to inform all
+your placement but then you don't really
+get perfected plans what you can do is
+on those edges of the of the clip Maps
+because you kind of learn not to Club
+pass the distribution map you know where
+that ends so you can actually do a
+certain distance that you're kind of
+calling a blend distance or whatever so
+this is where one is blending into the
+other the problem is is if you have a
+lot of biomes the rules to blend those
+two are probably gonna end up being
+pretty different for terrain layer
+blending it's pretty straightforward we
+did that in the crisis games that's a
+sort of a high-pass technique of you
+know kind of we have a detailed map
+that's grayscale and then we have a low
+detail that's more color and it's just
+really easy to blend to greyscale
+details together on top of you know just
+a base color so terrain layer is
+probably going to be easy it
+see it's the vegetation and and like the
+actual assets themselves because again
+if you're blending from desert to jungle
+yeah this kind of easy you know just a
 little bit of grass at the edges and
-then you spreading trees but when you
+then you spread in trees but when you
 start doing like like a mountain sort of
-forest vs jungle of versus city like
-what do you do so a lot of the rules
-again is based on that based on that
+forest versus jungle of versus city like
+what do you do so a lot of rules again
+is based on that based on that
 distribution map we're gonna have a
-distance and then that distance is going
-to be variable based on whatever biome
-is blend to it so right now we're trying
+distance and then that distance is gonna
+be variable based on whatever biome is
+blender do it so right now we're trying
 to make it so that the rules are robust
 enough that we get the nice blends out
 of it but not so complex that nobody
 will understand what's going on right
-right and that's again in the end we
-have to give the artists and and the
-environment designers some ability to go
-in and manually fix whatever that is but
-we've got to be able to get it ninety
-percent of the way there you know with
-rules and really fix it on then so yeah
-I realized it going to super deep detail
+right
+and that's again in the end we have to
+give the artists and and the environment
+designers some ability to go in and
+manually fix whatever that is but we've
+got to be able to get it 90% of the way
+there you know with rules and really I
+don't fix it on then so yeah I realized
+it you can go into super deep detail
 about that but it's kind of because yeah
-we're still talking about exactly the
-right way to do it but what you'll see
-in the in the citizen Khan demo for the
-v2 planets already has a lot of that
+yeah we're still talking about exactly
+the right way to do it but what you'll
+see in the in the citizencon demo for
+the v2 planets already has a lot of that
 blending in it just not in terms of
-large object rights like that so as
-always more information will have an
-article below it kind of key talking
+large objects right like that so as
+always more information we'll have an
+article below with kind of key talking
 points things like that and I guess we
-might be seeing you guys at citizen khan
+might be seeing you guys at citizencon
 otherwise we'll have coverage of it
 online separately so awesome tune in for
 that thank you for joining me Sean
-you're very welcome this one yeah we'll
-see you all next time</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+you're very welcome what's fun yeah
+we'll see you all next time</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
     var b = d.getElementsByTagName('body')[0];
     var s = d.createElement("script"); s.async = true;
     var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";

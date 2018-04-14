@@ -3,13 +3,13 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'UA-114897551-1');
-</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Chris Roberts on Engineering Star Citizen &amp; Zone Optimization | Gadgetory - Your Gadget Factory</title><meta content="Chris Roberts on Engineering Star Citizen &amp; Zone Optimization - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus/">Gamers Nexus</a></li><li class="active">Chris Roberts on Engineering Star Citizen &amp; Zone Optimization</li></ol></div><h2 class="post__title"><b>Chris Roberts on Engineering Star Citizen &amp; Zone Optimization</b></h2><h5 class="post__date">2015-10-02</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/kO9dEq3YMWc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey everyone i'm steve from gamers nexus
-net and i'm back presenting the second
-half of our recent interview with star
-citizen's chris Roberts the first half
-talks about some of the recent
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Chris Roberts on Engineering Star Citizen &amp; Zone Optimization | Gadgetory - Your Gadget Factory</title><meta content="Chris Roberts on Engineering Star Citizen &amp; Zone Optimization - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus/">Gamers Nexus</a></li><li class="active">Chris Roberts on Engineering Star Citizen &amp; Zone Optimization</li></ol></div><h2 class="post__title"><b>Chris Roberts on Engineering Star Citizen &amp; Zone Optimization</b></h2><h5 class="post__date">2015-10-02</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/kO9dEq3YMWc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey everyone I'm Steve from gamers Nexis
+dotnet and I'm back presenting the
+second half of our recent interview with
+star citizens chris Roberts the first
+half talks about some of the recent
 developments in the game but primarily
-looks at Direct X 12 both in an AP is in
+looks at DirectX 12 both in an AP is in
 this part of the interview we talked
 about CryEngine and its architecture we
 talked about the methodology and
@@ -25,236 +25,238 @@ tremendously positive response we've
 received on these interviews lately if
 you want to help us figure out who to
 interview next or if you have questions
-for specific people star citizen or
-otherwise please tweet them out at us at
-gamers Nexus and I'll check those
-personally see what we can do and we'll
-set up more of these going forward
-because they seem to be well liked so
-that is all for the intro on this one
-hit me patreon link as always if you
-want to help us out in producing more of
-this content and remaining fairly
-independent from the traditional models
-of the internet and enjoy the interview
-with Chris I'll see you all next time
+for specific people
+star citizen or otherwise please tweet
+them out at us at gamers Nexus and I'll
+check those personally see what we can
+do and we'll set up more of these going
+forward because they seem to be well
+liked so that is all for the intro on
+this one hit the patreon link as always
+if you want to help us out in producing
+more of this content and remaining
+fairly independent from the traditional
+models of the Internet and enjoy the
+interview with Chris I'll see you all
+next time
 can you educate me on like a sort of
 canonical view of the render pipeline
 when you're drawing something like say
 character model or a ship or something
-like that what what does it look like a
-cry engine or to the GPU what are the
-sort of step-by-step processes when
-you're rendering something well I mean
-what happens is because it is threaded
-essentially stuff gets pushed on to the
-rent so what happens is in the sort of
-accumulation of the main thread render
-gets called and render basically on the
-main thread site just starts pushing the
-objects like you know the basically in
-try entering the co render objects and
-they get pushed on to sort of the render
-key and it gets pushed on with the
-information about the object including
-it's location in 3d space because it's
-going to
+like that
+what what does it look like a cry engine
+or to the GPU what are the sort of
+step-by-step processes when you're
+rendering something well essentially
+stuff gets pushed on to the red so what
+happens is in the sort of accumulation
+of the main thread render gets called
+and render basically on the matrix night
+just starts pushing the objects like you
+know the basically in branch and the
+core render objects and they get pushed
+on through sort of the render key and it
+gets pushed on with the information
+about the object including its location
+in 3d space because it's going to
 threaded so you can't depend on the
 stuff for sitting the main thread so
-just basically you know Thomas all this
-stuff on to the render thread and then
-the main loop goes about doing it stuff
-again Wow the render thread carries on
-doing stuff so basically the rendering
-and the main loop that sort of happening
-concurrently all the time and just at
-the right end of the main loop that's a
-bit where that the word the main loops
-done gets pushed off to the render
-thread and the render thread goes about
-the work and actually transforming and
-rendering and bring on rest this stuff
-and you know then at that side on the 3d
+just basically you know pumps all this
+stuff onto the render thread and then
+the main loop goes about doing its stuff
+again Wow
+the render thread carries on doing stuff
+so basically the rendering and the main
+loop that sort of happening concurrently
+all the time and just at the very end of
+the main loop that's a bit where there
+the work the main loop is done gets
+pushed off to the render thread and the
+render thread goes about the work of
+actually transforming at rendering
+anything on the rest of the stuff and
+you know then at that side on the 3d
 engine side it sort of does the various
-things that used to do like you know the
-passes to the deck buffer and the shadow
-maps and all the stencils and stuff that
-you need for our kind of stuff and yeah
-flash it out you know it's the CryEngine
+things it needs to do like you know the
+passes to the decks buffer and shadow
+Maps and all the stencils and stuff that
+you need for all kind of stuff and yeah
+blast it out you know it's the CryEngine
 rent beside itself you know it's a
 pretty tricky complicated piece so
-that's not one that I would be
-personally like excited about
-replastering do have had people here
-that actually wrote much of it so you
-know luckily like they they're all
-working you know and they know it they
-know it better than me because it's you
-know it's I would say that it's it was
-written back in the day where it was
-less modularize and less sort of object
-oriented or based so there's a lot of
-slowly too dependent codes and checks on
-flags that are passed down through
-various levels a render that probably
-wouldn't necessarily do today as well
-and so those are kind of things that
-don't worry part of the idea is to sort
-of refactor the plumbing is sort of like
-you got a house it looks really pretty
-it's a really nice house but some of the
+that's one that I would be personally
+like excited about replastering you have
+people here that actually wrote much of
+it so you know luckily they they they're
+all working they know it better than me
+because it's you know it's I would say
+that it's it was written back in the day
+where it was less modularize and less
+sort of object-oriented or based so
+there's a lot of sort of interdependent
+codes and checks on flags that have
+passed down through various levels and
+render that probably you wouldn't
+necessarily do today as well and so
+those are kind of things that very part
+of the idea is to sort of refactor the
+plumbing is sort of like you're gonna
+house it looks really pretty it's a
+really nice house but some of the
 Plumbing's a bit old and you know you
-got more quite have to go in and redo
-the plumbing Greg you may not
+don't want quite have to go in and redo
+the plumbing okay you may not
 necessarily realize that the Plumbing's
 got some of the issues that have after
-it the hot water will flow better right
-here but you've got the you've her dance
-from the Crytek people forget we
-I have quite a few of the original core
-engine team so we we know we've got I
-think three of the original Far Cry team
-carried on doing some of the from there
-there and then there's quite a few that
-have been from crisis one onwards from
-the engine team so we have a decent we
-don't have more there's plenty of other
-ones that are also there in two minutes
-of big companies lots of stuff but you
-know we've got people that helped you
-know basically build the engine design
-architected so they know free inside out
-so so that's that's very beneficial for
-us it's usually if you're a licensee you
-wouldn't have that knowledge which is
-useful for us because we're trying to do
-something very different than you would
-normally use CryEngine for me and you
-must be honest what we're doing is
-different than doesn't matter whether it
-be unreal or unity or CryEngine we would
-a lot of the refactoring we've been
-having to do we would have to do yeah
-especially the 64-bit stuff at 64 bits
-the big also just kind of approaching
-spatialization and sort of kind of data
-passing differently because of the vast
-scale we have and scope and the fact
-that we can have a high density of like
-information and data but then also
-passed areas of nothing so you know more
-traditional sort of spatialization
-techniques like our trees and stuff are
-particularly useful for what we do so we
-need things a little bit more dynamic to
-be possibly so that's that's something
-you've mentioned a few times with me now
-the arc trees what what is that okay
-well basically where is it it's just
-sort of like stop dividing it's like I
-take a cube ah right and then I can go
-inside this tube and say just imagine me
-subdividing into 4 more cubes okay when
-you go into one of those cubes you can
-subdivide it into 4 more cubes so it's
-just it's a it's a way to sort of pass
-out essentially areas a data for like
-figuring out whether you're included in
-our food or whether you be visible in
-the camera fairly efficiently
-without having to have it as flat like a
-flat list I was like it's one thing you
-could use up a flat list of objects and
-you could just check them against the
-view frustum whether they will be in the
-camera not encounter right but then you
-know if you have ten thousand objects in
-the scene you check against 10,000 now
-doing something like this you could say
-oh well you know you could you could
-basically take a view frustum you know
-and essentially figure out against a
-tree and then figure out what sort of
-containers essentially would be visible
-and then you would deal with the object
-and so you move rent typically in the
+it the hot water will flow better
+hey yeah but you've got the you've heard
+on some of the cry tech people
+yeah yeah we have quite a few of the
+original car engine team so we we know
+we've got I think three of the original
+farcry team carried on doing some of the
+I'm from there and there and and then
+there's quite a few that have been from
+crisis one onwards from the engine team
+so we have a decent we don't have them
+all there's plenty of other ones that
+are also there's a big companies lots of
+stuff but you know we've got people that
+helped you know basically build the
+engine design architected so they know a
+free inside-out so so that's that's very
+beneficial for us it's usually if you're
+a licensee you wouldn't have that
+knowledge which is useful for us because
+we're trying to do something very
+different than you would normally use
+CryEngine funding and they must be
+honest what we're doing is different
+than doesn't matter whether it be unreal
+or unity or CryEngine we would a lot of
+the refactoring we we've been having to
+do we have to do yeah especially the
+64-bit stuff 64 bits the thing also just
+kind of approaching spatialization and
+sort of kind of data passing differently
+because of the vast scale we have and
+scope and the fact that we can have a
+high density of like information and
+data but then also vast areas of nothing
+so you know more traditional sort of
+spatialization techniques like octrees
+and stuff aren't particularly useful for
+what we do so we need things a little
+bit more dynamic and a bit more slowly
+so that's that's something you've
+mentioned a few times with me now the
+octrees what what is that okay well
+basically it's just sort of like stuff
+dividing it's like I take a cube ah
+right and then I can get inside this
+cube and say just about to be
+subdividing into 4 more cubes okay now
+when you go into one of those tubes you
+can subdivide it into four cubes so it's
+just it's a it's a it's a way to sort of
+parse out essentially areas of data for
+like figuring out whether you're
+included or not included or whether
+you'd be visible at the camera
+fairly efficiently without having time
+it's flat like a flat list I was like
+it's one thing you could use up a flat
+list of objects and you could just check
+them against the view frustum whether
+they will be in the camera not the
+camera right but then you know if you
+have 10,000 objects in the scene you
+check against 10,000 now doing something
+like this you could say oh well you know
+you could you could basically take the
+view frustum you know and essentially
+figure out against country and then
+figure out what sort of containers
+essentially would be visible and then
+you would deal with the object size and
+so you move rent typically in the
 engines you move the the writer objects
 around these around an octree structure
 and it's just sort of an efficient way
 to kind of get to and pass and figure
-out what object or what area pretty
-query but it's you know it's sort of
-more it's more rigid right it's sort of
-like you start with a certain size and
-subdivides down a path down so it's not
-it's not quite as flexible or movable
-because we have issues like you know
-like this is what the zone system does
-is you know imagine having a planet
-right and this planet has city and other
+out what objects on what area pretty
+quick right but it's you know it's sort
+of more it's more rigid right it's sort
+of like you start with a certain size
+and subdivides down about that so it's
+not it's not quite as flexible or
+movable because we have issues like you
+know like this is what the zone system
+does is you know imagine having a planet
+right and this planet has City and other
 people on it right well there's own
 system and you know really what we call
 his own container holds all that now if
 that planet is orbiting right moving
 through our space right what would
 happen in an up tree because a nut tree
-has no a nun trees fixed that would mean
-that there the planet and the object on
+has no a nut trees fixed that would mean
+that there the planet and the objects on
 it would all actually be transitioning
-from one part one area the artery to
+from one part one area or the artery to
 another area tree you'd have to be
 moving them around you'd be sorting them
 inside your artery all the time right
-you sorting thousands of objects but
+you're sorting thousands of objects but
 with us that's not the case because we
-have these zones what's own containers
-with you the way you are big of them and
-the zone containers contain their own
-frame of reference and so we basically
-it you know like a Russian doll you
-contain things two things at the very
-top level we move the very top level
-around you don't have to move anything
-inside that top level because there are
-still relative
-to each other perfectly right so and so
-it allows us to do things like planetary
-orbits or ships flying around with lots
-of stuff inside and not worry so much
-about you know like moving around and
-moving them around a fixed the spatial
-data structure so it's much more much
-more suitable for our uses it's not a
-typical use in a 3d game is usually in a
-3d game the structure itself is like
-you're walking around a map well that's
-fixed right right so you know the plants
-and the buildings they aren't moving so
+have these zones with zone containers to
+do it the way you want to think of them
+and the seven containers contain their
+own a frame of reference and so we
+basically it's you know like a Russian
+doll you can take things to them things
+at the very top level we move the very
+top level around you don't have to move
+anything inside that top level
+they're all still relative to each other
+perfectly right so and so it allows us
+to do things like planetary orbits or
+ships flying around with lots of stuff
+inside and not worry so much about you
+know like moving around and moving them
+around a fixed spatial data structure so
+it's much more much more suitable for
+our uses it's not a typical use in a 3d
+game because usually in a 3d game the
+the structure itself is like you're
+walking around a map well that's fixed
+right right so you know the plants and
+the buildings they aren't moving so
 that's fine they can all be because the
-artery then allows you to sort of
+autry then allows you to sort of
 determine which plants are what part of
-building you'd see really quickly and
-the only things are really moving
-through them at things like your
-character or a bullet or something like
-that sure and so typical shooter things
-like a most engines use an up 34 sort of
-its its kind of render like pipeline
-basically relative what you'll see what
-you want to see everything else but for
-us obviously it's not that suitable will
-be doing a bunch of work that would
-rather not be doing and and and you you
-know and even though our trees are
-fairly efficient in sorting data and
+building you see really quickly and the
+only things are really moving through
+them with things like your character or
+a bullet or something like that
+sure and so a typical shooter things
+like how most engines use and untreated
+for sort of its its kind of render like
+pipeline basically relative but you'll
+see what you won't see everything else
+but for us obviously it's not that
+suitable we'll be doing a bunch of work
+that we'd rather not be doing and and
+you you know and even though our trees
+are fairly efficient in sorting data and
 moving data around because you're just
 generally moving pointers around when
-it's a big enough space and big enough
-data it you know it does actually take
-an appreciable time so what we do allows
+it's a big enough space and a big enough
+data you know it does actually take an
+appreciable time so what we do allows
 for sort of the moving of because like
 you can always think of a big spaceship
-is a mini IPS level on a planet as many
+as a mini FPS level on a planet as many
 FPS level or something like that so it
 allows for the movement of these things
 without having to you know have the
@@ -263,18 +265,18 @@ data structure right we can and we can
 sort of scale the data structure inside
 each one of the zones to be appropriate
 for the data we have inside it that's
-this is why I level talking to devs who
+this is why I love talking to devs who
 are more familiar with like the
 engineering side of things because we as
 you know we look at a lot of hardware
-mostly and to understand the hardware
-properly it really helps to understand
-some of the
-through our driving it rights that's
-where my knowledge fool is really
-shallow so it definitely a huge help you
-get the walkthrough much appreciated on
-that I'm throw it all</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+mostly and
+to understand the hardware properly it
+really helps to understand some of the
+software driving it writes that's where
+my knowledge fool is really shallow so
+it definitely a huge help you get the
+walkthrough much appreciated on that and
+grow it all</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
     var b = d.getElementsByTagName('body')[0];
     var s = d.createElement("script"); s.async = true;
     var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
