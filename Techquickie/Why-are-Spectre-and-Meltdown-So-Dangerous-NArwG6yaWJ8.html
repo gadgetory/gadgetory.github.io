@@ -1,0 +1,196 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Why are Spectre and Meltdown So Dangerous? | Gadgetory - Your Gadget Factory</title><meta content="Why are Spectre and Meltdown So Dangerous? - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Techquickie/">Techquickie</a></li><li class="active">Why are Spectre and Meltdown So Dangerous?</li></ol></div><h2 class="post__title"><b>Why are Spectre and Meltdown So Dangerous?</b></h2><h5 class="post__date">2018-05-01</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/NArwG6yaWJ8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">thanks for watching tech quickie click
+the subscribe button then enable
+notifications with the Bell icon so you
+won't miss any future videos when
+Spector and meltdown first made
+headlines you'd have been forgiven for
+thinking that dr. no found a way to
+cause mayhem at a nuclear power plant
+somewhere
+but while thankfully that isn't what
+happened The Spectre and meltdown
+security bugs have the potential to
+inflict ma'am on nearly every computer
+in the world between them you see most
+software bugs and viruses affect systems
+by trying to exploit some weakness in
+the code of a particular program or
+operating system meaning that they can't
+hurt a system they weren't designed to
+run on what makes spectre and meltdown
+so dangerous is that they function on a
+level that is much closer to the actual
+hardware meaning that they can exploit
+tons of different CPU models and
+operating systems in fact meltdown
+affects nearly every Intel CPU
+manufactured since 1995 and specter
+effects these and most AMD processors as
+well Spectre clasp vulnerabilities can
+even successfully attack a number of
+smartphone CPUs holy crap so what
+happened why exactly are these bugs so
+widespread well it boils down to a
+feature present on virtually all modern
+processors called speculative execution
+which is a key way that CPU
+significantly boosts their performance
+thanks to speculative execution when a
+CPU is carrying out program instructions
+it can guess which instructions it might
+have to process next allowing a modern
+processor to read ahead on the page so
+to speak
+processing data that it thinks it will
+need shortly and then storing it on the
+very fast CPU cache memory one way that
+CPUs read ahead is by starting to
+process the data in memory as soon
+program asks for it rather than first
+checking to see if that program is even
+allowed to access that data you see
+whenever you have more than one program
+running your CPU will separate your
+system ram into different chunks that
+can only be accessed by one program to
+keep other ones including malicious
+programs from seeing data that they
+shouldn't so let's say then that program
+a asks to see some data from program B's
+memory space the CPU will say no but
+only after it starts to read that memory
+and whatever was in that memory space is
+already in the CPUs cache now although
+the CPU won't directly pass that data at
+a program a meltdown can figure out what
+the data is by tricking the CPU instead
+of just asking for the data directly
+meltdown will ask the CPU to add the
+value being held in cache to some
+arbitrary number which will correspond
+to a certain memory location or address
+the CPU still won't reveal the
+information at that memory address to
+meltdown directly but the data will
+still be cached beforehand so I know
+this is pretty technical here but stick
+with me for its next trick meltdown will
+ask the CPU to read more memory
+addresses noting the one that loads more
+quickly than the others because it was
+stored in the high-speed cache in the
+previous step rather than the slower
+system Ram this process allows meltdown
+to figure out what data was in the
+address it initially asked for as the
+cached address will just be whatever the
+arbitrary number that meltdown picked
+plus the actual value the system was
+trying to keep hidden was let's move on
+to Spector now although Spector also
+takes advantage of speculative execution
+it works a little bit differently by
+exploiting a CPUs branch predictor this
+processor component watches for patterns
+in program execution so if it sees a
+particular function over and over again
+the CPU will eventually pick up on it
+and start to process this function on
+its own repeatedly
+like how you can train your pet to do
+tricks by giving it food every time so
+Spectre trains your CPU by telling it
+over and over to execute instructions
+that will dump the information the
+attacker wants into cash after this
+Specter can access the information by
+using various timing tricks to work out
+exactly what the data contains sometimes
+by asking the CPU to use the data
+located at a certain memory address in a
+different function similarly to meltdown
+and getting back to why this problem is
+so widespread Spectre is a whole class
+of attacks which means combined with the
+fact that branch prediction is
+incredibly important for performance in
+nearly all modern CPUs means that there
+isn't a quick fix for every variation of
+it meltdown by contrast is a somewhat
+easier fix that involves more thoroughly
+separating different memory spaces but
+since the patches also cut into a CPUs
+ability to read ahead as we described
+earlier the fixes can result in serious
+slowdowns for processor intensive
+programs as current CPUs have actually
+gotten really good at predicting what
+they'll need to do next a sad irony now
+both Intel and AMD are working to fix
+the vulnerabilities on a hardware level
+in their future chips which is certainly
+good news but because speculative
+execution is so fundamental to modern
+CPU design only time will tell if even
+brand-new processors can actually plug
+these holes for good and obviously that
+solution isn't going to do anything for
+the literally billions of CPUs that are
+already out in the wild so yes this
+means you Jeff from New York proud owner
+of an overclocked 46 70 K unless you
+want to go buy new hardware all you can
+really do is be careful what you click
+on out there a cleverly designed attack
+that takes advantage of specter warm
+meltdown wouldn't leave any trace on
+your PC so you may not even find out
+about it until your bank accounts have
+been emptied and you have a
+little meltdown of your own speaking of
+your own have you ever wanted to build
+your own website Squarespace is the
+place to go to do it you just pick one
+of their gorgeous templates and start
+filling in your own text your own
+pictures you don't even have to do
+anything complicated if you don't want
+to their cover pages feature lets you
+set up a beautiful one-page online
+presence in minutes and if you're
+finding anything about Squarespace
+complicated they've got 24/7 support via
+live chat and email every template
+features responsive design to your
+website looks great on any device a
+commerce module so you can use their
+free online store to sell things and
+they've got all kinds of new tools that
+they're adding all the time like their
+conversion metrics that track button
+clicks form submissions and more so you
+can watch trends over time so start a
+trial with no credit card required and
+start building your website today then
+when you decide to sign up for
+Squarespace it's just 12 bucks a month
+use offer code tech to get 10% off your
+first purchase so thanks for watching
+guys like dislike check out our other
+channels leave a comment with video
+suggestions and don't forget to
+subscribe so you don't miss any future
+fast as possible</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

@@ -1,0 +1,799 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Hades Canyon VRM Analysis + Tutorial on Buildzoid's Videos | Gadgetory - Your Gadget Factory</title><meta content="Hades Canyon VRM Analysis + Tutorial on Buildzoid's Videos - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus/">Gamers Nexus</a></li><li class="active">Hades Canyon VRM Analysis + Tutorial on Buildzoid's Videos</li></ol></div><h2 class="post__title"><b>Hades Canyon VRM Analysis + Tutorial on Buildzoid's Videos</b></h2><h5 class="post__date">2018-04-14</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/oMhlrkKKknQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey guys builds lloyd from actually
+hardcore overclocking here and today
+we're gonna be taking a look at the
+Intel nook the Hades Canyon one so this
+has the KB like CPU and the Vega M GPU
+along with one stack of HP m2 it does
+technically support overclocking it's
+not particularly overclockable because
+it's horrific Lee thermally limited and
+just really the this is basically a
+laptop without a screen and keyboard
+more than a sort of desktop PC and it's
+also over lit like really complicated in
+terms of how much power circuitry is on
+here so instead of doing the usual PCB
+breakdown where we talk about the
+various power capabilities of the
+various regulators on here and if that's
+good enough for overclocking or not
+which is in this scenario completely
+irrelevant we're just gonna be taking a
+look at well I'm just gonna sort of walk
+you through the kind of process that I
+go through for doing a PCB breakdown
+video before that this video is brought
+to you by thermal takes view 37 case the
+view 37 focuses on highlighting custom
+PC builds with its full panoramic window
+and tinted front acrylic and our thermal
+testing the view 37 performed reasonably
+well when considering its looks focused
+build which is partly thanks to the
+airflow design and the removal of a
+bottom power supply shroud for a balance
+of looks and performance check the link
+in the description below for the view 37
+so here the first thing we got to do is
+identify sort of the different voltages
+that this thing needs to run and that's
+not very difficult so we have a KB like
+CPU on here and we have a Vega GPU I
+only have an HP m2 stack and we have
+some ddr4 and we have a chipset and
+these are these are like the big power
+hog devices obviously there's more stuff
+on here than that and actually we're not
+even gonna list all of the like the the
+KB like CPU and the Vega and even the HB
+m2 and the ddr4 like all of these have
+more voltages than what I'm gonna list
+but all of the ones that I'm not listing
+are very very low power rails that
+like the device won't work without it
+they're not super mission-critical and
+they don't really affect overclocking
+that much cutting costs on those doesn't
+really make sense when you have a lot of
+other stuff that could be like that
+that's more expensive to do anyway so
+let's go over the different voltages
+that these need the KB like CPU needs a
+v core and it needs a V GPU which we'll
+call VG t cuz that's what Intel calls it
+there's gonna be a VC CSA for the system
+agent so that's things like the PCIe and
+the DMI link and actually the DMI has
+its own voltage but again that one's on
+a not a buck converter that like the
+link itself has its own voltage the
+system agent has another voltage as well
+and then you have the i/o which is kind
+of the like the memory controller and
+part of the system agent as well like
+these these two are kinda these are very
+very heavily connected the both of them
+have an impact on memory overclocking
+again kinda relevant here but they do
+get their own buck converters generally
+speaking now the Vega GPU that has a v
+core and it has a VDD CI and it doesn't
+actually well there's some more rails
+but those are all like very very minor
+so we're not gonna go over those HBM -
+you've got a VH BM so the actual voltage
+that the HBM runs on and we're like it's
+not actually referred to as vh BM like
+there's a different term for it but it's
+easier to keep track of here so we'll
+just call it V H BM and then it's got a
+VPP rail and this may or may not be on a
+buck converter or at least may or may
+not be on a buck converter we can
+actually find I'm not sure like this
+this thing is very low-power even
+compared to like the actual main like
+this is the main rail and this this
+thing is even smaller than that the ddr4
+is gonna have a V DD v DD q rail so
+that's that's what a lot of motherboards
+would call memory
+or VD RAM or VDD R or V damn you know
+lots and lots of names but the official
+term is VDD Q and actually you know what
+I prefer V dim or VDD are that just
+makes more sense like it's just neither
+easier to keep track of and then that
+also has a VPP except this one sits at
+2.5 volts whereas the one for HP m sit
+in two sits at 1.8 volts so you do
+actually the intended kated voltage
+regulators for each of those and the PCH
+I've cleverly put over the okay we're
+just going to move that PCH will have V
+PCH and that should just be 1.0 5 volts
+and actually it might not right 4 KB
+like it actually might be 1 volt I might
+be remembering an older Intel chipset
+for 1.05 X 99 is 1.05 and its
+predecessor too so yeah that KB like I'm
+not sure I've not checked with the
+chipset voltages on those but it should
+be around 1 volts as well so yeah and
+that'll be on a buck converter as well
+because that's actually a pretty pretty
+significant amount of current that that
+needs so that covers the various
+voltages this this board needs to
+somehow produce because without those
+voltages this this isn't even turning on
+so let's look at this the first thing I
+see is controllers and then this thing
+is like I have no idea but we'll get
+well initially this is a big question
+mark so I already know what's on this
+board but so I'm kind of cheating the
+first thing is the voltage controllers
+now these are super convenient this is
+an international rectifier 35 67 and how
+do I know that well if you look at the
+chip it says IR which is that's
+international rectifier now Infineon
+that's their logo and then it says three
+five six seven B so that that's the chip
+work that that's the chip we're looking
+for here and this is a six plus two
+phase voltage controller very very
+popular on AMD GPUs in fact I'm 99%
+certain that well no this chip it
+actually entirely exists for AMD GPUs
+there's a three five six seven
+a which is basically a three five six
+seven B except it has a different power
+management standard implemented for it
+so yeah this thing this thing is AMD GPU
+specific it's never been used for
+anything else so how much you want to
+bet that this makes beat core for Vega
+so that's probably V chord G which did I
+do that let's just put a G on there for
+convenience because we have a different
+vehicle for the CPU as well so that's
+gonna be our V chord G there and that is
+a six plus two and well it's actually
+kind of easy to see that's kind of what
+it's doing so we have one two three four
+five inductors here that are all the
+same then we have this inductor over
+here but this one's not hanging off of
+the three five six seven be because this
+chip behind it is a that looks well
+that's a I know that logo that's an Peck
+electronics which means that's an a
+that's a P that's a W and I know that
+because that's a series of chips they
+make so that's an AP W and I'd say well
+that I don't know that looks like either
+an eight or a six seven one four so
+we're just gonna say six or eight seven
+one four and this is a integrated buck
+converter of some kind so this is gonna
+be a high side wall so at low side
+MOSFET driver and control circuitry all
+in one chip
+AMD likes using these but here it might
+actually be powering the chipset because
+this this is like I like you can use it
+for a lot of things like the it's not
+until it's not particularly intelligent
+it's generally used for fixed voltage
+rails so it'd be perfect for doing
+something like powering the chipset or
+providing VPP so you know it can sort of
+do those too it's going to be doing one
+of those and
+well it could also because don't forget
+the Vega core has VD DCI it could also
+be may be doing VD DCI though generally
+speaking v VL I don't know about HBM
+cards so don't measured it so can't rule
+out that it's VD DCI and we get this
+inductor up here which is also different
+but this one is actually hooked up to
+the three five six seven B and we know
+that because of this chip right here you
+see these right all of these look a lot
+like a well very specific driver chip
+these look a lot like that looks a lot
+like eight five ten on there I mean that
+last number looks kind of like a nine
+but I'm not aware of a eight five not
+eight five one nine so I'm just gonna
+for now for now I'm gonna go with this
+being an eight five ten and that is a
+CHL chip and CHL is a sub-brand or well
+sub company of international rectifier
+so that is controlled by that so is this
+and so is that and since this chip looks
+exactly the same as all of these well
+that too is gonna be hanging off of the
+three five six seven B so that means
+what we're looking at here is a 1 2 3 4
+5 plus one cuz yeah so the core plus
+something cuz I don't know what that
+actually is it could be that this is
+either gonna be V HBM or it's gonna be
+the HBM or it's gonna be VDD see out one
+of those two it can't be like it's
+definitely not VPP because this is way
+too big for the VPP rail but it could be
+either V HBM or VD DCI since those might
+be just about the same current output
+both so yeah that does make that one
+kind of difficult and I don't know which
+one it is but that's a 5 plus 1 phase
+configuration right there because that's
+a single phase and this is 5 and the IR
+3 5 6 7 B has
+problems supporting that so that still
+leaves the question of well what's this
+and that and if I had the board in hand
+then that would literally just be a
+matter of measuring stuff with a
+multimeter and that would very quickly
+while it's running and I would very
+quickly clear up any you know questions
+about what which of these actually does
+what now the MOSFETs used well I think
+you can read that I'm not sure how it'll
+deal with YouTube's compression but well
+there's this same chip elsewhere on this
+board and it looks much neater so this
+one right here you can clearly see
+that's a six that's a nine that's a nine
+that's a two and then there's this
+lovely scribble next to that and that
+scribble is supposed to be an A which
+the means this is an Alpha and Omega
+semiconductor chip and I know that
+because I've seen this logo before I
+hate this logo it was like this took me
+several hours to figure out who this
+belongs to
+because you can't like you can't even
+Google reverse image you search this
+thing it's really annoying because the
+manufacturers like logo for their own
+like company is actually very different
+from what they put on their MOSFETs so
+that's great isn't it
+but we can like so it's made by Alpha
+and Omega semiconductor it's a 69 92 and
+I can also tell you that it's a dual end
+FET and I can tell you it's a dual end
+FET because I don't see any high like
+there's no there's no two MOSFETs right
+each of these phases requires a high
+side and a low side MOSFET except we get
+one big chip which means that chips
+gotta have both both the high side law
+and low side MOSFET in it because even
+if we go to the other side of the board
+we can see that there's not it like
+there's not really that many MOSFETs
+here because there are some boards out
+there where they'll put like the high
+side MOSFET on the front and then a low
+side on the front and then another low
+side on the back or one like high side
+on the back or and then low side on the
+front or just low side MOSFET gets the
+heatsink because that one runs halt
+but basically
+a lot of boards like you might see that
+they actually put the MOSFETs on
+different sides but we can clearly see
+that's not what's going on here and you
+do only get one chip for each phase so
+these chips have to be dual and fats so
+that solves what those are and well at
+this point it's I guess it's as good as
+any point to tell you what kind of
+current capabilities have these have so
+I've looked up the datasheet for these
+they are Alpha and Omega semiconductor
+they do exist they are dual and FETs and
+for 1.2 volts output and I don't know
+how much power this means so I'm just
+gonna fire off a few different like
+current levels for 10 amps so 1.2 volts
+output 10 volts drive 10 vgs which is
+gate to source voltage 300 kilohertz
+switching frequency cuz that's sort of
+the happy medium for power efficiency
+and regulator and ripples of and like
+good ripple tolerance these are going to
+be looking at 10 amps at 0.9 watts heat
+output for the chip 20 amps at 2.7 watts
+is kind of getting toasty 30 amps if you
+have enough cooling you can still run
+this totally but I'm kind of starting to
+suspect like well we'll get to that
+later and then 40 amps you're gonna be
+looking at 9.2 watts
+so basically past this point now that's
+not gonna work but they would be viable
+up to the 2025 amp mark if you have
+enough cooling which let's address that
+at this point you notice how this vrm is
+kind of like it if you've noticed how
+like mother normal motherboards and like
+GPUs are usually laid out then you
+should have noticed that normally the
+inductor is closer to the thing the vrm
+is powering than the mosfet and the
+reason is really simple because you're
+gonna have high voltage on this side
+right and then the wire well the wiring
+basically looks something like this
+you're gonna have a high voltage there
+and I don't know what voltage that
+unlike a desktop computer it would
+normally be 12 volts but this is a nook
+it may well be 20 I have no idea oh and
+I'm assuming that conversion is 12 volts
+to 2 volts so yeah but anyway you're
+gonna have a high voltage on one side
+and then that's gonna go into the
+inductor and that is how it would end up
+float like that's your current flow for
+the board layout we have here and the
+reason Intel has gone with this because
+obviously this this is suboptimal but
+the reason why they've done this is
+because the heatsink that is in the nook
+covers all of these MOSFETs and actually
+I think it goes roughly like I don't
+have a pic like I don't have a picture
+of the heatsink on its own so I can't
+show you basically the heatsink covers
+this entire area so these MOSFETs are
+cooled by the same heatsink assembly
+that cools the CPU and the GPU so that's
+why this gets the funky layout because
+if if the well if these were switched
+around you'd have to have a heatsink
+which has like a cutout for the for the
+inductors and that like that makes the
+heatsink more complex to manufacture
+which makes it more expensive and well
+nobody wants to do that is just cheaper
+to do a oddball vrm layout and that's in
+our in this scenario especially because
+here it's like the this doesn't need to
+be you know some super high performance
+like the this vrm basically just needs
+to not overheat and stay within
+tolerances wear a cape be like quad-core
+at basically stock settings so it's not
+like they're concerned about building
+the best voltage regulator ever they
+just need a voltage regulator that fits
+in here and is easy enough to cool so
+that's why this gets them messed up
+layout now then let's keep going so we
+have more inductors over here we have
+one two three four five but so this may
+well be a five phase this inductor is
+not part of that group because that r-47
+means this is a 40 like that or forty
+seven tells you that the inductance so
+all of these are a hundred and fifty
+nano Henry's
+while this one is 479 Oh Henry's and you
+don't like technically speaking it would
+probably be physical to design a buck
+converter that can run mixed mixed
+inductor like mixed inductances but
+generally speaking if you want something
+like you know off-the-shelf and normally
+functional all of your inductors in a in
+a multi-phase setup are going to be the
+same value so this is its own little
+single-phase here and we have a voltage
+controller right here and this one's
+really again easy enough to read so this
+is a inter sale as it says Intersil on
+it
+that's an ISL chip and that's gonna be a
+nine five eight to nine and so initially
+if you didn't have a datasheet for this
+you you can tell this is a single phase
+and this looks like a five phase but
+that causes some issues of well okay so
+so recore is like this this is big this
+is like medium and this is small and
+this is smaller in terms of pad like in
+terms of current draw requirements and
+well if this is if this is a five plus
+one then well that would have to be GPU
+power and then but that doesn't really
+like the layout stops kind of making
+sense because you'd have VCC i/o and VCC
+si somewhere in this area which is kind
+of far away I did find it on 2g key and
+digi-key lists this as a three plus two
+plus one so yeah I still don't know how
+that's actually split up like it could
+be like that it could be like this I
+don't think they'd put the phases in
+between each other just because that
+would make routing the power planes a
+nightmare so but I'm not sure how this
+is split into the 3 + 2 + 1
+configuration but because we know that
+like 3 + 2 so that's gonna be you know
+vgt that's gonna be the GPU portion
+that's going to be your V core
+and this right here is gonna be almost
+certainly which I've run out of space
+that plus one is gonna be system agent
+let's just put VSA under it there that's
+that's gonna be your system agent
+voltage so that plus one is this thing
+right here and how do we know it's this
+thing well look at these driver chips
+they're all the same and so naturally
+that means all of these drivers are
+gonna be hooked up to the same well okay
+now if you had two voltage controllers
+from the same brand on the same PCB than
+that this would be a terrible assumption
+to make but there's no other inter-cell
+multi-phase like you know PWM based PWM
+output voltage regulator on here so it's
+safe to assume that since all of these
+are the same driver they all belong to
+the same chip so that's why the so this
+is gonna be system agent and then some
+combination of this is gonna be like VCC
+is going to be the GPU power and the V
+Corps so yeah this does have a three
+phase V core and considering the current
+capabilities of these MOSFETs that's not
+really great is it
+well considering the stock like you know
+if you replace the cooling system on
+this then shared though then then it's a
+problem but stock you can barely cool
+anything over like if the CPU starts
+kicking off much more than like a
+hundred watts is gonna be uncool Abul so
+I don't really find the three-phase a
+big problem because the CPU is gonna
+overheat before the MOSFETs start
+getting into serious issues so yeah now
+if you did swap out the cooling system
+and just completely defeated the entire
+purpose of the Knux form factor this vrm
+is in is inadequate you the problem like
+you would probably end up overloading it
+if you really really pushed it unless
+you put like some giant heatsink on it
+and a lot of airflow
+anyway moving on now we're stuck in this
+area of the board and we've pretty much
+so we've covered V core we've covered in
+GPU we've covered the road
+si si si we've covered that voltage and
+we've not covered the the chipset which
+I have a sneaking suspicion the chipset
+power might be this thing right here
+which I don't know like this kinda looks
+like it could be an act like that kinda
+looks like it could be from alpha anyway
+this might be chipset power it is far
+away but there's the problem is anything
+near the GPU should like I think the GPU
+would take priority for anything near it
+and there is actually something kinda in
+this area like you have this voltage
+regulator up here which we can see
+that's the same an Peck chip as before
+so that's another one of those AP W and
+actually this one looks like that is
+actually a straight ups eight and I know
+for a fact that it is an eight so that's
+an eight seven one four because I've
+already tried to look it up it's not a
+six seven one four but just you know
+illustrating the issue of like I don't
+even sometimes know the specific model
+number until I try to go look it up and
+one of them doesn't exist and if both of
+them exist then I have a problem that's
+when I go tell Steve that I need more
+photos closer up of various things but
+that that's that's another one of these
+you know fully integrated buck
+converters and that honestly looks like
+again it's just going to the GPU portion
+here or I'm yeah it does look like it's
+going to the GPU portion because you do
+have like that inductor seems to be
+dumping like seems to be connected into
+this power plane yeah I'm gonna go with
+this power plane and well that that's
+probably the GPU on the other side of
+all of these bypass capacitors so this
+is probably for the GPU which means they
+can't power the chipset and that would
+leave the chips out of hanging off of
+this because this is definitely not
+going to be pushing power all the way
+over there
+but yeah I'm not entirely sure this
+could also be for powering something
+completely different without the board
+in
+it's actually kind of impossible to tell
+so that this one this one annoys me but
+yeah the the best I can do in the with
+what I have here and moving on to this
+area now this area is a mess so first of
+all this chip right here is big it's
+easily legible and that is a TP s six
+five zero eight three zero TPS that is a
+Texas Instruments model like that's a
+Texas Instruments prefix for a model
+number let's call it that and so I did
+actually manage to look this thing up
+it's not hard to look up you just go to
+Texas Instruments website and you throw
+the model number into their search bar
+and this thing is crazy okay but before
+we get into that we do have what looks
+like one like we do seem to have a
+single phase right here
+another single phase right here and
+another single phase right here and
+another single phase right here and
+based on how these are all laid out I'm
+gonna work with the assump I'm gonna you
+know assume that this thing is a one
+plus one plus one plus one and turns out
+that's actually correct this thing is a
+crazy super integrated voltage regulator
+extraordinaire it's meant for old
+trouble book and like mobile like ultra
+mobile applications so fitting for it
+for it to be found in a nook and it does
+ink it does in it integrates for buck
+converter drives so actually you'll
+notice that there's no like like say the
+ISL nine five eight to nine right you
+have these drive chips and the three
+five six seven B has these drive chips
+well we don't have any of those chips
+here right like there's nothing before
+these MOSFETs and but what you will
+notice if you look at the PCB and this
+doesn't always work because sometimes
+you can't even see the traces but these
+traces going from that chip to these
+MOSFETs
+are
+fad like real like this is really fat if
+this was just a pwm line it would not
+need to be that thick so these are
+actually straight-up drive lines which
+is correct
+so this directly drives all of its own
+MOSFETs but it also integrates you see
+this cute little inductor over here that
+thing is there there's an integrated
+buck converter in this but wait there's
+more there's also three low dropout
+regulators in it so yeah this thing just
+does so many voltages and it just yeah
+it's really mental ultra ultra portable
+applications which we're you know any
+amount of like the more you integrate
+stuff into one chip the less space it
+takes up so the better
+so yeah this thing is this thing really
+surprised me that that thing's
+impressive and we do have this loose
+MOSFET right here but I'm not entirely
+sure what that's for
+it kind of looks like it goes to ground
+and I'm basing that off of the fact that
+these capacitors are hooked into what I
+assume is a power plane because these
+capacitors are you know - there's + here
+there's probably + there and that means
+that's probably ground this MOSFET is
+going from plus to ground I'm not really
+sure what's like what that the purpose
+of that is it might be - well no because
+if they wanted to just discharge the
+capacitors they could have a bleed
+resistor hmm ya know 100 percent certain
+why that's necessary and up here we have
+- well we have two of those buck
+converters for that and yeah that pretty
+much covers it and actually the only
+thing I haven't covered is what is this
+little MOSFET which is used a lot it's
+also up here as well as in you know all
+of these and all right I forgot - well
+okay so the this TPS six five zero eight
+three zero right with its four four
+full-size block converters and one
+little one well I know for a fact that
+this little one can't
+possibly do vc cio because vc cio by
+intel specification maxes out of 5.5
+amps and this mini buck converter
+respect at a maximum of two so this is
+just not gonna work so I think one of
+these bigger ones is gonna be VC cio and
+it's probably this one because it's
+closer to the CPU it just doesn't make
+sense to pull power all the way like
+that when you could just pull the power
+like that right
+this I'm gonna suspect is VDD Q while
+VDD R so that's probably the the main
+power line for the memory sticks this
+looks like a stupid amount of overkill
+for that because ddr4 memory really
+doesn't pull that much power but it does
+pull more power than VC well it can it
+really shouldn't in this like in the
+Nook it really shouldn't use more than
+VCC AIA
+a VC C IO but it could so I'm not gonna
+rule it out again kind of like which one
+which one is which I'm not entirely sure
+one of these is good has got to be the
+VPP for the ddr4 actually this the mini
+integrated one could do that I guess it
+could also do vega's VDD CI or the VPP
+for the HBM or actually HP empower the
+thing is like all of these are like far
+away from all of the big power-hungry
+components so it makes these an absolute
+pain to place in terms of what they do
+but you know with all of these right
+here everything is basically covered the
+main problem is I still don't know which
+which vrm does what and I did mention
+that I would point out this MOSFET right
+here that is a you can actually read it
+off of the packaging that is AZ 340 and
+don't ask me how but apparently some
+time in the past I've seen a PCB where
+there was a chip with a Z something
+something something
+name and it turns out that I remember
+that those belong to vishay that's a
+vishay part number because if you throw
+this into google it might just come up
+with a car though I don't yeah it might
+really won't come up with a MOSFET you'd
+probably have to go like you know Z 340
+dual and fat and we know this is another
+one of these dual and FETs because well
+there's one of these chips in each phase
+so but my life is even easier because I
+already know that this belongs to vishay
+on the basis that it has a Z in its name
+and these are like well the these are
+obviously less power than these because
+they're smaller and they're also used
+for all the really look like lower power
+rails here so these for the same you
+know same configuration as the AOS 6992
+these have completely different current
+handling capabilities so for 10 amps
+well actually now let's start at 5 so 5
+amps it'll produce about 0.4 watts of
+heat 10 amps it'll produce about 1.25
+watts of heat at 15 amps it produces 2.5
+5 watts of heat and at 20 amps it'll
+produce about 4.3 watts of heat these
+are like these are small there is no
+ATLA there's not really there's gonna be
+air flow over them but not really any
+active cooling these are probably only
+good in the Nook I'm gonna assume that
+they're probably they're probably loaded
+between 5 and 10 amps output and
+realistically I think you wouldn't
+really want to push them much past the
+10 amps because if you go past that they
+they get very hot very quick but yeah I
+don't know like I don't think they're
+inadequate because again you can't
+really overclock this that much so that
+covers the Nook and kinda the the
+process I go through for PCB oh right
+there's this MOSFET that I don't know
+what it's like
+same situation as that other one you
+know this one down here which
+incidentally I do know who these belong
+to that that part number that's RA 18
+and if I'm not mistaken that's vishay
+again because that's it yeah that is
+vishay that's vishay again so yeah and
+that's a Sarah 18 MOSFET and you can
+just go to their site and it'll come up
+with that but I have no idea what these
+are for cuz again the well actually I
+can't even tell what this one is wired
+up to or how so yeah but that other one
+looks like it just pulls a voltage to
+ground which is kinda like I've seen
+that done on boards but I'm not sure
+what the the purpose is for it I don't
+think it's used for just discharging
+capacitors because they I you could just
+use a resistor for that I think unless
+there's some critical timings that you
+like requirement for something or it
+needs to be done very quickly anyway
+that does cover everything on the NOC I
+don't know it if to tell you that this
+is a great PCV or not a great PC because
+honestly I don't know how much power you
+can push into this before
+it just completely becomes uncool Abul
+but this is kind of the process I go
+through for ID everything on a board I
+basically just look at things uh-huh and
+then and then google them so is really
+not that like you know rocket science II
+but well there are some equations that I
+like there's equations that you can use
+to calculate all the the heat
+dissipation for different current levels
+for the MOSFETs but other than that it's
+it's very much just start with a very
+high resolution image and look at all
+the part numbers so yeah I ideally I'd
+have the damn thing in hand and then
+actually be able to measure things but
+you know for GPUs that I don't have the
+problem of there's five different
+there's four different voltage
+regulators here of the same sort of
+power level
+which unlike a GPU there's gonna be like
+one of like there's gonna be one of any
+given power capability so I don't really
+need to wonder about why there's four of
+the same thing and what each of those
+four does so yeah anyway that's it for
+the video thank you for watching like
+share subscribe leave a comment down
+below or any questions if you'd like to
+support what we do here with gamers
+Nexus there's a patreon link down below
+and you can also buy shirts so yeah
+that's it for the video thanks for
+watching and good bye</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

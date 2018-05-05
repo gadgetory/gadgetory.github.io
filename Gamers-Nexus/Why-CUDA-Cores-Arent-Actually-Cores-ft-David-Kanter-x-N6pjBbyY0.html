@@ -1,0 +1,436 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Why CUDA &quot;Cores&quot; Aren't Actually Cores, ft. David Kanter | Gadgetory - Your Gadget Factory</title><meta content="Why CUDA &quot;Cores&quot; Aren't Actually Cores, ft. David Kanter - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus/">Gamers Nexus</a></li><li class="active">Why CUDA &quot;Cores&quot; Aren't Actually Cores, ft. David Kanter</li></ol></div><h2 class="post__title"><b>Why CUDA &quot;Cores&quot; Aren't Actually Cores, ft. David Kanter</b></h2><h5 class="post__date">2018-04-18</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/x-N6pjBbyY0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">everyone I'm joined by David Cantor of
+real-world Tech David does some very
+technical analysis so some of you have
+asked websites that I read generally his
+and and things like that so David we're
+gonna talk about CUDA cores and whether
+or not the words I just used are words
+that should be used yeah yeah so what as
+we've talked before I've mentioned this
+before on camera but you and I have
+talked about whether or not the phrase
+CUDA cores is accurate to what it is
+right so let's let's start at the top
+level before that this video is brought
+to you by Corsairs new dark tor RGB se
+Mouse the dark poor RGB se is a wireless
+gaming mouse rated for up to 24 hours of
+continuous wireless gaming with the LEDs
+enabled and can be coupled with a Qi
+charging mouse pad for easy battery
+charging it has both Wireless and
+Bluetooth antenna so the mouse can be
+used easily on two systems and switched
+between them learn more at the link in
+the description below
+what is a coup de coeur as nvidia
+defines it and then why why does your
+definition differ yeah you know they
+wanted to highlight that they had a
+really parallel architecture more
+parallel than a CPU which is fair the
+challenge is being marketing guys and I
+think AMD got tied up in this originally
+as well they used to talk about the
+stream processors right and you know in
+my world a core has a very specific
+definition and so to me a core is
+something that can fetch instructions
+can decode the instructions you know go
+ahead and read them execute them and so
+they don't mean you know getting data
+from a register file from a cache
+whatever it is you know computing your
+results storing it back to the register
+file and you know for me to be really
+comfortable with it I like for it to be
+able to store it back you know not just
+to the register file but to a cache but
+sometimes that's optional you know but
+the point is if you want to do any
+computing you got a fundamental to get
+in some instructions get in some data
+crunch them together and get something
+out
+and so the catch is when you look at
+GPUs you know what they call a core to a
+CPU guy is a floating-point unit right
+right and it can it can absolutely
+crunch numbers but it can't fetch
+instructions and it can't decode the
+instructions and it certainly can't
+really access memory in and of itself so
+that that's sort of the technical angle
+um the other angle is that actually if
+you look at how GPUs are built and
+there's a some great talks on this I
+gave a talk at UC Davis about GPU
+architecture and CPUs under the hood the
+execution units in say avx-512 you know
+skylake server or sky like X right it's
+actually not too far away from a GPU
+there's a lot of differences but they're
+wide vector execution and so that's why
+if you ever talk to someone about how to
+program in CUDA or like ray tracing one
+of the things that was remarkable about
+ray tracing and this is something we
+talked about is when you're bouncing
+your rays all over the place you know
+the light bounces off your face but some
+rays go there and some rays go there and
+so then you end up with needing to do
+operations differently on those so you
+can't actually stick them in the same
+what Nvidia calls a warp and so you know
+if all you have are those two rays you
+know now each needs its own warp and
+it's just sitting there by itself and
+you're mostly underutilized in that
+hierarchy what NVIDIA calls an SM may be
+equivalent to a core okay
+right and now on the graphics side they
+tend to group them together in groups of
+four right but you know once a moment
+simultaneous multiprocessor four at
+times and those contain their CUDA cores
+they have to find them TM use things
+like that right and so you know your
+texture mapping unit you know I mean
+every GPU has those Intel GPUs arm GPUs
+whatever you know and but that's you
+know you if you think about that as the
+load/store pipeline that's a really good
+analogy right because a lot of the data
+that we're going to be running through
+in graphics is textures so to me the way
+I think about it is you know look at the
+v1
+right right you know the biggest baddest
+NVIDIA GPU actually just straight up the
+biggest baddest GPU yeah that all around
+if you can afford it right and that has
+about 80 cores and within each core
+there's multiple execution unit in this
+case course being SMS I guess right and
+so if you think about that and try to
+map it to say a Xeon like sky like sky
+like you have up to twenty eight cores
+each core has two floating point
+multiplier cumulate pipelines that can
+be 512 bits wide each and so when you
+sort of plop them into Excel and do a
+line item to line item parison it kind
+of becomes clear that you know what
+NVIDIA calls a coup de coeur really is
+just a single lane of a vector execution
+unit okay
+and you know Nvidia can call it what
+they want to but I it's not a true car
+though right you know when someone says
+oh we've got you know eight thousand
+CUDA cores or five thousand CUDA cores I
+mean that's great
+but you know if you did the math for for
+Intel or AMD you'd come up with
+similarly you know impressive number
+right yeah and well and to that point
+marketing drives a lot of that I think
+cuz yeah like I said you can have 3584
+cores that sounds pretty impressive
+except it's CUDA cores right exactly and
+and so I just prefer people to be you
+know intellectually honest but you know
+again when it comes to marketing
+everyone's guilty right you know another
+way to look at it is if there's any open
+CL programmers out there they have some
+very great reference terminology for you
+know things like data elements that make
+it clear across different hardware
+architectures what you're talking about
+right and in a consistent manner and so
+if you look at that you know again how
+does a stream processor play into this
+then yeah so I mean you know AMD's
+stream processors same thing as a coup
+de coeur right and you know if you were
+to talk to a CPU guy you'd say this is a
+a lane of a vector execution unit okay
+right and so you know skylake sooner
+ultimately if and we we actually get
+this question somewhat frequently what's
+the difference between us stream pauses
+are in a coup de coeur yeah ultimately
+it sounds like they're both lanes of a
+vector execution unit that's right and
+you know I think in the context that
+both companies use it you're doing a
+32-bit floating-point multiply cumulate
+and so if you were to think about that
+that's just you know one lane of a you
+know the avx-512 right it's very similar
+now that there are some differences in
+that you know obviously you can do
+different operations in critical we
+should we should define multiply
+accumulate from evil to oh yeah there's
+different different types of
+instructions and be able to saying write
+add multiply all that stuff yeah so
+multiply accumulate I think is one you
+just referenced yep so what what is that
+and then what's an example of something
+using or doing that so you know the most
+common math operations we all know from
+you know third grade and is as you said
+add and multiply and in a lot of
+workloads we tend to want to do them
+together and so for example if you have
+a dot product you will be multiplying a
+times B and then he added to it C times
+D and so can many computer architects
+have realized this is you know sort of a
+very core building block operation so
+let's just stick them together into one
+operation that's a multiply accumulator
+right and so you know where is it used
+it's sort of the fundamental building
+block of graphics so anytime you're
+rendering a frame you know it's mostly
+multiply accumulates there's obviously a
+lot of other things that go on so
+examples I guess of when you're doing
+math and a GPU just to give a really
+hard example would be maybe something
+like a delta collar compression or
+something like that is that an example
+that would be accurate no there you're
+comparing two values but right you would
+probably be well so the delta color
+compression at least in the AMD GPUs
+that's I think it handled mostly in
+hardware okay but like a better example
+would be
+so if you know say we're gonna take this
+video and we want to rotate it that's
+actually there's a matrix that will
+represent the rotation you know whether
+it's 45 degrees or 90 degrees and so you
+would take you know all of the pixels
+that is us and then you know transform
+and yes using your transformation matrix
+and so when you do any sort of matrix
+operation you know whether it's zooming
+in zooming out rotating scaling etc
+that's all going to be using multiply
+accumulates now for those who are maybe
+a little bit more into machine learning
+which probably not your core audience
+but you know it did you have some pretty
+cool demos at vtc of like AI and
+everything and the core audience can't
+escape it even if they want to yeah
+right it's good machine learning is
+probably figuring out the ads to show
+our core audience right yeah right so
+you know very common thing that you'll
+do is you will have in a just a very
+basic neural network you'll be taking
+maybe like a thousand inputs in and have
+weights for all of them saying you know
+which one is more or less important and
+then you multiply each input by the
+weights and you sum them all together to
+figure out if the neurons gonna fire so
+that again maps right bap to a multiply
+accumulate right um you know a lot of
+image filtering so if you you know when
+you hear people talking about doing
+anti-aliasing in shaders right impute
+anti-aliasing temporal anti-aliasing a
+lot of that is going to involve running
+multiply accumulates non-stop right and
+so that's one of the reasons why GPUs
+are such compute powerhouses is because
+they focus a tremendous amount on doing
+the multiply accumulates whereas if I'm
+designing you know the Zen core or
+skylake I really need to be able to
+handle sequel and all sorts of things
+that are you know much more random code
+that's branchy not as much math more
+cache access right and so you know that
+kind of gets back to like well
+fundamentally what's different about a
+GPU
+in one of the big things is weird eat
+where do you focus your optimization
+where do you spend your area where do
+you spend your power and what is the
+common case yeah that makes sense
+so a lot of marketing for the base
+answer and then we've got stream
+processors CUDA cores at the very heart
+of it are not too different that's
+technically speaking right yeah the
+difference in how they organize those
+units I guess in terms of SMS versus sea
+use is a little different various on
+paper yeah so so we talked about that
+then and smbus is a CEO with a CEO you
+have still you have the process the
+stream processors yep you have some form
+of texture map unit stuff and ACPs
+hardware schedulers things like that
+well a Caesar yeah that's at a higher
+level of of the hierarchy and so the the
+ACPs those will take in commands whether
+direct acts commands or compute shader
+commands and then turn that into actual
+things that can run on the GPU your your
+your shaders and so then that gets
+farmed out to the shader cores to the
+gcn cores the SMM and then they execute
+their you know I think when you're
+looking at sort of the more micro level
+of the differences you know for example
+NVIDIA puts the tensor cores and and so
+that's you know a hardware block that
+does a four by four matrix
+multiplication mm-hmm
+and which as a side complete side note
+may have implications for ray tracing as
+well right and so that's something that
+you know I think you were looking into
+and we have been talking about where you
+know it's used actually not for the the
+core of the ray tracing but modern ray
+tracing algorithms are too
+computationally expensive you cast many
+rays and so if you look at like a
+high-end movie you know a Pixar movie
+you might have hundreds or thousands and
+there's really dense today right whereas
+you know if we want to do this in real
+time we've got say 16 milliseconds yeah
+you know we get maybe a couple raise two
+to four raise yeah and then throw some
+denoising on it right and so the denoise
+zyne is where you're gonna run those
+those critical because again matrix
+multiplies multiply accumulates and then
+you know I think one of the things you
+know many people know that AMD GPUs are
+better for for mining right and part of
+that is the building blocks that AMD put
+in their stream processor cores they
+have more bit manipulation and hashing
+capabilities okay you know so you do
+have differences there but yeah I mean
+at a high level you know your your your
+your GCN core your your s mmm right very
+similar and then you know you you pop up
+a level and they both have command
+processors right taking DirectX or
+OpenCL or OpenGL and then Koff you know
+graphics shader Devia and video calls
+that I guess is a GCP or the Google
+there's a Giga thread scheduler yeah you
+know anyways I mean but it's you know
+it's sort of for the command processor
+yeah there's one way to a command
+processor yeah I think that's what they
+define as the collection of SMS that's
+work before it zooms out another level
+to whatever's above that yeah yeah and
+so that would be your you'll have
+command processors up in there right
+right you know and of course you know to
+bring it back to CPUs you know CPU is we
+don't really have command processors
+right the it in some sense the command
+processor is the processor when it's
+running the OS and that's that's another
+one of the very you know big
+architectural differences is that the
+scheduling capabilities for the GPU are
+in hardware and generally tend to be a
+little bit more fixed right then you
+know in a CPU yeah that makes sense and
+those those lines are blurring over time
+but you know yeah there was one thing I
+was gonna mention which is you know
+again you know to me I look at this and
+say oh yeah CUDA cores stream multi
+stream processors you know it's all a
+floating-point unit right but you know
+you do get these blurred lines when
+people do interesting architectures and
+so AMG's bulldozer
+they had these conjoined cores yeah if
+you go back to my definition you might
+say that bulldozer doesn't really meet
+it because you had you know sort of two
+cores but though you talk not where so
+there was the pole dozer module right
+right and then that had was it shared
+integer units and one FPU or something
+right well and not just that but I think
+more importantly you only had one fetch
+unit one instruction cache one decoder
+and so you'd alternate between the two
+and so you know they said well okay this
+is kind of like multi-threading which is
+true but you're you know Keith's
+readiness is FP intensive though then
+it's a problem right but I guess the
+point is it's it's sort of one of these
+shades of grey arguments is is is a
+bulldozer module two cores or is it one
+if you're really really strict you know
+you might say oh well you only have one
+instruction fetch unit so sharing only
+one but you know I think realistically
+it is something where it's important to
+recognize that you know the world
+doesn't conform to nice clean lines
+right you know instruction fetching for
+example into GPU is often shared between
+multiple cores and that's fine so you
+know there's a full spectrum out there
+from you know on one end you've got you
+know your CUDA core which is just a
+floating-point unit you know your
+bulldozer core which is missing some of
+the elements of a core to you know your
+big skylake core which is you know
+everyone looks at that and that's
+definitely a hard definition of a course
+yeah right yeah exactly so you know it's
+a little bit there are degrees of
+freedom right right well so there's your
+answer of what is a coup de coeur or
+what it isn't yes depending on how you
+look at it yeah and we'll do a link in
+the description below for an article you
+go to patreon.com/scishow and access
+tiles out directly and David thank you
+for joining my pleasure good to see you
+you too
+I'll put a link to his site as well you
+should definitely check it out real
+world tech</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>
