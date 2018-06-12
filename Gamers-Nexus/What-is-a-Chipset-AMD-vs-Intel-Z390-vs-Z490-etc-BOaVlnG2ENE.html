@@ -1,0 +1,357 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>What is a Chipset? AMD vs. Intel (Z390 vs. Z490, etc.) | Gadgetory - Your Gadget Factory</title><meta content="What is a Chipset? AMD vs. Intel (Z390 vs. Z490, etc.) - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus/">Gamers Nexus</a></li><li class="active">What is a Chipset? AMD vs. Intel (Z390 vs. Z490, etc.)</li></ol></div><h2 class="post__title"><b>What is a Chipset? AMD vs. Intel (Z390 vs. Z490, etc.)</b></h2><h5 class="post__date">2018-06-01</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/BOaVlnG2ENE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">on the screen now is a list of current
+and relevant chipsets for our audience
+this is primarily to establish the point
+of view of why we need to clarify what
+each of these provides there are a lot
+of chipsets with similar names now with
+different socket types and similar
+features so we're here to define first
+of all what a chipset is in TLDR fashion
+with a later piece to explain the actual
+chipset differences one by one before
+that this video is brought to you by
+Thermal Grizzlies high-end thermal paste
+and liquid metal Thermal Grizzlies cryo
+knot is an affordable high-quality
+thermal compound that doesn't face some
+of the aging limitations of other pastes
+on the market cryo not has a thermal
+conductivity of 12.5 watts per meter
+Kelvin focuses on endurance is easy to
+spread and isn't electrically conductive
+making it safe to use on GPU dies
+thermal grizzly also makes conductor not
+liquid metal which we've used to drop 20
+degrees off some temperatures than our
+dee-lighted test by a tube at the link
+in the description below as for what a
+chipset actually is it's basically a
+glorified i/o controller and this is
+calling back to a GN article from 2012
+but basically we described it then as
+the CPU of being sort of a disembodied
+brain and the chips at being a spinal
+cord the chips that carries all of the
+i/o on a modern computer they used to be
+split into multiple parts will go over
+momentarily Intel calls its chipset a
+PCH or platform controller hub while AMD
+goes with the more generic and
+definitely correct term of chipset so
+easy to tell them apart they are
+functionally the same they just have
+different acronyms or names in the case
+of Intel the chipset is the center of
+i/o for the rest of the motherboard it's
+responsible for assigning IO lanes the
+devices like SATA to general-purpose
+PCIe devices Gigabit Ethernet and two
+USB ports both Andy and Intel unified
+the old Northbridge and Southbridge into
+a single chipset the Northbridge was
+previously responsible for communicating
+with PCIe and memory and the Southbridge
+communicated with SATA and ide usb
+firmware chips PCI legacy devices and
+audio and about half of those are legacy
+devices now so legacy legacy devices
+these days all of these devices talk to
+either the CPU or the you
+by chipset also different in modern
+times the memory controller has now been
+moved to the CPU becoming an integrated
+memory controller for both AMD and Intel
+Intel's IMC and AMD's SOC system-on-chip
+determine whether memory slots can
+operate in dual channel or quad channel
+configurations control the memory clocks
+and manage DRAM refresh as writing and
+reading operations and have some
+security features related to memory a
+modern chipset looks more like this is e
+370 block diagram from Intel Intel
+connects its chipset to the CPU via and
+interconnects called EMI or direct media
+interface which was most recently
+revised in 2015 to use for PCIe lanes
+connecting the CPU to the chipset
+directly this can become a limiting
+factor in some extreme i/o scenarios
+like those were multiple nvme raid SSDs
+might exist in a system if you look
+carefully at the diagram you'll notice
+that GPUs are able to bypass DMI and the
+chipset both as the CPU hosts its own
+PCIe lanes that are assignable to
+graphics devices in this example we have
+16 PCIe lanes and total available from
+the CPU we can highlight the left side
+of the outputs from the z 370 chipset
+again connected via DMI it's to get a
+better idea of other i/o these are all
+for i/o devices in this scenario we have
+24 pcie 3.0 lanes 6 SATA 6 gigabits per
+second ports options for dozens of USB
+ports and integrated mac and gigabit
+ethernet connected via an sm bus and
+PCIe by one all these devices are known
+as high-speed i/o devices and they use
+HS io lanes as intel calls them but it's
+the same idea on AMD just last branded
+for Intel chipsets motherboard makers
+get a fixed number of HS io lanes that
+they can pull from the chipset and
+assigned to different devices same idea
+again with AMD just different naming for
+those lanes the motherboard makers can
+decide how to assign lanes to some
+extent on both and the end Intel
+platforms and when decided to do that
+for instance one motherboard maker might
+decide to allocate more lanes to SATA or
+more to something like USB fewer to USB
+or a PCIe slots and so forth as for
+graphics and PCIe off the chipset this
+is a common point of confusion for
+people with Intel
+starting off it's impossible to peel off
+more than four lanes for a PCIe slot
+from the chipset so all of those PCIe
+graphics slots typically are coming from
+the CPU and then technically you could
+pull some of the PCIe lanes from the
+chipset to fuel more PCIe slots like in
+some of the mining motherboards for
+example where they just have a bunch of
+by one or by four slots the thing is
+with multi-gpu like with SLI and Vidya
+mandates a by eight minimum for SLI to
+work so if you only have four coming off
+the chipset for a graphics device it's
+not going to work with SLI in gaming it
+worked fine for use cases where you
+don't need sli you just need a lot of
+GPUs again mining being irrelevant an
+easy example for that so the most you
+get out of the chipset for graphics is
+four lanes but the CPU has its own lanes
+that communicate directly with the
+graphics devices and they bypass DMI DMI
+again being four lanes going to the
+chipset so you're gonna bottleneck there
+no matter what anyway in intense IO
+scenarios as for the rest is e 370 comes
+with 30 HS io lanes just as a quick
+example with 24 that are assigned to
+PCIe USB SATA and other devices like
+Gigabit Ethernet 14 lanes are assignable
+by the motherboard manufacturer they're
+more or less generic lanes that the
+motherboard maker can decide what to do
+with and note that Intel PCIe chipset
+lanes again can't be assigned and
+greater than by 4 to any device so
+that's always going to be your
+limitation a manufacturer couldn't pull
+eight PCIe lanes from the chipset again
+to make that very clear because it is a
+common point of confusion back to our
+diagram Intel also uses SPI over the
+serial peripheral interface bus to
+bridge the chipset and firmware trusted
+platform modules and XTU whenever you
+flash bios with a new version that's
+communicated down SPI and into the
+physical firmware chip finally on the
+right side of the Intel chipset diagram
+we see additional IO support for raid
+and Intel Rapid Storage Technology or
+rst you'll notice that memory doesn't
+directly communicate with the chipset
+instead because modern CPUs use
+integrated memory controllers or IMC's
+the memory has a direct line to the CPU
+just like the primary GPU does this is
+much faster and eliminates painful
+latency that would be encountered
+otherwise AMD's modern Rison chipsets
+aren't too different from Intel's the
+functionality and objective remain the
+same although the specific
+implementation is a little bit different
+and these X 370 chipset block diagram
+looks like this one will highlight the
+blocks and interconnects as we go just
+like we did with the Intel one the CPU
+still hosts its own pcie 3.0 lines for
+direct GPU communication just like
+Intel's configuration but Rison has more
+PCIe lanes on the CPU we have a total of
+16 lanes for pcie 3.0 graphics devices 4
+lanes for nvme m dot 2 devices and 4
+lanes that the user can never directly
+use because those communicate with the
+chipset like Intel the CPU has an
+integrated memory controller of its own
+or system-on-chip more appropriately for
+AMD and that allows a direct line to the
+memory from the cpu desktop horizon
+supports dual channel configurations for
+memory whereas thread reverse supports
+quad channel configurations for the
+chipset AMD allows some motherboard
+manufacturer of flexibility here just
+like the z 370 chipset by giving
+assignable lanes that can be switched
+around to other devices if a motherboard
+maker is building a smaller board or
+wants to down cost the board they can
+also remove some devices those lanes
+would just be left unused the chipset
+can support up to 8 pcie 2.0 6 SATA 6
+gigabits per second with raid support 2
+USB 3.1 gen2 6 USB 3.1 gen2 1 and 6 USB
+2.0 separately note that all of andy's
+current rise and chipsets allow
+overclocking whereas Intel's
+overclocking is feature locked to the Z
+series and x-series will leave you with
+the most common chipset differences and
+an explanation of naming schemes Intel's
+names include q bh z and x chipset
+prefixes without getting into all of the
+details Q and B boards were originally
+meant for business though B has been
+assimilated by gaming boards H was meant
+as an affordable mainstream board with
+an H 10 H blank 10 so H 3 10 H 2 10 and
+an H 3 7 th 270 and so forth board
+option Z chipsets are the performance
+series and primarily differ and unlocked
+over login support X chipsets are
+incomparable to these and support
+gdt or high-end desktop CPUs like the 79
+80 XE 18 core CPU and these chipset
+names primarily include a B and X
+prefixes and these B series and x-series
+chipsets are officially unlocked for
+overclocking and primarily differ in
+price B Series boards tend to be a bit
+cheaper and X series boards tend to be
+more focused on overclocking but that's
+not always a hard and fast rule you need
+to check each individual board as for
+the real differences again without
+getting into really the heavy details on
+these for this video it's mainly the HS
+i/o lanes and the amount of them
+specifically on the Intel chipsets and a
+bit on the AMD ones so as you look at B
+versus H versus Z there'll be some
+differences especially depending on
+generation of processor where one might
+have 24 lanes one might have 30 or
+something like that and those lanes
+again it's not PCIe necessarily it's
+just general purpose lanes can be
+assigned to lots of i/o devices so
+whether or not that matters to you
+depends on how much I owe you need the
+other main dividing feature is going to
+be overclocking for Intel on the Z
+series and the X series being somewhat
+of a shoot-off where it's just high-end
+desktop and of course is unlocked for
+overclocking and these supports unlocked
+overclocking on both of its mainstream
+and top and chip sets which would be the
+B series and the X series and if
+anyone's getting confused here note that
+in tante they both have B series
+chipsets they both will have Z series
+chipsets as they and these pushing one
+soon and they also both have X series
+chipsets so they are completely
+incompatible of course you wouldn't be
+able to put an Intel processor into an
+AMD CPU so if you're asking if if this
+is like brand new never built a computer
+before question and you're asking what's
+the difference between B 360 and be 350
+difference is one supports Intel and the
+other one supports AMD so obviously
+beyond that the differences don't matter
+a whole lot I just pick the one that
+fits the CPU first figure out the rest
+later and then finally another important
+note here is that the chipset does not
+mean anything with regard to board
+quality it might be kind of a toggle
+between overclocking or not but beyond
+that you don't know if the board
+actually overclock swell just because
+it's a z series board there are plenty
+of Z and even
+x3 seventy boards that look the part or
+even priced the part but have awful VRMs
+and other components that would assist
+with overclocking they might be lacking
+a clock gen for instance on some AMD
+boards so it's a lot more than just the
+chipset if you're trying to buy
+something for specific purposes
+obviously look at the whole picture we
+publish vrm analysis videos as do other
+people like builds ide who works on them
+for us and those BRM analysis videos
+will help you figure out the rest of it
+beyond just the chipset difference and
+again this is kind of a really beginner
+level thing but a lot of people will
+just go towards the Z series or the X
+series boards simply because it seems
+like well they're the best technically
+they are the most feature filled
+chipsets or should at least carry that
+appearance but again doesn't really mean
+a whole lot beyond that it depends on
+the individual board the motherboard
+makers still have a lot of control over
+their boards boards impact performance
+really heavily and it's a common
+misconception that they don't so be
+careful about what you're choosing and
+of course make sure the memory support
+is fitting for the memory you're
+choosing and that's a different topic
+for another video so that's it for now
+last major thing to clarify PCIe
+graphics lanes primarily come off of the
+CPUs so kind of one over that a few
+times but just to really make it clear
+because a lot of people ask that one our
+asked yen series so that's it for this
+one is always subscribed for more go to
+patreon.com/scishow and exit stops out
+directly go to stored on cameras nexus
+net to pick up one of our anti-static
+mod mats they are available now and
+shipping as they are ordered so if
+you're building a new computer and
+watching this because of that maybe our
+mod mag can help you out thanks for
+watching
+I'll see you all next time</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>
