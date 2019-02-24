@@ -1,0 +1,224 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>New Test Bench Keeps Boot Looping... Here's how we fixed it | Gadgetory - Your Gadget Factory</title><meta content="New Test Bench Keeps Boot Looping... Here's how we fixed it - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/JayzTwoCents/">JayzTwoCents</a></li><li class="active">New Test Bench Keeps Boot Looping... Here's how we fixed it</li></ol></div><h2 class="post__title"><b>New Test Bench Keeps Boot Looping... Here's how we fixed it</b></h2><h5 class="post__date">2018-08-02</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/b1qFrTo1O6c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">what's up guys JC cents here and I'm
+gonna show you a quick and easy way to
+actually get your system running if
+you're dealing with a specific program
+that it's causing you blue screen on
+Windows 10 startup as I'm about to
+demonstrate here now my particular
+system this test bench has seen a lot of
+hardware revision changes a lot of OS
+revision changes AMD Intel a lot of
+swaps and stuff like this happens
+eventually to the OS because it's
+dealing with so much software stacked on
+top of and the registry is cluttered I
+mean lots of problems and that's exactly
+what we're dealing with right here we
+are dealing with an old AMD risin master
+install keeping me from being able to
+get in to my now Intel based test bench
+what are you doing shopping for a case
+when you build what do you looking for I
+want something designed for
+water-cooling fractal design to find s
+all the way check it out
+plenty of airflow plenty of open
+interior for water cooling radiator
+support it even has mounts for your
+reservoirs I don't have enough room for
+my hard drives okay fractal design r5
+look at all those hard drive cages and
+you can fit your radiators and water
+cooling in here no I got a lot of hard
+drives but I also have an e ATX
+motherboard ok I'm gonna try something
+here ok bear with me you might want to
+stand clear I never actually tried this
+before
+yeah it worth fractal design to find r6
+you could fit all your radiators a
+crap-ton of hard drives and if it's a
+ATX did this is perfect
+nailed it now back in the day it was
+pretty easy to deal with problems like
+this as we're dealing with my boot loop
+happening here you would just hit f8
+boot into safe mode go in there
+uninstall whatever the culprit is and be
+up and running a couple of problems with
+that one Windows 10 no longer makes it
+easy for you to get in to Safe Mode if
+you can't access the desktop it's pretty
+simple usually you can go in there and
+just tell it to restart in Safe Mode or
+hold shift while clicking the restart or
+bunch of different options but if you
+can't get into the damn operating system
+what good is that Microsoft whatever the
+monkeys over there running the windows
+division clearly have never dealt with a
+problem like this now what's gonna
+happen here the reason why you're seeing
+me not touch anything is on the third
+failed boot it's gonna automatically
+boot you into Recovery Options and
+that's how you can get into safe mode if
+that wasn't working for you then
+typically what you can do is when you
+see the little windows circle going you
+can just power cycle the PC turn off the
+power supply do that three times and
+then you'll end up into safe mode but
+what it's doing now is it's yeah it says
+please wait that's how you know it's
+actually going into Recovery Options
+that's where we're gonna get ourselves
+into safe mode but you're not done there
+because I'm gonna show you a new layer
+to this problem that makes it just a
+little bit more redonkulous if you will
+now even here from the recovery menu
+it's still kind of buried to get into
+safe mode you're gonna click see
+advanced repair options
+you're gonna go to troubleshoot you're
+then gonna go to Advanced Options you're
+then gonna go to known us start to
+prepare see more Recovery Options then
+you're gonna click startup settings then
+it's going to give you the option to go
+into safe mode hit restart then it will
+restart into a menu where you chose what
+type of safe mode you want to boot into
+there's different options safe mode with
+command prompt safe mode with networking
+safe mode with no networking because
+basically each safe mode that you choose
+enables and disables various system
+services because sometimes the system
+service could be what's crashing causing
+you a problem or that's trying to load
+in safe mode than whatever so we're
+gonna go ahead and just do enable safe
+mode with networking
+which is number five hit five and now we
+will boot into safe know this isn't
+gonna boot things like video drivers and
+so I'm going to usually boot or load
+things like sound drivers nothing is
+freakin running and it brings you right
+into Microsoft support so we all know
+how useful that is and what we're gonna
+do now is we're gonna go into add remove
+programs now we know the culprit is AMD
+Rison master in my case anyway because I
+didn't really show it maybe fill might
+be able to see it I don't know in
+editing but it actually told me AMD rise
+in master DLL is what was actually
+causing the failure it was saying it
+couldn't load exception whatever I
+remember the exact error was and here it
+is right here
+AMD rise in master now normally you just
+go in here and then click uninstall and
+when you click on install we get an
+error here the Windows installer service
+could not be accessed this can occur if
+windows installer is not correctly
+installed the irony on that the
+installer isn't installed correctly by
+windows own installer than install it
+using the windows installer ok so if you
+go down here into the windows button you
+click that you just start typing
+services you can actually go to the
+desktop app and see what services are
+running and not running and if we go
+down here to W for Windows installer
+right there you can see it's not running
+now if you right-click that and say
+start it then perty needs to tell you
+that windows could not start the windows
+installer service on a local computer
+error
+18:04 the service cannot be started in
+Safe Mode so now you're in safe mode
+where you can't uninstall anything which
+is kind of the reason why we wanted to
+get into safe mode so what do you do J
+how the hell do you get past this well
+all you got to simply do in our case
+anyway was try and find where I am dear
+I Zen master was installed so we happen
+to know that the location is in our
+Program Files
+there's the folder right there with AMD
+rise and master and all that stuff so
+all we had to do here was go in here and
+rename it to ms sucks monkeyballs and
+now restart your system it should work
+at this point you can restart your
+system you'll get into the desktop and
+then you can rename it back to AMD if
+you do you'll deal with this but if you
+rename it back to AMD then you can
+uninstall it it should be able to
+uninstall also with the
+root folder named the way it is but
+that's all we had to do we just had to
+tell basically the startup services in
+the registry that it's trying to load
+something else not there so it just
+ignores it and moves on this could
+easily be handled if the monkeys running
+Microsoft actually knew what the hell
+they were doing just another level and
+layer of white Windows 10 sucks and why
+videos like this even have to exist but
+because we dealt with it and I'm sure
+that people can learn from it is why we
+made this quick and easy video now this
+is gonna help all problems this only
+specifically helped the situation we
+were dealing with right now Microsoft
+you could Windows 10 help you can get
+the trick this only helps when the
+program trying to launch is causing the
+problem and obviously rate rise and
+master couldn't launch because we're not
+running a rise end system so that was
+the the conflict there so now we're back
+and running in the Windows desktop non
+safe mode with a new folder I'm gonna
+leave on here called MS sucks
+monkeyballs
+ok this makes me happy but yeah it was
+it was literally that simple so guys I
+mean when I come across these types of
+problems I'll try and make these quick
+videos to help you guys out like I said
+this will only work in the situation of
+leaving your phone not on silent where
+you making a video this won't work in
+all instances but if it's a dll or
+something like that that's causing the
+issue then you can typically get in the
+safe mode and at least delete those DLL
+because deleting files works
+you just can't uninstall anything
+alright guys thanks for watching see you
+next one</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

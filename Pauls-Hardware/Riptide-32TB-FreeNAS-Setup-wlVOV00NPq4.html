@@ -1,0 +1,468 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Riptide 32TB FreeNAS Setup! | Gadgetory - Your Gadget Factory</title><meta content="Riptide 32TB FreeNAS Setup! - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Pauls-Hardware/">Paul's Hardware</a></li><li class="active">Riptide 32TB FreeNAS Setup!</li></ol></div><h2 class="post__title"><b>Riptide 32TB FreeNAS Setup!</b></h2><h5 class="post__date">2018-08-12</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/wlVOV00NPq4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">the enter max liquid tech tr4 -
+all-in-one liquid CPU cooler has a
+massive contact plate made just for
+thread Ripper and is rated for 500 watts
+of heat dissipation high pressure pwm
+fans mount two rubber channels on the
+radiator to absorb vibration and the
+sexy logo and edge lighting on the block
+is addressable for syncing with your
+motherboard
+it comes with an RGB control box - so
+click the spots or link in the
+description for more hey guys how's it
+going - welcome back to Pauls hardware
+today's video is about setting up
+FreeNAS in a Riptide Riptide is my a
+massive $10,000 plus build with a 16
+core thread Ripper based system in the
+top with 210 ATT eyes and in the bottom
+there's a little free Ness system and as
+I have gone through this build process
+many many people have asked me for a
+tutorial or a walkthrough and I want to
+be clear right from the get-go here this
+is not necessarily going to be a
+tutorial it's gonna be a walkthrough of
+my setup procedure I've only really
+installed FreeNAS a couple times so I'm
+not necessarily an expert I will point
+you guys towards the resources I am
+using to set it up myself and I will
+screen cap this process though so you
+guys can get a better idea of what's
+going on as I go through the
+installation but hardware is documented
+in my earlier Riptide video so check
+that out if you want to see what's
+exactly installed I have been intending
+to upgrade the memory that's installed
+there to ECC memory though so I have 16
+gigs of ECC memory here from crucial
+it's not necessary to have ECC memory
+for FreeNAS but it's recommended if
+you're very concerned about data
+integrity and it's recommended to have
+about 1 gig of memory per one terabyte
+of storage so 32 terabytes of storage
+via the four hard drives that are in
+there and then 32 gigabytes of memory
+via the 216 gig sticks here however
+although ECC memory is compatible with
+risin and risin two processors on this
+platform if the motherboard manufacturer
+enables it in the BIOS for whatever
+motherboard you're using ECC memory does
+not currently work for any of the AMD
+APU which is what I specifically chose
+so that I would have enough
+expandability of either expansion slot
+that I didn't need a graphics card long
+story short I can't use this memory with
+this configuration at least not yet
+we're hoping that when we rise in Pro ap
+use launch which is supposed to happen
+in the next couple months I think we
+might see ECC support for these ap use
+but for the time being I'm gonna have to
+put those aside and switch
+to a non-ecc memory kit so of Corsair
+Dominator platinum kit right here 32
+gigs I know this is risin compatible to
+ddr4 3000 speed which is perfectly fast
+someone install this so we can move on
+with our installation of freedom
+the first things first upon booting up I
+want to double check the bios and make
+sure that we got all our hardware
+recognized I did test this stuff
+beforehand but it's now installed so I
+did go for the memory and I plugged in
+the do CP standard profile to give us
+ddr4 3000 and then I went over to
+advanced and looked at our SATA
+configuration to double-check and make
+sure all four of the WD eight terabyte
+drives are being recognized there then I
+forgot were to boots and check out our
+hard drive priorities we can see we've
+got the force MP 500 we've got our Intel
+opt-in drive and we've got our 4wd drive
+so all of our tribes that are connected
+are recognized
+so now that I'm reasonably confident
+that the hardware is functioning
+properly and everything's plugged in and
+recognized let's switch over to actually
+getting FreeNAS installed so I'm gonna
+need to create a USB FreeNAS installer
+if you guys have gone through Windows 10
+installation it's the same general idea
+so the first step is gonna be to go and
+download Rufus which is a piece of
+software that can create bootable USB
+drives and we're gonna use Rufus and the
+FreeNAS ISO to create a FreeNAS
+installation USB on this little Corsair
+a cake flash drive that I have I might
+as well go ahead and plug this in make
+sure there's nothing important on it
+because it's gonna be completely wiped
+I'll put links to these download pages
+in the description but Rufus 3.1 is the
+version that we downloaded now and then
+over on the freenas site they have
+storage only configuration and storage
+plugins and virtual virtualization I
+want to mess around with some plugins
+including Plex for examples so I did
+download that version 11 point 2 beta 2
+Rufus doesn't need to install you can
+just run the exe that was downloaded it
+is automatically selected the only USB
+drive that I've installed and it wants
+us to select the ISO so let's go back
+over to downloads and choose the FreeNAS
+11.2 beta that we just downloaded and
+then we'll go ahead and click start it's
+gonna give us a warning that all the
+data is gonna be deleted and then we'll
+give it a minute while it writes that
+data to the USB and then we can use the
+USB to install FreeNAS so pop that USB
+into the USB port on the back of the
+FreeNAS motherboard and turn the system
+back on I would usually hit delete to go
+back into the UEFI BIOS and change the
+boot order to boot off of that USB Drive
+but fortunately since there's no other
+bootable devices on this system
+it automatically went and did default
+into the installation mode and now
+throttling interrupts so our
+installation has gone through
+successfully although what I'm screen
+capping for you guys is just a mess
+because of this interrupt storm detected
+thing that we're getting it's probably
+something to do with some of the USB
+ports on this motherboard that I might
+be able to disable in the BIOS I'm
+looking up some information I'm
+hopefully trying to fix that but the
+underlying installation does appear to
+have gone through successfully so that
+was some interesting initial
+troubleshooting the interrupt storm
+detected on irq two six five issue has
+been solved now though I initially tried
+to solve it by going in and disabling
+USB devices and a couple other things in
+the UEFI because it seemed to be a
+device on the motherboard that was
+throwing a repeating error that the
+operating system was picking up and just
+displaying on screen over and over again
+which made it particularly difficult to
+navigate the command-line interface that
+FreeNAS often uses ultimately though I
+had to double-check what version of the
+BIOS we were using on this motherboard
+and we actually had a pretty old version
+I think it was version 0 400 something
+and recently there's an update about two
+weeks ago to a 901 so we downloaded that
+put it on a USB updated the BIOS and now
+we have a nice clear look at everything
+because we're no longer getting that
+error thrown constantly so that's good
+actually
+next step is Internet I have no internet
+here so let me get back
+so ultimately I decided to go back and
+do a fresh clean reinstallation of
+FreeNAS just so I can show you guys what
+it looks like without all those error
+messages popping up all over the place
+so I went back into the UEFI and ASUS
+motherboards have a boot override option
+you can do so I just choose UEFI boot
+off of my USB Drive with the FreeNAS
+installer on it after that loaded up I
+chose option 1 to boot off Sabrina's
+installer then option 1 again to do an
+installation or an upgrade and then I
+went and chose from the list of drives
+that are connected my Intel obtained 32
+gigabyte SSD to install 2 it shows the
+fresh install option and then to do a
+full format on the boot device and then
+I confirms that all the data on this
+device will be deleted all the data and
+all these drives is going to end up
+being deleted today but after that it'll
+prompt you to create a root password
+which you definitely should do keep a
+password on this and then I chose the
+UEFI boot mode rather than the legacy
+BIOS after that short wait for the
+installation to proceed you'll see
+on-screen console text pop up and scroll
+by and then after a bit you'll be
+prompted to reboot and it will tell you
+to remove the installation media cuz you
+don't want it to reboot and then boot up
+of your Installer again you want it to
+boot off of the disk you just installed
+- this time after the reboot there'll be
+a lot more on-screen console text going
+by as files are copied hardware is being
+detected and you will get a message to
+say this will take a long time so I was
+prepared for a long way but it actually
+only took a couple minutes but after
+installation is complete you'll be
+presented with a simple command-line
+interface there's 11 options available
+there which you should maybe take a look
+at there's useful stuff available like
+shutting the system down resetting the
+boot password for example but you'll
+also see a web user interface with an IP
+address listed so you want to copy down
+that IP address and then move over to a
+different computer that's also connected
+to the same network because now we can
+pretty much go headless with our
+freeness and not even have a monitor
+connected to it and we can control it
+and set it up via a different computer
+over the network via the web interface
+so all you want to do is go to a browser
+and type in that IP address 192.168.1.1
+- actually setting up the NASS itself
+and configuring the drive so in order to
+set up my 4 8 terabyte hard drives into
+a massive 32 terabyte data repository I
+need to start by creating a pool
+for this just navigate over to storage
+and then fools and then click Add or
+create here you can choose the drives
+from the available disks section and add
+hard drives to the pool by either
+clicking the right arrow on them to add
+them to the data v-dubs list or you can
+just click the suggest layout button and
+that will sort of take a look at the
+drives that you have and give a
+recommendation for what it recommends
+based on the hardware that's available
+it shows all four of my 8 terabyte hard
+drives and recommended raid Z 2 which I
+went with because that's what I probably
+would have chosen to use anyway FreeNAS
+calls this layout and you can kind of
+equate it to a raid setup if you've ever
+set up a raid array before in fact they
+pretty much have the same names to
+mirror requires at least two disks and
+puts the same data on both disks one can
+fail without losing data rate z one
+requires at least three disks and one
+disk can still fail you get a little bit
+more storage capacity that way and raid
+Z 2 requires at least 4 disks but two of
+them can fail so you lose some storage
+capacity but you gain redundancy and
+since data integrity and long-term
+storage is a goal here raid Z - it is if
+you guys watched any of the build videos
+on the FreeNAS system you know that I
+have two SSDs in there the up tain drive
+is what the FreeNAS operating system is
+installed on right now but I have a
+second SSD in there 120 gig Corsair MP
+500 that I wanted to use as a cache
+there's actually two different types of
+cache with free nests there is Zil and
+there is l2 art there's a lot of depth
+of both of these I'm going to give a
+very simple explanation as to why I'm
+choosing what I'm choosing but Zil is
+ZFS intent log and it can help with
+write speeds but probably not for a home
+setup that's more for people who are
+integrating these into servers and
+enterprise environments also they're
+recommending a battery backup SSD for a
+Zil cache and that is simply because if
+that drive were to fail you would
+actually lose data on your freenas setup
+so I don't want that and I don't have a
+battery backed up SSD so I'm not doing
+the xilk at l2 arc is a read cache this
+can help with read speeds but again only
+in certain situations it's also going to
+eat up some of your system ram so you
+should only really bother looking in to
+set up setting up an l2 art cache if
+you're already maxed out on system ram
+which I am so since I have the hardware
+I am going to go for that and use the
+hundred twenty gig course air force MP
+500 as my l2 our cache and hopefully I'm
+going to report back and do a follow up
+video on some of the performance and
+stuff with this and FreeNAS does have a
+built-in monitoring tool that you can
+use to see if you're actually getting
+any benefit out of that so hopefully for
+home use I'll be able to come back and
+tell you guys if that was actually even
+worth it so now that I've set up my pool
+I can see it here in the dashboard but
+in order to use that pool the setting up
+the pool is kind of like creating a raid
+array we now need to create datasets on
+that pool and that's kind of like
+creating partitions on a raid array to
+some degree so so we're gonna go back
+over to storage here we're gonna choose
+pools we're gonna select our big 32
+terabyte pool at least or whatever you
+named your ISM we're gonna click add
+datasets here there are various options
+you can go through as well as an
+advanced mode where you can tell it like
+how much data it X should actually use
+but I'm not gonna bother with any of
+that I'm going to go to basic mode I'm
+going to have it inherit most of the
+stuff that I setup from the data pool
+but I'm gonna name this media and one of
+the things you can do with data sets is
+create different ones with different
+rules and different levels of access and
+the ability to have it backed up as well
+with a snapshot since media is like TV
+shows and movies and music and stuff
+that is theoretically replaceable I
+don't want it backed up it's but it's
+also probably gonna be a lot of space so
+I'm just gonna go to the share type
+switch that to Windows and click save
+and now under our big 32 terabyte pool
+we have a data set called media it is
+there and we are almost ready to
+actually access it and start saving
+stuff to it in order to do that though
+we need to go over to sharing and since
+we're using Windows based machines here
+at my home we're gonna choose a Windows
+SMB share we're gonna add one up here
+we're going to direct it to the path we
+want to direct it to direct it to our
+media data set here go ahead and name it
+media and we're gonna allow guest access
+what you probably want to do for
+security is create users and give them
+individual access but for now a guest
+access will be just fine we can also had
+a periodic snapshot task but we're not
+going to do that right now we're just
+gonna hit save
+so to recap all your drives go into a
+pool data sets get created on that pool
+to separate your different data out and
+then you create a share in order to
+share that on the network at this point
+if you've done everything correctly you
+should be able to go over to your
+network on a network attached computer
+you should see your FreeNAS there and
+then your share that you just created
+should be available for you to go ahead
+and start using so I'm not going to go
+back and create one more data set and
+this one's going to be specifically for
+records basically I want the data in
+that data set to be backed up important
+stuff you know if you have
+tax info or whatever else you want to
+save so first I will create the new data
+set and I'm just going to call it
+records so there it is and I can create
+instantaneous snapshots just a one-time
+backup if you want but I actually want
+this to do this automatically so I'm
+gonna go up to tasks and periodic
+snapshot tasks I'll go ahead and create
+a new one so here we're going to choose
+the records data set that we just chose
+we can tell it how long to keep the
+snapshot we can tell it when to begin
+and end the task which I probably want
+to have it do in the middle of the night
+you know will say like 2:30 in the
+morning sure that sounds good and we can
+let it run for an hour and then the
+interval I'm just gonna have it do it
+once a day and right now it's got Monday
+through Friday but let's have it through
+the weekends too so go ahead and save
+that
+it's enabled and now this task should
+run every day at the set time and then
+it'll save the snapshots into a
+directory on the FreeNAS now that I've
+created a share for it I can go and see
+that on the network and then from here
+you can actually go to properties and
+previous versions there's none right now
+because it's not 2:30 in the morning so
+it hasn't run yet but you'll be able to
+see previous versions here and then you
+would be able to recover that and the
+cool thing is the snapshots that are
+created are read-only so even if you get
+hit with like a cryptolocker virus or
+something like that you should still be
+able to recover your most important
+stuff from those snapshots if you really
+need to now guys I was additionally
+planning to make this video a bit longer
+and a bit more in depth but some stuff
+has come up this week that is exciting
+but also has caused me to lose a lot of
+time so the upshot is I have some really
+cool videos coming up very soon that I
+think you guys will be interested in but
+this initial setup video for the freenas
+I've had to limit to really just kind of
+the basic steps to get things up and
+running to actually access it on my
+network I do have another freenas video
+that I made for my old set up so if you
+guys want to check that out I have a few
+more details that I go into there of
+course it is the older version so the UI
+is different but essentially it's the
+same type of functionality if you
+enjoyed this video though hit the thumbs
+up button and of course subscribe for
+more tech videos coming at you very soon
+thanks again for watching guys and we'll
+see you next time</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

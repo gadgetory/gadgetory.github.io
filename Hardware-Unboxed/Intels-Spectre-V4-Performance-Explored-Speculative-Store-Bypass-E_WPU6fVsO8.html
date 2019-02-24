@@ -1,0 +1,180 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Intel's Spectre V4 Performance Explored, Speculative Store Bypass | Gadgetory - Your Gadget Factory</title><meta content="Intel's Spectre V4 Performance Explored, Speculative Store Bypass - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Hardware-Unboxed/">Hardware Unboxed</a></li><li class="active">Intel's Spectre V4 Performance Explored, Speculative Store Bypass</li></ol></div><h2 class="post__title"><b>Intel's Spectre V4 Performance Explored, Speculative Store Bypass</b></h2><h5 class="post__date">2018-07-14</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/E_WPU6fVsO8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">welcome back to harbor box today we're
+taking a look at the impact addressing
+this spectra variant full-floor has on
+Intel's coffee-like CPUs now back when
+the meltdown and spectra vulnerabilities
+were first made public earlier this year
+we knew this was going to be an ongoing
+process the initial patches didn't
+address everything they addressed a
+variant one known as meltdown and then
+two spectra floors known as variant 2
+and variant 3 recently though Intel and
+Microsoft roll that updates to address
+variant for a related speculative
+execution attack dubbed speculative
+store bypass speculative store bypass
+effects not just Intel but also AMD and
+ARM processors that said the AMD an ARM
+processors can be addressed much more
+easily via a simple software update so
+if you keep your operating system and
+web browser up-to-date you'll be
+protected against variant 4
+automatically if you've got an Intel
+processor fully mitigating the issue
+requires not just these software updates
+but also a firmware update so in other
+words a BIOS update Intel started
+shipping microcode patches for variant
+forward to its hardware partners in beta
+form just a few months ago now and we're
+only just starting to see board partners
+pushing them out in fact to my knowledge
+a seuss is the only board partner to do
+so thus far however while the latest
+round of bias updates from a seuss does
+include the updated micro code for
+variant 4 it's not enabled in Windows by
+default for now it has to be manually
+enabled by adding a few registry keys
+it's likely at some point this will be
+done automatically and I suspect
+Microsoft is worried about a repeat of
+the disaster they encountered earlier in
+the UN addressing the first wave of
+unrealities so this summer and they've
+taken a more cautious approach Intel has
+said enabling the fix will lead to
+approximately a two to eight percent
+decrease in performance and this was
+observed when benchmarking with sis mark
+2014 on client and server test systems
+but I'm sure what many of you want to
+know is what kind of performance impact
+this will have on your system
+particularly for games now for AMD users
+there should be no impact at all but I
+will look into this in another video
+soon for now we're going to see what
+kind of impact this has on those using a
+coffee
+CPU and please note for now we can't
+test older systems as the BIOS updates
+don't exist yet so for this test I'm
+using the cry 780 700 the non K version
+on the isuzu ROG Strix z 370 F gaming
+motherboard using bass version one zero
+zero two I'll be comparing results with
+SSB enabled and disabled and the enabled
+results will be labeled as pre update
+and the disabled as spectra v4 update so
+with that let's get to the results first
+up we have this Cinebench r15 results
+and here we see no changes at all with
+the variant for patch enabled the single
+thread score goes unchanged and the same
+is true for the multi threaded score as
+well three points isn't well within the
+margin of error here the CPU Z benchmark
+here we saw a 3% decrease for the single
+thread test but just a 1% decrease for
+the multi-threaded test and those
+results were repeatable over and over
+again
+the corona benchmark was run half a
+dozen times for each configuration and
+we found that the variant for
+mitigations impacted performance by just
+a single percent not a lot but we did
+consistently see a 1% reduction in
+performance here we see no change in
+performance when testing with 7-zip less
+than 1% difference between the two test
+configurations now moving on to some
+gaming and we find that little has
+changed when benchmarking with
+battlefield 1 the 1% low result was
+consistently lower with the variant 4
+update enabled that said we're only
+talking about a 2% drop-off in
+performance far cry 5 only saw a one and
+a half percent drop off for the average
+framerate with a 1% change for the
+minimum and although the variant 4
+update did make the core i7 8700
+consistently slower by 1 to 2 FPS it's
+not exactly a big performance here we
+again only see a 1 to 2 FPS hit when
+testing with Rainbow six siege so not
+much else to say there and then finally
+I took a look at for at night and here
+we do see a slightly larger 3% drop off
+for the average frame rate as well as
+the frame time performance again not a
+big change but we were consistently
+seeing a 4 to 5 FPS drop in performance
+so Intel claimed a 2 to 8 percent
+performance it when addressing the
+variant for vulnerability by disabling
+speculative store by past but our tests
+it looks more like just
+one two three percent the impact for
+Linux users appears to be more in line
+with intel's own claim and we believe
+that comes down to the windows scheduler
+which is less efficient than the linux
+scheduler previously we found when
+patching variant one two and three this
+reduced the gaming performance of the
+core i7 eighty seven hundred k by up to
+five percent though for the most part we
+only saw a zero to three percent
+decrease in framerate very four has seen
+a further one to three percent dip in
+performance though this time we were
+testing with the non k 8700 but the
+margins should be much the same across
+the entire range what this all means is
+since december last year the game
+informative intel's coffee-like CPUs is
+down by one to six percent for the most
+part we're likely only talking one to
+two FPS in games pushing over 60 FPS and
+up to five FPS far higher refresh rate
+gaming again not a big deal overall but
+it's worth keeping in mind that intel
+will suffer an IPC hit because of this
+with future architectures that address
+these vulnerabilities at a hardware
+level for now though those of you who
+own an eighth generation intel core
+processor needn't worry about you came
+is turning into a slideshow the
+performance impact isn't that
+significant that said even if it was we
+would strongly recommend you update your
+bias and enable the mitigations as soon
+as possible because remember just like
+Daniel Ricciardo hackers like I'm
+vulnerable and in fact this is gonna do
+it for this one for now if you did enjoy
+the video be sure to hit the like button
+subscribe for more content if you
+appreciate the work we do your hammer
+box then consider supporting us on
+patreon thanks for watching I'm your
+host Steve see you next time</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

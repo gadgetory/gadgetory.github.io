@@ -1,0 +1,165 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Real-Time Ray Tracing &amp; Turing Architecture | Gadgetory - Your Gadget Factory</title><meta content="Real-Time Ray Tracing &amp; Turing Architecture - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Science-Studio/">Science Studio</a></li><li class="active">Real-Time Ray Tracing &amp; Turing Architecture</li></ol></div><h2 class="post__title"><b>Real-Time Ray Tracing &amp; Turing Architecture</b></h2><h5 class="post__date">2018-08-15</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/2Y-SmzeEMPs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">with the unveiling of invidious latest
+architecture the term ray-tracing has
+been floated around quite a bit but what
+does it mean and how is it any different
+than the current rasterization
+techniques used today in modern video
+games welcome to a crash course on
+Turing architecture and raytrace
+rendering just this week in video
+revealed the Turing architecture dubbing
+this thing right here the world's first
+ray tracing GPU the insane compute
+performance attributed to the current
+flagship the Quadro r-tx 8000 apparently
+will cost a hefty 10,000 US dollars it
+sports 48 gigs of GDD are 640 608 cuda
+cores and 576 tensor course those are
+explained in this video right here
+but these beefy specs mask an underlying
+trait that sets the Arctic series apart
+from its predecessors actually usable
+real time ray tracing let's start by
+explaining what we currently use and how
+ray tracing changes all of it today a
+real-time computer graphics use a
+technique called rasterization it's a
+fancy word for in a nutshell 3d modeling
+in a 2d space
+dozens of triangles or polygons as the
+Fancy Pants call it attached with
+position and Colour information or
+sandwiched together to create the radius
+at which point pixels are generated and
+shaded to yield a more realistic image
+we conveyed depth and shadows manually
+with these kinds of techniques but they
+can be expensive from a hardware
+utilization standpoint you can imagine
+how millions of polygons stitched
+together to form various objects than
+just one scene can require some intense
+computational power hence the necessity
+for GPUs and parallel processing with
+hundreds or thousands of cuda cores in
+the case of Nvidia add to that a frame
+rate of 60 or even 144 FPS and you've
+got a crazy demanding render to play out
+not just on the graphics card side but
+also the CPUs incomes array tracing this
+technology has actually been around
+since the late 60s but we were always
+limited by our technology even mighty
+Tesla V 100's relying on the new volt to
+stuff had to run in packs of fours to
+handle the Unreal Engine reflections
+demo you're seeing here which is
+currently using active ray tracing the
+premise of the technique literally
+involves its name tracing light rays
+from a source to a camera or the human
+eye no rasterization or shading required
+you actually see it all the time in
+movies
+CGI it's how they blend the real stuff
+with the fake stuff but the real kicker
+with this announcement from Nvidia is
+seamless real-time ray tracing which
+they've been promising for quite a while
+actually so this requires a GPU in
+question to always be on its toes
+depending on the movement of the user
+obviously as your location relative to
+the light source changes and we can have
+multiple light sources here so too will
+the light particles reaching your retina
+the real-time ray tracing involves
+chasing millions and billions of
+particles around a scene over and over
+again to depict vivid and accurate depth
+shade and color if a particle takes too
+long to say reach a red object surface
+the GPU will calculate the corresponding
+shade of red to render and then compile
+an average that result with millions of
+other light particles reaching the same
+point at the same time from other
+directions all the while mapping your
+ever-changing perspective relative to
+the object and the light source in
+question and that's assuming there's
+only one light source there so yeah it's
+actually really intense and it's why
+we've relied on rasterization and
+passive shading for so long but all the
+news about Nvidia czar TX brand and the
+Quadro 8000 is centered on a specialized
+r-tx cores dedicated specifically to
+real-time rate raise calculations this
+is thanks to dedicated RT core is paired
+with tensor cores again discussed in an
+earlier video making them perfect for RT
+techniques we number one accelerate the
+rate racing part of it we still have to
+shade it but the the rate racing
+acceleration is just incredibly fast the
+second part is by using AI we're able to
+render at a slightly lower resolution
+but because we trained that model off a
+very high quality ground truth we're
+essentially going to be able to generate
+the final image at a much much higher
+rate and so we call a DLA a the
+combination of AI and rate racing has
+made it possible for us in Unreal Engine
+4 with RT RT great real time rate racing
+running on top of Microsoft's DX our API
+this is basically today's most popular
+platform
+we're able to take computer graphics and
+improve it by a factor of six touring is
+six times
+Pascal now RT course specifics aren't
+quite known yet Nvidia usually saves the
+technical stuff for later but we do know
+that they accelerate rate triangle
+intersection calculations that's a fancy
+way of saying the point at which a light
+particle hits an object surface down to
+the minutest detail we're talking
+multiple decimal places in fact these
+core clusters are so efficient that only
+a single r-tx Quadro 8000 was required
+to run the same reflections demo we just
+talked about for which for V 100's were
+previously needed this board makes
+real-time ray tracing possible and we
+expect at some point in this in future
+for these technologies to leech their
+way into consumer grade cards we also
+expect video game developers to catch on
+when mainstream art ecards actually hit
+the market which may be sooner than you
+think
+for now though we have to wait and see
+if you guys like this video give it a
+thumbs up talk about arty cores and
+other stuff down in the comment section
+I'll be there for a while be sure to
+subscribe if you haven't already and
+I'll catch you in the next one this is
+science studio thanks for learning with
+us</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

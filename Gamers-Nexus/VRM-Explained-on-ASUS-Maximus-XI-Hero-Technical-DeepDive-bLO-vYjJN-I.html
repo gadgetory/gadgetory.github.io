@@ -1,0 +1,818 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>VRM Explained on ASUS Maximus XI Hero | Technical Deep-Dive | Gadgetory - Your Gadget Factory</title><meta content="VRM Explained on ASUS Maximus XI Hero | Technical Deep-Dive - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus/">Gamers Nexus</a></li><li class="active">VRM Explained on ASUS Maximus XI Hero | Technical Deep-Dive</li></ol></div><h2 class="post__title"><b>VRM Explained on ASUS Maximus XI Hero | Technical Deep-Dive</b></h2><h5 class="post__date">2018-11-04</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/bLO-vYjJN-I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey guys build Zoid here from actually
+hardcore overclocking and today we're
+gonna answer the one great question does
+the Maximus 11 hero have a four phase or
+an eight phase and the answer is I guess
+you'll have to good spot to put the I to
+break here Steve before that this video
+is brought to you by NZXT is new h 500
+case which we recently found to have an
+impressively effective cooling setup
+that is entirely negative pressure when
+stock the h 500 is the successor of the
+s 340 and s340 elite offering high build
+quality that's all steel and glass and
+kale management features that are also a
+top class for the $70 compact mid tower
+case age 500 is a part of NZXT Zanu H
+series lineup which also features
+options from Mini ITX micro ATX and full
+ATX builds learn more at the link of the
+description below how do I the answer is
+it's a 4 no seriously it is a 4 and I'm
+actually really surprised that Asus
+decided to like go for a four phase and
+I had a very long discussion about this
+design decision from Asus with Elmore
+who used to work at Asus until like a
+couple days ago so what is going on with
+this VR I'm well this block right here
+is of course V core and then this this
+block over here is a GPU power so we're
+just gonna call that V GPU and the V
+core portion looks like a 1 2 3 4 5 6 7
+8 phase except for the part where this
+voltage controller is an ASP 1400 and
+the ASP 1400 doesn't do eight phases it
+does four plus two I think well entirely
+sure about if it's plus 2 or plus 1 it
+but it's probably plus 2 because that's
+really not that more that that's not an
+exactly rare configuration for a budget
+voltage controller this really isn't
+like the Asus high-end part is the ASP
+1405 and this is the 1400 so this is the
+the cheaper voltage controller that Asus
+uses for all of their cheap or
+motherboards so we already have some
+cost savings here so Anri GPU is there
+for
+probably a two-phase now the week or vrm
+doesn't use any doublers so you do end
+up with a vrm that is basically groups
+of two groups of two like this and that
+means it's four phases and ASIS in their
+defense released these lovely scope
+shots which show that the new four four
+phase has much better transient response
+than the old extended eight phase
+because and by extended they mean that
+this had doublers and so let's let's
+just write out what these different VRMs
+were so the old one was an ASP 1405
+alright so the nice expensive voltage
+controller from that's probably from
+international rectifier going into an IR
+3599 that's how we know it's probably
+from international rectifier going and
+that IR 3599 was going into an IR 3535
+it's how we further confirm that it was
+a problem like this is probably an IR
+chip so that's a 35 35 and that would
+finally output to as F that F 906 small
+set from the dual and fat from vishay
+semiconductor that would finally shove
+like and that would switch current into
+the 400 nano henry inductors that Asus
+likes to use and these are important
+here because when you put your inductors
+in parallel stuff happens to them and
+and here they're not in parallel because
+we do have the doubler so that that's
+the old design the new design is a case
+of a SP 1400 into to 630 9s and those
+then output into to 400 nano Henry
+doctors and the thing about this setup
+is that well by having the inductors in
+parallel like this and that then goes
+off to vcore so this is like the one
+phase of the the new design and this is
+this is one phase of the old design and
+the thing about this new phase with the
+two
+400 nano Henry inductors in parallel is
+that effectively you can just ignore
+that and say they're 200 nano Henry's so
+their inductance gets effectively cut in
+half there is a little bit of an issue
+that there's like the RDS on of the
+MOSFET in the way from them being
+completely in parallel but you can more
+or less ignore that because the RDS on
+is so is so very low so you effectively
+end up with an inductance of 200 nano
+Henry's and the thing about having a
+lower inductance is that the higher the
+inductance of your inductor is the more
+it resists changes in current and
+transient response is all about not
+blocking changes in current right it's
+it's about your ability to go from 45
+amps output to 193 amps output as
+quickly as possible so less inductance
+means better transient response so that
+is already an advantage in favor of this
+for phase design in this test that asus
+has released right this and this mind
+you is not a CPU running at 45 amps and
+then 193 amps this is a synthetic load
+which is why this looks so very clean
+because normally if you have a CPU
+running this is going to be a horrendous
+mess but anyway so you know you go from
+that 45 amps output 193 amp output and
+you know having a lower lower inductance
+on your phases helps with that
+transition quite significant so already
+this 8 phase is losing the the battle
+like as far as being designed for maxing
+out your transient response well this
+should go like that should just be
+replaced with 200 nano Henry inductors
+instead and that would improve the
+transient response here a little bit as
+well now the other thing that asus
+points out are like asus says they're
+getting rid of the doublers because
+doublers introduced some delay to your
+pwm signal so the asp 1405 when when the
+asp 1405 sees that you've gone from 45
+amps output to suddenly a lot more you
+know 193 amps output it basically goes
+and towels pulls up the PWM lines and
+tells all of the phases to try turn-on
+as quickly as possible and the $35.99 is
+in the way of doing that because the the
+signal took Pole the phases hi has to go
+through the $35.99 which delays it a
+little bit because there's some logic in
+the $35.99 and then it goes to the 35 50
+35 and then to the ZF 906 now this is
+another and so asus is like okay we
+eliminated the $35.99 and therefore
+we've eliminated the delay introduced by
+the doubler which is why we're getting
+this huge improvement in transient
+response but do keep in mind not the
+same inductors and the other thing worth
+noting is the Zeff 906 is really slow
+like really freaking slow this chip in
+its own data sheet for 10 volts
+gate-to-source so way more drive voltage
+than asus ever uses and like I talked to
+hell more about this apparently they
+drive everything with 5 volts but anyway
+with 10 volts get to source and you know
+one ohm of RG so resistance on the gate
+which incidentally is the typical
+resistance of the gate of this MOSFET
+just normally that's just kind of how
+much resistance it has this thing takes
+35 nanoseconds to turn on the $35.99
+adds about 50 nanoseconds to of like
+well 10 to 20 nanoseconds of delay to a
+signal depending on what kind of signal
+you're talking about like more than half
+the delay in this system is from the
+MOSFET I mean I'm sorry but what like
+you know if this if this spike is caused
+by a you know 50 nanosecond delay like
+this under Xu is caused by a 50
+nanosecond delay total then you could
+probably get rid of a good chunk of that
+delay by just changing that MOSFET or
+even better get rid of the driver and
+the mosfet replace it with an integrated
+you use the same sic s 6:39 power stage
+that would be the fairest comparison
+basically what you can see in these
+scope shots what
+here is that the old scope shop is
+showing a vrm design that really isn't
+optimized to get the best transient
+response right
+it really isn't like that what doesn't
+seem to have been the main concern of
+anybody when they were building this VRM
+because if it was they could have done a
+lot of things to get better transient
+response without having to get rid of
+that doubler like there's a lot of
+things I could have done they could have
+reduced the output inductance they could
+have actually you could keep reducing
+that output inductance the reason why
+you use a higher inductance inductor is
+that it improves your output ripple but
+if you're using a doubler and then while
+actually if you just can't like if you
+get a ton of phases right crank up your
+switching frequency then you can use
+really low inductance inductors and it
+doesn't make as much of it doesn't cause
+as much of a problem because you have a
+lot of phases interleaving and that
+inherently reduces your output ripple
+without relying on a huge amount of
+inductance but well Asus decided like
+Asus has a ton of these 400 nano Henry
+inductors and they just kind of use them
+everywhere so yeah I kind of like that
+I'd consider probably a cost-saving
+measure as well but basically this is
+not a fair comparison this vrm design
+has you know it's like the 3599 puts
+some delay definitely it definitely adds
+some delay but so does the driver so
+does the MOSFET you're using like the
+delays caused by this combination right
+here are different than you know what
+what these have and it favors these just
+because integrated like the the great
+thing about power stages is that they
+can turn on much much faster because the
+silicon turning on your high side MOSFET
+is on the same die has the high side
+MOSFET
+so you you can get rid of a lot of the
+parasitics
+that are in the way of turning on a high
+side MOSFET really really quickly like
+the wire that you're connecting to the
+gate of the high side malfete that you
+know makes it harder to drive it the
+inductance of that wire makes it harder
+to drive it like just power stages have
+huge advantages when it comes to being
+able to turn them on and off really
+really quickly so in the old design is
+just like you could get rid of the 3599
+in there and it would probably still
+like it would almost certainly still
+lose on a on a transient load response
+test just because of how it's built
+so not a fair comparison though it is
+worth noting the new design definitely
+has better transient response and
+because of the ZF 906 is so bloody slow
+this new design actually manages to
+maintain the same vrm efficiency at 500
+kilohertz whereas this one if you run it
+at 300 kilohertz is actually worse
+efficiency at 200 amps output than the
+new one so like I can totally like I can
+see why the 3599 was in the old design
+it was there to you know get good enough
+efficiency out of the Zed f9o sixes
+because these these aren't great but the
+the new design you know comparing it
+against the old design just isn't really
+fair to the old design because the old
+design was evidently never built with
+considerations of like running a ninety
+nine hundred K and just just worst in
+every way possible really the only real
+advantage is that you know it should
+have a lot less input ripple because it
+does have the higher inductance
+inductors and higher and more phases but
+you know they they'd also be running it
+at a lower switching frequency to keep
+the the power loss and the ZF 906 is
+down and so ultimately your input and
+output ripple might actually end up
+being the same on the old design
+compared to the new design just because
+these sock oh well they're just not
+really what I would like the thing is I
+would just not use this MOSFET fur for a
+motherboard application like the high
+side is really really slow and really
+really low RDS on which is like great
+except for the part where like your
+primary goal with the high side MOSFET
+is to make it fast right like it's all
+about speed the faster it can turn on
+the less power loss you get especially
+at lower output voltages so admittedly
+like yeah just different different very
+different priorities essentially between
+the old design in the new design and the
+new design you know prioritizes
+transient response and try and
+prioritize this cost savings because the
+funny thing is this is cheaper than
+that and $35.99 s cost zero point four
+six dollars and Asus has stopped using
+$35.99 on the entire Maximus 11 lineup
+of motherboards there's not a single
+motherboard that I'm aware of from Asus
+that uses $35.99 s which means and also
+with the RT X 2020 series of GPU there
+there's no doublers on those either
+so Asus can basically stop buying a
+$35.99 S going forward and that's a huge
+cost saving right like massive cost
+saving so it's basically a case of like
+oh yeah we're saving a bunch of money
+and it just so happens that our new vrm
+design is better at transient response
+than the old design which really doesn't
+seem to have been designed for that in
+the first place it's like whoa what an
+achievement you've saved money and
+improved transient response great that
+still doesn't change the fact that it's
+a four phase and it does have all of the
+downsides of a four phase compared to an
+eight phase-- like for example the fact
+that when one of these phases turns on
+you get a 50 amp like because let's say
+let's say this VR M is pushing 200 amps
+output right combined across all of
+these phases if it's pushing out 200
+amps one of these phases turns on that
+is a 50 amp spike that the input
+filtering componentry has to deal with
+like whereas if they were still using
+doublers that spike would be 25 amps
+because instead of you know having one
+50 amp block turning on you'd have 25
+amps separately so this would turn on
+that would be a little 25 amp spike and
+then the the next phase would turn on
+and that would be its own little 25 amp
+spike and that puts a lot less strain on
+your input filtering circuit input
+filtering system then you know a four
+phase similarly on the output you would
+have less output ripple if you just had
+more phases and yeah overall it's just a
+case of like this is a four phase now it
+is still relatively efficient it's
+really not that bad in efficiency but
+that's mostly down to the s I see 6:39
+is just being freakin amazing compared
+to while these
+so you know that's that kind of seems to
+be the the logic that Isis went with is
+like Oh our new power stages are so much
+better than what we were using before
+that we can not use the doublers will
+still get perfectly good efficiency our
+input ripple will go up but we can deal
+with that with just better input
+filtering componentry
+or arguably the input filtering was
+overkill for the old design and so they
+didn't need to redesign that because
+this sure looks like what they've been
+running for every motherboard for a
+while like I don't think they've changed
+anything about the info filtering setup
+you know save some money transient
+response for improved input ripple gets
+worse output ripple you can compensate
+for with switching frequency as well as
+with output capacitors like you can just
+try redesign the output filtering and
+that could fix that as well which is
+rather like that's easier to do than you
+know fixing something like your
+transient response with with capacitors
+that's actually quite hard but yeah it's
+still a four-phase it's still a
+four-phase and you know and with it
+comes all and it does at least take like
+that they do still get some advantages
+that an eight phase-- would have like
+because this has you know eight power
+stages in it it does spread the workload
+over a power stages but it's not
+balanced so essentially they're they're
+like normally what you would do when
+doing this kind of setup is you'd like
+been your power stages so that they most
+equally match each other in terms of own
+resistance because there's going to be
+some manufacturing variance between them
+and if you put one power stage that's
+like a lot lower resistance than another
+one then you know you'd have problems
+well you'd have one pushing more current
+than the other but basically you have
+less than ideal efficiency with this
+less than ideal a ripple situation but
+uh but you still get the benefit of like
+okay so we spread the the heat output
+across more or less eight components not
+quite perfectly evenly but pretty much
+evenly there's not going to be that much
+variance between them there will be some
+but no you know extreme amounts and yeah
+so you you have something that's that's
+a four fate like it's a
+it's a massive for face that's like the
+best way to describe it because each of
+these si si 639 s is a 50-amp dr moss so
+you effectively like have a hundred amp
+peak output capability phase and you
+have four of them which is uh like
+that's just kind of silly sure like you
+can do that there's nothing really
+stopping you from doing that it's just
+you know just not an eight it's not an
+eight phase-- so the end result here is
+that in terms of erm efficiency this vrm
+also doesn't win any awards because well
+the the new new power stages are great
+but there's not quite it like there's
+other board vendors with just more
+phases and more phases generally means
+easier time dissipating the heat easier
+time getting higher efficiency right
+like admittedly Asus could have probably
+put like three power stages next to each
+other there's really nothing stopping
+them like I actually said like why don't
+you just put three of them next to each
+other and they're like yeah we could we
+just don't feel like doing that as well
+I guess eventually Asus will will will
+do that as well at that point I really
+hope they bump up the the inductions of
+their inductors because at that point
+it'd be cutting one third and then at
+that point they might start having an
+output ripple problem though they might
+also go like oh yeah but are trying to
+get response I lost an even better so
+screw it anyway
+output efficiencies so 500 kilohertz
+switching frequency which is a huge
+advantage over the old design like the
+old design would have been 300 kilohertz
+oh well 300 kilohertz max because if you
+want much past that it would get really
+inefficient and if you wanted to run it
+efficient like more efficiently you
+could have gone down to like 250
+but anyway 500 kilohertz here 5 volts
+drive the RV and 150 amp and then like
+the the datasheet for the s IC 6:39
+suspect in 1 volt output and I've scaled
+it up based off of fishin C to 1.3 volts
+output which is kind of worst-case
+scenario scaling because
+generally power stages get a bit better
+with with higher output voltage but it
+really depends on how they're designed
+so like you could in theory it would be
+possible to design them that they have
+peak efficiency at 1 volt output and it
+just gets worse from there so anyway 150
+amps output these this vrm would produce
+about 13 watts of heat at 1 volt and
+about 17 watts of heat at one point 3
+volts for 200 amps output you'd be
+looking at about 20 watts of heat and 26
+watts at one point 3 volts possibly less
+250 amps output and also this is like
+9700 K 8086 K 8700 K completely maxed
+out this is 99 hundred K pretty much
+maxing out any kind of cooling system so
+250 amps output you'd be looking at you
+know 30 watts at 1 volt and about 39
+watts at 1.3 volts and then 300 amps
+output you'd be looking at about 40
+watts at 1 volt and 51 watts at 1.3
+volts and 400
+it doesn't go up to 400 it goes up to
+360 amps because while these are 50 amp
+hour stages they do only the the
+datasheet
+ends at 45 amps output which is pretty
+normal for most high-end power stages is
+just like practically speaking pushing
+the rated current through a power stage
+is not practical so that's something to
+keep in mind you know and the end result
+is that you can these are I can only go
+up to like 360 amps here it's 360 amps
+output 1 volt
+63 watts and 1.3 volts you probably be
+looking at around 82 so yeah this this
+definitely doesn't win any vrm you know
+awards for vrm efficiency if they put
+more power stages in it they they could
+have improved the figures a bit they
+wouldn't even need to increase the phase
+count but I guess they'd start running
+like they'd have to relay out the board
+a bit to accommodate all the extra all
+the extra power stages
+and the other option they could have
+gone for is like a 5 plus 2 phase
+controller but at that point they'd have
+to upgrade the controller to something
+more expensive and yeah they're not
+gonna do that if they're saving money by
+getting rid of $35.99 yeah I don't think
+they're gonna be upgrading the voltage
+controller so yeah I mean it's not
+winning any awards for efficiency it's
+not terrible either right like this
+fall's pretty much in line with the
+asrock taiichi ultimate board it is just
+worth noting that the taichi ultimate
+probably has a better heatsink than this
+it also has I'm not sure if it actually
+has more surface area but like it really
+like you know if you have the same heat
+output as your competitor then you
+better hope you have a better eat sink
+because if they have a better heat sinks
+are winning so that's one thing to keep
+in mind and yeah it's just efficiency
+wise you know it's not no incredible the
+other thing is I with these efficiency
+figures I am assuming completely even
+load load spreading across the the power
+stages which while that would you know
+like imbalanced loading of the power
+stages would maybe were like decrease
+the power efficiency by a couple
+percentage points as well so that's
+another thing to consider is just like
+there's no current balancing on this
+thing other than like hopefully they
+matched up the the power stages pretty
+well or that there wasn't too much
+manufacturing variance between the power
+stages so yeah is it's a four-phase it's
+not the most efficient thing ever it
+does get really great transient response
+but they could have probably just done
+better on the old design anyway I'm not
+impressed and especially at like $300
+that Asus charges for this motherboard
+it's just like I know for a fact there
+are other boards that have more
+efficient VRMs I know for a fact there
+are a bunch of boards with more phases
+than this vrm like way more phases like
+some of them have like three times as
+many phases that are like out of phase
+with each other because they use
+doublers
+and aren't trying to save money on you
+know low-cost voltage controllers and
+getting rid of chips that cost less than
+half a dollar though admittedly once you
+spread that over the fact that Asus is
+dropping the the doublers off of their
+entire lineup it starts making sense
+that you know that's that's a pretty
+significant cost saving and basically
+like ultimately I think the the Asus
+claims to the great transient response
+like you'd really have to test this in
+the real world like you'd have to take
+this motherboard and compare it against
+a bunch of other motherboards with like
+the same CPU and try work all of the
+motherboards down to like like you'd
+have to have a ho Silla scope hooked up
+to it at the same time and just like
+compare the the output on every single
+one of the boards and just see which
+motherboard ultimately you know can run
+the lowest of all run the chip at the
+lowest voltage and I honestly don't I'm
+not sure that you would see a huge
+difference the the one thing I've
+noticed throughout testing a lot of
+motherboards is once you sort of like
+once you get a four phase and then go
+past like admittedly that was with like
+seventy seven hundred KS and and like
+eighty seven hundred KS once you had
+four phases you kinda were good enough
+for quite a lot of the higher current
+outputs but then the ninety nine hundred
+K pulls more power than any more current
+than anything before it so you know it
+might turn out that this this decided
+design decision by asus know in the real
+world is actually a fail like somebody
+would have to actually test it and just
+see like which of the existing
+motherboards can go down to the lowest
+voltage I have a hard time like I don't
+think this this big improvement in
+transient response in the real world
+will actually translate quite the
+advantage that these scope shots may
+make it look like it would so also it's
+like also the other thing is you have to
+consider that everybody like no as far
+as I'm aware I don't think anybody has a
+vrm that looks quite light like far as
+I'm aware a lot of these like the other
+Z 319 boards don't have a VR em that
+looks like this so
+yeah I mean I can like it's it's mostly
+a cost-saving thing
+it's a cost-saving thing because they
+they save on the $35.99 s the transient
+response you know they've improved that
+but I mean there there was ways to
+improve that without getting rid of the
+bloody doublers so it's just like I
+don't know you know you you need to test
+this in the real world
+efficiency wise it's not exactly
+groundbreaking and at the same time you
+know asus has some of the more aesthetic
+oriented heat sinks out there so yeah
+you know testing needed and actually for
+vrm thermals we already know for a fact
+that this is one of the hottest running
+motherboards in the $300 price category
+and I'm not surprised like this is like
+because the thing is like even within
+the same efficiency they just have the
+heat spread of cloths less components
+and that already hurts your vrm thermals
+so yeah I'm I'm not impressed
+I'm really not impressed with what Isis
+has done here then again Asus rarely
+manages to impress me with their VR M's
+most of the time because most of the
+time asus has an approach to the RM
+design that's very much a case of good
+enough right like they've had the same
+eight phase VR I am on their high-end
+desktop motherboards since x79
+and I'd argue that 4 X 299 it's really
+not good enough but hey that didn't stop
+Isis from keep reusing it over and over
+and over and over and over again and I
+also don't think it's good enough for X
+399 either but they used it there as
+well so yeah that's kind of that anyway
+let's cover some of the other stuff on
+this board since we do have just about
+enough time to do that so VC C IO vccs a
+and our located down here you have a
+clear CMOS and flashback on the rear i/o
+BIOS flash back on the rear i/o there
+the extra 4 pin power connector is a
+optional your 9900 K is going to be
+uncool Abul before you max out your
+single it--the in unless you deal it and
+like run liquid metal maybe send down
+the die you really will probably you
+know
+max out your cooling system before you
+max out the pin power connector you have
+a postcode up here you have some
+troubleshooting LEDs below that these
+are color-coded which I really really
+like because a lot of other board
+vendors what they'll do is they'll put
+them in the same color and then one of
+them lights up and it's like well I
+don't know which led it is because
+they're they occupy three you know like
+half a centimeter of space on the
+motherboard so it's really hard to tell
+which of the four LEDs lit up if it's
+not one of the one of the not one of the
+ones on the edges and they're all the
+same color when they're glowing you know
+you look at it and it's just like well I
+can't see anything the LED lit up and
+it's blinding me so it's nice that Asus
+color codes these because that makes it
+much easier to figure out which one
+which ones going off you have a power
+button reset switch to phase vrm from
+memory power this is a standard asus
+memory vrm they've been using it for
+years as well controlled by asus
+favorite asp well that's another one of
+those rebrands but ASP 1103 we've been
+seeing this chip for ages and ages and
+ages from Asus going down the board we
+also have a retry button down here and a
+memo case which I don't understand what
+this is supposed to achieve apparently
+it allows the board like it disables and
+enables the motherboards ability to
+retrain which seems really stupid
+because motherboards tend to get stuck
+in real like boot loops when you let
+them retrain forever I would have much
+preferred if they had kept like like if
+this either had a safe boot button or
+the old or the old memo ke button the
+old memo okay boss and want you what
+would what would it what it would do is
+if you would get bad memory settings
+you'd hit the memo okay button and it
+will load up it would basically wipe
+your memory settings and load up some
+really nice safe presets
+whereas this seems to just be kind of
+like train until it works and hope for
+the best which generally tends to be a
+terrible idea because boards tend to not
+like a lot of boards when they get stuck
+on training they're they're stuck on
+training they don't tend to ever figure
+out what's wrong so not a huge fan of
+that especially because the retry button
+will help like it gives you the
+retraining capability anyway like you
+can just use that and also that's like a
+hard reset button
+oh yeah board doesn't have dual BIOS
+because you know Isis doesn't doesn't do
+dual BIOS for a lot of they're cheaper
+boards which this isn't even cheaper but
+the thing is Asus really considers like
+for Intel motherboards and the z3 nine
+like Intel motherboards from Asus $300
+price tag that Asus considers that
+mid-range which is why I you know
+there's they expect you to use this with
+like a 9700 K and the vrm kind of
+reflects that as far as I'm concerned
+because at least at 150 amps output it
+really like you know it's producing very
+little heat whatsoever so yeah that is
+the Maximus 11 hero it is a four phase
+it's four plus to an Asus might want to
+call it a twin eight phase but the fact
+of the matter is those phases aren't out
+it like there's only four signals out of
+phase with each other I don't know what
+other things could be out of phase here
+but there's only four of them you know
+that that's kind of the point of having
+phases that they're out of phase if
+you're gonna be shoving one PWM signal
+into two power stages they're not gonna
+be out of phase with each other you
+can't call them separate phases that's
+like if three phase power was made with
+one sine wave on three different wires
+and that's the sine wave was in phase
+with each other like that's basically
+what what they're saying like no it
+doesn't work like that so yeah that is
+it for the video for $300 I really think
+this is I mean you know I guess you get
+the Asus tax for Asus BIOS I guess
+because that's that's one of the things
+where ace is still absolutely dominates
+is probably the BIOS but you can learn a
+gigabyte BIOS you can't fix the VR hand
+right like you're not gonna be like
+you're not gonna be replacing the VR I'm
+on board
+you can also well you can tolerate
+asrock BIOS as far as I'm concerned like
+I don't have a problem learning it it's
+just janky as hell to use as far as I'm
+concerned so yeah that is it thank you
+for watching like share subscribe if you
+have any comments questions suggestions
+you can leave them down in the comment
+section below and we'd like to support
+gamers Nexus we do have a patreon as
+well as store dog gamers Nexus not where
+you can pick up things like
+as well as the mod man that you can see
+in the background of the photo here and
+yeah that's oh and I have a channel
+called actually hardcore overclocking if
+you'd uh where I do more overclocking
+relates at Compton so if you'd like to
+check that out you know that would be
+awesome thank you for watching and good
+bye</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Turing Architecture: Integer vs. Floating Point Usage in Games | NVIDIA Interview | Gadgetory - Your Gadget Factory</title><meta content="Turing Architecture: Integer vs. Floating Point Usage in Games | NVIDIA Interview - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus/">Gamers Nexus</a></li><li class="active">Turing Architecture: Integer vs. Floating Point Usage in Games | NVIDIA Interview</li></ol></div><h2 class="post__title"><b>Turing Architecture: Integer vs. Floating Point Usage in Games | NVIDIA Interview</b></h2><h5 class="post__date">2019-01-14</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/sZMKHmJfUmI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey everyone we're at the nvidia suite
+at CES 2019 and i'm joined again by
+Justin Walker a 10 video we spoke
+previously at the Germany event yes we
+did for the taurine unveil this time the
+topic is it's it's kind of going back to
+that the unveil of torreón but we didn't
+really get into more of the information
+on floating point versus integer and how
+that pipeline has shifted a bit with the
+new architecture before that this video
+is brought to you by the deep cool
+captain 240 pro AO cooler the captain
+240 pro uses a bladder within the water
+tank to expand and contract based on
+liquid temperature as a leak prevention
+mechanism this works by birthing air at
+higher temperatures making for a unique
+closed-loop liquid cooler design the
+captain 240 pro also expands upon the
+existing captain series by extending
+tube length for more flexible
+positioning and updating the LEDs learn
+more at the link in the description
+below so if you missed our initial
+coverage we did do a bit of a deep dive
+on the turn architecture but it's been a
+little while so let's let's kind of
+recap it sure why why are we even
+talking about floating point vs. integer
+or actually we should probably just do a
+really quick elevator pitch of what is
+that as we're talking instruction types
+I guess ultimately right but so so a
+top-level recap you know floating point
+rows integer
+sure so floating Porter integer is just
+two different numerical formats right I
+mean the the GPU is essentially just
+doing mouth and the and floating-point
+are integer to different numerical
+formats that you can input into the GPU
+to do that math and to help calculate
+you know the right the right color
+values and qualities for the pixels and
+depending on the workload you're doing
+you could be using integer you could be
+using floating point right and floating
+point you'll hear like FP 60 and IP 32
+stuff like that that's right my hair
+referred to a single or double or half
+precision that's correct
+so you get a number of decimal points
+depending on what kind of floating-point
+precision you're dealing with and with
+the integer I guess it's it's more or
+less a whole number yes like 1 1 or 2 or
+whatever right an example on the
+interface of a game where you might see
+integer in speaking with some developers
+of some strategy games I've learned that
+resource count for example might be used
+where you never have anything except
+whole number it's it's pushed off to the
+cpu typically
+in those games but GPU at least with
+Tori now there is more ability to work
+with integer so yeah
+with Pascal how did it work your
+pleasure with Pascal are our execution
+cores could flip between either
+floating-point or integer so if you have
+a floating-point instructions you run it
+as floating-point if an integer
+instruction comes along you stop running
+the floating-point and you start running
+the energy right so is that is that
+effectively an interrupt it's just what
+you just swap between the between the
+two right and floating-point has been
+you know traditionally in the past flow
+an important specifically epi32 has been
+you know the common format and so that's
+why that's why Pascal actually most of
+it was you know back in the day Mo's it
+was just floating all right but you know
+with more modern and complex games you
+get more and more of the integer math
+and with Turing we updated the the
+architecture to be able to process that
+integer and floating point math in
+parallel right so then to that point
+what is an example of when you encounter
+integer because floating point for sure
+is is is it safe to say it's the most
+most common of the two games for games
+right so when do you encounter integer
+so generally speaking as the game gets
+more and more complex and you're trying
+to do more more complex things in the
+shaders you'll hit more integer math and
+more specifically a lot of times compute
+when you're running the more complex
+compute shaders they'll tend to generate
+much more integer math okay so uh games
+that would do that and there's a Stein
+there yeah there's a bunch of examples
+of it I you know Wolfenstein 2 is one
+that does a ton of integer math Call of
+Duty Battlefront 2 shadow of war just a
+few you know a lot of the the some of
+the more modern titles that are doing
+more complex work and more complex
+compute workloads to use a more integer
+math okay so then in torreón when you
+get an integer instruction as opposed to
+Pascal and what's what is ultimately the
+this sort of not necessarily a firm
+number what's what sort of performance
+difference are you looking at though um
+it can be very it can be fairly
+significant right you take let's take
+Wolfenstein as an example you know an
+average there's maybe 20 or 30 percent
+of the work of the instruction sets
+alright okay and on Pascal for any of
+those imagers we'd stop doing the FB 32
+and we do the integer math okay and then
+you'd flip back to epi 32 right on
+Turing you can just run both of those
+concurrently so if thirty percent of the
+instructions are integer we don't have
+to stop doing any of the floating-point
+calculations we have separate hardware
+that will just run through that integer
+math right in parallel right and that's
+dedicated hardware and that's dedicated
+okay so then in theoretical scenarios
+you have maybe a 100 percent integer or
+107 floating-point scenario and it's
+just doing only floating point that
+integer Hardware I guess it's just idle
+like it's if it's only floating-point
+yeah yeah you're just using the
+floating-point hardware
+okay so then in a jury instruction comes
+down the pipe and it just pushed off -
+yeah you have a separate X if you have a
+separate execution course to run the
+integer math is that also the the
+floating point versus integer units I
+guess is that all in the SMS like it's
+within the same block yes that's all
+it's all within the SM it's all about
+it's all within the the general
+computing cores okay and we can find a
+block diagram to and prevent screen for
+reference okay so we have some good
+examples of games that would use compute
+workloads things like that I mean this
+might be a game developer question so
+feel free to push it off to them but are
+there any firm examples you can give of
+like a certain type of computation or
+visual effects or like in game as a
+player of the game is there anything I
+can look at regularly and say that's
+integer yeah that's you're not really
+gonna be able to that happens it's such
+a deep level in the engine you're never
+you know it's not something you're gonna
+go see on the screen right more of kind
+of a deeper level implementation sure
+and I mean the reason the reason we see
+it of course is cuz we we we have to
+analyze all right yeah we have analyzed
+all the workloads coming in from the
+game so we can we can see this trend of
+more and more integer normal
+requirements for integer math right and
+of course that's what for the decision
+to have separate execution units in turn
+is this is this typically something
+that's is it happening more on an engine
+level like as engines developers there's
+more trends towards integer or
+individual
+developers it's a tan engine as well I
+mean it can happen to both levels it's
+more just a it happens to be an
+efficient way to do the things that the
+game developers are trying to do sure
+and it's just a way to optimize and the
+things that the game developers you're
+trying to do so what kind of gets
+implemented down from there and and
+again this is this is probably like in
+epic games or one of those engine
+developer questions but my understanding
+is that in a lot of instances the game
+programmer it's making the game not the
+engine programmer the game programmer
+just sort of it builds what they want
+and then lets venj and figure out what's
+going on yeah I mean that'd be great
+question for from how I understand it
+that's generally the way they would
+think about it so I'm just gonna do what
+I what I want to do to make the effect
+look good and make the game look good
+and kind of let the let the lower level
+systems and they in the end I gotta
+figure out how to how'd it do the math
+filter it right yeah okay cool so yeah
+we'll put will have some block diagrams
+in here you can look at and we do have a
+deep dive talking about the torreón
+architecture when it first was discussed
+in germany so if you want to check that
+out it's come on sold we have it on the
+channel Justin thank you for joining me
+sure thing appreciate the interview no
+problem we'll see you all next time</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

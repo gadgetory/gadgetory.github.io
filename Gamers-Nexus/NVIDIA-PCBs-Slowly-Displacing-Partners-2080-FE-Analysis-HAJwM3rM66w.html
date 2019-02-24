@@ -1,0 +1,759 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>NVIDIA PCBs Slowly Displacing Partners | 2080 FE Analysis | Gadgetory - Your Gadget Factory</title><meta content="NVIDIA PCBs Slowly Displacing Partners | 2080 FE Analysis - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus/">Gamers Nexus</a></li><li class="active">NVIDIA PCBs Slowly Displacing Partners | 2080 FE Analysis</li></ol></div><h2 class="post__title"><b>NVIDIA PCBs Slowly Displacing Partners | 2080 FE Analysis</b></h2><h5 class="post__date">2018-10-26</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/HAJwM3rM66w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey guys build Zoid here from actually
+hardcore overclocking and today we're
+gonna be taking a look at the party X
+2080 front founders edition PCB so
+there's not really much else to say
+let's get right into it with identifying
+all of our major voltage regulators
+before that this video is brought to you
+by us and the limited edition foil graft
+logo shirt this four color foil shirt is
+the iconic GN graft logo with average
+one percent and point one percent bar
+colors it's printed on a soft
+high-quality and custom made 100% cotton
+shirt and is available on store dye
+Karen's Nexus net until stock runs out
+once it's gone we will not be making
+more of these shirts we sold out within
+two weeks of our previous
+limited-edition shirts so click on the
+link below to preorder now first up we
+have of course the V Corps vrm which is
+the largest and most important because
+it powers the GPU core and that
+obviously uses the bulk of the power on
+a GPU above that we find the memory the
+memory of erm so that's V mem over here
+and that of course powers the GDD r6
+memory chips and below that we had the V
+core right there over in this corner
+over the card we welcome corner yeah
+basically a corner we have three smaller
+voltage regulators these would be for
+the 1.8 volts and I'm not actually
+labeling the specific regulator's here
+because I don't know which ones which
+but there will be a 1.8 volts rail up X
+rail and a USBC rail so the 1.8 volt
+rail is for a supporting as a supporting
+voltage for the GDD r6 memory chips it
+also it also powers and videos BIOS
+chips those run off of 1.8 volts as well
+Peck's rail is for the PCIe interface as
+well as some internal PLL's on the GPU
+core and then the USBC rail is of course
+for the USB C port on the back of the
+i/o since you can't actually well you
+need a voltage regulator for that rail
+and then over here we also have what I
+assume is 5 volts because
+these power stages run off of five volts
+so you need power you need a vrm for the
+bigger vrn funny how that works out now
+then with all of those you know identify
+let's get into some of the details of
+the two main ones which are the V Corps
+and the memory of erm so the V Corps
+here is a one two three four five six
+seven eight phase and this is actually
+completely reasonable because we do
+actually have an eight phase voltage
+controller here that's actually not that
+new for high end and video cards I mean
+the 1080 T I already have used a u p95
+11 which was an 8 phase voltage
+controller here we have the successor of
+the 95 11 the 95 12 which is also an
+eight phase-- but adds on a few more
+features it goes up to two megahertz
+switching frequency which is not useful
+because at that point your V RMS
+efficiency is going to be terrible but
+the idea is that basically if you are
+using a doubling scheme or a quadrupling
+scheme you can run that really really
+high switching frequency into your
+doublers or quadruple errs and on the
+other end of those it'll either end up
+as 1 megahertz or 500 kilohertz at which
+point that's actually a reasonable
+frequency to run into various MOSFETs
+and power stages so that's some of the
+reasoning behind why some voltage
+controllers can go up to ridiculous
+switching frequencies when you wouldn't
+ever want to run anything that high into
+any of the the power stages that are
+being used with them so it goes up to 2
+megahertz the other major addition with
+the U P 9512 is that it has an SM bus
+interface which previously there was no
+no digital interface whatsoever on the U
+P 95 11 that that thing basically the
+only interface it used which the U P 95
+12 still uses was a PWM vid and
+basically PWM vid is a is a PWM PWM
+signal that comes from the GPU core into
+the voltage controller and that is used
+for setting the core voltage you can't
+actually ask the u p95 like in in the
+past with the U P 95 11 it wasn't
+actually possible to ask the 95 11
+what voltage it's actually outputting
+like it was not possible to do that and
+so basically your software voltage
+reading was basically whatever the
+driver was telling the chip to produce
+not what the chip was actually producing
+which is just kind of an interesting
+side note about how the ten series cards
+worked but the 9512 can actually report
+things like the RM current output
+you know voltage output voltage you can
+change the switching frequency you can
+change the load line calibration you can
+change all of this over the digital the
+the SM bus that it has only issue is as
+far as I know actually writing to it
+might be disabled by and by default and
+there's no public register maps for the
+chip so good luck with accessing that
+though elmore is there is going to be an
+Elmore EVC which is basically a little I
+Square C controller which actually hooks
+up to the to the SM bus on this and
+that'll give you those kinds of settings
+and the reason why that works is elmore
+works at asus so he has access to the
+button and to the NDA data sheets which
+include things like you know register
+maps so yeah there will be like there
+will be ways to actually get control of
+all those features it's just not very
+easy because again you'll have to solder
+onto the GPU in order to use an elm or
+EVC anyways this does mean that we have
+a real eight phase vrm here and it's not
+doing any of the weirdness that say the
+13 phase monstrosity of the twenty atti
+is doing because i like that is just odd
+matter phase account is literally but
+eight phases is a pretty normal phase
+account that's completely reasonable to
+you know get out of a you p95 12 because
+it does actually support this phase
+account now for the phases themselves
+you're looking at just one inductor and
+one power stage in each phase and the
+power stages and videos favorite 70 amps
+smart power stage from Fairchild
+Semiconductor the FDM f31
+70 so that's 70 amps and it's a smaller
+power stage the reason why it's
+considered a smart power
+stage and not just a power stage is
+because it integrates current monitoring
+and temperature monitoring functionality
+directly into the chip and that also
+includes over current protection and
+over temperature protection the over
+temperature protection is not exactly a
+hard protection as it basically just
+raises a flag but the overcurrent
+protection will actually just straight
+up shut the ERM down if you overload it
+so it's pretty neat you can't actually
+well you'd have a hell of a time trying
+to bring this vrm out because it should
+shut down before you manage to do that
+they also have some inbuilt protections
+for various mental functions so in
+theory which also the you p95 the the
+new new vault some of the new voltage
+controllers also have some
+functionalities that work in and with
+that well basically if one of the phases
+on the vrm goes down in theory the vrm
+could keep operating as long as the
+malfunction isn't one of those where
+basically the 12 volts on this side of
+the vrm ends up shorting through the
+power stage to this side of the VRM at
+which point you're screwed because
+everything on this side of the vrm which
+is primarily the GPU core is going to be
+very very dead though that is a well
+it's not exactly a rare malfunction for
+a vrm but it's it's it doesn't quite
+have like it's not exactly something you
+should be particularly concerned about
+because it's like it like the arms don't
+tend to malfunction that often they
+don't get tend to get overloaded that
+often especially not when they look like
+this but it is a realistic like it is a
+real failure mode that can occur and
+does cause major issues because well
+then you end up with cards where even if
+you try to repair them well this is dead
+anyway with the FD MF 31 70s here you
+know that's those kinds of sera
+scenarios are actually much less likely
+because of all the built-in protections
+that they have now the next thing that
+is kind of interested and so the end
+result of using the FD MF 31 70s here is
+that the VR M here gets a pretty good
+efficiency at least within the current
+ranges where would normally operate
+there are you know of course custom PCB
+RT X 20 80s which have more powerful
+VRMs but the thing is you won't really
+notice that difference until you're
+pushing way more current than in RTX
+2080 should ever really need so let's
+get into those of yaaram sort of the
+heat output figures now unfortunately
+the FDM f31 70 is entirely spectat 1.8
+volts I did scale it down to 1.2 volts
+using a datasheet for a 60 amp
+international rectifier 3575 power stage
+just because that's like a nice modern
+60 amp power stage it should be
+relatively good for trying to get the
+like should be relatively close to the
+real-world efficiency scaling of this
+thing compared to say some older power
+stages which would have actually have a
+well worse worse time handling the
+higher voltages because I am pretty sure
+that these are very much designed for
+the Intel skylake Zeon's more so than
+they are designed for NVIDIA GPUs even
+though currently these are especially
+popular on NVIDIA GPUs and I've not
+really seen a bunch of Intel
+motherboards with B's on them yet so
+let's thought to get into those
+efficient into those heat output figures
+so starting at 200 amps and also worth
+noting is the switching frequency in the
+datasheet
+is spectat 500 kilohertz they also spec
+like 750 megahertz and no
+750 kilohertz 1 megahertz and I do
+believe 1.5 megahertz so you know they
+do go up to higher frequencies but
+realistically this is going to be
+running 500 kilohertz now 500 kilohertz
+switching frequency 1.8 volts output
+you're going to be looking at 200 amps
+with a heat output of about 23 watts at
+1.2 volts you'd be looking at about 18
+watts now for comparison the FT w3 from
+EVGA with its 12 phase VR I'm using the
+exact same power stage would actually be
+doing about 17 watts at one point at the
+1.2 volts right at the 1.2 volts output
+and about 21 watts at the 1.8 volts
+output so very small difference like
+we're talking single-digit you know
+improvement in vrm a single-digit lower
+heat output for the vrm on the F
+w3 and that's after it adds a whole
+extra four phases but the reason for
+that is rather simple at low current
+outputs the majority of your power loss
+is not gonna be due to the current it's
+gonna be you to just running the power
+stages and well you know basically you
+can't have basically the issue is that
+if as your current out like your V RMS
+heat output is not going to be zero when
+the current output of the V R M is zero
+it's gonna burn power just to run even
+if it's not actually pushing any current
+and at low currents that actually means
+you're burning a ton of power doing a
+whole lot of nothing at higher currents
+your primary power loss is going to be
+just all over the current going through
+the power stage of producing a bunch of
+heat and then having a lot more phases
+actually starts being more useful which
+we will soon see as for 300 amps output
+this vrm would produce about 42 watts of
+heat and about 34 watts scaled down but
+aft w3 at that same output would be
+producing about 28 watts of heat for 1.2
+volts so you'd be looking at about seven
+watt reduction no six watt reduction at
+1.2 volts in the RM heat output by
+having the twelve phase instead of this
+eight phase now going up further 400
+amps output and we're gonna get to where
+these current ratings go 400 amps output
+you'd be looking at about reading the
+long set of notes 68 watts of heat and
+about 54 watts of heat at 1.2 volts
+output the FT w3 for comparison would be
+doing about 40 on that 1.2 volts output
+at this point like we're talking about a
+pretty major difference that's 14 watts
+you know less power consumption that's
+almost that's probably close to half the
+amount of power that all of the GDD r6
+on this card uses so yeah that is that
+you know that starts being a significant
+difference in power consumption right
+there and then the highest current
+rating that the datasheet really makes
+easy to calculate because while these
+are technically 70m powers
+they only speck the datasheet up to 60
+amps which is kind of normal 60 amp
+power stages normally end their data
+sheets at 55 amps and then the lower I
+am stuff that actually ends where the
+current rating ends but for these 70 M
+power stages they stop at 60 so 480 amps
+for you know 60 times 8 that's just kind
+of easy to calculate here so 1.8 volts
+you'd be looking at about 96 watts of
+heat which is like a loft and then at
+one point two volts you'd be looking at
+about 77 watts of heat for comparison
+the FT w3 would be doing 500 amps
+because that's a 12 phase so I actually
+had an easy time calculating the 500 amp
+figure and didn't have to go to 480 the
+the 12 phase FTW 3 would be doing 500
+amps at about 72 watts of heat output
+for 1.8 volts and for 1.2 volts it would
+have been doing a it would be doing 58
+so basically at 500 amps output the FT
+w3 the RM would be producing about as
+much heat as this produces at 400 amps
+output of course at the reasonable
+current ranges like this is
+realistically I don't think like on
+water cooling you really shouldn't be
+able to break that 300 M figure so you
+know so 200 amps is around stock and
+somewhere between 200 amps and 300 amps
+is gonna be like your usual overclocking
+range so stock to sort of h2o and I'd
+say 300 amps you to already be a store
+or starting to look into like dry ice
+range cooling you know so stock well I
+should have also included air cooling
+because there's obviously custom air
+coolers and those are pretty good there
+and so you know really you'd already be
+pretty much like this vrm is pretty good
+for everything except maybe ln2
+and really even with the liquid nitrogen
+you know you'd probably not hit that 480
+am figured you'd still be probably
+somewhere in the 400 amp range maybe
+even lower 1080 tea eyes would actually
+go into the sort of 400 amp range and
+this is technically a bigger die but it
+may not scale to as high voltages as a
+1080 tea I did you could push like 1.5 5
+volts in
+a 1080i or even 1.6 if you had them
+really well cooled with this thing
+you're really not gonna like it if this
+ends up running on less voltage then you
+know you're not gonna hit that amount of
+current pull so even on liquid nitrogen
+you'd still not be you know in that
+really uncomfortable for Hut like that
+this is a lot of heat and even this is
+already a loss of heat though obviously
+you'd be somewhere in between these two
+figures on the liquid nitrogen but uh
+with these you know high higher heat
+outputs it's not like you'd really be
+limited even on liquid nitrogen with the
+with the eight phase here you could
+maybe marginally have a slightly cooler
+running vrm with the twelve phase on
+like the FTW three well practically
+speaking you wouldn't really see much of
+a difference this wouldn't really this
+vrm shouldn't really stop you even on
+liquid nitrogen so yeah this is this is
+a nice PCB it's it's a solid VRM you
+know it's it's not massive overkill well
+for me maybe for stock air cooling in
+h2o you could say yeah it's pretty
+overkill for those but I wouldn't really
+consider this massive overkill we we get
+into massive overkill territory when
+we're talking about well say the FT w3
+right that has way too many bloody
+phases this is more like reasonable
+amounts of overkill or what I would
+consider a solid vrm because you do get
+that really nice efficiency right there
+at where it would normally run and then
+sort of 300 amp range yeah you could
+probably do better if you had a couple
+more phases but uh you still wouldn't
+really notice the difference very much
+right like we're still talking
+single-digit different single-digit
+reductions in vrm heat output and that's
+with going up to a card with an hole
+extra you know four phases which is
+basically a 50% larger vrm so because
+this is an 8 so going to 12 yeah this is
+a 50% increase in phase account and
+you'd still not see much of a much of a
+difference so this is a really really
+solid V curve erm as just not you know
+ridiculously so and above that we of
+course find the memory of erm which is a
+two-phase using yet more of the FTO on
+earth is going on
+give me a second there fix that so the
+the two-phase memory vrm is of course
+using yet more of the FDM of 31 70s so
+this is massive overkill the memory of
+erm you're looking at sort of current
+outputs of say 20 amps and 40 amps which
+is like like you shouldn't even hit 40
+amps output at all but 20 amps you'd be
+looking at about 2 months of heat for
+wealth of 40 amps you'd be looking at
+about 4 watts of heat using the FTMs 31
+70s for the memory is massive overkill
+there is absolute like the GDD r6 should
+never pull so much like really should
+never pull more than 20 more than 20
+amps because this does have even less
+memory chips than like a 20 atti
+because this is on that 256 bit memory
+bus instead of the 384 so that kind of
+that that's kind of them so the memory
+of erm you know absolutely great no
+problems there the voltage controller is
+yet another you p90 512 which is kind of
+an odd decision because for example the
+10 series those would all actually use
+different voltage controllers for the
+memory of URM because that's an 8 phase
+voltage controller running in two phase
+mode and that is really kind of silly to
+do it's not you know like I get why that
+like it does keep the Bill of Materials
+simple and it may you know ultimately it
+might not cost that much to just keep
+this chip anyway but in the past they
+would have actually opted for a
+different chip like they'd have a you
+p90 511 and then they have like AUP 1666
+for the for the memory of erm but here
+they're just like now whatever just run
+the 8 phase for it and right run the 8
+phase chip for the two phase memory of
+erm so that's kind of an interesting
+decision there that Nvidia went for and
+then of course in typical RT X 20 series
+fashion we have two current balancing
+circuits these don't actually current
+balance the phases the cart balancing
+for the phases is of course done by this
+lot of this chip right here that's its
+job
+no these extra circuits here are four
+current balancing you're very like your
+oddball
+six pin here and this is actually just a
+6 pin like the the this part of the
+connector is just like a solid block of
+plastic I really don't know why Nvidia
+didn't leave that area open you know
+because if you have one of those you
+know if you have one of those 8 pins
+that looks like you know if you have one
+of those 8 pins that looks like this
+where you have the you know the the ones
+with the separate 8 pin part like the
+plot of the two extra pins separate like
+that and they add up like this well you
+could own a lot of cards you could just
+sort of take this part and if this
+wasn't right here that could just sort
+of sit you know rest there it's not
+there's not anything here that it would
+short-circuit out by being there you
+know short out against by being there so
+I really don't get why Nvidia decided to
+block that off because honestly it just
+makes as far as I'm concerned it just
+makes a cable management potentially a
+bit more messy and it doesn't really add
+anything to the card right and initially
+I was really confused why on earth they
+didn't just use a straight up a pin
+which I still think is just like why why
+even bother with this like yeah I I
+don't know I don't get why what this is
+supposed to achieve it doesn't look good
+like like nobody's gonna see this once
+it's plugged in nobody like no idea
+absolutely no idea I'd honestly argue
+they could have just kept it as an 8 pin
+and just made that 8 pin optional and
+then just like because that's actually
+supported by the PCIe standard that's
+why the the extra part of an 8 pin like
+there's no actual power like no real
+power transfer like all the X's well all
+the extra two pins on an 8 pin add is
+this extra ground connector
+they don't actually add an extra power
+line right they add a ground connector
+and they add a sense line and it's like
+they could've and the whole idea behind
+that is is that extra sense line tells
+the connector that hey you're running in
+8 pin mode not 6 pin mode so in theory
+you can have an 8 pin which will work as
+a 6 pin right that's that's why the spec
+is done
+the way it is like it's designed so that
+yes you could plug in a 6 pin into an 8
+pin the card can then identify that it
+doesn't actually have an 8 pin plug it
+in it's just on a 6 pin and but then it
+can decide to run at like reduced power
+limit or something right you could you
+can do those kinds of things that's why
+the freakin sense pins are built in but
+now Nvidia is just like let's just put a
+block of plastic
+I don't know for such an expensive card
+I feel like they could have you know use
+that as an extra feature but hey then
+again you could also just cram double 8
+pins on just about everything with my
+logic because it's like well if you
+don't need the xray then you don't have
+to plug it in and it's part of the
+specification that you don't need to do
+that it but I'd say it's like this is
+weird
+it just looks weird they should have
+just used a normal 6 pin but anyway they
+do have these current balancing circuits
+and those don't current balance the vrm
+no no no see that would be far too
+useful now they current balance the
+power the power connectors because
+Nvidia with this basically power
+connector system they'll have like a 75
+watt power limit on the 6 pin they'll
+have like a hundred and 50 watt power
+limit on the 8 pin and they'll have
+another 75 power 75 watt power limit on
+the well actually that one on the 12
+volt rail your so only supposed to go to
+like 66 watts and so because of this and
+the fact that Nvidia actually monitors
+all three current inputs on their cards
+with you know these shunts you can run
+into funny situations where say you set
+your you know you set your power limit
+on the card to and I'm just for
+convenience sake gonna set that to 75
+Watts I'm too lazy to deal with that
+let's say you set the power limit to 300
+Watts right so the whole card is allowed
+to run a whole 300 Watts well you can
+run into a situation where you're gonna
+be pushing say on this right you're
+gonna be pushing 50 watts into that and
+then you're gonna be pulling 150 on the
+8 pin and you're gonna be pulling 50 on
+the on the PCIe slot and the thing is
+yeah you're not hitting the 300 watt
+limit but you are hitting the limit for
+this power connector right here so the
+card starts to throttle because that's
+what you want with your card to do
+so in videos solution to this problem
+that they created because an AMD cards
+can't actually do this they they don't
+know where the power comes from like if
+you wanted to well you could do some
+very odd things to AMD cards with and in
+terms of their power systems like
+there's our x5 ATS that have a six pin
+that literally isn't detected at all
+like you don't have to plug it in
+because it's just in parallel with the
+existing eight pin so that leads to some
+funny situations like if you plug in an
+eight pin and or you plug in an eight
+pin anis expand the card actually
+doesn't see a difference because the six
+pins just kind of there it's no I
+actually properly hooked up and so those
+cards don't care where the power comes
+from they're just gonna grab it and use
+it but in video cards because of all the
+lovely power monitoring they're they're
+gonna complain if you start overloading
+one of their power inputs so you need
+these power balancing circuits to
+basically you know it's like say say
+this fate like this would be hooked up
+to say this phase and this phase is
+pushing say 20 Watts right and normally
+this phase would be on that overload at
+eight pin well it decides that okay so
+this this is overloaded so the power
+balancing circuitry routes it to the six
+pin and that frees up the 8 pin and the
+6 pin goes up to 70 watts output instead
+of just 50 right and this goes back down
+to like 130 and then you're back you
+just backed off the power limit and the
+throttling stops so that's why NVIDIA
+has this power balancing circuitry which
+I quite frankly feel like you know it
+would have just been easier if you eased
+up on the power limits you know you
+could have just done that that would
+have done this that would have achieved
+it a similar effect though admittedly
+some power supplies might not like that
+a lot but quite frankly it's just
+nobody's like nobody in nobody except
+well there's only two companies that
+make GPUs so that's kind of hard to
+argue about but generally speaking in
+the past even Nvidia didn't bother with
+this so I don't see why they're
+bothering now and part and the things
+making up the sort of power management
+system on this card are of course the
+two you p75 know seven six five one cues
+which control the power balancing
+circuitry and then for current
+monitoring we have these two chips right
+here which are NCP forty five four nine
+ones and those are used across all
+Nvidia of twenty series cards so far
+both these and these so that's how in
+video sort of has their their power
+management like those are the chips
+taking care of the power management the
+NCP's monitor the various shunts around
+the card like these guys also this right
+here should be a shunt resistor that
+right there should be a shunt resistor
+we can also see some little MOSFETs
+right here so those would be used for
+power balancing as well then we can have
+where else do we have it there's more of
+them around the card it's kind of hard
+to keep track of like oh yeah there's
+one up here we have some more random
+little MOSFETs you know so basically
+Nvidia adds a whole bunch of circuitry
+to their cards to better manage the the
+power the input power can set like the
+where the power is coming from into them
+to be to reduce the amount of power
+throttling the cards do because of
+Nvidia's or very low power limits so
+yeah but I mean hey nice way of solving
+a problem you created I mean you know
+instead of just setting the power limit
+to something reasonable or you know just
+ignoring the fact that you're
+overloading one of the inputs it's not
+like it's not like pushing 200 watts
+through an 8-pin is actually going to
+cause a problem because if that did
+cause a problem vega's would be setting
+people's people's systems on fire which
+they don't do so also skylake chips
+would be doing that at like sky like X
+CPUs would also be doing that and
+actually a lot of like past GPUs as well
+but yeah so that is it for the RT x 2080
+solid enough PCB you know has has the
+usual
+20 series NVIDIA sort of features 70
+amps smart power stages a whole bunch of
+card balancing and power monitoring
+circuitry that quite frankly I think is
+unnecessary very solid you know
+you have an extremely overkill memory
+vrm and a solid vcore vrm to go with it
+and yeah there's not really much else to
+it there's that's it that's that's the
+RT X 2080 founders Edition PCB it's uh
+it's solid enough you know there's
+definitely more more powerful PCBs out
+there I really don't think you'll notice
+a difference if you actually go to those
+though those cards may ship with much
+much higher power limits and quite
+frankly you know the sort of the leading
+so far the leading in like the leading
+features for RTX 2004 clocking or
+basically having a very high power limit
+having a really big cooling system or a
+good cooling system generally speaking
+with heat sinks the bigger it is the
+better it is at dissipating heat so big
+and good kind of go hand-in-hand in that
+sense but you can also design big things
+that suck at cooling that's just like
+but if you know what you're doing then
+you know if you make it just bigger than
+generally it'll also be better if you
+don't ridiculously screw up the design
+in the process so now it that is it for
+the video so thank you for watching like
+share subscribe leave comments questions
+suggestions down in the comment section
+below if you'd like to support gamers
+Nexus there is a store gamers Nexus
+dotnet where you can pick up things like
+the gamers Nexus mod pack which you can
+see in the background of the video and
+also there's the gamers Nexus patreon if
+you'd like to you know support gamers
+Nexus through that and I run a channel
+called actually hardcore overclocking
+which is why I introduced myself as
+build Zoid from actually hardcore
+overclocking where I do a whole bunch of
+other overclocking related content like
+more PCB breakdowns and as well as sort
+of other stuff that's overclocking
+related it's kind of hard to describe so
+that is it for the video thank you for
+watching and good bye</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

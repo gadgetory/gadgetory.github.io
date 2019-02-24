@@ -1,0 +1,492 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Is Your Smartphone Spying on You? | Gadgetory - Your Gadget Factory</title><meta content="Is Your Smartphone Spying on You? - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Android-Authority/">Android Authority</a></li><li class="active">Is Your Smartphone Spying on You?</li></ol></div><h2 class="post__title"><b>Is Your Smartphone Spying on You?</b></h2><h5 class="post__date">2019-02-18</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/F8vG3TlDXks" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">so we always talk about privacy and
+surveillance and even spying I've been
+wondering is my Android smartphone
+spying on me is someone activating the
+microphone maybe and sending data across
+the Internet well I develop the
+technique where as able to capture all
+the data that flows in out of my phone I
+was able to analyze it to see exactly
+what's happening
+hi there my name's Gary Sims this is
+Andrew authority if you want to find out
+more please let me explain
+it's a privacy is always in the news and
+quite rightly so what a googol doing
+what a Facebook doing there's also other
+things going on about media telecom
+providers what a why are we doing what
+our other Chinese om is doing our people
+being spied upon if not by their own
+government but by other governments so
+to tackle this problem I thought I would
+really get down to the lowest level and
+capture all the data that is flowing
+back and forth from my phone and then
+analyze it to see what is happening when
+I say phone actually I mean several
+phones including a huawei phone a Google
+phone a pixel three excel a Samsung and
+the oneplus 16 so are any of these foes
+doing naughty things that they shouldn't
+be so the capture of a database he's
+like got a Raspberry Pi and I turned it
+into an access point that means it's
+Wi-Fi chip is used to broadcast just
+like a normal Wi-Fi router would and the
+phone under the test was able to connect
+to the Raspberry Pi the same way we
+connect to my router and then using the
+Ethernet port on the Raspberry Pi I
+can't do that to the Internet so what
+that basic means now if the Raspberry Pi
+is in the middle everything that comes
+from the phone over the Wi-Fi has to
+flow through the Raspberry Pi and then
+out onto the internet and it was it
+comes in from these that has to flow
+again through the Raspberry Pi then over
+the Wi-Fi and onto my phone and then
+using a tool like Wireshark I'm able to
+capture all of that data now the
+advantage is the capturing approaches
+that you can capture now and ask
+questions later which means I could
+leave the phone running overnight and
+see whether maybe at 3 o'clock in the
+morning whether the data was being
+secretly sent while I was asleep and
+then that way I wouldn't know
+but I would to capture a whole nights
+worth of data and then analyze it at my
+leisure and I analyzed absolutely every
+single packet of data and once I was
+happy with a certain destination once I
+was happy with a certain time of
+connection I was able to cross it off my
+list and then whittled down the list to
+see if there were things going on that
+shouldn't be happening further I said I
+took four phones while a maid ate a
+pixel three excel a samsung galaxy note
+9 and a one plus 60 I kicked in this
+network and then I tracked them for at
+least 24 hours to see what they were
+doing and this is what I found out so
+the first thing I notice is that our
+phones talk a lot to Google and of
+course we expect that because of course
+the whole of Android comes from Google
+Playstore from Google Google searches
+from Google YouTube is from Google you
+know the list just goes on and on and on
+Gmail is from Google but actually we
+surprised just how much of the traffic
+is actually sent towards Google servers
+and that certainly got me thinking about
+how much do Google really know about us
+and I'll deal with that in a moment
+now another usually thing is that Google
+owned a lot of domain names I was
+expecting all the traffic to go to
+something or other google.com but
+actually Google has got a whole bunch of
+domain names that they use for a whole
+different bunch of different purposes
+and I list all those in the article that
+goes with this video and you'll find the
+link to that in the description below so
+assuming it's okay that our phones talk
+to Google because that's the ecosystem
+where else do our phones talk to and a
+really big part of the traffic besides
+Google is actually to ad networks now if
+we think about all those free games that
+you've got on all the free apps that
+you've got that are supported by ads
+well all that data is being communicated
+with several different ad networks now
+here we have a bit of a problem because
+developers app developers will just
+develop their apps they put a lot of
+time and s into making the app and then
+they pick an ad network maybe one from
+Google maybe one from somewhere else and
+they just use their libraries and suck
+them directly into their app and then
+just publish it now really at that point
+the app developer doesn't really know
+what the ad network is doing so you may
+find that the ad network is kind of
+requests
+different types of information and it's
+actually looking for different things
+that maybe the app developer doesn't
+know and all that information is being
+sent to the ad networks of course if the
+ad networks were trustworthy this
+wouldn't be much of an issue but we know
+from our daily usage of the web that ad
+providers are not trustworthy when we
+talk about pop-unders and pop-ups and
+auto-playing videos and inappropriate
+adverts and all these full screen ads
+it's like um we know that advertisers
+will actually do whatever they can to
+get an extra bit of money out of us so
+it's interesting that we use a lot of
+these freemium type games we use a lot
+of these free apps but in doing that we
+are exposing ourselves to an extent to
+the Adhan providers who are kind of
+trying to work out who we are and what
+demographic we're in and what location
+were in and you know what kind of phone
+we have and what our preferences are so
+that they can send us ads and that's all
+happening in the background without
+really much control from our side
+another place I saw a lot of traffic go
+to was actually to Amazon's web services
+now you might think if you're only using
+it's an Amazon product let's say you
+know like Kindles and like that then
+maybe it will talk to Amazon because
+Amazon are a huge web service provider a
+cloud hosting provider and so many apps
+actually opt to use Amazon as the place
+where they keep their databases as they
+have kind of some background processing
+going on and I'll find that a lot of our
+traffic goes over to generic Amazon web
+servers because there is hosted some
+server that an app of ours is using and
+that's okay because I assume we can
+trust Amazon to provide those services
+but of course we don't know what those
+services are actually doing so though
+Amazon is a well-known popular company
+actually an app on our phone could be
+sending all kinds of information over to
+their private server which just happens
+to be hosted by Amazon now of course
+Android tries to help in that situation
+you've got permissions you know do you
+grab this app permissions to your
+contacts for example well no I don't
+know why you know a torch flashlight app
+should have
+access to my contacts because I don't
+want those uploaded onto the Internet
+and of course it's also the Google Play
+protect which where Google are
+attempting to check the sort of the
+validity of an app to make sure that it
+isn't doing things they shouldn't do but
+it's interesting that Amazon features
+quite heavily in the traffic that flows
+in and out of our devices and since I
+had this ability to track every single
+packet that was going in out of my
+phones I wanted to see what it was like
+with Google assistant our Google
+secretly listening to everything I'm
+saying and sending it up into the cloud
+so I was able to test the idea to verify
+the idea that Google tellers which is
+that date was only sent to the cloud
+once we actually trigger the assistant
+with you know either a squeeze or
+pressing on the write button or saying
+the key word which I won't repeat now
+because all the people moan that I
+repeat the word activate all of their
+Google devices so I won't say the word
+but hey something or other that
+activates Google so actually what I did
+was I looked at the real-time traffic
+and I can say that all on all the phones
+I tested whether it was a why away with
+it as a Google phone didn't matter
+there's no data flowing while you're
+just looking at the phone using the
+phone even talking directly at the phone
+nothing at the moment you activate
+Google assistant all of those things or
+the sound around you is sent real-time
+up to Google servers all of it and I'll
+get more into that in just a second and
+that flow of data traffic in real time
+continues until either you complete
+command or until the times out because
+it didn't hear anything from you that
+was legible and so what actually happens
+is that why you're just kind of using
+the phone there is a device or probably
+a DSP on your phone that's listening for
+you to say the key word and then once
+you say it it will send that key word up
+to Google to double check on the bigger
+more powerful processors that that's
+actually what you said and then it will
+activate the Google sit and then all the
+things you say including the background
+noise get sent up to Google for
+processing now I tried tricking the key
+word so you know rather than saying
+hey I kind of said words that were
+similar like you know pray you know or
+okay goggle for example to see whether
+that triggered the keyword and it
+doesn't the the keyword recognition on
+the device is pretty pretty accurate
+once out of many many attempts I got it
+to send up some traffic and I was
+monitoring this sent some traffic to
+Google and it wasn't the right thing and
+then for the assistant wasn't activated
+and further traffic was not sent up to
+Google servers so from that I concluded
+this is that the keyword activation is
+pretty good it's double checked by
+Google servers and if it isn't a true
+positive match it does not listen to
+what you're saying but the moment is
+activated everything gets sent up there
+and I'm going to talk one more about
+that in a minute when we talk about
+Google takeout so before we get on to
+Google what do we think about Facebook
+Twitter whatsapp and all these other
+social media apps that we use well the
+truth is that we are sending data to
+those companies willingly so actually
+what's happening is that you're
+willingly posting your name and your
+date of birth and your friends and your
+photos and your location and you know
+what your preferences are across these
+different social networks and you're
+actually sending all that information
+willingly up to Facebook or Twitter or
+to to Instagram or whatever so there's
+not really much of a privacy issue here
+because you're doing it willingly so
+let's just talk about Google for a
+second Google have a service called
+takeout which allows you to download all
+the data that Google has about you now
+I'm going to do a separate video on just
+that entire process over on the Gary
+explains channel so do make sure you go
+over there and check that out but having
+done that for myself there was a couple
+of thing I just wanted to point out that
+were quite scary first of all of course
+we know that Google has everything about
+me all my emails are in Google all my
+photos are in Google you know I search
+Google engine I watch videos on youtubes
+of course Google has all that
+information it knows what I've searched
+for it knows what we're in my emails it
+knows what photos are taken it knows my
+location so all that stuff is there but
+the thing to remember is that Google
+keeps it Google keep
+that date doesn't just keep it for a day
+I've got records when I did my takeout
+going back to 2015 2014 because Google
+keeps hold of all of it so remember that
+whatever you do on Google it's in a
+permanent record somewhere now there's a
+whole different issue about who has
+access to that but the data exists it
+exists somewhere on a server that can
+demonstrate certain things about what
+you've done and where you've done it and
+so on and the other thing that I found
+pretty interesting was that all of those
+Google assistant commands that I said to
+my Google home Mini are stored in mp3 on
+Google servers and when you do the
+takeout you get a big file of all the
+mp3 files of commands that you have said
+now that's okay when I've said you know
+Google you know turn up the volume to
+50% or whatever but an interesting way
+is what I've activated Google then
+someone comes into the room and says
+dinner's ready
+let's just use something benign and I've
+then not completed my command with
+Google and I've stopped it and I've gone
+off to dinner now that call dinner's
+ready has been recorded in this in an
+mp3 file sitting on Google servers now
+imagine someone said something more
+delicate to you imagine someone said
+something that you don't want recorded
+actually the moment you activated Google
+assistant all of that data including
+commands it didn't do what they were
+meant to do are recorded up there for
+Google now on the garrix baby let me do
+it I'm gonna play some of those for
+example the background noise that exists
+in some of my own personal recordings so
+you can see what kind of things Google
+have about you a lot more quick thing to
+mention about Google takeout is that it
+has a complete history of all the things
+I've purchased online and when I mean
+all the things I mean from Amazon from
+eBay from iTunes even airplane tickets
+and I'll go more into detail of that in
+the garrix phase video but Google have a
+copy of all of your purchases that
+you've made online even the ones that
+are not even associated with Google in
+any way whatsoever
+so you want to find out why that is go
+and watch that video on gary explains ok
+so let's talk about spying in terms of
+espionage for a moment if you go back
+before
+the advent of the smartphone of course
+every major government secret police spy
+agency was involved across the world in
+surveillance of one kind or another it's
+important for national security is one
+argument and that is certainly true in
+certain areas but of course in those
+days it was a case of well send a white
+van outside the house point a
+directional microphone up to the window
+big long lens on the camera let's try to
+spy on this person and that still
+happens today of course traditional spy
+craft traditional espionage traditional
+surveillance is still occurring the
+difference is with the advent of
+smartphones what's actually happened is
+now is that every person is carrying
+around a camera and a microphone in
+their pocket now is there a way for
+Google to activate that in their normal
+way no there isn't is there a way for
+Facebook to activate that in the normal
+way no there isn't
+will at Google or Facebook activate that
+if a police federal agency comes as we
+would activate the microphone on Garrett
+oh no that won't happen but recent
+events for example surrounding the Saudi
+Arabia's for example have shown that
+there are ways of activating people's
+phones unknowingly and that is because
+all software has bugs in it all
+software's written by people and they
+write the software and it has errors in
+it and there are things called zero-day
+exploits which means it's a bug that's
+unknown so it's been known for zero
+number of days Google or Apple or
+Microsoft had zero days and no days to
+try to fix it and companies sell those
+bugs how they can access through a bug
+not through a backdoor but through an
+error in the software how they can
+access phones make them activate their
+you know microphones reactivate their
+cameras and they sell them to state
+nation states for millions of dollar
+mean millions of dollars like five
+million dollars and so when you have a
+nation state that wants to perform
+surveillance on a particular individual
+for them five million in the overall
+budget of a large country is nothing
+they pay it they get a way of accessing
+individuals phones because they
+effectively use unknown and intent
+all ways into the phone of course Apple
+and Google and Microsoft ran very hard
+to close all of those doors or those
+loopholes all those mistakes but if it's
+zero date means is unknown so they have
+no way of actually trying to fix it and
+so can someone spy on you well can your
+neighbor know can Google know Carnation
+state yes if they buy the right zero day
+exploits from a security company and
+we've just had recent confirmation of
+that of course in recent history so
+there you go so does that all mean in
+summary do companies like Google and
+Facebook and tweeter know about us yes
+they do we willingly give them loads of
+data we willingly post things on social
+media we willingly reveal so much about
+ourselves and companies like Google
+because the whole of Android is tied
+into Google everything we do get sucked
+up into Google's massive networks and
+servers including our location including
+you know the books that we've read
+including that phrase we've searched for
+including the videos we've watched and
+Twitter for example state very clearly
+in their privacy policy that they will
+use your tweets the tweets that you
+retweet the tweets that you like and
+things like that to determine your
+language your gender your age group and
+other indicators about who you are so
+that they know and can profile who you
+are and they can try to sell you
+advertising of course that is the key to
+make money from you and if Twitter do
+that and they say that very clearly in
+their privacy policy all the companies
+do that and so they are profiling you so
+they can say new things so you just be
+cautious about what you're posting and
+where you're posting it because someone
+somewhere is gonna read it so in sum we
+did I find any actual activity that I
+didn't expect on these phones no there
+were no secret messages being sent off
+to servers in China or Russia or North
+Korea or wherever you think a bad guy is
+gonna sit with his server or the traffic
+look to be legitimate from the very
+beginning
+okay so your hawawa phone is
+spying on you okay I tested it whatever
+is not spying on you your pixel xl3 is
+not spying on you but there are
+legitimate things that are covered by
+privacy policies that we've all signed
+up to that all these companies are
+taking advantage of that is an absolute
+fact and so there you go my name's Gary
+Sims this is Andrew authority I do hope
+you enjoyed this video if you did please
+do give it a thumbs up don't forget to
+subscribe don't forget to check out the
+garrix plays video channel and well
+that's it I'll see you next one</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

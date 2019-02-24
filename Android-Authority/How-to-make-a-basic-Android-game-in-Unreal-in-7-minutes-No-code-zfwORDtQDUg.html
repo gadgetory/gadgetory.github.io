@@ -1,0 +1,254 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>How to make a basic Android game in Unreal in 7 minutes - No code! | Gadgetory - Your Gadget Factory</title><meta content="How to make a basic Android game in Unreal in 7 minutes - No code! - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Android-Authority/">Android Authority</a></li><li class="active">How to make a basic Android game in Unreal in 7 minutes - No code!</li></ol></div><h2 class="post__title"><b>How to make a basic Android game in Unreal in 7 minutes - No code!</b></h2><h5 class="post__date">2019-02-04</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/zfwORDtQDUg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">so if you want to make a game for
+Android but I don't actually recommend
+that you use Android studio instead it
+makes a lot more sense to you something
+like unreal or unity those being game
+engines that already have lots of the
+physics and lots of the behavior of
+different game elements in place for you
+and have a nice graphical interface to
+make things really nice and simple
+I've touched on this channel a fair bit
+about using unity for game development
+it is the preferred method it's the most
+popular game engine on the Play Store
+but Unreal 4 is the biggest competitor
+to unity either way whichever one you
+choose both of these are great tools for
+Android game development and make
+everything really simple and easy and a
+really flexible you can create anything
+you can think of pretty much of course
+you need to get started somewhere though
+and the first time you boot up Unreal 4
+it's kind of like oh it's got a lot of
+Windows a lot of stuff going on it's
+quite confusing there are lots of
+tutorials out there but quite a lot of
+them involve a lot of preamble of
+setting up a lot of technical jargon you
+don't really need to know right away
+ain't nobody get down put it and so in
+this video I want to once again show you
+how to get something quite impressive up
+and running in just seven minutes
+there's not going to be a full game you
+probably won't want to sell this it
+won't even have enemies or levels or
+anything like that but you will have a
+basic platform that you can control with
+touchscreen controls you can jump around
+have your own animations your own
+sprites and my hope is that this is
+gonna serve as enough of a starting
+point so that you can get a bit excited
+about Unreal development and also so
+that you can understand the big picture
+of how everything works then you can
+build from there by using those other
+more granular tutorials so without any
+further ado let's get started and build
+an android game using unreal in just
+seven minutes to get started first
+you're going to need to create a new
+project you'll see we have lots of
+options available to us which will be
+suitable for different types of game we
+want to choose to the side scroller then
+set it from mobile or tablet with
+maximum quality and including the
+starter content the top tab should say
+blueprint rather than C++ as this means
+we won't need any coding in order to get
+things up and running once that's
+finished you'll see that you already
+have a playable platform game
+you've got character you've got
+platforms hit play and click on the
+viewport and you'll be able to run
+around jump and watch the pretty
+animations using the spacebar and arrow
+keys and so there you have it your first
+2d game in just 20 seconds lulz ok so
+obviously we going to be doing a bit
+more than that more specifically we're
+going to customize all these elements
+that are already here so that you can
+turn this generic prototype into the
+basis for your unique game with your own
+graphics and animations to create new
+actors for our game the generic term for
+any game object I'm using the existing
+sprites folder drop a PNG or other image
+file into there using the File Explorer
+then right click on it and go to sprite
+actions create sprites now head to the
+blueprints folder right click again this
+time anywhere in the folder then select
+the create basic asset blueprint class
+and finally actor this is a class that
+will allow us to create lots of
+different iterations of the same object
+say a platform if you're familiar with
+unity it's the equivalent of a prefab
+call this floor tile or tile or
+something like that now a double-click
+on that new blueprint class to open up
+the editor in the top left select add
+component and then choose sprite you can
+search it's quicker now select that new
+element in the components window and
+then drag and drop your platform sprite
+into the sprite box you can now see that
+the tile is part of your platform don't
+forget to adjust the scale if your
+sprite isn't already the perfect size
+click Save then return to your game
+once you've done that you can simply
+drag and drop this new element anywhere
+into your game when you drop your
+platform into the level make sure that
+the y-coordinate which for some reason
+behaves like a Z coordinate is set to 0
+otherwise it might be in front or behind
+the player and the player won't interact
+with the collider you'll notice your
+platform already has a Collider that's
+the yellow box which tells unreal that
+your player shouldn't be able to pass
+through the item copy and paste this
+tile around a little bit drag it and
+that way you can start designing your
+own level and of course delete the old
+platforms as well of course you can
+create many more actors and drop them
+into your levels like this by using
+different sprites different settings and
+different logic via graphs many of which
+can easily look up online you'll be able
+to create a whole host of challenging
+obstacles and rewarding collectables
+to further customize the level we might
+also want to change to the background do
+this simply by selecting background
+sprites in the world outliner and then
+changing the source sprite to one of
+your own making in details I'm using a
+starry sky I created the last and
+possibly most important thing we need to
+change though to make this generic
+platformer into our platformer is the
+main character to handle this we're
+going to need to use some more sprites
+which we're going to turn into animation
+now create two new sub folders idle and
+walking into each we're going to drag
+and drop our character sprites instead
+of using a sprite sheet we're adding
+individual images and naming them in
+ascending numerical order to keep things
+nice and simple drop these into the
+relevant folders right click on them and
+then select sprite actions create
+sprites once again we'll make our idle
+animation first I only have two images
+for this which is meant to simulate kind
+of breathing in a low frame pixel art
+manner a quick tip if you choose pixel
+art you have far less work to do to set
+this up right-click in the folder and
+choose animation paper flip book flip
+books is just the term that unreal uses
+for its animations name your new
+animation idle and then double-click to
+open it up now in here you're going to
+head over to where it says sprite then
+you're going to add two keyframes by
+hitting the plus button or you can just
+drag and drop your images into the kind
+of timeline down the bottom this will
+add two members
+you'll see the animation begins to cycle
+through those frames immediately right
+now though this is CG inducing so turn
+down the framerate to something like
+five and it looks a lot more like
+breathing save and an exit and now you
+can do the precise same thing with your
+walking animation keeping the framerate
+higher of course and adding more
+keyframes save that and once they're
+both done you can head over to finally
+2d side-scroller character actor or porn
+over m 2d side-scroller
+VP blueprints double-click on this and
+you'll open up the editor again but this
+time you might see something a little
+bit different a graph remember that we
+chose graphs instead of C++ when we set
+up the project basically this means that
+we're using a visual flow chart of sorts
+in the place of actual code which is
+great if you don't know a lot of
+programming zoom out find the box that
+says handle animation and then finally
+drop down menus under select these will
+look a little familiar idle animation
+and running animation all you need to do
+is to click those buttons and swap them
+out for the ones you created finally
+flick over to the viewport window and
+find the box that says source flipbook
+on the right once you've selected the
+player-character switch that for your
+own idle animation and make sure to edit
+the scale under the transform heading on
+the right to match your character to the
+size of the original one remember to hit
+compile and save once that's done and
+with that done you should now see that
+it's your own character running around
+using your own animations unlevel that
+you designed the look of and the layout
+of to run this on your device simply go
+to file package project and Android
+you'll then be able to create an apk
+which you can pop onto your device to
+test you should have a working basic
+platformer with touch input and
+animations it's a pretty exciting start
+bearing in mind we've only spent seven
+minutes remember though you'll need to
+have set up all of this correctly to
+begin with that means setting up unreal
+in order to work with Android my advice
+is to remove Gradle support for the
+build as at the moment that isn't quite
+working correctly I'd also advise using
+code works for Android to install all
+the necessary elements like the Java SDK
+thanks time for watching guys hope fans
+really useful and interesting if you did
+then please share around please leave a
+like please comment down below all that
+stuff helps us out immensely
+you can find the full more in-depth
+tutorial the written version over at
+Andrew thority com
+there you'll also find all the usual
+news reviews features etc for of course
+we are your source for all things
+Android</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

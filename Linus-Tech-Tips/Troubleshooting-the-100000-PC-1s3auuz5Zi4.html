@@ -1,0 +1,1297 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Troubleshooting the $100,000 PC | Gadgetory - Your Gadget Factory</title><meta content="Troubleshooting the $100,000 PC - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Linus-Tech-Tips/">Linus Tech Tips</a></li><li class="active">Troubleshooting the $100,000 PC</li></ol></div><h2 class="post__title"><b>Troubleshooting the $100,000 PC</b></h2><h5 class="post__date">2018-08-24</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/1s3auuz5Zi4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">I think we're live should be live okay
+so I'm actually really excited about
+this project as you guys can see I have
+moved all of these six workstations one
+CPU stuffed into our conference room so
+anyone who wants to have a meeting or a
+conference call or whatever else has
+like a third of the table to work with
+now but there's a good reason for it
+I actually like I need all this space in
+order to spread out all the things I
+need to connect to it in order to make
+sure that it is actually working because
+while I have done a little bit of
+validation like theoretically I haven't
+yet actually hooked up like a whack of
+video cards to a monitor and made sure
+that the whole thing is actually
+functioning as it's supposed to the
+other thing I'm going to be doing today
+and this is actually the main reason for
+the stream because otherwise this is the
+kind of thing I would just work on in
+the corner of my office and the shadows
+and then finally bring to light when
+it's time to make the video the other
+thing is I got what might be a really
+important pro tip from none other than
+Wendell from level one text about why he
+thinks here I'm just gonna move this
+monitors like really cool cuz it takes
+it's got six different display inputs or
+something like that and it can do four
+at a time
+tiled across the display so that's
+that's cool but it's really heavy so he
+had an idea for how we could achieve
+hot-plug ability for our VMs by using an
+additional tag on our iommu group ICS
+override thing so basically that's
+that's what we're gonna do today and
+we're coming along for a voyage of
+discovery because I'm not sure how any
+of this is gonna work theoretically I've
+got everything re plugged in since I
+moved it over from the other room so
+we're gonna go ahead and hook it up and
+I do have one extra trick because now
+that I've got four graphics cards not
+six yet just four because I didn't
+a couple more monitors in here where's
+where's this going right so now that
+I've got four displays what I wanted to
+do was make sure that the onboard video
+on this thing is working properly
+so that I can use that for my hypervisor
+so I'm going to use that for unread and
+then each of my six graphics cards that
+I'm going to use my seventh slot for
+this breakout cable to the daughter
+board so each of my six graphics cards
+can be passed through to a virtual
+machine I mean is it a virtual machine
+anymore when you are able to sit down
+like add a keyboard and mouse and
+monitor and use it like hot plug USB
+like is that a virtual machine anymore
+or is that like a a real machine but
+using virtualization no one knows all
+right so just waiting for it to boot up
+there we go okay that's good
+a tube don't you love it when you go
+live and immediately something doesn't
+work I'm not sure what postcode a2 is
+maybe it's just one of those things
+where if I press like go into the BIOS
+or something it'll pick up can you see
+that Brandon got a 2 over here so I had
+I had changed it already to use the VGA
+as the primary display output but I
+hadn't actually seen that working yet
+here well there you have it guys is real
+you know real tech troubleshooting here
+they pick up Brendan you did oh no I
+mean up yeah it's not going on over oh
+no I think I know what happened
+sometimes the server boards so now
+actually I'm not sure if this is what
+happened because it's possible that I
+was the one who moved this but sometimes
+they ship with the onboard VGA disabled
+with a hardware jumper and so what I'm
+hoping is that by moving this little
+this little header here normally pins 1
+&amp;amp; 2 are enable and pins 2 &amp;amp; 3 are
+disabled you can tell pin 1 by the
+little silkscreen white square behind it
+so I'm pretty sure I just put it to pin
+1 &amp;amp; 2 yeh ok
+oh I thought we were off to a pretty
+rough start here ok
+that should be better so we should be
+able to boot it up so basically just a
+recap for those of you who didn't watch
+the video where I was talking about six
+workstations one CPU and the goal here I
+want you to come over here so I can show
+them the daughterboard here so what
+we're doing is we're using two of them
+tells 28 core Xeon Platinum's
+and we're using virtualization in an
+attempt to create out of a single tower
+6 8k video editing capable workstations
+that people could use
+currently like all at the same time to
+edit 8k video off of a single
+motherboard but one of the biggest
+problems at least from my perspective
+with using a VM as like a daily driver
+workstation is that if you want to use a
+USB device like a keyboard or a mouse or
+a thumb drive even you actually have to
+plug it into the system and then through
+your hypervisor you have to configure
+that USB device to be passed through to
+your virtual machine before you boot so
+if you wanted to oh I don't know say for
+example plug in a card reader so that
+you could offload some footage from an
+SD card you wouldn't be able to do that
+without shutting down your machine
+reconfiguring some nonsense and then
+turning it back on the way to get us be
+hot plugging so that allows you to just
+plug in and unplug USB devices like you
+normally would is to take an entire
+controller so you can see here I've got
+this daughter board that's got a whack
+of USB controller cards plugged into it
+here you take an entire controller
+and you pass that through to the virtual
+machine that way anything that you
+unplug or plug in to that controller is
+hot pluggable for that VM now if you're
+only running like two VMs like we did in
+to gamers one CPU you can actually take
+multiple USB controllers built into your
+motherboard this one has at least two on
+it and you can pass one of those through
+to one of the VMS and one of those
+through to the other or something along
+those lines as long as you don't pass
+through too many and you leave nothing
+for the hypervisor assuming that you
+need one there but if you've got like
+six there's no other board that I'm
+aware of that has like six USB
+controllers on it so we reached out to
+one stop systems with the idea that if
+we could take one of their daughter
+boards here which takes there's a link
+card that you can't really see but you
+can see it from the back here I'll try
+and get you know from the back so you
+take this link card here and it takes
+your PCI Express slot runs it over a
+cable so this is just PCI Express over a
+cable sends it to this target card and
+then takes that 4x pcie 3.0 link
+correctly and splits that out into eight
+slots here so as long as not everybody
+is like hitting their USB port with a
+PCI or with a like USB 3 SSD external
+drive or something at the same time that
+should be fine because this board is
+using the same kind of technology that
+your motherboard already uses to split
+out the lanes on the CPU to all the
+different slots and all the different
+devices that are built into it so it's
+using a plx chip these are quite
+expensive their server or grade hardware
+but I mean hey this is a crazy project
+and you got to kind of you got to do
+what you got to do so normally I'm gonna
+show you guys oh bloody hell
+I'm gonna show you guys the command line
+version of unread here
+sorry I just I have to I have to reboot
+it I want to use the GUI version here
+just to make my life a little bit easier
+so normally when you would boot up a
+system like this or for virtualization
+what your motherboard does is it groups
+your resources all of your devices into
+what are called iommu groups and then
+anything that is in the same iommu group
+has to be forwarded to the same vm so
+it's pretty typical for something like
+the VGA device and the HDMI audio device
+on a single graphics card to share an
+iommu group mind you that wouldn't
+normally be a problem I can't think of
+too many situations where I would want
+to have the video device and the audio
+device for a single graphics card go to
+different virtual machines that doesn't
+make a ton of sense but you can also run
+into issues where for example on a
+motherboard you might have your SATA
+controller and your network controller
+on the same iommu group so if you wanted
+to pass an ethernet controller through
+to your VM you would also have so you
+would not be able to pass that SATA
+controller through to another one so
+what happened last time around
+was that while this motherboard is very
+virtualization friendly even when we
+enabled the ACS override little
+hack that you can do we still have like
+I think we had something like 80 iommu
+groups it's a very virtualization
+friendly but what happened was that even
+though almost every device on the board
+could be split out individually all
+those devices that were on that daughter
+board we're in the same I Oh mmm you
+group which makes sense because they're
+all running off of the same slot so what
+that meant was that while we could pass
+through one USB controller to one of our
+VMs running off that one slot we weren't
+going to be able to get the multi slot
+expansion that I wanted so that I could
+send a separate USB controller to every
+one of my VMs and have every one of the
+editors working off of this thing able
+to have their own USB hot plug now I'm
+you know obvious solution to that would
+be just get another board with more PCI
+Express slots in the first place but
+those are rare and/or exceedingly
+expensive and normally designed for use
+in a custom enclosure that's like system
+specific so if you guys remember from
+eight gamers one CPU which was actually
+ten depending on how you slice it we
+actually had a server enclosure that
+could take ten graphics cards and I
+think we managed we managed to put like
+one other like network card in it or
+something along those lines so the thing
+had like it was like 10 or 11 PCI
+Express slots or something along those
+lines but that's it was like a rack
+mount servers it sounded like a jet
+turbine like it wasn't suitable for use
+as like a video workstation alright so
+yeah we go
+boop-boop and let's go ahead and start
+the array so settings
+know it's tools I was writing system
+devices okay
+so here we're gonna see with the ACS
+override which is a little tweak that
+you can do in order to try to split out
+devices that are sharing an iommu group
+we're gonna see that all of our USB
+controllers are on the same one but
+Wendell told us that there
+an additional flag that we can enable
+called multifunction that might actually
+help us split them out even though
+they're all running off of the same PCI
+Express slot so here you're gonna want
+to come in and have a look at this
+Brenner and see if I can controller USB
+here they are
+yeah so here's our I Oh mmm you group 70
+which has got a bunch of plx bridge
+nonsense going on on it that makes sense
+because that's exactly what this thing
+is doing its using plx plx pci express
+bridges in order to split that one lane
+out into alright excuse me split that
+one slot out into many slots and you can
+see here all six of the cards that I
+have installed so here's that of kwanzaa
+10 gigabit ethernet card this board
+doesn't have onboard 10 gig and we're
+definitely gonna need 10 gig for 6
+people to be able to edit 8k footage at
+the same time and then we've got here we
+go 5 USB controllers but we would have
+to pass these all through to the same VM
+which completely defeats the purpose so
+this is sort of the moment of truth
+where we find out if the stream had any
+purpose whatsoever let's just do both of
+them so it might be as simple as this
+and apply now we're gonna reboot oops
+reboots not there oh there's so many CPU
+cores I have to scroll for days just to
+get past them all it's a very very first
+roll problem of course now we're gonna
+reboot and see if that fixes it
+this is why we usually use the magic of
+video editing in order to cut this like
+waiting around out like even when you
+guys watch even something that's like a
+I think I think the one where I was
+trying to get hot plug PCI Express was
+that like a 20 minute video Brennen 20
+25 minute video something like that that
+was days it was like over a day of
+actual like shooting that was why you
+had so much okay cut you know you can
+cut okay cut and the worst part is that
+when you're working on server hardware
+instead of working on like more wait was
+I'm using this board oh yeah that one
+wasn't even that bad when we're working
+with actual server hardware it is a
+nightmare because those boards instead
+of taking like 2 minutes to reboot they
+can take 5 minutes 6 minutes 8 minutes
+to reboot especially when you've got
+like a whack of raid controllers each of
+which has a bunch of drives on it like
+our 45 drive servers so they're super
+mikro boards in the first place which
+means they already take a few minutes to
+do a reboot then they each have anywhere
+from 3 to 4 raid controllers each of
+which has their own boot up and
+initialization process they go through
+and each of those raid controllers has
+in the neighborhood of I think it's us
+12 to 16 drives or 11 to 16 drives or
+whatever it works out to so about 15
+drives each on them in some of those
+servers so they can take when I'm
+troubleshooting some some stupid thing
+they can take like 10 minutes per reboot
+cuz you got to wait around for the OS to
+load as well right ah it's brutal so I'm
+really hoping that this is just gonna be
+a super simple thing and you guys aren't
+gonna be just tuning into this live
+stream for no no payoff all right come
+on show me the boot options I mean even
+this like a like a more like a prosumer
+like a workstation grade board when you
+have this many devices that it has to
+load up every time it turns on it's a
+bit of a chore there we go
+OOP
+hope everybody's having a great Friday
+out there I'm sorry I'm not monitoring
+chat at all I have no idea what you guys
+are saying it's chat entertained oh
+really
+yeah oh well that's nice thank you hey
+Brandon do you want to do you want to
+show you know what let's do proofs in
+the pudding proofs in the pudding baby
+oh yeah let's do some pudding proof no
+no come on over here let's there we go
+here we go
+are we streaming live yes we are yes we
+can all right let's go back and see if
+there and see if it's booted up I know
+my hair is so bad right now thank you
+for pointing it out it's more than just
+the neckline that's bad it's just
+everything about it is terrible I need
+to go get a haircut but it's like you
+know personal appearance play with
+computers would you guys even like me
+that much if I was like perfectly
+groomed all the time I think I think
+what just happened okay
+we lost our displays signal now we get
+signal main screen on perfect I think
+okay start the array I'm not actually
+sure if I have to do that whatever shut
+up oh shoot
+I've got a weird thing with this install
+where I don't know what the crap it's
+doing but it keeps losing my cache
+drives every time I reboot it for some
+reason
+so no device
+yeah no device let's go this one let's
+see if that's the right order usually
+doesn't matter that's so weird I've
+never seen this before
+also I screwed up my vm's and I put them
+on the wrong I didn't put them on the
+cache anyway so it actually probably
+doesn't matter but anyway anyway anyway
+moment of truth moment of truth
+morning you are booted with peas ride
+etc etc come on baby this doesn't tell
+us the island of new groups yet we got
+to wait around for this to load because
+if this works halt this project gets so
+much cooler like it becomes actually
+usable for those wondering I'm not
+really planning to make my editors do
+this looks really promising look at this
+our VGA and audio devices are split up
+into their own groups now hold on a
+minute where are they we have we have a
+hundred and we have a hundred Oh every
+one of these is split out oh no way we
+have two hundred iommu groups on this
+thing now almost every single device is
+in its own group including our USB
+controllers so theoretically now we can
+stub them and pass them through the VMS
+and have the whole thing work just like
+sitting in front of the computer because
+remember guys with USB you can connect
+anything now like it used to be USB was
+just for like your your flash drive and
+like your mouse but probably not your
+keyboard cuz you were probably using ps2
+for that but now if we have a couple of
+USB 3 ports for each VM well now all of
+a sudden you've got you know extra audio
+device options and USB audio devices are
+great these days like there's there's
+almost nothing that you would plug
+because remember we don't need land like
+there's nothing you would have on the
+back of a motherboard that you couldn't
+have through USB if you've got hot plug
+oh that is fantastic ok next step then
+wow that's a lot of scrolling oh this is
+fantastic
+okay what's going on with this VGA
+connection here looks a little flaky
+actually okay stop messing with me stop
+messing with me I'm having a good day
+oh that's tremendous okay I already
+wrote these down ahead of time so that I
+wouldn't have to go and refer back and
+forth to the pages so just give me a
+quick sec here and I'm going to pull up
+my thing
+what not now not now I am live-streaming
+okay here we go
+so multifunction blah blah blah okay so
+it's PCI stub ah IDs equals and then
+we've got okay it was 1b 21 :
+12:42 comma I'll explain what this is in
+a minute 1033 : zero yep zero one nine
+four and one nine one two zero zero one
+five and then I think it's just a space
+yeah okay that should be right so I'm
+just gonna grab that I'm gonna copy it
+to the GUI mode as well mm-hmm oh no
+I've already I've got that there must
+have been tooling around with that
+before
+I often reuse my I'm raids so
+multifunction blah blah blah okay yes
+that looks good to me
+okay so we got a reboot now because what
+we just told our machine to do is to
+okay so what we just told our machine to
+do was to take those PCI identifiers x'
+so what those numbers are is the first
+four digits are the the manufacturer
+identifiers so Intel for example that
+would be eight zero eight six which is a
+reference
+and tells original 8086 processor but
+most most other manufacturers are much
+harder to read remember it's like a
+seemingly random string of letters and
+numbers and then what the second for
+after the colon what the second for for
+is the unique identifier for that
+particular hardware device so in the
+case of our USB controllers here what
+we've done is we've looked up you know
+silverstone and this particular USB
+controller card and what we've done is
+we have told the operating system the
+Unrated operating system that when it
+initializes it's going to ignore these
+devices it's it's not gonna it's not
+going to load them it's going to leave
+them so that we can pass them through
+entirely uninhibited to virtual machines
+so it's called stubbing oh this is going
+to well and yes it's live haters
+pre-recorded live streams who would do
+that monsters that's who okay that was a
+good time to boot up system let's go
+baby don't let me down
+b2 okay no no I mean I had a I had a
+feeling this might work but like seeing
+it work is always different because I've
+had a lot of feelings that a lot of
+things might work over the years by
+Wendell Wendell never lets me down when
+the level 1 techs go check out level 1
+techs after you're done with this live
+stream not before but go check out level
+1 text because that guy knows his shiz
+he was over here for our gaming on Linux
+thing a lot of people were upset that
+our gaming on Linux video didn't mention
+natively gaming on Linux and I have to
+confess we sort of took that for granted
+I think this is one of those cases where
+between me Wendell and Anthony we all
+sort of assumed that people would be
+aware
+you can just play games on Linux with
+like the Linux version of steam and
+stuff but we had a lot of people really
+upset because they felt like we made it
+seem like gaming on Linux was more
+complicated than it is because we
+ignored just running games on Linux
+natively like firing up looking-glass
+and all this your wine and all this kind
+of stuff fair point but I think actually
+we've got a really good opportunity to
+to rectify that with a new gaming on
+Linux video that's entirely dedicated to
+gaming just on Linux because steam has
+their whole windows games on Linux thing
+that they announced quite recently
+actually and we're we're really really
+interested in taking a look at that okay
+hopefully I design those correctly let
+started okay I mean this is all still
+theoretically actually what this thing's
+problem is it's been stupid he's gonna
+deal with that kind of stuff okay so I
+didn't pay attention to the serials so
+I'm actually not sure if this is gonna
+work
+yep there we go we're good all right so
+my cat so weird I always see the weird
+stuff when you go alive you know okay so
+let's just make sure everything's
+looking good here what what oh for
+crying out loud okay he's only supposed
+to come in if like my audio dies or
+something guys are messing with me here
+and he knew that he knows he's be
+everything's be everything's okay alarm
+this is going off everything's fine no
+not necessary okay
+USB wait what oh wait no we're expecting
+this yes okay so wait here's an as
+MediaOne and he said okay yeah no these
+are still here so that's fine I guess
+let's go ahead and have a look at what
+we got here and hmm that's interesting I
+only see one of them that is not so
+these are USB devices so this is the
+conventional pass-through method and
+then this is one of our controllers but
+what I would be expecting to see is
+multiples in there oh oh maybe I screwed
+something up in here now I'm now I'm
+stressed out now I'm really stressed out
+oh wait hold on why is there a line
+break here is that affecting me I'm sure
+there are like Linux wizards out there
+they were like yes that is affecting you
+actually didn't notice that before okay
+let's just make sure I typed these right
+one be twenty one twelve forty two ten
+thirty three zero one nine four nineteen
+twelve zero zero one five yep that's
+right okay let's see if that line break
+was messing us up because if only one of
+those is showing up then it looks like
+this might not have worked at all which
+would be really really disappointing
+right about now oh hey just so you guys
+know this is fun here's our process for
+making sure that our thumbnails are
+exactly as poisonous as they need to be
+so the editor goes through and sends me
+a preview and I say yes that is
+appropriately poisonous or not
+appropriately poisonous this is actually
+going to be a really fun video I think
+you guys are gonna enjoy it Brendan and
+I shot this this was one of those ones
+where nothing went right because we were
+trying to demonstrate the Windows
+activation servers rejecting the
+activation of our Windows once we
+changed a bunch of hardware and they
+didn't what I think is that within a
+certain period of time maybe of initial
+install or maybe within Hardware changes
+it might assume oh you're you're
+troubleshooting and ignore you but I'm
+sure there's like a machine learning
+algorithm that tries to find the people
+who are actually moving the hardware to
+a different or moving the license to a
+different machine incorrectly but anyway
+what I do is I explain why a lot of the
+time when we do screen capture or when
+you look at my screen in my office
+there's that activate Windows thing and
+though the video is gonna be called why
+does Linus pirate windows and I assure
+you guys there's actually a very good
+explanation so you should definitely
+watch that I assume that's going out
+like this weekend or something oh I
+should probably reply to him that looked
+pretty good to me though looks good nice
+I swear this is taking longer to boot up
+every single time oh you know what we
+can use this time on actually this is
+good so my plan today assuming that
+everything goes well is actually to use
+this monitor and I've got all four of
+these graphics cards plugged into it is
+to use this monitor to actually get four
+VMs running so that's why I've got all
+these keyboards and mice and all this
+space laid out for us so we can try and
+get things actually working yes what can
+I do for you so are we running out of
+power
+apparently we have no what okay thank
+you oh crap did I missed that oh bloody
+hell ah you know what I'm not gonna wait
+for another reboot here Brandon where do
+you want this plug didn't you say how do
+i plug it in yeah okay
+turn it till it feels right now baby
+okay we're good all right you know what
+I'm just gonna run and get my laptop so
+I can admit it over the network I just
+need my laptop but I have my microphones
+remember private Internet access is what
+oh they're the sponsor from the stream I
+didn't know we had a stream sponsor well
+heck yeah brother yeah all right yeah
+come in and interrupt me when I'm trying
+to just do something for with no sponsor
+and they're like all right fingerprint
+let's go let's go there we go all right
+it's chewing this up man so I didn't
+check the line break on the headless one
+or the non goo evil and not headless
+logs it's intended to be used endlessly
+so about 20 of 0.22 so now you guys can
+see I'm looking at the same interface
+that I was that I was using before
+actually you know what I could do is I
+could just hook this up to that monitor
+then we wouldn't have to really change
+what we're doing but that's fine not
+flustered I'm just doing it live which
+is always a little bit stressful OOP
+yeah stupid thing the cache is doing
+that we'll get it cache drive weird news
+science finds working okay so now you
+know what let's let's do that let's go
+ahead and use my test cart my amazing
+test cart that you guys probably
+remember from this PC can fly or we
+built a flying piece of here whatever
+whatever we called the video just gonna
+plug this in don't grab these this is
+exactly the right amount of regular USB
+Taipei's for a modern laptop to have -
+is is fine all right
+we'll switch I think oh no that's auto
+adjustment apparently maybe that one
+there now we'll never know the
+difference
+okay so I am hoping yeah I'm hoping yeah
+that's what I'm hoping check this out
+okay so you might have noticed I only
+entered three device IDs that's because
+these two renesis controllers are the
+same so if you stub one you have to stub
+both but that's fine and then these two
+as media ones are the same model the SN
+1142 and then finally we've got the
+super old NAC one from before renesis
+took over any C's USB 3 host controller
+things like the og USB controller so
+that is flippin exciting we've got 5 USB
+controllers and now all we need to do
+now all we need to do is try it actually
+ah well let's let's go oh gee NEC let's
+pick a let's pick a graphics card here
+shall we
+Oh which one which one do we want you
+know what let's take the top slot so
+that would be the Quadro P 5000 right
+there
+sound card oh lordy Oh probably this one
+oh yeah
+probably that one 3 C 0 0.1 yep probably
+ok ah 9 course update so if everything
+went according to plan one of these
+quadrants here is gonna light up let's
+have a look over here Brendan so I don't
+actually know if this thing is on now it
+is HDMI one oh crap what
+unexpectedly closed the monitor
+operation not permitted
+let's try ws2 Oh had the NEC one there
+for some reason let's see if that was
+the problem
+come on baby don't let me down
+show me the start little triangle oh
+that's not good
+that's bad the sound cards bugging us up
+let's just try without sound for now we
+can cross that bridge when we get to it
+come on
+okay in the meantime why don't we try
+one of the other cards here let's try
+the gtx 1060 with the renaissance
+controller whoa hey it should be lit up
+now they're ready
+there it is okay that just like happened
+in the background well I wasn't paying
+attention which controller did I plug it
+into only one way to find out
+hold on USB gaming mouse is set up and
+ready that's a good sign that's a really
+good sign nope that's a function that's
+windows lock wait what do I even have
+anything plugged into that card oh wait
+I mean if it wasn't detected yet maybe
+that's the issue come on you bastard
+this one's got the num lock eliminated
+that's a good sign no nothing yet I
+might have to actually go back in like
+trace for the cable and ws2 is booted up
+so this is this is the real acid test
+seeing two of these VMs booted up and
+having them both be hot pluggable is a
+very solid indicator that we are going
+to be able to do all six because that's
+the limitation we're trying to get
+around not being able to wait not being
+able to do to pass through the cards
+plugged into that daughterboard
+to two VMs to two separate VMs sorry I'm
+getting distracted because I actually
+have to like think now this is this is
+much much further than I thought we were
+going to get today this is turning into
+a very long stream we're trending wow
+has anything this hardcore IT trended on
+YouTube in years this is like actual
+tech stuff not like a phone no offense
+to phones phones are great I like phones
+too as much as the next Mouse is working
+hey Mouse is working okay
+well why isn't the keyboard working wait
+hold on a second why isn't the keyboard
+working okay well you know no this is
+good news so I just got to find the
+other end of that USB cable what which
+one is it this one
+ooh where's that going did it did it did
+it in tracing Oh for cryin out loud
+didn't have a keyboard plugged into this
+card
+okay so then this is it this is the test
+we're gonna use that bloody keyboard so
+this is it this is the NEC card right
+here okay and then this keyboard should
+light up which it did and okay I'm going
+one two three four actually yeah this
+keyboard was in the right spot already
+and then this mouse should go here and
+we should be able to yes hot plug check
+this out look at this no pad I'm a type
+some cheese Yeow
+yes okay that's good but I want to see
+another one light up first so WS to hear
+they have a look
+is the 1060 so the 1060 is here the 1060
+is plugged into HDMI in four but for
+some reason even though this is booted
+up this is not lighting up and I'm not
+sure why that would be input here we go
+oh well that's why because this is
+configured to
+hdmi 3 so why don't we try that oh and
+you can clearly see this was already
+working so there's that alt tab but but
+okay I'm trying to temper my excitement
+here because we're not entirely out of
+the woods yet it is still possible that
+hot-plug will not work on both of them
+so where's my where's my mouse for that
+one let me have a look here always the
+last one I mean it always has to be the
+last one because why would you keep
+trying if you already found the one that
+works all right it's always the last one
+you try anyway oh okay so I need to get
+together into the Cougar see I had all
+different keyboards and mice here that
+was the plan because I was planning
+based on my results last time to have to
+use different ones because when you pass
+through USB devices to the ends if you
+don't pass through the controllers
+because okay remember when I was
+stubbing things if you guys were
+watching before when you put in a
+hardware ID you can only stub like all
+of them or none of them well USB
+controllers have like a similar or USB
+devices have a similar issue so when you
+pass through a USB device to a VM you
+have to pass through all of that USB
+device so if I had six keyboards and six
+mice that all matched they would all
+have to go through to the same VM so
+that's why I had a bunch of different
+ones but now now that I can pass through
+controllers and even same types of
+controllers like I have to stub them all
+at once but I can pass each individual
+one through now that I can do that I can
+have all matching peripherals and that
+will make that will make my OCD excited
+okay so the cooler one is here so let's
+go ahead and unplug it and the bloody
+one well I really wish I had like a
+thing so exciting because now we're
+going to
+hold on a second that's okay so now
+right so what we're gonna do is we're
+gonna Alex and I have a whole plan laid
+out for this already we're gonna like
+this salad do another case or we're
+gonna custom fab something so all these
+are gonna be secured really like
+professionally you know that cool stuff
+oh I'm so excited right now okay if this
+works we should be good yes yes it's
+alive
+the project is alive let's go ahead and
+task manager' this up so you can see
+here each of my VMs one on the left
+actually looks a little cleaner I don't
+know what's going on with the resolution
+here this might not actually have the
+right drivers installed but each of them
+has okay 18 virtual processors so that's
+nine course and then nine hyper threads
+18 for this one the same thing nine
+cores nine hyper threads we're gonna try
+and split it really evenly down the
+middle so in theory each each CPU will
+have three VMs so we'll be sharing six
+channel memory across three VMs so we
+shouldn't actually have to have this VM
+talk to this CPUs Ram almost at all so
+six virtual machines three on each CPU
+and then we'll leave a couple of cores
+on each CPU for the for the hosts or
+anything else that we want to run on
+ungrate or whatever else so the idea
+being that each system effectively has
+64 gigs of dual-channel equivalent
+memory bandwidth we're gonna switch over
+to obtain drives I haven't done that
+because I wasn't even sure if this was
+gonna work those are just sitting on the
+table we're gonna switch over to octane
+drive so every system should have SSD
+like performance even though we're
+running three systems or rather six
+across a raid zero of our raid 10 of
+octane drives I mean do you guys want to
+see us try and light up to more like or
+are we done here I mean we've basically
+we this is it this is proof of concept
+now we're good I think I mean
+can always run into issues but like I'm
+pretty sure we're good but you want to
+see us light up the other two I'll ask
+Anthony Anthony what do they want they
+haven't spoken okay cuz they could be
+bored uh how many
+25,000 people are watching this that's
+cool all right cool
+ha um well in the meantime until I hear
+from you guys I guess what we're gonna
+do is just start adding some more vm's
+then so let's all right well I can't
+finish the whole project today guys
+we've got a whole like plan like we're
+gonna have six cards in there they're
+actually gonna be installed not hanging
+out of these like testing PCI Express
+riser and nonsense here massive shout
+out to Thermaltake by the way for
+sending us all these because it's really
+hard to test six cards in a board unless
+you're using a bunch of risers but
+they're all gonna go in there nice and
+clean it's gonna be hard line water
+cools everything there's gonna be custom
+fabrication going on on our case labs
+case here rest in peace case labs like
+we can't finish today but we can
+certainly we can certainly get a lot
+closer to full validation here so let's
+go ahead and let's give this one did I
+ha
+we glitched out the GUI isn't that
+fantastic look at this there's like
+because it's three digits because we
+have a hundred and eleven threads on
+these two CPUs on Reed Lake doesn't know
+what to do with it okay so I don't
+actually know exactly how many course
+I'm enabling here that's tremendous
+so one two three four five six seven
+eight nine theoretically that's that's
+nine course here let's go ahead and give
+it 64 gigs around the system has 384
+gigs around by the way so every system
+can have 64 gigs ish I think I might
+have to tone it down a little bit yeah
+what's 64 times 6 yeah no I'll have to
+tell them down just a touch but for now
+we can do that
+ah OS install whatever so I did I think
+theoretically throw a couple more images
+on here so we won't have to wait around
+for those to copy do you remember which
+cards I used already Brendan I didn't
+use the tight necks okay sorry I what
+did I use already 1017 p5 okay so
+definitely not tight next and then I
+haven't used one of these as media
+controllers yet those are gonna be a
+little bit inconvenient because I can
+only they have one type C port and I
+don't know if I have a dongle on me but
+let's just go ahead and fire it you know
+I'll go grab a dongle I'll be right back
+sorry one sec That moment when the host
+just leaves a livestream with 25,000
+people waiting like I'm wasted okay so
+what is what is the math work out to for
+that Anthony if I'm gone for 10 seconds
+how many hours of people's time have I
+wasted it feels like a lot of pressure
+right now I'm gonna I don't even know if
+I wanna know the number I wasted 69
+hours sorry everyone
+okay so ws3 is fired up oh I guess I
+shut down WS too but I didn't really
+need to well let's let's go see if it's
+let's go see if it lit up over here
+second oh wait no you know what I think
+it just hasn't I think it just hasn't
+refreshed and caught up here hello
+let's hope up
+oh did we crash the host dang it I knew
+we were pushing her luck you still alive
+there buddy come on everybody oh we
+crashed the host oh I wonder if I
+screwed up when I plugged in that type-c
+thing hmm I don't know it's possible
+that I like shorted something I don't
+think I grounded myself on the case
+first crap so just okay I don't
+generally wear like a ESD strap but
+generally if while you're if every time
+you stop moving you just touch something
+big and metal or ideally something
+that's actually plugged into ground you
+should be fine
+should p.m. but I did not do that
+hi everyone who sent a super ton
+troubleshooting Blake Blake why oh cool
+hi Blake banks I like the stream - Wow I
+should okay but I do also really want to
+get this working so that's the flip side
+of that ah
+let's okay let's let's open that okay
+hold on before I do want to finish my
+thought first okay so a good example of
+something that you can touch to make
+sure that you are actually grounded
+would be the casing of a power supply
+that is plugged in even if it is not
+actually powered on the casing is
+grounded to the ground plug of your
+power of your of your power cord which
+goes to the ground plug of your house
+assuming you're not in one of those
+places like Japan where they don't have
+ground plugs for some reason and then
+you are definitely grounded like you are
+not leaving your room grounded okay
+so yeah we boot it up in that mode again
+so let's go ahead and do that okay oh
+man now I really do feel like we're
+pushing our luck here stressed just fix
+that stupid nonsense really wasn't
+dealing with that right now oh this is
+exciting though I mean maybe you guys
+are my good luck charm like maybe that's
+what's going on here wait a minute
+where's my vm's tab where is my vm's tab
+why is a naval VM set to disable what
+what just happened we just crashed hard
+so hard oh my Wow Wow ws3 is gone okay
+so you know what that's fine because
+we're gonna take this opportunity to
+make sure that everything is configured
+correctly so WS one is going to be the P
+5000 and the NEC controller cool ws 2 is
+going to be the first renesis controller
+and is going to be the no yeah the 1060
+let's leave that the way that it is 1060
+okay
+ws 3 so let's try that again
+ws 3 is gonna be this nonsense that you
+got going on here so we heard it's three
+three nine ten you know what let's just
+call that good enough I mean if it's
+gonna nuke our config if we crash again
+then I guess this is all a waste of time
+you know what let's just throw yeah
+whatever I did fifty three gigs of
+memory who cares okay
+manual user domains ws3 there's that
+boot disk
+okay now let's throw the ten seventy on
+that one and we're gonna do the second
+Renaissance controller create that okay
+then we are going to add a WS for
+and we're gonna grab I don't know let's
+just grab some CPU cores in here
+somewhere
+bla bla bla bla none of this really
+matters that much right now well we'll
+do everything properly later because you
+got to make sure that you're not taking
+cores across separate Numa nodes in that
+kind of crap so these are all just copy
+paste of ws1
+so they're all just the same thing okay
+so now this one gets the Titan X and it
+gets one of the as Media's okay now
+let's take it slow let's start up one
+just patience I know I'm asking for a
+lot of patience you guys have been very
+patient already I think we've been at
+this for like an hour
+by the way Thank You Brandon you're a
+superstar what what 2 euros to get me to
+play Minecraft uh I played Minecraft
+once actually I played it with my son we
+were on the the Cano Cano PC thing and I
+didn't really get it because I'm old
+someday though someday I will learn
+minecraft ok this one's up WSU's er
+there we go beautiful now let's do ws2
+this is gonna be my last attempt if we
+crash when we launch ws3 I clearly have
+some more complicated troubleshooting to
+do there might be some hardware
+instability or something like that like
+I I have never actually heavily loaded
+up this platform so I don't even know
+how how primetime ready it is
+there's ws2 ok I'm just gonna wait for
+it to boot so so yeah I don't know what
+caused that and there might be a little
+bit more work to do stuff that would not
+make sense to livestream the whole time
+come on baby good ok so here's where we
+crashed last time ws3 I wonder if it's
+those as meteor controllers John from
+unhurried did tell me they were junk oh
+but he didn't tell me why so I don't
+know if maybe
+just unstable or they cause instability
+or they maybe they're crappy with
+pasture I don't know exactly what he was
+talking about so it's hard for me to say
+okay theoretically it started so we
+should see it light up any second here
+but I haven't actually checked the
+inputs for that so let me just
+double-check that real quick here we
+never had it light up before right
+Brennan okay oh so that's gtx 1070 which
+is oh I haven't even tested this cable
+before so that's theoretically going
+into the type see the type C connection
+on the back of the monitor here and I
+think I did have that one set up but
+that's weird
+I haven't played around with type C
+display inputs much theoretically it's
+this top one but you know what we've
+actually got another option I've pulled
+in an extra HDMI cable just in case so
+two only two of the HDMI inputs on this
+monitor run at 60 Hertz but for testing
+purposes doesn't really matter because I
+just bumped my cards did it crash okay I
+just like shouldered the daughterboard
+because when we actually roll this out
+for the finished video everyone's just
+gonna have their own monitors anyway we
+won't be using any display / type C or
+anything like that so it won't matter
+okay so this goes into 1070 so yeah I
+don't even know if this cable works so
+we want to eliminate as many variables
+as we can here so that was HDMI in -
+where did I put the remote input this
+one what'd I say - 200 okay alright now
+this might tell us if it's those as
+media controllers that are bugging us up
+because ws4 is the first one I'm trying
+to launch here with one of those
+controllers so that way that was the
+Titan X right so the Titan X goes to
+HDMI three I think so let's make sure
+that's right HDMI one no I think it's
+gonna take you to my three that's how we
+look here oh that's a good sign there's
+one CPU might pull this off ah you know
+what I should do
+I should check my my Network link speed
+here give me one second I don't know if
+I hooked up a 10 gig connection to this
+port oh shoot I didn't so we're only
+running at gigabit so what I was kind of
+hoping was maybe I could even fire up
+Adobe Premiere here and do like a quick
+you know actual demo or something I
+don't know maybe we can you think we
+could sustain to over gigabit you've
+seen the data rates on the network
+connections while you're editing right I
+think we could do too I mean we can try
+okay
+just can you look away while I sign in
+to premiere I don't want people
+hijacking my stupid Creative Cloud
+account that would be very inconvenient
+okay sign me out of the other computer
+so I can sign in here yep fine
+no no I'm not I'm not done yet sorry
+Brendan you're going to timeout I'm
+gonna stare at the wall hi
+okay Thank You Anthony very helpful okay
+we're ready to sign in ready okay
+I wonder what Adobe's uh like login
+servers think of the same user logging
+in at exactly the same time on two
+different machines from the same IP it's
+like what is this guy doing like what
+what is he doing
+I can tell these VMs haven't crashed
+from the cursors that are still blinking
+but I'm not gonna I'm not gonna fool
+around with those ones too much I don't
+think yeah so apparently they didn't
+think much of that because premier is
+not launching over here till loading
+okay
+we went full her pa'dar oh wait
+there we go that's looking pretty good
+welcome to premier pro open a project
+just go find something do you have
+anything that you would suggest that we
+try to open like what's something that
+we're done but like barely sorry deep
+spark oh yeah sure
+okay deep spa project okay their project
+I feel like we're not gonna leave a lot
+of suspense in the finished video at
+this point that I guess that's fine can
+you think of another one I don't want to
+open the scene the same one twice
+bathroom that never smells flying PC
+that's probably been offloaded hey no I
+don't think it has for some reason okay
+cool well someone bugged up but that's
+good for us right now okay so we're
+gonna need 10 gigabit Network for sure
+in order to get decent performance out
+of this whole setup but convert project
+yeah sure whatever
+yeah sure whatever I think s I'm running
+a different version of premiere than you
+guys missing some video filters offline
+all
+okay now normally you wouldn't do this
+we want o no output devices available ah
+no I don't we'll deal with audio devices
+later because this is more than just
+like you know gaming on multiple VMs on
+a single box this is like actual
+workstation use with enterprise grade
+hardware this is cool stuff okay so here
+we go let's it's generating peak file
+for the that does take a while
+I'll premiere Oh
+premier yeah its template file structure
+blah blah blah oh really I don't know if
+we can wait that long unfortunately
+okay well we might have to call it I
+mean I can already see we're running
+into a bottleneck this is hitting 650
+megabit per second
+this one's hitting 300 so right there
+that's it that's our gigabit this is
+holding us back already we need to go
+ten gig maybe even to ten gig
+connections teamed in order to make sure
+that all six of them are able to like
+real-time at it aka red footage so I
+guess that's pretty much it then this
+stream is brought to you guys by private
+Internet access private innocent private
+Internet access is the VPN with a bunch
+of talking points so I don't remember
+exactly what they are right now but
+basically it's a VPN so it allows you to
+hide your identity online allows you to
+use online services as though you are in
+a different country it allows you to
+avoid tracking online if you don't like
+people keeping an eye on what exactly it
+is that you're doing on the Internet and
+we're gonna have a link in the video
+description once this goes up as an
+archive where you can check out P ia I
+don't actually remember what our vanity
+URL is for it
+so let's outro this then thanks for
+watching guys if you disliked this video
+then you know I'm sorry
+I'm sorry you don't like fun but if you
+liked it hit like get subscribed maybe
+consider checking out where to buy the
+stuff we featured at the link in the
+video description I don't know if you
+guys are going to
+by this stuff CPU 5-grand other CPU
+5-grand
+ran oh boy that's gonna be like six
+grand worth of RAM graphics cards we got
+a pile daughter board five grand by the
+time you put all the connections and the
+cables and everything in it so yeah not
+really recommended but you can go check
+you can go buy a t-shirt we'll have that
+link below as well okay Anthony kill it
+by the way thanks everyone for watching</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

@@ -1,0 +1,573 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>FPS Benchmarks Are Flawed - Part 1, Ft. Scott Wasson | Gadgetory - Your Gadget Factory</title><meta content="FPS Benchmarks Are Flawed - Part 1, Ft. Scott Wasson - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus/">Gamers Nexus</a></li><li class="active">FPS Benchmarks Are Flawed - Part 1, Ft. Scott Wasson</li></ol></div><h2 class="post__title"><b>FPS Benchmarks Are Flawed - Part 1, Ft. Scott Wasson</b></h2><h5 class="post__date">2018-12-11</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/W3ehmETMOmw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">everyone I'm joined by Scott Wasat
+talking about frame rate and frame times
+and how they are flawed to go by just
+the normal frame rate metrics that we
+all see that we use everyone else uses
+pretty much so we're bringing it back to
+frame times get it inside the second
+right yeah and that was a pretty big
+piece that talked about all the problems
+with frame rate as a number and what was
+your alternative to frame rate and so it
+was really looking at as you mentioned
+frame times right instead of rates and
+there are a number of reasons for that
+one of the key ones is just that we were
+always looking at frame rate as an
+average and it turns out that averages
+can mask big differences that matter to
+you as you play a game because if you
+have momentary hiccups in your game
+you're gonna notice that the animation
+is not gonna be smooth and it's terrible
+yeah it's a it's a huge problem it's one
+we've talked about recently with our
+frame time plots and we're gonna be
+talking about that more today before
+that this video is brought to you by the
+federal take em 360 plus liquid cooling
+kit which comes with everything needed
+for your first open-loop cooling
+solution the M 360 plus LC kit includes
+a pump and reservoir combo a CPU water
+block 360 radiator coolant plenty of
+tubing and RGB everything if you're
+looking for a one-stop shop for a first
+time open loop the m3 60 plus is linked
+in the description below so the big
+topic here is if this discussion started
+from FPS is nonlinear and here's the
+here's the secret that so you might not
+be aware of if you haven't seen our
+previous video together so the secret is
+all the FPS data is flawed and you can
+only trust it so much but we're gonna
+give it to you anyway but frame times
+that matters so let's let's do a
+masterclass overview what is a frame
+time what what is it measuring right so
+typically when we talk about frame time
+we're talking about the interval from
+one frame to the next frame right when
+you're building an animation you want to
+make sure that you have a pretty
+constant flow of updates to the display
+updates to the user so the animation
+looks smooth and when that's interrupted
+then you perceive it as stutter and
+slowdowns and things like that and
+that's what I want to avoid so if you
+can look at individual frame times and
+find ways find metrics
+the account for those hiccups and
+slowdowns it's a little bit better than
+looking at an average where you can have
+a lot of fast frames and want a very
+slow frame in the middle it's a bad
+experience but the average will hide
+that and will mask that and we'll put a
+we'll put a chart on the screen we had a
+far cry 5 test recently where just one
+product against itself so this in this
+instance it was a 9600 K and the reason
+it was interesting is because the the
+average framerate looked pretty good
+it's completely playable I don't know
+100 or something then the low is even
+we're still like 60 FPS for our point
+one percent low metric which in that
+video we said well you know there's a
+reason that we sometimes show a frame
+time plot instead because this is
+actually flawed because by that metric
+by our own metric 0.1% you're looking at
+60 fps it seems perfectly fine you look
+at the frame time plot and you have
+three or four spikes 200 milliseconds
+and so to explain what that means I
+guess let's let's pull some numbers so
+you have 60 fps what kind of frame the
+frame interval are you looking at
+sixteen point seven milliseconds right
+yeah so let's pull some others I guess
+so you look at a like 120 140 or at
+seven or eight yellow seconds exactly
+and what what is that time mean 16 point
+six six seven milliseconds to do what
+right from one frame to the next on the
+display depending on of course there's
+also the interaction with those displays
+update rate in that timing right but if
+you have a fast display or especially a
+variable refresh display like free sync
+then you know really it comes down more
+or less to the GPU frame time right so
+the less time between frames the
+smoother the animation and I've talked
+about this before because you see people
+online saying 60 FPS is all the human
+eye can perceive or whatever
+get yourself 144 Hertz monitor go to the
+Windows desktop drag a window around
+with your mouse and you can easily
+perceive the difference between 16 144
+yeah I have 144 Hertz displays around me
+and when I have to use a 61 it annoys me
+to copy files
+okay there is clearly a difference that
+you can perceive yeah and that's and
+that's just windows right it's not even
+games right right so so the time then
+the frame-to-frame interflow interval
+you're looking at time between frames or
+time to create the next frame I guess at
+what what point really is it the the
+consistency of that number that users
+notice or is it just lowers always
+better I mean if you're at right for
+milliseconds constantly where do you
+draw the line of that being a good
+experience versus a bad experience
+because of spikes right that's a tough
+one because it's about human perception
+but it's also about a lot of the stuff
+that happens in the PC that's a little
+bit sloppy the interaction between the
+game engine and when it physics
+animation the game engine advances the
+GPU and the CPA mand then the display
+when it's ready to actually show you
+frames there's a lot of timing issues
+there that don't always get resolved
+well but in a case of a game engine that
+does a good job and a fast system and
+then say a variable refresh display that
+sort of tries to match the timing of
+when a frame is ready will show it then
+you have the question of what happens in
+my head space and it's not you can't say
+the human brain runs at 144 Hertz like
+it's this analog meatspace wave I'm
+sorry
+there's analog meatspace thing I don't
+think we know exactly but if you look at
+all the animation systems that we have
+none of them go like I think the slowest
+we know of his movies and it's 24 frames
+per second and usually in movies each
+exposure is sort of window of time
+instead of a quick you know slice they
+actually leave the camera aperture open
+for a while is they capture each frame
+there's some blur right even then you
+know 24 is not always great right and
+that's sort of their their frame rate so
+perceptually speaking I think if you get
+below that you get around 20 frames per
+second about 50 milliseconds I think
+that's where you start saying we're in a
+perceptual threshold where there's a
+problem right right but then they're
+also all these
+about frame rates varying over time
+different people noticing different
+things it's complicated and I don't
+think we have a at least I haven't seen
+good science behind all of that to know
+you know a definitive answer to the
+meatspace question right a lot of people
+try to do that but yeah I have not seen
+any any hard science to it other than
+like WatchMojo top 10 things you didn't
+know about the human brain or something
+so for the FPS is nonlinear this gif
+fine that's something you put a tweet
+out recently we'll put that up on the
+screen too with a graph yeah what does
+that mean what am I looking at yeah so
+if you look at the graph it shows
+basically frame time versus fps over
+time and it just turns out the FPS
+because it's a rate it's not a linear
+measure of performance so I guess the
+best way to illustrate this is like we
+were talking about before at 60 frames
+per second the frame times or 16.7
+milliseconds you know you you get to 144
+it's like seven milliseconds and the
+problem is that and at 30 frames per
+second is 33 milliseconds so you're not
+getting the difference in FPS will
+actually be larger especially at high
+frame rates than the difference in frame
+times you actually have this funny curve
+right and that leads to sometimes some
+not very good online discussions maybe
+in the forum or comments right about the
+differences between different
+performances and I think the the classic
+best example of this is where you're
+talking about game performance over 200
+frames per second yes right if you have
+something at 230 frames per second and
+you have another another device that
+runs this game at 200 frames per second
+people say well that's a 30fps
+difference that's huge and a gamer will
+know that in certain cases 30 FPS is a
+very large difference perceptually
+speaking in certain cases but the case
+of the gamer may be thinking about is
+the difference between 30 frames per
+second and 60 frames per second which it
+turns out because FPS is not linear is a
+much larger difference than the
+difference between 200 and 230 yes for a
+second right and so you're functionally
+having you're fans of Fame interval
+whereas you start going up to like 300
+FPS versus 270 fbi's rough math but I
+think you're at about a 0.5 millisecond
+difference between 2/7 in terms of the
+frame the time it takes to create that
+frame 0.5 second point 0.5 milliseconds
+longer to create the frame at to 70 FPS
+versus 300 FPS so if we're talking 3.0
+or 3.5 versus 3.5 or 4.0 really who
+notices that I guess is the question
+right well that's the thing is you start
+getting into a very high frame rates fps
+differences that sound consequential but
+turn out to be very small differences in
+time if you measure it in frame time so
+I'm milliseconds which is a linear right
+right and so I think you get to the
+point where you're kind of over valuing
+or exaggerating those differences at
+highest yes compared to low so then let
+me what if we do that's let's approach
+this from how a lot of reviewers will do
+it including us sometimes well if you
+convert that into a percentage so now
+it's not FPS so it's it's you're not
+worrying about the nonlinear side of a
+raw number of FPS still nonlinear
+because there's a percentage of a lot
+nonlinear number right but if you're
+talking on 60 FPS where 54 FPS to be
+doing percent improvement a percent
+reduction is roughly 10 percent
+difference and then you have 200 versus
+220 it's roughly a 10% difference as
+well right so is that an acceptable
+approach in your mind
+well you're still you have an underlying
+metric that's not linear right and so
+you're going to retain that
+non-linearity yes and so you're gonna
+have the same basic problem it maybe is
+worse because you've masked what you
+just did that yeah you know if you don't
+have your units if it's just a
+percentage I I think that the
+appropriate way if you had to do
+percentages and there are problems with
+doing percentages beyond this but the
+appropriate way if you stat Mathan right
+right
+but but if you have to use a percentage
+or you decide that's what you want to do
+then I'd say start with the base unit of
+frame times and do a percentage in frame
+times instead of an FPS so that you have
+a sort of honest accounting of the
+difference now that that would mean you
+know in in one of our vein or example
+cases like the 307 versus 270 yes you
+know it's like it's like a half
+millisecond difference right yes so if
+you take let's say 300 FPS is 3.3
+milliseconds for it's just a thousand
+divided by the frame rate so 3.3
+milliseconds versus we want to say 270
+250 270 270 is 3.7 so the percent
+improvement of a new minus old divided
+by old 300 minus 270 equals 30 divided
+by two seventy percent improvement is
+11% if you go that direction based on
+frame rate res what were our numbers
+three point three versus three point
+seven I think a three point the new
+would be down in this case a three point
+three minus three point seven divided by
+three point seven you've got roughly an
+eleven percent reduction but we just
+went to different directions with the
+percentage math right because if you're
+doing new minus old divided by old and
+your new number is now lower
+instead of higher that's gonna change
+the not the math too so pretend it is in
+general yeah well they they obscure
+things right yes one of the things I was
+gonna say is when you're talking about a
+half a millisecond difference and we go
+the other way
+twelve percent no way okay I contend
+right if you don't matter 1/2
+millisecond difference in the
+performance of two systems then you can
+ask yourself the question is is
+meaningful mmm right you know is the
+display capable of showing me a half
+millisecond difference am i capable of
+perceiving it right whereas if you're
+talking about a difference that's you
+know 10 15 16 milliseconds then that may
+be a very different conversation right
+right and so percentages can mask the
+native units and so you're not thinking
+about the perceptual element in the same
+way as you would be if you're thinking
+about that if you
+it's yes right yeah and then let me let
+me channel my inner Gordon from PC world
+some of you may have seen my video where
+I was with him Gordon had a great phrase
+I thought he said he said but I'm the
+internet though
+but I'm the internet so Scott if I'm the
+internet 240fps 3rf is I can see that
+difference I can see 300 FPS so you are
+wrong mm-hmm how do you respond to that
+but that's an interesting one because
+are there very many displays that are
+faster than 240 Hertz refresh rate well
+if I'm the Internet I'm gonna say yes
+without checking we write write write I
+write and then we can talk about the
+that in that case again we're talking
+what about 0.7 millisecond difference
+there's something from estimating off
+top of my head you know and we just had
+this conversation about the meatspace
+situation you know where you know we
+really notice a problem in animation
+above like 50 or so milliseconds I mean
+you're at the outer end of the human
+scale right yeah plus then they're there
+these there's some slop between the the
+game engines timing and when things get
+sent to this play and when does this
+play finally gets the pixels updated you
+know that can be more than that point
+seven millisecond Delta sure so the
+timing on all this stuff is hard right
+and so I suppose it's difficult at the
+end of the day to dissuade someone who's
+completely confident that they're
+correct but there really are like
+numbers of perceptual thresholds and
+realities of other variables in here
+that that pretty much will tell you you
+know now you're not you're not gonna see
+all right right and fps in general I
+should also say is just kind of a funny
+number to begin with because if it's
+frames per second what you're looking at
+that active like an FPS counter on the
+screen you kind of get into a territory
+of what does that really mean because if
+I'm playing the game and I'm looking at
+a counter of 60 FPS is that referencing
+the previous second averaged a frame
+time or and I guess that kind of depends
+on
+after and how it measures - why don't we
+all just use frame times I guess would
+be the the reasonable question someone
+might ask after after hearing all of
+this right I think from my perspective
+there are two answers and one is
+everybody understands it even if it
+doesn't necessarily mean it's not a
+perfect metric they understand or they
+think they understand it the other one
+is from a presentation side it's easier
+to present a bunch of bar graphs because
+if you do an overtime plot like some of
+the ones we've shown you really can't
+get more than a couple lines before it's
+just illegible right so what is the how
+do you compromise how do you how do you
+compromise between a metric that is
+objectively better to use frame to frame
+interval frame x versus a metric that is
+widely understood by the audience right
+so that's just an education problem
+teaching a viewer yeah I think to some
+extent it is but to some extent you've
+got to try to meet the viewer halfway
+right so you're one of the conversations
+that we've always had about this is I
+like the idea of using a frame time and
+I actually like the idea of using a 99th
+percentile frame time where you have
+this curve you give it because this is a
+problem you have a distribution frame
+times it's not just one and you have to
+summarize this entire collection in some
+meaningful way you know and so you you
+can sort of sort them smaller tire so
+you can pick a point on that curve and
+you can say okay this is where we are at
+you know 99% of all frames rendered this
+is the time that we have and we can
+compare that across lots of different
+things right right and that works then
+the conversation becomes well why are we
+using frame time if everybody's used to
+fps can we do the 99th percentile fps
+and the answer is sure you can but
+realize that when you do that you're
+compromising the native units that
+you're going to a nonlinear measurement
+and so averages out some of the frames
+are spikes too even at 0.1% you average
+a lot of those oh well that's a
+different thing right when you're doing
+0.1 or 0.01% and I didn't know this till
+we had a conversation about fairly
+recently but 0.1% is basically the last
+point 1 percent of frames that that
+distribution collected together and then
+averaged yeah and when you average then
+you can mask problems yeah right and
+that's why it's important if you use
+those numbers so again our 9600 K review
+is the most recent that I can reference
+if you use those numbers
+you're either referring to them as a
+viewer or you're using them as a
+reviewer you have to understand the the
+whole picture of the data and what might
+be hidden by an average so it's still
+important to go look at a frame time
+plot look at what is where does it spike
+then you look at your averaged numbers
+and does it hide all of that data and
+the case of far cry 5 it did going back
+to our earlier example great far cry 5
+was objectively a bad experience because
+you would hit these stutters that are a
+tenth of a second lon
+you know it's too long which is bad yeah
+but you don't see it in a point one
+percent because it is it out even though
+it's only 0.1% yeah so yeah it's still
+flawed yeah so so it's always a
+challenge because you want to do the
+right thing in terms of the metrics but
+you want people to be able to understand
+right and consume what you're doing
+right and I haven't found a perfect
+answer yet there so there's some
+approaches like the percentile thing or
+time spent beyond acts that we could
+talk about that are I think reasonably
+good metrics to certain things but yeah
+it it's hard to sort of summarize and in
+an ideal world when things go well maybe
+FPS would be enough right right that's
+that's at least the potential that the
+graphics card in the system has to to
+produce performance the question is does
+it deliver it consistently and that's
+another question right yeah so then
+you've got the old questions of frame
+quality too like if the different
+graphics devices render the frame a
+different way different colors phase
+whatever which is something you probably
+dealt with more when you're doing tech
+report maybe 10 years ago or something
+the frame quality was because I remember
+they used to be like a fire strike test
+where you could pull like a single frame
+render and then compare the frame side
+by side on a TI at the time in Nvidia
+right well it's interesting because
+graphics api's are not compute api's and
+a cpu if you compute a number and you
+get the wrong answer it's bad right
+thing to crash it doesn't work right and
+a graph
+API if you compute a color and you
+output it differently than maybe the
+someone else would that's not
+necessarily right it becomes a problem
+sort of surprise right so different GPUs
+have different texture filtering
+algorithms that they use and things like
+that so there's not a deterministic this
+color of this pixel should be exactly
+this value right and so everybody in
+graphics whether it's the the game
+developer or the driver writer or the
+GPU architect is trying to do the best
+job of combining sort of faking you know
+this this is this needs to look good but
+we don't want to do too much work
+combining those two elements in order to
+give you a good experience and yeah it
+can get tricky yeah yes so I would say
+if you want more of this discussion go
+to tech report and read Scott's articles
+but you might have already read them if
+not check out what is it called inside
+the second inside the second from a
+couple years ago at this point that's a
+good starter and I think we talked
+previously I think there was one thing
+you might have changed about that
+article if you wrote it today the
+phrasing of was it latency frame latency
+yeah yeah why would you change that
+okay so latency or lag is something that
+we know in you know computers and gaming
+and things like that and I talked a lot
+about frame latency when I was doing
+some of these metrics and it really was
+about the frame to frame interval and
+the problem then is that he went AMD and
+we started thinking more about how can
+we reduce input lag and we actually made
+some changes in like reading on software
+to reduce buffering in some cases so
+that we have less input lag Radeon chill
+reduces input lag that's really sort of
+latency the the key with animation is
+the frame to frame interval time which
+is a bit of a different thing so I
+probably would not use change the
+variable Y and not use that at this
+point but understanding that check out
+the article if you haven't otherwise
+Scott is here with an announcement that
+we'll talk about later
+so stay tuned for more of that and Scott
+thank you for joining me certainly any
+time we'll see you all next time</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

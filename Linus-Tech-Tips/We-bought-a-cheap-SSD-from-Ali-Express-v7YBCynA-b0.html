@@ -1,0 +1,196 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>We bought a cheap SSD from Ali Express.. | Gadgetory - Your Gadget Factory</title><meta content="We bought a cheap SSD from Ali Express.. - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Linus-Tech-Tips/">Linus Tech Tips</a></li><li class="active">We bought a cheap SSD from Ali Express..</li></ol></div><h2 class="post__title"><b>We bought a cheap SSD from Ali Express..</b></h2><h5 class="post__date">2018-10-15</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/v7YBCynA-b0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">so we're on Aliexpress looking for
+bizarre components for an upcoming
+project and we stumble across a series
+of really cheap SSDs from a company
+called King spec which kind of sounds
+like a knockoff of Kingston and this
+raised a couple of questions for us one
+how can they be cheaper than massive
+multinationals like Samsung or micron
+who enjoy the industry's best economies
+of scale how would something like this
+perform and perhaps most importantly
+should anyone trust what is probably the
+most valuable aspect of their computer
+their data to a relatively unknown
+player oh oh and one more question have
+you ever heard of our sponsor glass wire
+glass wire lets you see your current and
+past network activity detect malware and
+block badly behaving apps on your PC or
+Android device use offer code Linus to
+get 25% off at the link below
+first things first the on paper
+specifications which getting our hands
+on was actually not as easy as you might
+think so the official page lists neither
+the controller so that's effectively the
+brain of an SSD that controls how data
+is managed on the NAND flash nor the
+exact type of NAND flash that was used
+by the stripe furthermore when we
+cross-referenced whatever data was out
+there in the wild often on third-party
+sites we actually found a ton of
+conflicting information everything from
+different NAND types and LCD versus TLC
+two wildly swinging sequential read and
+write ranges in some cases we actually
+found conflicting information within the
+same page now we were able to determine
+at least that the controller on our
+particular unit was probably a dear
+analyst model from max EOTech which is J
+microns SSD division that was spun off
+into a separate entity and that it's
+probably an NK 8 1 1 5 but we decided to
+leave confirming it until all the
+testing was complete just in case our
+autopsy found that the patient was
+deceased
+due to the autopsy okay so for those of
+us who are not quite up to speed on what
+makes an SSD tick aside from the like
+you plug it look in and it makes the
+loading low faster and why being be
+round list is important
+here's a quick primer when your
+operating system sends a write request
+to an SSD it actually assumes even
+though it's 2018 that it is talking to a
+hard drive and sends data in logical
+block address or Lda form now SSDs they
+don't do LBA instead storing data in
+blocks which each contain four kilobyte
+pages so that's where the flash
+translation layer inside the SSD comes
+in it converts lb
+requests into actual block and page
+addresses acting as sort of a table of
+contents what's more each NAND cell has
+a finite number of times that it can be
+overwritten so there needs to be logic
+inside the SSD that takes care to spread
+out the where evenly this is a process
+known as we're leveling further
+complicating this process though an
+individual page cannot be erased from a
+block so to remove part of the data from
+one block the whole block has to be
+moved over to a second one - the pages
+containing parts of the file that are
+marked for deletion once that's done the
+first block can be marked as safe to
+overwrite now this consolidation or
+moving around is known as garbage
+collection and SSDs have at least 7% of
+their true capacity hidden sometimes
+more in order to help shuffle data
+around this is otherwise known as
+over-provisioning now as you can imagine
+as an SSD gets more filled up with data
+this garbage collection process gets
+more difficult because the fewer spare
+blocks you have the harder it is to
+organize the ones that remain especially
+during heavy use when it has to perform
+this shuffling on-the-fly
+this is where not having a dram cache
+can hurt you remember that table of
+contents we talked about ideally that
+gets stored on the cache so then without
+a fast way to look up where what goes
+writing data to a dear Alice SSD ends up
+being kind of like going to the mall
+without a directory and then imagine
+you're in a hurry like you're doing
+random writes of small files all over
+the drive which actually happens a lot
+during regular usage or or does it so
+let's look at some performance here oh
+oh oh wow oh
+manatee sorry okay enough of that let's
+actually look a little closer at those
+numbers in sequential reads and writes
+from a clean state everything here
+actually looks fine but the same can be
+an SD card and when we ran windows on
+one of those recently the results were
+well less than ideal but we're our kings
+BEC SSD falls flat on its face is where
+small size transfers come in so we're
+talking being beat by an order of two
+and a half times in some cases and then
+embarrassingly enough this model we're
+comparing it to right here is also a
+cashless model this time from Corsair so
+it seems to be a mix of the who knows
+what manned and the cheap-ass controller
+along with an unexceptional firmware and
+that is with the drives empty and
+trimmed this situation can only get
+worse as the drive fills up game level
+load times could be seen as a redeeming
+quality those are fine but honestly by
+this stage of our testing they just
+aren't enough for King spec to be
+getting any kind of recommendation for
+this drive especially given the mix down
+as on reviews that are either basically
+yay works great or died quickly no
+response from the RMA team with someone
+even going as far as to set up a
+complaints page about King spec the
+final nail in the coffin is the price so
+our no-name SSD is cheap sure at the
+time we ordered it it was the cheapest
+512 gig that we could find but cheap is
+not the same thing as good value so
+given that something like a Samsung 860
+Evo can be had for complete with five
+year warranty by the way about ten
+dollars more and I guess the conclusion
+is this I recommend the Kings back p3
+512 I strongly recommend it as a gift
+for someone you don't like speaking of
+things I recommend as a gift although in
+this case for someone you really like
+mass drops Sennheiser HD 6 xx headphones
+this is one of mass drops all-time
+bestsellers and why wouldn't it be
+over 40,000 of their members have picked
+these things up to date and people
+continue to walk them it uses
+the legendary HD 650 drivers as a base
+to deliver a balanced mid-range and
+natural sounding bass it's got a
+detachable six-foot cable instead of the
+10-foot cable on the original this is
+based on the community's feedback and it
+comes with support from Sennheiser so
+check out the link below to join the
+drop today so thanks for watching guys
+if you just like this video you can hit
+that button but if you liked it hit like
+and subscribe maybe consider checking
+out we're gonna buy the stuff we
+featured at the link in the video
+description also down there is our merch
+store which has cool shirts like this
+one and our community forum which you
+should definitely join to be clear we're
+not really recommending this one you're
+just saying this one is really bad</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

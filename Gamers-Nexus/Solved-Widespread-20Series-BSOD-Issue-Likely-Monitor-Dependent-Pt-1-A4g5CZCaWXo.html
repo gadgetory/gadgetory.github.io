@@ -1,0 +1,243 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Solved: Widespread 20-Series BSOD Issue Likely Monitor Dependent, Pt 1 | Gadgetory - Your Gadget Factory</title><meta content="Solved: Widespread 20-Series BSOD Issue Likely Monitor Dependent, Pt 1 - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus/">Gamers Nexus</a></li><li class="active">Solved: Widespread 20-Series BSOD Issue Likely Monitor Dependent, Pt 1</li></ol></div><h2 class="post__title"><b>Solved: Widespread 20-Series BSOD Issue Likely Monitor Dependent, Pt 1</b></h2><h5 class="post__date">2018-11-07</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/A4g5CZCaWXo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">round one of Dyne 28 ET i investigation
+involves several monitors we've had more
+in here and a stack of video cards we
+have an update on the first round of
+dead
+in quotes RT x 28 ET is the reason
+that's in quotes is because some of them
+are legitimately experiencing some kind
+of hardware level issue and then some
+are BS or these software issues CTD
+scratches desktop things like that so
+this is the first half or so of the
+cards that we actually not even that
+that we have coming in these the ones
+that got in today ran some validation on
+a few of them already some have definite
+either BIOS or hardware level issues
+talk about those separately and some
+that are just BSO DS really bad ones
+though we've been able to reproduce but
+it's very difficult to do so so we're me
+talking about specifically the Nvidia
+BSOD issue the blue screen of death on
+the twenty series cards for today before
+that this video is brought to you by
+thermal grizzly and their high-end
+thermal compounds thermal grizzly makes
+cryo not paste for high thermal
+performance and conductivity without
+being electrically conductive so you
+don't have to worry about shorting
+components
+Crona is particularly good for replacing
+stock GPU pastes as cryo not is a non
+curing compound learn more at the link
+in the description below so this one is
+really pretty simple the blue screen of
+death if you're not seeing artifact and
+you're not seeing frequency locks like
+the 1300 megahertz which we do see on
+one card and all you're seeing is a blue
+screen of death that happens seemingly
+sporadically it happens almost
+definitely when you play games maybe
+within the first hour it is typically
+associated with high refresh monitors or
+with g-sync this one we've been able to
+reproduce like once or twice and that's
+kind of it it's really difficult to
+recreate the issue without everyone's
+exact hardware configuration but in
+reproducing the issue a couple of times
+and talking with people who have
+experienced the issue on the cards
+they've sent in we've collected enough
+data to more or less pinpoint this one
+so the blue screen of death
+the main one you're likely seen as irq
+not less or equal and if that's the one
+you're seeing that seems to be
+associated with displays and so we were
+able to reproduce this issue once and
+shadow of the Tomb Raider with a g-sync
+display specifically at 60 Hertz so it's
+not high refresh but it is GZ and it's
+an
+oh geez display we were not able to get
+that issue to occur on our 144 Hertz
+freesync monitor with obviously adapted
+sync not doing anything and we're not
+able to get it working on our 100 Hertz
+g-sync monitor so or not working in this
+isn't where the bsod was only happening
+to us with that specific display so in
+talking with other people who have high
+refresh displays that is exactly the
+issue they're seeing where it's irq not
+lesser equal with a high refresh display
+often with g-sync enabled so if you have
+high refresh any of g-sync that might be
+the issue it might be display dependent
+you can validate this by getting another
+display that you might have in your
+house already connect it and see if you
+if the issue goes away and if it doesn't
+I'm not sure if lowering the Refresh and
+disabling g-sync will fix it but one of
+the users who sent in a car did report
+that that helped them with their
+problems so I keep that in mind and
+videos aware of this issue we actually
+managed to get an Nvidia driver update
+from one of the customers who's going
+through the RMA process and they were
+talking to support who provided them
+with a an Nvidia driver update and also
+one of the other users with a different
+board got the Nvidia driver update and
+so from one of those two people we got
+the new head driver and what that does
+is it should fix a number of issues and
+one of them I believe from what we've
+been told is supposed to be that irq not
+less or equal because we have so much
+difficulty reproducing that bsod in
+general because we don't have the exact
+displays causing the issues it's hard to
+validate because like I said we've seen
+it watch it twice
+we saw it actually I remembered back in
+our review of the 20 80 and the 20 atti
+we did see a bsod also wants or twice on
+the same 60 Hertz g-sync display but the
+problem there was when you're reviewing
+a product there's so many things that
+could be wrong it could be the OS it
+could be a CPU it could be an
+overclocked issue it could be a software
+level it could be a driver and without
+the ability to consistently get it to
+happen we can't pinpoint anything and
+call it an Nvidia fault so we moved on
+because it didn't happen anymore but
+this is actually the exact same issue
+that you all are seeing so apparently it
+was a much greater deal than we knew it
+was at the time but anybody's got a
+driver update that's supposed to fix a
+lot of that and our understanding from
+Nvidia directly is that it's supposed to
+come out this week
+so we confirm that with them likely from
+what others from from the fact that the
+customers are getting the driver already
+that should be true so if you're having
+a bsod issue wait for the driver that
+might fix it there are definitely other
+problems like there are hardware level
+issues some people have different VSO
+D's we got a really specific CTD that's
+been consistent a hundred percent
+reproducible and I'm going to read you
+what that message is so 100%
+reproducible specifically on a one on a
+secondary monitor so multi monitor is
+another problem with these twenty series
+cards if you're running multi monitor
+that might be part of your issue try
+disconnecting one of them so
+specifically and only when we run multi
+monitor with the 144 Hertz
+no any sync no g-sync display we are
+getting this error in some games like
+GTA 5 specifically it's e e RR
+underscore GFX underscore D 3 D
+underscored in ini T so error graphics
+direct3d initialization failed the
+initialization please reboot and restart
+the game try reinstalling the game of
+this persists and if anyone actually did
+that I'm so sorry because that's not
+gonna help yeah that's that's completely
+separate issue that's a multi-monitor
+issue we can reproduce that 100% of the
+time with a multi monitor configuration
+with any 20 series card like all of them
+so and the BSOD is also not limited to
+specific cards it's also all of them it
+is a display dependent issue and
+potentially sometimes game dependent
+given that we can most reliably
+reproduce it in shadow the Tomb Raider
+but when that game came out it was so
+new that again we just assumed there was
+probably a game level issue apparently
+that was not the case though because a
+lot of you are seeing this happen in
+things like Dishonored for example so
+that's what we got for you for now we
+are also working on hardware level
+issues the artifacting is the big one
+clocks being locked to like 1,300
+megahertz or in some cases even lower is
+another big one so we're working on
+diagnosing those trying to see if
+there's a hardware difference see if the
+serial numbers are in a certain batch
+anything like that stay tuned for that
+we're working hard on it we have a lot
+more cards coming in if you have already
+thank you we'll get it back to you soon
+if you were sending one in please
+continue to go through and send it in if
+you are seeing any kind of artifacting
+any kind of clock issues frequency fan
+issues anything that's potentially
+hardware-level
+send it along to us you can email us at
+dead twenty atti at gamers nexus net and
+we're getting a lot of emails there so
+I'm gonna try and respond to all of them
+and please only email if you actually
+have one you want to send in or if you
+have a serial number for a card that is
+working or no not working if you can't
+send it in but you can send a serial
+number and tell us if it's good or not
+that would also help narrow down the
+range and also describe the issue you're
+seeing if you're seeing one so well of
+updates for you soon but the first major
+issue the BS or DS are very widespread
+because it's all cards
+it's just display and maybe game
+dependent sometimes and we just got a
+driver update for that so let's let's
+see that's the news for you keep an eye
+out on Nvidia's website this week and
+hopefully you'll see a fix for your
+problems if you not keep us posted
+that's all for this one subscribe for
+more as always go to store like aaron's
+axis dot net if you want to support this
+type of content specifically there's a
+lot of extra and different work for us
+you can grab this shirt while it's still
+there I think we have maybe like two
+dozen left or something so grab it from
+the store if you want to pick it up
+otherwise we'll see you all next time</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

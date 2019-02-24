@@ -1,0 +1,309 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>GeForce RTX 2080, Teardown &amp; Technical Details | Gadgetory - Your Gadget Factory</title><meta content="GeForce RTX 2080, Teardown &amp; Technical Details - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Hardware-Unboxed/">Hardware Unboxed</a></li><li class="active">GeForce RTX 2080, Teardown &amp; Technical Details</li></ol></div><h2 class="post__title"><b>GeForce RTX 2080, Teardown &amp; Technical Details</b></h2><h5 class="post__date">2018-09-14</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/s2o1rdh_LZk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">welcome back to harbor unbox today is
+the official unboxing embargo for the
+GeForce r-tx 2080 and 20 atti but in
+addition to just taking out of the box
+and showing you the card we can share
+some more technical information and
+video provided us with loads and loads
+of info a way more than we had time to
+digest has only got access to it last
+night and I have been busy testing that
+new Athlon 200g II processor despite
+that I will be touching on some of what
+we believe to be the more interesting
+aspects of the technical document but
+ultimately I think you guys are probably
+a bit over hearing about how well the RT
+X series will perform based on
+information provided by Nvidia so most
+of the details will just save for our
+review on the 19th at which point we'll
+finally have performance numbers that
+will actually mean something
+since we're allowed to unbox and show
+you the card I thought we'd go one step
+further and tear down the 20 oh you have
+a closer look at the PCB and of course
+the new cooler we do have a dual fan
+cooler that we've sort of seen but we
+haven't really got a truly good look at
+yet I don't think so we're going to do
+that and we'll also compare it to the
+cooler on the 1080 and as luck would
+have it I do have a teardown draw 1080
+cooler basically so we can check that
+out and nice and convenient
+unfortunately you've probably noticed I
+have just the single box I don't have my
+20 atti yet is on the way but some
+issues there with DHL and customs so
+that has delayed the card hopefully I
+will get it tomorrow if not on Monday
+and then I can get all the testing done
+ready for our day 1 coverage and video
+we're a little bit slow getting the
+cards out it's usually pretty tight
+these deadlines this one seems a little
+more crazier than normal but yeah
+hopefully it goes smoothly from this
+point forward we just got the drivers so
+drivers are also quite late basically
+all media around the world can kiss
+their weekend goodbye along with that
+thing you normies call sleep sorry first
+before we rip the car out of the box and
+have a look at it and drool over it
+basically but she's going for a few
+technical details basically the main
+architectural change
+between Pascal ensuring is the addition
+of two extra blocks in each cheering SM
+unit whereas Pascal was essentially just
+a massive collection of floating-point
+units cheering introduces tensor cores
+and integer units in addition to the
+standard floating-point units this makes
+the call larger and increase of the TDP
+but crucially cheering supports
+concurrent FP 32 and into 32 execution
+Fortin video claims is a handy
+performance boost the idea is that the
+integer instructions that previously
+around the floating-point units can now
+be offloaded to the integer pipeline
+ensuring and running concurrently with
+floating-point instructions in video
+claims that on average 36 integer
+instructions can be offloaded and run on
+the entry cores per 100 floating-point
+instructions though of course that
+varies depending on the game it's
+claimed by envy this concurrent
+execution helps improve shader
+performance by 50% or more in some
+situations of course these graphs don't
+show how concurrent execution will
+impact a game's final France a second
+figure shading is only one part of what
+the GPU needs to do to render a game so
+your stuff to wait for benchmarks to see
+how this architecture change impacts
+gaming performance but what we know is
+that at least one aspect of a game
+rendering can be accelerated in a new
+way with cheering cheering also has a
+native HDR display pipeline thanks to an
+all new display engine so the
+performance dropped Tim discovered with
+Pascal cards when switching on HDR
+should be fixed with cheering in video
+is very keen for us to explore this but
+with extremely limited time our tests
+the cards that will likely have to be a
+follow-up piece probably produced by a
+team and the final thing worth
+mentioning right now is Nvidia has a new
+env scanner API that allows one-click
+overclocking utilities such as EVGA
+precision will integrate this API and
+provide a feature where with one click
+you can sit back for roughly 20 minutes
+as a software uncovers the exact voltage
+frequency curve for your graphics card
+and from there you can choose optimal
+stable frequencies to run
+sounds pretty neat and we'll have to
+give that one a try a bit later on with
+our review Tim also plans to dive into
+overclocking and provide some separate
+content pieces around that as well so it
+should be quite interesting so that is
+pretty much everything we need to
+discuss at this point I think it's time
+to take the r-tx 20/80 out of the box
+I'll take
+look at the card first we'll go over all
+the external design of the card then
+I'll do a quick jump cut you guys will
+be none the wiser but I'll jump away
+quickly test thermals and then I'll jump
+back to tear the thing apart and we'll
+continue from there okay so I'll get my
+knife and I'm a bit excited about this I
+don't think I've ever anticipated a new
+graphics cards or new GPU release as
+much as this anticipate the performance
+be interesting to see how these perform
+obviously we won't know until next week
+but yeah very exciting stuff so here is
+the box pretty standard box similar to
+the other ones I mean the box Art's a
+bit different the physical design and
+size of the box is what we've seen with
+previous models so here we go it'll
+probably be in a anti-static bag yes it
+is so it doesn't look quite as good hmm
+got some a little tag attached to it I'm
+pretty sure that doesn't come with the
+retail versions we'll just cut that off
+without scratching the card okay let's
+take this anti-static bag off and we got
+some clear plastic protecting it we'll
+get that off and let's try that again
+for maximum effect are you ready for
+this so actually I don't want to lose
+any fingers I need them for benchmarking
+and here we go again it's like you've
+never seen me do this before whoa
+awesome I have to say it actually looks
+a lot better in the flesh than it did in
+the release announcement coverage and
+photos and stuff we saw I said in my
+announcement video that I didn't really
+like the look of this card I a lot of
+people didn't like the look of this car
+but I quite looked quite looked I quite
+liked the look of the original founders
+issuing card I thought it was quite cool
+like the aggressive lines or the
+triangles and things well that was
+pretty cool but
+obviously not everyone's cup of tea but
+anyway and I didn't really like the look
+at this but I have to say seeing it in
+the flesh I think it looks actually
+looks really good that feels very
+premium yeah
+the silver backplate which is a
+one-piece backplate this time looks
+really nice a lot better than what I was
+expecting to be honest it looked a very
+plasticky and nasty and the photos I
+thought but yeah it's a it's pretty much
+all aluminium and you'd see it in most
+systems like that and I think that looks
+that looks pretty awesome so obviously
+it looks very different to the original
+10a found edition graphics card for
+obvious reasons the coolers very
+different you have the single blower fan
+on this design which they've used for as
+long as I can remember pretty much till
+back in the days when they were single
+slot cards and going back a long way
+but anyway we get the two fans and we
+get what looks like a massive heatsink
+we're going to get into that in a second
+nice little IO panel there we've got the
+types Eve got display ports I'll provide
+some information about the display ports
+towards the end of the video HDMI so a
+three DisplayPort out and then of course
+the sort of a backplate that we just
+looked at which wraps all the way around
+the card completely encloses the card so
+that's different and then we have this
+little plastic bit here that pops out to
+give you access to the envy link
+connectors if you want to connect
+another card up but yeah SLI I don't
+know if you guys still do that I don't
+yeah I think it's probably time to go do
+what I've got to do with this jump back
+and then we'll pull it apart
+okay so in total the PCB measures twenty
+six point four centimeters long and nine
+and a half centimeters tall and weighs
+238 grams the cooler though that tips
+the scales at a whopping 936 grams which
+is seriously heavy for what is a rather
+compact cooler by high-end graphics card
+standards with the cooler installed the
+r-tx 2080 found edition measures 27
+centimeters long and 10 centimeters tall
+and in total weighs twelve hundred and
+sixty six grams making it 25% heavier
+than the 1080 fe card
+speaking of which of the cooler on the
+1080 Fe weighs just 686 grams and that
+means the 20/80 cooler is 36% heavier
+the fins on the heat sink measure 12
+millimeters tall and run virtually the
+entire length of the card so this is
+largely why the card is so heavy that
+and the fact that almost the entire
+thing has been constructed from
+aluminium on the PCB we of course have
+the massive Turing GPU codename tu-104
+there's also eight one gigabyte GDD are
+six memory chips providing an 8 gigabyte
+vram buffer the chips in question of
+microns mt6 1k 256 M 32 J a 14 a and
+this is their 14 gigabits per second
+memory we also find what looks to be an
+8 + 2 phase very amusing on
+semiconductor power stages I wasn't
+quite able to make out the part numbers
+but the time I had available so I'll
+have to dig into that for their review
+finally I should just note the RT X 28
+EF e cards feature a 6 pin an 8 pin
+power connector whereas the FE version
+of the GTX eternity only included a
+single 8 pin I have to say overall I am
+much much happier with how these new
+found Edition graphics cards look as I
+said earlier didn't really like the
+images the stuff provided by Nvidia that
+we saw online but yeah now having got my
+little grubby mitts on it I very much
+approve it's a it looks and feels very
+premium so yeah very very nice card of
+course you guys are probably sick of
+hearing about these cards without seeing
+any actual benchmarks and I'm a bit sick
+of talking about them with any without
+actual benchmarks at this point so
+thankfully we don't have to wait too
+much longer now so stay tuned next week
+we will have our day-long coverage
+there'll be loads of reviews online so
+you can check ours out I encourage you
+to check out other reviews and see what
+we all find and what we all think our
+day one coverage will include about a
+dozen games so possibly not as many as
+you guys are hoping for but it's just
+you to time obviously we only have a few
+days to get this stuff done so i bench
+marked all the other cards and been
+doing that madly for weeks now all that
+data is in just got to add this to it
+yeah we'll probably do twelve games for
+the day one coverage because we also
+want to look at things like overclocking
+thermals power consumption and whatever
+else but on day two the following day we
+will have a 30 plus game comparison so
+that will be probably worth waiting
+around for it should be pretty good
+speaking of which I need to go get
+benchmarking so I'm going to take this
+guy up to the benchmark lab now and go
+get testing as always thank you for
+watching like subscribe do all that good
+stuff and I'll catch you again soon
+I'm your host Steve Bay</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

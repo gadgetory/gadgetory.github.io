@@ -1,0 +1,446 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>The $100,000 PC LIVES! | Gadgetory - Your Gadget Factory</title><meta content="The $100,000 PC LIVES! - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Linus-Tech-Tips/">Linus Tech Tips</a></li><li class="active">The $100,000 PC LIVES!</li></ol></div><h2 class="post__title"><b>The $100,000 PC LIVES!</b></h2><h5 class="post__date">2019-01-27</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/LiWTCVU57rA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">um six editors one cpu part the fourth
+we fired 69 part four okay section four
+okay try to be less annoying you had a
+lot of comments how I saw them here so
+here's what went down six workstations
+one CPU was a project that I invested
+many many many hours of my time into
+trying to figure out what it was was it
+software was it hardware was it firmware
+was it drivers what was causing the
+crashes whenever we tried to load up
+certain virtual machines in our latest
+crazy virtualization project and the
+answer it was the hardware I love a soos
+loved them very dearly but what I don't
+love is this slot and this slot because
+they are dirty little slots basically
+either they just outright don't work or
+they're bifurcation which means taking
+sixteen PCI Express lanes and splitting
+them out into to 8x lanes so you can
+have two separate devices running at 8x
+doesn't work but that's okay thank you
+Jake you can pack that backup for me
+because we have this so back when I
+started the project this board didn't
+exist this is a dual LGA 3647 socket
+motherboard from Ty an it also has
+support for 12 memory sticks so we can
+put the same 384 gigs of ram on it it
+also has 10 gig networking onboard and a
+bunch of it's got you dot two connectors
+and this one oh look at this is that is
+that is it is that 1111 PCI Express
+slots so this is gonna be fun because
+today we are gonna get it working for
+real hopefully
+thermal takes a 500 has a modern
+minimalistic design brushed aluminum
+panels and dual hinge wing tempered
+glass doors check it out today at the
+link in the video description so to be
+clear asu's is actually still working on
+a fix for their board by the way massive
+shout out to Wendell for helping us
+figure out the the bifurcation issue but
+in the mean time we did want to try
+something else because we want this
+project done and tie an claimed when we
+contacted them that it would be no
+problem in fact they actually had a
+couple of words that could work this one
+that I showed you which was kind of a
+lie because we're not going to use this
+one because it doesn't fit in any case
+and the one that's actually on the test
+bench right behind me here so this is a
+standard SSI EE B form factor board just
+like that one with the main differences
+being that it's only got seven PCI
+Express slots just like the Asus port
+that we were using it's got three of
+these u dot two looking connectors over
+there more on that in a moment it's got
+its two m dot twos and I mean yeah it
+just doesn't have 11 slots like it's
+still got six slots for memory and all
+of that good stuff so we're basically
+ready to rock and I want to walk you
+guys through what I have set up here for
+those of you who haven't seen this
+madness before so in our top slot here
+we've got an external PCI Express like
+sort of riser card with an extender
+cable that runs over to this daughter
+board here the reason we want this is
+that we want each one of our VMs to have
+its own dedicated USB 3 controller so
+that if we had to do say for example a
+high speed ingest of footage for editing
+or whatever else everyone could do that
+without running into a system bottleneck
+so right now all of these cards if we
+were to pin them all at the same time it
+might be a little borderline because
+this is a PCIe ATX link right here but
+if we went 16x which we may be able to
+do in the finished one I don't imagine
+that would actually be a problem
+the last thing over here is a 10 gigabit
+networking card but we'd like to go 100
+gigabit for the final project so we're
+running the same Thermaltake PCI Express
+extensions that we were using before
+except Jake actually had the ingenious
+idea of instead of just stacking the
+cards next to the
+bench on the table grabbing this old DIY
+mining rig that he had lying around and
+putting all of our Titan v's on that so
+at least something good came out of that
+whole mining craze for the rest of the
+hardware we've got to ax 1500 i power
+supplies just because of the way that
+this whole thing hooks up we'll come up
+with a better way to do that later and
+then we've got the octane 905 PS that we
+were planning to use as our boot drives
+with these adapters from Utah to to PCI
+Express 4x now one small problem and
+that is that these while they are
+physically the same connector as nvme
+you got to it's actually called
+sssomething crazy it's a mini SAS HD
+yeah that's me SAS HD so this is meant
+to be used as a breakout into just for
+like SATA connections or a bunch of so
+there's no actual PCI Express backing
+for this so that's where these MDOT 2
+drives come in and maybe we'll do use
+adapters to go to these to go to the
+other whatever but cross that bridge
+when we get to it
+the last change is that we're running
+Zeon gold cpus because I actually
+dropped one of our 8180 Platinum's and
+it's got a dead memory channel and so
+just for troubleshooting purposes we
+wanted stuff that definitely works cool
+but there's good news check this out
+so here's workstation 1 we're gonna grab
+our top Titan v it's a companying sound
+card we had to apply the same fixes for
+PCI stubbing so that we can get all
+these USB cards showing up here as well
+as ACS override downstream multifunction
+so all that's done just like last time
+we're gonna go ahead and fire this up
+now this should work and it should show
+up over here mind you we had a single V
+I'm working just fine on the other one
+also we need to make sure that our
+daughter board which is some weird weird
+friggin hardware is working correctly as
+well so it was one of the Renaissance it
+must be this one it's this one of this
+one
+our mouth should light up there's a
+50/50 chance that our mouths will light
+up it did not but that's okay because
+there is still a 50/50 chance just
+kidding it should be a hundred percent
+actually it's probably less than a
+hundred percent it's just a chance it
+won't work but it's setting up a device
+is it oh I couldn't see that cute device
+is ready The Sentinel 3 is ready to go
+come on baby anytime mr. Sentinel or
+miss Sentinel okay hold on no no we
+thought there was a chance this might
+happen well it's working
+Oh working ha oh hell yeah I was like
+less than fifty fifty that this was
+gonna work well that's great so then now
+we just proceed right anymore
+yeah should we just like fire up like a
+game or something so here's what we're
+gonna do for each one we're gonna name
+it we're gonna go ahead and I think
+that'll do giving it each one of them a
+three core CPU because we don't have a
+lot of CPU cores right no I need to
+either buy a new one or beg and plead
+with Intel to send me a new one which I
+strongly suspect they are not going to
+want to do because that team and I are
+not on the best of terms right now so I
+saw in there the CPU mode isn't hosts
+pass-through mode so we're using that to
+hide the virtualization from the Nvidia
+drivers that's yes so they don't give
+you that weird error and that's right
+because they want you to buy Quadros
+yeah so they specifically bacon a
+specific error just as a nephew it's not
+like we cheaped out you know gb 100's
+they're only like 10 grand right you
+think they'd send us six of those no
+touch me what wait what is that
+Oh what the hell was that another VM
+well which one is that what's going on
+here which one did you just turn up
+turn on yeah you just turned one on wait
+what does Windows 10 what is this one
+I don't know so this is great it's
+actually Wendell to the rest region or
+at least his community over on level one
+Tech's forum so what it is is that we
+had assigned the USB device to one of
+the VMS then booted that up shut that
+down tried to assign it to another one
+and then boot that up and some devices
+have an issue where they'd like they
+don't get fully let go of we had this
+problem with the Radeon r9 nanos or
+whatever those things were called from
+the original seven gamers one CPU where
+if we had a crash in one of the VMS we
+would actually have to completely reset
+the entire host in order to reboot the
+VM because of just the way that AMD's I
+believe it was a firmware issue in that
+particular card was implemented so we're
+just gonna go one at a time we're gonna
+take it slow baby slow hands snow chance
+okay there's one got my pointing finger
+ready wait there it is I had my boss
+that didn't have my pointing finger
+ready anymore okay
+two three
+there comes number four oh I want to
+back up I don't want to get in the way
+of that too much horsepower as you can
+see the graphics drivers are loaded like
+that was our problem we were able to
+light up lots of VMs before but now like
+but they're not crashing and the
+graphics drivers are loaded like they're
+running at the right resolution it's
+working device manager uh display
+adapters yeah okay
+all right all right it's got a table oh
+wow that's my toe okay so this is not a
+great table it's like three quarters of
+a desk that's a budget cuts you know
+it's January
+you know how the YouTube ad revenue
+that's everything gets slashed in all
+seriousness though
+we're just using these like hobby board
+pieces we're making our own tabletops we
+think this is gonna be for the upcoming
+land center so this is like the first
+prototype we've got these raising desk
+sheep what well relatively look at the
+Lord I mean they were inexpensive yeah
+that's a that's a yeah bad use of words
+isn't this crazy why would you ever need
+a desk this tall maybe if you're like
+seven feet tall
+yeah yeah okay okay I'm putting it
+because we're gonna cover this in
+keyboards and mice where all the
+keyboards and mice for this project also
+how are we gonna plug into USB it's way
+over there so I'm saying we unplug all
+the power things because we could just
+leave that power supply there and just
+move our board over there yeah hell yeah
+stop all kill everything with fire shut
+her down
+use your pointy finger how do you do
+that so well there you go that was a
+little better getting the hang of it
+it's not as easy as it looks okay are
+they all doing it I mean presumably
+they're all running on the same image
+this board is so trippy like it takes a
+24 pin 5 and then 5 8 pins are they all
+EPS yeah who the hell has five EPS
+connect like what servers see that's the
+thing though what server has a modular
+power supply and know what server has
+five EPS connectors on I don't know but
+I think have to be purposeful the Tesla
+V 100's have EPS connectors they don't
+have PCH I know they do it's a single 8
+pin and then you can adapt to PCIe 8
+pins into one EPS a pin that's madness
+yeah ok there you go so you need all
+your power connectors in there and it's
+like very professionally mounted
+top-quality I know how much you love
+these fans that are just literally in
+here as spacers and not even plugged in
+yeah man
+got to use noctua for everything I can't
+wait to order the cable mod kit for this
+build
+ha ha Thomas is gonna be like what do
+you need $1,200 of cables for ok ah hit
+it with my best shot I love it this
+these tie on boards they have onboard
+power buttons for like bench operation
+so 250 times 6 is 1500 Wow I think these
+aren't these more than 250 you don't
+sound very certain about any of this at
+this man so I'm not really listening
+anywhere I'm googling here let's ask
+Google why don't we go get the keyboards
+in nice that mean how many watts is a
+Titan V we have 110 teraflops of watts
+how many key parts do we need o 4 5 5
+where did all the keyboards bill you
+can't even hear him it doesn't matter if
+they're racks
+this is just for testing karat all right
+I'm coming what is this you said grab
+random ones oh I can't type on this
+chair okay this doesn't work oh why is
+it still a thing that's like I don't
+know it's sentimental
+there was me grabbing actual keyboards
+no Jake you don't need to grab actually
+reversal on these are broken Oh doesn't
+matter it doesn't matter
+looks like the budget cuts are really
+hurting us here we're short on space so
+I I don't know which is which right now
+so what I look kind of thinking are they
+actually plugged in properly no hello
+Dennis
+wild Venice appears so I don't know how
+but we somehow made this more jank than
+your setup I think so hold on a second
+which ones one okay so one is the top
+let's go one two three four five six
+oh god let's just group them all
+together just screw it or just let's
+make sure we have two on each oash I
+plug in the 10k babe
+hell yeah let's do it oh yeah somebody's
+walking past the basketball hoop a
+little confused what what's that for it
+okay is this in like some kind of a mode
+where for whatever reason H is volume
+down do you not have enough disk space
+oh god how big are these disks uh uh oh
+no not huge try just uninstall premier
+you can do whatever you want it's a free
+country
+yeah wait what no don't run the stuff
+from you as a pain in the ass so
+theoretically all we have to do is pop
+open Disk Management now and extend
+volume boom boom boom and bippity
+Boppity we're steam big volume it's open
+it's beautiful so what are we using
+Cisco cache right so this is why the
+steam catch it's pretty great right so
+we've got that one going at 40 that one
+going at 40 there's some other ones
+presumably that's the only one pulling
+off the steam cash but how do you know
+well cuz that's the only one I
+configured to pull up the steam cash why
+do you need to configure it I thought
+our DNS settings are just I don't think
+we did in the rotor I thought you did
+yes I wasn't me it wasn't me
+hey there we go see it was using the
+cache 40 40 40 40 nice
+oh my back is back this one's at 70 50
+that's looking hot if you're into that
+sort of thing
+so when we do put the land center over
+there we'll be able to all download
+games that like Cisco hell yeah hell
+yeah so now we have like updates all
+these people does Windows Update - right
+you play origin or you know I don't I
+don't know people got to have a bad time
+okay guys come on over I have a primo
+primo gaming experience for you guys six
+workstations one CPU is officially
+working we haven't quite worked out the
+logistics of the keyboards and mice
+these are all bought matches so everyone
+feel free to find a keyboard and mouse
+and figure out what the crap screen
+you're running on oh and that one
+you said it's premium we're we're
+actually marketing people so if we don't
+know yeah we're primo this is primo
+we're gonna kill ya and the audio is a
+little bit messed up because we don't
+know which source this monitor in
+particular is pulling audio from we can
+actually have a look at our CPU usage
+here so you can see the course that I
+have assigned I left a core one alone so
+cores 2 to 18 or a sign and you can see
+we're sucking up anywhere from 70 50 to
+as high as 90% usage on these cores
+playing cs:go so this is good enough but
+there would be games that would be more
+demanding where we'd run into trouble so
+it's working this is crazy exciting but
+the next stage is productivity so we
+need higher-end networking we need
+faster boot drives we're gonna move to
+op teen and we're gonna try to edit 8k
+video on all six of these workstations
+at once but this is a good start master
+ops sennheiser HD 6 xx headphones are
+some of their best selling of all time
+with over 60,000 units sold and I can
+see why because they have an unchanged
+driver and sound structure compared to
+the HD 650 s meaning that you get a nice
+balanced mid-range and natural sounding
+bass they've added a detachable 6 foot
+cable instead of a 10 foot cable based
+on community feedback and they come with
+an 8 inch plug that's versatile for
+everyday use and a quarter inch adapter
+you also get long-term support from
+Sennheiser so check out the link today
+to join the drop now so thanks to Jake
+forgetting this working tie-in for
+having a motherboard that works properly
+and you guys for watching and we dislike
+this video oh and Wendell hey if you
+guys dislike this video you can hit that
+button but if you liked it hit like get
+subscribed or maybe consider checking
+out where to buy the stuff we featured
+at the link in the video description
+also down there is our merch store which
+has cool shirts like this one and our
+community forum which you should totally
+join this is clearly the most ergonomic
+gaming setup of all time</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

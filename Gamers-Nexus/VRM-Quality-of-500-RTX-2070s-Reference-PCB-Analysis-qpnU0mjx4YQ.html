@@ -1,0 +1,568 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>VRM Quality of $500 RTX 2070s (Reference PCB Analysis) | Gadgetory - Your Gadget Factory</title><meta content="VRM Quality of $500 RTX 2070s (Reference PCB Analysis) - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus/">Gamers Nexus</a></li><li class="active">VRM Quality of $500 RTX 2070s (Reference PCB Analysis)</li></ol></div><h2 class="post__title"><b>VRM Quality of $500 RTX 2070s (Reference PCB Analysis)</b></h2><h5 class="post__date">2018-10-25</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/qpnU0mjx4YQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey guys build Zoid here from actually
+hardcore overclocking and today we're
+gonna be taking a look at the RT x 2070
+reference PCB from well EVGA here but
+this is the same PCB you would find on
+like a Nvidia founders Edition card
+because while this is the reference PCB
+as much as nvidia likes to pretend like
+reference like the founders cards
+founders edition cards aren't reference
+cards they very much are you're not
+gonna find a card with a worse PCB than
+a founders Edition it just so happens
+that founders editions are generally a
+lot better than what Nvidia used to put
+out so it kind of makes sense to to you
+know hold them in a higher regard
+compared to say like a reference
+I don't know GTX 580 PCB gtx 680 PCB
+yeah definitely much better than like a
+gtx 680 reference PCB before that this
+video is brought to you by autonomous AI
+where you can buy they're automatically
+raising and lowering smartdesq tables
+and table legs if you'd like to build a
+raising and lowering table similar to
+our set table the DIY kit is $250 and is
+easy to assemble to a service of your
+choice if you'd prefer something
+pre-built the full tables can be had
+from 300 and up you can learn more at
+the link in the description below for
+autonomous AI anyway today we're taking
+a look at the 2070 and so this is a
+twenty series and you know and video
+cards so of course we have the usual set
+of voltages and so let's start going
+around and identifying all of them
+starting of course with the most
+important voltage regulator for of
+course the V chord which powers the GPU
+core which is why we call it V core and
+I've written that really badly so let me
+just slightly tweak that that's slightly
+better up above that in which is kind of
+a normal position for this we have the
+memory of erm so that's an e mem and
+that of course powers all over the
+micron GDD are six memory chips micron
+is currently the exclusive supplier of
+GD d are six for all of the geforce
+cards samsung also makes GD d are six
+but you're not gonna find it on a on a
+sort of consumer card you might find
+like i think they're reserved only for
+like tesla cards and quad rose
+yeah micron G DDR six on this as usual
+down in this area I'm assuming we have
+the pecs rail I am not 100% certain
+about that but this just seems like a
+reasonable place to put the pecs rail
+because that powers the PCIe interface
+and some of the internal PLL's of the
+GPU core this right here might be and
+this is where it gets messy cuz this
+right here I assume as the BIOS chip
+because there's not really anything else
+that chip could be considering where
+it's located but the thing is we have a
+whole bunch of regulators in this area
+and at this point this is gets becomes a
+bit of a mess because we need a 5 volts
+rail for the V R M so you need a v RM to
+power the v RM and i'm not sure where
+that is it could be this but this could
+also be 1.8 volts which would be a
+supporting rail for the GDD r 6 memory
+chips as well as powering the bios chip
+and then this could be 5 volts but the
+thing is this also has a USB C port so
+this over here could be the USB C power
+rail so yeah and unfortunately all of
+these like two of them they do seem to
+share like the the componentry between
+them seems to be the same for a couple
+of them so that makes it even harder to
+figure out which is which but those are
+the rails that are present here I'm just
+not sure which one is which one because
+I don't have the card in hand to check
+for sure if I had the card in hand it'd
+be relatively easy so that's kind of the
+situation with the minor rails and now
+let's get into actually looking at the V
+Corps v RM since it's so important in a
+bit more detail so we have a 1 2 3 4 5 6
+phase so nothing crazy right there
+controlled by a chip on the back of the
+board because of course there's not like
+the board's not long enough to cram it
+behind the V curve erm proper and that's
+this chip down here which is a that's a
+u p95 12 so this is pretty standard for
+the Nvidia cards this goes up to eight
+phases output of course here it's only
+running on six so
+not running at 8:00 it's running
+six-phase it goes up to two megahertz
+switching frequency it has a SM bus
+interface so you can in theory do things
+like control the load line on it well
+configure a whole bunch of functions of
+the chip and like control the voltage
+and monitor the voltage and output
+current and operating temperature of the
+vrm assuming Nvidia actually allows you
+to access that last last I've heard or
+at least as far as I'm aware you can't
+actually get access to this because the
+Nvidia driver won't let you and I think
+it might even be straight-up disabled so
+it's kind of like like the chip has it
+it's just not necessarily being used now
+for the actual voltage control this
+being an Nvidia chip and video card it
+of course uses the PWM vid interface
+which basically is a PWM signal from the
+GPU core to this chip which is used to
+then set the output voltage of the vrn
+which is a nice really like simple way
+of doing voltage control at like very
+very rapidly so that's that's why Nvidia
+goes with that because that's a really
+it's a really elegant way of solving
+your voltage control it's just kind of
+unfortunate that that means you also
+need to have like you need to go through
+the Nvidia driver to control that though
+it is easy to physically modify but
+software wise you need to go through the
+driver anyway back to the front of the
+board so it is a six phase and as each
+of the phases runs one of these power
+stages here and these are on
+semiconductor NCP 3 1 0 255 and these
+are 55 amp power stages or dr moss so
+they're not so that that stands for
+driver MOFs and basically these are
+these are power stages they're just not
+very intelligent compared to say like
+smart power stages or but there's a
+whole bunch of other flavors of power
+stages that integrate things like
+temperature monitoring current
+monitoring over current protection these
+don't really do any of that these are
+just a 55 amp power stage where you get
+a dry it you get a driver and you get
+to power and you get your high side and
+your low side MOSFET in one convenient
+package and these are respect to be well
+the datasheet says these go all the way
+up to fifty five amps but all of the
+efficiency curves only go up to 40 so
+that makes things a little bit difficult
+because basically we can't actually look
+at current outputs you know in that 55
+like perfectly like how much heat each
+of these power stages makes at 55m five
+amps output is not actually available in
+the datasheet even though they are
+marketed as being 55 amp port which is
+always fun well that's the same thing as
+all of the 60 amp power stage is only
+going up to 50 amps in the data sheets
+except for some exceptions but most of
+them if it's spectat 60 it only spec
+aspects the heat output up to 50 amps
+and then it's just like and normally
+that's done because honestly you're not
+gonna go to the maximum output of a
+power stage just because it would
+produce so much heat that it'll be
+uncool about regardless of the fact that
+you're aware that it's going to be
+producing too much heat so anyway
+looking at the output for at the vrm
+heat output for a 1 volt output so
+that's nice compared to say all of the
+like on the other cards so far on the 20
+series it's always like really high-end
+70 M for smart power stages from like
+Fairchild or something and those are
+always SPECT in 1.8 volts well these are
+expecting 1 volt so that's very nice 500
+kilohertz switching frequency and of
+course running on 5 volts because they
+don't run on anything but 5 volts you're
+gonna be looking at sort of the
+following efficiencies for the following
+output currents so 50 amps output which
+that would be roughly around stock so a
+stock stock current output would be
+somewhere around 150 amps average and
+that that now looks like an a but there
+that's a 1 yeah anyway so stock would be
+around somewhere maybe slightly over
+that 150 amp figure there you'd be
+looking at about 15 watts of heat output
+which is really just fine like that is
+not a problem whatsoever then once you
+start overclocking assuming the power
+limit goes high enough which last I've
+heard it
+and you could be looking at something
+like 200 amps output and then the vrm
+would be producing about 24 watts of
+heat which still really isn't that bad
+immediately that's 24 watts of heat
+concentrated on a much smaller surface
+area than say some of the other GP like
+VRMs we've looked at recently right like
+it's worth considering that this is a
+six phase so while it might be producing
+only a little bit more heat than some of
+the eight phase and ten phase and twelve
+phase and much higher phase count VRMs
+at 200 amps output this is a lot denser
+so it will still end up being hotter
+even though that like it'll be much more
+hotter which that's great English right
+there but it'll be like more hotter than
+you would necessarily expect from the
+very slight decrease in sort of
+efficiency right that's not a huge loss
+like the efficiency isn't that much
+worse but it's also denser so that's
+worth keeping in mind and then the
+absolute maximum current output that the
+datasheet really allows you to go up to
+easily without while extrapolating where
+the where the efficiency curves would go
+you're looking at about 240 amps
+producing about 32 watts of heat which
+is still manageable
+like that's admittedly you will need
+like of erm heatsink on some airflow but
+that is still not a ridiculous amount of
+heat but yeah this this is not exactly a
+super-powerful vrm especially compared
+to say like a twenty eighty or even
+other GPUs in this price category this
+video room is really not not impressive
+because well honestly if you if you
+actually look at even cheaper cards like
+vega's these days are cheaper than one
+of these the the Vega reference PCB is
+like ridiculous compared to this so you
+know but obviously this doesn't need an
+insane vrm it's just worth considering
+that yeah this this is pretty
+it fits the purpose but it's not exactly
+incredibly impressive and it's not
+really it's it's also a bigger step down
+in terms of the vrm design compared to
+like the the 2080 or the 2080 ti like
+the
+the the downgrading of the vrm going
+from like a 20 atti to a 20 80 - this
+thing is pretty significant even if the
+well the price the price differences are
+also so kind of makes sense but it is
+worth noting that this isn't super
+powerful but it's not super terrible and
+honestly I don't see why in videos
+shipping these cards like I would
+happily shove 240 amps through this like
+even on air cooling as long as the air
+cooler has good vrm cooling I would
+totally just go for and shove 24 240
+amps through this vrm it shouldn't
+really have a problem with that this
+isn't so much heat that it's uncool
+about especially considering that
+there's like you know well there there's
+a lot of cards in the past that would do
+well hell of a lot worse than this right
+here and those were fine so the this is
+yeah this is a nice enough erm it's not
+super overkill but it's fitting for sort
+of a mid-range card it's kind of
+unfortunate that apparently the power
+limits are super low the memory of erm
+is in typical memory vrm fashion massive
+overkill it's like every time somebody
+needs to power memory they go for
+ridiculous overkill though here we
+actually see a pretty big difference
+compared to some to the say the 20 80
+and the 20 atti because for once we're
+not using a new sort of NVIDIA voltage
+controller the voltage controller for
+this lovely two-phase right here right
+one two is AUP 1666 and this is the same
+voltage controller you would find on a
+loss of the 10 series GPUs and this
+thing this thing is really dumb this
+does not have any digital interface
+whatsoever
+it just has a PWM vid input and every
+all of its functionality is configured
+by resistors around the chip so that's
+that's kind of how that works right
+there but it is a 2 phase voltage
+controller so this is a two phase vrm
+and for the actual MOSFETs because these
+are power stages these are straight up
+Moll so that's while dual N fats because
+you have one chip but there's two
+MOSFETs built into that chip and then
+the drivers for the
+MOSFETs are actually built into the U P
+1666 here so basically this is hooked
+directly to the two MOSFETs in each of
+those packages over there
+so these right here are Fairchild
+Semiconductor fdpc can't see my notes
+properly 5 0 1 8 SG dual infants and
+they have a 1.6 million low side which
+is really really good and if I remember
+correctly in video is using these for
+some reference card on the 10 series as
+v core power so these are totally out of
+place for powering a like a couple G DDR
+6 memory chips this is really really
+overkill the end result is that
+basically you're looking at sort of
+doing one point three five volts
+actually let's put that where it
+normally is so you're looking at these
+doing like 1.3 5 volts output because
+that's what G DDR six runs on 500
+kilohertz switching frequency and I'm
+assuming a gate drive voltage of 12
+volts so there because that's just the
+easiest way to power them since you have
+12 volts available on the card anyway so
+420 amps output on these you'd be
+looking at about 2 watts of heat which
+is in line with what you would get with
+like the like the 20 80 and the 20 80 TI
+V RMS actually get about the same
+efficiency even though those of you arms
+are like much nicer it's just they're
+massively like the components there are
+super over SPECT and you can't really
+like there's a limit to how efficient
+your vrm can be also this isn't
+factoring in the power that this chip
+uses which skews these results a bit
+better because the power stages do
+include their driver losses which this
+doesn't because the drivers are built
+into that and I'm calculating just the
+losses on the MOSFETs themselves anyway
+going up from that 20 amps output to 30
+amps these start actually getting a bit
+worse and producing about 3.5 watts of
+heat and then 40 amps output you're
+going to be looking at about 5 watts of
+the heat so definitely like these these
+are
+definitely czar definitely weaker this
+is definitely a weaker memory vrm than
+what you would have on like a 2080 or a
+2080 ti it's just not a massive
+difference because you're really not
+going to be going very high current
+output anyway
+GD d r 6 especially with just the 1 2 3
+4 5 8 chips that you have here they're
+really not going to be exceeding that 20
+to 30 amp output range so this should be
+perfectly fine running passive as long
+as there's not too much heat just sort
+of soaking into the PCB from everything
+else because obviously these produce
+heat that produces heat this produces
+heat and with the PCB being as small as
+it is the PCB zone sort of thermal
+dissipation capabilities kind of suck
+because it doesn't have a lot of its own
+surface area which is actually like a
+valid way of getting things cooled if
+you can't like if you don't want to have
+an actual heatsink having a lot of
+unnecessary PCB space can actually do a
+lot of that for you but obviously this
+doesn't have that this is as short as it
+can possibly be so yeah but the memory
+of your room here again just completely
+like definitely fitting for the fit for
+purpose basically they're nice solid
+memory vrm completely acceptable v core
+nothing incredible but definitely
+acceptable and the last thing left is of
+course the usual 20 series power
+management stuff it's probably the best
+term to use for it and there is as usual
+a ton of it so that right there is of
+course our favorite up7 6 v 1 power
+management chip which is used of course
+for balancing the 12 volt inputs of the
+card because you have 12 volts coming in
+from there and 12 volts coming in from
+here and this might have a power limit
+of like 150 and this might have a power
+limit of a 75 watts and I now realize
+why NVIDIA has such a low power limit
+saying for these cards of course it only
+it can only pull a maximum of 25 watts
+without exceeding PCIe specs
+yeah that actually makes a lot of sense
+yeah that pretty much explains it the
+stock TDP has to be like 190 or
+something yeah yeah that makes sense
+anyway so you have like a 150 watt limit
+here 75 watt limit here and
+unfortunately you don't really get to
+choose how current goes through your
+phases well the the you p95 12 can
+actually current balance all of your
+phases but you don't have perfect
+control over where you're gonna be
+getting your power from so you could end
+up in situations where you know this has
+a 150 watt limit but you're gonna try to
+pull 200 Watts through that and only
+like 25 Watts
+through the PCIe slot which is like
+you're technically still under that 225
+limit that the card has total but your
+you'd be power throttling off of the
+PCIe connector so the job of the U P of
+the up7 651 here is to basically go and
+switch some of the phases of the vrm
+from pulling power on the 8 pin to
+pulling power on the PCIe slot or if the
+PCIe slot is being overdrawn taking
+whatever phase is over pulling the PCIe
+slot and moving it onto the 8 pin
+reducing the power throttling because
+you're not going to be bouncing off of
+the power limit for each of the
+connectors as much as you'd normally
+would and you can really like actually
+like max out the total board limit
+instead of just whatever power connector
+you're maxing out so that's a new
+feature of the 20 series owners
+personally I think this is completely
+pointless there's a lot of cards in the
+past where they just didn't bother with
+worrying about where the power came from
+it was just kind of a case well the card
+has a power limit of 300 watts where
+those 300 Watts come from that's a
+completely different matter and is not
+actually considered by the GPU
+whatsoever it'll just kind of pull them
+wherever it can get them which can in
+theory like lead to some issues but you
+know it's worked fine up until now I
+don't I don't really see a reason why
+you would you know bother with something
+like this but Nvidia felt like it was
+necessary so that they went ahead and
+did it and to make sure that this chip
+can do its power manage
+as quickly and as effectively as
+possible you obviously need something to
+actually monitor that all of the power
+going through the card and that's done
+by this chip over here which is of
+course the on semiconductor NCP forty
+five four nine one and unlike the rest
+of the twenty series so far there is
+only one of those because normally you
+have two of them here you have yes
+indeed you have just one and it's on the
+back of the card so that's how the power
+management is done here you know you
+have the NCP for forty five four nine
+one for monitoring all of your power
+draws and this for balancing them and
+while balancing your to power inputs the
+voltage controller itself actually
+balances the current through the phases
+but which phases are on which power
+connectors the voltage controller really
+doesn't care about which is why you can
+run into that situation where you'd be
+pulling more from the eight pin then
+you'd be allowed to without actually
+maxing out the PCI uslaugh and then
+power throttling which is why you need
+the extra circuitry to manage where the
+phases actually get their power from
+because the U P 9512 really doesn't know
+and it really doesn't care so that
+pretty much covers the power management
+stuff except for the shunts which you
+have one here and you have one here and
+those are being monitored by that NCP
+for forty five four nine one chip and
+you also have a shunt over here so I
+guess that might be for the USB C port
+may be kind of intra there a third shunt
+okay well if you're wondering about how
+they're wired up you can always just use
+a multimeter to check which ones
+connected to what I'd have it as a guess
+that this one's for the eight pin and
+this one would probably be beat for the
+PCIe slot so that is the RT x 2070
+reference PCB it's not the most
+impressive thing ever but it's
+definitely like for for what it has to
+do it's you know completely adequate you
+got a solid little six phase
+and little is actually the right term to
+use because that is compact and then you
+have a nice you know the nice little to
+faith well that's not actually a little
+memory VR I'm you can get much much
+smaller memory power systems but you get
+a nice two-phase memory power and yeah
+not really much else to the card than
+that so that is it for the video like
+share subscribe leave any comments
+questions suggestions down in the
+comment section below and if you'd like
+to support gamers Nexus there is stored
+on gamers nexus net where you can pick
+up shirts as well as the mod map which
+you can kind of see in the background of
+the picture here and there's also the
+gamers Nexus patreon if you'd like to
+support us that way I also run a channel
+called actually hardcore overclocking
+where I do a whole bunch of other
+overclocking related stuff like removing
+and video power limits because I think
+power limits are stupid so yeah that's
+it for the video and goodbye</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

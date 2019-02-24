@@ -1,0 +1,814 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>NVidia Turing Architecture Technical Deep-Dive: SM Rework &amp; Big TU102 | Gadgetory - Your Gadget Factory</title><meta content="NVidia Turing Architecture Technical Deep-Dive: SM Rework &amp; Big TU102 - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus/">Gamers Nexus</a></li><li class="active">NVidia Turing Architecture Technical Deep-Dive: SM Rework &amp; Big TU102</li></ol></div><h2 class="post__title"><b>NVidia Turing Architecture Technical Deep-Dive: SM Rework &amp; Big TU102</b></h2><h5 class="post__date">2018-09-14</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/fpTzkrBUnGo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">in video story and architecture is their
+first major architecture launch in about
+two years since 2016 and the Pascal
+launch and today we're going to be going
+through a deep dive of the touring
+architecture so this includes how things
+are set up architecturally we're talking
+about G pcs TBC's SM layout which has
+changed by the way going over why those
+things exist why are there GPC is why
+are there T pcs and then we're also
+talking about RT X the SDK and how
+Nvidia's ray-tracing solution works
+other things that can be applied to in
+games if it's even useful in games and
+things like that also one more thing big
+touring because the 2080 TI is not
+actually the biggest one that they can
+make before that this video is brought
+to you by Thermal Grizzlies high-end
+thermal paste and liquid metal thermal
+Grizzlies cryo not is an affordable high
+quality thermal compound that doesn't
+face some of the aging limitations of
+other pastes on the market cryo not has
+a thermal conductivity of 12.5 watts per
+meter Kelvin focuses on endurance is
+easy to spread and isn't electrically
+conductive making it safe to use on GPU
+dies thermal grizzly also makes
+conductor not liquid metal which we've
+used to drop 20 degrees off some
+temperatures than our dee-lighted tests
+by a tube at the link in the description
+below so this is not a review yet we
+can't post them yet don't go out and buy
+cards don't pre-order cards we'll be
+reviewing them soon enough but today
+we're just focusing strictly on
+architecture discussion and hopefully
+not much else let's start with a quick
+overview of the major changes to taurine
+versus Pascal so the number one thing
+before we dive deeper into all the rest
+of the architecture is that as the
+supplies to gaming one of torian's
+biggest benefits theoretically is rate
+racing and what they call r-tx the SDK
+this is sort of an extension of game
+works you can think of it as a similar
+idea of being an SDK that's provided to
+developers who make the decision of
+whether or not they're implementing
+different options from that SDK but in
+trying to summarize its own performance
+and Vidya created a new metric that they
+called r-tx
+ops so this is where Nvidia got into
+territory that they realized they have
+these tensor cores RT cores typical FP
+30
+- in 32 new concurrent processing of FP
+32 and 32 and DNN capabilities and
+someone in marketing realized that
+actually the 2080 Ti and the 2080
+strictly in terms of teraflops for FP 32
+don't look all that much better than the
+10 series on paper so what do we do to
+make it look better and the answer was
+to invent a new metric of measurement so
+Nvidia invented this new r-tx
+ops as a means to quantify the
+performance of its tensor processors
+it's RT cores typical FP 32 and 32
+performance and all this stuff because
+again it'll it'll make things look a lot
+better than perhaps they might have
+otherwise and that's the core of it now
+there could be some legitimacy to this
+in that yes creating a weighted metric
+is required when there is no existing
+metric for measuring all these things
+but also it's a geforce card and the
+weighting is a built on a perfect model
+that might not apply to gaming scenarios
+so that getting into this this is the
+interesting part for this formula RTX
+ops you may have heard is it comes out
+to being about 78 RT x ops on the 28 e
+TI versus 11.3 on the 10 80 TI this
+number on paper doesn't mean anything
+because you hear it and it's like okay
+so does that mean it's 600 percent
+better because six times higher well no
+no it definitely does not mean that but
+it means it's 600 percent better in a
+very specific weighting and formula and
+we can go through what that formula is
+so the formula then there are three
+kinds of things going on in the 28 e TI
+and all the Torian designs they're
+shading there's ray tracing and they're
+deep learning capabilities and to
+varying degrees they can potentially be
+leveraged in games not games that exist
+in your seam library today but perhaps
+in the future so all of these have their
+own compute and in order to figure out
+what the heck the the difference is
+between the two cards and video came up
+with the following formula FP 32 times
+0.8 so FP 32 is floating-point 32 times
+0.8 0.8 comes from
+80% because nvidia is is assuming in for
+purposes of this formula that 20% of the
+time is going into DN n processing
+probably deep neural net or network and
+the other 80% is going into FP 32 is a
+pretty big assumption but that's what it
+is
+so FP 32 times 0.8 plus int 32 times
+0.28 if you're wondering where 28% or
+0.28 comes from it is because they are
+taking 35% of 80% which equals twenty
+eight percent so percentile math but if
+you're wondering why they take 35
+percent of 80 percent it's because
+nvidia is assuming that in their model
+workloads they've used for roughly every
+100 floating-point operations they have
+35-ish integer operations and then
+within the shading side nvidia is
+assuming a 50/50 ray tracing and non ray
+tracing delivery and that's that's where
+you get point two eight percent or point
+two eight twenty eight percent so to
+recap the beginning half of this @p
+thirty-two times point eight plus and
+thirty-two times point two eight plus RT
+ops which will get two times 0.4 plus
+tensor times point two equals 78 and the
+math works but that's well the math
+works and so what all this the rest of
+the formula comes from ray tracing ops
+is counted as ten teraflops per gig
+array and they're taking forty percent
+of that plus tensor which equals 113 so
+let's just go through it again
+FP 32 times 0.8 plus in 32 times 0.28
+plus archeops times 0.4 plus tensor
+times point two and at first this
+formula might sound like a bullshit
+marketing way to inflate the differences
+between the 20 80 TI and 1080 TI to make
+it sound like it's greater than it is
+but so all about our TX ops stuff aside
+let's get into the technical details of
+the architecture and talk about how it
+relates to gaming and reality and video
+is pushing both architectural and
+hardware side updates for touring
+they're also pushing pretty heavy
+software side updates and algorithmic
+updates we see with the SDK for instance
+all of them relate back to touring the
+biggest change is at a very top level
+before we drill down through each of
+them include the following four primary
+points and a few sub points integer and
+floating-point operations can now
+execute concurrently we'll talk about
+more of what that means in a bit but
+Pascal would suffer a pipeline stall if
+you shoved an integer operation into the
+pipe everything would stop all the FP
+would stop can taxi concurrently it
+queues up and waits for that integer
+operation to complete GPS aren't great
+at integer to begin with so that was a
+problem and now they're going for
+concurrent execution which is
+potentially a big deal but depends on
+how many in operations you have there's
+this floating point and again talk about
+that more in a moment and FP use if
+you're not familiar with the way we
+describe these things now and video
+calls a floating-point unit a coup de
+coeur but it's a floating-point unit it
+does floating-point calculations so
+typically these sit idle and Pascal
+they're trying to reduce that idle time
+with greater concurrency and then next
+there's a new l1 cache and unified
+memory subsystem this will accelerate
+shader processing and Vidya is moving
+away from the Pascal system of separate
+shared memory and l1 units so for
+applications which do not use shared
+memory that SRAM is wasted and doing
+nothing with taurine however this
+unifies the SRAM structures that be your
+l1 and other caches and memories on the
+GPU die it unifies those SRAM structures
+so that Saucer can use one structure for
+all of the SRAM so that's a another
+major change point three out of four
+Torian has moved to to SMS per TPC now
+it was previously one what does this
+mean well it means that between the T
+pcs you're now running with two SMS that
+have 64 FP use or CUDA cores each
+previously it was one that had 128 but
+then you had fewer pooled resources like
+cache and memory and that's another big
+change so for this purpose the end
+result is the same amount of FP use per
+TPC or floating-point units CUDA cores
+per TBC but better segmentation of
+hardware which theoretically benefits
+memory allocation cache utilization
+workloads that don't need shared memory
+for example terrain can scale it up so
+it can go from up to 64 kilobyte
+of l1 or it can scale down to 32
+kilobytes of l1 for applications that
+need the shared memory and it's either
+l1 or shared memory and then you can
+switch between them how much is
+allocated to each so that's a big change
+to you have also to load store units for
+purposes of this calculation so turning
+ends up with 6 megabytes of l2 for its
+largest chip which is not one shipping
+in g-force cards today versus three
+megabytes of l2 on Pascal's largest chip
+and l1 is now 64 kilobytes have shared
+plus 32 K of load store or the inverse
+depending on the application with two
+load store units so you have a
+multiplication factor of two for these
+stats Pascal Yi is 24k of l1 and 2 sets
+of 96k of shared memory instead just for
+comparison final point before we really
+get into it
+G DDR 6 has a 40% reduced
+end-to-end crosstalk and can clock
+beyond 14 gigabits per second when
+overclocking so potentially a big change
+to the memory pipe in memory subsystem
+and the memory bandwidth ability to deal
+with memory intensive applications which
+will be probably one of the biggest
+contributors to Turing's performance
+over pascal so getting into big touring
+then well put the big touring specs on
+screen now like usual the GPUs revealed
+thus far aren't the full versions of
+what NVIDIA has created the biggest G
+for storing die is the tu 102 GPU
+presented in the ti with 45 32 FPS or
+cuda cores spread across 68 sm's each of
+which has 64 cores so simple math there
+in reality the full sized taurine GPU is
+72 SMS and 4608 FP use adding 4 SMS on
+top of the 28 e TI this indicates room
+for a GPU with additional 256 FP use in
+the future potentially a titan class
+card or something although that's not a
+giant jump it could perhaps go alongside
+an additional 1 gigabyte of memory
+Tijuana to wholly it runs with 72 SMS as
+64 FPS per SM that translates again 256
+more FPS than in the 2080 ti there are 8
+tensor cores per SM pushing to 576 over
+544 between the two devices that we have
+listed on the screen and there's the
+usual TMU bomb port extra map unit bump
+from having an additional 4
+multiprocessors with for texture map
+units each memory is split across 12
+32-bit wide GDD are six controllers
+that's parts important or 11 on the 20
+atti which is what gives us our ops
+calculation or raster operation pipeline
+for ROPS we end up with 8 per controller
+or 88 on the TI and 96 on the biggest
+but doesn't yet exist tu 102 card if
+there ever is one or GPU as it is today
+cache is about 6 megabytes on the TU 102
+or 5,600 K on the 28 eti the additional
+memory controller would allow for an
+additional memory module just like
+Pascal's Titan and the 1080i difference
+and as a side note FP 64 or double
+precision is still severely limited it
+is gimped much in the same way it is on
+the previous geforce cards with the same
+ratio and that was in the table as well
+so the days of the old and video cards
+where FP 64 was much stronger or gone in
+the affordable class of card you have to
+go up to higher end cards for that these
+days streaming multiprocessor changes
+are next these are also somewhat big so
+getting deeper into the architecture
+taurine make several changes from the
+amalgamation that was last generations
+packs well design if we're honest it was
+a mix of Pascal and Maxwell we made a
+block diagram to help illustrate the
+hierarchy of containers here we'll
+explain what all of them mean in a
+moment so let's let's put that on the
+screen now and go through it the biggest
+Torian GPU is comprised of 72s streaming
+multi processors that are split between
+six graphics processing clusters or G
+pcs if we drill into a single GPC you'll
+see that each GPC hosts six of its own
+texture processing clusters up from big
+Pascal's 5 T pcs the G pcs also have
+dedicated raster engines and we'll talk
+about that more in a moment
+after this we start to see some real
+changes with taurine each TPC now has to
+SMS up from one SM previously this
+splits other resources in half and helps
+with containerization of the resources
+by moving from 128 FP 32 FP use per SM
+to 64 FP 32 FP use per SM Trina adds
+more SMS overall extremely multi
+processors which adds up more cache and
+processing blocks each SM is split into
+four blue
+each of which then contains 16 FP 32 FP
+use 16 in 32 units 2 tensor cores 1 warp
+scheduler 1 dispatch unit and an L 0
+instruction cache a 64 K register file
+and a unified 96k L 1 data cache or
+shared memory and we should have the SM
+block diagram from Nvidia for that point
+serena has an advertised 50% performance
+per core improvement over the previous
+generation so this is where we've in the
+past said you can't just compare a
+straight core counters core count on
+GPUs because of things like this Pascal
+was roughly 30% claims by Nvidia over
+Maxwell 4 per core performance per core
+and the definition of that is kind of
+loose it could be power consumption for
+a given performance or it could be Rob
+perforins the next part why why why GP
+C's why TBC's so we should cover that
+and why they even exist above the GPC
+there sits something called a command
+processor you've probably seen this in
+AMD block diagrams if you've ever looked
+at them and video doesn't much talk
+about its command processor because
+AMD's is generally a bit more advanced
+thanks to the console integration but
+the level of that being advanced the
+level to which it is useful is kind of
+questionable in PC games as we've seen
+in the past as well so the global
+processor or the command processor
+dishes out the commands to the rest of
+the GPU via PCI Express that is where
+they come from and it starts with the GP
+sees when it's giving a command so
+command processor sits at the top gives
+a command down to the GP sees and then
+those start doing work with their fixed
+function units and spread it to the TB
+sees when running a game DirectX or
+OpenGL or similar commands are
+dispatched via PCIe to the GPU
+at which point these commands are stored
+in the memory of the GPU the GPU must
+then work to access those commands and
+it relies on pointers to figure out
+where the program is in memory so at a
+much higher level this is defined in
+part by the driver but that's discussion
+for another time the command processor
+manages multiple queues of things
+talking to the GPU via DirectX and it
+eats hardware available to handle each
+one of those inputs canonically
+a shader comes down the pipe and several
+fixed-function things need to happen
+shaders get spawned that might be vertex
+geometry tessellation and so forth you
+may need access to tes laters another
+fixed function piece of hardware in
+order to process some of these commands
+the command processor communicates be a
+PCIe to the host manages the entire GPU
+chip and has some power management
+functions as well the GPC is are below
+the command processor
+there are 6g pcs in tu 102 the GPC is
+parent to 60 pcs but there is also fixed
+function hardware on the GPC including
+dedicated raster engines fixed
+functional hardware is typically
+allocated along the GPC boundaries but
+the GPC is also useful for grouping T
+pcs at a certain level these are all
+managed together as a single unit so for
+example screen space partitioning might
+have six bins that are tapped for pixel
+shading and service based division think
+of Jie pcs as a means to allocate and
+distribute the workload to the right
+collection of sub resources and fixed
+function hardware some of those sub
+resources are T pcs which are an
+indication of what resources are being
+shared and bound together the torreón
+TBC much like the Titan V Volta TBC
+hosts to streaming multi processors the
+to SMS share a unified cache and memory
+pool within the TBC there are resources
+that are TBC specific so when a program
+comes down the pipe ones he BC might
+make more sense than another when
+considering the wake and sleeps dates of
+its child SMS with to SMS sharing a
+unified cache and memory pool we
+wouldn't want to shut down the cache
+unless both SMS are asleep and so these
+function as one unit T pcs 8 and power
+management as well as the GPC pushes
+commands to the TV sees the TBC's will
+wake and sleep SMS based on the optimal
+load balancing for minimal power
+consumption of a given workload if one
+unit is half active it might make more
+sense to wake the other sm in that unit
+rather than wake both SMS or one sm on a
+whole new TBC altogether so now how
+heavy the incoming load is other shared
+resources include rasterizer z' for
+example at greater than one triangle per
+clock you'd need a way to divide up the
+triangles between multiple units for
+processing this is where G pcs can
+leverage
+fixed-function hardware to process a
+triangle and farm out the rest of the
+work to its local units as for the SMS
+the next part of the architecture the
+biggest change again has been to
+concurrency between in 32 and
+floating-point operation execution so
+terrain moves to concurrent execution of
+FP 32 in 32 operations Pascal again
+pipeline stall if it had an into
+operation come down the pipe rather than
+install the FPU is to allow a single
+into operation to execute now they can
+execute simultaneously because of
+independent data paths for both int and
+floating-point operations and that's one
+of the bigger changes to this generation
+for examples of one integer and
+floating-point operations would be
+encountered in games we reached out to
+some game engine programmers that we
+know GPUs are traditionally bad at
+integer operations and so in heavy
+programs typically remain on the cpu
+here's a quote from one of our developer
+friends quote most traditional graphics
+operations are independent and purely
+floating-point shading a pixel for
+example doesn't require you to know
+about the surrounding pixels and is
+essentially just a bunch of dot products
+and multiply ads but ray tracing through
+an octree requires alternating integer
+and FP operations for example you need
+to find the nearest sub tree that array
+intersects to recurse into that sub tree
+intersecting with the objects is a
+floating-point operation but deciding
+which is the nearest is integer and
+boolean logic how will this help games
+if you can move more sophisticated ray
+tracing to the GPU you can improve the
+quality of lighting algorithms their
+pixel shading can use this ray trace
+data to calculate real-time shadows or
+you can move physics simulation to the
+GPU free in the game to simulate more
+complex game systems integers aren't
+just for ray tracing even though that's
+mostly what that quote was talking about
+just to dial it back to the very basics
+here talking about integer versus
+floating-point floating-point gives you
+more precision you have a decimal point
+after it can be FP 32 FP 64 would be
+considered double precision FP 16 and we
+considered half precision but you have a
+decimal point there for traditional FP
+32 operations and then that extends out
+to give you the level of precision
+integer is a hard number it's just a
+whole number 11 period that's it
+we're
+and period that's it so you might use
+integers for something like taking RT s
+counting the resources if you have gold
+wood stone something like that age
+vampire style resources that might be
+integer because there's no reason to
+have that level of precision beyond a
+whole number and then beyond that you
+can use it for something like there are
+examples online of counting units
+counting objects in the game
+counting 3d objects you don't need
+halves and fractions for that you just
+need the hard numbers so that might be
+integer the question is does that stuff
+go to the GPU or does it stay on the CPU
+and we don't fully know that answer our
+friend here who gave the developer side
+quote helped out a lot with the ray
+tracing side of things but typically
+that stuff goes to the CPU that's why I
+CPUs leverage different threads for game
+logic game physics games sound all that
+stuff so we're not clear 100% of what
+integer operations will go to the GPU at
+this point even though game engines do
+use a decent amount of into operations
+it's just a lot of them go to the CPU so
+that might change it might not we're not
+really clear on it but that seems to be
+the theme for a lot of the stuff with
+new technology as you know you know
+there's potential II just don't know
+where it's being used so next up memory
+and the cache subsystem have received
+some of the more substantial updates and
+taurine memory is not unified so there's
+a single path for texture caching and
+memory loads and that frees up l1 memory
+to be it's closer to the core so it's
+the most important applications can
+decide whether they need more shared
+memory more l1 cache and then it can
+switch between how much of each there is
+between the SMS they can also divide
+into groups of either 64 K of l1 32 k of
+shared or the opposite split across to
+load and store units and this helps with
+applications where one structure may
+have previously gone unused now it can
+just pull that either that shared memory
+or that cache and push it over into the
+other one so you might typically have
+shared memory going unused in one
+application it just wants a lot of cache
+now you can pull that shared memory
+allocation turn it into cash really some
+of it anyway so that leaves the expense
+of SRAM more utilized than
+the expensive primarily in that there's
+very limited amounts of it and then
+after that we saw tents recorders and RT
+cords to talk about so this is a big
+part of this architecture and the one
+that is the most uncertain in the future
+of what will be useful for games so it's
+one that will primarily be leveraged in
+very targeted applications that have
+explicit use of these new types of cores
+and for gaming chips it's more about
+inferencing than training because
+everything's done in real time so it's
+more about figuring out what's happening
+not training for future simulations or
+scenarios which would be training versus
+inferencing and DL SS their deep learned
+super sampling deep lore and
+anti-aliasing those are situations we'll
+talk about more later that will utilize
+the the deep learning side of the chip
+as for RT cores these are specifically
+used for accelerating bounding volume
+hierarchy navigation when testing for
+points of intersection between rays that
+are traced and triangles that may
+collide with those trace trays be VHS
+are used in many 3d applications like in
+our own intro animation with blender and
+are useful for storing complex 3d data
+ultimately 3d objects look something
+more like a whole bunch of numbers just
+a mess of numbers and coordinates and
+that's what the GPU and CPU are dealing
+with when a GPU is trying to determine
+if a ray intersects with a triangle it
+must scan the entire list of numbers to
+determine if there's a hit doing so
+creates pipeline stalls and makes
+real-time ray tracing difficult but not
+fully impossible as it has been done as
+recently as 2014
+tomorrow children game still in order to
+speed up intersection checks all of this
+data can be shoved into a bounding
+volume this isn't new technology by the
+way and then the application and GPU can
+determine whether the Ray intersects
+with different groupings of geometry
+using the new tensor and RT cores so I'm
+now going to try and explain what Nvidia
+CEO more-or-less failed to explain on
+stage when he did the whole boxes within
+boxes thing so if we have intersection
+checking going on with a 3d object like
+this 1080 TI video card you're trying to
+figure out from the point of view of the
+camera where is the ray of light going
+to hit which triangle will it intersect
+with
+so that we can then figure out the
+correct color for or the correct
+rendering of that triangle so we're
+tracing away from the camera
+you can either trace it against every
+triangle here all of that data just a
+ton of numbers and scan it all you're
+wasting thousands of cycles for that or
+you trace it against maybe let's say
+three cross sections so we cut this card
+into three pieces top half middle or top
+top third middle and bottom third when
+the Ray then hits what we're checking is
+against three pieces rather than
+everything and so maybe we figure out
+okay it's not in the top one it's not in
+the bottom one so we know it's in the
+center of the object so the Ray comes
+back it checks hits something in the
+center and now it just drills deeper
+into smaller and smaller bounding
+volumes until it eventually gets to the
+triangle that it intersects and what
+that does is in this analogy it allows
+us to completely ignore the bottom third
+the top third of the triangles and focus
+only on the center and that is where the
+advantage is derived and then you end up
+using our tea cores and tensor cores for
+different elements of deep learning or
+raytrace in this case the arti cores so
+you're just doing a lot of matrix
+processing so the shader uses a ray
+probe to find the section of triangles
+and then it decodes that section there's
+an intersection check to see which
+subsection the triangle might be in and
+then it continues on until it eventually
+finds a triangle scanning like this
+again thousands of cycles typically so
+not all that feasible for a GPU to
+complete real-time ray tracing
+but our T cores are supposed to help the
+RT cores accelerate this by
+parallelizing the workload some RT cores
+will work on BBH scan while others are
+running intersection checks with
+triangles fetching and triangle scanning
+the sm meanwhile can continued normal
+processing of floating point in integer
+operations now concurrently and is no
+longer bogged down with a BBH scan for
+rays this allows normal shading
+processing to continue while the SM
+waits for the Ray of course all of this
+hinges upon game developers deciding to
+adopt and use the RT X SDK for their
+games and it could take years before we
+start seeing any meaningful
+implementations
+beyond the first handful of titles the
+technology has a sound foundation but
+minimal practical applications at this
+time limiting its usefulness let's get
+into some examples of what the RT X SDK
+can be used for before closing out the
+video a few interesting notes on RT X
+first like AMD did with trueaudio RT X
+can be used for sound tracing it never
+really went anywhere with Andes true
+audio but maybe there's a chance here it
+can also be used for physics and
+leveraged for collisions by tracing rays
+into objects or for AI and NPC visual
+sight data again at present we're not
+aware of any such implementations in
+existing games but it is possible in
+gaming applications RT X will be mixed
+with standard rasterization this is not
+full scene ray tracing as you might have
+been led to believe by some of the demos
+but it is highly selective instead
+thresholds are used to determine what
+should or shouldn't be ray traced in a
+scene and at present and Vidya is only
+using 1 to 2 samples per pixel plus
+denoising to make ray tracing feasible
+in real time there's a long way yet to
+go for the dream to be fully realized of
+real time ray tracing an entire scene RT
+X is useful for 100% ray traced scenes
+sure but mostly those in which there are
+pre-rendered animations ie not real time
+separately from this ray tracing can be
+used to call objects with greater
+accuracy than bounding box volumes are
+today we aren't sure if there are any
+applications of this in games presently
+and we are also unsure of if this would
+even work when considering how many
+cards don't reasonably support
+accelerated ray tracing so while the
+concept works with RT X the extent of
+which it is applicable to Pascal Maxwell
+where ante cards is uncertain a game
+developer might have to build the game
+with its traditional solutions in place
+and then also ray-traced : which could
+complicate things especially in
+competitive landscapes real time ray
+tracing may prove most useful as a
+workflow speed-up for developers like
+when modifying lights in real time and
+not baking pre computed ambient
+occlusion or shadow maps shadow
+reflections are also interesting use
+cases for ray tracing Nvidia isn't
+denoising the entire image and applies
+one denoising filter per light this
+means that increasing light sources
+could
+or even will decrease performance and
+the population of tech demos with a
+single light seems to solidify this
+denoising require specific data on hit
+distance scene depth object normal and
+light size and direction there are three
+types of denoise used in RTX directional
+light D noise radio light D noises and
+rectangular D noises all of which use
+different algorithms to determine ground
+truth for the image think that'll cover
+us for now for the architecture
+discussion there's more but that seems
+pretty good
+so mostly focusing here on big terrain
+on the SM Arc changes ygp sees TBC's and
+so forth exist hopefully that helped you
+out and then we do have things like the
+cards taken apart we'll see what we do
+with those and video sent a last minute
+email saying no disassembly of cards so
+we'll figure it out there's a lot of
+screws there though so clearly it's
+already been done I mean is this this
+assembly of a card it's a backplate I
+don't know does that count it's not this
+it's not active disassembly so I don't
+know we'll figure all that out later but
+we have the videos we'll post them
+whenever we feel like we can or want to
+and otherwise subscribe for more there
+will be a lot of touring content coming
+up holy this architecture I've helped
+you figure out what's going on but again
+this is not a review please do not
+assume that all this stuff will work out
+perfectly because we haven't tested it
+so don't pre-order buy just yet wait for
+a review and subscribe for more
+patreon.com slash gamers and exit stops
+out directly stored on cameras nexus net
+to pick up one of the mod mats that we
+use for the tear downs we weren't
+allowed to do and i'll see you all next
+time
+you weren't allowed to do retroactive
+Lee</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

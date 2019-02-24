@@ -1,0 +1,257 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>RTX 2080 Voltage Limit, Boost 4.0, &amp; OC Interview w/ Tom Petersen | Gadgetory - Your Gadget Factory</title><meta content="RTX 2080 Voltage Limit, Boost 4.0, &amp; OC Interview w/ Tom Petersen - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus/">Gamers Nexus</a></li><li class="active">RTX 2080 Voltage Limit, Boost 4.0, &amp; OC Interview w/ Tom Petersen</li></ol></div><h2 class="post__title"><b>RTX 2080 Voltage Limit, Boost 4.0, &amp; OC Interview w/ Tom Petersen</b></h2><h5 class="post__date">2018-09-16</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/GjpQwqtvCZc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">everyone I'm joined by Tom Peterson
+distinguished engineer at Nvidia quite a
+prestigious title it seems prestigious
+yes thank you prestigious so Tom just
+got off stage here at a press event
+talking about overclocking for the new
+GPUs including the 20 80 and 20 80 TI
+yes well we did we just launched our
+touring products and we had our editor
+stay here it's great to see you again
+and I'm really excited because we we
+introduced a bunch of new things
+including something called the Nvidia
+scanner and the Nvidia scanner actually
+makes it possible to do one-click
+overclocking so a lot of new stuff
+before that this video is brought to you
+by the NZXT E Series power supplies the
+E Series PS use our high end power
+supplies with real time digital voltage
+and temperature monitoring per rail
+wattage measurements and data logging
+functionality for power usage the e
+series PSU is also come with a 10 year
+warranty all the way down to the 500
+watt unit and they run fully modular and
+with silent fan operating modes learn
+more at the link below so we've we've
+heard this a lot
+one-click overclocking I've been hearing
+this for a long time to a we take
+something like that yeah yeah
+so one-click overclocking most the time
+in recent years it's gotten a lot better
+I'll say so we've done some man vs.
+machine things we're all overclocked
+we'll let it overclock it's pretty close
+yeah but I mean sell me on it why why
+should I trust it to handle it this time
+versus last time what's different fair
+enough question well I can tell you
+what's different this time is Nvidia is
+doing it so we've developed all the
+logic it's divided into two main chunks
+one is called the test program the other
+one is the test load and the test
+program kind of knows about how does our
+voltage frequency curve look so it knows
+exactly which voltage points to test to
+make things go really really quick and
+then since we can control the voltage
+exactly because we're Nvidia you know we
+can control that stuff there's no
+variability caused by games or load on
+the load side it's a mathematical test
+that we develop to exercise our GPU
+precisely so we can modulate that load
+based on the power or the temperature
+and effectively think of it as if you
+could get Jonah to like overclock your
+GPU for you and write giant programs to
+do it this is what he would do
+right and this is it's if you watch the
+thing it steps at one voltage runs a
+bunch of tests steps at another voltage
+runs a bunch of tests and it delivers a
+high quality curve in about 20 minutes
+so and this just to be clear here there
+is an OSI scanner program or there a
+couple of them at least previous
+generation how is this different from
+those well what's different is this
+doesn't crash it doesn't it doesn't like
+TDR it doesn't it doesn't fail because
+we're looking at a data comparison and
+that data comparison we can detect
+errors in far before we see any other
+like visual or Windows corruptions um
+the other thing is of course we know how
+our VF curve looks so we know which
+points to let go after so we're actually
+focusing on five different voltage
+points and interpolating between those
+voltage points to generate the kind of
+final curve so it's like all of the
+knowledge that we have in our chip team
+and our board team and our architecture
+team has been compressed into this test
+structure and our test load and then you
+know I have to bring up voltage of
+course I think on the in your
+presentation I think we're seeing
+something like what did stop at 2130 and
+130 and one point zero something volts
+one point zero six something nice is it
+one point zero yes yes and that's why I
+have the question voltage I guess the
+community decision on this is that it's
+been locked is the the phrasing I'll use
+so tell me why I'm wrong ah well you're
+not wrong voltage is in fact controlled
+and restricted but I think you're the
+reason the community is unhappy I
+believe is that they feel like the
+voltages nefariously locked right that
+that Nvidia is locking this for poor
+reasons but the truth is we know exactly
+how our silicon behaves and we set our
+voltage limit like the peak voltage that
+we run at is set to be reliable so that
+we can run at that voltage for many many
+years five years is typical now as you
+increase the voltage beyond that we're
+going to start having fallout meaning
+that some chips are just going to die so
+it's our our kind of obligation to help
+gamers not blow up their cars everything
+else on that that UI for overclocked
+is non-destructive it doesn't void
+warranties we don't have like Oh
+tracking if you over voltage or not
+so what we're kind of trying to say is
+we want to make sure the people can
+enjoy overclocking they can experiment
+with it but they don't blow up expensive
+graphics cards voltage is the one thing
+that will blow up the card that is
+accurate you can play with the power you
+can play with the temperature you can
+play with the offset all of that is
+non-destructive but the voltage will not
+just perhaps blow it up right away but
+it'll also for sure degrade the
+performance of the chip over time so as
+kind of a promise to our end users its
+overclocking is free and it's safe and
+if we allow them to slide a voltage
+slider where you know suddenly they're
+going a to X the voltage we're gonna get
+a lot of surprised and unhappy gamers
+I'm gonna give you one more opportunity
+to tell me why I'm wrong before we move
+on to Foose 4.0 ok so the next one why
+is the voltage slider from 0 to 107
+offset and Pascal or I would assume
+touring cards why is that not a placebo
+slider whoo well it does what it does I
+mean what that percentage means is how
+much of the available voltage Headroom
+is unlocked so it doesn't necessarily
+say what voltage are you gonna run at it
+just says what are the new voltage
+levels that are available so as an
+example normally you're not running at
+your peak voltage you're normally
+running lower because of temperature or
+power
+so just sliding that slider up doesn't
+change anything unless you actually hit
+those voltage levels so I think a little
+piece sometimes people are a little bit
+disappointed about how many levels that
+actually unlocks because it's really
+only gonna be a few ticks because we're
+going from five-year reliability to
+1-year reliability and that translates
+into I think roughly 3 more voltage
+steps on most of our cards so it's not
+placebo it's just you know I want to be
+responsive but I just don't want people
+blowing up cards so it's like yeah yeah
+but I think we talked earlier and I know
+you would like a way to say I'm an
+expert I would like to play with my card
+so give me a ways that I can maybe go on
+a website get a cookie or maybe you know
+put a special USB key and
+I can make it harder but just don't lock
+me out entirely that's what you're
+saying so I'm gonna go look at that
+but right now obviously we don't have a
+change but it's it's not something that
+we're opposed to it's just you know
+we've got to find a way to do that
+without compromising quality and if any
+of you I guess on that topic have a
+specific idea relating to that let Tom
+know below actually let you know and
+then you know you can tell me yeah but
+let me know but you're gonna make me
+sift through the comment well yeah no
+yeah yes yeah you can tell Tom is a is
+high up in the company when he is
+delegating that to me you got it yeah so
+last question for you a quick overview
+which is asking a lot but boots 4.0
+what's changed versus 3.0 what are give
+me the primary features that have
+changed okay well there's two things big
+one is that we have no longer had a card
+temperature limit so on boost 3.0 you
+set a temperature limit and that means
+that pretty much the car it's gonna stay
+below that limit and if the temperature
+ever rises above that limit then we cap
+all the way down to base o'clock and we
+stay at base clock let the fam ramp
+that's our default behavior you can
+slide the temperature slider up to kind
+of avoid that if you want to allow a
+higher temperature higher fan on boost
+4.0 what we've done is actually created
+a plateau in that transition so it
+doesn't go from uncap down to base it
+actually goes from uncapped down to
+boost and it'll stay a boost for a while
+before the temperature goes a little bit
+too high and then it'll cap down to base
+so if you think about that it kind of
+says boost for dot o is no longer like
+this cliff it's more of a plateau and
+we're gonna allow temperature and power
+to rise up to a secondary limit where
+users can you know say I'd rather I'd
+rather trade off lowering clock for
+lower temperature now since that's such
+a user centric decision we've also
+enabled that curve in a new API so the
+boost for API allows end-users to sort
+of dial in their own boost algorithm and
+that will you know you can imagine
+somebody says I just want a hyper if I
+don't care about loudness or I want sort
+of a smoother transition between
+acoustics and performance and that's
+really what blues for is all about very
+cool so there's your quick overview of
+that otherwise we'll have articles
+online by the time this video goes live
+so check the link in the description
+though for more information tom thank
+you very much great to see you again
+brother for joining me and we'll see you
+all next time</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

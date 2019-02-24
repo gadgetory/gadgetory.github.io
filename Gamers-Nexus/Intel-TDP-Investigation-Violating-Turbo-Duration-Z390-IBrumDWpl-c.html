@@ -1,0 +1,537 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Intel TDP Investigation: Violating Turbo Duration (Z390) | Gadgetory - Your Gadget Factory</title><meta content="Intel TDP Investigation: Violating Turbo Duration (Z390) - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus/">Gamers Nexus</a></li><li class="active">Intel TDP Investigation: Violating Turbo Duration (Z390)</li></ol></div><h2 class="post__title"><b>Intel TDP Investigation: Violating Turbo Duration (Z390)</b></h2><h5 class="post__date">2018-11-06</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/IBrumDWpl-c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">in tells TDP has long been questioned
+but this particular generation puts the
+95 watt TDP under fire as users noticed
+media outlets measuring power
+consumption at well over 100 watts on
+most boards it isn't uncommon to see the
+900 K at 150 watts or more in some AVX
+workloads like blender thus far and away
+exceeding the 95 watt number
+aside from TDP being an imperfect
+specification for power there's also a
+lot that isn't understood about it
+including by motherboard manufacturers
+apparently all manufacturers are
+exceeding Intel guidance for the turbo
+boosting duration in some way which is
+causing the uncharacteristically high
+power consumption that produces unfairly
+advantaged performance results the other
+end of this is that the 900 K looks much
+better in some tests but it also looks a
+lot hotter in thermal tests with the
+lack of turbo duration guidance before
+that this video is brought to you by
+Thermaltake and the view 71 enclosure
+the view 71 is a full tower case that's
+capable of fitting three video cards and
+most configurations it's also one of the
+better cooling cases in our recent case
+testing bench lineup the view 71 has
+hinged a tempered glass doors on either
+side that make it easy to open and show
+off and it comes with at least one rain
+fan though you can get the RGB version
+if you prefer learn more at the link in
+the description below getting into this
+then as a reminder we had a power draw
+chart during our streaming benchmarks in
+the 9900 Kay review you might remember
+that in that chart the 99 hundred K sort
+of boosted up in power consumption and
+eventually dropped down to 95 watts or
+thereabouts where it stayed for the
+duration of the test and that is
+expected performance based on the specs
+that Intelli has put out but in most
+workloads it turns out with other
+motherboards or even with the same one
+that we use but with different settings
+the Intel CPU far and away exceeds that
+95 watt number it'll go up to 150 or
+even 200 watts in some semi stock
+scenarios with different motherboards
+this comes down to a few things
+primarily to motherboard vendors or
+manufacturers exiting Intel guidance and
+it's them doing so without really
+telling anyone so you have to be savvy
+enough to figure
+out and then you need to figure out that
+it's happened down on all the boards so
+when you see this happening to
+everywhere
+you start to question your own sanity
+like is this is it even wrong if all the
+CPU is doing this power draw on every
+motherboard that what is the spec and
+that's what we're looking at today so
+the ACS board when we tested it we
+tested with XMP - which is the default
+setting not the optimized setting and we
+chose no - the prompt which disables MCE
+now this time MC is a bit different
+it's sneakier instead of just going all
+Kord the single core max turbo which
+would be 5.0 gigahertz it is instead
+going to be correct all core turbo so it
+looks fine it looks like MCS not even
+doing anything but the sneaky part is
+that it's blasting the turbo duration
+with msie disabled on the Asus board and
+this is the only one we've found so far
+that does it properly disabled it sets
+the correct
+turbo boost limitation for time and that
+means that the power after a fixed
+period of time no more than 100 seconds
+will throttle down to the 95 watt power
+limit and that's something we need to
+define here as well all the other boards
+as you'll see in our testing today
+violate this power limit and that's
+where we get this huge discrepancy and
+that's where the Intel 95 watt TDP that
+you all have pointed out is questionable
+at best so first you need to know about
+power limits one and two parallel Emmitt
+two is how much power the CPU can use in
+bursts Intel's official document
+describes this as quote a threshold that
+if exceeded the power limit to rapid
+power limiting algorithms will attempt
+to limit the spike above PL to power
+limit 1 is the maximum frequency under a
+sustained load given in watts Intel's
+document describes this one as quote a
+threshold for average power that will
+not exceed recommend to set to equal TDP
+power PL 1 should not be set higher than
+thermal solution cooling units that's an
+exact quote from their document in other
+words Intel recommends a 95 watt setting
+but does not mandate it once ewm a power
+or exponential weighted moving average
+power is roughly equal to power limit
+there is no more power budget for turbo
+boosting and frequency down clocks as a
+result of this we have a chart for that
+one as well that's when it steps down to
+power limit one levels exhibiting the
+lower frequency will see in testing
+later this is the Intel specification if
+it were following at what we're seeing
+on some motherboards you'd actually
+instead see the power and frequency
+blasted at those same peak frequencies
+and PL two levels that you're seeing in
+the chart in the same image tau is the
+turbo time parameter which is dependent
+on ewm a and follows the same curve
+although there's a typo in there from
+Intel Intel allows for up to 100 seconds
+of P l2 or infinite PL one power is
+allowed for PL 4 to be 10 milliseconds
+max by Intel spec the hardware defaults
+for PL 1 is 95 on an 8 core CPU or 119
+Watts for PL 2 for the limited duration
+allowed and that's also for an 8 core
+Siegen bursts up to 119 watts with PL 2
+or even higher with PL 4 but with PL 4
+it's never more than 10 milliseconds
+with PL 2 it's not supposed to be more
+than 100 seconds and then finally note
+that TDP is kind of nebulous usefulness
+in general because as a number it
+doesn't really mean a whole lot doesn't
+mean literal power consumption it's
+again it's it's a bit it's a bit
+nebulous it's a Intel's measurement of
+TDP is more about cooler ability to
+dissipate heat than anything it's not a
+literal power metric it can be
+significantly different from the actual
+power metric which makes it difficult to
+use so we were talking to Shannon Rob
+another reviewer about all this from
+urine 3d and he saw similar stuff that
+we did so let's get into the charts and
+look at what we found with the different
+motherboards for the turbo duration
+issue power consumption is the most
+important for this one scene as it is a
+TDP rating discussion we're measuring
+power in two places we have EPS 12 volt
+measurements have the power supply
+cables via a current clamp then we also
+have hardware info software measurements
+the to ensure that we have reliability
+and can trust the data between each
+measurement we're also going to be
+showing the power within the first 30
+seconds of load which will better
+illustrate at what point any throttle
+kicks in this chart shows a lot of range
+first of all none of these results
+involve manual overclocking we only ever
+changed one or two settings one of which
+would have been XMP out of all these
+results there's only one that follows
+Intel specification that's the ASUS
+Maximus 11 hero with no selected to the
+enhancement prompt after enabling XMP
+for this one we measured about 98 watts
+down the EPS 12-volt cables which is
+within reasonable margin of error for
+the 95 watt TDP specification though TDP
+again isn't really a perfect number this
+is within spec so far for the first 30
+to 60 seconds we observe it dwindling at
+power consumption from 140 watts to 120
+watts before eventually falling off to
+98 watts this is due to turbo boost
+duration policies something we'll show
+in another chart coming up and this is
+ultimately what all of the boards should
+look like for power metrics speaking of
+that other chart for reference here's
+what the frequency functionality looks
+like when operating under settings with
+MCE disabled via XMP 2 and selecting the
+no prompt this plot takes place over a
+23 minute blender render or there abouts
+so this is a real-world use case of the
+99 hundred K notice that there's a sharp
+fall-off after about 30 seconds where
+average all core frequency plummets from
+4.7 gigahertz to 4.2 gigahertz notice
+that the power consumption remains at
+almost exactly 95 watts for the entire
+test pegged to 94.9 watts and relatively
+flat this corresponds to the right axis
+with frequency on the left it sort of
+feels like an RT X flashback where we're
+completely power limited the difference
+is that this is under the specification
+despite the CPU clearly being capable of
+more you'll see that the frequency picks
+up again when the workload ends leaving
+us with unchallenged idle frequencies
+let's get that power chart back on the
+screen here's the weird thing if you
+leave the Asus board to just auto
+without any form of XMP without any MCE
+modifications whatsoever then the
+multi-core enhancement feature is left
+to auto as well this seems reasonable
+but in this version of multi-core
+enhancement instead of boosting to the
+maximum single core frequency which is
+very obvious when done and violates spec
+of course
+asus is extending the turbo-boost
+eration that's a new form of MCE
+it's tricky and it's well hidden rather
+than boost visibly different numbers
+like applying the single core boost
+modifier to all cores the board is
+allowing turbo to last ad infinitum the
+fact that the board operates outside of
+spec when auto but inside of spec when
+XMP is on and with no selected is a
+really odd choice to say the least you'd
+expect a more consistent policy with
+Auto probably following the spec more
+closely
+if anything it seems as if a snus hasn't
+decided if it wants to be within spec
+and lose to other boards or exit spec
+and exceed TDP let's get the EVGA
+outlier out of the way this is what
+power consumption looks like when you
+completely disable Intel's turbo boost
+functionality it's obviously awful as
+you're not really supposed to do this it
+runs the CPU way slower this establishes
+though that turbo is within TDC
+specifications of course but only when
+turbo duration is properly controlled by
+the motherboard manufacturer EVGA did
+not appear to have an MCE option of any
+kind and only had the normal turbo
+toggle so we decided to use it as a
+vessel for testing that power
+consumption baseline with no turbo
+boosting whatsoever next the other end
+of the chart shows the MSI godlike with
+enhanced turbo explicitly enabled as
+pulling 192 washdown the EPS 12-volt
+cables for reference enhanced turbo is
+natively set to auto which has an
+infinite turbo duration and violates TDP
+under all motherboard settings enabling
+enhanced turbo explicitly will boost all
+core frequency to 5.0 gigahertz and is
+basically a new version of MCE
+it is however sort of off by default in
+that auto and off are the same thing and
+on boost a single core frequency across
+all cores so really it's often auto
+violate the turbo boost duration spec
+and then on is a user activated function
+that pre overclock see that's the real
+meaning if we highlight the complete
+auto MSI configuration no changes at all
+that has us at 150 watts draw not
+anywhere close to the power figures
+cited by Intel technically this makes
+MSI the ones at fault but we don't know
+if there any behind-the-scenes politics
+that could influence things MSI
+also exits back with enhanced turbo set
+to auto which keeps the 4.7 gigahertz
+ratio but also removes the turbo
+duration limits to say when enhanced
+turbo explicitly leaves us in the same
+spot
+turbo durations still have no power
+limits and the power is still at about
+150 to 155 watts there's there's no
+limit within the duration that one would
+expect by Intel spec instead it's
+basically infinite here's the frequency
+versus time plot when Emma size godlike
+is involved for this setup the asus
+board is still set to follow spec and
+has MC e disabled the MSI board is under
+it's Auto enhanced turbo settings which
+are the same as it's disabled enhanced
+turbo settings in this example the MSI
+board is holding strong to 4735
+megahertz which is violating the spec in
+multiple ways sort of cheating for one
+BC LK is 100.8 which we already
+discussed for to the turbo duration
+limit is removed under these Auto
+settings and all settings actually and
+so it holds a higher ratio power draw is
+also higher peg to 152 watts instead of
+95 from Asus and that extra 60 watts
+goes a long way toward performance back
+to power one more time with ACS
+selecting yes to the prompt puts us at
+around 142 Watts right around where the
+others are at this point the only
+difference between EVGA MSI and Asus is
+the automatic voltage provision EVGA has
+the tightest speed core and so draws
+less power as you can see in these power
+numbers but also is exiting the turbo
+duration spec for reference our initial
+review is done with the correct setting
+we use the asus motherboard with XMP -
+and no selected at the prompt and so our
+results follow the Intel spec and
+guidelines that's because we learned
+about this last time with a z3 70 if we
+used a different motherboard though our
+results would be higher and our thermals
+would be higher significantly and our
+power would also be higher so that's
+where some of the confusion came in a
+couple weeks ago from the reviews we
+have two performance tests to look at
+the first one is a truncated test
+rendering our GM logo seen at only 20
+percent resolution you can see the
+normal GM logo rendered on the screen
+now it's been playing for a little bit
+and this is what the scene the final
+result looks like it's
+real-world use case of these higher-end
+CPUs it's one frame from our intro
+animation to this very video the second
+performance test is the normal 50%
+resolution render which takes about half
+an hour even on a good CPU for the 20%
+resolution test the shorter one you'll
+see that only three items are outside of
+the error margins and are quickly
+identifiable at the low end of the chart
+the EVGA FTW with turbo completely
+disabled this is obviously bad and not
+something you should be using but we did
+that that wasn't an EVGA default spec or
+setting that's where Intel would be at
+65 watts with the 9900 K more critically
+the asus hero with MCE completely
+disabled selecting no at the XMP prompt
+performs noticeably worse than the other
+motherboards Asus gets punished for
+partially following Intel spec though
+their auto setting still exceeds it so
+we can't give Asus too much credit here
+they're not really the good guys it's
+just they were less bad than some of the
+others at 4.2 minutes to render the logo
+we're taking 11 percent longer to render
+the logo than the rough average of 3.8
+minutes for the other boards here's the
+full render we only have a few of the
+9900 Carranza's on here as it takes so
+long to run this test it's just enough
+to make a point
+our original review used the correct
+settings to follow Intel spec and so is
+the worst of the 900 K results that's at
+twenty five point five minutes which is
+just ahead of the r7 2700 at 4.2
+gigahertz it's about a minute faster
+it's about three minutes fast for them
+the 8700 K at five gigahertz and
+significantly slower than the 70 900 x10
+core CPU stock with the MSI godlike and
+EVGA FTW extended turbo durations we saw
+a render time reduced by about 9.3
+percent that's noteworthy and diminishes
+the gap between the 7900 X while
+widening the gap between the twenty
+seven hundred and twenty seven our X
+stand in at 4.2 gigahertz finishing in
+twenty three minutes instead of twenty
+five point five might not sound like a
+lot but it's all about scale if you're
+an animator you're likely rendering
+thousands of frames a 10 percent
+requirement reduction in time per frame
+will add up very fast and so it's
+misleading the show performance numbers
+outside of the spec at the same time
+though if all of the board's violate the
+spec maybe it isn't misleading if that's
+the reality
+then the inaccuracy is in showing the
+power
+figures not in the performance figures
+either way both cannot be simultaneously
+accurate will leave thermals for another
+piece we have those as well but we're
+gonna push that with some other key
+insights that we ran some extra tests
+into another content piece this one that
+you should have a pretty good idea of
+where things stand now clearly the one
+instance that we've seen thus far and
+we're boards we didn't show here but as
+ROC Tai Chi follows the same behavior as
+the others except for the ASIS MCE off
+one so the ASIS board is the only one
+when you physically go in there and
+enable XMP and disable MCE that's the
+only one that really follows the spec
+everyone expects when they see 95 watts
+that's what we used in our review we had
+experience with this from Z 370 but if
+you didn't have that board or as a user
+you don't buy that board you're never
+gonna be up that number and unless you
+have that board and other boards you
+really can't compare them and figure out
+this is clearly what they meant when
+they said 95 Watts so asus is following
+the spec to some degree they're not
+angels here though they're also
+violating it with Auto settings which
+just seems completely backwards but
+either way at some point you're left
+asking who's really at fault here
+because intel has guidance that document
+we showed earlier is from Intel they've
+set guidance they've set parameters but
+they're not necessarily being strict
+enough with them and so a motherboard
+manufacturers are doing whatever they
+want now apparently Intel's going to be
+more strict this generation which is why
+you see Asus buckling down on it where
+previously they didn't and in fact asus
+was responsible for a lot of the sort of
+trickery that happened in previous
+generations so Intel might be starting
+to crack down on this but for now can
+you blame the motherboard manufacturers
+or do you blame Intel because
+motherboard manufacturers are doing
+whatever they can to make their boards
+look better than the other but at the
+same time it makes Intel look better
+sort of unfairly so really what should
+probably happen is Intel should drop the
+95 watt number that's used and cited
+everywhere since it only applies under
+those certain scenarios described
+earlier and the boards don't really
+follow it and instead cite higher
+performance with a higher power
+consumption because those two go
+together
+as opposed to the basically impossible
+to achieve power consumption
+under all these other motherboards
+parameters except for one in one
+specific setting and and the higher
+performance there right now they're
+doing two things in opposition to each
+other when they need to be doing two
+things either together proportionately
+rather than inversely which is what
+Intel is trying to do with respect so
+it's a question of who do you blame
+Intel for not being strict enough with
+the guidance that they do have or the
+motherboard vendors for sidestepping the
+guidance constantly and running
+basically out of spec and you're left
+here with basically just ASIS in one
+setting doing this spec that like
+running at spec running where they
+should be so if it's just one under one
+setting then is it even a spec is it
+even guidance because it's just making a
+serious look Pat at that point instead
+of what everyone else is doing so that's
+it for this one hopefully that answers
+some questions as to what what's the
+deal with TDP why they say 95 watts and
+it's not not if i watch the answer is
+turbo duration and you're allowed to
+boost outside of TDP it's like a hundred
+twenty watts or there abouts it's one
+point two five times pl-1 but it's not
+supposed to be sustained and that's
+where these manufacturers are kind of
+cheating and then PL 3 + PL 4 can be
+exceeded also so that's it for this one
+you can help us out direct through this
+type of content by going to store
+documents access net and picking up one
+of our products like this shirt or the
+mod mats you get a patreon.com slash
+gamers Nexus helps out there as well or
+get access to our behind-the-scenes
+videos pushing to this week and
+subscribe for more I'll see you all next
+time</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

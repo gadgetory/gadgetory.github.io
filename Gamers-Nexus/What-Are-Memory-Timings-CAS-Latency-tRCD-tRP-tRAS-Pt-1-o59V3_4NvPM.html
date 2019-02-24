@@ -1,0 +1,539 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>What Are Memory Timings? CAS Latency, tRCD, tRP, &amp; tRAS (Pt 1) | Gadgetory - Your Gadget Factory</title><meta content="What Are Memory Timings? CAS Latency, tRCD, tRP, &amp; tRAS (Pt 1) - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus/">Gamers Nexus</a></li><li class="active">What Are Memory Timings? CAS Latency, tRCD, tRP, &amp; tRAS (Pt 1)</li></ol></div><h2 class="post__title"><b>What Are Memory Timings? CAS Latency, tRCD, tRP, &amp; tRAS (Pt 1)</b></h2><h5 class="post__date">2018-07-02</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/o59V3_4NvPM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">we're going to try and attempt the
+impossible and break down memory timings
+one by one this will be over several
+content pieces we're making a big
+article push on this the articles will
+be linked in the description below as
+always but we also have a video
+component here which will have some key
+animations we've made for the memory
+timings memory timings are incredibly
+complex it's crazy how complex they get
+and we spoke with several vendors before
+taking on this task as Asus told us you
+need to take your time with this one
+pretty easy to screw things up so as a
+general introduction today we're going
+to over primary timings we're going to
+provide some animations of how they all
+work what they do rows and column access
+and all that stuff also be talking about
+basic formulas to calculate cycles and
+things like that and what the numbers
+mean for each primary timing at a later
+date and another content piece we plan
+to go over the secondary and the
+tertiary timings and just drill down
+further as we go through this content
+for RAM and memory timings because they
+have a huge impact on performance in
+some instances and there's not a lot of
+information out there that's condensed
+in just one area so we're gonna go for
+that
+before that this video is brought to you
+by Thermal Grizzlies high end thermal
+paste and liquid metal Thermal Grizzlies
+cryo knot is an affordable high quality
+thermal compound that doesn't face some
+of the aging limitations of other pastes
+on the market cryo knot has a thermal
+conductivity of 12.5 watts per meter
+Kelvin focuses on endurance is easy to
+spread and isn't electrically conductive
+making it safe to use on GPU dies
+thermal grizzly also makes conductor not
+liquid metal which we've used to drop 20
+degrees off some temperatures than our
+dee-lighted test by a tube at the link
+in the description below first the
+basics while memory frequency is
+measured in Hertz or cycles per second
+the unit from memory timings is just
+plain cycles to convert clock cycles to
+a measurement of time requires knowing
+the frequency of the memory this is
+listed in megahertz or units of 1
+million Hertz
+3200 megahertz has a clock frequency of
+3.2 billion cycles per second so the
+time for a cycle to complete should be 1
+over 3.2 billion seconds however modern
+memory is DDR double data rate meaning
+data is
+transferred on the rising and falling
+edge of each clock so advertised
+frequencies are twice the real clock
+frequency that's part of why when you
+set memory to 3200 megahertz in BIOS CPU
+Z will show 1600 megahertz the time is
+really 1 over 3.2 billion over 2 seconds
+here if our example memory has a CL
+timing of 16 clock cycles this
+translates to 16 times 1 over 3.2
+billion over 2 seconds or point 0 0 0 0
+0 0 1 seconds or 10 nanoseconds if we
+make it easier the equation is 1 over
+advertised frequency over 2 times timing
+in cycles equals timing in seconds for a
+ddr3 1600 kid a CL of 9 translates to 11
+point 2 5 nanoseconds actually slower
+than our previous example latencies have
+gradually increased over the years with
+the physical distance that signals have
+to travel the speed of light is the hard
+limit here but frequency has increased
+as well and therefore performance has
+still improved frequency is very
+important but it's just one element of
+performance as with CPUs there are many
+different timings but they deal with a
+smallest of commands overall one of them
+would be when they can be issued or how
+long it takes to execute how long how
+many cycles pass before a response is
+sent back so we have a table here of
+just the ddr4 commands from Wikipedia
+which will give you some basics so we
+can throw that up on the screen the
+important signals from the top row are
+act or activate wrasse or row access
+strobe casts or column access strobes
+these are no longer strobes it's a side
+note and w/e or write enable wrasse and
+castes are often referred to simply as
+column and row address because they are
+no longer strobes the terminology is a
+holdover these are active low signals so
+they can either be high or low H or L in
+this column or 1 or 0 together they form
+a 4-bit code that specifies a command to
+be executed the signals have changed a
+bit over the years but for the most part
+ddr4 has the same list of commands that
+SDRAM has always had and therefore many
+of the same timings for some background
+information on
+stuff like banks rows and columns
+there's a venerable 2010 article from an
+intact that's a good overview of what
+SDRAM specifically is and how it
+functions if you're curious about that
+let's go through a few of these activate
+who opens up a row of a bank a row must
+be active for reading and writing data
+if a row isn't active it is idle and if
+a row is activated it stays that way
+until a pre-charge command pre-charge it
+closes the open row in one or all banks
+by two separate commands putting them
+into the idle State data is still stored
+in idle banks but they must be activated
+again before reading or writing read and
+write are self explanatory with these
+commands an auto pre charge flag can be
+set to automatically pre charge the row
+when it's done ZQ calibration
+compensates for temperature and voltage
+variation it can be a recurring command
+but not frequently enough to make the
+related timings important to us refresh
+refreshes the charge and memory cells by
+writing data back in place without
+changing it DRAM is volatile memory
+which means that it requires power to
+store data bits are represented by
+charges on capacitors which leak over
+time if they aren't read from or written
+to we'll discuss this more in the next
+piece look at the tre Fi and T RFC
+section for that all banks must be idle
+or pre charged before a refresh the
+jeddak or a joint electronic device
+engineering council and solid-state
+technology Association is an
+organization that publishes standards
+for ddr4 ddr5 SSDs mobile memory SD g DD
+r6 and more
+they're responsible for standardizing
+and defining everything in our article
+and this video from abbreviations to the
+entire concept of ddr4 as part of this
+jeddak publishes tables with baseline
+timings for different Ram types several
+of which are saved in SPD memory
+manufacturers produced strictly Jetix
+defined varieties of RAM like ddr3 1600
+megahertz 1111 11:28 but can make them
+capable of
+higher speeds and market them as such
+for example Corsair sells forty six
+hundred megahertz memory which as of
+this writing is a higher speed than
+jeddak has defined for ddr4 when a newly
+built system is powered on for the first
+time the board will check SPD and
+default to the best set of these jeddak
+approved slow but safe speeds XMP is an
+SPD extension its extreme memory profile
+something that intel has largely pushed
+here and it's a higher performance spec
+that's jammed into the leftover space of
+EEPROM on the memory modules these are
+conceptually the same thing as JEDEC
+profiles but their higher performance
+and they're optimized by the memory
+manufacturer itself that might be
+someone like g.skill or Corsair or any
+number of other memory manufacturers XMP
+contains settings that memory
+manufacturers say will probably work and
+they might not be supported depending on
+the quality of the CPUs IMC or the
+motherboard or SOC and other components
+this is a problem with things like that
+ever mentioned Corsair forty six hundred
+megahertz memory where although it can
+achieve forty six hundred megahertz
+you're starting to get to a point where
+you're bending the CPU imc the memory
+and also you're choosing a very specific
+motherboard and also you want a high-end
+CPU core so that you can get all the
+overclockers right so it's kind of
+getting into territory where there
+really no guarantees and there's higher
+frequency kits can almost be misleading
+because it's pretty rare that you get
+the ultra performance you might get
+somewhere pretty close unless you've
+really bend
+everything in the product line so XMP
+again is an SPD extension for
+enthusiasts Ram the advertised speeds
+are usually most easily attained by just
+simply applying XMP some vendors call
+these different names which we'll go
+over momentarily XMP is technically an
+Intel standard but an extreme memory
+profile is literally just a list of
+numbers that can be read into the system
+from EEPROM so if the board allows it
+for example some vendors like AMD boards
+might have rebranded XMP as do CP or EOC
+P or some of them just straight called
+XMP even though it's kind of originally
+was an Intel thing so XMP is a bit
+redundant in a lot of cases because
+we'll call it XMP profile which does
+mean an extreme profile
+just remember that nobody cares
+including Intel otherwise they wouldn't
+have abbreviated Xtreme with an X that's
+what XMP is though and that's what SPD
+is neither XMP nor SPD contain every
+single timing and memory vendors can
+only do so much tuning a lot of this
+falls on motherboard makers according to
+a Kingston representative quote we tune
+the primary timings CLR CDR P and R ass
+only the other timings are left alone at
+jeddaks recommendations likely for the
+MRC in regards to some specific sub
+timings we asked about quote since they
+are not in the SPD or XMP we can't
+change them even if we need to this
+lines up with our experiences in the
+real world impact section of this
+content even if memory manufacturers
+wanted to go deeper there's a specific
+and limited list of SPD entries so when
+it comes down to it Ram doesn't set its
+own frequency and timings bios does Ram
+carries the marketing for what frequency
+and times it should be able to hit and
+you can apply an XMP profile redundantly
+in order to achieve those timings in
+that frequency easily but the BIOS
+ultimately dictates how well this works
+and that's why some boards just straight
+won't work with different memory cuts
+even if they're rather modest and their
+timing goals on Intel boards this
+element of the BIOS is called the MRC
+and the MRC is one area where board
+manufacturers can secure an advantage in
+their performance so this is where
+motherboards really differentiate
+themselves it's not just the vrm or the
+heatsink or all the different ports on
+it it's what is their support for memory
+and with this specific example the sheer
+variety of ram and the differences
+between samsung micron and hynek's the
+three major memory suppliers who
+actually make the chips that go on the
+corsair g.skill memory the the amount of
+difference between them is hideously
+complex to adjust and people like the
+Asus team spend a lot of time perfecting
+their BIOS to try and get them as good
+as possible with all these different
+types of kits which is just plug and
+play and a lot of trial and error so
+memory and board manufacturers can work
+together to bake in optimal timings for
+each kid of memory and
+most part these are determined if left
+auto during post where they should
+remain unchanged unless there are boot
+failures at which point we start
+deferring to things like memory training
+memory training can appear kind of like
+a dark magic of some kind
+basically with memory training what
+you're doing is forcing boot failures
+until you can finally get into the
+system it might be mostly stable you
+might have some memory errors with
+really intense applications but the idea
+is that you are hitting a retry button
+or just literally letting the
+motherboard cycle and a lot of the time
+if you just leave it alone the
+motherboard will eventually cycle into a
+successful boot for timings even if it
+looks like it's failed the first maybe
+three to five times we've had instances
+with the retry button with high memory
+overclocks for 3dmark record testing
+we've had instances where just hitting
+that retry button for five minutes well
+sometimes eventually kick it into a boot
+and that's because it's sitting there
+retrying different timings over and over
+until it finds one that is stable for
+the motherboard and what's actually
+happening is the IMC will try a variety
+of different settings in an attempt to
+stabilize the system not all of them are
+timings and that's how to each boot of
+the system it's an important point for
+even non overclockers because again if
+the memory seems unstable just cycle it
+a few times and see what happens maybe
+it'll work and you'll get lucky
+retry buttons are an excellent tool for
+making this work different kits have
+different jeddaks standards so different
+sub timings get loaded this is an issue
+we've run into before we had two kits
+identical in frequency and capacity but
+with different latencies however the 16
+18 18 36 Corsair kit somehow managed to
+outperform our 14 14 14 34 g.skill kit
+and tests after discussing this with
+both manufacturers it turned out that
+Corsair sticks were dual sided with
+groups of 512 megabyte x 8 ICS
+while G skills were single sided with
+groups of 1 gigabyte by 8 ICS 512 by 8
+is an older style so it actually has
+tighter sub timings defined by JEDEC see
+the what our timing section of our
+article linked below the biggest culprit
+in this case was T RFC or refresh cycle
+time
+we'll cover the full definition of this
+in part two but for now the important
+thing to know is that the value set by
+JEDEC for coursers type of kit was 416
+and it was 564 G skills when we adjusted
+G skills down to the same TR FC value
+that courser had with no further
+adjustments the G skill kit pulled ahead
+in performance and remained stable as
+shown in our ashes of the singularity
+benchmark results that we can put on the
+screen or have had on the screen this is
+an extreme case but it shows of both the
+value of experimenting with sub timings
+and the frustrations of benchmarking
+memory if the ACS board happened to have
+a set of optimized timing specifically
+for this G skill kit it would have
+performed better than the coarser kit
+from the get-go but the aces board just
+didn't have this specific kit optimized
+with all that out of the way it's time
+to talk about the primary timings that
+you see listed everywhere there on the
+product boxes the sticks of RAM
+themselves and their standardized so
+timings will be listed in a set format
+its TCL TR CD TRP and tear ass with CR
+sometimes listed as well going through
+the primary timings first we have cache
+latency TCL or T casts as it is commonly
+known Wikipedia describes this as
+follows the number of cycles between
+sending a column address to the memory
+and the beginning of the data in
+response this is the number of cycles it
+takes to read the first bit of memory
+from a dram with the correct row already
+open unlike the other numbers this is
+not a maximum but an exact number that
+must be agreed on between the memory
+controller and the memory our
+explanation or expansion on this is as
+follows
+cast latency is the most widely talked
+about and compared memory timing these
+CL timing is an exact number the base
+time that it takes to get a response
+from memory in the best possible
+scenario described previously is
+referred to as a page hit the other
+primary ty means other than command rate
+are minimums it's important to remember
+that although we'll be talking about how
+these times relate to reading data from
+memory that's just one thing that they
+affect the next one is Rast to cast
+delay or TRC d in BIOS Wikipedia states
+the following the
+minimum number of clock cycles required
+between opening a row of memory and
+accessing columns within it would be TR
+CD the time to read the first bit of
+memory from a dram without an active row
+is TR CD plus CL hour version to expand
+upon this is that wrasse to Cass is one
+potential delay to reads and writes TR
+CD is the number of clock cycles it
+takes to open a row and access a column
+if a request for data is made when there
+are no rows open referred to as a page
+miss it will take at least TR CD plus CL
+number of clock cycles for the CPU to
+receive the first bit of data in
+response the next one is rope recharge
+time or TRP with PDS as quotes the
+minimum number of clock cycles required
+between issuing the pre-charge command
+and opening the next row the time to
+read the first bit of memory from a dram
+but with the wrong row open is TRP plus
+TR CD plus CL and our version expands in
+this way if the wrong Row is open a page
+miss it needs to be closed or pre
+charged then the next needs to be opened
+and then the column within the row needs
+to be accessed this therefore takes TRP
+plus TR CD plus CL time to complete row
+active time as our next item or tear ass
+wikipedia says the minimum number of
+clock cycles required between a row
+active command and issuing a pre charge
+command is row active time this is the
+time needed to internally refresh the
+row and overlaps with TR c d and SDRAM
+modules it is simply TR CD plus CL
+otherwise approximately equal to TR CD
+plus two times CL our expansion on this
+is that it's also known as active to pre
+charge delay or minimum at wrasse active
+time the first equation for SDRAM is the
+relevant one here but it should be more
+than that we've seen multiple different
+true ways to calculate T wrasse but
+given the complexity of memory
+operations good old trial and error
+remains the easiest for example we
+somehow booted with
+memory at sixteen sixteen sixteen twenty
+six and that doesn't make sense by
+anyone's rules if you were to check
+forums online but it worked
+command rate is the last one it's known
+as CR or CMD CB CT CPD all kinds of
+things and for AMD it's defined as the
+amount of time in cycles between when a
+dram chip is selected and a command is
+executed to TCR or to T command rate can
+be very beneficial for stability with
+high memory clocks or for a four dimm
+configuration it's also known as the
+command period this will either be one T
+or two T on modern memory with one T
+being faster despite the unique T
+notation this is measured in clock
+cycles like the other timings there's
+generally a very small performance Delta
+between the two options that's it for
+the ultra basics this is an extremely
+hard topic to boil down part of the
+problem we run into even just
+researching this is that as you find
+definitions for different aspects of
+memory you almost need more definitions
+just to understand the definitions so
+it's very difficult to boil it down at
+the end of the day the primary timings
+are pretty straightforward and simple
+and what they do see the previous
+animation for an explanation of that
+it's just that once you really start
+getting into things like secondary and
+tertiary the trouble is there's a lot of
+play between the timings how they
+interact with each other how one being
+higher might mean another one can't be
+certain values and things like that and
+we'll try and boil these down further
+check back for part two where we will
+explore at least the secondary timings
+if not tertiary as well and then we'll
+define the rest later if we have to but
+that should get you started on timings
+and on memory it's a really interesting
+subject that's important and up until
+the last year or so has been pretty
+uninteresting for most people but
+because of risings very peculiar early
+interactions with memory with the first
+launch of Rison it kind of memory timing
+started to get some attention and then
+you start looking at Intel overclocking
+you can push the CPU reasonably to 5
+gigahertz in a lot of cases but get
+stuck on memory performance so timings
+are coming back into interest I think
+for the community and it's a good time
+to go through this stuff as always you
+can go to store documents access net to
+support us directly you can buy
+this shirt which is currently on presale
+to limited run once they're gone they're
+gone or not going to make more or pick
+up one of our mod mats if you want a 4x2
+modding service for your next build and
+if you want something a bit on the lower
+end you get a patreon.com/scishow gamers
+nexus to join our discord subscribe for
+more to get part two thank you for
+watching I'll see you all next time</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

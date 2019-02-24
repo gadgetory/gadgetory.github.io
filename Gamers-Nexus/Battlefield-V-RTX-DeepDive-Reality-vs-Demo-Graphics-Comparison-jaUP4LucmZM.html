@@ -1,0 +1,504 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Battlefield V RTX Deep-Dive: Reality vs. Demo Graphics Comparison | Gadgetory - Your Gadget Factory</title><meta content="Battlefield V RTX Deep-Dive: Reality vs. Demo Graphics Comparison - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus/">Gamers Nexus</a></li><li class="active">Battlefield V RTX Deep-Dive: Reality vs. Demo Graphics Comparison</li></ol></div><h2 class="post__title"><b>Battlefield V RTX Deep-Dive: Reality vs. Demo Graphics Comparison</b></h2><h5 class="post__date">2018-11-19</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/jaUP4LucmZM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">so as you can see the original tech time
+I was on the right and the actual game
+is on the left and if you look over at
+the train god damn
+you've seen the r-tx performance numbers
+for battlefield 5 but what we haven't
+seen a lot of yet is a deep dive
+graphics discussion and that's what
+we're doing today so we're to be talking
+about every single aspect of RDX in
+battlefield 5 how its implemented how it
+works and what the significant changes
+are that you need to pay attention to so
+that's this will cover low vs. ultra
+quality settings will be covering screen
+space versus non screen space
+reflections all different aspects and
+joining me is Andrew from our team who
+is also a 3d artist and has a lot of
+experience working with this type of
+graphics before that this video is
+brought to you by iy power and the rush
+delivery to you program the fresh rdy
+approach gets high-end gaming pcs
+shipped the same day you order them and
+is also one of the only places you can
+get a 99 hundred K for a reasonable
+price right now systems include the rdy
+enthusiast level game PC with a 20 80 TI
+900 K and 16 gigabytes of 32 hundred
+megahertz memory available with same-day
+shipping or pickup locally these systems
+are built by people who are experienced
+builders and component choice that makes
+sense
+learn more at the link in the
+description below let's get this out of
+the way first in a tech demo the iconic
+demonstration that NVIDIA and dice had
+were the eyes on the characters where
+you saw fire reflections in the eyes and
+so just to answer that question of did
+it make it into the game and you can see
+the playback of the original demo now
+the answer is well sort of
+there is muzzle flash in the eyes of
+characters and multiplayer but and ER if
+we go back and look at the tech demo the
+first question here is are we seeing the
+same resolution you think of or same
+reflection quality as we see in the
+final product this is a really high yeah
+I was gonna say this as well it's
+definitely a lot higher fidelity than
+the final game has it's the final game
+looks a lot smaller than a lot noisier
+and the playback in the tech time I was
+really high frame rate as well in the
+eyes specifically which is just
+interesting it speaks to the quote level
+of quality being maintained throughout
+that demonstration but we're also seeing
+a whole lot of
+some kind of visual artifacting right
+and dice has acknowledged this as well
+and some of their bug release notes so
+they've actually noted that they because
+we're seeing the artifact in primarily
+around the cheekbone and on the bridge
+of the nose yeah and their patch notes
+they said art affecting on the face with
+r-tx on okay and did they fix it or did
+they have come in a fix okay so for
+quality of what we're seeing then in the
+eye is just a giant red orange flash
+yeah and there's no there's no real
+shape to it it is a different type of
+fire well no it's a muzzle flash so
+different perspective but it did make it
+into the game for the next clip let's
+compare it low versus ultra so there's
+been some discussion as to whether this
+has any actual visual impact or there
+any differences at all there are there
+are some differences so we have here a
+shot of the car but more importantly we
+have a shot of the puddles of water
+behind it between low and ultra and the
+main things that we noticed were some
+changes in the puddle on the road and
+some changes on top of the card right so
+the changes that you're seeing are
+around places where water is touching
+bricks like at the border of the puddle
+and we think that's because the
+roughness of those bricks would be a lot
+lower compared to the completely dry
+bricks
+okay so changing the roughness threshold
+then this is the the point at which the
+material reflects the environment via
+r-tx and changing the roughness
+threshold is something we're seeing here
+at Ultra we have some numbers here so
+you were suggesting anything probably
+below a zero point for roughness per an
+Nvidia engineers recommendation for
+optimal threshold is probably going to
+be shown on altra yes and then anything
+below probably 0.1 is going to be shown
+on low yes okay so then what does that
+mean so around 0.4 like 0.3 to 0.5 is
+around the roughness of an oily people
+not that oily but a regular human faces
+skin depending on their age in oiliness
+and wetness and then anything around
+point one would be someplace around like
+shiny like polished metals somewhere or
+like
+I ball so the scale for roughness is
+zero to one like a lot of things in
+graphics and zero is going to be the
+glossiest right and then one will be of
+the roughest and this scale is useful we
+have a well we have another example we
+can show actually that's pretty useful
+and this is a plane so this is a downed
+plane in the game and if you look
+closely at the top corner the left side
+of the plane
+you'll notice that there's some fire
+reflection between low and ultra and
+that reflection is a lot it's stretched
+out it's it's visible over a longer part
+of the plane with the ultra settings so
+then why is that and how does that
+relate back to what we're saying with
+roughness and glossiness so the painted
+part of the plane would be a lot rougher
+than the scratch metal surface of the
+plane where you can see underneath the
+paint and so when you turn it to low
+it's only focusing on the scratched
+shiny pieces of metal and that's because
+that that's reaching the threshold
+that's gonna be lower on the numerical
+scale so you're gonna be closer to zero
+with the scratch metal surface whereas
+with the painted surface you're gonna be
+closer to one not that close to one but
+your going towards maybe 0.4 or
+something like that so I think our
+conclusion on this then for the graphic
+settings between ultra-low and all the
+steps in between it's just it's changing
+the roughness threshold again the point
+at which the material is sort of
+reflecting the environment yes and
+anything below the threshold is is no
+longer being reflected which will
+conserve resources while still
+reflecting something somewhere it's just
+going to be primarily in the shinier
+surfaces okay let's talk about object
+kollene and reflection : next we have a
+series of examples for this starting
+with the train so for the train
+reflection this is with r-tx on and set
+to ultra and as we sort of step past the
+distance threshold you'll see that the
+sign in the back left corner of the shot
+is either reflected or not reflected so
+this is probably related to how objects
+are normally cold in games where they're
+distant space and the further away you
+get you get some pop in or pop out right
+the game decides that it's not
+necessary to take up resources for it so
+somehow they're also doing that within
+the reflections of raytrace objects I
+think the most interesting thing about
+this is that you can see what's behind
+the hotel sign when it's gone right yes
+it's not like it's it's it's information
+that's given to you up until the point
+that you're punished for having too high
+of a graphics setting so for the fire
+reflections we're looking at some screen
+space versus non screen space detail
+here and when you're pointing the camera
+down what's what's happening well so the
+weird thing is that this is still our TX
+on on ultra but it's acting as if it's a
+screen space reflection when the fire
+goes out of frame of the camera then it
+pops away as if there was a screen space
+reflection but it everything else is
+still being a ray traced so it's just it
+an oddity I suppose yes and we see a lot
+of this where we actually we have some
+other examples in here like talking
+about the boats in the water for example
+for screen space versus non screen space
+so what's what's going on here in terms
+of screen space reflections so here you
+can see as you dip the camera down to
+where the boats are at a frame then the
+reflections also get cut off at that
+exact point but the boats are still
+being rendered because their shadows are
+still there and that goes for everything
+in the entire game not even in this game
+just that's how screens waste
+reflections work in all games you can
+also see in some other clips where the
+reflection is occluded by another object
+there's some artifacting in the
+reflections as well and it's not just
+for large objects you see what paper -
+yeah just a tiny little specks that are
+causing very large streaks in the water
+that shouldn't be there yes and those
+streaks are because the object is
+including the water as it's moving over
+it and we have a bit of a latency on the
+update for where the object is versus
+what it's including so is this then if
+there's no traditional way to fix that
+is this something that RT X can solve I
+feel like this is basically what our DX
+is all about they're trying to get rid
+of these small artifacts that have been
+in games for decades now yeah it's just
+it's
+very expensive in terms of resources to
+do this right which is the downside that
+you all see so we have an example here
+from another what game is this this is a
+dragon quest 11 okay dragon quest so we
+have an example of screen space
+reflections in here and this is only
+we've talked about before you'll notice
+that the window is reflecting the front
+of the character when the character is
+facing the camera so why is that the
+reflection doesn't know anything besides
+what Sun screen so it doesn't know what
+the back of the character looks like
+when the back of the character is facing
+away from the camera yes hence hence the
+name screen space reflection so what
+we're showing here then is there's the
+window behind us right the player is
+crawling through the window are boarding
+it up or something and actually it ran
+past or it the player they ran past me
+to the right to go up to the window but
+this is I feel like this is an
+interesting thought for a competitive
+play yes so how so would it be unfair if
+you could see around corners or behind
+you in ways that other players
+yes unfair okay that's a definition of
+unfair I think this is something that
+will if there's any kind of competitive
+or eSports play emerging around this
+it'll have to be normalized for there'll
+have to be a set of rules for you know
+banning or allowing it I don't know I
+don't know that's the thing I don't know
+how it's beneficial here because I could
+see you camping in a corner just looking
+at the painting to try and figure out
+what's going on behind you or something
+around a corner right but at the same
+time that's probably not the most
+effective way to play the game either
+that's true probably more effective to
+be out completing objectives so maybe it
+doesn't really matter in the grand
+scheme of things but certainly in some
+games I could see like in camp happy
+games I could see this being an unfair
+advantage or like if you're hiding
+behind cover and there's a car on your
+side of the cover and you can look into
+the car to see like a wide-angle view
+right you can see in front of you and
+behind you that that's like that
+wouldn't really be necessary in
+third-person shooters but in a
+first-person shooter like this it would
+make a large difference potentially yeah
+so next item here we have some ice and
+this is a exam
+of where traditional screen-space
+reflections actually are not present
+when r-tx is off right so our TX on we
+get the reflections in in the ice and I
+don't know is there anything special
+about these are abnormal we want to
+point out or they they just reflections
+they're just reflections and then you
+turn off our TX and you get this which
+is just a flat surface right and I
+honestly don't have any explanation for
+why they wouldn't use screen spaced
+reflections here because they could
+maybe artistic choice or maybe they
+overlooked it I don't know there's a lot
+of things that could happen those
+wonders are interesting is that these
+buildings are like way out of average
+player map area so the fact that these
+windows have our TX on means that it's
+just like a blanket rule across all
+surfaces right and it doesn't just to be
+clear here if you're having a flashback
+to our Final Fantasy 15 coverage we're
+not saying that this is being rendered
+at all times right we're just saying
+that it's being rendered when you are
+near the object even if it's out of
+bounds of play so yeah just some kind of
+blanket rule across all windows or
+something I think it's across all
+services I don't think they're going
+through and saying like this building
+should have r-tx from this object show
+Parcheesi so just check all services for
+what roughness right yes so just do a
+roughness check against everything and
+see if it falls within the threshold for
+ultra low whatever your setting is all
+right this is RTX ultra but there's no
+reflections anywhere in the river of
+anything like we're looking straight
+down at the water we should be able to
+see the bridge that River right now that
+we should be able to see the bridge but
+anywhere that you look it's not
+reflecting on even screen space
+reflections there's just no reflections
+like the ice but this is our TX ultra so
+then why why is this I mean is it how
+how granular is the implementation I
+guess is it oh we missed that object
+that doesn't seem like a good way to
+implement it right like if those windows
+that were way out of bounds head right
+ray tracing then this probably should
+let's get back to the train that we had
+in the intro where the player on the
+tank
+my shot so this was shown heavily in
+Nvidia's tech demo and it came out
+looking a bit different so you disable
+RT acts completely and videos tech demo
+showed some extremely blurry kind of
+weird reflections yeah
+very blurry and very clear at the same
+time right
+well yeah clears in like very opaque ish
+reflections right
+yes yes very opaque so is you don't have
+as much transparency in these windows so
+the tech demo if you're going solely
+based off of that it does look like r-tx
+off is worse than it is in reality which
+is unfortunate now that doesn't mean
+that video did something evil the ice
+probably prepared most the demo it could
+also be that it was really enough in
+development that they hadn't finished it
+if you want to give them the benefit of
+the doubt but ultimately it's relevant
+it makes RT X off look worse than it is
+and that has happened several times over
+the course of promoting RT X where you
+get features you get gameplay showing
+games without even traditional faked
+lighting which is just disingenuous so
+all this noise is being caused because
+since the water surface keeps moving
+it's not having enough time to solve for
+the create what the correct reflection
+would be with only having one sample per
+pixel which is hardly anything yes that
+is very limited so when you go back to
+screen space reflections since it
+doesn't have to do any of that the water
+that the noise is completely gone the
+water it looks clear but there's nothing
+reflected in the water anymore
+yeah and depending on your perspective
+here off might look better than on if
+you really hate noise ion does have more
+reflections clearly but it's also just
+blasted with noise so that might be a
+quality-of-life thing to keep in mind I
+guess if you want to debate over whether
+or not you think that's worth it but
+r-tx overall then the implementation I
+mean what do we what do we think about
+it here it's clearly the performance
+impact is massive hopefully this video
+helps people understand why it's massive
+in some ways there are clearly also some
+anomalies like we don't understand why
+that bridge wasn't reflected or why
+there's no reflections and
+the ice with r-tx off right why there's
+no screen space reflection with the eyes
+or why in the tech demo of that train
+looked worse than it does in the endgame
+we can maybe give them the benefit of
+the doubt on that I feel like my
+conclusion of how RT X is implemented is
+that it is always very noisy still noisy
+and just to really be clear here that's
+what the film grain off yes if anyone
+wants to comment and say oh you guys are
+idiots you get film grain on no it's
+just noise from our G act so then is
+there first of all we're probably going
+to see similar noise I think in other
+games yeah I don't think this is
+battlefield specific and then is there a
+solution too because the noise to me is
+probably other than the performance is
+the worst part of the art current r-tx
+implementation what is is there a path
+to a solution
+I think NVIDIA is doing this also they
+need to improve their denoising
+technology I think that's where the
+source of most of this is because if you
+even if you just take start taking two
+samples per pixel which is still nothing
+now you're doubling the amount of
+resources yes you have to use for that
+specific function yeah for RTX
+processing right yes the and if if
+that's happening when your frame rates
+already drop in significantly like
+halved
+then asking for another another 100
+percent increase in sampling is a large
+ask for Nvidia so that's our recap
+hopefully that helps you understand the
+graphics better and the technology
+behind it how it works why why the
+performances is bad but also you know
+what it is anybody needs to improve on
+because this is not a perfect
+implementation despite the performance
+cost speaking subjectively here does not
+seem necessarily worth the visuals
+especially because NVIDIA has been
+driving for K so hard I mean onstage
+Jensen said this is the first 4k 60fps
+GPU ever even though they launched their
+1080i
+the same phrasing and you play any game
+with like a 1080 or something for k62
+drop the settings enough but given all
+of that marketing now they've got our
+checks where you are basically playing
+1080p at 60 not 4k definitely not 4k in
+this game so it's it's a step backwards
+in resolution and performance and so
+you're sacrificing resolution you're
+sacrificing anti-aliasing because you
+need to give up other graphics options
+in order to gain r-tx and that does not
+necessarily seem worth it depending on
+really what your end goal is for the
+game especially if it's just weird for a
+shooter anyway
+yeah something so high action high
+action and single-minded you're you know
+you your real goal is is competitive
+it's not like it's an RPG or something
+where the goal is immersion it's a bit a
+bit odd overall but there's what we
+think you can check out more coming up
+soon and subscribe for that as always go
+to store documents nexus net to help out
+directly and patreon.com/scishow cameras
+axes table out there that you were
+watching we'll see you all next time</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

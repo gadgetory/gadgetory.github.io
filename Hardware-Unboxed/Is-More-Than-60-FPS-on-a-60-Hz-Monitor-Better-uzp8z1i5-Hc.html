@@ -1,0 +1,323 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Is More Than 60 FPS on a 60 Hz Monitor Better? | Gadgetory - Your Gadget Factory</title><meta content="Is More Than 60 FPS on a 60 Hz Monitor Better? - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Hardware-Unboxed/">Hardware Unboxed</a></li><li class="active">Is More Than 60 FPS on a 60 Hz Monitor Better?</li></ol></div><h2 class="post__title"><b>Is More Than 60 FPS on a 60 Hz Monitor Better?</b></h2><h5 class="post__date">2018-08-01</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/uzp8z1i5-Hc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">welcome back to hardware on box today
+we're answering one of the most
+frequently asked questions we see about
+PC gaming how many frames per second do
+you need should you be running at the
+same frame rate as your Manos maximum
+refresh rate say 60 FPS on a 60 Hertz
+monitor or is there a benefit to running
+games at a much higher frame rate than
+your monitor can display like say 500
+FPS to answer this question we have to
+talk a bit about how GPU and display
+work together to send frames into your
+eyeballs and how technologies like vsync
+function but the bottom line is running
+games and extremely high frame rates
+well above your monitors refresh rate
+will lead to a more responsive game
+experience with lower perceived input
+latency
+that's instead of the question for those
+that don't want to wait until the end
+now let's talk about why this is the
+case so let's assume that we have a
+monitor with a fixed refresh rate of 60
+Hertz in other words the monitor is
+updating its display every one sixtieth
+of a second or every sixteen point seven
+milliseconds when running a game there
+is no guarantee that the GPU is able to
+render every frame in exactly sixteen
+point seven milliseconds of time
+sometimes it might take twenty
+milliseconds sometimes it might take
+fifteen milliseconds sometimes it might
+take eight milliseconds that's the very
+nature of rendering a game on a GPU with
+this varying render rate there is a
+choice of how each rendered frame is
+passed to the monitor it can pass the
+new frame to the display as soon as it
+is completely rendered commonly known as
+running the game with vsync or vertical
+sync off or it can wait until the
+display is ready to refresh before
+sending the new frame that's a technique
+known as vsync on using the first method
+vsync off causes tearing this is because
+a display cannot update its entire in
+äj-- instantaneously instead it updates
+line by a line usually from the top of
+the display to the bottom and during
+this process a new frame may become
+ready from the GPU and as we're not
+using vsync the frame is sent to the
+display immediately the result is that
+midway through a refresh the monitor is
+receiving new data and updates the
+remainder of the lines on the display
+with this new data you're then left with
+an image
+the top half of the screen is from the
+previous frame and the bottom half is
+from the new freshly available frame
+depending on their content being
+displayed this split between new and old
+frames in the 1 refresh presents itself
+as a tear or visible line between the
+old and new frames usually it's most
+noticeable in fast-moving scenes where
+there is a large difference between one
+frame and the next while leasing off it
+does lead to tearing it has the
+advantage of sending a frame to the
+display as soon as it is finished being
+rendered for low latency between the GPU
+and the display so keep that in mind for
+later the alternate way to display an
+image is with vsync on here instead of
+the GPU sending its new frame to the
+display immediately it shuffles each
+rendered frame into a buffer the first
+buffer is used to store the frame being
+worked on currently and the second
+buffer is used to store the frame the
+display is currently showing at no point
+during the refresh is the second buffer
+updated so the display only shows data
+from one fully rendered frame and as a
+result you don't get tearing from an
+update midway through the refresh the
+only point at which the second buffer is
+updated is between the refreshes to
+ensure that happens the GPU Waits after
+it completes rendering a frame until the
+display is about to refresh it then
+shuffles the buffers begins rendering a
+new frame and the process repeats there
+are two problems with vsync firstly if
+your GPU rendering is too slow to keep
+up with the display to refresh rate say
+it's only capable of rendering at 40 fps
+for a 60 Hertz display then the GPU
+won't render a full frame in time to
+meet the start of the displays refresh
+so a frame is repeated and this causes
+stuttering as some frames are displayed
+only once while others are displayed
+twice the second problem occurs when
+your GPU is very fast and is easily able
+to render a frame within the refresh
+rate interval let's say it can render at
+200 FPS producing a new frame every 5
+milliseconds except you are using a 60
+Hertz display with a 16 point seven
+millisecond refresh window with vsync on
+your GPU will complete the next frame to
+be displayed in 5 milliseconds then it
+will wait for 11.7 milliseconds before
+sending the frame to the second buffer
+to be displayed on the monitor and
+starting on the next
+this is why we vsync on the highest
+frame rate you'll get matches the
+refresh rate of the monitor as the GPU
+is essentially locked into rendering no
+faster than the refresh rate now it's at
+this point that there's often a lot of
+confusion I hear things like locking the
+GPU to my monitors refresh using vsync
+is great because if it renders faster
+than the refresh rate those frames are
+wasted because the monitor can't show
+them and all they get is tearing and a
+lot of other people point to power
+savings from using V sync your GPU
+doesn't need to work as hard there's no
+benefit to running at frame rates higher
+than the monitors refresh rate so you
+can run at a loc'd fps and save some
+power I can see why people would come to
+this conclusion and there's some bits of
+truth there but it's not accurate in
+general and the reason for this is that
+you're not factoring in the time at
+which inputs are processed and how long
+it takes for those inputs to materialize
+on the display to explain why this is
+the case let's go back and look at the
+vsync on diagram but overlay the diagram
+with the input from your mouse and
+keyboard which is typically gathered
+every one millisecond let's also use the
+same example where we have a GPU capable
+of rendering at 200 FPS with the 60
+Hertz display with a vsync and a simple
+buffer system in this simplified
+explanation the GPU begins rendering a
+frame corresponding to your mouse input
+as soon as it receives that input at
+time zero it then takes five
+milliseconds to render the frame and
+awaits a further eleven point seven
+milliseconds before sending it to the
+display buffer the display then take
+some time to receive the frame to be
+rendered and physically update the
+display line-by-line with this
+information even in the best-case
+scenario we're looking at a delay of at
+least sixteen point seven milliseconds
+between your input to the game and when
+the display can actually begin showing
+you the results of that input to you
+when factoring in display input lag CPU
+processing time and so forth the latency
+between input and display refresh could
+be easily more than 50 milliseconds now
+let's look at the fee sink off diagram
+the GPU continuously renders regardless
+of when the display is refreshing taking
+five milliseconds to turn your input
+into a complete frame the display can
+then begin displaying that new frame
+immediately albeit it might be only part
+of that frame the result is the latency
+between your input to the game and when
+the display can
+begins showing you the results of that
+input reduces from sixteen point seven
+milliseconds to around just five
+milliseconds and there won't be any
+additional buffers in real-world
+implementations it's as fast as that
+plus your monitors input lag and that's
+where you get the advantage in this
+example running at 200 FPS with vsync
+off on a sixty Hertz monitor reduces
+input latency to five milliseconds where
+with vsync on that latency is at least
+sixteen point seven milliseconds if not
+more even though the display is not able
+to show all 200 frames per second in its
+entirety what the display does show
+every one sixtieth of a second is
+produced from an input much closer in
+time to that frame this phenomenon of
+course also applies with high refresh
+monitors at 144 Hertz for example you
+will be able to see many more frames
+each second so you'll get a smoother and
+more responsive experience overall but
+running at 200 FPS with vsync off rather
+than 144 FPS with vsync on will still
+give you a difference between 5
+milliseconds and upwards of 7
+milliseconds of input latency now when
+we're talking about millisecond
+differences you're probably wondering if
+you can actually notice this difference
+in games depending on the game you're
+playing the difference can be anything
+from very noticeable to no difference
+whatsoever a fast-paced game like csgo
+running at 400 fps on a 60 Hertz monitor
+will produce input latency at best
+around 2.5 milliseconds and that will
+feel significantly more responsive to
+your mouse movements than if you are
+running the same game at 60fps with 16.7
+milliseconds of latency or more in both
+cases the displays only shown you a new
+frame 60 times a second so it won't feel
+as smooth as on a 144 or 240 Hertz
+display but the difference in input
+latency is enormous running at 400 FPS
+allows you to get your inputs to the
+display nearly seven times faster if not
+more compared to running at just 60 fps
+it's hard to convey the difference on
+camera but if you try it out for
+yourself you're bound to feel the
+difference in responsiveness and I
+haven't just pulled this explanation out
+of nowhere in fact NVIDIA knows the
+limitations of vsync in terms of input
+latency which is why they provide an
+alternative called fasiq this display
+synchronization technique is like a
+combination of vsync on and facing off
+producing the best of both worlds
+fast sync works by introducing
+additional buffer into the vsync on
+pipeline called the last rendered buffer
+this allows the GPU to continue
+rendering new frames into the back
+buffer transitioning into the last
+rendered buffer when complete then on a
+display refresh the last rendered buffer
+is pushed to the front buffer that the
+display accesses the advantage this
+creates is the GPU no longer waits after
+completing a frame for the display
+refresh to occur like is the case with
+vsync on instead the GPU keeps rendering
+frames so that when the display goes to
+access a frame at the beginning of the
+Refresh period that frame has been
+rendered more closely to the refresh
+window this reduces input latency
+however unlike with vsync off fast sync
+delivers a completed frame to the
+display at the beginning of each refresh
+rather than simply pushing the frame to
+the display immediately and it's this
+technique that eliminates tearing fast
+sync is only functional when their frame
+rate is higher than the displays refresh
+rate but it does succeed in providing
+more responsive game experience without
+tearing and of course Andy has an
+equivalent called enhance sync so all of
+this has hopefully explain why running a
+game above your monitors maximum refresh
+rate does deliver a more responsive game
+experience and while the ability to run
+games at higher frame rates is always an
+advantage even if it might appear that
+your monitor can't take advantage of it
+the final thing I want to say is this in
+this video I haven't talked about
+adaptive sync technologies like g-sync
+or free sync and that's because I've
+been mostly talking about running games
+above the maximum refresh where adaptive
+sync does not apply there's a lot of
+different syncing methods out there but
+adaptive sync is very different to vsync
+and fast sync that we've been talking
+about and at least for this discussion
+it isn't really relevant that's it for
+this one hopefully I won't need to
+answer any further questions about this
+in a Q&amp;amp;A videos because we've been
+getting questions on this for months if
+you do like what we do consider
+supporting us on patreon to get access
+to our exclusive discord channel and
+I'll catch you in the next one
+you</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

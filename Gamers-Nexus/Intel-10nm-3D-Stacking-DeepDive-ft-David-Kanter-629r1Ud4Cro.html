@@ -1,0 +1,893 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Intel 10nm &amp; 3D Stacking Deep-Dive, ft. David Kanter | Gadgetory - Your Gadget Factory</title><meta content="Intel 10nm &amp; 3D Stacking Deep-Dive, ft. David Kanter - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus/">Gamers Nexus</a></li><li class="active">Intel 10nm &amp; 3D Stacking Deep-Dive, ft. David Kanter</li></ol></div><h2 class="post__title"><b>Intel 10nm &amp; 3D Stacking Deep-Dive, ft. David Kanter</b></h2><h5 class="post__date">2018-12-12</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/629r1Ud4Cro" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">everyone I am joined by David Cantor
+today he is from he's joined us before
+and from real-world Tech also ml per org
+has some contributions there and today
+we're talking our Intel's new
+announcements so things like the 3d
+approach to CPU design really
+interesting stuff we're gonna go pretty
+technical on this also we just got done
+at the event and we have no good set
+option so we're in a hotel for which I
+apologize
+but you can listen to the video it's
+great content and we're going to talk
+about some technical details today
+before that this video is brought to you
+by Thermaltake scorpy three case the
+core p3 is one of the most unique cases
+on the market it can serve as an
+open-air standing chassis a test bench
+in vertical or horizontal orientation or
+as a wall-mounted showcase pc the core
+p3 now comes with a five millimeter
+thick tempered glass panel for its side
+but keeps the front top and back open
+for air the core p3 versatility as a
+display piece test bench or standard
+desktop is reinforced by its price of
+roughly one hundred and ten dollars on
+amazon you can learn more at the link in
+the description below our main topic
+today where we talk about this new Intel
+discussion so we were both out here in
+the bay area for talk about Intel's
+upcoming sunny Cove was I guess the main
+one and then just the architecture in
+general they had IGP stuff they had FPGA
+they had a bit of everything today yeah
+and I mean I think the other thing is
+that it was you know for the last two
+years it's been somewhat difficult to
+get technical information out of India
+about different things and you know part
+of it is it's sort of on the big course
+I'd been skylake for a long time and
+some of the atom cores they don't really
+publish a lot of details about 40
+nanometer for a long time right which is
+changing yeah and so you know I think
+that the the point of today was really
+to talk about okay here's what we have
+coming here's what we're doing and
+here's how we think about
+you know plugging in technologies and
+making them work together to deliver
+awesome products right the next few
+years so then what I know there's
+there's a lot of stuff we'll have some
+online already and there'll be news
+reports with all the basics but one of
+the bigger things here is I guess the 3d
+approach you know design so I mean
+that's I think I have some photos of it
+but they had diagrams showing like 3d
+stacked components right and this is not
+necessarily a new idea but it's new to
+see it implanted by Intel as far as I'm
+aware yeah well and I think it's also
+sort of back up like let's just start
+out with like what what's going on with
+3d and packaging seven point five gigs
+there's tons of terms out there and
+frankly it can be a little confused yes
+what is is 3d even a valid term or is it
+a marketing here is that a technical
+correct term yeah so actually
+conveniently it is it's also one of
+those ones that actually sounds good
+from a market that's not like 3d crest
+white
+yeah no no definitely not no um and I
+don't think there's any blue sparkles
+with this right either so it added bonus
+ya know so you know if you look at
+traditional chips as we've built them
+you know you get a single chip and you
+know if you're lucky everything's
+integrated on there or almost everything
+and so what we saw with Vega and with
+the high-end volt of e 100 and the P 100
+before it is that you can do what's
+called a 2.5 D stack where you have
+ships together in the same plane so it's
+not truly 3d but then there's a backing
+interpose oh right and so that allows
+you to connect them up over metal wires
+that go through silicon as opposed to
+through the path does uh does VG fall
+into this as well or the fury acts yeah
+so I think that was the first to use HBM
+right high bandwidth memory and Cydia
+that was one of the first examples of I
+use it 2.5 D would you call that
+yeah 2.5 D right because it's you know
+it's sort of going vertebrae
+not quite and then so Intel came along
+and they have a customized version of
+that called mm the embedded multi
+interconnect bridge and that's a little
+bit different it's sort of more
+two-dimensional but with a lot of the
+benefits of 2.5 g at a lower price point
+and that's actually used in the strat
+extend EGA is currently and may be used
+in other contexts as well sort of in
+future products and it is also used
+actually in the can't remember the name
+of it but the event today no no the the
+the Intel CPU with the Radeon Vega
+graphic Hades Canyon yes Hades yeah so
+that actually uses email is my
+understanding so Ava so the next step
+beyond that is rather than taking our
+die side-by-side and then attaching them
+through some sort of silicon underneath
+is to have them one on top of it another
+and to connect them up vertically and so
+I actually thought that they did a great
+job talking through some of the
+challenges of that but also some of the
+opportunities so you know I think you
+were the one who actually asked the
+question we were enough round table
+together ok well if we're gonna take a
+bunch of pieces of silicon right how do
+you cool them yes you you have as they
+show on the photo is it correct to call
+it logic dies is that what they are
+allowed or what yeah different
+domination but but either way the point
+is that you have so on the bottom on the
+top you have something in the middle if
+it's three dimensionally stacked well if
+you have three of them know you've got
+three of them all right and yeah if you
+have three of them and so you you end up
+with one in the middle that has no
+direct connection to a service on top or
+a service on bottom right how do you
+call it right and we did talk with with
+Jim Keller about this a little bit yeah
+and and right and so realistically in
+most packaging solutions only one of
+those die is going to be directly
+connected with your heat sink so that
+guy will cool really
+well the other one what is the bottom
+layer and interpose or is that the most
+immediate layer whoa so in 2.5 D it's
+interposer and then active chips on top
+so there's only one surface a medium
+heat for all intents and purposes and so
+that the cooling for that is pretty
+straightforward but where you get to 3d
+where maybe you have several different
+layers of logic now all of those are
+active so they're switching so they're
+all burning power right and emitting
+Heat and so there's no real interposer
+they're necessarily okay I mean you
+might have it but but yeah so then the
+challenge is well okay which dye do you
+want to be touching the heatsink and
+then how does everyone else dissipate
+their power and what's the order that
+you do it in so for example memory DBM
+when you heat it up the leakage gets
+worse so the Refresh time needs to be
+more frequent mmhmm right so that's
+going to hurt your performance and it's
+bad news all around so you know you
+don't really want to have the DRAM
+necessarily sitting right on top of
+really hot stuff like say your floating
+point you right and so you know when we
+got into the discussion he brought up
+registers as well I think
+yeah register files and you're backing
+up when you look at a CPU core there's
+some parts that are gonna be really hot
+like register files floating point units
+anything that's switching a ton on a
+really regular basis like every clock
+you know when you look at a thermal
+image those those are the red spots you
+know I remember Pentium 4 the the red
+spots was those double pumped a I'll use
+that we're running at like 10 gigahertz
+right it's like oh yeah that burns a lot
+of power Yeah right don't put that near
+anything sensitive so you know and then
+then you have like your your cache
+arrays which are frequently inactive
+because you're only going to be
+accessing one line at a time
+you know maybe 2 or 3 that's gonna be
+much cooler over
+and so you know the answer that I heard
+was there's no magic bullet for cooling
+there's just careful design and planning
+and place things accordingly though
+don't put very hot things like the
+things that are very thermally sensitive
+yeah yeah and then the other aspect is
+how do you get the power in mm-hmm
+right because if you take a look at ice
+Lake server or any of these really big
+high-powered chips
+they've got thousands of pins of which
+many are used to drive power in and
+ground pins and so that's fine but you
+know if we're gonna go stacking things
+not all of those have pins that are
+directly connected to the outside world
+right and so if you're you know imagine
+you're like a 10 high stack well the guy
+who has to go through nine others has a
+worse power delivery network in a worse
+ground plane mm-hmm and everyone else
+and so how do you how do you cope with
+it and again the answer is design
+although I would say in terms of power
+delivery Intel's voltage regulators and
+you know the fully integrated voltage
+regulator that they hadn't as well and
+then Broadwell and in their server chips
+still could be very useful you could
+imagine having a dedicated voltage
+regulator right and they did not they
+were not able to confirm its existence
+and the upcoming products yeah they
+didn't seem too keen on top yeah we did
+ask and I believe the answer was Roger
+looked over her shoulder at PR and yeah
+yeah yeah I mean I suspect it'll be back
+but we'll see you know we didn't find
+out as they say yes yes yeah so I
+thought those were some of the issues
+and the other thing that Roger mentioned
+was the known good die problem which is
+that we don't want to connect up
+multiple thighs
+into you know say $1,000 chip and then
+only later find out that one of them was
+mad
+so how do they how do you deal with that
+yeah are you testing or yeah well so you
+can do testing pre-packaging but it's
+you know added cost data complexity is
+very logistical expensive yeah and you
+can't test everything obviously if you
+only put it into a package afterwards
+you can't test the package yeah and so
+if you if you break things in the
+packaging process well you're stuck yeah
+unless you can map those out so you know
+I think those were some of the key areas
+they identified but you know to me it's
+really exciting because one of the
+things they didn't get into a lot in
+part because it's not a manufacturing
+event is well what are the the things
+that have done that right and so I think
+a lot of it is just giving designers at
+a lot more flexibility yeah they
+mentioned that this opens a lot of you
+know a lot of doors that they didn't
+really explore for today so there was
+definitely discussion of how the the new
+approach versus previous designs well I
+guess one of the questions was yours
+asking about give me a number
+10% 15% yeah right and the you didn't
+really get a firm response but you did
+get an interesting response which was
+well it's not always just about it's
+important to look at those numbers
+percent improvement but also we're
+interested in looking at
+he Keller's had more fun ways to improve
+the product right yeah I mean I got
+I mean Jim's answer was sort of in some
+respects very unintelligent into a
+particular growth rate it's people get
+excited by big steps form right brand so
+we want to excite people that's actually
+kind of more of a Steve Jobs kind of
+mentality which makes sense given that
+you know Jim and Roger work together yet
+at you know Apple priority MD right
+I did think it was an interesting answer
+though because you were getting a
+complete non answer right up until that
+point yeah and and for him to actually
+commit to something even if it was sort
+of a sidestep it was a valid sidestep so
+I thought that was that was a good point
+of recognition actually Intel in general
+seemed a lot more loose in this event
+there were self-aware this event than
+normally oh yeah where they like there
+were there were I wrote down the quotes
+somewhere we'll probably publish them
+but quotes about like there was
+definitely some humble pie and we're
+eating it was from Murthy yes yeah and
+so Intel's self-aware and they they know
+their position in the market they know
+they're challenged in some areas right
+now yeah so that was very different to
+see from any company but especially you
+know yeah I mean you know I think this
+happens everyone and I thought that you
+know AMD when they were really on the
+ropes was sort of similarly self-aware
+right you know so but you know to me
+going back to like okay what are the
+advantages that that the 3d stacking and
+the 2.5 D and all these more complex
+packaging schemes bring is that you can
+really optimize your silicon in
+different ways and you know the the
+easiest example maybe the most relevant
+is the ideal process technology for a
+CPU and a GPU is really different right
+for the CPU we want the fastest
+transistors we want the fastest circuit
+design and that typically means larger
+transistors that are more loosely spaced
+that means a tapered metal stack with
+more layers and that's what allows you
+to run and you know greater than five
+bigger which I'll mention also as a
+question we brought up of okay so can we
+expect at initial launch of a 10
+nanometer desktop part which I
+specifically phrased it that way so I
+didn't want to say can you expect the
+same frequencies of a 10 nanometer part
+yeah the answer is yes
+at some point the answer was still
+basically yes so the question was for
+the initial 10 nanometer product
+launches on desktop will we see the same
+frequency as we see 40 nanometer plus
+plus plus
+how many pluses there are yeah I think
+it's I mean in some sense 14 plus plus
+is a marketing thing right but what are
+the particular iteration right working
+the animator that Emma and Raj know more
+or less said well we're not going to
+release a product that's worse right so
+that was the answer yeah I mean I took
+you his answer to mean two things so one
+is you know we're not gonna go backwards
+in performance and then probably exactly
+backwards in frequency but at the same
+time the first 10 nanometer parts are
+definitely not for the desktop and so
+that's you know more of a mobile tuning
+process right so you know when you're
+looking at these desktop parts you know
+you don't care much about leakage all
+right
+not nearly as much from yeah I mean it's
+just not not a super big deal and you
+want to run it high frequency and so
+then it turns out there's actually some
+like physical transistor effects that do
+let you run faster but kind of hurt you
+on the leakage side and so some of these
+things are typically perceived as being
+a negative and from a process technology
+standpoint at least a lot of people talk
+about that as a negative right thing you
+want to minimize but if you actually
+look at the real characteristics it
+actually means the transistor runs
+faster which for some people is more
+what you care about sorry yeah exactly
+right but then when we talk about GPUs
+right you know we want maximum
+transistor density and you know it
+doesn't have to run anywhere close to 5
+gigahertz right you'd much rather have a
+more power efficient transistor and it's
+only gonna run it like 1 to 2 gigahertz
+so that's one example another is if
+you're doing a mobile part right you
+might care a lot about low leakage yes I
+would say that is a particular sense
+particularly sensitive use case where
+yeah
+yeah cuz you're dealing with you know
+limited battery life so yeah exactly
+and even within the context of a
+microprocessor there's still different
+blocks that want different things you
+know a good example is your Ondine
+memory your SRAM
+if you stick it in a processor you know
+your typical processor is gonna have
+something like 10 to 15 layers of metal
+wire well if you're just doing a lot die
+of SRAM you don't need nearly that much
+you can probably get away with 5 so you
+can cut down your cost quite
+considerably so you could imagine a
+future microprocessor where you say okay
+the core and the register files and the
+l1 cache that's all in cutting-edge 10
+plus plus and then we're gonna have a
+separate l2 cache in l3 cache that are
+in like 10 nanometer a certain processes
+alright so there's a bunch of different
+ways to think about slicing this up but
+until you have that 3d or 2.5 D inner
+can enhancement that is high-bandwidth
+low-latency and very power efficient all
+those options are off the table right
+you know from an engineering perspective
+this just gives us a lot more toys to
+play with right right not to mention the
+mixing the DRAM and storage and all
+sorts of other different things that are
+on different types yes
+yeah yes there was a whole separate
+thing on opt in for example earlier
+today - yeah and all this stuff so how
+what are your feelings overall with the
+the 3d design approach that ends all
+talking about I mean do you yeah top
+level he thinks the right direction or
+challenges they might face that you
+think are significant yeah I mean I
+think the biggest challenge is getting
+it done cost-effectively and we know
+that it can be done Intel's done it with
+hemad you know tsmc has their approach
+the Nvidia uses and Google is using but
+these are for typically machine learning
+chips and right you know fairly bespoke
+things we've seen a lot in recent HPC
+ramage
+chips out of Japan from him NEC and
+Fujitsu and that's fine but these are
+all chips that are being sold or valued
+at multiple thousands of dollars right I
+think the thing that gets interesting is
+okay can I deliver this at a $200 $300
+and with millions of units yeah exactly
+and so scaling things into volume is
+always a little bit tricky and so I'd
+say the cost side of the equation is you
+know that's the proof will be in the
+pudding yeah and then there are some
+some more specific technical
+difficulties one of which is depending
+on how they're implementing things
+EEMA biz is really interesting and one
+of the things that's interesting is
+unlike the tsmc approach when you have
+your two die the ruling next to each
+other and then there's sort of a bridge
+underneath but it's a small bridge and
+so one of the challenges is the two dies
+here have separate bumps to connect to
+the outside world and then to connect to
+the bridge and those bridge bumps the
+micro bumps because they're different
+pitch it actually makes things like
+structurally physically fairly
+challenging because you now have big
+bumps on one part of the dice walnuts on
+the other and if they were to heat up
+and behave differently you could get
+crack anymore things like that so just
+the physical engineering around that and
+getting it to align correctly is is not
+trivial and TSM C's approaches a lot
+simpler it's we're gonna make everything
+out of silicon it's all on one silicon
+piece in one module so you've now have a
+lot more silicon which costs you more
+money but it is structurally one so you
+know the question is okay how does how
+does this sort of the cost of R&amp;amp;D and of
+validation of potentially RMA or at
+least wasted silica or wasted parts does
+that exceed the gains that TSMC would
+experience yeah and it the easy way
+I mean I would I would phrase it
+differently it won't get into production
+unless all those things are on right
+right of course and so that's why I say
+the proof is in the pudding when they
+get to volume and where do they
+introduce it and it's you know I think a
+lot of these things it's fine if it
+starts out in a premium part maybe it's
+really in mobile where you can justify
+paying for it but the exciting thing is
+really to get that out everywhere and
+then you know also I think again seeing
+the solutions that they have for power
+delivery and cooling mm-hmm gonna be
+pretty exciting yes definitely
+especially with Intel's renewed interest
+in better interfaces
+yes solder previously needs some work
+but they're not anywhere close to
+talking about that today I don't think
+cuz it's yeah I'd have to get through
+the rest of the product first they're
+not even talking frequencies today yeah
+I mean it was very much a high level
+type discussion so you know I mean Intel
+seems they have this very interesting
+relationship with the high end over
+marketing community and they absolutely
+want to support it they put features in
+for it right but then you know on some
+of the parts you know as I think you've
+talked about at length yeah yeah their
+material choices leave a bit to be
+desired yeah it's hard to look at the
+cost equation I don't really know how
+much this stuff costs in volume
+any other so for sunny Cove I guess is
+is that the most immediate desktop part
+or what is what is the what's the most
+immediate thing we're looking for the
+desktop space okay cuz there are a lot
+of things today yeah so I mean that was
+definitely one of the more exciting
+things which was sunny Cove is the code
+name for the CPU core that is inside of
+isolate yeah yeah yeah so I had always
+thought the court was called I slave but
+right yes that's not true so either they
+just made up the code name or you know
+didn't seem to exist online before today
+yeah so if it was hidden it was it was
+very well yeah and so they gave a lot
+more details on that and it's a wider
+higher performance form that's pretty
+exciting I mean we've been sitting here
+with skylake and its derivatives for a
+long time yeah so seeing those changes
+is great and in part because Intel's had
+a lot of time to make these advances and
+I'm sure it's very frustrating for a lot
+of the architects at Intel to have you
+know new architectures that they put up
+and held down and can't ship right Oh
+tethered by their manufacturing process
+to some it's them yeah and I mean it's
+even worse for the folks who worked on
+cannon Lake which went from you know
+being a major product that was going to
+be across all the different segments to
+you know just functionally dead they had
+a they had a couple of products out
+there's the knock rate there's the i3
+whatever but there it was also the thing
+that was released before but yeah I mean
+cannon like is not really shipping in
+any real ball right that's more it's
+there for low this point look yeah look
+we did it we ship yeah well but and
+that's the challenge right which is you
+know this was a design team as you know
+get let's get something from an
+nanometer up and ready as soon as
+possible so we can ship it right that's
+the right talk way and then wait for the
+architecture but if the process isn't
+ready then when you have your new
+architecture it's gonna be better than
+the old one so right and they I did I
+will note as well they Keller and Raja
+Midori which I haven't properly
+introduced either of them but if you
+don't know Roger - dorri I did a video
+with him a few years ago used to work at
+AMD at RTG function it was the lead and
+now at Intel yeah and Cal are known for
+also doing significant work at AMD yeah
+so yeah I mean Jim's career is
+I mean both of them have been pretty
+lengthy career so Jim was at digital
+initially then he went over at AMD
+they're both at Apple for a little bit I
+think yes they're at Apple together Jim
+was also I think he was at SCI byte and
+then he left AMD he was at PA semi which
+was doing PowerPC chips for Apple
+actually for their notebooks but then
+Apple famously switched to intent right
+that was tough for PA semi but Apple
+eventually bought them and so then that
+for the basis of the CPU and yeah one of
+the things he was talking about was
+continuing to potentially use 14
+nanometer plus cost or whatever yeah and
+not just phasing out these processes
+right because if it's still an adequate
+adequate piece of silicon for what
+you're trying to achieve I guess then
+why complicate it with something more
+expensive and with more limited fab
+space yeah and I mean I think his point
+was a new process is no longer
+everything to everyone
+hmm and so and I think actually we've
+seen this for a while right with
+Broadwell right Rodwell was mostly
+interesting on the mobile side and the
+desktops particularly in the enthusiast
+side were just not there right there
+were certainly some I think like 45 watt
+desktops but I don't think there was a
+really a 90 watt client socket for well
+and that's fine but the point is you
+know okay so if we get a process it's
+good for mobile and we lead with that
+then we're gonna continue ship in the
+old process for desktops right and the
+other thing is and he did mention a
+potential 15% increase and frequency or
+performance or something like that did
+you catch that well yes yes so he said
+that they had come up with different
+ways to tweak the transistors to boost
+free clear right it's just a question of
+whether they're going they have a
+product to do it on
+at this point yeah and you know what
+what is the particular tweak what's the
+Boston right but I think the point is
+you there's a lot more performance you
+can wring out of a process through
+incremental tuning number one and then
+the other thing that's kind of
+interesting you can do a mix and match
+with 3d here in 2.5 D so if you have you
+know it just gives you a bit more
+flexibility you can say you could you
+could say okay look we want to take on a
+14 plus plus CPU and combine it with a
+10 nanometer GB right or whatever so
+yeah and I think that was his statement
+of you know we're gonna have several
+process technologies in high volume that
+we use across our product line
+simultaneously and it's just one more
+variable that we get to choose from
+right right
+any any final points you want to add in
+here anything really major we didn't
+talk about that you think is worth
+mentioning well I mean one of the other
+things I thought was interesting is they
+read they didn't talk about on package
+memory yes yeah right and a lot of this
+was in the context of the the integrated
+GPU but you know they also talked about
+in the future
+discrete GPUs and so I think it's great
+to see people looking at okay how can we
+boost performance and if before anyone
+gets too excited the way in which they
+talked about discrete GPUs in the future
+primarily pretend to not talking about
+them today
+yes don't get too excited yeah but it
+was mentioned yes yeah right so you know
+I think that it's as many things that
+Intel it's it's a gradual process right
+so that I think the first step is a
+higher performance integrated GPU and
+then you know next couple years we'll
+start seeing more more more variants at
+higher performance levels and you know
+my guess is the first thing they do will
+not be a 300-watt monster right will be
+more like a mid-range part and that's
+fine
+but the you know I think the point is
+okay because they're looking in that
+direction they're now driven to find
+some in package memory solutions talked
+about using lpddr4 X maybe LPG dr v in
+the future but that could be quite
+interesting if it's architected the
+right way for you know cpu performance
+as well i mean one of the you know sort
+of interesting hoary old tales of the
+industry was i think crystal well the
+broad well with 128 megabytes of IDI RAM
+in package yeah you know it turns out
+that that 128 megabytes of l4 cache was
+worth something like 800 megahertz on
+some more clothes okay yeah and so that
+actually beat ad intro some of the high
+frequencies sky legs on some games right
+yes I recall that yeah yeah it was also
+a very rare part - yeah I remember so I
+got one to test and like anon was so
+annoyed at me because I tested it I have
+some internal numbers that I used for
+some calibrating some of my own models
+but I never published anything you know
+there's three people in the world who
+got to play around with that you sit on
+yours for like a couple months and
+publish I'm like yeah what are you yeah
+but you know the the thing that's
+interesting is once you start playing
+around with this embedded memory and
+even if it's for a mid-range GPU it will
+inevitably get pushed in different
+directions right and so maybe we will
+see an option to get a high end you know
+5.5 gigahertz right you know ice lake
+with with embedded memory that would be
+really cool you know and they were
+talking about you know I think the slide
+said something along the lines of a
+gigabyte there's a lot of memory yes yes
+it is significant
+yeah right I mean like I I don't know
+how bigger some of the levels in these
+games if you could keep that the whole
+thing in cash that it
+yeah gigabyte is especially because well
+yeah I mean the biggest things are gonna
+be dealing with are things like textures
+yeah and even the they're large but a
+gigabyte is significant when you're
+talking about typically the 128
+megabytes and the biggest recent
+scenario yeah with crystal while I guess
+that was forget over always called yeah
+so I don't know other than that I think
+that's that's are pretty good yeah I've
+heard a lot of stuff I mean there's
+plenty of other things we could talk
+about EV PGA is at a yeah and everything
+yeah you know on the octane side I think
+we both agreed you're chatting about
+this a little bit earlier but it's it's
+really exciting you know mostly in the
+dim form yes the the dim form factor for
+sure and I would estimate that the
+majority of our audience is familiar
+with obtain from its initial
+implementation which was MDOT to as a
+cache drive and that was a terrible
+start to obtain as a technology and
+unfortunately because the name is the
+same as in the dims everybody is just
+associating it with that and going
+obtain is garbage based on the comments
+I've read so you know just to point out
+the dim stuff is pretty cool yeah but
+yeah I mean the the cache drive is kind
+of a different story
+yeah I mean I think this this was sort
+of a scenario where basically Intel
+needed to go to market with a product
+then the dims weren't ready because the
+server processor was going to attach to
+wasn't ready so you know that's gonna be
+cascade like when Silas talked about for
+a bit today and III guess the one
+interesting thing is of course cascade
+Lake is a server chip but as we all know
+these server chips do show up as yes are
+they calling them core I nines now it's
+hard to keep track more or less yeah
+yeah but yeah the really high-end are
+based on server chess so you know we may
+get in the not-too-distant future
+you know like q1 of next year enthusiast
+systems where you can get up
+DIMMs in pretty large capacity so right
+that would be super exciting and I bet
+they would be monsters the benchmark
+yeah it would be a yep they'll be very
+different yes you're testing
+responsiveness at that point too right
+not just oh yeah it's the whole system
+would in theory be much faster yeah and
+I mean I think you know this is just
+something I was thinking about casually
+is kind of a wild and crazy idea but you
+know I think on my system I'm currently
+running with something like maybe a
+three or four hundred gigabyte SSD for
+all my applications in OS and you know I
+have a bunch of hard drives for holding
+media and other things but you know you
+can get a terabyte of octane dims no
+problem so you could actually just have
+a PC where everything sits in octane
+yeah and you know if the latencies or
+call it 300 nanoseconds for everything
+yeah that's a lot better than the
+microseconds we're used to it for an SSD
+yes yes so definitely yeah I guess you
+know that shove it on to memory memory
+yes it's permanently in memory right so
+you know how fast is windows booting
+then all right yeah at that point you
+just become bound by things like the
+post check yeah just stuff like that
+yeah yeah it's a really cool stuff on
+the opt hand side we won't dive into
+yeah we always talk about it yeah and
+for more of David Cantor's work
+real-world tech I guess is officially
+where you can find some of his writing
+yeah I'm on Twitter of course the cancer
+yeah and and then m/l / you get
+contributions too as well yeah and ml /
+org is where you can go to check that
+out
+you know actually today is kind of a big
+day for ml perf and for those who don't
+know it's an industry standard benchmark
+for a machine learning and it was
+started out by folks from Google Baidu
+Berkeley Harvard and you know it's not
+really grown into a great organization
+and so we're going to be having some
+results from the first round of machine
+learning training benchmarks and you
+know if you puts into Nvidia or Intel or
+you know Google or frankly anyone else
+you know yeah that's like a big topic
+and you know I think actually you know
+when we were talking about some of
+Nvidia czar TX some of the ray-tracing
+you know actually uses machine learning
+and to smooth out the the results and
+then there's also been some work from
+Nvidia on using machine learning for
+anti-aliasing so you know it well it's
+traditionally sort of a more data center
+workload the results are absolutely
+relevant to consumers everywhere and
+it's something that I've been working on
+a lot and I'm pretty excited about yeah
+and I guess we I'll go ahead and put a
+link below if there's a relevant site or
+something I can link to yeah ml per org
+and yeah depending on the time of day
+there may be results up there for the
+first round which is pretty exciting
+very cool check that out well that's
+that's it for this one so as always
+subscribe for more you have I'll give
+you links below for real world tech and
+you can also go to patreon.com/scishow
+and razaaq's i'll talk directly or the
+store and david thank you for joining me
+absolutely good to see you again to see
+you we'll see you all next time</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

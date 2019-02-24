@@ -1,0 +1,313 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Downloading Games at 10 GIGABIT? | Gadgetory - Your Gadget Factory</title><meta content="Downloading Games at 10 GIGABIT? - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Linus-Tech-Tips/">Linus Tech Tips</a></li><li class="active">Downloading Games at 10 GIGABIT?</li></ol></div><h2 class="post__title"><b>Downloading Games at 10 GIGABIT?</b></h2><h5 class="post__date">2018-08-20</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/gk1eKPRLaJA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">waiting what seems like an eternity for
+games to download is annoying enough to
+start with but when there are multiple
+people in the house or office and
+everyone wants to grab a hot new title
+at the same time you can run into some
+serious bottlenecking so we set out to
+solve that problem once and for all
+without just spending more money on a
+faster internet connection and now
+well not quite now Jake's fixing it but
+soon everyone in this building will be
+able to download games from services
+like Steam at full speed and I'm gonna
+show you guys how after Jake fixes the
+machine and I tell you about Corsairs
+next generation strafe mark to keyboard
+it features a variety of Cherry MX RGB
+key switches and eight megabytes of
+on-board profile storage check it out at
+the link below
+if you've been to an organised land
+event recently you were probably wow by
+game download speeds that seem like they
+were from the future or something but
+unless it was Dreamhack 2018 the events
+internet speed is probably nowhere near
+enough to offer those kinds of speeds -
+even just a couple of people so how do
+they do it great question and one that
+can be both simple and complicated to
+answer so in short those insane speeds
+are thanks to the event having something
+called a caching server basically when a
+game is first downloaded on the network
+instead of the files just going straight
+to the downloaders drive like let's say
+this laptop that used to be here but
+instead I'll use this hard drive as a
+prop instead of them just going straight
+to this drive they are first saved to a
+separate machine and then kind of
+relayed to the user so then the next
+time someone wants to download that same
+game let's say to this other hard drive
+instead of pulling it off of steam or
+you play directly it'll save a ton of
+bandwidth to the outside Internet by
+grabbing it off of that same server this
+will help keep latency down for all of
+the gamers that are sharing that same
+connection so the concept is simple but
+when you get into sending up nginx DNS
+forwarding dealing with HTTPS and
+worrying about when to clear the cache
+the actual deployment can get pretty
+confusing now thankfully for us there
+are a ton of different solutions that
+mostly revolve around the same built in
+nginx caching solution with the most
+up-to-date being yeah appropriately
+named steam cache
+it's pre compiled for docker making it
+quick to set up and despite its name
+there's actually a version of it that
+supports steam origin Riot Games
+battlenet frontier Launchpad you play
+and even Windows Update so it's perfect
+for your next land or even general home
+use because I mean who needs epic games
+launch anyway right
+Yeah right so let's get started on
+exactly how it works then shall we for
+most people
+standard one gigabit networking along
+with a couple of along with a couple of
+raid zero to hard drives will be more
+than sufficient but come on you guys
+know how we do so we wanted to plan to
+allow every single writer here in the
+office to download games at the same
+time so that would be about one gigabyte
+per second of sequential read speeds now
+that's child's play for today's high-end
+nvme SSDs like this one but since we
+also need capacity and that's not what
+you're gonna get from a single opt-in
+drive we decided on six raid 0 480 gig
+SATA SSDs from corsair that we pulled
+out of that dual machine build rip rip
+in peices now it should be noted that a
+single drive failure here would result
+in a complete loss of all the data on
+the array but it doesn't really matter
+since this server is not
+mission-critical all it's doing is
+caching readily available games and
+updates we could easily throw a new
+drive in and redownload it all the other
+key specs of our system are at 64 gigs
+of DDR 4 RAM lots of RAM let's the
+server cache files in memory for quicker
+transfers and a 10 gigabit network card
+so remember even though we want to
+download from the server at one gigabit
+we want multiple people to be able to do
+that at the same time so this one needs
+a bigger pipe now we're using an X 540 T
+2 but that's kind of older because we
+had it lying around they're actually
+cheaper options these days from a quanta
+and a soos so then now that we have a
+server primed for caching we can get
+back to the software side of things as I
+mentioned earlier steam cash comes in
+the form of a docker container which is
+kind of like a virtual machine but
+instead of emulating the entire
+operating system then with the specific
+software that we need on top of that
+docker
+can run specific software as if
+on its OS without running an entire
+separate OS making it a lot more
+efficient especially if you need to run
+multiple instances of the same software
+and we will need to do that since each
+different service that needs cashing
+steam origin battlenet etc will run in
+its own instance now we know all of that
+was a gross oversimplification so we're
+actually gonna link a video below with a
+better explanation of docker if you're
+into that docker can run on both Linux
+and Windows but the windows version has
+to actually virtualize linux kernel on
+top of Windows so we're gonna stick with
+Linux we went with a bun to desktop
+eighteen point oh four because we love
+reading but hurt comments from the arch
+and mint fanboys just kidding love you
+guys
+but don't worry the guide that we're
+gonna have linked below will work on
+pretty much any flavor of Linux that you
+like now our first step is to get docker
+up and running once you have it make
+sure that you run your docker commands
+either with sudo or by adding your user
+to the docker group do not run any of
+this as root please then for our
+installation we want to cache all of the
+services that we use on a regular basis
+here at the office which means that
+we're going to need six static IPS one
+for each of them since this OS has a
+graphical interface it's actually super
+easy to set up our ip's we just need to
+navigate to network settings and enter
+them
+wha-bam wha-bam just like that I type
+pretty fast now we can start each of the
+caching docker containers one by one and
+then steam cache DNS which will forward
+all of the URLs that need caching to our
+server instead of the world wide web
+then I mean don't worry then if
+something isn't on our server it won't
+just fail if the content isn't cached
+yet it will then get downloaded to the
+caching server and be forwarded to the
+downloader seamlessly cool right so
+theoretically then we should be good to
+start downloading some games right not
+quite so we need to set the cache IP as
+DNS on all the systems we want to use
+right okay so keep in mind that if you
+intend to run a solution like this long
+term it's a lot more
+elegant to set your primary DNS on your
+router to the IP of your caching server
+instead of setting up the DNS settings
+on a computer by computer basis
+don't worry any unrelated traffic will
+go to the usual location okay so we're
+ready so here's the caching server we've
+got our Diagnostics panel running and
+all that and then we've got actually a
+couple of test victims so first up we've
+got this guy one of Jake's test benches
+and we're just gonna do a quick sanity
+check make sure everything's working
+this is actually a 10 gig client with an
+intel octane drive as its boot so go
+ahead and hit that I want to hit it at
+the same time as you okay three eight
+two one go oh boy Brandon you're gonna
+have to get here on the run 23 seconds
+here well you got this I'm at two
+hundred Meg's I'm coming down at 320
+Meg's a second sir you're at what - 23
+to 23 to 30 - 50
+oh wow 300
+are you done the game yet since the win
+five seconds two and done go check go
+check it kids will be done - so we don't
+even have to see the actual speed wonder
+what the fat is disgusting okay so we
+peaked out at seven point two gigabit
+seven point two gigabit yeah from the
+surf show it show Brandon seven point Q
+so that was the peak seven point two and
+then it was kind of averaged around six
+there's another one right there
+dang flab it doesn't say all right for
+lulz I'm just gonna do pup G and see if
+that works
+oh yeah it is yes so with games like pub
+G where there's a lot of compression
+yeah you're limited by your computer so
+if we look at the cores of this system
+so this is a nine you know you don't
+have a huge amount of single-threaded
+performance so steam will only use a
+certain amount of cores and it won't
+bypass that so you'll see us and so
+we're capped out by our CPU right now
+yeah decompressing not by our surface if
+you see here there's two full cores that
+are being utilized
+I think it's normally three or four that
+it'll use man
+and then past that it won't use anymore
+to not interrupt the rest of your system
+right and I think it's more optimized
+for like four to eight core systems 16
+core is a little too much for steam so
+it's a less impressive demo but it's
+definitely our best-case scenario and
+that means that we could have five
+systems yeah hitting it at this
+currently seven now based on what we saw
+there
+so I guess conclusion time then this may
+not be a solution for the everyday gamer
+like many people will only ever download
+each game play at once then delete it
+and never download it again and it's a
+lot more user friendly to just use steam
+zone backup feature to an as if there's
+something that you you know think
+occasionally you might want to
+redownload but if you have a bunch of
+gaming aficionados in the house or if
+you help run a local land gaming
+organization we would definitely
+recommend giving it a shot especially if
+you have an old computer lying around
+that's just waiting to be given a new
+purpose speaking of just waiting what
+are you waiting for
+try fresh books today fresh books is the
+small business accounting software
+custom-built for how you want to work
+it's the simple way to be more
+productive more organized and to get
+paid faster fresh books allows you to
+create and send professional-looking
+invoices in less than 30 seconds you can
+set up online payments with just a
+couple of clicks and get paid up to four
+days faster they've got apps for iOS and
+Android so you can take the entire
+freshbooks experience with you on the go
+and you can see when your client has
+seen your invoice to put an end to the
+guessing games so for your unrestricted
+30-day free trial go to fresh ebooks.com
+slash tech tips and enter Linus tech
+tips in that how did you hear about us
+section we're gonna have that linked
+below so thanks for watching guys just
+like or like check out our other videos
+oh wait this is my tech quickie outro
+crap also get subscribed we have merch
+and let us know if you want to see a
+follow up to this video where instead of
+like a jank tastic like rat's nest of
+SSDs in the back of a regular tower yeah
+and Jake's water cooled test bench if
+you want to see us like set this up
+properly let get like every steam in
+origin game possible cashed onto it and
+do some cool down
+maybe we should do like a land center oh
+I do pretty this would be perfect for
+that yeah we might need more networking
+though hmm
+maybe I see us take it to the next level
+let us know in the comments below</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

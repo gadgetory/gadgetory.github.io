@@ -1,0 +1,234 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Dead 2080 Ti #1: Clock Freeze at 1350MHz, Stuttering, Crashing | Gadgetory - Your Gadget Factory</title><meta content="Dead 2080 Ti #1: Clock Freeze at 1350MHz, Stuttering, Crashing - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus/">Gamers Nexus</a></li><li class="active">Dead 2080 Ti #1: Clock Freeze at 1350MHz, Stuttering, Crashing</li></ol></div><h2 class="post__title"><b>Dead 2080 Ti #1: Clock Freeze at 1350MHz, Stuttering, Crashing</b></h2><h5 class="post__date">2018-11-07</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/A0dRm5DqHWQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">this is our first really interesting 20
+atti failure it's not a BSOD on this one
+we already talked about that the B SATs
+are largely caused by I mean there's a
+reason they're multiple monitors here
+largely caused by monitors of high
+refresh with g-sync or just sometimes
+random monitors this one however is an
+issue because it times by and actually
+every game every 3d application they're
+all running really slowly and if you
+look at the frequency that's because the
+clock is stuck at 1350 megahertz so
+we're gonna show you how this particular
+bug on the 28 et eyes works today before
+that this video is brought to you by
+thermal grizzly and their high-end
+thermal compounds thermal grizzly makes
+cryo not paste for high thermal
+performance and conductivity without
+being electrically conductive so you
+don't have to worry about shorting
+components cryo knot is particularly
+good for replacing stock GPU pastes as
+cryo knot is a non curing compound learn
+more at the link in the description
+below this particular card with the 13
+50 megahertz lock it's not ever boosting
+above 1350 and if we overclock it at all
+like 10 megahertz it'll instantly
+exhibit issues and I'll show you that in
+a moment but the card is an EVGA 20 80
+TI XC gaming it's not the ultra it's a 2
+slot card it uses the reference PCB
+that's the common thread between all
+these so we have a bit of sample bias
+because we're in the US and most of the
+people who sent us cards are in the u.s.
+eg has the dominant vendor here so most
+the cards are either Nvidia Fe or EVGA
+but all of them use the reference PCB
+all the ones we've received that's why
+we've got a stack of Fe cards we have
+some EVGA cards some gigabyte cards and
+we have more coming in but this one is
+the only one that does this so let me
+walk you through exactly how this works
+we think it's almost certainly a V BIOS
+bug we wanted to film this before
+validating that because it's no going
+back once we fix it so here's the issue
+right now we're running times pi I've
+got two monitors hooked up just cuz that
+was a common multi monitor BSOD bug but
+we're not experiencing that with this
+one this card is getting away with it so
+if we go to sensors you'll see GPU ZZZ
+reporting a 1350 flat clock EVGA
+precision 1350 flat and the temperature
+if it can be trusted as shown as sixty
+degrees on the GPU and we're also fairly
+confident that the view
+the memory is doing just fine as well so
+this is some other issue and if you look
+at the power target here the slider
+can't move at all it is immovable and
+this one can move but the power target
+can't also the power target always says
+zero so even if we unlink them it always
+says zero so you can't go up this is
+clearly some kind of bugged v bios or
+almost certainly anyway and the fans
+there's just more of a precision bug but
+they seem to be showing zero rpm however
+we have had issues where this cards fans
+sometimes weren't spinning up at all
+because the frequency is so low that
+it's really not doing enough work to
+generate any heat as evidenced by the
+60-degree temperature and this is after
+clean install this happened on the
+customers card as well before I mean it
+is the customers card on their system
+before they sent it to us so what I'm
+going to do is just 25 megahertz offset
+this frequency should easily be at like
+1900 megahertz so we're around 600
+megahertz below where we should be on
+the twenty atti
+so we're just going to do a twenty five
+offset and we'll get the camera pan up
+to the top screen before I hit apply and
+now I am going to hit apply and let's
+see what happens
+so far the other screen is frozen so
+that's a good course yet we're getting
+freezing on the bottom okay it's back
+kind of okay so now it's freezing see
+that stutter that just happened if we go
+back down to the bottom screen we've got
+a spinning Windows icon precision is
+crashing and we're still seeing 1350
+megahertz in both applications GPZ is
+Allah is not responding either so both
+those applications have crashed or in
+the process of crashing and then now
+we're getting a full system freeze and I
+try to close that and we get a black
+screen
+okay so it didn't stay on the black
+screen this time like it has in the past
+but everything is still locked down and
+frozen so this is just from trying to do
+a 25 megahertz offset and sometimes
+it'll actually kind of stick but it
+stutters a lot so let's show that
+behavior - okay so it's back open after
+a reboot we're just gonna do ten
+megahertz offset on the core now and
+there it goes so there's there's the
+example the other behavior where you can
+see it's just stuttering for like half a
+minute at a time at this point and it'll
+eventually draw a frame but it's
+skipping 99% of them so at this point
+this is unrecoverable we can't restore
+to defaults or provide any input we all
+have to hard reset once again and now
+it's time to probably flash the V bios
+and see if that fixes it and here we've
+gotten I didn't hit the reset button yet
+so we've gotten just a straight black
+screen okay restart so one last thing to
+show you here before the flash this is
+an XC ultra that passed successfully no
+issues with that card 65 20 points on
+that one and then on the card we've been
+testing and on this card right fifty two
+hundred points so clearly it's scoring
+lower as well if you allow it to
+actually complete that's because the
+frequency is extremely low so let's
+flash bios then and see that fixes this
+update successful okay reboot well then
+work so it's still stuck at the same
+issues like the power target is zero we
+can't increase it afterburner doesn't
+know what to do with it either so that's
+not working
+the clocks should be the same as they
+were I'll just illustrate that and so
+we're left with an issue where it's
+either an in silicon error or it's like
+the BIOS chip error some kind of
+hardware level defect is most likely to
+cause you this is not a driver issue and
+clearly it's not a V bios issue because
+we took unknown good one and we flashed
+it and that should fix it for sure if
+it's a V BIOS corruption issue or
+something like that so let's give this
+one more chance though and see where it
+boosts to yep 1350 megahertz so it's
+still broken so this card this is card
+b1 that's our label and we have labels
+on all the cards so b1 is an EVGA 28 eti
+XC gaming it seems to have a V bios
+defect maybe it's not boosting the
+clocks over 1350 power target can't be
+changed
+the fans act kind of screwy sometimes
+and the scores are low they match the
+frequency so this isn't just a reporting
+bug in software the scores are actually
+significantly lower which is important
+to validate because otherwise it can
+just be a software reporting bug which
+is not what this is this is some kind of
+probably hardware level defect and
+there's nothing at this point I don't
+know what I can do with it so we're
+gonna take it apart probably take a look
+at it see if there's anything really
+clear and visible and otherwise oh no
+well look at the next set of cards and
+start seeing if we can draw some
+conclusions what's happening to them we
+have a lot these are Effy's need to look
+at those four primarily artifacting
+issues that you all have reported and
+then we also have another EVGA card
+we've got a gigabyte card so lots to go
+through but anyway I guess all this
+really shows you is that yes this is a
+real problem it's not just people making
+stuff up on reddit or something we were
+able to validate this one we're able to
+validate the VSO DS and where you see
+whatever what other kinds of weird
+errors we can find on the twenty series
+I guess it seems like there are quite a
+few though so this is an instance where
+at this point we if we can't figure out
+what to do with it in the next few days
+to fix it probably will recommend to the
+customer to just RMA it and EJ is good
+about that they'll definitely take care
+of the customer but ideally it doesn't
+happen at all so whose fault that is
+we're not clear right now it is a
+reference PCB which is made by Nvidia's
+team so we'll see we'll see if there's a
+common thread but thank you for watching
+if you want to support more content like
+this as we dig into the rest of the
+customer cards that were sent to us on
+loan you get a store documents access
+net to pick up a shirt like this one or
+you go to patreon.com/scishow and access
+subscribe for more I'll see you all next
+time</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

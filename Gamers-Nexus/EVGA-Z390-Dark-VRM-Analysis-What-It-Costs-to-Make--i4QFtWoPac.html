@@ -1,0 +1,790 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>EVGA Z390 Dark VRM Analysis &amp; What It Costs to Make | Gadgetory - Your Gadget Factory</title><meta content="EVGA Z390 Dark VRM Analysis &amp; What It Costs to Make - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus/">Gamers Nexus</a></li><li class="active">EVGA Z390 Dark VRM Analysis &amp; What It Costs to Make</li></ol></div><h2 class="post__title"><b>EVGA Z390 Dark VRM Analysis &amp; What It Costs to Make</b></h2><h5 class="post__date">2019-01-31</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/-i4QFtWoPac" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">guys build Zoid here from actually
+hardcore overclocking and today we're
+going to be taking a look at the voltage
+regulators on the EVGA z3 90 dark
+motherboard and you know I've already
+covered all of the features of this
+motherboard in the last video so let's
+just get right into it because this is
+still going to be a long one before that
+this video is brought to you by the
+coarser 1i 140 compact gaming PC the
+corsair 1i 140 is a small form-factor PC
+outfitted with a 9700 K RT x 28 e 32
+gigabytes of RAM and a 480 gigabyte nvme
+SSD all housed within a 2 millimeter
+thick aluminum chassis the corsair 1i
+140 is a 12 liter system fit for desktop
+use with the same size the I 160
+counterpart with higher-end parts learn
+more at the link in the description
+below starting off with the most
+important and largest voltage regulator
+on the board say hello to the 12 phase V
+core VR I'm off of an X 299 dark because
+well it's not actually the same they've
+changed it quite a bit it has a
+different layout different inductors but
+the power components themselves are
+actually very similar well anyway that's
+our V core vrm right here then over here
+we have one phase of VCC i/o so that's
+our VCC i/o over there then up here we
+have a GPU power which is kind of an
+interesting conclusion because like the
+FTW from EVGA as far as I'm aware does
+not actually have an IG PU VRM at all so
+yeah if you want to run your eye GPU
+this board can the FTW can't which is
+kind of an interesting and I did that I
+did this mistake twice that's si sorry
+that system agent down there this is VCC
+IO I don't know why I keep mixing that
+up it like I've previous take I made
+this exact mistake I was like okay I'll
+just restart it and I won't make that
+mistake anyway so that's our main
+voltage regulators around the CPU socket
+pretty standard layout here well
+actually it's not completely standard
+because they move the VCC i/o up here
+but the reasoning for that is very
+simple you need two different voltage
+controllers because of how many
+different voltage like the RMS you have
+here right you have your VCC io v GPU so
+you need a controller for those two and
+then you need another controller for V
+core and VC
+yes a so al I said earlier V Corps is a
+twelve phase V RM and as we all know
+nobody makes a twelve phase voltage
+controller they only go up to ten phases
+as of right now and so EVGA is of course
+using doublers to achieve the higher
+phase count the doublers used are the
+ISL 66 17s and these are a really cool
+doubler and the reasoning for that with
+them being really really cool is this is
+one of the few doublers if not the only
+doubler that I'm aware of that does
+proper current balancing so essentially
+what that means is this chip has enough
+circuit like has enough logic in it to
+monitor the current going through this
+phase and this phase and then if one of
+them is pushing let's say you end up in
+a scenario where this one is pushing 20
+amps and this one's pushing 40 amps well
+that's not ideal for your VR M
+efficiency which considering this is a
+twelve phase that you're not actually
+going to see that but anyway just
+example you know just as an example so
+let's say you're pushing 20 amps through
+one and 40 amps through the other phase
+well this is not optimal for your VR M
+efficiency and it's not optimal for like
+the RM thermals because this power stage
+will end up getting a bit hotter as a
+result and ultimately you know it's it's
+imperfect so what the doubler actually
+does is it monitors the current through
+this phase and this phase as well and
+when it sees this kind of current in
+balance it will actually extend the PWM
+signal going into this phase which is
+really really cool because like the next
+current balancing method that doublers
+use that I'm aware of is they literally
+just skip like what they would do is
+they would skip the PWM pulse for this
+one so basically you'd get two pulses
+into the lower current output phase and
+the issue with that is it tends to
+actually like put like it doesn't
+achieve balance so what it does is it
+makes the imbalance in the opposite
+direction so instead of like you end up
+with 20 amps going through the lower
+phase and 40 going through the upper
+phase so this doubler can actually avoid
+that and that gives you better
+efficiency because you actually spread
+your loading across the entire vrm very
+very uniformly and then the is l6 six
+one seven of course reports the combined
+current of these two phases together to
+the actual voltage controller over here
+which is the ISL 69 1 3/8 which is
+running in 6 plus one phase mode and the
+plus 1 is of course being run into the
+VCCS a down there so yeah we have our
+six you know six phases from the ISL
+that goes into our doublers the doublers
+spit out to independent pwm signals so
+that's what's going on in terms of
+control now the doublers like yes they
+boost your efficiency they also improve
+like that's the main thing they boost
+your efficiency they also reduce your
+output ripple because you do actually
+get like a twelve phase of URM
+essentially by doing this there is one
+downside to them they do put a bit of
+delay on to your pwm signals so you will
+have it basically makes it more
+difficult to achieve certain levels of
+transient response performance because
+your pwm signals are gonna be a bit slow
+are gonna be a bit delayed so but an
+interesting thing about EVGA is
+motherboards is that they really like to
+use very low inductance inductors and
+this is kind of interesting because
+basically the trade-offs for low
+inductance on your inductors is lower
+inductance better transient response so
+basically that this is like you get
+better transient response with your
+lower inductance the downside is that
+you get higher output ripple and you
+also lose efficiency but if you you know
+design your VR a court like correctly
+you can basically balance out all of the
+negatives of your inductors because the
+impact they have on efficiency is
+actually really really minor so the the
+doublers can kind of take care of that
+and the output ripple well we're
+interleaving 12 of the damn things you
+could have a pretty like one of these
+can have a pretty bad voltage waveform
+but when you properly interleave every
+like 12 of them at that point is stops
+being an issue so the doublers kind of
+eliminate any have the ability to
+potentially eliminate any issues you
+would have with output ripple caused by
+very low inductances so that's kind of
+an interesting thing where like EVGA is
+using a hundred and fifty nano Henri's
+whereas say asus so asus is doing
+something weird where they have their
+faces like that well they have their
+power stages and inductors running in
+parallel so the inductors themselves
+rated for like 400 nano Henry's but
+since they're in parallel they're
+effectively 200 when you see
+motherboards that have like faked phases
+those inductors are also in parallel and
+they're usually rated at around 400 nano
+Henry's and effectively therefore become
+200 because they're in parallel gigabyte
+likes to run 300 nano Henry's MSI tends
+to run around 220 when they're using
+like one inductor like when they have
+separate phases so yeah that's it's kind
+of interesting that EVGA basically has
+50 nano Henry is less than all the other
+board vendors it is worth noting that
+for example on GPUs is actually pretty
+standard practice to use inductor values
+of below 200 nano Henry's mostly because
+GPUs have such very well they're the
+power consumption of a GPU is really not
+consistent so you end up with massive
+transient or Spacek elite transient
+response becomes extremely important and
+so voltage regulators on GPUs tend to
+opt for lower inductance inductors just
+to sort of you know confident well
+basically to deal with the inconsistent
+loading that they end on end up under
+anyway so that's kind of the control
+scheme here ultimately can we make a
+judgment from this not really you'd need
+an oscilloscope to actually measure how
+much of an impact all of EVGA is sort of
+control and output inductance decisions
+have made now what we don't need to use
+an oscilloscope for is to figure out the
+efficiency and on this vrm it is
+absolutely ridiculous this is the same
+12 phase they had on the X 299 dark in
+terms of the power stages in phase can't
+and the power stages are therefore the
+ISL 99 22 7 B's these are 60 amp smart
+power stages more and actually these are
+thermally enhanced smart power stages so
+and they're extra compact so these are
+like really really special and really
+really expensive they're like five
+dollars apiece so yeah there's a good
+you know well there's more than six
+there's like 60 now so we have sixty in
+the week or we have another ten there
+and a five over there so we have like
+seventy-five dollars worth
+our stages on this motherboard EVGA has
+you know just kind of blown a good chunk
+of the budget on just that but hey the
+end result is that this thing gets some
+of the best efficiency out of like this
+is the most efficient 12 phase on Z 390
+and it's almost the most efficient the
+most efficient we are I'm on Z 390
+period it just kind of depends on what
+kind of load you're running anyway so as
+for the thermal enhancement part while
+this metal tab on these is literate
+directly connected into the the actual
+silicon of the power stage and that
+basically means that these things have a
+very low thermal resistance which means
+they're very good at cooling themselves
+through heat sinks or really just
+through ambient air because their case
+they're casing material is not as much
+of an insulator as what you normally get
+the end result is that if you actually
+measure the operating temperature of
+these power stages like on on this metal
+tab and they're not putting out a
+significant amount of heat per per phase
+like if you're pushing like say one watt
+on one of these the temperature
+difference between the temperature on
+the tab and the temperature inside the
+power stage is going to be like what 0.5
+degrees Celsius so essentially if you
+measure the temperature of one of these
+from the top of it you're measuring the
+internal temperature almost right
+whereas with a lot of other power stages
+you make that same measurement and the
+temperature difference for one watt can
+be anything from 3 degrees to say 7
+right if you're like especially terrible
+so very very low thermal resistance on
+these and basically they're they're
+great at cooling themselves so yeah EVGA
+has opted for these and you know what
+that just just the fact that the power
+stages are like thermally enhanced and
+really good at dumping eek was not
+enough for EVGA you may have noticed
+that this board is gold-plated freaking
+everywhere and a lot of that is because
+EVGA decided that you know what the is
+it's not enough that we have probably
+the most efficient 12 phase on z3 90 no
+it also has to like be completely
+capable of cooling itself without a
+heatsink so you have this these
+basically metal strips right here which
+are
+the exposed ground plane all over the
+vrm so you know that cooling free
+cooling right there for the power stages
+again and then of course they they have
+the screw holes just plated more and
+then the outer edge of the PCB is also
+just gold-plated like that so
+essentially the PCB itself is upgraded
+into sort of being more of a heatsink
+than the PCB normally is so that's what
+that's what's going on with all of the
+gold plating that EVGA has on here
+anyway at this point you're probably
+wondering okay so this vrm is really
+good at dumping eat it has very
+extensive power stages how efficient is
+it very very efficient so operating
+parameters for this vrm are going to be
+one point three five volts output 500
+kilohertz switching frequency and five
+volts drive voltage because these don't
+actually run on anything other than
+twice than five volts anyway and that's
+a terrible five there much better so 5
+volts drive voltage 500 kilohertz
+switching frequency and that is per
+power stage so that's like one megahertz
+at the controller right because the
+doublers cut that switching frequency in
+half so one megahertz at the controller
+500 kilohertz on the power stage
+so with these operating parameters on
+this erm it will produce is it is
+capable of pushing a hundred amps output
+at only 10 watts of heat dissipation it
+doesn't need a heatsink
+this kind of this kind of load it really
+doesn't need a heatsink and
+interestingly enough this is actually if
+you look at the efficiency curve for a
+standard power stage like say the ISL
+9920 s to seven B unfortunately that
+falls in the normally the curves look
+like that that falls into this part so
+this is actually like but honestly if
+the board is pushing less than a hundred
+amps assuming EVGA has the voltage
+controller properly configured it
+shouldn't even run all twelve phases if
+you're pushing only a hundred amps it
+should probably run like ten or eight
+phases max because pushing all twelve
+phases for a hundred amp load is
+actually less than optimal efficiency
+at this point but anyway moving on to a
+higher load so this is like the upper
+limits of what a 99 hundred K can do
+before it becomes completely uncool well
+can do in terms of sort of ambient
+cooling methods and we ready for this
+you're gonna be looking a like dilated
+CPU with potentially like a direct die
+frame you're you're not gonna be able to
+achieve this kind of current draw on the
+stock Intel the solder ring because the
+solder just doesn't like it's not good
+enough at thermal transfer to do that
+anyway at 200 amps output this vrm is
+only going to produce about 18 watts of
+heat so that's what I said about you
+know we're moving up on the efficiency
+curve so the this the the ratio of
+current to heat output is better here
+than at you know there anyway moving
+past 200 amps going into the 300 amp
+territory we actually start getting into
+like actually the interesting thing is
+this 12 face hits peak efficiency pretty
+much at 1200 at 200 amps output so it's
+pretty much like optimized for running a
+99 hundred K as far as I'm concerned and
+without a heatsink line you which like
+you know EVGA has a very elaborate
+cooling system on this motherboard but I
+think this board looks really really
+good without anything on it so quite
+frankly well you might need you might
+still want the chips i heatsink because
+that thing looks horrendous but uh you
+know if you'd like to admire your vrm
+while the board is running in your
+system especially if you have like a
+side panel window which putting this
+board in in case is not the correct use
+for it but you know if you do go that
+way you can actually run it without the
+heatsink and it's gonna be fine and you
+can stare at your very expensive power
+stages these power stages probably like
+three of these probably cost more than
+the heat sinks on top of them so anyway
+moving on the 300 amps output you're
+gonna be looking at about 30 watts of
+heat so now we're back at that part of
+the efficiency curve that's on par with
+that like the efficiency is back at to
+the levels of like the hundred amps
+output and then going up to 400 amps
+you're gonna be looking at about 47
+watts of heat and then finally 500 amps
+which is like like honestly liquid
+nitrogen is going to top out around 300
+amps it's not even going to reach 400
+amps but you know this is a crazy 12
+phase
+so for fear of for Theory's sake 500
+amps what would happen well it would
+produce about 66 watts of heat and
+interestingly enough EVGA rates this vrm
+while they spec the board's power
+delivery system for about 800 watts
+which tells us that they probably have
+it like the cooling system on this
+motherboard as its did like as it chips
+is designed probably for around 50 watts
+of heat dissipation because 800 watts at
+one point 3 5 volts is somewhere between
+that 400 and 500 amp figure so yeah um
+you know this this VR I'm is absolutely
+massive overkill for a well I wouldn't
+like its peak efficiency right it nails
+that peak efficiency so that's really
+nice for these given power stages so
+yeah it's it's a really nice erm me like
+is technically ridiculous overkill like
+there's nothing so if you had better
+heat like if you have heat sinks on
+these then there's nothing stopping you
+went running like there on the
+efficiency curve right but uh still it's
+like a good choice like I feel like EVGA
+didn't do the like because there's a
+couple Zi 390 motherboards out there
+which technically at the higher current
+loads can do better like the the 300
+amps 400 amps and 500 am figures there's
+e 390 boards that can handle those loads
+better than the dark the thing is at
+that point you're actually going to be
+like disabling huge chunks of their
+voltage regulators to maintain decent
+efficiency below 200 amps which this one
+kind of like they shouldn't have to do
+that until around like a hundred so you
+know ii v vga has basically like not
+none the silly thing because they could
+have like there's enough space here to
+put a 16 phase if they felt like it it
+just wouldn't be even remotely practical
+to do and also the is on 99 the six nine
+one three eight doesn't actually support
+that they could have gone for a 14 where
+they'd have like a 7 + 0 setup and then
+another controller but anyway the this
+is like a really good fit for a ninety
+nine hundred k in terms of power
+delivery definitely kind of excessive
+but not to say the extent of some of the
+other zi 390 boards out there so let's
+talk about some other zi 390 boards for
+comparison sake i
+pulled up my note while pulled up the
+numbers for like the Aces five phase
+that Asus has on the Maximus 11 extreme
+as well as the Maximus 11 gene and that
+that vrm at 200 amps output gets about
+21.5 watts of heat dissipation so it
+technically could still run without a
+heatsink but considering that it has
+less like that VR M is more compact and
+than this one it has less inherent
+capability to cool itself it doesn't use
+doublers so it's a like well actually
+that wouldn't impact it unless you crank
+up the switching frequency really high
+which you can do in the in the BIOS
+settings but anyway so you know that
+this is more efficient than like the vrm
+you get on a Maximus I'll have an
+extreme where Maximus 11 gene excessive
+like honestly as I've said like it's a
+bit excessive still but it is worth
+pointing out that it is more efficient
+at 300 amps the the gene you know that
+while I like to call it the asus v phase
+cuz that's what it is would do about 36
+watts and at 400 amps it would do about
+58 watts and that's by no means like I
+don't consider that a bad vrm it's just
+like it's a good 5 phase right you
+wouldn't really get a five phase that
+does better than that it's just like
+it's still a five phase and it is less
+efficient than this and then for
+ridiculous mode gigabytes z 390 extreme
+board and MSI Z 390 godlike so both of
+those use a 16 phase vrm using
+international rectifier components so
+they don't have a current balancing
+doublers whatsoever but there's so many
+phases in there that from basically 200
+amps up they actually have a efficiency
+advantage at least if the phase shedding
+works properly at 200 amps those boards
+the sort like the MSI and the gigabyte
+board the the top-end MSI and Giga Byte
+boards would do 16 watts for the the 200
+amps 24 watts at 300 amps and that's if
+they shed the phases so that would be
+running in 12 phase mode so yeah it's
+kind of interesting that like I told
+gigabyte like why didn't you go for a 12
+phase like honestly under normal loading
+this thing is gonna have like the this
+thing is wasting power running X and
+another 4 phases that the like you're
+not peeking efficiency yet because yeah
+that
+that 16 watts is assuming they would be
+hitting the efficiency if they weren't
+then it would actually get worse
+efficiency and anyway going up to 400
+amps the gigabyte board would only
+produce about gigabyte or MSI zp9 you
+got a gigabyte extreme Z 390 godlike
+from MSI would do about 34 watts
+so yeah that we RM is impractical levels
+of overkill
+this is what I consider practical levels
+of overkill this is also like like
+acceptable in my opinion I still think
+Asus should have like the controller
+they used could have gone to a six phase
+and it wouldn't have really like you
+would have taken up more space on the
+board but it wouldn't have really had
+any other negative impacts so yeah I'm
+not sure why they're like especially on
+such expensive boards too but anyway
+it's not like it's a disaster but I
+really like this VR I'm ultimately I
+don't think this is like a huge design
+win over the other board vendors but it
+is a really really nice vrm and it is
+like well thought out anyway moving on
+to the system agent vr m as well as the
+vc cio they're both single phase this
+ones of course hanging off of the 69 138
+here and it uses an ISL 99 what it wait
+now nine nine one four zero yes so it
+uses a 999 one four zero which is just a
+regular power stage capable of 40 amps
+output and yeah I mean system agent
+doesn't really pull much like system
+agent doesn't pull a whole lot of
+current ever so this is actually
+perfectly adequate for for powering the
+system agent absolutely no problem with
+that in fact it's rather overkill you
+quite frankly wouldn't heat a heatsink
+on like this this if they didn't put it
+under the vrm heatsink that the V curve
+erm has it like it doesn't need its own
+one I'm like if they've moved this phase
+up here or something
+so anyway and this is actually nicer
+than a lot of the VC csavr M's you find
+on a lot of other boards but again this
+is like this is impractical levels of
+overkill because the other boards also
+don't even need to heat sinks because
+system agent just pulls so little power
+compared to a lot of it like compared to
+V core or anything
+like that vc cio same situation vc cio
+pushes even like the the IO pulls even
+less power than the system agent so the
+this is even more overkill because
+that's again the same is l99 one four
+zero one four zero there except the VCC
+i io is controlled by this controller
+right here which is also controlling the
+V GPU and that is an ISL 6969 one three
+three and that's a four phase running in
+two plus one phase mode so you do get a
+two phase I GPU power and four i GPU
+power the EVGA is using again the ISL
+9999 twenty two seventy bees which are
+ridiculous overkill for you know i GPU
+power so there's two phases of that as
+well another interesting thing to note
+about the the VRML and the ZT 90 dark
+here is actually EVGA has opposite for
+all tantalum output filled like bulk
+output filtering capacitors which i'm
+not sure how much of an impact that has
+these are generally more expensive than
+your conventional like aluminum polymers
+like that and we used to see these a lot
+on motherboards in the past like they
+were a pretty big deal like gigabyte had
+boards with them msi had boards with
+them and they'd like advertise it pretty
+heavily that hey we're using all
+tantalum capacitors but i think more
+recently the aluminum polymers have
+probably just mostly caught up in a like
+efficiency and performance to these so
+these days you just see aluminum
+polymers everywhere instead of anybody
+going for these but uh yeah it's an
+interesting decision from EVGA to go for
+these because they do have slightly well
+they have not necessarily better ESR but
+they may have liked better yes out well
+ESL would definitely be better on these
+just because of the packaging they're in
+compared to your aluminum polymers but
+ultimately that's one of those things
+where again you'd need an oscilloscope
+to check if these make much of a
+difference if any at all but they are
+like it's an interesting design choice
+by EVGA moving up top memory power is
+provided by yes another is L is L $6.99
+22 7b this is like ridiculous overkill
+for memory power interestingly enough
+EVGA goes for like the single phase
+memory power whereas a lot of other
+board vendors go for like two phase
+memory power like asus and asrock really
+likes to go for two phase memory power
+ultimately you know you can compensate
+for low phase account with output
+filtering and I've hinted at this in the
+features video EVGA is output filtering
+is rather elaborate for the memory power
+here so you know I think essentially
+they decided like we can set the
+switching frequency on this really high
+because ultimately it doesn't need to
+push a lot of power in the first place
+or a ddr4 barely pull like a ddr4 really
+doesn't pull much power whatsoever
+so we can set the switching frequency
+really really high to compensate
+potentially for the low phase count and
+then they really do have a rather
+elaborate to output filtering system so
+I don't think this is like like I guess
+it's just like a design style choice
+more than like a practical decision
+there where EVG is like we're gonna run
+one phase and a lot of the like as Rahl
+kinases like to do two phase but MSI I
+think likes to go one phase as well and
+gigabyte never gigabyte likes to do
+single phase memory power as well more
+recently in the past we saw some boards
+go all the way up to three phase memory
+power but that was the same kind of
+logic that you know Britt brings you the
+the sixteen phase that needs to turn off
+four phases in order to hit peak
+efficiency at 200 amps it's essentially
+just smacking on phases for the sake of
+having phases which not exactly you know
+a great way to design things anyway the
+memory is controlled by yet another is
+l69 133 except that's running in just
+like 1+0 mode because there's one phase
+on it
+so that is the voltage regulators on the
+EVGA z3 90 dark I'm a like you know it's
+not my like it's not anything my well
+mind-blowing I think compared to like
+some of the other things EVGA has done
+here right this is a very similar vrm as
+to what they used on the X 299 dark
+in terms of the vcore then they've just
+kind of added phases for the extra rails
+that are necessary in fact they didn't
+even add phases like VCC io and VCC sa
+was also present on the on the dark so
+that's that's not new and just basically
+the AI GPU power is new the memory vrm
+is actually again like they had the same
+you know 60 amp hour stage from memory
+power on the dark and it was also a
+single phase well for each set of DIMM
+slots and that one just had like that
+one didn't have quite as elaborate of an
+output filtering setup so yeah that's
+kind of the the the vrm configuration
+here on the on the z 390 dark it's just
+like it is very it's a very expensive
+vrm right it's also very very efficient
+one of the actually I think it's
+probably like the like its second most
+of it while depends on you know the
+phase shedding there but ultimately it's
+like the second most efficient
+definitely one of the most efficient
+VRMs on Z 390 in general but right now
+as far as I'm aware it's about second
+for the 200 amp figure and then well at
+the higher currents definitely it's not
+not the top but you shouldn't really
+like you don't need to worry about the
+higher currents because it's basically
+200 amps plot like anything above 200
+amps is very much sub-zero cooling
+territory and at that point you know
+you're probably not going to be running
+the the whatever workload you're running
+is not going to be running that long so
+then you can just kind of rely on the VR
+like it takes so like well the benefit
+to having all the efficiency is that of
+course it takes so long for the vrm to
+overheat that you don't need to have
+heat sinks on it even when pushing very
+very high currents like that 300 or 400
+amps which if you're running on liquid
+nitrogen the other thing that happens is
+ultimately the board freezes over and
+not having to run heat sinks on the
+board does mean that you can just have
+insulation freaking everywhere instead
+of worrying about you know water
+building up between water potentially
+building up on the power stages which
+would actually really really suck with
+these because there's a great big like
+that exposed drain is a great big 12
+volt tab right there and if that shorts
+to anything really yeah you're gonna
+have a bad day well actually no that's
+the that tab right there is the
+the no is the switch node of the phase
+so it's not well occasionally it's at 12
+volts other times it's a like VRML put
+voltage so yeah like you still don't
+want that shorting to ground and like at
+all so you know that's kind of that
+anyway yeah I mean like after the X 299
+dark this is kind of what I expected you
+know it's more of the same and that's
+that's definitely not a bad thing and
+except this does actually go more
+elaborate on the cooling system right
+like the the like they they I feel like
+they've really made better use of all
+the gold plating they gone for because
+on the dark it really like it does not
+use that much it kind of feels more like
+an aesthetics thing there but here I I'd
+like their back of the board acts as its
+own heat sink which is pretty cool so
+yeah that is it for the Z 390 dark vrm
+overview and I guess thanks for watching
+like share subscribe leave any comments
+questions suggestions down in the
+comment section below and if you'd like
+to support gamers Nexus their store dog
+gamers Nexus not net store gamers Nexus
+dotnet yes I do remember it correctly
+where you can pick up things like the
+like the gamers Nexus mod math that you
+can see in the background and or if you
+well there's also shirts and other
+things and like other merch and if you
+don't want to buy anything there's also
+the gamers Nexus patreon and yeah so
+that's that and if you'd like to see
+more content from me I have a channel
+called actually art car overclocking
+where I do a lot of overclocking stuff
+that's it for the video thanks for
+watching and good bye</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

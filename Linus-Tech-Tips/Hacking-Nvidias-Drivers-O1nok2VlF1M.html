@@ -1,0 +1,420 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Hacking Nvidia's Drivers! | Gadgetory - Your Gadget Factory</title><meta content="Hacking Nvidia's Drivers! - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Linus-Tech-Tips/">Linus Tech Tips</a></li><li class="active">Hacking Nvidia's Drivers!</li></ol></div><h2 class="post__title"><b>Hacking Nvidia's Drivers!</b></h2><h5 class="post__date">2019-02-03</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/O1nok2VlF1M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">okay come here c'mere c'mere c'mere okay
+so this is our mining GPU that we're
+using for gaming in spite of its
+complete lack of any video outputs but
+you've seen this before and the last
+time we left you guys
+we weren't recommending these things
+even though they're like 75 bucks for
+the equivalent of a GTX 1060 because the
+only drivers we had for them were
+modified by some Chinese driver
+modification team and we had no way of
+knowing exactly what was inside them but
+today all of that changes first and
+foremost we are going to manually modify
+and videos drivers ourselves making this
+completely safe to use second while
+we're at it we're gonna kill in videos
+telemetry that they build into their
+drivers and third we are gonna run this
+in SLI with one of these which is like
+what what running a real gaming GPU with
+a mining one in SLI they're not even the
+same part number oh ed while we're at it
+the ten sixty doesn't even support SLI
+but we're gonna do it and you know what
+else we're gonna do
+tell you about our sponsor last way with
+glass wire you can instantly see your
+current and past network activity you
+can detect malware and block badly
+behaving apps on your PC or Android
+device and you can get it for 25% off at
+the link in the video description with
+offer code -
+okay so here's the situation right now
+we're not quite starting from scratch
+but pretty close
+so we've already disabled driver signing
+and you can see how to do that in our
+previous video here where we use the the
+modified Chinese driver but other than
+that we're looking at a pretty bone
+stock configuration here so our P 106
+mining GPU is installed in our system
+but the drivers for it are not loaded in
+any way we're in a in a completely blank
+state and we are running entirely off of
+the onboard graphics that are built into
+our CPU here so Anthony's back hi before
+we go any further I want to lay out what
+our ideal scenario would be here because
+in our last video we weren't just
+relying on a driver of unknown origins
+it was also a little bit on the older
+side so in a perfect world we would want
+our p 106 mining card here to behave
+exactly like a dt x 1060 because
+hardware wise they're the same thing
+so that means gaining support compute
+support and even n banc video encoding
+support and all of that while being able
+to run the very latest drivers however
+we've run into some challenges and we
+are gonna have to make a few compromises
+here so what do we got well first of all
+we won't be able to run on the latest
+drive or at least not right now the way
+it works right now and we're just
+getting a code 43 error every time so
+either nvidia has changed something or
+they patched it or whatever either way
+we're stuck with for 16 point 34 aside
+from that as far as I know it's not
+possible to get anything to work so so
+you're stuck with quick sync which
+fortunately you're gonna have to have
+because you're running your onboard
+graphics anyway in order to even get a
+display output from this thing or x264
+so with that out of the way Anthony's
+going to start by downloading our own
+fresh version of that 416 series driver
+and then taking the Chinese one and the
+Nvidia one and comparing what the
+difference is between them so that we
+can replicate the modifications that the
+Chinese team has made
+that allows the driver to be installed
+without copying over anything that could
+be nefariously hidden inside it so I'm
+using notepad plus plus and the reason
+for that is it's free it's pretty great
+actually it's got a huge and of our
+features including this compare feature
+which we can access via this plugins
+section here we just type in compare and
+I've already installed it so it's in
+here but yeah once you have that just go
+to you load up your first file go to
+plugins compare set as first to compare
+I've already done that
+now I will load up the other one which
+is this Chinese driver plugins compare
+compare so here we have a full listing
+of everything that is different between
+these two drivers so as we can see these
+lines here have been modified so where
+it used to say section 110 it now says
+section 108 which is actually the same
+if you look at these device IDs once e06
+is actually the gtx 1060 1c0 seven is
+our p 106 they have different sections
+in the vanilla driver but in the chinese
+driver they do not that is the primary
+thing we're going to be changing here
+okay now the final one of these sections
+here we'll notice that it actually says
+that it's 109 instead of 110 it's
+dropped down a number the same is true
+over here so we'll just follow here so
+it'll be 107 Creech basically what we're
+doing is we're copying the same config
+from our 1c 0 6 which is our GTX 1060 so
+we want section 1 0 7 for all of these
+things now what we're doing here is
+basically just tricking the driver into
+thinking it's compatible we're not
+actually changing any of the functional
+files of the driver installation is that
+correct
+that's right and if we go down through
+the rest of the comparison here there is
+nothing different really so then it's
+possible that our Chinese driver was
+totally clean yeah possible but I mean
+we don't know about the exe s the INF is
+perfectly fine we can make some
+additional changes while we're here
+though telemetry isn't it convenient
+that they just listed under env
+telemetry yeah for those not familiar
+telemetry is a feature of a software or
+driver that reports back on your usage
+to the manufacturer and a lot of the
+time this is stuff that you can opt out
+of but a lot of the time it's just baked
+right in so there you go we
+asked our compatibility check yep let's
+go ahead and install it of course we do
+not want GeForce experience also don't
+care about 3d vision because we don't
+actually have anything that we can
+connect it to and hopefully we will get
+the same exact thing we got the other
+day but we did it for ourselves on a
+fresh driver hey there we go alright so
+that's it if nothing else we now can say
+confidently that if you pick up one of
+these mining cards and use this method
+on this particular driver you will be
+able to play games mmm yeah that that
+monitor doesn't really have a shield on
+its yeah the biggest criticism we had
+last time is that we didn't actually
+show the Intel integrated and how poorly
+that perform oh really yeah oh it would
+be worse than this a lot worse yeah this
+is Deus Ex mankind divided running at
+1080p at greater than 8 frames per
+second so it's working now the thing is
+even though we're having trouble moving
+on to the latest drivers which would
+give us support for things like oh I
+mean I guess freesync doesn't matter
+because you'd be you could actually have
+freesync running off of Intel's onboard
+graphics yeah you could never mind
+depending on whether or not your onboard
+graphics supports reason okay but still
+there are good reasons to be running the
+latest drivers now we're not saying it's
+impossible we're just saying that when
+we applied this same method to the
+latest drivers even checking line by
+line we weren't successful so it might
+just be down to people who are a little
+bit better versed in their driver
+modification and Wizardry to figure out
+what the additional things that nvidia
+has changed whether just through the
+course of changing things to make them
+better or to specifically block this in
+order to make that work either way at
+the very least using a slightly older
+driver we have a working gaming system
+on the cheap but
+that's not where we stop today for our
+next trick we're gonna run this thing in
+SLI now we're still gonna have to deal
+with that same driver compatibility
+limitation because one of the cards in
+our system is one of these P 106 mining
+cards but what it at least demonstrates
+is that from a proof-of-concept
+standpoint this can work
+so you might think that this process is
+as simple as throwing a real gtx 1060
+into the system and then again forcing
+our driver to install remember it's an
+unsigned driver now so you got to do
+that process manually but as we're about
+to discover it did not it did not oh hi
+mark
+whatever the point is there's no SLI
+option here whatsoever so now what some
+kind of weird thing off the tech powerup
+forum yeah what are we doing so it's a
+program called different sli auto it's
+currently in the downloads folder but
+you guys will have the download and
+extract that for yourselves and we don't
+actually want to run the program
+okay that would be too easy yes it used
+to work but it doesn't anymore so no so
+you'll want to go to see windows
+system32 driver store and now we want to
+sort it by date we want to copy the NBL
+DD and it's the driver itself yeah I
+couldn't find it earlier either okay
+just in a sea of env pasted into the
+different sli auto folder now you'll
+want to open up in hex editor I
+downloaded hxd it's free
+should be there on the desktop you got
+it you want to search for the strip for
+the string of values seven five zero
+five zero f ba oh I already had it there
+okay cool there it is so we want to
+change that so you'll want to go to the
+beginning of that and type in yeah C
+seven four three two four zero zero zero
+zero two zero zero zero zero the hard
+part's over okay so we want to go back
+to the folder you got that driver from
+we want to take the folder name itself
+copy that and this is probably also
+already Auto populated but if you go
+back to the different sli auto folder
+right click and install that CMD go to
+edit see where it says the env design
+apps that
+up there you want to replace that in
+every sin every instance so you can use
+the replace function in notepad for that
+yeah all right so then we want to
+restart into safe mode oh lordy okay so
+that work yeah sure all right next
+you're going to want to go into that
+holder again different sli auto and run
+install that CMD as a minister well I
+guess it's the same thing and it's a
+funny way you know what let's just do it
+okay
+boom reboot now for changes to take
+effect yep
+so what have we done here sign the
+driver really supposedly it doesn't
+actually work okay that's something that
+we can do though something that requires
+a lot more but Singh around that we
+don't really want to do right now it
+does that copies the modified driver
+that we change the bits around in yeah
+to the proper locations in Windows yeah
+and well that's really about it and then
+just to clarify for the viewers out
+there changing those hex values have we
+done anything unsafe to our system have
+we potentially compromised it not
+compromised no but who told us to change
+those values well it's actually a guy on
+the tech power up forums okay by the
+name of pretentious yeah there we go
+that's the name yeah he's got a little
+script that he runs that takes about an
+hour or two to find where exactly the
+string that we found yeah is in each
+driver release and he just updates it on
+the forum it's pretty great basically
+what it does yeah is it disables the
+check for SLI as far as motherboard
+compatibility and you know the inter GPU
+compatibility so to be clear you guys
+aren't gonna be running in RTX 28 ET i
+and a gtx 1030 in sli at least not to
+any positive effect but over here in a
+case where we have two GPUs that we know
+are identical other than nvidia deciding
+they're not our expectation is that we
+would actually be able to achieve an
+improvement in performance so here it is
+the sli option is there in the driver
+we're gonna go ahead and enable it and
+bippity floppity
+No Oh
+keyboard light just went off as it turns
+out that SLI mod will not work with the
+peep 106
+unfortunately whatever maybe it's the
+fact that it doesn't have outputs maybe
+it's the fact that they have two
+different Levi offices that are you know
+for whatever reason right now does not
+work if we could force the card to take
+a different B by us that might work but
+I haven't medial to get that to work
+either I mean we can still run gtx 1060
+s in sli I guess that's still fun all
+right so what we've done here is we've
+manually installed our driver again
+moved our HDMI cable over to this GPU
+and we're gonna go ahead and enable our
+other device which got automatically
+disabled somewhere along the way it's
+kind of like a precautionary measure Hey
+SLI enabled on the gtx 1060 where's my
+deus ex at now beaches I'm actually not
+sure what the skins would be like here
+now the thing here is that there's
+nothing particularly amazing about
+running graphics cards in a multi GPU
+configuration without a bridge running
+between them in fact AMD has been doing
+it this way for several generations now
+NVIDIA though has stuck to their guns
+saying that the available bandwidth over
+the PCI Express slots is not enough to
+handle the inter card communication and
+has even gone as far as to upgrade the
+original sli link to the new envy link
+standard that you'll see on there our TX
+cards with that said even though we
+won't be able to speak to necessarily
+you know micro stuttering and how this
+solution effects something like that we
+can see if we could at least get an FPS
+improvement with this configuration and
+we'll know pretty shortly here yeah a
+benchmark only takes 90 seconds hey wow
+that's a pretty nice little improvement
+there isn't it yeah so once again our
+experimenting with Nvidia graphics cards
+video does come with some caveats this
+isn't necessarily a configuration we'd
+recommend SLI is in most cases not as
+good an option as simply getting a
+single higher powered graphics card so I
+don't even know
+necessarily disagree with Nvidia
+disabling SLI by default on their lower
+end cards it's just something that was
+kind of fun to do and interesting to
+show you guys just how simple it is for
+manufacturers to lock down and or enable
+functionality at least from a sort of
+hex editor perspective now the QC that
+would actually go into ensuring that
+this would be an adequate solution for
+their users that's a completely separate
+story and maybe part of the reason that
+manufacturers won't allow functionality
+that they otherwise could but I'll let
+you guys be the judge of exactly why it
+is that this is locked out you guys can
+leave a comment down below you know what
+else you can do down below check out our
+sponsor fresh books is the super simple
+to use small business accounting
+solution for freelancers and the
+self-employed it's a simple way to be
+more productive more organized and to
+get paid faster you can create and send
+professional-looking invoices in less
+than 30 seconds you can set up online
+payments with just a couple of clicks to
+get paid up to four days faster you can
+see when your client has seen your
+invoice to put an end to the guessing
+games and if you have any trouble you
+can reach out to FreshBooks is award
+winning customer support where you won't
+get any phone trees or escalations
+nothing like that just answers so visit
+fresh book Stockholm slash tech tips and
+enter Linus tech tips and the how did
+you hear about our section to get your
+30-day free trial so thanks for watching
+guys if you disliked this video you can
+hit that button but if you liked it hit
+like get subscribed or maybe consider
+checking out where to buy the stuff we
+featured at the link in the video
+description also down there is our merch
+store which has cool shirts like this
+one and not yours now in our community
+forum which you should totally join</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>

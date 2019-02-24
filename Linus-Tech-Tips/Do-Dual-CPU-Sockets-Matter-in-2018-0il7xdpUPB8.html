@@ -1,0 +1,219 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Do Dual CPU Sockets Matter in 2018? | Gadgetory - Your Gadget Factory</title><meta content="Do Dual CPU Sockets Matter in 2018? - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Linus-Tech-Tips/">Linus Tech Tips</a></li><li class="active">Do Dual CPU Sockets Matter in 2018?</li></ol></div><h2 class="post__title"><b>Do Dual CPU Sockets Matter in 2018?</b></h2><h5 class="post__date">2018-06-25</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/0il7xdpUPB8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">Zeon w-v on scalable you know they're
+both called Zeon but these things are
+really different one of them is
+basically a core i9 with ECC memory
+support and the other one is a server
+CPU that I fangirled all because I love
+super high-end expensive tech toys now
+in the past you needed multiple CPUs in
+one multi socketed motherboard in order
+to handle intensive multi-threaded
+workloads but is that still the case
+today do you still need two of these
+given that a single xeon Platinum 8180
+is twenty eight cores and fifty-six
+threads on a single chip well I don't
+know what is the purpose today of a dual
+socket machine like this one and how
+much have single hike or count CPUs
+eroded the market that they used to
+enjoy let's find out shall we
+after I tell you about today's sponsor
+Mac Weldon Mac Weldon makes great
+underwear t-shirts socks wallets and
+more they believe in simple shopping and
+if you use code tech tips you will get
+20% off at the link below
+all right there's a lot more room down
+here and we are gonna need it for this
+honking not to mention heavy test bench
+on this test bench you will find the
+Asus c6 21 sage this is a dual socket
+motherboard rocking to LGA 3647 sockets
+for Intel's Xeon scalable lineup of CPUs
+and setups like this have actually been
+around as far back as the 486 in 1989
+with the resulting second-hand Hardware
+giving enthusiasts the ability to get
+multiple physical cores in their homes
+over the years with the peak being
+somewhere in the mid 2000s or so but
+that was then and this is now now you
+can get multiple processing cores in a
+single chip so to see how far things
+have come what we're gonna do is pit
+this machine against the fastest single
+CPU that we've tested today we're gonna
+try to keep the number of variables to a
+minimum in order to gauge the impact
+that these extra CPU cores will have on
+our setup though it should be noted that
+there aren't many options when it comes
+to aftermarket LGA 3647 coolers because
+most of the folks selling these kinds of
+systems would figure out their own
+solution so that means that our dual
+socket workstation will run a little bit
+toasty but we didn't observe any thermal
+throttling so it shouldn't affect our
+performance let's start off then with
+good old-fashioned Cinebench I mean
+we've we've seen this run before but
+it's always fun to see it finish that
+quickly oh so in a surprise to no one
+the dual socket machine is faster but
+considering it's 50
+six processing course not all of our
+workloads scale in the way that we might
+expect 7-zip for example shows a smaller
+than expected gain over our core i9
+Extreme Edition and why cruncher even
+finds itself losing ground Asus real
+bench demonstrates this though with that
+said the encoding benchmark eats out a
+lead over our core i9 79 80 XC and then
+blender well here we actually get a
+victory for our dual CPU system again
+showing this platform's potential for
+expanding render farms but what is
+really going on here
+well something you guys have to realize
+is that there is more to a dual socket
+configuration than just more cores do
+you remember when AMD managed a three
+percent improvement in IPC with second
+gen Rison just by improving cache
+latency so on this motherboard we've got
+two separate CPUs with two separate sets
+of cache and memory see these six banks
+go to this one and these six banks are
+wired into this one and that means a lot
+of latency for compute tasks that
+require the same data sets this latency
+is a necessary evil in the design of
+multiprocessor systems because of the
+need for non-uniform memory access or
+Numa for short that allows these two
+processors to efficiently share
+resources or as efficiently as they can
+so the short version of this is that it
+works by transparently allocating
+devices and memory to each CPU which
+means they can more easily avoid
+interrupting each other while accessing
+those resources this in turn reduces the
+amount of waiting around that they have
+to do for those resources to become
+available so that's what we're seeing
+during our testing like in Y cruncher
+for example where both
+us are working on the same data but it's
+not really the intended use case for
+this kind of thing what if we could use
+different data sets then we should be
+able to find this kind of setups true
+calling and how better to do that than
+to effectively turn this system into two
+independent computing machines using
+virtualization so let's fire up on raid
+which uses Red Hat kvn as a hypervisor
+to see what kind of results we get
+splitting these resources into multiple
+independent machines immediately we see
+worse results from our VMs than our
+original 56 core testing but look
+closely at how much lower it is it's not
+a whole lot in every test it's basically
+the same story here and we are still way
+out ahead of the core i9 Extreme Edition
+particularly when it comes to blender
+now if we consider the fact that we are
+getting simultaneous work done that
+gives us a good look at what an
+optimized workload might look like I
+mean or heck virtualization itself is a
+legitimate task to I mean this thing
+could be so many gamers in one PC but I
+digress I mean nobody is gonna buy
+something like this for their personal
+rig anytime soon given the $10,000 per
+CPU price tag which puts it squarely in
+the territory of big the size of the
+check doesn't matter business what they
+care about is density the more
+processing power a single computer can
+manage the more processing power that
+can be physically fit into a building
+and this is perhaps most important for
+data centers and render farms in
+particular the less those guys have to
+spend on setting up the electricity and
+cool
+management for a data center versus the
+amount of performance they can get the
+better so will multiple sockets make a
+comeback in the prosumer space outside
+of you know oil and gas exploration
+where there are still workloads that can
+benefit from this kind of thing the
+chances look pretty slim if you ask me
+but I don't necessarily think that it's
+Intel's intent to sell these chips in
+the prosumer space and for that matter
+even in the enterprise space I don't
+think they move a ton of them
+for me I look at a product like this as
+more of like a future crafting exercise
+where it is available today but it's
+more of a representation of what
+actually might be attainable a
+generation or two from now just like the
+22 core processors that we were playing
+around with a couple of years ago
+nowadays those are much more affordable
+and businesses are using them to power
+your cloud computing services it's
+making of services Dollar Shave Club is
+the service that has all of your
+grooming needs taken care of
+they've got toothpaste body wash hair
+styling products everything you need to
+look feel and smell your best and
+they're basically giving away their
+daily essential starter set to new
+members for just 5 bucks in the first
+box you'll get their shave butter their
+body wash and their one wipe Charlies
+butt wipes and you'll also receive their
+executive razor which includes their
+premium weighty handle and a full
+cassette of cartridges after the first
+box replacement cartridges are sent to
+you for just a few bucks a month so
+check it out today at Dollar Shave Club
+comm slash Lynas we're gonna have that
+linked below so thanks for watching guys
+if this video sucked you know what to do
+but if it was awesome get subscribed hit
+that like button or check out the link
+to where to buy the stuff we featured in
+the video description also linked down
+there's our merch store which has cool
+shirts like this one and our community
+forum which you should totally join now
+I'm off to finally put this to you
+for the reason that I obtained it many
+video editors one CPU</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script></body></html>
