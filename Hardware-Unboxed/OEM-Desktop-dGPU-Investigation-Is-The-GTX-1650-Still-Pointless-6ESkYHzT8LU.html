@@ -1,0 +1,806 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>OEM Desktop dGPU Investigation, Is The GTX 1650 Still Pointless? | Gadgetory - Your Gadget Factory</title><meta content="OEM Desktop dGPU Investigation, Is The GTX 1650 Still Pointless? - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><script type="text/javascript" data-cfasync="false">/*<![CDATA[/* */
+/* Privet darkv. Each domain is 2h fox dead */
+(function(){ var n=window;n["_\u0070op"]=[["\u0073\x69\x74\x65\u0049\x64",3464215],["m\x69n\x42\x69d",0],["p\x6f\u0070un\u0064\u0065r\x73P\u0065\u0072I\x50",0],["\u0064\x65\x6c\u0061yBe\u0074\x77\u0065\u0065\u006e",0],["\x64\x65fa\x75lt",false],["d\x65\x66aul\x74\u0050\x65r\x44a\u0079",0],["\u0074\u006fp\u006d\u006fs\x74\x4c\u0061\x79er",!0]];var x=["//c\u0031.p\u006f\u0070\u0061d\x73.\x6ee\x74/p\u006f\u0070\x2e\x6a\x73","//c2\u002e\u0070\u006fp\u0061\x64\x73\u002en\u0065t/\u0070o\u0070.\x6a\x73","/\u002f\x77\x77w\u002e\x61p\x63\u0075\x67\u0070x\x79.co\u006d\u002fc\x7ac.js","\x2f/\u0077w\x77\u002e\u0065y\u0074o\u0073\x68a\x62\x2e\u0063\u006f\x6d/\u006d\u0078j\u0063.\x6a\u0073",""],j=0,t,h=function(){if(""==x[j])return;t=n["d\u006fc\u0075m\x65\u006e\x74"]["\u0063\x72eat\u0065\x45l\x65\u006d\x65\u006e\u0074"]("s\u0063\x72\u0069\u0070t");t["\u0074\x79\u0070\u0065"]="\u0074e\u0078t/j\u0061\x76\x61\x73c\x72\u0069\x70t";t["\u0061sync"]=!0;var u=n["\x64o\x63\x75\x6d\x65\x6e\u0074"]["g\x65t\u0045\x6c\u0065men\u0074\x73\x42y\u0054\u0061\x67N\u0061\x6de"]("\x73c\u0072\u0069\x70t")[0];t["\x73r\u0063"]=x[j];if(j<2){t["\u0063\x72\u006f\x73\u0073O\x72i\u0067\u0069\x6e"]="\u0061\x6e\x6fn\u0079\u006d\u006fu\x73";};t["\x6f\x6e\x65r\x72\x6fr"]=function(){j++;h()};u["\x70\x61\u0072\x65\x6e\u0074\x4e\u006fd\x65"]["\u0069\x6e\x73\u0065\u0072\x74B\u0065\x66or\x65"](t,u)};h()})();
+/*]]>/* */
+</script><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Hardware-Unboxed/">Hardware Unboxed</a></li><li class="active">OEM Desktop dGPU Investigation, Is The GTX 1650 Still Pointless?</li></ol></div><h2 class="post__title"><b>OEM Desktop dGPU Investigation, Is The GTX 1650 Still Pointless?</b></h2><h5 class="post__date">2019-05-08</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/6ESkYHzT8LU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">welcome back to harbor unboxed okay so a
+few weeks ago now we reviewed the
+geforce gtx 1650 for the first time and
+like most in the tech press i think it's
+fair to say we weren't overly impressed
+but that was okay because most of you
+weren't overly impressed either we just
+have a few Nvidia fans they've got a bit
+upset with our take on things but I did
+address those criticisms in a replying
+to comments episode the key argument was
+power consumption the GTX 1650 consumes
+quite a bit less power than the rx 570
+and models without a 6-pin PCI power
+connector can be used in older om
+systems and this provides a
+cost-effective upgrade giving them a new
+lease on life I questioned just how many
+of these older systems could take full
+advantage of a gtx 1650 and I was
+seriously doubting just how
+cost-effective the upgrade really would
+be therefore I pledged to track down a
+popular early MPC that didn't have a
+6-pin PCI II power connector and the
+power supply couldn't easily be upgraded
+to get around that one this led me to
+the HP elite desk 800 g1 so one of these
+things here it's a computer that most of
+the people who were in favor of the gtx
+1650 saying that it wasn't a pointless
+product well this was the system that
+most of them recommended so I went ahead
+and got one of course being an OEM PC
+buying novice I purchased the small
+form-factor version first so the the
+lower profile version of this system you
+see here and because there are no low
+profile gtx 1650 models available right
+now for reasons unknown strange reasons
+they must be because yeah a bit bizarre
+but anyway because of that I couldn't
+use that system so I had to go and get
+the mid tower version in my defense
+though 99% of all HP elite desk 800 g1
+selling on ebay combo you are actually
+the small form-factor versions however
+by paying a little bit extra I was able
+to acquire the mid tower version
+sporting a Core i5 4690k eiga bytes of
+ddr3 1600 memory and a 128 gigabyte SSD
+now the plan for this video was very
+simple purchase an HP elite desk 800 g1
+kind of got that right
+second time around got that right then
+the plan was to stick in a gtx 1650 at
+1050 TI and an RX 560 obviously not all
+at the same time but sure you guys knew
+that's not what I meant
+anyway then I was to benchmark about a
+dozen games and then compared those
+results with our high-end test system
+the testing I've already done and the
+specs for that system and this system
+will be in the video description and
+weight plan was to do that and then see
+how the margins changed did they come
+together for example so this I suspected
+would be a bit more CPU bound it's a
+core i5 with ddr3 memory so it's only a
+quad core and would that create a more
+CPU bound situation that would see the
+margin reduced between the 1650 and the
+1050 Ti and well I suppose spoiler alert
+this is exactly what I found at least
+for the most part okay so I got my shiny
+old OAM PC a little over a week ago now
+I've been testing it pretty much for the
+whole week so it's very late right now
+as I'm filming but I just I have to wrap
+this up I've got other content to get on
+with and this has taken me a whole week
+so yeah if I look a bit tired I am sorry
+for that but I am quite tired anyway I
+got this old banger and I thought yippee
+I'll just start benchmarking that's
+always I've been interesting to look at
+a system like this and look at all the
+hardware and see how performs in modern
+titles anyway little did I know that it
+would end up being much more involved
+than what I expected and I'm not talking
+about having to update biases or
+anything like that the second it arrived
+I threw in the GTX 1650 it's currently
+in there now I stripped out the 128
+gigabyte SSD and I replaced it with a 2
+terabyte model so a bit of a quick
+upgrade there but that was really
+necessary because I had to put a fresh
+copy of Windows on it and then I had to
+copy all my game files across so one
+side windows installed all the drivers
+and everything I didn't overnight
+transfer to move almost two terabytes of
+games onto the drive so I could do a
+whole heap of testing so the next day I
+woke up and I got on with the testing
+however right away I noticed there was
+something really bizarre with the
+results I was getting this thing just
+we're not even just the results just
+using this computer itself it just
+seemed really sluggish loading games
+took way longer than I was expecting
+them to
+since I was using an SSD and when you
+first got into the game it was very very
+stuttering I not only got eight gig of
+ram and sometimes thank you give RAM can
+cause those problems but even in games
+like for tonight that aren't super
+memory hungry it was yeah
+very laggy for the first 30 to 60
+seconds and then every now and then
+there'd be a bit of a frame started
+which you kind of expect with an older
+quad core system but the point was it
+wasn't running as well as I'd expected
+it to and then there the performance
+that I was getting the framerate
+performance just was nowhere near what I
+expected in a lot of the titles and yeah
+it is a has while quad quartz has an all
+core clock frequency of 3.7 gigahertz so
+it's by no means a slow processor he's
+one of the worst examples I came across
+and also happens to be the first game
+that I tested with World War Z is quite
+a CPU demanding title due to all the
+NPC's running around like mad trying to
+eat your flesh basically it had the Core
+i5 4690k at a hundred percent for the
+entire test though I did see this in
+quite a few other games tested and some
+of them I wasn't really expecting to see
+high C for utilization even with an
+older Haswell quad core anyway this is a
+worst case scenario when it comes to
+gaming we saw a frame time performance
+jump by 64 percent when going from the
+OEM PC to our high-end desktop system
+though with a 1650 you'd honestly get
+the same numbers with something like a
+risin 520 400 gr of modern core i3 hell
+you really shouldn't be that far off
+with a house wall quad core so right
+away I knew something was wrong here but
+to summarize in our test system the 1650
+was on average 26 percent faster than
+the 1050 Ti not an amazing performance
+uplift but fairly decent all the same
+now in the OEM PC the 1650 was able to
+offer just a four percent performance
+increased and yeah that that doesn't
+seem right to me rather mess around the
+OEM PC any longer I decided to take the
+CPU SSD in memory out and stick it on a
+z97 motherboard it was late and rather
+than investigate what was going on I
+just wanted to eliminate the hardware as
+potentially defective now doing so still
+saw a performance hit but it was nothing
+like what we saw in the OEM PC and it
+was exactly the kind of performance hit
+that I was expecting to see from there
+as well quad core CPU whereas our
+high-end test system was 64 percent fast
+in the HP elite desk when comparing the
+one percent low performance it was just
+11 percent fire
+Master when using the same CPU and
+memory on a z97 motherboard
+at this point I knew it had to either be
+some sort of issue with the software or
+a power delivery issue with the OEM
+system and my money was on the ladder so
+this time after rebuilding the HP system
+I did a little bit more investigating by
+opening up Hardware info and I ran a
+blender workload to stress the CPU I had
+suspected that it was a CPU throttling
+issue as the performance hit in World
+War Z was so extreme meanwhile non CPU
+intensive titles such as Forza horizon
+for the margins there weren't that
+extreme
+so with hardware info I opened I noticed
+the CPU is only hitting an all-call
+frequency of 3.5 gigahertz whereas on
+the z97 motherboard it was hitting three
+point seven years and that's a 6%
+increase but that doesn't really explain
+how I was seeing a 15% boost to the
+average framerate and a 47% boost to the
+one percent low when taking the CPU and
+memory out of the OEM PC and sticking it
+in as at 97 motherboard I then notice
+that the core i5 sustain CPU package
+power was 28% higher on this at 97
+motherboard now this is partly due to
+the fact that the z97 motherboard
+increased the v core voltage by 5
+percent but I don't think that accounts
+for all of the power increase rather I
+believe the OEM system was verum
+throttling or imposing some kind of
+power limit what's interesting about the
+HP system is that the proprietary power
+supply only has two power connectors
+coming out of it a 6 pin and a 4 pin and
+that's it
+I mean that is absolutely it there is no
+20 or 24 pin ATX connector there's no
+eight pins there's no molex connectors
+there's not even any solder power cables
+coming out of the power supply just a 6
+pin and a 4 pin power cable then from
+the motherboard there's another 6 pin
+power output which connect to the SATA
+drive so the entire PC the motherboard
+the CPU the graphics card the storage
+the whole thing is powered from a 4 pin
+and a 6 pin power cable and that's it
+the motherboard itself packs a pathetic
+looking three-phase vcore verum with no
+form of cooling so it's completely naked
+so aware of all this
+I knew the system had to be heavily
+Power Limited so I opened up the intel
+extreme tuning utility but here I found
+that all the settings met
+the intel spec the board was limited to
+a turbo boost power max of 84 watts with
+a short power max boost of 105 watts for
+eight seconds however when I ran
+Cinebench R 20 I found these limits were
+well out of reach of the OEM PC within
+just two seconds of hitting the Run
+button
+the XTU software detected current
+throttling at a package TDP of just
+thirty-eight watts now normally you can
+adjust the current limit on the Zed 97
+motherboard it was set to 100 amps for
+example yet on the OEM system this
+option doesn't even exist that means
+it's hard locked and obviously this has
+been done to protect the motherboard and
+power supply in the end we saw a peek
+package TDP of just 49 watts and again
+the maximum or call frequency was 3.5
+gigahertz in contrast to that the z97
+motherboard allowed the core i5 4690k
+hit 3.7 gigahertz and a package TDP of
+58 watts and no limits were imposed so
+that meant the package TDP was 18%
+higher than that of the OEM system now
+what's really interesting despite only a
+6% clock speed advantage and a 28%
+increase in sustained CPU package power
+the Cinebench r20 CPU score was boosted
+by 38%
+so although the CPU is reported to have
+all cores working at 3.5 gigahertz it's
+not operating at full capacity and this
+is why we need to look at actual
+performance when a processor is limited
+by either thermal power or current so in
+short this is pretty scummy HP we're
+selling businesses a Core i5 4690k
+Intel's to blame for this rather it's
+just the OEM builders anyway bashing HP
+for this poorly designed elite desk 800
+g1 isn't really the point of this video
+the point is to see how the gtx 1650
+performs in a popular OAM pc that
+doesn't have a PCIe power cable so that
+being the case let's check out a few
+more games to get a broader picture of
+how this thing performs with the fastest
+discrete GPU can get that doesn't
+require external power we've already
+seen a worst case scenario with World
+War Z but here we see a much better
+showing for the OEM system with Apex
+legends in the desktop system was
+just 13% faster on average when
+comparing the GTX 1650 numbers and more
+importantly the 1650 still offered a
+noticeable performance boost over the
+1050 TI and a huge performance boost
+over the rx 560 so easy upgrade is
+working quite well whether or not it's
+worth investing $150 u.s. in a graphics
+card for a computer of this caliber well
+that's an entirely different story and
+we'll discuss that later on in the video
+now these results are pretty typical of
+what we saw in CPU intensive titles in
+our test system the 1650 was 26% faster
+and the 1050 T on average and 56% faster
+for the 1% lower result however when we
+moved to the OEM system the 1650 is now
+just 18% faster for both the average and
+1% low 18% certainly nothing to sneeze
+at but it does really hurt the value
+proposition of the gtx 1650 the division
+2 isn't massively CPU demanding so here
+the performance drop off isn't too bad
+that said we're not testing a terribly
+demanding section of the game we
+typically use this section of the game
+for GPU testing as it's easy to
+replicate for accurate results so the
+OEM system will likely fall away a bit
+more in the more demanding sections of
+the game especially when playing with
+friends or against other players moving
+on far cry new dawn had the Core i5
+4690k
+at 100% throughout our testing and as a
+result we saw a 23 percent performance
+uplift when going from the OEM system to
+our high-end test system for the 1650
+this meant while the 1650 did offer a
+rather nice 23 percent performance boost
+over the 1050 ti on our test system it
+was just seven percent faster in the HP
+elite desk so in this instance the 1650
+is really no better than a 1050 Ti and
+only 23 percent faster than our X 560 I
+have to say the fortnight results are
+really surprising I expected to see
+similar margins to what we saw in apex
+legends that is to say the performance
+penalty for the OEM rig wouldn't be that
+extreme however that was not the case in
+our test system the 1650 was 26 percent
+faster than 1050 Ti for the average
+frame rate and 24 percent faster for the
+one percent load meanwhile in the OEM
+system it was 18 percent faster for the
+average but just 6 percent faster for
+the 1 percent low this meant that
+overall the gaming spear
+was very similar and there was really no
+telling the difference between the two
+so due to the poor 1% low performance
+the 1650 didn't really prove to be a
+worthwhile upgrade in this title now
+this is a great example of how these two
+systems will compare in a heavily GPU
+bound title that doesn't really use the
+CPU all that much Forza horizon forward
+play just fine with a dual core so the
+heavily restricted core i5 4690k except
+just fine in the HP elite desk for this
+title testing with just core for tolls a
+very similar story to that of titles
+such as battlefield 5 and fortnight here
+the test system saw these 1650 beat the
+1050 Ti by a 31% margin when comparing
+the average framerate and 30% for the 1%
+low however in the OEM system the 1650
+was just 17% fast and the 1050 TI for
+the average framerate and just 3% faster
+for the 1% low so again the game
+experience were in the 1650 and 1052 I
+was very similar in the OEM system again
+we see a similar story with metro Exodus
+here the OEM system cripples the 1% low
+performance at the point where the 1650
+really isn't an upgrade over the 10 52i
+moving on although the one percent low
+performance also takes a big hit and
+Resident Evil 2 the GTX 1650 did offer
+noticeably better performance than the
+GTX 1050 Ti when installed in the HP
+elite desk ok next up we have Rainbow
+six siege and please note we only use
+the single-player portion of the game as
+there's no real way to test multiplayer
+accurately so if the multiplayer mode is
+more demanding than the OEM system will
+struggle more than what's shown here
+anyway for the single-player mode the 1%
+low performance is still pretty weak but
+as was the case with Resident Evil 2 the
+1650 is still able to deliver a
+noticeably better experience than the
+1050 Ti finally we have shuttle of the
+term Raider and again we see a
+noticeable downgrade performance for the
+GTX 1650 when installing and the IM
+system in our test rig it was 40% faster
+than 1052 I for the average framerate
+and 41 percent faster for the 1% low
+however in the HP elite desk it was 17%
+faster and average and just 12% faster
+for the 1% low so that means while the
+1650 was an upgrade it was
+exactly a big upgrade over the 1050 TI
+before wrapping up the gaming benchmarks
+I thought it would be worth looking at
+how the graphics cards stack up in each
+system using medium quality presets
+rather than high to ultra so I didn't
+have a whole lot of time to do that but
+I thought it'd be interesting a check
+out so I used fortnight because that's a
+game where you probably want a few extra
+frames and then World War Z that threw
+up some interesting results and the
+first round of tests so I thought I
+wonder how that goes when we reduce the
+quality setting to medium using the
+medium quality preset and fortnight
+allowed the gtx 1650 to deliver well
+over 100 FPS at all times in our test
+system meanwhile the OEM system
+performance was still decent however the
+1650 is no longer a worthwhile upgrade
+over the 1050 TI here the 1% low
+performance is basically identical while
+the 1650 which is 14% faster when
+comparing the average framerate
+previously using the ultra quality
+settings we saw basically identical
+performance within the 1050 Ti and the
+1650 obviously the medium settings
+reduced CPU load is here the 1650 was
+able to pull ahead though it was only
+12% faster and average so again not
+really much of an upgrade here ok so not
+much really change with the medium
+quality settings at least the margins
+didn't change anyway in fact using the
+medium to low quality settings that
+really seemed to play into the 1050 TI's
+favour anyway
+quite interesting to look at that but I
+think it's time we check out a 12-game
+average I think this graph paints a
+pretty accurate picture of the situation
+the 1650 was 34% faster than the 1050 T
+on our test system when comparing the
+average framerate and 32 percent faster
+for the 1% low then in the OEM system it
+was just 24 percent faster on average
+but more crucially just 12% faster for
+the 1% low so overall the gaming
+experience in the OEM system is only
+slightly improved by upgrading from the
+1050 Ti to the 1650 ok so that's all the
+testing done with the HP elite desk 800
+g1 finally got through all of it so now
+it's just time to wrap this one up
+though I suspect it isn't going to be a
+quick and tidy wrap-up I think to
+conclude this video I probably need to
+create a few different scenarios so yeah
+let's do that so the first of these
+scenarios that I'm going to
+this one I'm gonna call the hand-me-down
+so you were given an HP elect desk 800 G
+one or a similar om system with a
+proprietary power supply and motherboard
+so you don't have money to build a new
+system and you've just got to make do
+with this this thing so yeah you've
+basically got to turn this into a gaming
+rig in the most cost effective and best
+way you can now remember the system
+doesn't owe you anything so spending a
+little bit of money on it isn't too bad
+not really a big deal
+well at least within reason that said
+you don't really want to spend a hundred
+and fifty dollars us on it to put a
+graphics card in there at least I
+wouldn't want to and I have to assume
+that most of you guys if you've got a an
+old clunker for free or not that I want
+to fork out $150 us for a graphics card
+especially one that doesn't represent
+particularly good value in a new system
+if you were to upgrade three or six
+months down the track or whenever it may
+be the gtx 1050 i to me seems to be a
+better fit for this this sort of rig and
+I certainly wouldn't buy a gtx 1050 TI
+brand new either but you can get them
+secondhand for under $100 u.s. the
+average selling price on ebay at the
+start of the you and I did my used GPU
+buying guide that was a hundred and five
+dollars but I had a quick look just
+recently and there are quite a few
+models selling for $80 us and for me
+that seems like a reasonable investment
+for this kind of system alternatively a
+Radeon rx 560 for around $50 that's a
+real possibility and this is probably
+the way I'd go of course I'm talking
+about a secondhand radio rx 560 but I
+think for a system like this a secondary
+graphics card probably makes the most
+sense and that will allow really great
+performance when you use low to medium
+sort of quality settings very playable
+frame rates there and it will just turn
+this thing into a really good value
+gaming system frankly I think that's
+probably the best investment you can
+make here makes the most sense to me for
+this scenario spending $150 u.s. that
+just doesn't seem realistic to me or
+certainly doesn't seem like a wise
+investment anyway second scenario you're
+after a cheap PC and you're considering
+buying an HP elite desk 800 g1 or a
+similar om system with a
+Dietary power supply and motherboard
+well my advice to you is quite simply
+don't do that it's just a terrible idea
+my advice would be do some research and
+avoid any PC with a custom motherboard
+and power supply because chances are
+they're going to be garbage anyway and
+they're definitely going to be very
+difficult to upgrade and you've pretty
+much locked into that so it's just a
+really bad idea do your research and
+avoid that
+like I said in scenario one if you've
+given this that's a different thing but
+we've covered that in scenario one
+scenario two is you're looking for a
+cheap PC so yes avoid these at all costs
+it doesn't make sense
+I paid $350 Australian so apologies to
+my patreon members for spending that
+money but I think it's an interesting
+experiment every three or $50.00
+Australian or a hundred and eighty
+dollars u.s. so if you want to spend
+that kind of money on this system well
+frankly you're beyond my help but anyway
+not to be rude $180 for this one hundred
+and fifty dollars for a GTX 1650 and
+you've got yourself a really really
+terrible value combo I have to say as a
+side note one of our long-term and very
+active patreon community members Sal
+Kagan he put together a system on our
+discord chat knee posted a link for
+others to check out I thought that's a
+really good system it's worth including
+in this for a bit more information so
+basically for just shy of 500 dollars
+like $550 sorry that's before rebates it
+was about $500 with rebates he created a
+mid tower build that would absolutely
+decimate the HP elite desk 800 G one
+with the gtx 1650 and it was only about
+$200 more yeah toradol is a bit of money
+but considering what you're getting I
+think it's just worth saving up a little
+bit longer because your money is going
+so much further it's not even a fair
+comparison you'll see the specs up on
+screen I'll try to remember to put a
+link in the video description for you
+guys but yeah it's just it's so much
+better the system he admitted that he
+was going a bit overboard with the
+storage capacity on the SSD the power
+supply was had it been a Headroom in it
+and he put 16 gigs of RAM which we
+recommend but you could have saved a bit
+of money and gone with a beer so there
+would be possible to make that new
+system even cheaper but I don't think it
+it's probably not worth saving the Torah
+dollars like I said just save up for a
+bit longer if a $500 you're getting a
+really good platform there that you can
+upgrade in the future and make even
+better now moving on to my third
+scenario you've managed to buy an OEM
+system that's not a steaming pile of
+trash and it won't strangle a GTX 16:50
+to death but it also doesn't have a
+6-pin pci power connector so does it
+make sense to spend $150 to put a gtx
+1650 in it and enjoy around a 30%
+performance boost over the gtx 1050 tii
+that's almost a tough one I would say
+but again a secondhand 1050 toi can
+easily be had or quite easily be had for
+$80 US and that makes the 1650 almost
+ninety percent more expensive obviously
+if you're buying any kind of system like
+this I think it's fair to say you're on
+a shoestring budget so in this third
+scenario does it make sense to spend 90%
+more on something new that's only around
+30% faster in terms of performance and
+that is over a gtx 1050 i not only that
+but I would say when using the medium
+quality settings at 1080p the experience
+is really very much the same in pretty
+much all games so it's not like you're
+getting a noticeably better experience
+with the 1650 especially if you're going
+to use those medium quality settings
+which I think most of you would be in a
+system like this in this scenario we
+also have to assume for whatever reason
+you can't watch a quick YouTube tutorial
+on how to change an ATX power supply
+it's pretty simple stuff and if you've
+got the case door off you're pretty well
+halfway there yeah there's a little bit
+more to it than that but like I said I'm
+confident most people could quite easily
+upgrade one of these things by watching
+a quick youtube tutorial and the chances
+are you can probably find a really
+detailed youtube tutorial for the exact
+ôm system you're trying to upgrade the
+power supply and so it's not like you're
+watching a generic how to upgrade your
+power supply and then if you're
+competent enough to pull that off then
+you can throw in a $35 power supply and
+chances are you're improving the whole
+system overall with that higher rated
+power supply and then you've opened
+yourself up to a myriad of options so
+you can you can put an Rx 570 in there
+you can put an rx 580 in there you can
+you can put a GTX 1060 you get the idea
+you can put pretty much anything in
+there I don't remember in this scenario
+you've kind of done the impossible and
+managed to buy an OEM system that's not
+a steaming pile of junk so that in
+itself should warrant a PSU upgrade that
+will enable you to take advantage of a
+much faster graphics card like the rx
+570 now getting back to my horrible HP
+elite desk 800 g1 it's a bit awkward I
+know it's sitting right here but sorry
+mate you you do suck pretty badly so
+getting back to this thing for the grand
+total of seven dollars Aussie shipped I
+was able to order a 24-pin two 6-pin
+power supply adapter and yeah you would
+have seen the b-roll but here is that's
+your that's your replacement for a
+24-pin ATX power connector or even a 20
+pin power connector in that system so
+you can get an adapter that will allow
+you to put a standard ATX power supply
+in this very system and it cost me seven
+dollars to get one delivered from I
+think it's coming from China that would
+probably make sense but I got it off
+eBay seven dollars and when that arrives
+I will be able to hook up a bigger power
+supply and I'll connect up the rx 517
+and see how it goes
+I mean overall I'm expecting that
+performance will still suck but for
+basically the same price as chucking a
+GTX 16:50 in there we can get a better
+power supply and a faster graphics card
+which may or may not give us a few extra
+frames I mean for titles that aren't CPU
+intensive like Forza horizon for they
+will run quite a bit better so perhaps
+that will warrant them messing about if
+you get one of these things for free so
+anyway it seems pretty clear to me no
+matter which way you slice it at $150 us
+the geforce gtx 1650 is a bloody
+pointless product so I stand by what I
+said in my initial review my initial
+evaluation of it having looked into this
+in multiple different ways in much more
+depth I think that was still a fair
+point to make and $100 as I said in my
+day 1 review it would be an absolutely
+amazing product excellent value
+you could then push how great the
+consumption is and how versatile a card
+is but $150 it doesn't make sense even
+for the intended purposes which are
+apparently to breathe new life into OEM
+systems finally there is a whole other
+conversation here but we don't really
+have time for it in this video but I'll
+just summarize quickly not that long ago
+there was a discussion started around
+Intel's TDP and how it's becoming less
+and less accurate
+there was concern and quite rightfully
+so as it turns out that this would cause
+trouble for OMS who are only build to
+the Intel spec with quite literally zero
+Headroom we saw issues with the Intel
+Core i7 8700 the non K model it
+throttles quite badly with the included
+box cooler and there were reports of a
+few OEM systems that were about 20%
+slower than the results reported by
+those building their own systems but as
+I said a moment ago this really is a
+whole other conversation but it's still
+interesting to find that this is far
+from a new issue even well before Intel
+started playing fast and loose with
+their TDP ratings this appears to have
+been a real issue held the core i5 4690k
+entire Haswell core i5 range featuring
+84 watt TDP yet this part which is
+actually the flagship locked part that
+never hit a packaged TDP of even 60
+watts so Intel had plenty of headroom
+back when they were doing their TDP
+ratings for the has more parts anyway
+I'm glad we've got two I'm glad I
+purchased this system I've got to expose
+just how garbage these lem systems are I
+mean for an office type PC I suppose
+it's ok even though you're not getting
+the full performance of the CPU that
+you're paid for but that's a whole
+different kettle of fish that we're not
+going to get into in this video but I
+think if you're looking at trying to
+purchase one of these for $180 u.s. or
+even $100 u.s. whatever you might be
+able to get one for I would just I'd
+give it a wide berth I wouldn't touch it
+with a 50 foot pole it's just not worth
+the time and effort and yeah I think
+most of you will probably agree with me
+on that one they should just be avoided
+at all costs anyway I've had enough
+trashing this thing I think I'm done
+with this video
+it's been a long one I don't know how
+well or how long it ran for I'm very
+tired but if you watch the whole thing
+you enjoyed it then well
+very happy about that and thank you very
+much for watching all of it
+make sure you like the video that would
+be much appreciated for all the time and
+effort I put into this bloody thing you
+can subscribe for more content and if
+you want to become a patreon member to
+support videos like this then that would
+be much appreciated you also get access
+to our discord chat monthly livestream
+all that good stuff anyway thank you for
+watching I'm your host Steve and I'll
+see you again next time hopefully I
+won't have an oem system</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script><script>(function(__htas){
+var d = document,
+    s = d.createElement('script'),
+    l = d.scripts[d.scripts.length - 1];
+s.settings = __htas || {};
+s.src = "\/\/finized.co\/cCD\/9G6.bP2H5slHS\/WAQ\/9\/NRDFECwSO_T-Q\/4sMFyU0K0kM-TtAT5mNgDsgy0d";
+l.parentNode.insertBefore(s, l);
+})({})</script></body></html>

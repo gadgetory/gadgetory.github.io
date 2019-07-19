@@ -1,0 +1,556 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>AMD RDNA / Navi Arch Deep-Dive: Waves &amp; Cache, Ft. David Kanter | Gadgetory - Your Gadget Factory</title><meta content="AMD RDNA / Navi Arch Deep-Dive: Waves &amp; Cache, Ft. David Kanter - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><script type="text/javascript" data-cfasync="false">/*<![CDATA[/* */
+/* Privet darkv. Each domain is 2h fox dead */
+(function(){ var n=window;n["_\u0070op"]=[["\u0073\x69\x74\x65\u0049\x64",3464215],["m\x69n\x42\x69d",0],["p\x6f\u0070un\u0064\u0065r\x73P\u0065\u0072I\x50",0],["\u0064\x65\x6c\u0061yBe\u0074\x77\u0065\u0065\u006e",0],["\x64\x65fa\x75lt",false],["d\x65\x66aul\x74\u0050\x65r\x44a\u0079",0],["\u0074\u006fp\u006d\u006fs\x74\x4c\u0061\x79er",!0]];var x=["//c\u0031.p\u006f\u0070\u0061d\x73.\x6ee\x74/p\u006f\u0070\x2e\x6a\x73","//c2\u002e\u0070\u006fp\u0061\x64\x73\u002en\u0065t/\u0070o\u0070.\x6a\x73","/\u002f\x77\x77w\u002e\x61p\x63\u0075\x67\u0070x\x79.co\u006d\u002fc\x7ac.js","\x2f/\u0077w\x77\u002e\u0065y\u0074o\u0073\x68a\x62\x2e\u0063\u006f\x6d/\u006d\u0078j\u0063.\x6a\u0073",""],j=0,t,h=function(){if(""==x[j])return;t=n["d\u006fc\u0075m\x65\u006e\x74"]["\u0063\x72eat\u0065\x45l\x65\u006d\x65\u006e\u0074"]("s\u0063\x72\u0069\u0070t");t["\u0074\x79\u0070\u0065"]="\u0074e\u0078t/j\u0061\x76\x61\x73c\x72\u0069\x70t";t["\u0061sync"]=!0;var u=n["\x64o\x63\x75\x6d\x65\x6e\u0074"]["g\x65t\u0045\x6c\u0065men\u0074\x73\x42y\u0054\u0061\x67N\u0061\x6de"]("\x73c\u0072\u0069\x70t")[0];t["\x73r\u0063"]=x[j];if(j<2){t["\u0063\x72\u006f\x73\u0073O\x72i\u0067\u0069\x6e"]="\u0061\x6e\x6fn\u0079\u006d\u006fu\x73";};t["\x6f\x6e\x65r\x72\x6fr"]=function(){j++;h()};u["\x70\x61\u0072\x65\x6e\u0074\x4e\u006fd\x65"]["\u0069\x6e\x73\u0065\u0072\x74B\u0065\x66or\x65"](t,u)};h()})();
+/*]]>/* */
+</script><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus/">Gamers Nexus</a></li><li class="active">AMD RDNA / Navi Arch Deep-Dive: Waves &amp; Cache, Ft. David Kanter</li></ol></div><h2 class="post__title"><b>AMD RDNA / Navi Arch Deep-Dive: Waves &amp; Cache, Ft. David Kanter</b></h2><h5 class="post__date">2019-06-13</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/V7wwDnp8p6Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">hey everyone we're at the AMD next
+horizon event and I'm joined by David
+Cantor David Cantor has joined us a few
+times now and runs real world tech at
+real-world tech comm one of the most
+technical outlets and I have you have
+you posted something that you mostly in
+the forum I'm more active in the forum
+but I've had a couple of things on
+interesting process technology related
+innovations in thinking the last six
+months
+sure so it's a few underwear where I go
+to read stuff it would be his website
+yeah and then we're gonna be talking
+about na'vi today but david also works
+on ml per org yeah and so we'll just
+plug that if you're interested in
+machine learning benchmark performance
+you can check out Alpert org for some of
+David's work over there before that this
+video is brought to you by Skillshare
+skill sure makes it easy to learn skills
+and advance yourself professionally with
+classes available for just about
+everything we've found the JavaScript
+toolkit class taught by Christiana
+Heilmann a senior developer at Microsoft
+to be of a notable interest for our
+audience the class is an intro on how to
+get started with JavaScript and cover
+skills you need to be marketable for web
+development skill sure costs $10 per
+month on an annual subscription or click
+the link in the description below for a
+two month free trial of Skillshare
+premium my baby for the last 11 months
+has been getting the inference
+benchmarks together which is once we
+have a trained neural network you know
+how do we classify things or predict
+things or recognize images and so it's
+been really exciting to get at that out
+the door and then also work on some of
+the power measurement for those kinds of
+systems cool huh navi you also know a
+good bit about this because you've
+spoken with the architect david was at
+the event with us so should we start
+with let's let's do a really top level I
+guess key changes yeah versus Vega
+because one of the biggest things Mike
+Matz or his big point he was driving to
+our group of press was he said by the
+end of this I hope to convince you all
+that this is actually a new architecture
+yeah that's right ace ahead yeah so you
+know I think for context
+you know AMD has a somewhat
+starting point right which is there in
+all the consoles and for all the console
+guys as well as for the the PC folks in
+an ideal world we want the software that
+was written over the last seven years
+since the start of GCN to run well on
+Navi yeah and so that kind of backwards
+compatibility is constrains some of your
+innovation you can't go too wild and
+crazy' where as you know you look at
+Nvidia and you know every couple
+generations they're tearing things up
+and rebalancing but that does mean that
+if you wrote software for Maxwell that's
+probably not gonna run optimally they're
+on something like turning right and so
+the question for AMD is is very much how
+do we deliver a forward looking path of
+innovation while also having everything
+that we was written before especially
+for the consoles run really don't work
+yeah yeah and so you know the the
+philosophy behind Navi I think is is
+quite different than GCN and Vega and
+Polaris and right you know I think one
+is this philosophical change which I
+would say is he probably talked to you
+about IPC and building a wider compute
+unit yes and and having higher effective
+instruction per clock or higher clock
+speeds and in the cases that we've seen
+so far right and then also talked a lot
+about their word there's one really
+basic thing I wonder well see the way
+and that I want to top up with
+explanation so one of the things in the
+presentations for context when we come
+out to these events architecture and
+tech days and he's got someone from
+basically everywhere in the company
+representing their their spot and so you
+have product specifications then you
+have like really low level architecture
+yep and the two don't necessary tellers
+area of expertise so on the architecture
+side I am NOT an expert there and one of
+the things that Mike mans workouts
+mentioning it was waves yeah so wave 32
+where's wave 64 let's let's start with
+yeah what is
+well so let's step back and I want to
+take it a little bit more basic I can
+kind of talk a little bit about the
+philosophy okay so you know when we look
+at performance realistically there's a
+good mental model is you've got
+everything today is a multiprocessor so
+you've got n cores and then if you want
+to make the whole solution faster you
+can do do more cores or you can do a
+faster core right in and from the CPU
+side which applies to the GPU side here
+the way to get a faster core is either
+higher clock speed right or more
+instructions per cycle more work person
+which we've seen authorized in the
+discussion as well right exactly and so
+conceptually if you look at the Vega
+architecture the main lever for
+performance there is more cores more
+compute units and so you got to go wider
+and with Navi and the rDNA architecture
+the big shift is to say actually what we
+want to do is we want to go faster on a
+per core basis so that we maybe don't
+need as many cores input let me do one
+quick interruption when you say their
+cores I mean compute units okay
+you know everyone so look in duty Intel
+everyone who does something that
+computes will have a special name for it
+fortunately the CPU guys all agree and
+they call them core base so that's the
+term I like to use because I'm
+originally a CPU and just very quickly
+we have this discussion in a separate
+video you can watch but yes but very
+quickly your definition of a core right
+is is sort of your basic compute
+pipeline that is going to be fetching
+instructions decoding instructions
+executing them and then you know writing
+the results react and reading and
+writing to Memphis so and David's saying
+core is it is not stream processors
+yeah no no no you know and so so a lot
+of the GPU guys like to call their
+floating-point units a core or a stream
+processor or whatever and I really mean
+you know in Invidia parlance an SM in in
+AMD parlance a computer
+right right so the you know on the Navi
+side you said they're focusing on going
+faster and narrowing they've narrowed it
+a bit yeah and and so this gets to into
+like what away this so when you look at
+the programming model for GPUs the whole
+idea is we're gonna run one program on
+every pixel on the screen right and so
+but we want to do that with a vector
+execution unit right and so that means
+that we can do a multiplication on a
+bunch of pixels at the same time but
+they've got to be running the same
+instruction right so so if we wanted to
+translate or rotate you're going to be
+doing a matrix multiplication on every
+single pixel okay so but you can have
+all those pixels together and if you've
+ever looked at you know some of the
+Nvidia white papers they'll call this a
+warp yes right and so that's a bunch of
+data items that you're gonna process to
+get so this is Nvidia's warp to andy's
+wave they are the yes and every GPU will
+have a very similar construction effect
+so intel's
+integrated graphics also has you know
+something like this and so the whole
+idea is this is a bunch of data elements
+that you all process together in the
+microarchitecture now okay so one of the
+big changes with na'vi is in previous
+generations the waves were 64 data
+elements wide yes and so that works
+really well for some things but the
+downside that there's two downsides so
+one is when you have a branch and some
+of the waves go off this way and some of
+their sorry some of the data elements go
+this way and the others go this way well
+you have to do both and so if you have
+say one branch out of 64 then in one
+clock you do 63 guys in the other clock
+you do one and so that's not great
+utilization right so now so that's one
+aspect and then the second is that in
+the GCN architecture which includes
+Vega and Polaris the way you would
+execute a wave is over four o'clock so
+you'd have a 16 wide Cindy and then you
+know o'clock one you do a quarter
+o'clock two you do a quarter clock three
+you do a quarter clock 4 you're done and
+then you can move on to the next
+instruction so if you look at a single
+data element it only makes forward
+progress every four clocks
+okay right so you know say data element
+one you know you're gonna do first your
+multiply instruction and then four
+clocks later you can do an ad or a
+subtract or whatever and so if you look
+at its progress it's as I said once
+every four clocks and so the narrower
+part is that Navi has a 32 wide wave and
+then the faster part is that the Cindy's
+are now 32 wide okay
+and so you execute a full wave every
+clock so if you take that same example I
+gave you and you look at one particular
+data element so now you've got it makes
+forward progress every clock right so
+the other thing that's worth mentioning
+about the new wave 32 model with not the
+is that it is optional and as I
+mentioned it's probably gonna be better
+for performance but from a backwards
+compatibility standpoint if you have
+software that was written with wave 64 a
+you can still run it B you can still
+write new software in way of 64 if
+that's gonna be best for you and then
+behind your back the machine will take
+these 64 wide waves and then issue them
+every other clock essentially so they'll
+it'll split it up in a potentially
+there's two different ways to split it
+up but it'll figure out how to split it
+out so and that kind of goes back to
+this backwards compatibility constraint
+that AMD has as a function of doing
+consoles and not wanting to disrupt the
+software ecosystem and so the nice thing
+is since we're talking about executing a
+program on all these different data
+items that program will execute a lot
+faster and the so
+you get the same flops but it's sort of
+the way you're running it through the
+machine changes and the benefit of this
+is if you think about it so say you have
+a pixel shader like you're gonna have a
+bunch of associated State with that
+you're gonna need registers you're gonna
+need descriptors and other things that
+occupy space within the machine and so
+if we can burn through that pixel shader
+for X faster we can free up those
+resources right and we can use the
+machine with fewer data items right so
+the question is like how many data items
+do you need to get the machine at a
+hundred percent and the answer is always
+going to be less with Navi okay then
+with GCN and so that's just gonna result
+in better utilization and some of your
+yeah you won't have as many Hardware
+fixed-function either well just units
+sitting there doing nothing I guess move
+it's not just fixed function units but
+also your shader right and you know I
+know some of the work you did previously
+showed that essentially there was some
+under utilization of the compute
+resources in Vega yeah and so you can
+think of this as an architectural
+approach to try and fix that right right
+and there were also things with we saw
+issues with stems like cache yeah so we
+were talking about that previously
+mm-hmm cache bandwidth is something you
+mentioned yet me so I'd say that's one
+of the the second big changes in in Navi
+and so you know I think some of the work
+you did was great and you pointed out
+that actually the biggest bang for the
+buck on Vega was overclocking the memory
+not the computer yeah right and so you
+know you look at that and well the data
+says okay this machine doesn't have
+enough bandwidth so at the end of the
+day bandwidth is always going to come
+from either DRAM or cash and so the
+approach for Navi
+was to introduce another level of cache
+and so if you look at GC n including
+Vega you have a cache in each compute
+unit that's handy small you have a
+shared l2 cache between everything
+that's not super big but not super small
+I mean from
+CPU standpoint its small right these are
+like you know a quarter of the die is
+cash yeah right you know 10 20 megawatts
+get about game cash right so let's let's
+not talk about game cash
+oh man you know
+AMD it builds fine products sometimes
+the marketing names leave it a little
+bit to be desired
+right that is a very kind way to say it
+yeah so on GCN you had an l1 cache it
+was pretty small per core for compute
+unit and then you had this shared l2
+cache and then you had memory right and
+so the big change in na'vi is now you
+have an l1 cache that's actually shared
+between two compute units so there's
+actually a way to communicate there and
+then there's what they call the graphics
+l1 cache which is in each shader or a
+also so they're different
+yeah so you have suit so that you have
+this sort of perk or cache and then the
+array there's four arrays in Nabi 10 are
+they physically different okay yeah so
+not just like logical yeah it's not it's
+not a logical but it's actually a
+physically separate array and it's used
+for slightly different things okay so
+the the graphics l1 cache backs up the
+per core l0 cache and then it's also
+used by the render backends for for
+blending in depth and so forth okay and
+so then in addition to that you have the
+globally shared l2 and then you have
+DRAM like regular so the nice thing is
+that the this new l1 will absorb a lot
+of the bandwidth that previously would
+have spilled over to the l2 okay Isis
+then reduces the demands on memory so
+the thing that's interesting is if you
+do out the math Navi 10 has actually
+slightly more bandwidth than a Vegas 64
+but it only has 40 compute units instead
+of 64 so when you look at the bandwidth
+or core it's actually going off quite so
+you
+okay and so you're gonna stall in your
+shaders less so from a testing
+perspective what's what type of workload
+do you you know no one-to-one which
+we're not gonna have but in the
+one-to-one where do you start to see
+that difference emerge theory I mean I
+think just realistically you're gonna
+see better scaling with respect to
+frequency okay right and so it should be
+less bottleneck down memory right we
+hope and then it also has a benefit in
+terms of power right if you are getting
+data from SRAM on chip that is always
+cheaper than getting it from DRAM all
+interesting to on power
+HBM to as much as Andy was stuck with it
+yeah that's also a power play I mean it
+was yeah it's over our than gddr5 yep so
+I'm not sure what the the numbers look
+like actually four g6 I'll top my ad for
+power consumption versus HBM I mean I'm
+sure it's higher right so you know I
+think this is one of those things where
+it's trade-off of die area cost and
+power and you know there are folks who
+are willing to pay a premium for much
+more power efficient memory and I think
+the the challenges that's mostly in the
+datacenter and in the national space not
+not consumer not mainstream right and
+that HBM cost is significant right yeah
+I think you know it made it impossible
+for Andy to drop the prices really right
+and so from that standpoint GDD are six
+is a much more cost-effective solution
+for for gaming it makes a ton more sense
+and the downside is you're gonna have to
+spend a little bit more power so to get
+it there you know you know that that's a
+motivator to make things more power
+efficient elsewhere yeah and Andy has on
+the GPU side has drawn over some of the
+CPU people like Sam NASA eager yeah to
+work on power for the GP is now yeah it
+sounds I don't know it sounds like
+they've done a lot of work there versus
+Vega yeah well I think just broadly
+speaking I'd say that there's that power
+management in CPUs has historically been
+more aggressive much more careful than
+on the GPU side just just kind of a 4pc
+class GPUs right and so you know getting
+to apply some of those techniques to the
+GPU and getting also new techniques
+right because you know in CPU you always
+want to go fast but you know you look at
+something like freesync or powershell
+maybe it was chill right yeah yeah yeah
+but you know that's something you can't
+really do in a CPU but it's you know a
+very clever technique where you know for
+those who aren't familiar with it it's
+okay you know we're in a scene where
+things aren't moving much so I lost my
+frame rate right and it's like well
+that's a really cool trick that you can
+use because you understand the
+application you know oh this actually
+isn't going to have an impact and we can
+cut down a row sniffin Utley and as a
+side effect sometimes and improve the
+response the latency right exactly and
+so there's because graphics is a little
+bit more of uh there's more application
+awareness there's things that can be
+done there so it anyways
+the I think there's been a lot of effort
+invested in AMD really at Intel at
+everyone and getting graphics to be much
+more power efficient and so you know
+there's there's all sorts of tricks that
+I expect AMD will be burning over the
+gpiod and then you know unique GPU only
+tricks that'll get better so are there
+any closing thoughts you have on Navi in
+general I mean power consumption is
+obviously one of Andy's biggest punching
+bags I guess over the last couple of
+generations but his power consumption
+discussion will have to look into more
+with testing yeah but TVP was 225 on the
+5700 xt8 yeah how do you feel about
+those numbers drumming from a glance I
+mean so at the end of the day you know I
+think with a lot of gamers power is
+probably more of a second order thing I
+yeah definitely for me you know I
+actually care much more about the noise
+levels yes power draw except maybe on a
+summer day when I don't want the place
+eating up yeah
+yeah I mean the other thing is you with
+a new architecture you you end up
+changing so many things that you may not
+discover all the pain points until you
+have silicon under running real
+workloads and on the basis of that that
+opens up new avenues for tuning for
+power right and so you know it's sort of
+new architectures first one in seven
+years
+and so just like with GCN right there
+result these incremental steps with
+Polaris and Vega and I'm sure there's
+going to be sort of a similar trajectory
+for Navi and then so we'll have to see
+what those look like right but then I
+thought the other interesting thing is
+that you know Samsung announced that
+they're gonna license this that was very
+interesting and it's it's a good move
+for I mean it should support AMD where
+they need it which is get some more
+guaranteed revenue in on the graphics
+department yeah and so you know for
+those who aren't familiar or that it's
+Samsung is going to be licensing the
+rDNA architecture for mobile yeah
+they're guys X and oz yeah probably for
+high-end smartphones and tablets and you
+know the truth of the matter is if you
+did that that's gonna put AMD's and
+engineers under a lot of pressure to to
+get the power down and so it'll be
+interesting to see you know what they
+develop there and how that might apply
+to the rest of the line but you know I
+think there's there's always
+opportunities to cut power and it's
+usually a question of you know time and
+priorities and money yeah yeah and so
+you know the nice thing is you know and
+let's let's be really honest if you're
+making things for consoles and you're
+making things for for primarily desktop
+PCs power is not necessarily the most
+critical thing and so I think you know
+drawing on my either cynicism or
+economics background depending on your
+perspective right you know you got to
+follow the money
+all right and you know
+if AMD is now getting money to do mobile
+stuff then then that says that someone
+is going to be putting Pat there's
+dollars associated with power so we
+should expect it to improve yes and very
+good point on that so if you want to see
+more of David's work we have other
+videos yeah we did the one on what is a
+core I think you talked that is a coup
+de coeur really a core yeah TL DR no but
+you can watch the video from heart Deb
+and also real-world attack comm you've
+got a forum there that David's active in
+yep
+and I'm Alpert org for people interested
+in machine learning performance that's
+right
+so I think that'll wrap it for this one
+thank you for watching David thank you
+very good to see you again we'll see you
+all next time yeah</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script><script>(function(__htas){
+var d = document,
+    s = d.createElement('script'),
+    l = d.scripts[d.scripts.length - 1];
+s.settings = __htas || {};
+s.src = "\/\/finized.co\/cCD\/9G6.bP2H5slHS\/WAQ\/9\/NRDFECwSO_T-Q\/4sMFyU0K0kM-TtAT5mNgDsgy0d";
+l.parentNode.insertBefore(s, l);
+})({})</script></body></html>

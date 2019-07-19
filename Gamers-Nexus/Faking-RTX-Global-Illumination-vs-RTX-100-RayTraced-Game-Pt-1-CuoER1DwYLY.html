@@ -1,0 +1,707 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>Faking RTX Global Illumination vs. RTX | 100% Ray-Traced Game, Pt 1 | Gadgetory - Your Gadget Factory</title><meta content="Faking RTX Global Illumination vs. RTX | 100% Ray-Traced Game, Pt 1 - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><script type="text/javascript" data-cfasync="false">/*<![CDATA[/* */
+/* Privet darkv. Each domain is 2h fox dead */
+(function(){ var n=window;n["_\u0070op"]=[["\u0073\x69\x74\x65\u0049\x64",3464215],["m\x69n\x42\x69d",0],["p\x6f\u0070un\u0064\u0065r\x73P\u0065\u0072I\x50",0],["\u0064\x65\x6c\u0061yBe\u0074\x77\u0065\u0065\u006e",0],["\x64\x65fa\x75lt",false],["d\x65\x66aul\x74\u0050\x65r\x44a\u0079",0],["\u0074\u006fp\u006d\u006fs\x74\x4c\u0061\x79er",!0]];var x=["//c\u0031.p\u006f\u0070\u0061d\x73.\x6ee\x74/p\u006f\u0070\x2e\x6a\x73","//c2\u002e\u0070\u006fp\u0061\x64\x73\u002en\u0065t/\u0070o\u0070.\x6a\x73","/\u002f\x77\x77w\u002e\x61p\x63\u0075\x67\u0070x\x79.co\u006d\u002fc\x7ac.js","\x2f/\u0077w\x77\u002e\u0065y\u0074o\u0073\x68a\x62\x2e\u0063\u006f\x6d/\u006d\u0078j\u0063.\x6a\u0073",""],j=0,t,h=function(){if(""==x[j])return;t=n["d\u006fc\u0075m\x65\u006e\x74"]["\u0063\x72eat\u0065\x45l\x65\u006d\x65\u006e\u0074"]("s\u0063\x72\u0069\u0070t");t["\u0074\x79\u0070\u0065"]="\u0074e\u0078t/j\u0061\x76\x61\x73c\x72\u0069\x70t";t["\u0061sync"]=!0;var u=n["\x64o\x63\x75\x6d\x65\x6e\u0074"]["g\x65t\u0045\x6c\u0065men\u0074\x73\x42y\u0054\u0061\x67N\u0061\x6de"]("\x73c\u0072\u0069\x70t")[0];t["\x73r\u0063"]=x[j];if(j<2){t["\u0063\x72\u006f\x73\u0073O\x72i\u0067\u0069\x6e"]="\u0061\x6e\x6fn\u0079\u006d\u006fu\x73";};t["\x6f\x6e\x65r\x72\x6fr"]=function(){j++;h()};u["\x70\x61\u0072\x65\x6e\u0074\x4e\u006fd\x65"]["\u0069\x6e\x73\u0065\u0072\x74B\u0065\x66or\x65"](t,u)};h()})();
+/*]]>/* */
+</script><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus/">Gamers Nexus</a></li><li class="active">Faking RTX Global Illumination vs. RTX | 100% Ray-Traced Game, Pt 1</li></ol></div><h2 class="post__title"><b>Faking RTX Global Illumination vs. RTX | 100% Ray-Traced Game, Pt 1</b></h2><h5 class="post__date">2019-02-28</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/CuoER1DwYLY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">we built a fully rate raised game in
+Unreal Engine 4 which just added DX our
+support officially last week as a result
+of the support we have the first look at
+Nvidia RT X shadows to show you we have
+looks at graphics with all our TX
+features enabled path tracing versus ray
+tracing comparisons multiple reflection
+bounces off objects roughness
+comparisons as they relate to
+reflections and deep dives on
+traditional graphics techniques to fake
+realistic visuals versus their
+ray-traced counterparts and untold side
+of the global illumination comparisons
+has been that there are traditional ways
+developers can fake GI without DXR
+that's not to downplay DX our today's
+video will show you how these standard
+graphics methods of faking GI you can
+get pretty close but the method NVIDIA
+has been pushing and Microsoft's that
+the XR is sometimes easier but resource
+expensive I'll be joined once again by
+Andrew Coleman our lead video editor and
+3d artist who created all this tech demo
+in Unreal Engine I'll be talking about
+global illumination specifically in
+today's video before that this video is
+brought to you by be quiet and it's
+straight power 11 series power supplies
+the straight power 11 PSU is shipped
+from 450 Watts up to a thousand Watts
+accommodating most of the gaming PC
+build requirements you'd encounter and
+focuses on delivering a higher quality
+power supply that doesn't sacrifice on
+efficiency or stability noise is also a
+heavy point for the straight power 11
+using a 135 millimeters silent wins 3
+fan that can spin as low as 200 rpm for
+quieter low load operation learn more at
+the link in the description below and as
+a quick example of a global illumination
+directly is doing to the room we can
+show gloom illumination is on currently
+and then global I'm just gonna call it
+GI Chloe illumination is really long
+this is GI off so you can see there's no
+light bouncing off from the floor onto
+the bottom of the object which is why
+it's difficult to see yes this is a bad
+example we'll talk about this more later
+in the video yeah this is it's Y
+metallic objects are not good examples
+of global illumination so quick for note
+for all of the other demonstrations we
+have coming up will be showing those in
+videos after this one like
+elections will be showing shadows things
+like that but in this one it's our first
+demonstration we'll show you a room
+that's commonly referred to as a Cornell
+box it demonstrates global illumination
+and the the kind of key point here is
+that gee I can be faked this is not
+unique it's not new to touring this has
+the global illumination has been in
+games
+it's just that touring has the ability
+to execute GI with real-time ray tracing
+instead of fake methods and we'll be
+showing you those so this representation
+is actually a recreation of Nvidia's
+original demo from the RT X launch we're
+going to use it to demonstrate RT X on
+vs. off and if we look closely you can
+see that global illumination is sort of
+emanating colored light off of the walls
+and onto nearby services including onto
+the floor from metallic ball the demo
+Andrew and I have talked about before is
+flawed in several ways it's and videos
+demo but we're just recreating it to
+match them so Andrew what are some other
+ways we can tell this is global
+illumination
+I guess he already mentioned the light
+reflecting off onto the objects you can
+also see it reflecting onto the floors
+around them yeah we should we should
+mention this so these lights on the
+walls I think we agree that they're not
+really the best way to do this demo so
+the the important part of a Cornell box
+that there's one or that all the lights
+in the room are just white colored so
+all the color coming onto the objects is
+just bouncing off of the walls
+themselves not directly from the light
+source right and the reason we have
+these colored lights here is because
+we're just matching on videos demo which
+we have a whole different video on why
+we disagreed with this technique to
+demonstrate it we don't need to go
+through that all again today
+you can check the previous video for
+that but it's it's still fine we can
+still do the demo here so global
+illumination to do one quick primer on
+this I guess the main thing we're
+looking at here is the light from the
+ceiling especially in your more
+traditional sample on the right side is
+providing all the light to the room it's
+hitting colorful objects like the walls
+and then that light projects onto the
+services of objects nearby and it is not
+for example ambient occlusion I think a
+lot of people saw Metro Exodus where
+a lot of the time the scenes are just
+darker and that's from GI it's it's not
+like a difference in a oh right yeah
+that has nothing to do with ambient
+occlusion right and so we have some AO
+in the corners of this room like in the
+where the wall walls meet and you can
+change that separately and Unreal Engine
+if you want to do but that is not GI is
+it actually is there an advantage to
+using DXR if you really try so if you're
+a developer and you genuinely try hard
+to make GI look good without needing RT
+extra DX r the question is can you
+achieve a similar look with a similar
+amount of effort and so we actually
+showing this initial demo we kind of
+bait and switch to you guys this is
+traditional global illumination it is
+not raytrace global illumination and our
+point is that you can sort of match DX r
+GI with standard game graphics
+techniques that sort of fake the
+lighting there are a lot of shortcomings
+to this will show you those as well and
+this Cornell box is the one on the left
+is a bit flawed but we'll ignore that
+for now as well so despite looking
+really convincing there are still
+downsides and we'll cut to a shot of the
+true DX r version if we haven't already
+versus our fake and editing but let's
+just not label them for a second so that
+you can just kind of take it in and
+figure out for yourself which one you
+think is which one of these uses DX r
+and ray tracing the other one is our
+fake so we'll put labels on those now
+post below if you guessed correctly and
+so Andrew can you explain first let's
+walk through we can walk through how you
+made the fake or maybe or do you want to
+cover first the shortcomings of the fake
+which do you think is more I think the
+latter is more appropriate the way to
+make this is pretty straightforward it's
+like a few checkboxes you say do you
+want global illumination yes
+and then you say how many light bounce t
+one say like three or four I don't know
+but then you also did some stuff like
+you you have versions of this where
+you've baked shadows into the floor
+right yeah and into the objects if you
+toggle your flashlight you'll I mean
+they still behave like shadows but but
+they're baked in so if you have a
+non-static object that's a flaw I baked
+all of these aesthetic objects so the
+the lighting on the ground is assuming
+that they're not going to move but then
+after that I told the agent they can
+move and so you can see that also you
+can see that the global illumination is
+also baked into the ground right and
+there are other ways to do this too like
+is this current example we're looking at
+is this using the light mass option yeah
+so that will only mostly affect it when
+objects go start to move like this it
+shouldn't have effect objects that are
+static anyway but and so yeah one of the
+bigger upsides one of the I guess
+easiest way is to fake GI is if you do
+have a bunch of objects that won't move
+like a bunch of furniture for example
+that the player can never interact with
+non destructible environment then you
+can get from what I've seen you do the
+last few days you get pretty damn close
+to dxr GI
+if not more or less exact except it's
+just it's stuck to those static objects
+right so nothing's calculated after
+runtime it's like it's basically like
+the engine is painting underneath what
+it the accurate lighting physics
+calculation and then just as like okay
+that's that's it yeah that's that's what
+it is so then are there ways I think you
+can still kind of get I saw you do one
+demo where you have the shadow still
+following the marbles I guess yeah
+with a non DXR version but where they're
+still downsides to that approach an
+important thing to note is that all of
+these are actually unreal engines new
+rectangular lights
+I think they calculate shadows a little
+bit differently because none of these do
+have shadows but if you bring them over
+to the the point light that we have they
+do cast moving shadow right so it might
+just be a limitation of that specific
+type of light
+sure so yes so clearly our fake is
+pretty good here but if we switch over
+to a demo with DXR we can show us some
+of the advantages and and just to be
+clear here the point of this video isn't
+to pick a side of DX our verse is not DX
+our does I think it's been kind of
+unfairly beaten down by some of the
+community and there are very fair weight
+reasons to
+to criticize the XR and r-tx but one of
+the oddest comments I've seen and it's
+regular unfortunately is ray-tracing is
+a scam our ray tracing is a hoax which
+is just sort of comical kind of clarify
+some stuff for the audience ray tracing
+has been a thin for decades at this
+point and in terms of computer graphics
+so ray tracing is a thin real-time ray
+tracing is kind of the the new thing
+that they want to do ray tracing is used
+commonly in movies you like Pixar movies
+for sure we used it in our intro logo
+render so the thing to be critical of
+with RT x and z XR is not that ray
+tracing is a scam it's that is this
+present implementation of the different
+technologies feasible to render on the
+existing hardware in real time while
+still looking good like at least as good
+as the fake graphics so that's what
+we're really looking at and in the DXR
+version that you've pulled up in the
+engine here we can see some of the
+upsides and downsides the immediate
+downside is performance everyone knows
+this side of the story so performance
+objectively gets worse with DXR on RT x
+right now we know that and then another
+downside visually as I'm seeing a lot of
+noise so do we know what that's like do
+we know firmly the story behind this
+amount of noise so in order to get a
+proper resolution for an image like in
+order for enough bounces to hit a
+surface or a pixel in order for there
+for in order for the noise to go away
+you need it depends on the scene but in
+an outdoor scene maybe like 500 ish
+samples per pixels and if you're trying
+to do an indoor scene or there's light
+only coming in from a window and it has
+to bounce multiple services and render
+limited light right yeah limited light
+and one source and many places for the
+light to rebound off of surfaces you'd
+probably need around like a thousand to
+two thousand samples for a clear
+resolution and right now this is only
+running it to two samples per pixel
+before well I think the rectangular
+lights are set to six and the global
+illumination is it to two
+I mean two versus six when you're
+talking a thousand who cares they're
+running a denoise er that helps resolve
+images a little bit faster but you can
+tell it's not great still yeah has some
+interesting latent effects like I mean
+you can see them again or if you shoot
+you'll see following the ball there's
+like ghost balls following the Khans can
+have fun with that one
+so upsides though if DXR we've we've
+seen clearly some of the downsides look
+at some of the upsides you give a
+balance here you can see the shadows are
+now accurately following the objects we
+do have global illumination in those
+shadows we have global illumination and
+in the Cornell box right the interesting
+thing about DX R is that nothing has to
+be baked before runtime everything just
+operates how the lights would expect to
+in real life physics although I'm sure
+they're doing some kind of optimizations
+that are different from real-life
+physics yeah of course but if it's close
+enough then yes sir we're calculating
+here and as opposed to having a pre
+calculated right which would be what
+baek's lighting is and again you don't
+have to necessarily bake it into static
+objects I guess we have some examples
+where you can fake GI with dynamic stuff
+as well just they're still shortcomings
+with that but with with D arcs are I
+mean what's your kind of opinion of the
+accuracy of the GI with this versus your
+your baked version like do you think the
+the pre baked lighting do you think is
+significantly outdone by the real-time
+ray-traced
+so you asking and if in terms of quality
+in terms of how realistic it is they're
+seeing that compared to the static
+objects yes static objects if we ignore
+the dynamism that we want with the XR I
+would say it's pretty close it's up that
+takes like five minutes to do it before
+you start the game right it takes it
+five minutes to do it
+what I don't like while they're building
+it yeah yeah which is an important point
+because if it's taking that amount of
+time to calculate it then obviously
+that's not real time so at one frame
+every five minutes I don't think is an
+acceptable metric for anybody
+except for Xbox players but beyond that
+I the real-time or if we look at
+dynamism you know you look at a dynamic
+scene instead of a static scene how do
+you feel then obviously it starts losing
+some accuracy so now we're loading in
+another demo and this is a preview for
+some of the stuff will show you in
+videos coming up this rotating logo for
+example as raytrace reflections yes and
+it I believe and this is a whole
+different topic we're not going to talk
+about it today but so just some tech
+demos we've built with all these DXR
+technologies to show what nvidia is
+trying to do and here's another I guess
+Cornell box yes and it's a bit different
+this time so what's going on here
+basically this the same thing is going
+on it's if you can see it on objects
+that are moving on their own and see how
+it affects different sides of each
+object things like that even that's
+shadow on the ground so we're still DXR
+is on right now so the shadow on the
+ground you can see is you know green on
+the green side and spit darker on the
+not green side yeah the object rotates
+it gets some light cast on it that's
+color of the wall next to it and yeah
+it's just we're just showing a dynamic
+object which you couldn't achieve this
+and play the same quality I think with
+your favorite art right
+yeah it depends there's you can set
+objects to be movable in global
+illumination but it will do a better
+calculation if you said it's a static so
+here's our rasterized version you want
+to talk through the differences of this
+one versus the other
+yeah so actually it's it I was pretty
+impressed when I saw the rasterized
+version of this the weird thing only is
+that there's no shadows anymore on the
+movable objects once again might be
+because of that this is also using a
+rectangular light these two rectangular
+lights so might be a limitation of that
+but you can see that it's still somewhat
+dynamic the sides pretty good so we've
+still got some some GI in here and this
+can be done at a pretty high frame rate
+without DXR r-tx but you do lose like
+you said the shadow quality for exam
+all right actually that has me curious
+I'm just gonna do this really quick yeah
+I'm going to change out the rekt light
+for a point light so I made a little bit
+of a mistake I didn't make this light
+bright enough so it doesn't look exactly
+like the last scene but you can see that
+there are moving shadows no just because
+it's a point light right so this is the
+shadow thing we were talking about was
+more result of the specific type of
+light and Unreal Engine but you can tell
+it since these are movable objects
+unreal did not bake the lighting
+information into the textures of the
+object right yes so how does when you
+bake the lighting information into an
+object it does it effectively they
+rebuild the texture and apply it to the
+UV map or what is yeah so there is a
+thing in each object called a light map
+movies they're called generate light map
+TVs and unreal cannon to either do that
+from your own UV maps or it can make one
+for you and then that's where it bakes
+the lighting detail information right a
+UV map should we bother going into any
+detail on this let's just do a really
+short version it's like UV maps are a 2d
+representation of a 3d object so it's
+kind of like think about how you would
+unwrap a face Hey
+okay let's go let's shift it to a shirt
+if you're trying to make a shirt as flat
+as possible only one plane then you'd
+have to cut both sides down the middle
+which is how they sell the better faces
+way back there there are examples of
+like faces on like 3d objects I have one
+of those of my face
+haha tres it's a great example though we
+can show on from I'm sure we can find
+some on line but yeah there's your
+primer of UV map time for different
+different day but anyway yeah so change
+the type of light did add some shadows
+and but the DX our version of GI still
+has some upside such downsides to of
+course noise and performance point
+lights are kind of weird in general
+because they always produce well
+necessarily true I was gonna say they
+always come from a an infinitely small
+point which is unrealistic but you can
+change the source radius okay so you can
+change how large right the light should
+be calculated from so what about the the
+white probes you're showing me what
+let's let's demonstrate those each of
+these little points says like okay from
+the top angle I'm receiving this amount
+of white light from the bottom angle and
+receiving this amount of green indirect
+lighting so these B's all calculate
+indirect lighting in their little
+specific point in space and then when
+objects get close to them they can say
+okay I can sample lighting from a 360
+direction onto this surface here right
+object in this instance is that red ball
+yes be clear so so I guess the the probe
+is used as it relates to the as relates
+the proximity of objects nearby the
+probe can be used to calculate the
+correct type of or correct color of
+light being cast onto that object right
+correct color and intensity right and
+this so it is it correct to say them
+that this gives you more flexibility and
+having dynamic objects yes because now
+you can move the ball around the Cornell
+box and as it moves around the box
+you're still gonna be able to sample
+it's just it'll be from all these
+different light probes yes so you can
+see that this might be because it's
+erecting there like once again there's
+no shadows at all but the lighting is no
+longer baked into the ground but yes so
+this is this is another just to be clear
+this is not DXR right now right which is
+pretty obvious if you've seen the noise
+and the other ones but so this is
+another fake light probes allow it to be
+a bit more dynamic and still have
+accurate global illumination without
+needing ray tracing let's see if we can
+get some are we trying to get some
+shadows in here now yeah just some quick
+so then in order to just kind of
+eliminate a variable here we're you know
+are we getting rid of the rectangle
+lights or just overpowering them okay so
+these are these planes on the ceiling
+art art do the light they're just for
+show just to show where the lights
+originating from but they don't actually
+illuminate and he actually cast shadows
+yeah right so I think any to there's
+some checkbox or some shader setting
+someplace to accept lighting from
+emissive objects that is not turned on
+but I don't I don't know where that is
+so just one more quick light bill to get
+the see how it calculates the shadows in
+global illumination for the movable
+objects and how it recalculates the
+indirect lighting for the light probes
+we've changed the light types let's
+let's kind of briefly what are the
+downsides to the light probe approach
+that we know of because clearly it seems
+like it can fake GI pretty well
+so it's got to be a downside versus DXR
+which is we think may be performance to
+some extent right but we're not really
+sure how much generally you should
+always use light probes in your scene
+from what unless you're going for a
+non-photorealistic approach but if you
+want indirect lighting then light probes
+are the way to go okay okay so now we
+have changed and to just change the the
+type of light to what is it a point
+right now yes these are still wrecked
+lights but right and that's still
+matching that videos demonstration which
+we'll talk about in a minute so what's
+going on now now it looks like there's
+some shadows as opposed to previously so
+we have some some shadows now then and
+and nothing baked into the floor and
+nothing baked into the objects either
+yes so this is a this is still a fake
+approach not a bad one though um let's
+just we mentioned earlier that this on
+the left was Cornell box is flawed and
+as we said earlier this is just choppy
+and what unbid eeeh made for their
+demonstration we had a kind of a rant
+previously where I believe I said I said
+I think it's a little misleading and you
+said it's very misleading yes so the the
+demo on video showed just bring it back
+up was one example was basically none of
+these traditional global illumination of
+facts really implied like or none of the
+fakes applied I think right and then
+they also introduced a whole bunch of
+weird things into the scene where like
+wasn't it wasn't it the scene of one of
+them had like the glass marble and the
+reflective ball and then the other one
+didn't have those things or something
+yes so this is actually a this is an
+exact copy yeah this is their original
+one it's up with the faked lighting this
+is their what they changed it to right
+so on the right side
+they say this is before this is DX this
+is our TX off right that's what they say
+yeah which leads you to think this is
+traditional lighting well I say this is
+our TX on our TX does not change the
+material of the object right and so that
+is extremely misleading but and it's
+kind of sad because they don't need to
+be misleading to say like hey this
+technology has some promise we've
+already demonstrated that right they had
+another example with that Quadro card in
+the room and that are ticks off and on
+demonstration was actually pretty
+accurate yes yeah I don't know why they
+didn't that was like near the end of
+their presentation though also yeah I
+don't know that it was pushed public or
+not but yes so anyway reasons that it's
+flawed other than changing the material
+the objects on the left right comparison
+is also you're dealing with the colorful
+lights on the walls and the whole point
+of the Cornell box is what is it you
+have a single light and the top that's
+white yes it doesn't need to be a single
+light but what a white light I guess
+right and so adding colorful lights and
+if we look at the left scene it kind of
+looks like there's GI in places that
+it's actually just there's a colored
+light right so it's like it's really
+just it it defeats the purpose of the
+demonstration and also using a metallic
+object is flawed for this too because
+what we're seeing is reflections right
+position to GI elsewhere it's very
+difficult to see GI in a metallic object
+because it just bounces off well I guess
+technically even a diffuse object will
+be also bouncing off the light like this
+one over here this is technically a
+light bounce even though you see it
+directly on the object but for here do
+you see it
+the bounce is so sharp that it's just
+reflecting the image of what it was
+right reflecting because it's mostly in
+real life GI and reflections are the
+same math it's light bouncing off of an
+object that just the surface changes how
+that light bounces off and you can also
+see it in this metallic surface how
+little changes between the two yes just
+to illustrate why this is a bad way to
+demonstrate GI and you can also see why
+these colored lights are not a good
+example of global illumination because
+it is changing the color of the shadows
+but not because of indirect lighting but
+just because the direct lighting is a
+color and here's the lack of global
+illumination with ray tracing so it's
+not appearing in the mirror but it does
+appear on the objects and this is a
+limitation I guess it might be an Unreal
+Engine thing I have pretty sure it's
+just a limitation of Unreal Engine right
+now oh we should also point out that
+we're using Unreal Engine 4.20 to
+preview too so this is not the final
+release of 4.22 so they might add more
+things and they've already added lots of
+things since the first preview like
+multiple reflections right things like
+that so also global illumination was not
+in the first preview also yeah all right
+so that's it for our GI demo hopefully
+this gives you some more information
+work with than just the the Metro
+execution there's a lot to this story
+here and clearly as we've demonstrated
+you can fake GI pretty well if this is
+one of the biggest points you want to
+get across global illumination itself is
+not new it is not new it's r-tx is not
+unique to RTX you do not need our TX to
+do global illumination in fact a lot of
+games already have global illumination
+baked in but or faked in other ways but
+RT x and t XR have some unique up sights
+that are worth considering here and
+we've demonstrated those as well so just
+want to give you a look at that we have
+demos and examples a lot of technical
+explanation coming up ray tracing of DX
+r RT x shadows i believe we have we can
+do some path tracing versus ray trace
+demonstrations and roughness compares
+some things like that so definitely
+subscribe if you're not we have more of
+these coming up and let us know what you
+think below of our game does this look
+like something you'd want to play
+because I mean I think that IGN would
+give us at least a seven out of ten
+which on their scale is about it too so
+thanks for watching subscribe for more
+go to patreon.com/scishow and access to
+support this type of work and you can go
+to store documents exit on that to pick
+up one of our shirts or mod mats or
+something like that
+we'll see you all next time</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script><script>(function(__htas){
+var d = document,
+    s = d.createElement('script'),
+    l = d.scripts[d.scripts.length - 1];
+s.settings = __htas || {};
+s.src = "\/\/finized.co\/cCD\/9G6.bP2H5slHS\/WAQ\/9\/NRDFECwSO_T-Q\/4sMFyU0K0kM-TtAT5mNgDsgy0d";
+l.parentNode.insertBefore(s, l);
+})({})</script></body></html>

